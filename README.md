@@ -1,3 +1,14 @@
+#EMIT
+
+Website by Sonya.Nina
+Starter theme imported from Fur by CloudCannn.
+
+
+
+
+
+
+
 ## Fur
 
 E-commerce template for Jekyll. Browse through a [live demo](https://turquoise-rook.cloudvent.net).
