@@ -28,12 +28,14 @@
 		{% endif %}
 	</head>
 	<body>
-		<header>
+		<!-- Moved nav out of hero - want to make it sticky -->
+		<div class="navWrap">
 			<div class="container">
 				<div class="company-name"><a href="{{ site.baseurl }}/">{% include logo.html %} <span>{{ site.title }}</span></a></div>
 				{% include navigation.html %}
 			</div>
-
+		</div>
+		<header>
 			<section class="hero">
 				<div class="text-container">
 					{% if page.hero %}
