@@ -8,8 +8,11 @@ input[type=submit] {
 	padding: 15px 30px;
 	background: transparent;
 	border-radius: 2px;
-	border: 1px solid #ffffff;
+	border: 1px solid $brandContrastDark;
+	// border: 1px solid #ffffff;
 	-webkit-appearance: none;
+	text-transform: uppercase;
+	display: inline-block;
 }
 .button:hover,
 button.button:hover,
@@ -17,6 +20,7 @@ input[type=submit]:hover {
 	background: $brandContrastDark;
 	color: #ffffff;
 	cursor: pointer;
+	text-decoration: none;
 }
 .button:active,
 button.button:active,
@@ -26,7 +30,8 @@ input[type=submit]:active {
 }
 // Primary button is slightly darker than brand with no obvious border
 .button.primary {
-	background: darken($brand-color, 10%);
+	// background: darken($brand-color, 10%);
+	background: $brand-color;
 	border: 1px solid darken($brand-color, 10%);
 }
 .button.primary:hover {

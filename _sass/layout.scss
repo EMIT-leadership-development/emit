@@ -1,7 +1,7 @@
 .container, .text-container {
 	margin: 0 auto;
 	position: relative;
-	padding: 0 20px;
+	padding: 0;
 }
 
 .text-container {
@@ -10,6 +10,7 @@
 
 .container {
 	max-width: 1140px;
+	// border: 1px solid blue;
 
 	&.max-container {
 		max-width: 100%;
@@ -17,30 +18,30 @@
 	}
 }
 
-.hero {
-	color: #ffffff;
-	text-align: center;
-	position: relative;
-	z-index: 99;
-	h2 {
-		font-size: 3.2rem;
-		line-height: 1.5;
-		font-weight: bold;
-	}
+// Perhaps move hero stuff to header.scss
+// .hero {
+// 	color: #ffffff;
+// 	text-align: center;
+// 	position: relative;
+// 	z-index: 99;
+// 	h2 {
+// 		font-size: 3.2rem;
+// 		line-height: 1.5;
+// 		font-weight: bold;
+// 	}
 
-	@media (min-width: 500px) {
-		h2 {
-			font-size: 3.5rem;
-		}
-	}
+// 	@media (min-width: 500px) {
+// 		h2 {
+// 			font-size: 3.5rem;
+// 		}
+// 	}
 
-	p {
-		color: #fff;
-	}
-}
+// 	p {
+// 		color: #fff;
+// 	}
+// }
 
 .content {
-	background: #fff;
 	padding: 1px 0 0 0;
 	position: relative;
 }
@@ -78,11 +79,12 @@
 }
 
 section {
-	padding: 100px 0;
+	// padding: 100px 0;
+	// border: 1px solid red;
 }
 
 section + section {
-	padding-top: 0;
+	// padding-top: 0;
 }
 
 .subtext {
@@ -95,9 +97,9 @@ section + section {
 	margin: 60px 0;
 }
 
-.page h2 {
-	text-align: center;
-}
+// .page h2 {
+// 	text-align: center;
+// }
 
 blockquote {
 	padding: 18px 25px;
@@ -137,8 +139,9 @@ blockquote .quote:after {
 }
 
 .page {
+	background: $brandContrastLight;
 	margin-bottom: 0;
-	padding-bottom: 80px;
+	// padding-bottom: 80px;
 }
 
 .center-text {
@@ -154,4 +157,132 @@ blockquote .quote:after {
 .thirds div {
 	flex: 1 1 200px;
 	padding: 100px 40px 0 40px;
+}
+
+// SONYA'S STYLES FROM HERE
+// Default section is two equal columns
+// Default infoPoints = icon list
+.pageSection {
+	.container {
+		@media #{$mid-point} {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-gap: 60px;
+		}
+		.sectionIntro {
+			padding: 60px 30px 0 30px;
+			@media #{$mid-point} {
+				padding: 150px 0 150px 0;
+			}
+			p {
+				font-size: 1.4em;
+			}
+		}
+		.sectionContent {
+			padding: 60px 30px 0 30px;
+			@media #{$mid-point} {
+				padding: 150px 0 150px 0;
+			}
+			p {
+				font-size: 1rem;
+			}
+		}
+		.sectionImage {
+			min-height: 500px;
+		}
+		.sectionTitle.priority1 {
+			padding: 0;
+			font-size: 3em;
+			font-weight: 300;
+			color: darken($brandContrastLight4, 50%);
+		}
+		.sectionTitle.priority2 {
+			padding: 22px 25px 24px 25px;
+			border-left: #4b4e53 2px solid;
+			font-weight: 300;
+			text-transform: uppercase;
+			color: darken($brandContrastLight4, 50%);
+		}
+		.underlineIntro {
+			width: 30%;
+			border-top: 2px solid #4b4e53;
+		}
+		.emphasis {
+			font-weight: 600;
+		}
+		// Icon points
+		.infoPoints {
+			.point {
+				display: grid;
+				grid-template-columns: 50px auto;
+				grid-column-gap: 30px;
+				grid-row-gap: 10px;
+				grid-template-rows: fit-content(100px) auto;
+				margin-bottom: 2rem;
+				.icon {
+					grid-row: 1 / span 2;
+					// border: 1px solid green;
+					svg {
+						width: 50px;
+						height: 50px;
+						stroke: rgba(0,0,0,0.8);
+						stroke-width: 0.7px;
+					}
+				}
+				.pointTitle {
+					font-size: 1.1rem;
+					line-height: 1.5;
+					color: darken($brandContrastLight4, 50%);
+					font-weight: 600;
+					// border: 1px solid blue;
+					padding: 0;
+					margin: 0;
+					text-transform: uppercase;
+				}
+				.pointContent {
+					// border: 1px solid red;
+					padding: 0;
+					margin: 0;
+				}
+			}
+			@media #{$mid-point} {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				grid-column-gap: 60px;
+			}
+		}
+	}
+}
+
+// Specific Page Styles
+// ABOUT PAGE
+.about {
+	.visionMission {
+		.container {
+			@media #{$mid-point} {
+				grid-template-columns: 3fr 6fr;
+			}
+		}
+	}
+	.motivation {
+		background: #ffffff;
+		.sectionImage {
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: left center;
+		}
+		.callToAction {
+			padding-bottom: 60px;
+			@media #{$mid-point} {
+				padding-bottom: 0;
+			}
+		}
+	}
+	.goal {
+		.container {
+			@media #{$mid-point} {
+				grid-template-columns: 2fr 6fr;
+			}
+		}
+	}
 }

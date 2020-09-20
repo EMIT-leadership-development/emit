@@ -1,0 +1,18 @@
+---
+- name: Kobus Grobler
+  title: Global CEO
+  socialLinks: links here
+  PicLarge: "team/KobusLarge.jpg"
+  PicSmall: "team/team-7.jpg"
+  memberID: 1
+  bio: "Kobus has been involved in the training and equipping of leaders since 1991. He firmly believes that the lack of trained leaders is to blame for many of the problems experienced in Africa and the rest of the world. Transformational Leadership will result in changed communities and ultimately Nations. He is pragmatic in his approach to the problems of Africa and leads many community projects in his city as part of his own contribution to address the needs of those that cannot help themselves.
+  He and his wife Teresa have three children and currently reside in Springs, South Africa."
+
+- name: Borniface Shonga
+  title: Global President
+  socialLinks: links here
+  PicLarge: "team/ShongaLarge.jpg"
+  PicSmall: "team/team-7.jpg"
+  memberID: "member2"
+  bio: "Borniface Burton Shonga, warmly referred to as “BB” is a long time associate of EMIT. He served as Senior Pastor of Kabwe Chapel for a number of years. He is considered a mentor, role model and a credible voice to many in Zambia and beyond. He is married to Ethel and have four daughters."
+---

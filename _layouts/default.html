@@ -47,12 +47,14 @@
 			</nav>
 		</header>
 		<main>
-			<section style="background-image:url({{site.url}}/images/{{page.heroImage}});">
+			<section class="hero" style="background-image:url({{site.url}}/images/{{page.heroImage}});">
 				<div class="overlay"></div>
 			</section>
+
+			{{ content }}
+
 		</main>
 
-		{{ content }}
 
 		<footer>
 			<div class="container">

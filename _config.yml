@@ -33,6 +33,10 @@ collections:
     _hide_content: true
     output: true
     _icon: shopping_cart
+  programs:
+    _hide_content: true
+    output: true
+    sort_by: id
 
 permalink: pretty
 

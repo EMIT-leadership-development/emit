@@ -1,4 +1,4 @@
-header.mainNavigation{
+header.mainNavigation {
     position: sticky;
     top: 0px;
     background-color: $brand-color;
@@ -400,20 +400,17 @@ header.mainNavigation{
     }
 }
 
-main {
-    section{
-        position: relative;
-        height: 460px;
-        width: 100%;
-        // background: url('https://i.pinimg.com/originals/90/d7/6d/90d76d4e2f0e79c7184c54b22b82e1b0.jpg') no-repeat top center / cover;
-        background-position: center -90px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        overflow: hidden;
-        padding: 0;
-    }
-
+section.hero{
+    position: relative;
+    height: 460px;
+    width: 100%;
+    // background: url('https://i.pinimg.com/originals/90/d7/6d/90d76d4e2f0e79c7184c54b22b82e1b0.jpg') no-repeat top center / cover;
+    background-position: center -90px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+    padding: 0;
     .overlay{
         position: absolute;
         width: 100%;

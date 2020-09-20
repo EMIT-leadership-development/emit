@@ -5,4 +5,88 @@ heroImage: couple.webp
 subtitle: What we do and how we do it
 ---
 
+<div class="page about">
+	<!-- VISSION MISSION -->
+	<section class="pageSection visionMission">
+		<div class="container">
+			<div class="sectionIntro">
+				<h2 class="sectionTitle priority2 editable">Transforming Nations<br><span class="emphasis">by developing leaders</span></h2>
+				<p editable>EMIT provides wholistic development of influential leaders, increasing their effectiveness to transform every segment of society.</p>
+			</div>
+			<div class="sectionContent infoPoints">
+				<div class="point">
+					<span class="icon"><i data-feather="check-circle"></i></span>
+					<h3 class="pointTitle editable">OVER A MILLION LEADERS</h3>
+					<p class="pointContent editable">470 000 leaders in 17 countries - each leader enlists a team of ten influencers.</p>
+				</div>
+				<div class="point">
+					<span class="icon"><i data-feather="check-circle"></i></span>
+					<h3 class="pointTitle editable">REACHING INTO REMOTE AREAS</h3>
+					<p class="pointContent editable">Proven longevity in the development of indigenous leaders reaches into the remotest areas of Africa.</p>
+				</div>
+				<div class="point">
+					<span class="icon"><i data-feather="check-circle"></i></span>
+					<h3 class="pointTitle editable">IMPACTING ALL SPHERES OF SOCIETY</h3>
+					<p class="pointContent editable">Influential leaders from all spheres of society exposed to our material.</p>
+				</div>
+				<div class="point">
+					<span class="icon"><i data-feather="check-circle"></i></span>
+					<h3 class="pointTitle editable">27 YEARS EXPERIENCE</h3>
+					<p class="pointContent editable">We are experienced and effective at changing communities in Africa</p>
+				</div>
+				<div class="point">
+					<span class="icon"><i data-feather="check-circle"></i></span>
+					<h3 class="pointTitle editable">MULTIPLICATION IMPACT</h3>
+					<p class="pointContent editable">Our leaders develop at least 10 other leaders.</p>
+				</div>
+				<div class="point">
+					<span class="icon"><i data-feather="check-circle"></i></span>
+					<h3 class="pointTitle editable">UNIQUE DEVELOPMENT MODEL</h3>
+					<p class="pointContent editable">Unique development model in 8 major languages</p>
+				</div>
+			</div>
+		</div>
+	</section>
 
+	<!-- MOTIVATION -->
+	<section class="pageSection motivation">
+		<div class="container max-container">
+			<div class="sectionImage" style="background-image:url({{site.baseurl}}/images/Anna.webp);">
+			</div>
+			<div class="sectionIntro">
+				<h2 class="sectionTitle priority1 editable"><span class="emphasis">IMAGINE</span><br>how her life can be<br><span class="emphasis">TRANSFORMED</span></h2>
+				<p editable>if we can equip <br>her decision-makers, <br>her role-models, <br>her leaders.</p>
+				<div class="underlineIntro"></div>
+				<p class="editable">Africa's leaders have the power to transform lives.</p>
+				<div class="callToAction">
+					<a href="{{site.baseurl}}/get-involved/" class="button">Get Involved</a>
+					<a href="{{site.baseurl}}/donate/" class="button primary">Donate</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- VISSION MISSION -->
+	<section class="pageSection goal">
+		<div class="container">
+			<div class="sectionIntro">
+				<h2 class="sectionTitle priority2 editable">The <span class="emphasis">GOAL</span></h2>
+				<p editable>EQUIPPED LEADERS who improve well-being within their spheres of impact.</p>
+				<p>They are <span class="emphasis">mentors</span> that <span class="emphasis">multiply themselves</span> by imparting skills and life-changing values.</p>
+				{% include articleLink.html %}
+			</div>
+			<div class="sectionContent infoPoints">
+				<p class="editor-link" style="text-align: center; position: relative;">
+					<a href="cloudcannon:collections/_programs/" class="btn"><strong>&#9998;</strong> Manage Programs</a>
+				</p>
+				{% for program in site.programs %}
+				<div class="point">
+					<span class="icon"><i data-feather="target"></i></span>
+					<h3 class="pointTitle">{{program.title}}</h3>
+					<p class="pointContent">{{program.objective}}</p>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+	</section>
+</div>
