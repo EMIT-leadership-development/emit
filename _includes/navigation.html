@@ -1,16 +1,51 @@
-<nav>
-	<a class="nav-toggle" id="open-nav" href="#">&#9776;</a>
-	{% for link in site.data.navigation %}
-		{% assign class = "" %}
-		{% if link.highlight %}
-			{% assign class = class | append: " highlight" %}
-		{% endif %}
-
-		{% if link.link == page.url %}
+<div class="nav-btn">
+	<div class="nav-links">
+		<!-- Todo: on small screens show nested list on click instead of hover -->
+		<!-- Because we're looping the html we've lost the staggered animation on small screens -->
+		<!-- Todo: hovering sublist on small screen not working - can't hover past the sublist -->
+		<ul>
+			{% for link in site.data.navigation %}
+			{% assign class = "" %}
+			{% if link.highlight %}
+				{% assign class = class | append: " highlight" %}
+			{% endif %}
+			{% if link.link == page.url %}
 			{% assign class = class | append: " active" %}
-		{% endif %}
-		<a href="{% include relative-src.html src=link.link %}" class="{{ class }}" {% if link.new_window %}target="_blank"{% endif %}>{{ link.name }}</a>
-	{% endfor %}
-	<a class="editor-link btn" href="cloudcannon:collections/_data/navigation.yml" class="btn" title="Edit navigation"><strong>&#9998;</strong></a>
-	<a href="#" class="cart snipcart-checkout"><i class="material-icons">shopping_cart</i></a>
-</nav>
+			{% endif %}
+			<li class="nav-link" style="--i: .6s">
+				<a href="{% include relative-src.html src=link.link %}" class="{{ class }}">{{ link.name }}</a>
+				{% if link.subPages %}
+				<div class="dropdown">
+					<ul>
+						{% for link in link.subPages %}
+						<li class="dropdown-link">
+							<a href="{% include relative-src.html src=link.link %}">{{ link.name }} {% if link.subPages %}<i data-feather="chevron-down">{% endif %}</i></a>
+							{% if link.subPages %}
+							<div class="dropdown second">
+								<ul>
+									{% for link in link.subPages %}
+									<li class="dropdown-link">
+										<a href="{{ link.name }}">{{ link.name }} {% if link.subPages %}<i data-feather="chevron-down">{% endif %}</a>
+										<!-- Note: the styling allows for another nested level -->
+										<!-- Left it out because nav becomes too complex -->
+										</li>
+									{% endfor %}
+									<div class="arrow"></div>
+								</ul>
+							</div>
+							{% endif %}
+						</li>
+						{% endfor %}
+					</ul>
+				</div>
+				{% endif %}
+			</li>
+			{% endfor %}
+		</ul>
+	</div>
+
+	<div class="log-sign" style="--i: 1.8s">
+		<a href="#" class="button secondary">Log in</a>
+		<a href="#" class="button primary">Donate</a>
+	</div>
+</div>

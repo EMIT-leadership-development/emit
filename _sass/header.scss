@@ -14,6 +14,9 @@ header.mainNavigation{
     }
     a{
         text-decoration: none;
+        &.active {
+            color: #000000 !important;
+        }
     }
     .container{
         width: 100%;
@@ -50,26 +53,15 @@ header.mainNavigation{
         flex: 1;
     }
 
-    .btn{
+    .button{
         display: inline-block;
+        // Have to put padding in here
+        // because all margins and paddings were set to 0 in the header container
+        // which overrides the buttons styles from form.scss
         padding: .5rem 1.3rem;
-        font-size: .8rem;
-        border: 2px solid #fff;
-        border-radius: 2rem;
-        line-height: 1;
         margin: 0 .2rem;
         transition: .3s;
         text-transform: uppercase;
-    }
-
-    .btn.solid, .btn.transparent:hover{
-        background-color: #fff;
-        color: #69bde7;
-    }
-
-    .btn.transparent, .btn.solid:hover{
-        background-color: transparent;
-        color: #fff;
     }
 
     .nav-links > ul{
@@ -123,7 +115,7 @@ header.mainNavigation{
     .dropdown-link > a{
         display: flex;
         background-color: #fff;
-        color: #3498db;
+        color: rgba(0,0,0,0.7);
         padding: .5rem 1rem;
         font-size: .9rem;
         align-items: center;
@@ -132,7 +124,7 @@ header.mainNavigation{
     }
 
     .dropdown-link:hover > a{
-        background-color: #3498db;
+        background-color: $brandContrastDark;
         color: #fff;
     }
 
@@ -158,7 +150,7 @@ header.mainNavigation{
     }
 
     .dropdown-link:first-child:hover ~ .arrow{
-        background-color: #3498db;
+        background-color: $brandContrastDark;
     }
 
     .dropdown-link{
@@ -269,18 +261,19 @@ header.mainNavigation{
         .hamburger-menu-container{
             display: flex;
         }
-
         #check{
             display: block;
         }
-
         .nav-btn{
             position: fixed;
-            height: calc(100vh - 3rem);
-            top: 3rem;
+            // Sonya - changed this because the header is not a fixed 3rem - it changes size with the logo
+            // height: calc(100vh - 3rem);
+            // top: 3rem;
+            top: 0;
+            height: 100%;
             left: 0;
             width: 100%;
-            background-color: #69bde7;
+            background-color: $brandContrastDark;
             flex-direction: column;
             align-items: center;
             justify-content: space-between;
@@ -289,39 +282,34 @@ header.mainNavigation{
             transform: translateX(100%);
             transition: .65s;
         }
-
         #check:checked ~ .nav-btn{
             transform: translateX(0);
         }
-
         #check:checked ~ .nav-btn .nav-link,
         #check:checked ~ .nav-btn .log-sign{
             animation: animation .5s ease forwards var(--i);
         }
-
         .nav-links{
             flex: initial;
             width: 100%;
         }
-
         .nav-links > ul{
             flex-direction: column;
         }
-
         .nav-link{
             width: 100%;
             opacity: 0;
             transform: translateY(15px);
         }
-
         .nav-link > a{
             line-height: 1;
             padding: 1.6rem 2rem;
+            color: rgba(255,255,255,0.7);
         }
 
         .nav-link:hover > a{
             transform: scale(1);
-            background-color: #50a9d6;
+            background-color: lighten($brandContrastDark, 10%);
         }
 
         .dropdown, .dropdown.second{
@@ -333,7 +321,7 @@ header.mainNavigation{
             pointer-events: auto;
             width: 100%;
             padding: 0;
-            background-color: #3183ac;
+            background-color: lighten($brandContrastDark, 15%);
             display: none;
         }
 
@@ -368,14 +356,14 @@ header.mainNavigation{
 
         .arrow{
             z-index: 1;
-            background-color: #69bde7;
+            background-color: $brandContrastDark;
             left: 10%;
             transform: scale(1.1) rotate(45deg);
             transition: .5s;
         }
 
         .nav-link:hover .arrow{
-            background-color: #50a9d6;
+            background-color: lighten($brandContrastDark, 10%);
         }
 
         .dropdown .dropdown .arrow{
@@ -383,11 +371,11 @@ header.mainNavigation{
         }
 
         .dropdown-link:hover > a{
-            background-color: #3a91bd;
+            background-color: lighten($brandContrastDark, 20%);
         }
 
         .dropdown-link:first-child:hover ~ .arrow{
-            background-color: #50a9d6;
+            background-color: lighten($brandContrastDark, 10%);
         }
 
         .nav-link > a > i{
