@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Next Steps"
+title: "NEXT STEPS"
 subtitle: "2020 and beyond"
 headerImg: "/road.jpg"
-author: "Kobus Grobler"
+author: Kobus
 authorImg: "team/KobusSmall.jpg"
 tags: EMIT transformation Africa Leadership Training
 category: About EMIT

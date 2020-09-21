@@ -3,7 +3,7 @@ layout: post
 title: "How we do it"
 subtitle: " A network of leaders reaching into the remotest areas of Africa."
 headerImg: "about/meetingUnderTree.webp"
-author: "Theo Faber"
+author: Theo
 authorImg: "team/TheoSmall.jpg"
 tags: EMIT transformation Africa Leadership Training
 category: About EMIT
