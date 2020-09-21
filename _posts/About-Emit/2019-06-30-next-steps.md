@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "NEXT STEPS"
+title: "Next Steps"
 subtitle: "2020 and beyond"
 headerImg: "/road.jpg"
 author: Kobus
