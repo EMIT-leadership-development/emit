@@ -3,8 +3,8 @@ layout: post
 title: "AFMIN to EMIT"
 subtitle: "Why we decided to change our name"
 headerImg: "blog/articles/fetchingWater.webp"
-author: "Kobus Grobler"
-authorImg: "team/KobusSmall.jpg"
+author: Kobus
+# authorImg: "team/KobusSmall.jpg"
 tags: EMIT transformation Africa Leadership Training
 category: About EMIT
 excerpt_separator: <!--more-->
