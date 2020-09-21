@@ -1,12 +1,12 @@
-- name: Home
-  link: /
-  new_window: false
-  highlight: false
 - name: About
   link: /about/
   new_window: false
   highlight: false
   subPages:
+    - name: About Us
+      link: /about/
+      new_window: false
+      highlight: false
     - name: Articles
       link: /articles/about-emit/
       new_window: false
@@ -38,6 +38,40 @@
       highlight: false
     - name: Board
       link: /board/
+      new_window: false
+      highlight: false
+- name: Training
+  link: /training/
+  new_window: false
+  highlight: false
+  subPages:
+    - name: EMIT Training
+      link: /training/
+      new_window: false
+      highlight: false
+    - name: Women Leaders
+      link: /programs/women-leaders/
+      new_window: false
+      highlight: false
+    - name: Church Leaders
+      link: /programs/church-leaders/
+      new_window: false
+      highlight: false
+- name: Stories
+  link: /articles/
+  new_window: false
+  highlight: false
+- name: Donate
+  link: /donate/
+  new_window: false
+  highlight: false
+  subPages:
+    - name: Donate
+      link: /donate/
+      new_window: false
+      highlight: false
+    - name: Get Involved
+      link: /get-involved/
       new_window: false
       highlight: false
 - name: Contact
