@@ -108,6 +108,27 @@ p.introduction {
 		margin: 0 0 30px 0;
 	}
 }
+// Author with impact spheres
+// Used in a few places
+.authorImage {
+	img {
+		border-radius: 50%;
+		width: 100%;
+	}
+	.sphere {
+		padding: 0.5rem;
+		border: 1px solid $brand-color;
+		border-radius: 50%;
+		background-color: transparent;
+		transition: all 0.5s linear;
+	}
+}
+// Byline used in a few places
+.byline {
+	width: 100%;
+	font-size: 0.9rem;
+	margin-bottom: 15px;
+}
 // aside: Article Link will be used in a few places on the site
 .articleLink {
 	@media #{$mid-point} {
@@ -122,13 +143,6 @@ p.introduction {
 	display: grid;
 	grid-gap: 10px;
 	grid-template-columns: 120px auto;
-	.sphere {
-		padding: 0.5rem;
-		border: 1px solid $brand-color;
-		border-radius: 50%;
-		background-color: transparent;
-		transition: all 0.5s linear;
-	}
 	&:hover {
         .sphere1 {
             background-color: $sphere1BG;
@@ -140,13 +154,6 @@ p.introduction {
             background-color: $sphere3BG;
         }
     }
-
-	.authorImage {
-		img {
-			border-radius: 50%;
-			width: 100%;
-		}
-	}
 	.articleInfo {
 		display: flex;
 		flex-direction: column;
@@ -161,10 +168,6 @@ p.introduction {
 			color: darken($brandContrastLight, 90%);
 			margin-bottom: 15px;
 			margin-top: 0;
-		}
-		.byline {
-			width: 100%;
-			font-size: 0.8rem;
 		}
 	}
 }
@@ -213,6 +216,76 @@ p.introduction {
 	}
 }
 
+// Video player section (layout is in layout.scss
+.videoPlayer {
+	a {
+		color: lighten($brandContrastLight, 80%);
+		&:hover {
+			text-decoration: none;
+		}
+	}
+	background-attachment: fixed;
+	background-size: cover;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	span {
+		font-size: 3rem;
+		font-weight: 300;
+		text-transform: uppercase;
+		color: #ffffff;
+		text-align: center;
+		display: flex;
+		  justify-content: center;
+		align-items: center;
+		@media #{$mid-point} {
+			&:first-of-type {
+				justify-content: flex-end;
+			}
+			&:last-of-type {
+				justify-content: flex-start;
+			}
+		}
+	}
+	.icon {
+		text-align: center;
+		svg {
+			width: 5rem;
+			height: 5rem;
+			stroke: #ffffff;
+			stroke-width: 0.6px;
+		}
+	}
+}
+.featuredStories {
+	.sectionImage {
+		position: relative;
+		height: 200px;
+		&:before {
+			content: "";
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			background-color: rgba(0,0,0,0.2);
+		}
+		.authorImage {
+			width: 40%;
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			margin-bottom: -15%;
+			margin-right: -10%;
+		}
+	}
+	h3 {
+		font-size: 1.2rem;
+		margin-top: 15px;
+		margin-bottom: 10px;
+		max-width: 70%;
+	}
+}
+
 // Blockquote - orignal styling - to be redone
 blockquote {
 	padding: 18px 25px;
@@ -236,7 +309,6 @@ blockquote {
 		display: inline;
 	}
 }
-
 blockquote .quote:before,
 blockquote .quote:after {
 	color: #ccc;

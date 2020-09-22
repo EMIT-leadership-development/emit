@@ -2,7 +2,7 @@
 layout: post
 title: "Transformational Leadership"
 subtitle: "Why we focus on leadership development"
-headerImg: "blog/articles/AfricanLeaderPlanning.webp"
+heroImage: "AfricanLeaderPlanning.webp"
 author: Johan
 authorImg: "team/JohanLarge.jpg"
 tags: EMIT transformation Africa Leadership Training

@@ -223,15 +223,14 @@ subtitle: What we do and how we do it
 
 	<!-- VIDEO PLAYER -->
 	<section class="pageSection videoPlayer sectionImage" style="background-image:url({{site.baseurl}}/images/videoBG.webp);">
-		<div class="container">
+		<a class="container" data-lbxp-video href="{{ site.baseurl }}/video/BB-EMIT-30s_x264.mp4">
 				<span>It's Working</span>
 				<span class="icon"><i data-feather="play-circle"></i></span>
 				<span>Watch!</span>
-		</div>
+		</a>
 	</section>
 
 	<!-- IT'S WORKING -->
-	<!-- MOTIVATION -->
 	<section class="pageSection motivation">
 		<div class="container">
 			<div class="sectionImage contain" style="background-image:url({{site.baseurl}}/images/smilingAnnaInAfrica.webp);">
@@ -249,6 +248,16 @@ subtitle: What we do and how we do it
 					<a href="{{site.baseurl}}/donate/" class="button primary">Donate</a>
 				</div>
 			</div>
+		</div>
+	</section>
+
+	<!-- 3 TRANSFORMATION STORIES -->
+	<section class="pageSection featuredStories">
+		<div class="container col-1-1-1">
+			{% assign featured = site.posts | where:"category","Transformation Stories" %}
+				{% for post in featured %}
+				{% include featuredPost.html %}
+			{% endfor %}
 		</div>
 	</section>
 

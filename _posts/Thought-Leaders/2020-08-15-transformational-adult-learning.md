@@ -2,7 +2,7 @@
 layout: post
 title: "Transformational Adult Learning"
 subtitle: " Adults learn much differently than children."
-headerImg: "blog/articles/helpingElderly.webp"
+heroImage: "helpingElderly.webp"
 author: Lydia
 authorImg: "team/LydiaLarge.jpg"
 tags: EMIT transformation Africa Leadership Training

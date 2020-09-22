@@ -2,7 +2,7 @@
 layout: post
 title: "The Leader as an agent for positive change"
 subtitle: "Why we do what we do"
-headerImg: "blog/articles/ElderLearning.webp"
+heroImage: "ElderLearning.webp"
 author: Borniface
 authorImg: "team/Boniface-ShongaSmall.jpg"
 tags: EMIT transformation Africa Leadership Training

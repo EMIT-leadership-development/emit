@@ -2,10 +2,8 @@
 layout: post
 title: "A lonely child’s journey to becoming a top-level advisor."
 subtitle: "Dr. Elvis Joseph - ZIMBABWE"
-headerImg: "blog/articles/manReading.webp"
-author: "Name Surname"
-authorImg: "/assets/images/team/KobusSmall.jpg"
-location: "-18.507365, 27.669320, 12"
+heroImage: african-politics-EMIT-leadership-development.webp
+author: ElvisJoseph
 tags: EMIT transformation Africa Leadership Training News
 category: Transformation Stories
 ---

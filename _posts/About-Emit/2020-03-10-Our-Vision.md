@@ -2,7 +2,7 @@
 layout: post
 title: "Our Vision"
 subtitle: "The Leadership Challenge of our Time"
-headerImg: "blog/articles/fetchingWater.webp"
+heroImage: "fetchingWater.webp"
 author: Chris
 authorImg: "team/ChrisLarge.jpg"
 tags: EMIT transformation Africa Leadership Training

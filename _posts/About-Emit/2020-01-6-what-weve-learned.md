@@ -2,7 +2,7 @@
 layout: post
 title: "What we've learned"
 subtitle: "What’s not working."
-headerImg: "blog/articles/Josef.webp"
+heroImage: "Josef.webp"
 author: Kobus
 authorImg: "team/KobusSmall.jpg"
 tags: EMIT transformation Africa Leadership Training

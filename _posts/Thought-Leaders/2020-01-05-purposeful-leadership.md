@@ -2,7 +2,7 @@
 layout: post
 title: "Purposeful Leadership"
 subtitle: " Passionate about transforming communities"
-headerImg: "blog/articles/nurse.webp"
+heroImage: "nurse.webp"
 author: Johan
 authorImg: "team/JohanSmall.jpg"
 tags: EMIT transformation Africa Leadership Training
