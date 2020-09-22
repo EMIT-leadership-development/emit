@@ -8,42 +8,44 @@ subtitle: What we do and how we do it
 <div class="page about">
 	<!-- VISSION MISSION -->
 	<section class="pageSection visionMission">
-		<div class="container">
+		<div class="container col-2-3">
 			<div class="sectionIntro">
 				<h2 class="sectionTitle priority2 editable">Transforming Nations<br><span class="emphasis">by developing leaders</span></h2>
-				<p editable>EMIT provides wholistic development of influential leaders, increasing their effectiveness to transform every segment of society.</p>
+				<p class="editable introduction">EMIT provides wholistic development of influential leaders, increasing their effectiveness to transform every segment of society.</p>
 			</div>
-			<div class="sectionContent infoPoints">
-				<div class="point">
-					<span class="icon"><i data-feather="check-circle"></i></span>
-					<h3 class="pointTitle editable">OVER A MILLION LEADERS</h3>
-					<p class="pointContent editable">470 000 leaders in 17 countries - each leader enlists a team of ten influencers.</p>
-				</div>
-				<div class="point">
-					<span class="icon"><i data-feather="check-circle"></i></span>
-					<h3 class="pointTitle editable">REACHING INTO REMOTE AREAS</h3>
-					<p class="pointContent editable">Proven longevity in the development of indigenous leaders reaches into the remotest areas of Africa.</p>
-				</div>
-				<div class="point">
-					<span class="icon"><i data-feather="check-circle"></i></span>
-					<h3 class="pointTitle editable">IMPACTING ALL SPHERES OF SOCIETY</h3>
-					<p class="pointContent editable">Influential leaders from all spheres of society exposed to our material.</p>
-				</div>
-				<div class="point">
-					<span class="icon"><i data-feather="check-circle"></i></span>
-					<h3 class="pointTitle editable">27 YEARS EXPERIENCE</h3>
-					<p class="pointContent editable">We are experienced and effective at changing communities in Africa</p>
-				</div>
-				<div class="point">
-					<span class="icon"><i data-feather="check-circle"></i></span>
-					<h3 class="pointTitle editable">MULTIPLICATION IMPACT</h3>
-					<p class="pointContent editable">Our leaders develop at least 10 other leaders.</p>
-				</div>
-				<div class="point">
-					<span class="icon"><i data-feather="check-circle"></i></span>
-					<h3 class="pointTitle editable">UNIQUE DEVELOPMENT MODEL</h3>
-					<p class="pointContent editable">Unique development model in 8 major languages</p>
-				</div>
+			<div class="sectionContent">
+				<ul class="infoPoints">
+					<li class="point">
+						<span class="icon"><i data-feather="check-circle"></i></span>
+						<h3 class="pointTitle editable">OVER A MILLION LEADERS</h3>
+						<p class="pointContent editable">470 000 leaders in 17 countries - each leader enlists a team of ten influencers.</p>
+					</li>
+					<li class="point">
+						<span class="icon"><i data-feather="check-circle"></i></span>
+						<h3 class="pointTitle editable">REACHING INTO REMOTE AREAS</h3>
+						<p class="pointContent editable">Proven longevity in the development of indigenous leaders reaches into the remotest areas of Africa.</p>
+					</li>
+					<li class="point">
+						<span class="icon"><i data-feather="check-circle"></i></span>
+						<h3 class="pointTitle editable">IMPACTING ALL SPHERES OF SOCIETY</h3>
+						<p class="pointContent editable">Influential leaders from all spheres of society exposed to our material.</p>
+					</li>
+					<li class="point">
+						<span class="icon"><i data-feather="check-circle"></i></span>
+						<h3 class="pointTitle editable">27 YEARS EXPERIENCE</h3>
+						<p class="pointContent editable">We are experienced and effective at changing communities in Africa</p>
+					</li>
+					<li class="point">
+						<span class="icon"><i data-feather="check-circle"></i></span>
+						<h3 class="pointTitle editable">MULTIPLICATION IMPACT</h3>
+						<p class="pointContent editable">Our leaders develop at least 10 other leaders.</p>
+					</li>
+					<li class="point">
+						<span class="icon"><i data-feather="check-circle"></i></span>
+						<h3 class="pointTitle editable">UNIQUE DEVELOPMENT MODEL</h3>
+						<p class="pointContent editable">Unique development model in 8 major languages</p>
+					</li>
+				</ul>
 			</div>
 		</div>
 	</section>
@@ -55,8 +57,8 @@ subtitle: What we do and how we do it
 			</div>
 			<div class="sectionIntro">
 				<h2 class="sectionTitle priority1 editable"><span class="emphasis">IMAGINE</span><br>how her life can be<br><span class="emphasis">TRANSFORMED</span></h2>
-				<p editable>if we can equip <br>her decision-makers, <br>her role-models, <br>her leaders.</p>
-				<div class="underlineIntro"></div>
+				<p class="editable introduction">if we can equip <br>her decision-makers, <br>her role-models, <br>her leaders.</p>
+				<hr class="seperationLine">
 				<p class="editable">Africa's leaders have the power to transform lives.</p>
 				<div class="callToAction">
 					<a href="{{site.baseurl}}/get-involved/" class="button">Get Involved</a>
@@ -66,35 +68,189 @@ subtitle: What we do and how we do it
 		</div>
 	</section>
 
-	<!-- VISSION MISSION -->
+	<!-- THE GOAL -->
 	<section class="pageSection goal">
-		<div class="container">
+		<div class="container col-2-3">
 			<div class="sectionIntro">
 				<h2 class="sectionTitle priority2 editable">The <span class="emphasis">GOAL</span></h2>
-				<p editable>EQUIPPED LEADERS who improve well-being within their spheres of impact.</p>
-				<p>They are <span class="emphasis">mentors</span> that <span class="emphasis">multiply themselves</span> by imparting skills and life-changing values.</p>
+				<p class="editable introduction">EQUIPPED LEADERS who improve well-being within their spheres of impact.</p>
+				<p class="editable">They are <span class="emphasis">mentors</span> that <span class="emphasis">multiply themselves</span> by imparting skills and life-changing values.</p>
+
+				{% assign thepost = site.posts | where:"title","Our Vision" %}
+				{% for post in thepost %}
 				{% include articleLink.html %}
+				{% endfor %}
+
 			</div>
-			<div class="sectionContent infoPoints">
+			<div class="sectionContent">
 				<p class="editor-link" style="text-align: center; position: relative;">
 					<a href="cloudcannon:collections/_programs/" class="btn"><strong>&#9998;</strong> Manage Programs</a>
 				</p>
-				{% for program in site.programs %}
-				<div class="point">
-					<span class="icon"><i data-feather="target"></i></span>
-					<h3 class="pointTitle">{{program.title}}</h3>
-					<p class="pointContent">{{program.objective}}</p>
-				</div>
-				{% endfor %}
+				<ul class="infoPoints">
+					{% for program in site.programs %}
+					<li class="point">
+						<span class="icon"><i data-feather="target"></i></span>
+						<h3 class="pointTitle editable">{{program.title}}</h3>
+						<p class="pointContent editable">{{program.objective}}</p>
+					</li>
+					{% endfor %}
+				</ul>
 			</div>
 		</div>
 	</section>
 
-	<section>
-		{% for post in site.posts %}
-		<div class="container">
-			<p><a style="color:#000000;" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></p>
+	<!-- WHAT WE DO -->
+	<section class="pageSection whatWeDo">
+		<div class="container max-container col-2-3">
+			<div class="sectionImage" style="background-image:url({{site.baseurl}}/images/businessMan.webp);">
+			</div>
+			<div class="sectionIntro">
+				<h2 class="sectionTitle priority2 editable"><span class="emphasis">What</span> we do</h2>
+				<p editable>By focusing on spiritual, character, leadership and professional skills development, we educate and inspire leaders in various pillars of society to become agents of change in their communities and nations.</p>
+				<div class="relatedArticles">
+					{% assign thepost = site.posts | where:"title","What we do" %}
+					{% for post in thepost %}
+					{% include articleLink.html %}
+					{% endfor %}
+
+					{% assign thepost = site.posts | where:"title","Purposeful Leadership" %}
+					{% for post in thepost %}
+					{% include articleLink.html %}
+					{% endfor %}
+				</div>
+				<ul class="infoPoints">
+					<li class="point">
+						<span class="icon"><i data-feather="check-circle"></i></span>
+						<h3 class="pointTitle editable">Purposeful Leadership</h3>
+						<p class="pointContent editable">Our students are vibrant, dynamic and committed leaders with a passion for influencing and transforming their communities. Read the article: Purposeful Leadership</p>
+					</li>
+					<li class="point">
+						<span class="icon"><i data-feather="check-circle"></i></span>
+						<h3 class="pointTitle editable">Change Agents</h3>
+						<p class="pointContent editable">We exist to bring about transformation in a continent that desperately needing new answers for old problems.</p>
+					</li>
+					<li class="point">
+						<span class="icon"><i data-feather="check-circle"></i></span>
+						<h3 class="pointTitle editable">Multiplication</h3>
+						<p class="pointContent editable">When students enroll, we require them to identify at least ten leaders from their communities to mentor.</p>
+					</li>
+					<li class="point">
+						<span class="icon"><i data-feather="check-circle"></i></span>
+						<h3 class="pointTitle editable">Application</h3>
+						<p class="pointContent editable">Our leadership programs are designed to support the practical application of knowledge in the African context.</p>
+					</li>
+				</ul>
+			</div>
 		</div>
-		{% endfor %}
 	</section>
+
+	<!-- HOW WE DO IT -->
+	<section class="pageSection howWeDoIt">
+		<div class="container max-container col-2-3">
+			<div class="sectionIntro">
+				<h2 class="sectionTitle priority2 editable"><span class="emphasis">How</span> we do it</h2>
+				<p class="editable introduction">A <span class="emphasis">NETWORK OF INFLUENCERS</span> reaching into the remotest areas of Africa</p>
+				<p class="editable">The EMIT strategy is unique, and IT WORKS! We developed an indigenous curriculum for leaders within different spheres of influence. Our material encompasses three main areas:</p>
+				<p class="editable">
+					- Spiritual and character development
+					<br>- Leadership development
+					<br>- Professional Skills development
+				</p>
+				{% assign thepost = site.posts | where:"title","How we do it" %}
+				{% for post in thepost %}
+				{% include articleLink.html %}
+				{% endfor %}
+			</div>
+			<div class="sectionImage" style="background-image:url({{site.baseurl}}/images/meetingUnderTree.webp);">
+			</div>
+		</div>
+	</section>
+
+	<!-- HOW WE DO IT - POINTS -->
+	<section class="pageSection howWeDoItPoints">
+		<div class="container max-container max-content">
+			<div class="sectionContent">
+				<ul class="infoPoints col-1-1-1">
+					<li class="point">
+						<span class="icon"><i data-feather="info"></i></span>
+						<h3 class="pointTitle editable">Understanding infuence</h3>
+						<p class="pointContent editable">Understanding that all leaders have influence is the foundation of the EMIT strategy. All leaders can inspire others to action and change.</p>
+					</li>
+					<li class="point">
+						<span class="icon"><i data-feather="user-check"></i></span>
+						<h3 class="pointTitle editable">Believe in the indigenous leader</h3>
+						<p class="pointContent editable">The indigenous leader is at the center of the solution for the problems of Africa. Africa doesn’t need charity - she needs quality leaders.</p>
+					</li>
+					<li class="point">
+						<span class="icon"><i data-feather="map-pin"></i></span>
+						<h3 class="pointTitle editable">Indigenous training facility</h3>
+						<p class="pointContent editable">EMIT was birthed in Africa by Africans. More than 90% of our training faculty is African - our teachers understand the continent and its people. They teach from personal experience.</p>
+					</li>
+					<li class="point">
+						<span class="icon"><i data-feather="message-circle"></i></span>
+						<h3 class="pointTitle editable">Changing the narrative</h3>
+						<p class="pointContent editable">Africa is rising. To an outside observer, the change may seem slow, but to us on the ground, it is becoming continuously more and more evident that something radical is happening. This change that we initiated has a life of its own. We are picking up speed! Africa is rewriting her narrative as the continent of opportunity.</p>
+					</li>
+					<li class="point">
+						<span class="icon"><i data-feather="file-text"></i></span>
+						<h3 class="pointTitle editable">Unique Curriculum</h3>
+						<p class="pointContent editable">The EMIT curriculum has been developed over almost 30 years by Africans. It demonstrates an understanding of the African culture, people and challenges. We approach these with clarity and wisdom. The curriculum addresses the complete person by focussing on spiritual, character, leadership and skills development.</p>
+					</li>
+					<li class="point">
+						<span class="icon"><i data-feather="share-2"></i></span>
+						<h3 class="pointTitle editable">Multiplication Impact</h3>
+						<p class="pointContent editable">EMIT students are required to multiply themselves by enlisting at least ten other leaders and equipping them with the same training-material. This multiplication-methodology impacts communities that would otherwise be far beyond the reach of conventional training institutions.</p>
+					</li>
+					<li class="point">
+						<span class="icon"><i data-feather="users"></i></span>
+						<h3 class="pointTitle editable">Taking responsibility</h3>
+						<p class="pointContent editable">Change must come from within. We challenge our leaders to take responsibility to implement change and not become dependent on external support.</p>
+					</li>
+					<li class="point">
+						<span class="icon"><i data-feather="globe"></i></span>
+						<h3 class="pointTitle editable">Huge footprint</h3>
+						<p class="pointContent editable">EMIT has trained over 450 000 leaders in 27 years. We are an established brand with a proven impact for change in communities across the continent.</p>
+					</li>
+					<li class="point">
+						<span class="icon"><i data-feather="award"></i></span>
+						<h3 class="pointTitle editable">27 years of experience</h3>
+						<p class="pointContent editable">EMIT has proven longevity in training leaders in Africa, giving us an advantage over others that have little or no knowledge of the continent, its culture, diversity, and challenges.</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<!-- VIDEO PLAYER -->
+	<section class="pageSection videoPlayer sectionImage" style="background-image:url({{site.baseurl}}/images/videoBG.webp);">
+		<div class="container">
+				<span>It's Working</span>
+				<span class="icon"><i data-feather="play-circle"></i></span>
+				<span>Watch!</span>
+		</div>
+	</section>
+
+	<!-- IT'S WORKING -->
+	<!-- MOTIVATION -->
+	<section class="pageSection motivation">
+		<div class="container">
+			<div class="sectionImage contain" style="background-image:url({{site.baseurl}}/images/smilingAnnaInAfrica.webp);">
+			</div>
+			<div class="sectionIntro">
+				<h2 class="sectionTitle priority1 editable">17 COUNTRIES<br><span class="emphasis">8 LANGUAGES</span><br>470 000 STUDENTS</h2>
+				<hr class="seperationLine">
+				<p class="editable">Paragraph describing EMIT's traction.Convallis voluptates, consequat convallis veritatis fugit posuere expedita semper? Placerat nibh libero aliqua sapiente exercitation. </p>
+				<p class="editable">Magnam voluptas libero expedita possimus, vitae, cumque ab voluptate quisquam quibusdam, magnam? Interdum consequuntur fugiat, consequuntur, maiores suscipit, architecto lobortis.</p>
+				<p class="editable introduction">
+					EXPLORE THE TRANSFORMATION STORIES!
+				</p>
+				<div class="callToAction">
+					<a href="{{site.baseurl}}/articles/" class="button">Explore</a>
+					<a href="{{site.baseurl}}/donate/" class="button primary">Donate</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
 </div>

@@ -420,3 +420,28 @@ section.hero{
         background-color: rgba(0,0,0,0.6);
     }
 }
+
+// Originally from the layout scss file
+// Perhaps move hero stuff to header.scss
+
+// .hero {
+// 	color: #ffffff;
+// 	text-align: center;
+// 	position: relative;
+// 	z-index: 99;
+// 	h2 {
+// 		font-size: 3.2rem;
+// 		line-height: 1.5;
+// 		font-weight: bold;
+// 	}
+
+// 	@media (min-width: 500px) {
+// 		h2 {
+// 			font-size: 3.5rem;
+// 		}
+// 	}
+
+// 	p {
+// 		color: #fff;
+// 	}
+// }

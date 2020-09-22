@@ -1,11 +1,13 @@
 html, body {
 	margin: 0;
 	padding: 0;
+	font-size: 16px;
 }
 
 body {
 	font-family: "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 	-webkit-font-smoothing: antialiased;
+	color: darken($brandContrastLight, 80%);
 }
 
 a {
@@ -21,19 +23,15 @@ img {
 	max-width: 100%;
 }
 
-h1 strong, h2 strong {
-	font-weight: 700;
-}
-
 h1 {
 	font-weight: 300;
-	font-size: 2.3em;
+	font-size: 2.3rem;
 	margin: 0;
 }
 
 h2 {
 	font-weight: 300;
-	font-size: 2.2em;
+	font-size: 2.2rem;
 	margin: 0;
 }
 
@@ -44,19 +42,211 @@ h3 {
 
 h4 {
 	font-size: 1.4rem;
+}
 
+p, address, label, ul {
+	font-size: 1rem;
+	margin: 0 0 30px 0;
+	line-height: 1.4em;
+}
+
+ul {
+	padding-left: 0;
+	margin: 0 0 30px 0;
+}
+
+h1, h2, h3, h4 {
+	color: darken($brandContrastLight, 90%);
+	margin: 0 0 30px 0;
+	.emphasis {
+		font-weight: 600;
+	}
 	a {
 		color: #000;
 	}
 }
 
-p, address, label, ul {
-	font-size: 1.2rem;
-	color: #666;
-	margin-bottom: 20px;
-	line-height: 1.4em;
+// -------------------THEME ELEMENT STYLES FROM HERE----------------------
+
+// Section Headings and flourishes
+.sectionTitle.priority1 {
+	padding: 0;
+	font-size: 3em;
+	font-weight: 300;
+}
+.sectionTitle.priority2 {
+	padding: 22px 25px 24px 25px;
+	border-left: #4b4e53 2px solid;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+.seperationLine {
+	margin: 0 80% 60px 0;
+	border-top: 2px solid rgba(0,0,0,0.6);
+	display: block;
+}
+.fullSeperationLine {
+	margin: 0 5% 60px 5%;
+	border-top: 2px solid rgba(0,0,0,0.1);
+	display: block;
+}
+p, address, label, ul, div  {
+	.emphasis {
+		font-weight: 500;
+	}
+}
+// a paragraph with emphasis
+p.introduction {
+	font-size: 1.5rem;
 }
 
-ul {
-	padding-left: 1em;
+// When I want to display a grid of related articles
+.relatedArticles {
+	@media #{$mid-point} {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		margin: 0 0 30px 0;
+	}
+}
+// aside: Article Link will be used in a few places on the site
+.articleLink {
+	@media #{$mid-point} {
+		margin-left: -30px;
+	}
+	color: darken($brandContrastLight, 80%);
+	text-decoration: none;
+	&:hover {
+		text-decoration: none;
+	}
+	margin: 0 0 30px 0;
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: 120px auto;
+	.sphere {
+		padding: 0.5rem;
+		border: 1px solid $brand-color;
+		border-radius: 50%;
+		background-color: transparent;
+		transition: all 0.5s linear;
+	}
+	&:hover {
+        .sphere1 {
+            background-color: $sphere1BG;
+        }
+        .sphere2{
+            background-color: $sphere2BG;
+        }
+        .sphere3 {
+            background-color: $sphere3BG;
+        }
+    }
+
+	.authorImage {
+		img {
+			border-radius: 50%;
+			width: 100%;
+		}
+	}
+	.articleInfo {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		max-width: 250px;
+		.leaderLine {
+			margin-bottom: 5px;
+		}
+		.content {
+			font-weight: 500;
+			color: darken($brandContrastLight, 90%);
+			margin-bottom: 15px;
+			margin-top: 0;
+		}
+		.byline {
+			width: 100%;
+			font-size: 0.8rem;
+		}
+	}
+}
+
+// Info Points - Icon List
+.infoPoints {
+	padding-left: 0;
+	.point {
+		display: grid;
+		grid-template-columns: 40px auto;
+		grid-column-gap: 20px;
+		grid-row-gap: 10px;
+		grid-template-rows: fit-content(100px) auto;
+		@media #{$below-mid-point} {
+			margin-bottom: 30px;
+		}
+		.icon {
+			grid-row: 1 / span 2;
+			// border: 1px solid green;
+			svg {
+				width: 40px;
+				height: 40px;
+				stroke-width: 0.7px;
+			}
+		}
+		.pointTitle {
+			font-size: 1.1rem;
+			line-height: 1.5;
+			font-weight: 600;
+			padding: 0;
+			margin: 0;
+			text-transform: uppercase;
+		}
+		.pointContent {
+			padding: 0;
+			margin: 0;
+		}
+	}
+	@media #{$mid-point} {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 30px;
+		&.col-1-1-1 {
+			grid-template-columns: 1fr 1fr 1fr;
+		}
+	}
+}
+
+// Blockquote - orignal styling - to be redone
+blockquote {
+	padding: 18px 25px;
+	margin: 0 auto;
+	quotes: "\201C""\201D""\2018""\2019";
+	font-style: italic;
+	line-height: 2.5;
+	font-size: 1.1em;
+	max-width: 900px;
+
+	.author {
+		display: block;
+		font-weight: bold;
+		margin: 20px 0 0 0;
+		font-size: 1.1em;
+		font-style: normal;
+		text-align: right;
+	}
+
+	p {
+		display: inline;
+	}
+}
+
+blockquote .quote:before,
+blockquote .quote:after {
+	color: #ccc;
+	content: open-quote;
+	font-size: 4em;
+	line-height: 0.1em;
+	margin-right: 0.1em;
+	vertical-align: -0.4em;
+}
+
+blockquote .quote:after {
+	content: close-quote;
 }
