@@ -304,6 +304,23 @@ p.introduction {
 		max-width: 70%;
 	}
 }
+.counters {
+	.count {
+		padding: 30px 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		border-right: 1px solid darken($brandContrastLight, 5%);
+		&:last-of-type {
+			border-right: 0;
+		}
+		.number {
+			font-size: 3rem;
+			font-weight: 200;
+		}
+	}
+}
 
 // Blockquote - orignal styling - to be redone
 blockquote {

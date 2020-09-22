@@ -76,6 +76,9 @@ section {
 			&.col-1-1-1 {
 				grid-template-columns: 1fr 1fr 1fr;
 			}
+			&.col-1-1-1-1 {
+				grid-template-columns: 1fr 1fr 1fr 1fr;
+			}
 			.sectionIntro, .sectionContent {
 				padding: 120px 0;
 			}
@@ -101,6 +104,14 @@ section {
 				display: grid;
 				grid-template-columns: 1fr 6rem 1fr;
 				grid-gap: 1rem;
+			}
+		}
+	}
+	&.counters {
+		.container {
+			@media #{$mid-point} {
+				padding-top: 120px;
+				padding-bottom: 120px;
 			}
 		}
 	}
