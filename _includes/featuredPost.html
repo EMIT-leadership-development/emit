@@ -5,19 +5,21 @@
         {% assign author = site.data.team[post.author] %}
     {% endif %}
     <!-- If category is Transformation Stories then author image is in data file for transformationStories -->
-    <div class="sectionImage" style="background-image:url({{site.baseurl}}/images/{{post.heroImage}});">
-        <div class="authorImage">
-            <div class="sphere sphere3">
-                <div class="sphere sphere2">
-                    <div class="sphere sphere1">
-                        <img src="{{ site.baseurl }}/images/{{ author.pic }}" alt="">
+    <div class="postInfo">
+        <div class="sectionImage" style="background-image:url({{site.baseurl}}/images/{{post.heroImage}});">
+            <div class="authorImage">
+                <div class="sphere sphere3">
+                    <div class="sphere sphere2">
+                        <div class="sphere sphere1">
+                            <img src="{{ site.baseurl }}/images/{{ author.pic }}" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        <h3>{{ post.title }}</h3>
+        <div class="byline"><span class="author">- {{ author.name }}</span> on <span class="postDate">{{ post.date | date: "%d %b %Y" }}</span></div>
+        <p>{{ post.excerpt | strip_html | normalize_whitespace | truncate: 300 }}</p>
     </div>
-    <h3>{{ post.title }}</h3>
-    <div class="byline"><span class="author">- {{ author.name }}</span> on <span class="postDate">{{ post.date | date: "%d %b %Y" }}</span></div>
-    <p>{{ post.excerpt | strip_html | normalize_whitespace | truncate: 300 }}</p>
-    <a href="#" class="button">Read more</a>
+    <a href="{{ site.baseurl }}{{ post.url }}" class="button">Read more</a>
 </aside>

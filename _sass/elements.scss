@@ -257,6 +257,25 @@ p.introduction {
 	}
 }
 .featuredStories {
+	.container {
+		grid-auto-rows: 1fr;
+	}
+	.sectionContent {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		&:hover {
+			.sphere1 {
+				background-color: $sphere1BG;
+			}
+			.sphere2{
+				background-color: $sphere2BG;
+			}
+			.sphere3 {
+				background-color: $sphere3BG;
+			}
+		}
+	}
 	.sectionImage {
 		position: relative;
 		height: 200px;
