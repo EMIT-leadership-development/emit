@@ -120,4 +120,11 @@ section {
 			margin: 0 0 30px 0;
 		}
 	}
+	// The transformation author pics cause horizontal scroll on small screens
+	// overflow hidden for small screens
+	&.featuredStories {
+		@media #{$below-mid-point} {
+			overflow: hidden;
+		}
+	}
 }

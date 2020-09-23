@@ -346,6 +346,10 @@ p.introduction {
 	li {
 		background: #ffffff;
 		padding: 2rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 	};
 }
 // Modal and button
@@ -411,11 +415,15 @@ p.introduction {
 // MailChimp Form
 #mc-embedded-subscribe-form {
 	width: 100%;
-	border: 1px solid red;
+	// border: 1px solid red;
 	#mc_embed_signup_scroll {
-		border: 1px solid blue;
+		// border: 1px solid blue;
 		width: 100%;
-		display: flex;
+		@media #{$mid-point} {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr auto;
+			grid-gap: 30px;
+		}
 	}
 }
 
