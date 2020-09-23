@@ -350,6 +350,7 @@ p.introduction {
 }
 // Modal and button
 .modal {
+	visibility: hidden;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -414,8 +415,7 @@ p.introduction {
 	#mc_embed_signup_scroll {
 		border: 1px solid blue;
 		width: 100%;
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr 1fr;
+		display: flex;
 	}
 }
 
