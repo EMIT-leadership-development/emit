@@ -1,0 +1,49 @@
+---
+  - name: ECFA
+    websiteUrl: http://google.com
+    pic: "partners/EMITPartner-ECFA.jpg"
+    partnerID: 1
+    description: "A short description of this partner. The reason we're giving them a description of the partner is becuase we don't really want people clicking away from our site. We want to keep them here as long as possible. We do provide a link to the partner but it's not the first action."
+
+  - name: Excellence in Giving
+    websiteUrl: http://google.com
+    pic: "partners/EMITPartner-ExcellenceInGiving.jpg"
+    partnerID: 2
+    description: "A short description of this partner. The reason we're giving them a description of the partner is becuase we don't really want people clicking away from our site. We want to keep them here as long as possible. We do provide a link to the partner but it's not the first action."
+
+  - name: HR Trust
+    websiteUrl: http://google.com
+    pic: "partners/EMITPartner-HRTrust.jpg"
+    partnerID: 3
+    description: "A short description of this partner. The reason we're giving them a description of the partner is becuase we don't really want people clicking away from our site. We want to keep them here as long as possible. We do provide a link to the partner but it's not the first action."
+
+  - name: Mergon
+    websiteUrl: http://google.com
+    pic: "partners/EMITPartner-Mergon.jpg"
+    partnerID: 4
+    description: "A short description of this partner. The reason we're giving them a description of the partner is becuase we don't really want people clicking away from our site. We want to keep them here as long as possible. We do provide a link to the partner but it's not the first action."
+
+  - name: SATS
+    websiteUrl: http://google.com
+    pic: "partners/EMITPartner-SATS.jpg"
+    partnerID: 5
+    description: "A short description of this partner. The reason we're giving them a description of the partner is becuase we don't really want people clicking away from our site. We want to keep them here as long as possible. We do provide a link to the partner but it's not the first action."
+
+  - name: Silveus
+    websiteUrl: http://google.com
+    pic: "partners/EMITPartner-Silveus.jpg"
+    partnerID: 6
+    description: "A short description of this partner. The reason we're giving them a description of the partner is becuase we don't really want people clicking away from our site. We want to keep them here as long as possible. We do provide a link to the partner but it's not the first action."
+
+  - name: WordAndLife
+    websiteUrl: http://google.com
+    pic: "partners/EMITPartner-WordAndLife.jpg"
+    partnerID: 7
+    description: "A short description of this partner. The reason we're giving them a description of the partner is becuase we don't really want people clicking away from our site. We want to keep them here as long as possible. We do provide a link to the partner but it's not the first action."
+
+  - name: HR Trust
+    websiteUrl: http://google.com
+    pic: "partners/EMITPartner-HRTrust.jpg"
+    partnerID: 8
+    description: "A short description of this partner. The reason we're giving them a description of the partner is becuase we don't really want people clicking away from our site. We want to keep them here as long as possible. We do provide a link to the partner but it's not the first action."
+---

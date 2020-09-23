@@ -19,20 +19,22 @@ img {
 	max-width: 100%;
 }
 h1 {
-	font-weight: 300;
+	font-weight: 400;
 	font-size: 2.3rem;
 	margin: 0;
 }
 h2 {
-	font-weight: 300;
+	font-weight: 400;
 	font-size: 2.2rem;
 	margin: 0;
 }
 h3 {
+	font-weight: 400;
 	font-size: 2rem;
 	margin: 20px 0 10px 0;
 }
 h4 {
+	font-weight: 400;
 	font-size: 1.4rem;
 }
 p, address, label, ul {
@@ -52,6 +54,7 @@ ul {
 h1, h2, h3, h4 {
 	color: darken($brandContrastLight, 90%);
 	margin: 0 0 30px 0;
+	line-height: 1.2;
 	.emphasis {
 		font-weight: 600;
 	}
@@ -73,6 +76,12 @@ h1, h2, h3, h4 {
 	border-left: #4b4e53 2px solid;
 	font-weight: 300;
 	text-transform: uppercase;
+}
+.sectionTitle.priority3 {
+	// Adding a top margin to balance with partner logos
+	margin-top: 60px;
+	font-size: 1.3rem;
+	font-weight: 400;
 }
 // Horizontal divider lines
 .seperationLine {
@@ -305,6 +314,7 @@ p.introduction {
 		}
 	}
 }
+// Full width featured button
 .ctaFeatured {
 	a {
 		background: $brandContrastDark;
@@ -321,6 +331,94 @@ p.introduction {
 		}
 	}
 }
+// Partner logos
+.partnerLogos {
+	background: lighten($brandContrastDark, 75%);
+	display: grid;
+	grid-gap: 1px;
+	grid-template-columns: repeat(2, 1fr);
+	@media #{$mid-point} {
+		grid-template-columns: repeat(4, 1fr);
+	}
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	li {
+		background: #ffffff;
+		padding: 2rem;
+	};
+}
+// Modal and button
+.modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 2000;
+	display: flex;
+	justify-content: center;
+	padding: 30px;
+	@media #{$mid-point} {
+		padding: 15%;
+	}
+	.modalContent {
+		// background: red;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		&:before {
+			content: "Click anywhere to close";
+			color: #ffffff;
+			font-size: 1.3rem;
+			display: block;
+			width: 100%;
+			text-align: right;
+			padding-bottom: 5px;
+		}
+	}
+}
+.modalBtn {
+	cursor: pointer;
+}
+// More Info - can be used for most popups
+.moreInfo {
+	background: transparent;
+	border: 20px solid #ffffff;
+	padding: 5px;
+	.pic {
+		text-align: center;
+		img {
+			max-width: 150px;
+		}
+	}
+	.wrap {
+		@media #{$mid-point} {
+			display: flex;
+			align-items: stretch;
+			flex-direction: row;
+			height: 100%;
+		}
+	}
+	.content, .pic {
+		background: #ffffff;
+		padding: 30px;
+	}
+}
+// MailChimp Form
+#mc-embedded-subscribe-form {
+	width: 100%;
+	border: 1px solid red;
+	#mc_embed_signup_scroll {
+		border: 1px solid blue;
+		width: 100%;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+}
+
 
 
 
