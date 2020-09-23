@@ -3,58 +3,52 @@ html, body {
 	padding: 0;
 	font-size: 16px;
 }
-
 body {
 	font-family: "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 	-webkit-font-smoothing: antialiased;
 	color: darken($brandContrastLight, 80%);
 }
-
 a {
 	color: $brand-color;
 	text-decoration: none;
 }
-
 a:hover {
 	text-decoration: underline;
 }
-
 img {
 	max-width: 100%;
 }
-
 h1 {
 	font-weight: 300;
 	font-size: 2.3rem;
 	margin: 0;
 }
-
 h2 {
 	font-weight: 300;
 	font-size: 2.2rem;
 	margin: 0;
 }
-
 h3 {
 	font-size: 2rem;
 	margin: 20px 0 10px 0;
 }
-
 h4 {
 	font-size: 1.4rem;
 }
-
 p, address, label, ul {
 	font-size: 1rem;
 	margin: 0 0 30px 0;
 	line-height: 1.4em;
 }
-
+p, address, label, ul, div  {
+	.emphasis {
+		font-weight: 500;
+	}
+}
 ul {
 	padding-left: 0;
 	margin: 0 0 30px 0;
 }
-
 h1, h2, h3, h4 {
 	color: darken($brandContrastLight, 90%);
 	margin: 0 0 30px 0;
@@ -68,7 +62,7 @@ h1, h2, h3, h4 {
 
 // -------------------THEME ELEMENT STYLES FROM HERE----------------------
 
-// Section Headings and flourishes
+// Two different headings styles
 .sectionTitle.priority1 {
 	padding: 0;
 	font-size: 3em;
@@ -80,6 +74,7 @@ h1, h2, h3, h4 {
 	font-weight: 300;
 	text-transform: uppercase;
 }
+// Horizontal divider lines
 .seperationLine {
 	margin: 0 80% 60px 0;
 	border-top: 2px solid rgba(0,0,0,0.6);
@@ -90,23 +85,9 @@ h1, h2, h3, h4 {
 	border-top: 2px solid rgba(0,0,0,0.1);
 	display: block;
 }
-p, address, label, ul, div  {
-	.emphasis {
-		font-weight: 500;
-	}
-}
-// a paragraph with emphasis
+// Introduction paragraph that has a bit more emphasis
 p.introduction {
 	font-size: 1.5rem;
-}
-
-// When I want to display a grid of related articles
-.relatedArticles {
-	@media #{$mid-point} {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		margin: 0 0 30px 0;
-	}
 }
 // Author with impact spheres
 // Used in a few places
@@ -171,7 +152,6 @@ p.introduction {
 		}
 	}
 }
-
 // Info Points - Icon List
 .infoPoints {
 	padding-left: 0;
@@ -215,8 +195,7 @@ p.introduction {
 		}
 	}
 }
-
-// Video player section (layout is in layout.scss
+// Video player section - layout is in layout.scss
 .videoPlayer {
 	a {
 		color: lighten($brandContrastLight, 80%);
@@ -256,6 +235,7 @@ p.introduction {
 		}
 	}
 }
+// Featured Stories
 .featuredStories {
 	.container {
 		grid-auto-rows: 1fr;
@@ -304,9 +284,13 @@ p.introduction {
 		max-width: 70%;
 	}
 }
+// Counter Row
 .counters {
 	.count {
-		padding: 30px 0;
+		@media #{$mid-point} {
+			margin: 120px 0;
+		}
+		padding: 30px 0 !important;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -321,6 +305,31 @@ p.introduction {
 		}
 	}
 }
+.ctaFeatured {
+	a {
+		background: $brandContrastDark;
+		color: #ffffff;
+		padding: 60px 0 !important;
+		width: 100%;
+		display: block;
+		font-size: 2rem;
+		text-align: center;
+		transition: all 0.3s ease-in-out;
+		&:hover {
+			text-decoration: none;
+			background: darken($brandContrastDark, 10%);
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
 
 // Blockquote - orignal styling - to be redone
 blockquote {
