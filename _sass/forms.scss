@@ -35,7 +35,7 @@ input[type=submit]:active {
 	border: 1px solid darken($brand-color, 10%);
 }
 .button.primary:hover {
-	background: $brandContrastDarkest;
+	background: darken($brandContrastDark, 10%);
 	color: #ffffff;
 }
 // Secondary button is slightly ligher than brand with even lighter border
@@ -44,7 +44,7 @@ input[type=submit]:active {
 	border: 1px solid lighten($brand-color, 30%);
 }
 .button.secondary:hover {
-	background: $brandContrastDarkest;
+	background: darken($brandContrastDark, 10%);
 	color: #ffffff;
 }
 
