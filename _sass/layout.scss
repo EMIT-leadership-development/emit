@@ -17,6 +17,8 @@ section {
 	padding: 0;
 	margin: 0;
 	position: relative;
+	// The z-index is important for the book shadows on curriculum pages
+	z-index: 1;
 }
 
 // containers inside sections allow for setting the max width of section

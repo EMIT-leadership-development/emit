@@ -1,0 +1,97 @@
+---
+layout: default
+---
+
+
+<div class="page about">
+
+    <!-- Program Intro -->
+    <section class="pageSection programIntro">
+        <div class="container col-2-3">
+			<div class="sectionIntro">
+				<h2 class="sectionTitle priority2">{{ page.title }}</span></h2>
+                <p class="introduction">{{ page.objective_markdown }}</p>
+                <!-- If current then show register button -->
+                <!-- If planned then show sponsor this program -->
+                <p>Status: {{ page.status }} Todo: If planned insert donate button</p>
+                <div class="callToAction">
+                    <a href="" class="button">Sponsor a student</a>
+                    <a href="" class="button primary">RESGISTER</a>
+                </div>
+			</div>
+			<div class="sectionContent">
+                <h3>About this program</h3>
+                <p>{{ page.description_markdown }}</p>
+				<ul class="infoPoints">
+					<li class="point">
+						<span class="icon"><i data-feather="log-in"></i></span>
+						<h3 class="pointTitle">Entrance Requirements</h3>
+						<p class="pointContent">{{ page.entrance }}</p>
+					</li>
+					<li class="point">
+						<span class="icon"><i data-feather="users"></i></span>
+						<h3 class="pointTitle">Delivery</h3>
+						<p class="pointContent">{{ page.delivery }}</p>
+                    </li>
+                    <li class="point">
+						<span class="icon"><i data-feather="calendar"></i></span>
+						<h3 class="pointTitle">Duration</h3>
+						<p class="pointContent">{{page.duration}}</p>
+					</li>
+					<li class="point">
+						<span class="icon"><i data-feather="check-circle"></i></span>
+						<h3 class="pointTitle">Assessment</h3>
+						<p class="pointContent">{{ page.assessment }}</p>
+					</li>
+					<li class="point">
+						<span class="icon"><i data-feather="award"></i></span>
+						<h3 class="pointTitle">Certification</h3>
+						<p class="pointContent">{{ page.certification }}</p>
+					</li>
+					<li class="point">
+						<span class="icon"><i data-feather="smile"></i></span>
+						<h3 class="pointTitle">Graduation</h3>
+						<p class="pointContent">{{ page.graduation }}</p>
+					</li>
+                </ul>
+			</div>
+		</div>
+    </section>
+    <!-- List of program curriculum -->
+    <section class="pageSection curriculum">
+        <div class="container max-container max-content">
+            <ol class="curriculaList">
+                <li class="bookCover">
+                    <img src="{{site.baseurl}}/images/{{page.bookCover}}" alt="">
+                </li>
+                {% for curricula in page.curricula %}
+                <li class="curricula">
+                    <div class="curriculaIntro" style="background-image:url({{site.baseurl}}/images/{{curricula.image}})">
+                        <div class="shadow"></div>
+                        <h3 class="curriculaTitle">{{curricula.title}}</h3>
+                        <div class="curriculaFooter">EMIT Leadership - 2020</div>
+                    </div>
+                    <div class="curriculaContent">
+                        <div class="shadow"></div>
+                        <div class="heading">
+                            <div class="leaderline">{{page.title}}</div>
+                            <h4>{{curricula.objective}}</h3>
+                        </div>
+                        <!-- <p class="curriculaObjective"></p> -->
+                        <div class="fakecopy">
+                            <div>
+                                <p>Excepteur ac iste luctus, voluptate rutrum voluptatem illo nulla cupidatat ipsum semper luctus eius, adipiscing nobis faucibus illo, neque odio? Praesentium, est. Facilisi vestibulum aptent magni porttitor excepteur? Similique iusto. Eaque quisque aenean praesentium, consectetur aute porro magnam adipisicing libero alias dolores molestias condimentum eos. Pulvinar! Numquam necessitatibus? Etiam facilisi torquent, voluptates. Aptent iure iaculis natoque voluptatem laboriosam class! Dolorum.</p>
+                            </div>
+                            <div>
+                                <p>Saepe placeat magni natus vestibulum cillum asperiores proin ex cumque. Suspendisse saepe aenean ipsam unde quidem iaculis, luctus, impedit ex integer curabitur metus animi. Senectus, ex! Bibendum, nulla, maecenas dapibus.</p>
+                                <p>Blanditiis tempor earum maiores nascetur dolores ridiculus fames aspernatur mi, incidunt eos adipiscing deleniti, netus, sequi? Proin voluptatum erat volutpat hendrerit sagittis accusamus iusto quaerat! Fuga nobis ultricies ratione magni.</p>
+                            </div>
+                        </div>
+                        <div class="curriculaFooter">EMIT Leadership - 2020</div>
+                    </div>
+                </li>
+                {% endfor %}
+            </ol>
+        </div>
+    </section>
+</div>
