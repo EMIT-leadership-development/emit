@@ -1,7 +1,7 @@
 # ----
 # Site
 
-title: EMIT - Transforming nations by developing leaders
+title: EMIT
 url: "http://turquoise-rook.cloudvent.net/"
 baseurl:
 google_analytics_key:
@@ -12,14 +12,16 @@ snipcart_key: "NWNjOWZhYjctYmE1ZS00MDM3LThkNjUtZmE5M2NiMTU1NzAwNjM2MjYzNTE1MzM5O
 logo: /siteicon.png
 description: Fur t-shirt store
 author:
-  name: fur
-  email: fur@example.com
-  twitter: fur # twitter username without the @ symbol
-  phone: "+1 23456789"
+  name: EMIT
+  email: admin@emit.global
+  twitter: EMITglobal # twitter username without the @ symbol
+  phone: "+27 11 362 6655"
 social:
-  name: Fur Template
+  name: EMIT
   links:
-    - https://github.com/CloudCannon/fur-jekyll-template
+    - https://emit.global/
+    - https://www.facebook.com/EMIT.global/
+    - https://twitter.com/EMITglobal/
 
 # -----
 # Build

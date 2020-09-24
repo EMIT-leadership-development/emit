@@ -1,0 +1,12 @@
+- name: "Head Office"
+  country: "South Africa"
+  email: "admin@emit.global"
+  phone: "+27 11 362 6655"
+  address: "10 Sinclair Road, Selection Park, Springs, 1560, South Africa"
+  postal: "PO BOX 3710, SPRINGS 1560, SOUTH AFRICA"
+- name: "USA Head Office"
+  country: "USA"
+  email: "info@emit.global"
+  phone: "+1 719 648 0674"
+  address:
+  postal: "PO BOX 26369 COLORADO SPRINGS, CO 80936"

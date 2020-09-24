@@ -1,0 +1,48 @@
+<div class="container">
+    <div class="footer-columns">
+        <div class="aboutblock">
+            <div id="footerLogo">{% include logo.html %}</div>
+            <div class="tagline editable">Transforming nations<br>by developing leaders</div>
+            <p class="editable missionStatement"> EMIT provides wholistic development of influential leaders, increasing their effectiveness to transform every segment of society.
+            </p>
+        </div>
+        <div class="footer-nav">
+            <h4>NAVIGATION</h4>
+            <ul>
+                <li><a href="/">Home</a></li>
+                {% for link in site.data.navigation %}
+                <li><a href="{% include relative-src.html src=link.link %}">{{ link.name }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="footer-nav">
+            <h4>STUDENTS</h4>
+            <ul>
+                <li><a href="/login/">Student Portal</a></li>
+                <li><a href="/articles/annoucements/">Annoucements</a></li>
+                <li><a href="/articles/register/">Register</a></li>
+                <li><a href="/contact/">Help Desk</a></li>
+            </ul>
+        </div>
+        <div class="contacts">
+            <h4>CONTACT US</h4>
+            <!-- Todo: loop through contacts data - two first countries -->
+            <p class="introduction">Need help with something? <a href="/contact/">Get in touch</a>.</p>
+            <p class="email"><a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></p>
+            <p><a href="tel:{{ site.author.phone }}">{{ site.author.phone }}</a></p>
+        </div>
+    </div>
+</div>
+
+<div class="footerClosingInfo">
+    <div class="content">
+        <p class="copyright">&copy; EMIT {{ site.time | date: '%Y' }} </p>
+        <p class="designAttribute">Site Design by <a href="https://sonya.ninja">Sonya.Ninja</a></p>
+        <ul class="links">
+            <li><a class="facebook" href="https://facebook.com">{% include social-icon.html icon="Facebook2" %}</a></li>
+            <li><a class="twitter" href="https://twitter.com">{% include social-icon.html icon="Twitter" %}</a></li>
+            <li><a class="youtube" href="https://youtube.com/">{% include social-icon.html icon="YouTube" %}</a></li>
+            <li><a class="linkedin" href="https://linkedin.com">{% include social-icon.html icon="LinkedIn" %}</a></li>
+        </ul>
+    </div>
+</div>
