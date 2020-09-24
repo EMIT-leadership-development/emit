@@ -79,7 +79,7 @@ h1, h2, h3, h4 {
 }
 .sectionTitle.priority3 {
 	// Adding a top margin to balance with partner logos
-	margin-top: 60px;
+	margin-top: 30px;
 	font-size: 1.3rem;
 	font-weight: 400;
 }
@@ -423,6 +423,63 @@ p.introduction {
 			display: grid;
 			grid-template-columns: 1fr 1fr 1fr auto;
 			grid-gap: 30px;
+		}
+	}
+}
+.map {
+	.gmnoprint {
+		display: none;
+	}
+	button.gm-control-active.gm-fullscreen-control {
+		display: none;
+	}
+	.gm-style-cc {
+		display: none;
+	}
+	.gm-style-pbc {
+		display: none;
+	}
+	.map-info-window {
+		h5 {
+			margin: 10px;
+		}
+		span {
+			max-width: 150px;
+			display: block;
+			&:first-of-type {
+				font-size: 1.1rem;
+				margin-bottom: 5px;
+			}
+			&:last-of-type {
+				font-size: 1rem;
+				font-weight: 300;
+			}
+		}
+		a {
+			margin: 0 10px;
+			font-size: 0.8rem;
+			min-width: 100px;
+			position: relative;
+			display: block;
+			color: rgba(0,0,0,0.7);
+			text-transform: uppercase;
+			transform: all 0.3s ease;
+			&:before {
+				content: "Click here to ";
+			}
+			&:after {
+				position: absolute;
+				content: ">";
+				margin-left: 5px;
+				transform: all 0.3s ease;
+			}
+			&:hover {
+				text-decoration: none;
+				color: rgba(0,0,0,1);
+				&:after {
+					margin-left: 8px;
+				}
+			}
 		}
 	}
 }

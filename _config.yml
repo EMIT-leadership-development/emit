@@ -65,12 +65,18 @@ jekyll-archives:
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-maps
 
 exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
   - LICENCE
+
+# MAP PLUGIN NEEDS GOGGLE API
+maps:
+  google:
+    api_key: AIzaSyCL26-sipFBbMnRYXRf_QAaa3Zp6eZmGUc
 
 # -----------
 # CloudCannon
