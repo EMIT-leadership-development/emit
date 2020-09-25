@@ -88,7 +88,9 @@ layout: default
                 </li>
                 {% for curricula in page.curricula %}
                 <li class="curricula">
-                    <div class="curriculaIntro" style="background-image:url({{site.baseurl}}/images/{{curricula.image}})">
+                    <div class="curriculaIntro" data-echo-background="{{site.baseurl}}/images/{{curricula.image}}.webp" style="background-image:url({{site.baseurl}}/images/{{curricula.image}}Small.webp)">
+                    <!-- <div style="background: url(/img/blank.png) center center no-repeat; background-size: cover;" data-echo-background="/img/actualimage.jpg"></div> -->
+
                         <div class="shadow"></div>
                         <h3 class="curriculaTitle">{{curricula.title}}</h3>
                         <div class="curriculaFooter">EMIT Leadership - 2020</div>

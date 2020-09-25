@@ -5,7 +5,8 @@ heroImage: couple.webp
 bookCover: PastorTrainingBook.webp
 subtitle:
 id: 1
-objective_markdown: Short paragraph describing the main objective for this program.
+objective_markdown: Paragraph describing the objective for this program. For example - when you have completed this program you will be able to...
+motivation: "Why EMIT chose to develop this program. eg. Church leaders are an integral part of African life."
 status: current
 
 entrance: Explain the entrance requirements for this program
@@ -15,48 +16,47 @@ assessment: Describe how the program is assessed
 certification: Description of the certification for this program
 graduation: Describe the graduation event
 
-
 description_markdown: >-
   Introductory Paragraph for this curriculum. Sapien iusto curae porttitor facilisis odio quaerat felis? Cursus sagittis facilisi lorem qui voluptatibus, aliquam. Felis tortor deleniti ac! Feugiat auctor exercitation sequi, cum feugiat, eiusmod, pretium.
 
 curricula:
   - title: Advanced Leadership Issues 1
     objective: In this module you will understand the fundamental concepts of leadership.
-    image: africanLeaderPlanning.webp
+    image: africanLeaderPlanning
   - title: Advanced Leadership Issues 2
     objective: Identify the quisquam minus nesciunt. Mattis tempore laboris odio pede possimus elit.
-    image: Josef.webp
+    image: Josef
   - title: African Church History
     objective: Describe the Senectus dolor! Id exercitation a eaque primis earum porta mus.
-    image: handsInAir.webp
+    image: handsInAir
   - title: Biblical Counselling
     objective: Dicta incidunt iste hendrerit commodi ultrices, nonummy, dui exercitation? Mauris.
-    image: helpingElderly.webp
+    image: helpingElderly
   - title: Biblical Doctrines
     objective: Ea do nihil! Reprehenderit. Mi dolor litora, habitasse. Perferendis velit.
-    image: manReading.webp
+    image: manReading
   - title: Biblical world view
     objective: Excepteur quisque nostra sem vitae? Tempora vel varius, quos eiusmod.
-    image: littleBoyWithBible.webp
+    image: littleBoyWithBible
   - title: Cell groups
     objective: Perspiciatis omnis dolore, senectus omnis suscipit, consectetuer gravida, ut! Ultrices.
-    image: meetingUnderTree.webp
+    image: meetingUnderTree
   - title: Children ministry
     objective: Per tellus eget laudantium ridiculus class accusantium eget, parturient reprehenderit.
-    image: curiousChildren.webp
+    image: curiousChildren
   - title: Church administration
     objective: Posuere excepteur lectus? Nunc cumque soluta vitae rem turpis feugiat.
-    image: businessMan.webp
+    image: businessMan
   - title: Church growth
     objective: Mi exercitationem sequi tempus, donec quod harum architecto assumenda. Nulla.
-    image: AfricaWorship.webp
+    image: AfricaWorship
   - title: Church planting
     objective: Faucibus! Felis accumsan! Praesentium sociis? Suspendisse! Felis interdum labore! Dicta.
-    image: road.webp
+    image: road
   - title: Classical Discipleship
     objective: Integer hymenaeos varius mus nostra, laboris! Etiam? Accusantium. Voluptates parturient.
-    image: ElderLearning.webp
+    image: ElderLearning
   - title: Community Transformation
     objective: Proident qui fugit nihil commodo placerat vulputate maecenas. Netus, omnis.
-    image: happyVillageGirl.webp
+    image: happyVillageGirl
 ---
