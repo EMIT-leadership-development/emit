@@ -5,7 +5,7 @@ heroImage: couple.webp
 bookCover: PastorTrainingBook.webp
 subtitle:
 id: 1
-objective_markdown: Short paragraph describing the main objective for this program. For example - when you have completed this program you will be (complete) and be able to (complete).
+objective_markdown: Short paragraph describing the main objective for this program.
 status: current
 
 entrance: Explain the entrance requirements for this program
