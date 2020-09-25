@@ -490,177 +490,185 @@ p.introduction {
 .curriculaList {
 	padding: 60px;
 	margin-bottom: 0;
+	list-style: none;
+	counter-reset: my-awesome-counter;
+	@media #{$below-mid-point} {
+		ol {
+			padding: 30px !important;
+		}
+		li {
+			margin-bottom: 30px !important;
+		}
+	}
 	@media #{$mid-point} {
-		list-style: none;
-  		counter-reset: my-awesome-counter;
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 		grid-gap: 60px;
-		.bookCover {
-			position: relative;
-			img {
-				position: absolute;
-				max-width: 140%;
-				left: -20%;
-				top: -20%;
-			}
+	}
+	.bookCover {
+		position: relative;
+		img {
+			position: absolute;
+			max-width: 140%;
+			left: -20%;
+			top: -20%;
 		}
-		.curricula {
+	}
+	.curricula {
+		position: relative;
+		&::before {
+			content: counter(my-awesome-counter) ". ";
+			color: #ffffff;
+			font-weight: 900;
+			position: absolute;
+			left: 10px;
+			top: 10px;
+			font-size: 3rem;
+			z-index: 10;
+		}
+		counter-increment: my-awesome-counter;
+		background: #eeeeee;
+		box-shadow: 0 1px 4px 3px rgba(0, 0, 0, 0.3), -4px -1px 15px 13px rgba(255, 255, 255, 0.2);
+		margin: 0;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		.curriculaIntro {
+			min-height: 300px;
 			position: relative;
-			&::before {
-				content: counter(my-awesome-counter) ". ";
-				color: #ffffff;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center center;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-end;
+			h3 {
+				font-size: 1.6rem;
 				font-weight: 900;
+				padding: 10px;
+				color: #ffffff;
+				margin-bottom: 20px;
+				backdrop-filter: blur(4px);
+				background: rgba(0,0,0,0.4);
+			}
+			&:after {
+				content: "";
 				position: absolute;
-				left: 10px;
-				top: 10px;
-				font-size: 3rem;
-				z-index: 10;
+				top:0;
+				left: 0;
+				bottom: 0;
+				right: 0;
+				background: linear-gradient(270deg, rgba(0,0,0,0.5368522408963585) 0%, rgba(0,0,0,0.0718662464985994) 1%, rgba(255,255,255,0.5564600840336135) 8%, rgba(255,255,255,0.6432948179271709) 14%, rgba(255,255,255,0.3491771708683473) 19%, rgba(255,255,255,0) 100%);
 			}
-			counter-increment: my-awesome-counter;
-			background: #eeeeee;
-			box-shadow: 0 1px 4px 3px rgba(0, 0, 0, 0.3), -4px -1px 15px 13px rgba(255, 255, 255, 0.2);
-			margin: 0;
-			display: grid;
-			grid-template-columns: 1fr 1fr;
-			.curriculaIntro {
-				min-height: 300px;
-				position: relative;
-				background-size: cover;
-				background-repeat: no-repeat;
-				background-position: center center;
-				display: flex;
-				flex-direction: column;
-				justify-content: flex-end;
-				h3 {
-					font-size: 1.6rem;
-					font-weight: 900;
-					padding: 10px;
-					color: #ffffff;
-					margin-bottom: 20px;
-					backdrop-filter: blur(4px);
-					background: rgba(0,0,0,0.4);
-				}
-				&:after {
+			.shadow{
+				position: absolute;
+				display: block;
+				// border: 1px solid red;
+				z-index: -1;
+				left: -3px;
+				right: 0;
+				bottom: 0;
+				top: 0;
+				background: #ffffff;
+				box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+				&:before {
 					content: "";
 					position: absolute;
-					top:0;
-					left: 0;
-					bottom: 0;
+					box-shadow: 7px 15px 40px 2px rgba(0, 0, 0, 0.8);
+					height: 20%;
+					left: 20%;
 					right: 0;
-					background: linear-gradient(270deg, rgba(0,0,0,0.5368522408963585) 0%, rgba(0,0,0,0.0718662464985994) 1%, rgba(255,255,255,0.5564600840336135) 8%, rgba(255,255,255,0.6432948179271709) 14%, rgba(255,255,255,0.3491771708683473) 19%, rgba(255,255,255,0) 100%);
+					bottom: 1%;
+					border-radius: 100%;
+					transform: skew(5deg, 10deg);
 				}
-				.shadow{
-					position: absolute;
-					display: block;
-					// border: 1px solid red;
-					z-index: -1;
-					left: -3px;
-					right: 0;
-					bottom: 0;
-					top: 0;
-					background: #ffffff;
-					box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-					&:before {
-						content: "";
-						position: absolute;
-						box-shadow: 7px 15px 40px 2px rgba(0, 0, 0, 0.8);
-						height: 20%;
-						left: 20%;
-						right: 0;
-						bottom: 1%;
-						border-radius: 100%;
-						transform: skew(5deg, 10deg);
-					}
-				}
-				background-size: cover;
-				background-repeat: no-repeat;
-				background-position: center center;
 			}
-			.curriculaContent {
-				position: relative;
-				padding: 10% 10% 20px 10%;
-				display: flex;
-				flex-direction: column;
-				justify-content: space-between;
-				.leaderline {
-					font-size: 8px;
-					font-weight: 600;
-					color: #000000;
-					margin-bottom: 7px;
-					text-transform: uppercase;
-				}
-				h4 {
-					color: #000000;
-					font-weight: 900;
-					font-size: 1.1rem;
-					margin-bottom: 10px;
-					line-height: 1.3;
-				}
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center center;
+		}
+		.curriculaContent {
+			position: relative;
+			padding: 10% 10% 20px 10%;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			.leaderline {
+				font-size: 8px;
+				font-weight: 600;
+				color: #000000;
+				margin-bottom: 7px;
+				text-transform: uppercase;
+			}
+			h4 {
+				color: #000000;
+				font-weight: 900;
+				font-size: 1.1rem;
+				margin-bottom: 10px;
+				line-height: 1.3;
+			}
+			p {
+				color: #000000;
+				font-size: 0.8rem;
+			}
+			.fakecopy {
+				// max-height: 67px;
+				overflow: hidden;
+				// border: 1px solid red;
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				grid-column-gap: 10px;
 				p {
-					color: #000000;
-					font-size: 0.8rem;
+					font-size: 4px;
+					margin-bottom: 3px;
 				}
-				.fakecopy {
-					// max-height: 67px;
-					overflow: hidden;
-					// border: 1px solid red;
-					display: grid;
-					grid-template-columns: 1fr 1fr;
-					grid-column-gap: 10px;
-					p {
-						font-size: 4px;
-						margin-bottom: 3px;
-					}
-				}
-				&:after {
+			}
+			&:after {
+				content: "";
+				position: absolute;
+				top:0;
+				left: 0;
+				bottom: 0;
+				right: 0;
+				background: linear-gradient(90deg, rgba(0,0,0,0.5368522408963585) 0%, rgba(0,0,0,0.0718662464985994) 1%, rgba(255,255,255,0.5060399159663865) 13%, rgba(255,255,255,0.4023984593837535) 21%, rgba(255,255,255,0) 100%);
+			}
+			.shadow{
+				position: absolute;
+				display: block;
+				// border: 1px solid red;
+				z-index: -1;
+				right: -3px;
+				left: 0;
+				bottom: 0;
+				top: 0;
+				background: #ffffff;
+				box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+				&:before {
 					content: "";
 					position: absolute;
-					top:0;
-					left: 0;
-					bottom: 0;
-					right: 0;
-					background: linear-gradient(90deg, rgba(0,0,0,0.5368522408963585) 0%, rgba(0,0,0,0.0718662464985994) 1%, rgba(255,255,255,0.5060399159663865) 13%, rgba(255,255,255,0.4023984593837535) 21%, rgba(255,255,255,0) 100%);
-				}
-				.shadow{
 					position: absolute;
-					display: block;
-					// border: 1px solid red;
-					z-index: -1;
-					right: -3px;
+					box-shadow: 7px 15px 40px 2px rgba(0, 0, 0, 0.8);
+					height: 20%;
 					left: 0;
-					bottom: 0;
-					top: 0;
-					background: #ffffff;
-					box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-					&:before {
-						content: "";
-						position: absolute;
-						position: absolute;
-						box-shadow: 7px 15px 40px 2px rgba(0, 0, 0, 0.8);
-						height: 20%;
-						left: 0;
-						right: 20%;
-						bottom: 1%;
-						border-radius: 100%;
-						transform: skew(-5deg, -10deg);
-					}
-				}
-				.curriculaFooter {
-					text-align: right;
-					color: #000000;
+					right: 20%;
+					bottom: 1%;
+					border-radius: 100%;
+					transform: skew(-5deg, -10deg);
 				}
 			}
 			.curriculaFooter {
-				position: absolute;
-				bottom: 0;
-				left: 0;
-				right: 0;
-				font-size: 5px;
-				line-height: 5px;
-				padding: 5px;
-				color: #ffffff;
+				text-align: right;
+				color: #000000;
 			}
+		}
+		.curriculaFooter {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			font-size: 5px;
+			line-height: 5px;
+			padding: 5px;
+			color: #ffffff;
 		}
 	}
 }
