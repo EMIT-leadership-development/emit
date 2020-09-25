@@ -94,6 +94,57 @@ h1, h2, h3, h4 {
 	border-top: 2px solid rgba(0,0,0,0.1);
 	display: block;
 }
+// wraps a button or a few buttons
+.callToAction {
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+// Tooltips
+.tooltip {
+	background-image: linear-gradient(180deg, #ED4630, #ED5EA7);
+	bottom: 100%;
+	color: #fff;
+	display: block;
+	left: -100px;
+	margin-bottom: 15px;
+	opacity: 0;
+	padding: 20px;
+	pointer-events: none;
+	position: absolute;
+	width: 200px;
+	transform: translateY(10px);
+	transition: all .25s ease-out;
+	box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+	text-transform: initial;
+	border: 1px solid $brandContrastDark;
+}
+.tooltip:before {
+	bottom: -20px;
+	content: " ";
+	display: block;
+	height: 20px;
+	left: 0;
+	position: absolute;
+	width: 100%;
+}
+.tooltip:after {
+	border-left: solid transparent 10px;
+	border-right: solid transparent 10px;
+	border-top: solid #ED5EA7 10px;
+	bottom: -10px;
+	content: " ";
+	height: 0;
+	left: 50%;
+	margin-left: -13px;
+	position: absolute;
+	width: 0;
+}
+a:hover .tooltip {
+	opacity: 1;
+	pointer-events: auto;
+	transform: translateY(0px);
+	}
 // Introduction paragraph that has a bit more emphasis
 p.introduction {
 	font-size: 1.5rem;

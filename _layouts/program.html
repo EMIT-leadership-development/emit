@@ -14,20 +14,30 @@ layout: default
                 <!-- If planned then show sponsor this program -->
                 {% if page.status == "current"%}
                     <div class="callToAction">
+                        <a href="cloudcannon:collections/{{ page.relative_path }}" class="editor-link button edit">
+                            <span class="icon"><i data-feather="edit-2"></i></span>
+                            <div class="tooltip">
+                                <div class="tooltipcontent editor">
+                                    <div class="message">Click to edit this program and curriculum list.</div>
+                                </div>
+                            </div>
+                        </a>
                         <a href="" class="button">Sponsor a student</a>
                         <a href="" class="button primary">REGISTER</a>
-                        <a href="cloudcannon:collections/{{ page.relative_path }}" class="editor-link button edit">
-                            Edit This Program
-                        </a>
                     </div>
                 {% else %}
                     <div class="callToAction">
+                        <a href="cloudcannon:collections/{{ page.relative_path }}" class="editor-link button edit">
+                            <span class="icon"><i data-feather="edit-2"></i></span>
+                            <div class="tooltip">
+                                <div class="tooltipcontent editor">
+                                    <div class="message">Click to edit this program and curriculum list.</div>
+                                </div>
+                            </div>
+                        </a>
                         <h4>Help us get this program to the people that need it.</h4>
                         <p class="editable">By donating towards program development you are transforming lives.</p>
                         <a href="" class="button primary">Sponsor this program</a>
-                        <a href="cloudcannon:collections/{{ page.relative_path }}" class="editor-link button edit">
-                            Edit This Program
-                        </a>
                     </div>
                 {% endif %}
 			</div>

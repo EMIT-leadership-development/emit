@@ -9,10 +9,10 @@ input[type=submit] {
 	background: transparent;
 	border-radius: 2px;
 	border: 1px solid $brandContrastDark;
-	// border: 1px solid #ffffff;
 	-webkit-appearance: none;
 	text-transform: uppercase;
 	display: inline-block;
+	margin: 0 5px;
 }
 .button:hover,
 button.button:hover,
