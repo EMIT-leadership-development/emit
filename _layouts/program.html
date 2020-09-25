@@ -3,8 +3,7 @@ layout: default
 ---
 
 
-<div class="page about">
-
+<div class="page program">
     <!-- Program Intro -->
     <section class="pageSection programIntro">
         <div class="container col-2-3">
@@ -13,11 +12,18 @@ layout: default
                 <p class="introduction">{{ page.objective_markdown }}</p>
                 <!-- If current then show register button -->
                 <!-- If planned then show sponsor this program -->
-                <p>Status: {{ page.status }} Todo: If planned insert donate button</p>
-                <div class="callToAction">
-                    <a href="" class="button">Sponsor a student</a>
-                    <a href="" class="button primary">RESGISTER</a>
-                </div>
+                {% if page.status == "current"%}
+                    <div class="callToAction">
+                        <a href="" class="button">Sponsor a student</a>
+                        <a href="" class="button primary">REGISTER</a>
+                    </div>
+                {% else %}
+                    <div class="callToAction">
+                        <h4>Help us get this program to the people that need it.</h4>
+                        <p class="editable">By donating towards program development you are transforming lives.</p>
+                        <a href="" class="button primary">Sponsor this program</a>
+                    </div>
+			    {% endif %}
 			</div>
 			<div class="sectionContent">
                 <h3>About this program</h3>
