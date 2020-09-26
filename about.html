@@ -83,9 +83,6 @@ subtitle: What we do and how we do it
 
 			</div>
 			<div class="sectionContent">
-				<p class="editor-link" style="text-align: center; position: relative;">
-					<a href="cloudcannon:collections/_programs/" class="btn"><strong>&#9998;</strong> Manage Programs</a>
-				</p>
 				<ul class="infoPoints">
 					{% for program in site.programs %}
 					<li class="point">
@@ -95,6 +92,16 @@ subtitle: What we do and how we do it
 					</li>
 					{% endfor %}
 				</ul>
+				<div class="callToAction">
+					<a href="cloudcannon:collections/_programs/" class="editor-link button edit">
+						<span class="icon"><i data-feather="edit-2"></i></span>
+						<div class="tooltip">
+							<div class="tooltipcontent editor">
+								<div class="message">Click to edit the list of programs. This list is a bit like a database - any edits you make will update all program occurences across the entire site</div>
+							</div>
+						</div>
+					</a>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -331,7 +338,16 @@ subtitle: What we do and how we do it
 			<div class="sectionIntro">
 				<h2 class="editable sectionTitle priority3">PARTNERS & ACCREDITATIONS</h2>
 				<p class="editable">Paragraph describing EMIT's relationship with their partners and accreditations. The purpose of this section is to demonstrate: "They trust us - so can you".</p>
-				<a class="editor-link btn" href="cloudcannon:collections/_data/partners.yml" class="btn" title="Edit partners"><strong>&#9998;</strong></a>
+				<div class="callToAction">
+					<a href="cloudcannon:collections/_data/partners.yml" class="editor-link button edit">
+						<span class="icon"><i data-feather="edit-2"></i></span>
+						<div class="tooltip">
+							<div class="tooltipcontent editor">
+								<div class="message">Click to edit the list of partners.</div>
+							</div>
+						</div>
+					</a>
+				</div>
 			</div>
 		</div>
 	</section>
