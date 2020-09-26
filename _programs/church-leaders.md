@@ -3,6 +3,7 @@ title: Church Leaders
 hero: Church Leaders
 heroImage: couple.webp
 bookCover: PastorTrainingBook.webp
+curriculumSprite: sprite-churchLeaders.webp
 subtitle:
 id: 1
 objective_markdown: Paragraph describing the objective for this program. For example - when you have completed this program you will be able to...
@@ -22,41 +23,29 @@ description_markdown: >-
 curricula:
   - title: Advanced Leadership Issues 1
     objective: In this module you will understand the fundamental concepts of leadership.
-    image: africanLeaderPlanning
   - title: Advanced Leadership Issues 2
     objective: Identify the quisquam minus nesciunt. Mattis tempore laboris odio pede possimus elit.
-    image: Josef
   - title: African Church History
     objective: Describe the Senectus dolor! Id exercitation a eaque primis earum porta mus.
-    image: handsInAir
   - title: Biblical Counselling
     objective: Dicta incidunt iste hendrerit commodi ultrices, nonummy, dui exercitation? Mauris.
-    image: helpingElderly
   - title: Biblical Doctrines
     objective: Ea do nihil! Reprehenderit. Mi dolor litora, habitasse. Perferendis velit.
-    image: manReading
   - title: Biblical world view
     objective: Excepteur quisque nostra sem vitae? Tempora vel varius, quos eiusmod.
-    image: littleBoyWithBible
   - title: Cell groups
     objective: Perspiciatis omnis dolore, senectus omnis suscipit, consectetuer gravida, ut! Ultrices.
-    image: meetingUnderTree
   - title: Children ministry
     objective: Per tellus eget laudantium ridiculus class accusantium eget, parturient reprehenderit.
-    image: curiousChildren
   - title: Church administration
     objective: Posuere excepteur lectus? Nunc cumque soluta vitae rem turpis feugiat.
-    image: businessMan
   - title: Church growth
     objective: Mi exercitationem sequi tempus, donec quod harum architecto assumenda. Nulla.
-    image: AfricaWorship
   - title: Church planting
     objective: Faucibus! Felis accumsan! Praesentium sociis? Suspendisse! Felis interdum labore! Dicta.
     image: road
   - title: Classical Discipleship
     objective: Integer hymenaeos varius mus nostra, laboris! Etiam? Accusantium. Voluptates parturient.
-    image: ElderLearning
   - title: Community Transformation
     objective: Proident qui fugit nihil commodo placerat vulputate maecenas. Netus, omnis.
-    image: happyVillageGirl
 ---

@@ -86,32 +86,31 @@ layout: default
                 <li class="bookCover">
                     <img src="{{site.baseurl}}/images/{{page.bookCover}}" alt="">
                 </li>
+                {% assign distance = 5 %}
+                {% assign counter = 0 %}
+                {% assign position = 0 %}
                 {% for curricula in page.curricula %}
-                <li class="curricula">
-                    <div class="curriculaIntro" data-echo-background="{{site.baseurl}}/images/{{curricula.image}}.webp" style="background-image:url({{site.baseurl}}/images/{{curricula.image}}Small.webp)">
-                    <!-- <div style="background: url(/img/blank.png) center center no-repeat; background-size: cover;" data-echo-background="/img/actualimage.jpg"></div> -->
+                <!-- Muliply counter by distance to get the background X position -->
+                {% assign counter = counter | plus: 1 %}
+                {% assign position = counter | times: distance %}
 
-                        <div class="shadow"></div>
-                        <h3 class="curriculaTitle">{{curricula.title}}</h3>
-                        <div class="curriculaFooter">EMIT Leadership - 2020</div>
-                    </div>
-                    <div class="curriculaContent">
-                        <div class="shadow"></div>
-                        <div class="heading">
-                            <div class="leaderline">{{page.title}}</div>
-                            <h4>{{curricula.objective}}</h3>
+                <li class="curricula">
+                    <div class="container">
+                        <div class="curriculaIntro" style="background-image:url({{site.baseurl}}/images/{{page.curriculumSprite}}); background-position: 0 {{position}}%;">
+                            <div class="shadow"></div>
+                            <h3 class="curriculaTitle">{{curricula.title}}</h3>
+                            <div class="curriculaFooter">EMIT Leadership - 2020</div>
                         </div>
-                        <!-- <p class="curriculaObjective"></p> -->
-                        <div class="fakecopy">
-                            <div>
-                                <p>Excepteur ac iste luctus, voluptate rutrum voluptatem illo nulla cupidatat ipsum semper luctus eius, adipiscing nobis faucibus illo, neque odio? Praesentium, est. Facilisi vestibulum aptent magni porttitor excepteur? Similique iusto. Eaque quisque aenean praesentium, consectetur aute porro magnam adipisicing libero alias dolores molestias condimentum eos. Pulvinar! Numquam necessitatibus? Etiam facilisi torquent, voluptates. Aptent iure iaculis natoque voluptatem laboriosam class! Dolorum.</p>
+                        <div class="curriculaContent">
+                            <div class="shadow"></div>
+                            <div class="heading">
+                                <div class="leaderline">{{page.title}}</div>
+                                <h4>{{curricula.objective}}</h3>
                             </div>
-                            <div>
-                                <p>Saepe placeat magni natus vestibulum cillum asperiores proin ex cumque. Suspendisse saepe aenean ipsam unde quidem iaculis, luctus, impedit ex integer curabitur metus animi. Senectus, ex! Bibendum, nulla, maecenas dapibus.</p>
-                                <p>Blanditiis tempor earum maiores nascetur dolores ridiculus fames aspernatur mi, incidunt eos adipiscing deleniti, netus, sequi? Proin voluptatum erat volutpat hendrerit sagittis accusamus iusto quaerat! Fuga nobis ultricies ratione magni.</p>
+                            <div class="fakecopy">
                             </div>
+                            <div class="curriculaFooter">EMIT Leadership - 2020</div>
                         </div>
-                        <div class="curriculaFooter">EMIT Leadership - 2020</div>
                     </div>
                 </li>
                 {% endfor %}

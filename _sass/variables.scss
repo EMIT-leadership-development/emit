@@ -14,6 +14,33 @@ $brandContrastLight: #EDF5F9;
 // Breakpoints
 $tablet: "(min-width: 450px)";
 $above-tablet: "(min-width: 550px)";
+$desktop: "(min-width: 768px)";
 $mid-point: "(min-width: 850px)";
 $below-mid-point: "(max-width: 849px)";
-$desktop: "(min-width: 768px)";
+
+
+// Sonya found these breakpoints here: https://codepen.io/davidgilbertson/pen/aBpJzO
+@mixin for-phone-only {
+    @media (max-width: 599px) { @content; }
+}
+@mixin for-tablet-portrait-up {
+    @media (min-width: 600px) { @content; }
+}
+@mixin for-tablet-portait-only {
+    @media (min-width: 600px) and (max-width: 899px) { @content; }
+}
+@mixin for-tablet-landscape-up {
+    @media (min-width: 900px) { @content; }
+}
+@mixin for-tablet-landscape-only {
+    @media (min-width: 900px) and (max-width: 1199px) { @content; }
+}
+@mixin for-desktop-up {
+    @media (min-width: 1200px) { @content; }
+}
+@mixin for-desktop-only {
+    @media (min-width: 1200px) and (max-width: 1799px) { @content; }
+}
+@mixin for-big-desktop-up {
+    @media (min-width: 1800px) { @content; }
+}
