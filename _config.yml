@@ -38,6 +38,7 @@ collections:
   programs:
     _hide_content: true
     output: true
+    _icon: school
     sort_by: id
 
 permalink: pretty
@@ -119,3 +120,4 @@ _comments:
   color: The background color used in the plan name and call to action.
   new_window: Open link in new window
   description: This is used for facebook shares of the page and google indexing
+  status: Current Programs are open for registration. Planned programs have option to sponsor development.
