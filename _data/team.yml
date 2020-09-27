@@ -1,29 +1,6 @@
-- Kobus:
-  name: Kobus Grobler
-  title: Global CEO
-  email:
-  socialLinks: links here
-  group: Team
-  pic: "team/Kobus.webp"
-  memberID: 1
-  bio: "Kobus has been involved in the training and equipping of leaders since 1991. He firmly believes that the lack of trained leaders is to blame for many of the problems experienced in Africa and the rest of the world. Transformational Leadership will result in changed communities and ultimately Nations. He is pragmatic in his approach to the problems of Africa and leads many community projects in his city as part of his own contribution to address the needs of those that cannot help themselves. He and his wife Teresa have three children and currently reside in Springs, South Africa."
-
-- Borniface:
-  name: Borniface Shonga
-  title: Global President
-  email:
-  socialLinks: links here
-  group: Team
-  pic: "team/Borniface.webp"
-  memberID: 2
-  bio: "Borniface Burton Shonga, warmly referred to as “BB” is a long time associate of EMIT. He served as Senior Pastor of Kabwe Chapel for a number of years. He is considered a mentor, role model and a credible voice to many in Zambia and beyond. He is married to Ethel and have four daughters."
-
-- Johan:
-  name: Johan Fourie
-  title: Chief Operating Officer
-  email:
-  socialLinks: links here
-  group: Team
-  pic: "team/Johan.webp"
-  memberID: 3
-  bio: "Johan Fourie is a true servant leader who knows and understands Africa. He has been in full–time ministry since 1995 and is a gifted teacher who is also well qualified in Information Technology (IT). As Chief of Operations he plans, directs, and oversees EMIT’s operational policies, rules, initiatives, and goals. He helps the organization execute long-term and short-term plans and directives by implementing judgment, vision, management, and leadership. He is married to Marietjie, they have one child and lives in Springs, South Africa."
+- name: George Phillips
+  email: george@cloudcannon.com
+- name: Mike Neumegen
+  email: mike@cloudcannon.com
+- name: Ross Phillips
+  email: ross@cloudcannon.com
