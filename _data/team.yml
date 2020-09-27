@@ -1,16 +1,16 @@
 George:
-  - name: George Phillips
-    email: george@cloudcannon.com
-    title: CEO
+  name: George Phillips
+  email: george@cloudcannon.com
+  title: CEO
 Mike:
-  - name: Mike Neumegen
-    email: mike@cloudcannon.com
-    title:
+  name: Mike Neumegen
+  email: mike@cloudcannon.com
+  title:
 Ross:
-  - name: Ross Phillips
-    email: ross@cloudcannon.com
-    title:
+  name: Ross Phillips
+  email: ross@cloudcannon.com
+  title:
 Kobus:
-  - name: Kobus Grobler
-    email: kibus@cloudcannon.com
-    title:
+  name: Kobus Grobler
+  email: kibus@cloudcannon.com
+  title:
