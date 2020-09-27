@@ -95,7 +95,7 @@ garment_types:
   - top
 # Program Status determines whether program can be viewed
 _select_data:
-  styles:
+  status:
     - current
     - planned
 
