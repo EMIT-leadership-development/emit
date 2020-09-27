@@ -22,6 +22,5 @@ description_markdown: >-
 curricula:
   - title:
     objective:
-  - title:
 
 ---
