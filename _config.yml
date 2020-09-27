@@ -59,6 +59,19 @@ defaults:
   -
     scope:
       path: ""
+      type: "team"
+    values:
+      _options:
+        image:
+          width: 500
+          height: 500
+          resize_style: "cover"
+          mime_type: "image/jpeg"
+          expandable: false
+
+  -
+    scope:
+      path: ""
     values:
       layout: "page"
   -
