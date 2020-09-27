@@ -1,5 +1,4 @@
 Team_Members:
-
   - name: George Phillips
     email: george@cloudcannon.com
     title: CEO
@@ -17,12 +16,12 @@ Board Members:
   - name: Name Surname
     email: name@somedomain.com
     title: director
-   - name: Name Surname
-     email: name@somedomain.com
-     title: director
-   - name: Name Surname
-     email: name@somedomain.com
-     title: director
-   - name: Name Surname
-     email: name@somedomain.com
-     title: director
+  - name: Name Surname
+    email: name@somedomain.com
+    title: director
+  - name: Name Surname
+    email: name@somedomain.com
+    title: director
+  - name: Name Surname
+    email: name@somedomain.com
+    title: director
