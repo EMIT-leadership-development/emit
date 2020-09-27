@@ -118,6 +118,13 @@ _options:
     resize_style: "cover"
     mime_type: "image/jpeg"
     expandable: true
+  partner_image: # Front matter field
+    uploads_dir: "images/partners/:title"
+    width: 132
+    height: 140
+    resize_style: "cover"
+    mime_type: "image/jpeg"
+    expandable: true
 
 _comments:
   map: Update the map location and display settings.
