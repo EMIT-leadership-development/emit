@@ -63,10 +63,10 @@ defaults:
     values:
       _options:
         image:
+          uploads_dir: "images/team/:title"
           width: 500
           height: 500
           resize_style: "cover"
-          mime_type: "image/jpeg"
           expandable: false
 
   -
