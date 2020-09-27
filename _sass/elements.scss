@@ -436,6 +436,11 @@ p.introduction {
 			text-align: right;
 			padding-bottom: 5px;
 		}
+		h3 {
+			text-align: left !important;
+			font-size: 1.5rem !important;
+			margin-bottom: 15px !important;
+		}
 	}
 }
 .modalBtn {
@@ -447,7 +452,7 @@ p.introduction {
 	border: 20px solid #ffffff;
 	padding: 5px;
 	.pic {
-		text-align: center;
+		text-align: left;
 		img {
 			max-width: 150px;
 		}
@@ -767,15 +772,89 @@ section.curriculum {
 		}
 	}
 }
-
-
-
-.temp {
-	p {
-		font-size: 18px;
+// Team Lists
+.teamList {
+	margin-bottom: 0;
+	ul {
+		margin: 0;
+		list-style-type: none;
+		display: grid;
+		grid-gap: 60px;
+		// Single column on phones
+		@include for-phone-only {
+			display: block;
+			li {
+				padding: 30px;
+			}
+		}
+		// Two columns on tablet Portrait
+		@include for-tablet-portait-only {
+			grid-template-columns: 1fr 1fr;
+			li {
+				padding: 30px;
+			}
+		}
+		// Three columns on tablet Landscape
+		@include for-tablet-landscape-only {
+			grid-template-columns: 1fr 1fr 1fr;
+			li {
+				padding: 30px;
+			}
+		}
+		// Three columns on desktop
+		@include for-desktop-only {
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+		}
+		li {
+			cursor: pointer;
+			margin: 0;
+			&:first-of-type {
+				grid-column: 1 / span 2;
+			}
+			h3 {
+				margin: 15px 0 5px 0;
+				font-size: 1.2rem;
+				font-weight: 500;
+				text-align: center;
+			}
+			.memberTitle {
+				font-size: 0.8rem;
+				text-align: center;
+			}
+			&:hover {
+				.sphere1 {
+					background-color: $sphere1BG;
+				}
+				.sphere2{
+					background-color: $sphere2BG;
+				}
+				.sphere3 {
+					background-color: $sphere3BG;
+				}
+			}
+			.links {
+				display: block;
+    			text-align: center;
+				li {
+					display: inline-block;
+					width: 20px;
+					padding: 0;
+					margin: 5px !important;
+					a {
+						svg, path {
+							fill: rgba(0,0,0,0.5);
+						}
+						&:hover {
+							svg, path {
+								fill: rgba(0,0,0,0.9);
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 }
-
 
 
 

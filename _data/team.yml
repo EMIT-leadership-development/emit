@@ -5,9 +5,9 @@
   email:
   facebook_url: 'https://www.facebook.com/sonya.dejager.5/'
   twitter_url: 'https://twitter.com/ninja_sonya'
-  linkedin:
+  linkedin_url:
   team_image: /images/team/Kobus.webp
-  bio_text: >-
+  description: >-
     Kobus has been involved in the training and equipping of leaders since 1991.
     He firmly believes that the lack of trained leaders is to blame for many of
     the problems experienced in Africa and the rest of the world.
@@ -24,9 +24,9 @@
   email:
   facebook_url:
   twitter_url:
-  linkedin:
+  linkedin_url:
   team_image: /images/team/Borniface.webp
-  bio_text: >-
+  description: >-
     Borniface Burton Shonga, warmly referred to as “BB” is a long time associate
     of EMIT. He served as Senior Pastor of Kabwe Chapel for a number of years.
     He is considered a mentor, role model and a credible voice to many in Zambia
@@ -38,9 +38,9 @@
   email:
   facebook_url:
   twitter_url:
-  linkedin:
+  linkedin_url:
   team_image: /images/team/Johan.webp
-  bio_text: >-
+  description: >-
     Johan Fourie is a true servant leader who knows and understands Africa. He
     has been in full–time ministry since 1995 and is a gifted teacher who is
     also well qualified in Information Technology (IT). As Chief of Operations
@@ -56,9 +56,9 @@
   email:
   facebook_url:
   twitter_url:
-  linkedin:
+  linkedin_url:
   team_image: /images/team/Theo.webp
-  bio_text: >-
+  description: >-
     Theo has been involved in ministry for well over a decade as pastor, church
     planter and disciple-maker. He has worked in missions since 2006 and started
     with EMIT at the end of 2012. He is a gifted teacher and serves as head of
@@ -71,9 +71,9 @@
   email:
   facebook_url:
   twitter_url:
-  linkedin:
+  linkedin_url:
   team_image: /images/team/Chris.webp
-  bio_text: >-
+  description: >-
     As a born South African, Chris has worked in Africa for decades and
     understands the issues and challenges of the continent very well. He has a
     passion to train leaders and belief that Africa will succeed or fail by its
@@ -87,9 +87,9 @@
   email:
   facebook_url:
   twitter_url:
-  linkedin:
+  linkedin_url:
   team_image: /images/team/team-7.jpg
-  bio_text: >-
+  description: >-
     Bishop Gasore is a native of Rwanda. He oversees all our Francophone
     countries and is also a representative on our international Board. He also
     oversees several churches in his home country, Rwanda. He is married to
@@ -101,9 +101,9 @@
   email:
   facebook_url:
   twitter_url:
-  linkedin:
+  linkedin_url:
   team_image: /images/team/team-7.jpg
-  bio_text: >-
+  description: >-
     Aaron is a native of Kenya where is pastors a church. He is a project leader
     for the East African countries including Kenya, Uganda and Tanzania. He is
     married to Rebecca who is also a gifted teacher.
@@ -114,9 +114,9 @@
   email:
   facebook_url:
   twitter_url:
-  linkedin:
+  linkedin_url:
   team_image: /images/team/team-7.jpg
-  bio_text: >-
+  description: >-
     A native of South Africa, Johan has been in pastoral ministry, including
     theological training, worship, and Christian education, for more than 35
     years. He joined EMIT in 2006 and is currently our project leader in
@@ -129,9 +129,9 @@
   email:
   facebook_url:
   twitter_url:
-  linkedin:
+  linkedin_url:
   team_image: /images/team/team-7.jpg
-  bio_text: >-
+  description: >-
     Is a 3rd generation missionary who established himself in South Africa and
     has been a trainer of pastors around Africa since 1990. He served as a
     missionary in Angola, Portugal and Australia. He is a pastor within the
@@ -145,9 +145,9 @@
   email:
   facebook_url:
   twitter_url:
-  linkedin:
+  linkedin_url:
   team_image: /images/team/team-7.jpg
-  bio_text: >-
+  description: >-
     Dr. Steven is currently Project Leader for our Liberia, West Africa project.
     Dr. Steven has been with EMIT since 1999. He was a pastor for many years and
     has advanced degrees in Theology and Missiology. Dr. Steven served EMIT by
@@ -163,9 +163,9 @@
   email:
   facebook_url:
   twitter_url:
-  linkedin:
+  linkedin_url:
   team_image: /images/team/team-7.jpg
-  bio_text: >-
+  description: >-
     Bishop Leonard Daffa, a native of Tanzania, is the country coordinator for
     Tanzania under the leadership of Pastor Maingi. He is a Bishop of several
     churches in Tanzania and is married to Lilly Daffa.
@@ -176,10 +176,10 @@
   email:
   facebook_url:
   twitter_url:
-  linkedin:
+  linkedin_url:
   team_image: /images/team/team-7.jpg
-  bio_text: >-
-    bio_text still to come. Lacus proident occaecat magnam eros quas quisque quia,
+  description: >-
+    description still to come. Lacus proident occaecat magnam eros quas quisque quia,
     luctus omnis lacinia dolorum explicabo eleifend ipsa. Posuere sem mi augue?
     Vivamus veritatis? Leo ligula eiusmod scelerisque quibusdam purus, optio
     convallis hymenaeos.
@@ -190,9 +190,9 @@
   email:
   facebook_url:
   twitter_url:
-  linkedin:
+  linkedin_url:
   team_image: /images/team/Christa.webp
-  bio_text: >-
+  description: >-
     Christa combines her management skills with theological training. Christa
     joined EMIT in 2008. She is the pillar that supports the administration of
     EMIT She’s married to Stephan and has two children.
@@ -203,9 +203,9 @@
   email:
   facebook_url:
   twitter_url:
-  linkedin:
+  linkedin_url:
   team_image: /images/team/team-7.jpg
-  bio_text: >-
+  description: >-
     Lisa LaRochelle recently joined EMIT USA’s staff as office manager. Lisa’s
     work in a professional capacity includes not only office and managerial
     expertise, she has helped start several successful small businesses. She is
@@ -221,9 +221,9 @@
   email:
   facebook_url:
   twitter_url:
-  linkedin:
+  linkedin_url:
   team_image: /images/team/team-7.jpg
-  bio_text: >-
+  description: >-
     Lydia graduated with honors from the University of Colorado with a Masters
     of Arts in Clinical Mental Health Counseling and is a Licensed Professional
     Counselor specializing in emotional trauma in adults and children. Lydia has
@@ -238,9 +238,9 @@
   email:
   facebook_url:
   twitter_url:
-  linkedin:
+  linkedin_url:
   team_image: /images/team/team-7.jpg
-  bio_text: >-
+  description: >-
     Trained for Youth Ministry with Teen Missions where she worked both in
     Zambia and USA. She is currently serving as the Personal Assistant to Bishop
     Shonga. Mervis also serves as National Secretary of EMIT Zambia. Mervis, a
@@ -256,9 +256,9 @@
   email:
   facebook_url:
   twitter_url:
-  linkedin:
+  linkedin_url:
   team_image: /images/team/team-7.jpg
-  bio_text: >-
+  description: >-
     Peter was born in Blantyre Malawi. He has a passion for graphic designing
     and video editing. He is currently in charge of the production of our
     material which includes the manuals, DvD’s and ID cards for our students. He

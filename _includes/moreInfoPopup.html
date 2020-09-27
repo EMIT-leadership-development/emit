@@ -1,14 +1,13 @@
-<div id="efca" class="moreInfo">
+<div class="moreInfo">
     <div class="wrap">
-
         <div class="pic">
-            <img src="{{site.baseurl}}/images/{{partner.pic}}" alt="{{partner.name}}">
+            <img src="{{site.baseurl}}{{image}}" alt="{{item.name}}">
         </div>
         <div class="content">
-            <h3>{{partner.name}}</h3>
+            <h3>{{name}}</h3>
             <div>
-                <p>{{partner.description}}</p>
-                <p>You can read more about them on their <a href="{{partner.websiteUrl}}">website</a>.</p>
+                <p>{{description}}</p>
+                <p><a href="{{url}}"> {{ urlText }} </a>.</p>
             </div>
         </div>
     </div>

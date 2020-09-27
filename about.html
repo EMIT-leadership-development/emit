@@ -311,10 +311,16 @@ subtitle: What we do and how we do it
 			<div class="sectionContent">
 				<ul class="partnerLogos">
 					<!-- For each partner in data file -->
-					{% for partner in site.data.partners %}
+					{% for item in site.data.partners %}
+						<!-- Assign the image, urltext and url -->
+						{% assign name = item.name %}
+						{% assign image = item.partner_image %}
+						{% assign url = item.websiteUrl %}
+						{% assign urlText = "Read more on their website" %}
+						{% assign description = item.description %}
 						<li>
 							<span class="modalBtn">
-								<img src="{{site.baseurl}}{{partner.partner_image}}" alt="{{partner.name}}">
+								<img src="{{site.baseurl}}{{item.partner_image}}" alt="{{item.name}}">
 							</span>
 							<div class="modal">
 								<div class="modalContent">
