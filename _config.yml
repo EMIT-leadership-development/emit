@@ -93,11 +93,15 @@ maps:
 garment_types:
   - hat
   - top
+d# Program Status determines whether program can be viewed
 statuses:
   - current
   - planned
   - developing
-# Program Status determines whether program can be viewed
+# Team members are categorised in groups
+groups:
+  - team
+  - board
 
 social_icons:
   - Email
