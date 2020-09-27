@@ -4,7 +4,7 @@ Team_Members:
     group: team
     email:
     facebook:
-    twitter: ninja_sonya
+    twitter_url: https://twitter.com/ninja_sonya
     linkedin:
     pic: "team/Kobus.webp"
     bio: "Kobus has been involved in the training and equipping of leaders since 1991. He firmly believes that the lack of trained leaders is to blame for many of the problems experienced in Africa and the rest of the world. Transformational Leadership will result in changed communities and ultimately Nations. He is pragmatic in his approach to the problems of Africa and leads many community projects in his city as part of his own contribution to address the needs of those that cannot help themselves. He and his wife Teresa have three children and currently reside in Springs, South Africa."
@@ -14,7 +14,7 @@ Team_Members:
     group: team
     email:
     facebook:
-    twitter:
+    twitter_url:
     linkedin:
     pic: "team/Borniface.webp"
     bio: "Borniface Burton Shonga, warmly referred to as “BB” is a long time associate of EMIT. He served as Senior Pastor of Kabwe Chapel for a number of years. He is considered a mentor, role model and a credible voice to many in Zambia and beyond. He is married to Ethel and have four daughters."
@@ -24,7 +24,7 @@ Team_Members:
     group: team
     email:
     facebook:
-    twitter:
+    twitter_url:
     linkedin:
     pic: "team/Johan.webp"
     bio: "Johan Fourie is a true servant leader who knows and understands Africa. He has been in full–time ministry since 1995 and is a gifted teacher who is also well qualified in Information Technology (IT). As Chief of Operations he plans, directs, and oversees EMIT’s operational policies, rules, initiatives, and goals. He helps the organization execute long-term and short-term plans and directives by implementing judgment, vision, management, and leadership. He is married to Marietjie, they have one child and lives in Springs, South Africa."
@@ -34,7 +34,7 @@ Team_Members:
     group: team
     email:
     facebook:
-    twitter:
+    twitter_url:
     linkedin:
     pic: "team/Theo.webp"
     bio: "Theo has been involved in ministry for well over a decade as pastor, church planter and disciple-maker. He has worked in missions since 2006 and started with EMIT at the end of 2012. He is a gifted teacher and serves as head of development and project leader at the South African office. Theo and his wife Mariëtte has two children and lives in Springs, South Africa."
@@ -44,7 +44,7 @@ Team_Members:
     group: team
     email:
     facebook:
-    twitter:
+    twitter_url:
     linkedin:
     pic: "team/Chris.webp"
     bio: "As a born South African, Chris has worked in Africa for decades and understands the issues and challenges of the continent very well. He has a passion to train leaders and belief that Africa will succeed or fail by its ability to raise up, train, mobilize and release well-developed leaders. Chris presently lives in Colorado Springs, CO, USA, and has three married daughters."
@@ -54,7 +54,7 @@ Team_Members:
     group: team
     email:
     facebook:
-    twitter:
+    twitter_url:
     linkedin:
     Pic: "team/team-7.jpg"
     bio: "Bishop Gasore is a native of Rwanda. He oversees all our Francophone countries and is also a representative on our international Board. He also oversees several churches in his home country, Rwanda. He is married to Pauline."
@@ -64,7 +64,7 @@ Team_Members:
     group: team
     email:
     facebook:
-    twitter:
+    twitter_url:
     linkedin:
     pic: "team/team-7.jpg"
     bio: "Aaron is a native of Kenya where is pastors a church. He is a project leader for the East African countries including Kenya, Uganda and Tanzania. He is married to Rebecca who is also a gifted teacher."
@@ -74,7 +74,7 @@ Team_Members:
     group: team
     email:
     facebook:
-    twitter:
+    twitter_url:
     linkedin:
     pic: "team/team-7.jpg"
     bio: "A native of South Africa, Johan has been in pastoral ministry, including theological training, worship, and Christian education, for more than 35 years. He joined EMIT in 2006 and is currently our project leader in Tanzania, Uganda, Namibia and Kenya. He’s a graduate of AFM Theological Seminary in South Africa and is married to Alta."
@@ -84,7 +84,7 @@ Team_Members:
     group: team
     email:
     facebook:
-    twitter:
+    twitter_url:
     linkedin:
     pic: "team/team-7.jpg"
     bio: "Is a 3rd generation missionary who established himself in South Africa and has been a trainer of pastors around Africa since 1990. He served as a missionary in Angola, Portugal and Australia. He is a pastor within the Assemblies of God and is the Secretary General for the AGF in South Africa. He pastors the Portuguese Assembly in Pretoria West. Julio is EMIT’S Project Leader for Angola and Mozambique. He is married to Raquel and has 3 kids."
@@ -94,7 +94,7 @@ Team_Members:
     group: team
     email:
     facebook:
-    twitter:
+    twitter_url:
     linkedin:
     pic: "team/team-7.jpg"
     bio: "Dr. Steven is currently Project Leader for our Liberia, West Africa project. Dr. Steven has been with EMIT since 1999. He was a pastor for many years and has advanced degrees in Theology and Missiology. Dr. Steven served EMIT by directing a Refugee Camp project for 11 years in western Tanzania. He also teaches as an adjunct professor for The Kings University and Shiloh University (where he also serves as Dean of the Undergraduate programs). Steven, and his wife, Linda, live in Colorado Springs, CO and have three grown children and ten grandchildren."
@@ -104,7 +104,7 @@ Team_Members:
     group: team
     email:
     facebook:
-    twitter:
+    twitter_url:
     linkedin:
     pic: "team/team-7.jpg"
     bio: "Bishop Leonard Daffa, a native of Tanzania, is the country coordinator for Tanzania under the leadership of Pastor Maingi. He is a Bishop of several churches in Tanzania and is married to Lilly Daffa."
@@ -114,7 +114,7 @@ Team_Members:
     group: team
     email:
     facebook:
-    twitter:
+    twitter_url:
     linkedin:
     pic: "team/team-7.jpg"
     bio: "Bio still to come. Lacus proident occaecat magnam eros quas quisque quia, luctus omnis lacinia dolorum explicabo eleifend ipsa. Posuere sem mi augue? Vivamus veritatis? Leo ligula eiusmod scelerisque quibusdam purus, optio convallis hymenaeos."
@@ -124,7 +124,7 @@ Team_Members:
     group: team
     email:
     facebook:
-    twitter:
+    twitter_url:
     linkedin:
     pic: "team/Christa.webp"
     bio: "Christa combines her management skills with theological training. Christa joined EMIT in 2008. She is the pillar that supports the administration of EMIT She’s married to Stephan and has two children."
@@ -134,7 +134,7 @@ Team_Members:
     group: team
     email:
     facebook:
-    twitter:
+    twitter_url:
     linkedin:
     pic: "team/team-7.jpg"
     bio: "Lisa LaRochelle recently joined EMIT USA’s staff as office manager. Lisa’s work in a professional capacity includes not only office and managerial expertise, she has helped start several successful small businesses. She is the mother of three amazing children. Lisa has served in a variety of ministry capacities at her church and is currently in her 2nd year at the Assembly of God School of Ministry as she pursues pastoral ordination. We are blessed to have not only Lisa’s superb skills, but her passionate love for the Lord and for His Church."
@@ -144,7 +144,7 @@ Team_Members:
     group: team
     email:
     facebook:
-    twitter:
+    twitter_url:
     linkedin:
     pic: "team/team-7.jpg"
     bio: "Lydia graduated with honors from the University of Colorado with a Masters of Arts in Clinical Mental Health Counseling and is a Licensed Professional Counselor specializing in emotional trauma in adults and children. Lydia has a passion for giving women leaders the tools to address emotional trauma in their personal life and communities; and to advocate for those without a voice. Lydia is married to Joël, a Bible translator and they live in Colorado Springs, CO, USA."
@@ -154,7 +154,7 @@ Team_Members:
     group: team
     email:
     facebook:
-    twitter:
+    twitter_url:
     linkedin:
     pic: "team/team-7.jpg"
     bio: "Trained for Youth Ministry with Teen Missions where she worked both in Zambia and USA. She is currently serving as the Personal Assistant to Bishop Shonga. Mervis also serves as National Secretary of EMIT Zambia. Mervis, a former student of EMIT has also finished her Bachelor in Theology. Mervis is a strong advocate of the young generation and believes the young people are leaders of today rather than tomorrow. Mervis does not yet have a family of her own but has strong extended family ties and has always looked after one or two siblings children."
@@ -164,7 +164,7 @@ Team_Members:
     group: team
     email:
     facebook:
-    twitter:
+    twitter_url:
     linkedin:
     pic: "team/team-7.jpg"
     bio: "Peter was born in Blantyre Malawi. He has a passion for graphic designing and video editing. He is currently in charge of the production of our material which includes the manuals, DvD’s and ID cards for our students. He also has strong administrative skills. Peter joined EMIT in September 2012. He is married to Mervis Kays O’Daniel and are blessed with 3 boys and a girl."
