@@ -5,10 +5,10 @@ heroImage:
 bookCover:
 curriculumSprite:
 subtitle:
-id: 4
+id:
 objective_markdown:
 motivation:
-status:
+status_types:
 
 entrance:
 delivery:

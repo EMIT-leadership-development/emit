@@ -94,7 +94,7 @@ garment_types:
   - hat
   - top
 # Program Status determines whether program can be viewed
-status:
+status_types:
   - current
   - planned
 
@@ -120,4 +120,4 @@ _comments:
   color: The background color used in the plan name and call to action.
   new_window: Open link in new window
   description: This is used for facebook shares of the page and google indexing
-  status: Current Programs are open for registration. Planned programs have option to sponsor development.
+  status: Current Programs have a registration button. Planned programs have sponsor development button.
