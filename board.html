@@ -1,20 +1,20 @@
 ---
-title: Team
-hero: Team
+title: Board
+hero: Board
 heroImage: couple.webp
 subtitle: Our Spheres of Impact
 ---
 
-<div class="page team">
+<div class="page board">
     <!-- INTRO -->
     <section class="pageSection">
         <div class="container col-2-3">
             <div class="sectionIntro">
-                <h2 class="sectionTitle priority2 editable">Our spheres of <span class="emphasis">impact</span></h2>
-                <p class="editable introduction">THE EMIT TEAM are experts in African transformation.</p>
+                <h2 class="sectionTitle priority2 editable">Our board<br>of <span class="emphasis">directors</span></h2>
+                <p class="editable introduction">THE EMIT board of directors paragraph about who they are.</p>
             </div>
             <div class="sectionContent">
-                <p class="editable">They are mentors that multiply themselves by imparting skills and life-changing values. Non illo molestiae tortor, nemo officia, quo nibh deleniti? Neque velit? Voluptatem? Mauris? Suscipit error, nemo ullamcorper class eum rerum nesciunt, incidunt leo primis senectus, pulvinar enim nascetur perspiciatis iste adipiscing do provident curae iaculis quibusdam eiusmod leo numquam augue.</p>
+                <p class="editable">Paragraph about the board of directors. Their expertise and how they were formed.  Non illo molestiae tortor, nemo officia, quo nibh deleniti? Neque velit? Voluptatem? Mauris? Suscipit error, nemo ullamcorper class eum rerum nesciunt, incidunt leo primis senectus, pulvinar enim nascetur perspiciatis iste adipiscing do provident curae iaculis quibusdam eiusmod leo numquam augue.</p>
                 <p class="editable">Ipsam duis parturient architecto consectetuer incidunt id cum curabitur similique wisi fusce repellat, elementum, quas, cubilia. Possimus, habitant, risus ratione? Placeat voluptates posuere natus et. Fugiat nostrum magna, eleifend diamlorem! Nostrud sociosqu fusce officia egestas nascetur commodi magnam delectus nobis.</p>
             </div>
         </div>
@@ -24,12 +24,12 @@ subtitle: Our Spheres of Impact
         <div class="container max-content">
             <ul class="sectionContent">
                 {% for teamMember in site.data.team%}
-                <li>
                     <!-- if group is team -->
-                    {% if teamMember.group == "team" %}
+                    {% if teamMember.group == "board" %}
+                    <li>
                         {% include teamMemberPreview.html %}
+                    </li>
                     {% endif %}
-                </li>
                 {% endfor %}
             </ul>
         </div>
