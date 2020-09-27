@@ -1,6 +1,7 @@
-- name: George Phillips
-  email: george@cloudcannon.com
-- name: Mike Neumegen
-  email: mike@cloudcannon.com
-- name: Ross Phillips
-  email: ross@cloudcannon.com
+- name: Kobus Grobler
+  title: Global CEO
+  email:
+  group: Team
+  pic: "team/Kobus.webp"
+  memberID: 1
+  bio:
