@@ -115,9 +115,9 @@ _options:
     uploads_dir: "images/team/:title"
     width: 500
     height: 500
-    resize_style: "contain"
+    resize_style: "cover"
     mime_type: "image/jpeg"
-    expandable: true
+    expandable: false
 
 _comments:
   map: Update the map location and display settings.
