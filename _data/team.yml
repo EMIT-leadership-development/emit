@@ -1,4 +1,5 @@
 - name: Kobus Grobler
+  shortname: Kobus
   title: Global CEO
   group: team
   email:
@@ -17,6 +18,7 @@
     and his wife Teresa have three children and currently reside in Springs,
     South Africa.
 - name: Borniface Shonga
+  shortname: Borniface
   title: Global President
   group: team
   email:
@@ -30,6 +32,7 @@
     He is considered a mentor, role model and a credible voice to many in Zambia
     and beyond. He is married to Ethel and have four daughters.
 - name: Johan Fourie
+  shortname: Johan
   title: Chief Operating Officer
   group: team
   email:
@@ -47,6 +50,7 @@
     management, and leadership. He is married to Marietjie, they have one child
     and lives in Springs, South Africa.
 - name: Theo Faber
+  shortname: Theo
   title: Executive Director - Development
   group: team
   email:
@@ -61,6 +65,7 @@
     development and project leader at the South African office. Theo and his
     wife Mariëtte has two children and lives in Springs, South Africa.
 - name: Chris de Wet
+  shortname: Chris
   title: Co-founder
   group: team
   email:
@@ -76,6 +81,7 @@
     Chris presently lives in Colorado Springs, CO, USA, and has three married
     daughters.
 - name: Constantin Gasore
+  shortname: Constantin
   title: Project Leader Francophone Countries
   group: team
   email:
@@ -89,6 +95,7 @@
     oversees several churches in his home country, Rwanda. He is married to
     Pauline.
 - name: Aaron Maingi
+  shortname: Aaron
   title: Project Leader East African countries
   group: team
   email:
@@ -101,6 +108,7 @@
     for the East African countries including Kenya, Uganda and Tanzania. He is
     married to Rebecca who is also a gifted teacher.
 - name: Johan Cronje
+  shortname: JohanC
   title: Project Leader
   group: team
   email:
@@ -115,6 +123,7 @@
     Tanzania, Uganda, Namibia and Kenya. He’s a graduate of AFM Theological
     Seminary in South Africa and is married to Alta.
 - name: Julio Da Silva
+  shortname: Julio
   title: Project Leader
   group: team
   email:
@@ -130,6 +139,7 @@
     He pastors the Portuguese Assembly in Pretoria West. Julio is EMIT’S Project
     Leader for Angola and Mozambique. He is married to Raquel and has 3 kids.
 - name: Steven Todd
+  shortname: Steven
   title: 'Director, Special Projects'
   group: team
   email:
@@ -147,6 +157,7 @@
     Steven, and his wife, Linda, live in Colorado Springs, CO and have three
     grown children and ten grandchildren.
 - name: Leonard Daffa
+  shortname: Leonard
   title: 'Special Projects, East Africa'
   group: team
   email:
@@ -159,6 +170,7 @@
     Tanzania under the leadership of Pastor Maingi. He is a Bishop of several
     churches in Tanzania and is married to Lilly Daffa.
 - name: Jones Singini
+  shortname: Jones
   title: Project Leader
   group: team
   email:
@@ -172,6 +184,7 @@
     Vivamus veritatis? Leo ligula eiusmod scelerisque quibusdam purus, optio
     convallis hymenaeos.
 - name: Christa Greyvenstein
+  shortname: Christa
   title: Personal Assistant
   group: team
   email:
@@ -184,6 +197,7 @@
     joined EMIT in 2008. She is the pillar that supports the administration of
     EMIT She’s married to Stephan and has two children.
 - name: Lisa LaRochelle
+  shortname: Lisa
   title: 'Office Manager, EMIT USA'
   group: team
   email:
@@ -201,6 +215,7 @@
     are blessed to have not only Lisa’s superb skills, but her passionate love
     for the Lord and for His Church.
 - name: Lydia Brown
+  shortname: Lydia
   title: Special Projects – Women
   group: team
   email:
@@ -217,6 +232,7 @@
     voice. Lydia is married to Joël, a Bible translator and they live in
     Colorado Springs, CO, USA.
 - name: Mervis Malambo
+  shortname: Mervis
   title: 'General Secretary, Zambia'
   group: team
   email:
@@ -234,6 +250,7 @@
     her own but has strong extended family ties and has always looked after one
     or two siblings children.
 - name: Peter Mkandawire
+  shortname: Peter
   title: Production assistant
   group: team
   email:

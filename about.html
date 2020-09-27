@@ -75,12 +75,8 @@ subtitle: What we do and how we do it
 				<h2 class="sectionTitle priority2 editable">The <span class="emphasis">GOAL</span></h2>
 				<p class="editable introduction">EQUIPPED LEADERS who improve well-being within their spheres of impact.</p>
 				<p class="editable">They are <span class="emphasis">mentors</span> that <span class="emphasis">multiply themselves</span> by imparting skills and life-changing values.</p>
-
 				{% assign thepost = site.posts | where:"title","Our Vision" %}
-				{% for post in thepost %}
 				{% include articleLink.html %}
-				{% endfor %}
-
 			</div>
 			<div class="sectionContent">
 				<ul class="infoPoints">
@@ -116,14 +112,10 @@ subtitle: What we do and how we do it
 				<p editable>By focusing on spiritual, character, leadership and professional skills development, we educate and inspire leaders in various pillars of society to become agents of change in their communities and nations.</p>
 				<div class="relatedArticles">
 					{% assign thepost = site.posts | where:"title","What we do" %}
-					{% for post in thepost %}
 					{% include articleLink.html %}
-					{% endfor %}
 
 					{% assign thepost = site.posts | where:"title","Purposeful Leadership" %}
-					{% for post in thepost %}
 					{% include articleLink.html %}
-					{% endfor %}
 				</div>
 				<ul class="infoPoints">
 					<li class="point">
@@ -164,9 +156,7 @@ subtitle: What we do and how we do it
 					<br>- Professional Skills development
 				</p>
 				{% assign thepost = site.posts | where:"title","How we do it" %}
-				{% for post in thepost %}
 				{% include articleLink.html %}
-				{% endfor %}
 			</div>
 			<div class="sectionImage" style="background-image:url({{site.baseurl}}/images/meetingUnderTree.webp);">
 			</div>

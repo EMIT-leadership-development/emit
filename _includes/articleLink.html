@@ -1,12 +1,18 @@
 
 <aside>
+    {% for post in thepost %}
     <a class="articleLink" href="{{ site.baseurl }}{{ post.url }}">
-        {% assign author = site.data.team[post.author] %}
+        <!-- {% assign author = site.data.team[post.author] %} -->
+        {% for member in site.data.team %}
+            {% if member.shortname == post.author %}
+                {% assign author = member %}
+            {% endif %}
+        {% endfor %}
         <div class="authorImage">
             <div class="sphere sphere3">
                 <div class="sphere sphere2">
                     <div class="sphere sphere1">
-                        <img src="{{ site.baseurl }}/images/{{ author.pic }}" alt="">
+                        <img src="{{ site.baseurl }}{{ author.team_image }}" alt="">
                     </div>
                 </div>
             </div>
@@ -20,4 +26,5 @@
             <div class="byline"><span class="author">- {{ author.name }}</span> on <span class="postDate">{{ post.date | date: "%d %b %Y" }}</span></div>
         </div>
     </a>
+    {% endfor %}
 </aside>
