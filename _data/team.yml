@@ -1,8 +1,12 @@
 - name: George Phillips
   email: george@cloudcannon.com
+		title: SomeTitle
 - name: Mike Neumegen
   email: mike@cloudcannon.com
+		title: AnotherTitle
 - name: Ross Phillips
   email: ross@cloudcannon.com
+		title: hisTitle
 - name: Kobus Grobler
   email: kibus@cloudcannon.com
+		title: finalTitle
