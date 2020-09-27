@@ -94,9 +94,10 @@ garment_types:
   - hat
   - top
 # Program Status determines whether program can be viewed
-status:
-  - current
-  - planned
+_select_data:
+  status:
+    - current
+    - planned
 
 social_icons:
   - Email
