@@ -811,6 +811,9 @@ section.curriculum {
 			&:first-of-type {
 				grid-column: 1 / span 2;
 			}
+			.teamDescription {
+				max-width: 350px;
+			}
 			h3 {
 				margin: 15px 0 5px 0;
 				font-size: 1.2rem;
