@@ -41,12 +41,12 @@
       new_window: false
       highlight: false
 - name: Training
-  link: /training/
+  link: /programs/
   new_window: false
   highlight: false
   subPages:
     - name: EMIT Training
-      link: /training/
+      link: /programs/
       new_window: false
       highlight: false
     - name: Women Leaders

@@ -133,4 +133,14 @@ section {
 			overflow: hidden;
 		}
 	}
+	&.trainingMethodTitle {
+		.sectionContent {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+	}
+	&.learnerPortal {
+		padding-top: 60px;
+	}
 }

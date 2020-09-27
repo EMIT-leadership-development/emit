@@ -9,7 +9,7 @@ body {
 	color: darken($brandContrastLight, 80%);
 }
 a {
-	color: $brand-color;
+	color: darken($brand-color, 20%);
 	text-decoration: none;
 }
 a:hover {
