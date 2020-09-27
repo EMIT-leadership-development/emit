@@ -2,7 +2,7 @@
 title: Women Leaders
 hero: Women Leaders
 heroImage: womenTrainingGroupEMIT.webp
-bookCover: womenTrainingBook2.webp
+bookCover: /images/womenTrainingBook.webp
 curriculumSprite: sprite-womenLeaders.jpg
 subtitle: Leadership training for Women
 id: 2
