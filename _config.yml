@@ -94,8 +94,8 @@ garment_types:
   - hat
   - top
 status:
-  - open
-  - development
+  - hat
+  - top
 # Program Status determines whether program can be viewed
 
 social_icons:
