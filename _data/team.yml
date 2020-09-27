@@ -2,7 +2,7 @@
   title: Global CEO
   group: team
   email:
-  facebook: https://www.facebook.com/sonya.dejager.5/
+  facebook_url: https://www.facebook.com/sonya.dejager.5/
   twitter_url: https://twitter.com/ninja_sonya
   linkedin:
   pic: "team/Kobus.webp"
@@ -12,7 +12,7 @@
   title: Global President
   group: team
   email:
-  facebook:
+  facebook_url:
   twitter_url:
   linkedin:
   pic: "team/Borniface.webp"
@@ -22,7 +22,7 @@
   title: Chief Operating Officer
   group: team
   email:
-  facebook:
+  facebook_url:
   twitter_url:
   linkedin:
   pic: "team/Johan.webp"
@@ -32,7 +32,7 @@
   title: Executive Director - Development
   group: team
   email:
-  facebook:
+  facebook_url:
   twitter_url:
   linkedin:
   pic: "team/Theo.webp"
@@ -42,7 +42,7 @@
   title: Co-founder
   group: team
   email:
-  facebook:
+  facebook_url:
   twitter_url:
   linkedin:
   pic: "team/Chris.webp"
@@ -52,7 +52,7 @@
   title: Project Leader Francophone Countries
   group: team
   email:
-  facebook:
+  facebook_url:
   twitter_url:
   linkedin:
   Pic: "team/team-7.jpg"
@@ -62,7 +62,7 @@
   title: Project Leader East African countries
   group: team
   email:
-  facebook:
+  facebook_url:
   twitter_url:
   linkedin:
   pic: "team/team-7.jpg"
@@ -72,7 +72,7 @@
   title: Project Leader
   group: team
   email:
-  facebook:
+  facebook_url:
   twitter_url:
   linkedin:
   pic: "team/team-7.jpg"
@@ -82,7 +82,7 @@
   title: Project Leader
   group: team
   email:
-  facebook:
+  facebook_url:
   twitter_url:
   linkedin:
   pic: "team/team-7.jpg"
@@ -92,7 +92,7 @@
   title: Director, Special Projects
   group: team
   email:
-  facebook:
+  facebook_url:
   twitter_url:
   linkedin:
   pic: "team/team-7.jpg"
@@ -102,7 +102,7 @@
   title: Special Projects, East Africa
   group: team
   email:
-  facebook:
+  facebook_url:
   twitter_url:
   linkedin:
   pic: "team/team-7.jpg"
@@ -112,7 +112,7 @@
   title: Project Leader
   group: team
   email:
-  facebook:
+  facebook_url:
   twitter_url:
   linkedin:
   pic: "team/team-7.jpg"
@@ -122,7 +122,7 @@
   title: Personal Assistant
   group: team
   email:
-  facebook:
+  facebook_url:
   twitter_url:
   linkedin:
   pic: "team/Christa.webp"
@@ -132,7 +132,7 @@
   title: Office Manager, EMIT USA
   group: team
   email:
-  facebook:
+  facebook_url:
   twitter_url:
   linkedin:
   pic: "team/team-7.jpg"
@@ -142,7 +142,7 @@
   title: Special Projects – Women
   group: team
   email:
-  facebook:
+  facebook_url:
   twitter_url:
   linkedin:
   pic: "team/team-7.jpg"
@@ -152,7 +152,7 @@
   title: General Secretary, Zambia
   group: team
   email:
-  facebook:
+  facebook_url:
   twitter_url:
   linkedin:
   pic: "team/team-7.jpg"
@@ -162,7 +162,7 @@
   title: Production assistant
   group: team
   email:
-  facebook:
+  facebook_url:
   twitter_url:
   linkedin:
   pic: "team/team-7.jpg"
