@@ -117,7 +117,7 @@ _options:
     height: 500
     resize_style: "cover"
     mime_type: "image/jpeg"
-    expandable: false
+    expandable: true
 
 _comments:
   map: Update the map location and display settings.
