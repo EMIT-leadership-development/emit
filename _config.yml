@@ -110,8 +110,14 @@ social_icons:
   - YouTube
   - RSS
 
-image:
-
+_options:
+  team_image: # Front matter field
+    uploads_dir: "images/team/:title"
+    width: 500
+    height: 500
+    resize_style: "cover"
+    mime_type: "image/jpeg"
+    expandable: true
 
 _comments:
   map: Update the map location and display settings.
