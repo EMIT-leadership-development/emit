@@ -1,3 +1,13 @@
+---
+_options:
+  image:
+    uploads_dir: "images/team/:title"
+    width: 500
+    height: 500
+    resize_style: "contain"
+    mime_type: "image/jpeg"
+    expandable: false
+---
 - name: Kobus Grobler
   title: Global CEO
   group: team
