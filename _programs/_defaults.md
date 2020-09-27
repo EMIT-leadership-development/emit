@@ -8,7 +8,7 @@ subtitle:
 id:
 objective_markdown:
 motivation:
-status_types:
+status:
 
 entrance:
 delivery:

@@ -8,7 +8,7 @@ subtitle:
 id: 4
 objective_markdown: Paragraph describing the objective for this program. For example - when you have completed this program you will be able to...
 motivation: "Why EMIT chose to develop this program. eg. Church leaders are an integral part of African life."
-status_types: planned
+status: planned
 
 entrance: Explain the entrance requirements for this program
 delivery: Describe how the program is delivered
