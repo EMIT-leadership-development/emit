@@ -93,7 +93,7 @@ maps:
 garment_types:
   - hat
   - top
-d# Program Status determines whether program can be viewed
+# Program Status determines whether program can be viewed
 statuses:
   - current
   - planned
