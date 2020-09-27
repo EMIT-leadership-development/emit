@@ -93,11 +93,10 @@ maps:
 garment_types:
   - hat
   - top
+status:
+  - hat
+  - top
 # Program Status determines whether program can be viewed
-_select_data:
-  status:
-    - current
-    - planned
 
 social_icons:
   - Email
