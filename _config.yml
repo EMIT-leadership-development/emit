@@ -115,7 +115,7 @@ _options:
     uploads_dir: "images/team/:title"
     width: 500
     height: 500
-    resize_style: "cover"
+    resize_style: "contain"
     mime_type: "image/jpeg"
     expandable: true
 
