@@ -3,9 +3,13 @@ layout: post
 title: A woman’s calling to work with families affected by alcoholism, drug abuse, femicide, and child abuse.
 subtitle: Karen Feris - NAMIBIA
 heroImage: africanFamily.webp
+image: /images/africanFamily.webp
 author: KarenFeris
 tags: EMIT transformation Africa Leadership Training News
 category: Transformation Stories
+location:
+    latitude: -22.180274
+    longitude: 17.177725
 ---
 
 Karen Feris from Rehoboth, Namibia completed our Pastoral Leadership Institute (PLI) and is currently enrolled in the Women Leadership Institute (WLI). She served on the PLI committee and is currently serving on the WLI committee.

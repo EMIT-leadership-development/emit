@@ -6,6 +6,9 @@ heroImage: curiousChildren.webp
 author: BuniniProtais
 tags: EMIT transformation Africa Leadership Training News
 category: Transformation Stories
+location:
+    latitude: -2.003878
+    longitude: 29.883200
 ---
 
 The genocide that occurred in Rwanda during the “100 days of slaughter” in 1994 plunged a nation and its people into unimaginable affliction. Hatred, distrust, pain, civil discord, tribal war and the like were a daily reminder of the horrific events that devastated that country.

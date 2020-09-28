@@ -47,15 +47,24 @@
 			</nav>
 		</header>
 		<main class="content">
+			<!-- If page is articles then show map else show normal hero -->
+			{% if page.title == "Stories" %}
+			<section class="hero map geoLocatedStories">
+				{% google_map
+					width="100%"
+					height="100%"
+					zoom="4"
+					src="_posts/Transformation-Stories"
+					styles="dark"
+					marker_icon="/images/interface/mapMarker.png"
+			</section>
+			{% else %}
 			<section class="hero" style="background-image:url({{site.baseurl}}/images/{{page.heroImage}});">
 				<div class="overlay"></div>
 			</section>
-
+			{% endif %}
 			{{ content }}
-
 		</main>
-
-
 		<footer>
 			{% include footer.html %}
 		</footer>
@@ -83,7 +92,11 @@
 						scrub: 1
 					}
 					});
-					tl.to('#headerLogo .logo', {duration: 1, height: 55, ease:"linear"},"<");
+					tl.to('#headerLogo .logo', {duration:1, height:55, ease:"linear"},'<');
+					tl.to('.mainNavigation',{
+						duration:1,
+						boxShadow: "0 1px 15px rgba(0,0,0, .15)"
+					},'<');
 					return tl;
 				}
 		</script>

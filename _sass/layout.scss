@@ -19,6 +19,13 @@ section {
 	position: relative;
 }
 
+// The hero map on stories page
+section.hero.geoLocatedStories {
+	height: 100vh;
+	margin-top: -99px;
+	margin-left: -1px;
+}
+
 // containers inside sections allow for setting the max width of section
 .container {
 	max-width: 1140px;

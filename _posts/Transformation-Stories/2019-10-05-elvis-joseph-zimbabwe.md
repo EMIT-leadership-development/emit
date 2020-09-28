@@ -6,6 +6,9 @@ heroImage: african-politics-EMIT-leadership-development.webp
 author: ElvisJoseph
 tags: EMIT transformation Africa Leadership Training News
 category: Transformation Stories
+location:
+    latitude: -19.513607
+    longitude: 29.581028
 ---
 
 The testimony of Dr. Elvis Joseph is one of our EMIT success stories. Elvis grew up being passed from relative to relative, moving from one family to the next. Not knowing his father, he grew up questioning who he was and his purpose for existence.
