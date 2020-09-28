@@ -55,7 +55,7 @@
 					height="100%"
 					zoom="4"
 					src="_posts/Transformation-Stories"
-					styles="dark"
+					styles="darkMinimum"
 					marker_icon="/images/interface/mapMarker.png"
 			</section>
 			{% else %}
@@ -63,6 +63,9 @@
 				<div class="overlay"></div>
 			</section>
 			{% endif %}
+			<section class="hero" style="background-image:url({{site.baseurl}}/images/{{page.heroImage}});">
+				<div class="overlay"></div>
+			</section>
 			{{ content }}
 		</main>
 		<footer>
@@ -99,6 +102,31 @@
 					},'<');
 					return tl;
 				}
+		</script>
+		<script>
+			function animateSections() {
+				// const sections = [];
+
+				elements = gsap.utils.toArray('.sectionIntro');
+
+				gsap.set(elements, {
+				autoAlpha: 0,
+				y: 30
+				});
+
+				elements.forEach( (el)=> {
+				gsap.to(el, {
+					duration: 0.3,
+					autoAlpha: 1,
+					y: 0,
+					scrollTrigger: {
+						trigger: el,
+						start: "top 80%",
+					}
+					});
+				})
+			}
+			animateSections();
 		</script>
 
 		<script>

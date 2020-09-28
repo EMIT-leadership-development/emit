@@ -6,7 +6,7 @@ html, body {
 body {
 	font-family: "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 	-webkit-font-smoothing: antialiased;
-	color: darken($brandContrastLight, 80%);
+	color: lighten($brandContrastDark, 15%);
 }
 a {
 	color: darken($brand-color, 20%);
@@ -58,9 +58,10 @@ ul {
 	margin: 0 0 30px 0;
 }
 h1, h2, h3, h4 {
-	color: darken($brandContrastLight, 90%);
+	color: lighten($brandContrastDark, 10%);
 	margin: 0 0 30px 0;
 	line-height: 1.2;
+	font-weight: 400;
 	.emphasis {
 		font-weight: 600;
 	}
@@ -86,7 +87,7 @@ h1, h2, h3, h4 {
 .sectionTitle.priority3 {
 	// Adding a top margin to balance with partner logos
 	margin-top: 30px;
-	font-size: 1.3rem;
+	font-size: 1.4rem;
 	font-weight: 400;
 }
 // Horizontal divider lines
@@ -236,16 +237,19 @@ p.introduction {
 			}
 		}
 		.pointTitle {
-			font-size: 1.1rem;
+			font-size: 1.2rem;
 			line-height: 1.5;
-			font-weight: 600;
+			// font-weight: 600;
 			padding: 0;
 			margin: 0;
-			text-transform: uppercase;
+			// text-transform: uppercase;
 		}
 		.pointContent {
 			padding: 0;
 			margin: 0;
+		}
+		p {
+			margin-bottom: 0;
 		}
 	}
 	@media #{$mid-point} {
@@ -343,7 +347,7 @@ p.introduction {
 		font-size: 1.2rem;
 		margin-top: 15px;
 		margin-bottom: 10px;
-		max-width: 70%;
+		max-width: 78%;
 	}
 }
 // Counter Row
@@ -544,6 +548,7 @@ p.introduction {
 }
 // Transformation Stories Map extra styles
 .geoLocatedStories {
+	background-color: #3F3F3F !important;
 	.gm-style-iw-d {
 		overflow: visible !important;
 	}
@@ -636,6 +641,8 @@ section.curriculum {
 	// Two columns on tablet Landscape
 	@include for-tablet-landscape-only {
 		grid-template-columns: 1fr 1fr;
+		grid-gap: 4rem;
+		padding: 4rem;
 		* {
 			font-size: 13px;
 		}
@@ -643,6 +650,18 @@ section.curriculum {
 	// Three columns on desktop
 	@include for-desktop-only {
 		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 5rem;
+		padding: 5rem;
+		* {
+			font-size: 13px;
+		}
+	}
+
+	// Three columns on very large screens up
+	@include for-big-desktop-up {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 5rem;
+		padding: 10rem;
 		* {
 			font-size: 13px;
 		}
@@ -715,7 +734,8 @@ section.curriculum {
 		position: relative;
 		counter-increment: my-awesome-counter;
 		background: #eeeeee;
-		box-shadow: 0 1px 4px 3px rgba(0, 0, 0, 0.3), -4px -1px 15px 13px rgba(255, 255, 255, 0.2);
+		box-shadow: 0 1px 4px 3px rgba(0, 0, 0, 0.3), -5px -6px 20px 20px rgba(255, 255, 255, 0.45);
+		// box-shadow: 0 1px 4px 3px rgba(0, 0, 0, 0.3), -4px -1px 15px 13px rgba(255, 255, 255, 0.4);
   		padding-bottom: 75%;
 		// Counter - chapter number
 		&::before {
@@ -762,6 +782,7 @@ section.curriculum {
 			}
 			// The curved shadow at bottom of page
 			.shadow{
+				opacity: 0.7;
 				position: absolute;
 				display: block;
 				// border: 1px solid red;

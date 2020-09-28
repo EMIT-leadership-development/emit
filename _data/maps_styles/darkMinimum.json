@@ -1,0 +1,1 @@
+[ { stylers: [{ invert_lightness: true }, { saturation: -100 }, { lightness: 10 }] }, {featureType: "all", elementType: "labels", stylers: [{ visibility: "off" }]}, ]
