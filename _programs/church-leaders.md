@@ -1,5 +1,7 @@
 ---
 title: Church Leaders
+heroQuote: Education is the most powerful weapon which you can use to change the world.
+hero_Quote_Cite: Nelson Mandela
 
 hero_image: /images/couple.webp
 bookCover_image: /images/programs/PastorTrainingBook.webp

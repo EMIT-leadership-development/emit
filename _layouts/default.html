@@ -60,7 +60,7 @@
 					marker_icon="/images/interface/mapMarker.png" %}
 			</section>
 			{% else %}
-			<section class="hero" style="background-image:url({{site.baseurl}}{{page.hero_image}});">
+		<section class="hero" style="background-image:url({{site.baseurl}}{{page.hero_image}}); background-position:{{page.customHeroPosition}};">
 				<div class="overlay"></div>
 				{% if page.heroQuote %}
 				<blockquote class="heroQuote">

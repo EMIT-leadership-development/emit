@@ -1,20 +1,12 @@
 ---
 title: Stories
-hero: Our transformation stories
-heroQuote:
-hero_image:
 ---
-<div class="content" style="text-align:center; padding: 100px 0;">
-	<section>
-        <div class="container">
-            <h1>Blog posts coming here</h1>
-        </div>
-    </section>
-    <section>
-		{% for post in site.posts %}
-		<div class="container articleList">
-			<p><a style="color:#000000;" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></p>
+<div class="page stories">
+	<section class="pageSection featuredStories">
+		<div class="container col-1-1-1">
+				{% for post in site.posts %}
+				{% include featuredPost.html %}
+				{% endfor %}
 		</div>
-		{% endfor %}
 	</section>
 </div>
