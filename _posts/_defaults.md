@@ -2,6 +2,7 @@
 # Standard for all posts - title and hero content
 layout: post
 title:
+hero:
 heroQuote:
 hero_image: /images/couple.webp
 # If the author is team member then select from datafile

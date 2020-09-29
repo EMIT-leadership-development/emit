@@ -1,8 +1,8 @@
 ---
 title: Political Leaders
 hero: Political Leaders
-heroImage: couple.webp
-bookCover: NewProgramTrainingBook.webp
+hero_image: /images/couple.webp
+bookCover_image: /images/NewProgramTrainingBook.webp
 curriculumSprite: sprite-ComingSoon.webp
 subtitle:
 id: 5

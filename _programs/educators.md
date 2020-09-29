@@ -1,8 +1,8 @@
 ---
 title: Educators
 hero: Educators
-heroImage: couple.webp
-bookCover: NewProgramTrainingBook.webp
+hero_image: couple.webp
+bookCover_image: NewProgramTrainingBook.webp
 curriculumSprite: sprite-ComingSoon.webp
 subtitle:
 id: 6

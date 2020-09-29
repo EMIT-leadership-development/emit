@@ -1,8 +1,8 @@
 ---
 title: Church Leaders
 hero: Church Leaders
-heroImage: couple.webp
-bookCover: /images/PastorTrainingBook.webp
+hero_image: couple.webp
+bookCover_image: /images/PastorTrainingBook.webp
 curriculumSprite: sprite-churchLeaders.webp
 subtitle:
 id: 1

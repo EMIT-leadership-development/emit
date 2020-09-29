@@ -1,8 +1,8 @@
 ---
 title:
 hero:
-heroImage:
-bookCover:
+hero_image:
+bookCover_image:
 curriculumSprite:
 subtitle:
 id:

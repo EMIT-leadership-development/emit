@@ -130,6 +130,10 @@ _options:
     resize_style: "cover"
     mime_type: "image/jpeg"
     expandable: true
+  bookcover_image: # Front matter field
+    uploads_dir: "images/:title"
+
+    # Sonya Todo - set url for all other image uploads
 
 _comments:
   map: Update the map location and display settings.
@@ -145,3 +149,6 @@ _comments:
   image: Student / Leader profile image (500px X 500px) displays in map and sidebar for transformation stories
   leaderBio_description: Displays in sidebar on transformation story posts
   bio_description: Short paragraph about this person
+  heroQuote: Featured inspirational quote to display on page header image
+  hero: Alternative title to display on page header. Default is page title
+  hero_image: The large featured image at the top of the page
