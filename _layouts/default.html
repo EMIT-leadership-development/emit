@@ -56,18 +56,19 @@
 					zoom="4"
 					src="_posts/Transformation-Stories"
 					styles="darkMinimum"
-					marker_icon="/images/interface/mapMarker.png"
+					marker_icon="/images/interface/mapMarker.png" %}
 			</section>
 			{% else %}
 			<section class="hero" style="background-image:url({{site.baseurl}}/images/{{page.heroImage}});">
 				<div class="overlay"></div>
 			</section>
 			{% endif %}
-			<section class="hero" style="background-image:url({{site.baseurl}}/images/{{page.heroImage}});">
-				<div class="overlay"></div>
-			</section>
+
+
+			<!-- Main content -->
 			{{ content }}
 		</main>
+		<!-- Footer -->
 		<footer>
 			{% include footer.html %}
 		</footer>
