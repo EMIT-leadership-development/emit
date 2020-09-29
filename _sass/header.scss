@@ -430,7 +430,7 @@ section.hero{
         h1 {
             margin: 0;
             text-transform: uppercase;
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             color: #ffffff;
             letter-spacing: 3px;
         }
@@ -463,6 +463,12 @@ section.hero{
         }
         border-left: 6px solid #abe115;
         backdrop-filter: blur(2px);
+        footer {
+            margin-top: 10px;
+            background: transparent;
+            color: rgba(255,255,255,0.6);
+            font-size: 0.8rem;
+        }
     }
 }
 

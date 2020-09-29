@@ -62,11 +62,14 @@
 			{% else %}
 			<section class="hero" style="background-image:url({{site.baseurl}}{{page.hero_image}});">
 				<div class="overlay"></div>
-				<div class="heroQuote">
-					{% if page.heroQuote %}
+				{% if page.heroQuote %}
+				<blockquote class="heroQuote">
 					<p>{{page.heroQuote}}</p>
-					{% endif %}
-				</div>
+					<footer><cite>- {{page.hero_Quote_Cite}}</cite></footer>
+				</blockquote>
+				{% else %}
+				<div class="spacer"></div>
+				{% endif %}
 				<div class="heroTitle">
 					<!-- If hero text exists then show it else show page title -->
 					{% if page.hero %}
