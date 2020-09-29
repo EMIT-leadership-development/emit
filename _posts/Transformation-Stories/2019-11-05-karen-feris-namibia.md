@@ -1,12 +1,24 @@
 ---
+# Standard for all posts - title and hero content
 layout: post
-title: A woman’s calling to work with families affected by alcoholism, drug abuse, femicide, and child abuse.
-subtitle: Karen Feris - NAMIBIA
-heroImage: africanFamily.webp
-image: /images/africanFamily.webp
-author: KarenFeris
-tags: EMIT transformation Africa Leadership Training News
-category: Transformation Stories
+title: A woman’s calling to work with families affected by alcoholism, drug abuse, femicide, and child abuse
+heroQuote:
+hero_image: /images/africanFamily.webp
+# If the author is team member then select from datafile
+author:
+
+# Post meta : todo: select field for cc?
+tags:
+category:
+excerpt_separator: <!--more-->
+
+# If transformation story then "author and bio" is populated from these fields
+# Image can't be named anything else because of maps plugin
+# Location used in hero map
+leaderName: Karen Feris
+leaderBio_description: Karen's bio to come here.
+image: /images/leaders/studentPlaceholder.jpg
+country: Namibia
 location:
     latitude: -22.180274
     longitude: 17.177725

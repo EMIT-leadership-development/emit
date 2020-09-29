@@ -1,11 +1,15 @@
 ---
 layout: post
-title: "How an EMIT leader is changing the lives of young genocide survivors"
-subtitle: "Dr. Bunini Gahungu Protais - RWANDA"
-heroImage: curiousChildren.webp
-author: BuniniProtais
-tags: EMIT transformation Africa Leadership Training News
+title: How an EMIT leader is changing the lives of young genocide survivors
+heroQuote:
+hero_image: /images/couple.webp
+author:
+tags: EMIT transformation Africa Leadership Training
 category: Transformation Stories
+excerpt_separator: <!--more-->
+leaderName: Dr. Bunini Gahungu Protais
+image: /images/students/studentPlaceholder.jpg
+country: Rwanda
 location:
     latitude: -2.003878
     longitude: 29.883200

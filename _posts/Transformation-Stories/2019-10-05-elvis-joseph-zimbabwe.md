@@ -1,14 +1,27 @@
 ---
+# Standard for all posts - title and hero content
 layout: post
-title: "A lonely child’s journey to becoming a top-level advisor."
-subtitle: "Dr. Elvis Joseph - ZIMBABWE"
-heroImage: african-politics-EMIT-leadership-development.webp
-author: ElvisJoseph
-tags: EMIT transformation Africa Leadership Training News
-category: Transformation Stories
+title: A lonely child’s journey to becoming a top-level advisor.
+heroQuote:
+hero_image: /images/couple.webp
+# If the author is team member then select from datafile
+author:
+
+# Post meta : todo: select field for cc?
+tags:
+category:
+excerpt_separator: <!--more-->
+
+# If transformation story then "author and bio" is populated from these fields
+# Image can't be named anything else because of maps plugin
+# Location used in hero map
+leaderName: Dr. Elvis Joseph - ZIMBABWE
+leaderBio_description: Paragraph here about this leader
+image: /images/leaders/studentPlaceholder.jpg
+country: Zimbabwe
 location:
-    latitude: -19.513607
-    longitude: 29.581028
+    latitude: -2.003878
+    longitude: 29.883200
 ---
 
 The testimony of Dr. Elvis Joseph is one of our EMIT success stories. Elvis grew up being passed from relative to relative, moving from one family to the next. Not knowing his father, he grew up questioning who he was and his purpose for existence.
