@@ -61,6 +61,11 @@ defaults:
       path: ""
     values:
       layout: "page"
+      title: About
+      hero:
+      heroQuote:
+      hero_Quote_Cite:
+      hero_image: /images/couple.webp
   -
     scope:
       path: "index.html"
