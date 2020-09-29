@@ -63,8 +63,8 @@ defaults:
       layout: "page"
       title:
       hero:
-      heroQuote:
-      hero_Quote_Cite:
+      heroQuote: Really cool inspirational quote here
+      hero_Quote_Cite: Clever Person
       hero_image: /images/couple.webp
   -
     scope:
