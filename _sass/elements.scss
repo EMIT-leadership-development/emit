@@ -497,6 +497,9 @@ p.introduction {
 	button.gm-control-active.gm-fullscreen-control {
 		display: none;
 	}
+	.gm-style-iw-c {
+		padding: 12px !important;
+	}
 	.gm-style-cc {
 		display: none;
 	}
@@ -563,7 +566,7 @@ p.introduction {
 		}
 		a {
 			font-size: 0;
-			margin: 0 20px 20px 0;
+			margin: 20px;
 			overflow: visible;
 			min-width: 90px;
 			width: 90px;
@@ -588,8 +591,8 @@ p.introduction {
 				color: #ffffff;
 				font-weight: 300;
 				position: absolute;
-				right: -15px;
-				bottom: -15px;
+				right: -25px;
+				bottom: -25px;
 				z-index: 100;
 				transition: background-color 0.28s ease, color 0.28s ease, box-shadow 0.28s ease;
 			}
