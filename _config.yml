@@ -61,7 +61,7 @@ defaults:
       path: ""
     values:
       layout: "page"
-      title: About
+      title:
       hero:
       heroQuote:
       hero_Quote_Cite:
