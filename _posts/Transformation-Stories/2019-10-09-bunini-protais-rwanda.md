@@ -1,14 +1,23 @@
 ---
+# Standard for all posts - title and hero content
 layout: post
 title: How an EMIT leader is changing the lives of young genocide survivors
 heroQuote:
-hero_image: /images/couple.webp
+hero_image: /images/curiousChildren.webp
+# If the author is team member then select from datafile
 author:
-tags: EMIT transformation Africa Leadership Training
+
+# Post meta : todo: select field for cc?
+tags:
 category: Transformation Stories
 excerpt_separator: <!--more-->
+
+# If transformation story then "author and bio" is populated from these fields
+# Image can't be named anything else because of maps plugin
+# Location used in hero map
 leaderName: Dr. Bunini Gahungu Protais
-image: /images/students/studentPlaceholder.jpg
+leaderBio_description: Karen's bio to come here.
+image: /images/leaders/BuniniProtais.webp
 country: Rwanda
 location:
     latitude: -2.003878

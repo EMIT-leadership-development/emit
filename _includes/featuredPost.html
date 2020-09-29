@@ -1,25 +1,27 @@
 <aside class="sectionContent">
     {% if post.category == "Transformation Stories" %}
-        {% assign author.name = post.leaderName %}
-        {% assign author.image = post.image %}
+        {% assign authorName = post.leaderName %}
+        {% assign authorProfileImage = post.image %}
     {% else %}
         {% assign author = site.data.team[post.author] %}
+        {% assign authorName = site.data.team[post.author].name %}
+        {% assign authorProfileImage = site.data.team[post.author].profile_image %}
     {% endif %}
     <!-- If category is Transformation Stories then author image is in data file for transformationStories -->
     <div class="postInfo">
-        <div class="sectionImage" style="background-image:url({{site.baseurl}}/images/{{post.heroImage}});">
+        <div class="sectionImage" style="background-image:url({{site.baseurl}}{{post.hero_image}});">
             <div class="authorImage">
                 <div class="sphere sphere3">
                     <div class="sphere sphere2">
                         <div class="sphere sphere1">
-                            <img src="{{ site.baseurl }}{{ author.pic }}" alt="">
+                            <img src="{{ site.baseurl }}{{ authorProfileImage }}" alt="">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <h3>{{ post.title }}</h3>
-        <div class="byline"><span class="author">- {{ author.name }}</span> on <span class="postDate">{{ post.date | date: "%d %b %Y" }}</span></div>
+        <div class="byline"><span class="author">- {{ authorName }}</span> on <span class="postDate">{{ post.date | date: "%d %b %Y" }}</span></div>
         <p>{{ post.excerpt | strip_html | normalize_whitespace | truncate: 300 }}</p>
     </div>
     <a href="{{ site.baseurl }}{{ post.url }}" class="button">Read more</a>

@@ -9,7 +9,7 @@ author:
 
 # Post meta : todo: select field for cc?
 tags:
-category:
+category: Transformation Stories
 excerpt_separator: <!--more-->
 
 # If transformation story then "author and bio" is populated from these fields
@@ -17,7 +17,7 @@ excerpt_separator: <!--more-->
 # Location used in hero map
 leaderName: Karen Feris
 leaderBio_description: Karen's bio to come here.
-image: /images/leaders/studentPlaceholder.jpg
+image: /images/leaders/KarenFeris.webp
 country: Namibia
 location:
     latitude: -22.180274

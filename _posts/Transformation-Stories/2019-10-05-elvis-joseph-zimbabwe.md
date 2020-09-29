@@ -3,13 +3,13 @@
 layout: post
 title: A lonely child’s journey to becoming a top-level advisor.
 heroQuote:
-hero_image: /images/couple.webp
+hero_image: /images/african-politics-EMIT-leadership-development.webp
 # If the author is team member then select from datafile
 author:
 
 # Post meta : todo: select field for cc?
 tags:
-category:
+category: Transformation Stories
 excerpt_separator: <!--more-->
 
 # If transformation story then "author and bio" is populated from these fields
@@ -17,7 +17,7 @@ excerpt_separator: <!--more-->
 # Location used in hero map
 leaderName: Dr. Elvis Joseph - ZIMBABWE
 leaderBio_description: Paragraph here about this leader
-image: /images/leaders/studentPlaceholder.jpg
+image: /images/leaders/ElvisJoseph.jpg
 country: Zimbabwe
 location:
     latitude: -2.003878
