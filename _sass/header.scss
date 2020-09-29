@@ -432,7 +432,7 @@ section.hero{
         z-index: 10;
         padding: 60px;
         text-align: center;
-        @media #{mid-point} {
+        @media #{$mid-point} {
             text-align: right;
         }
         h1 {
