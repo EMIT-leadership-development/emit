@@ -1,10 +1,7 @@
 ---
-title: Political Leaders
-hero: Political Leaders
-hero_image: /images/couple.webp
-bookCover_image: /images/NewProgramTrainingBook.webp
-curriculumSprite: sprite-ComingSoon.webp
-subtitle:
+# Default hero from config
+title: Politital Leaders
+
 id: 5
 objective_markdown: Paragraph describing the objective for this program. For example - when you have completed this program you will be able to...
 motivation: "Why EMIT chose to develop this program. eg. Church leaders are an integral part of African life."

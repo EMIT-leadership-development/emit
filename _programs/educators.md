@@ -1,10 +1,7 @@
 ---
+# Default hero from config
 title: Educators
-hero: Educators
-hero_image: couple.webp
-bookCover_image: NewProgramTrainingBook.webp
-curriculumSprite: sprite-ComingSoon.webp
-subtitle:
+
 id: 6
 objective_markdown: Paragraph describing the objective for this program. For example - when you have completed this program you will be able to...
 motivation: "Why EMIT chose to develop this program. eg. Church leaders are an integral part of African life."

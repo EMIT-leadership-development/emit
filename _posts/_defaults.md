@@ -1,11 +1,8 @@
 ---
-# Standard for all posts - title and hero content
+# Standard for all posts
+# Hero defaults are set in config
 layout: post
-title:
-hero:
-heroQuote:
-hero_Quote_Cite:
-hero_image: /images/couple.webp
+
 # If the author is team member then select from datafile
 author:
 
@@ -22,6 +19,6 @@ leaderBio_description:
 image: /images/leaders/studentPlaceholder.jpg
 country:
 location:
-    latitude: -2.003878
-    longitude: 29.883200
+    latitude:
+    longitude:
 ---

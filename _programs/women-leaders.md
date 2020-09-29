@@ -1,10 +1,11 @@
 ---
 title: Women Leaders
-hero: Women Leaders
+
 hero_image: /images/womenTrainingGroupEMIT.webp
-bookCover_image: /images/WomenTrainingBook.webp
-curriculumSprite: sprite-womenLeaders.jpg
-subtitle: Leadership training for Women
+bookCover_image: /images/programs/WomenTrainingBook.webp
+curriculumSprite_image: /images/programs/sprite-womenLeaders.jpg
+
+
 id: 2
 objective_markdown: Paragraph describing the objective for this program. For example - when you have completed this program you will be able to...
 motivation: "Why EMIT chose to develop this program. eg. The role of women in Africa is etc."

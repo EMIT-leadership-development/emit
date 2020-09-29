@@ -253,7 +253,7 @@ hero_image: /images/couple.webp
 	<section class="pageSection featuredStories">
 		<div class="container col-1-1-1">
 			{% assign featured = site.posts | where:"category","Transformation Stories" %}
-				{% for post in featured %}
+				{% for post in featured limit:3 %}
 				{% include featuredPost.html %}
 			{% endfor %}
 		</div>

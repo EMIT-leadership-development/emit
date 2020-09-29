@@ -56,14 +56,14 @@ defaults:
       type: "programs"
     values:
       layout: "program"
+      bookCover_image: /images/programs/NewProgramTrainingBook.webp
+      curriculumSprite_image: /images/programs/sprite-ComingSoon.webp
   -
     scope:
       path: ""
     values:
       layout: "page"
       # defaults for hero where nothing has been set
-      title:
-      hero:
       heroQuote: The essence of leadership is to make a difference in your sphere of influence.
       hero_Quote_Cite: O O Isaac
       hero_image: /images/couple.webp
@@ -99,12 +99,12 @@ maps:
 garment_types:
   - hat
   - top
-# Program Status determines whether program can be viewed
+# SELECT FIELD: Program Status determines whether program can be viewed
 statuses:
   - current
   - planned
   - developing
-# Team members are categorised in groups
+# SELECT FIELD: Team members are categorised in groups
 groups:
   - team
   - board
@@ -122,6 +122,10 @@ social_icons:
   - RSS
 
 _options:
+# Hero image for all page headers
+  hero_image:
+    uploads_dir: "images/:title"
+# Profile Image in data/team
   profile_image: # Front matter field
     uploads_dir: "images/team/:title"
     width: 500
@@ -129,6 +133,7 @@ _options:
     resize_style: "cover"
     mime_type: "image/jpeg"
     expandable: true
+# Partner Logo in data/
   partner_image: # Front matter field
     uploads_dir: "images/partners/:title"
     width: 132
@@ -136,10 +141,14 @@ _options:
     resize_style: "cover"
     mime_type: "image/jpeg"
     expandable: true
+# Program Image uploads
   bookcover_image: # Front matter field
-    uploads_dir: "images/:title"
-
-    # Sonya Todo - set url for all other image uploads
+    uploads_dir: "images/programs/:title"
+  curriculumSprite_image:
+    uploads_dir: "images/programs/:title"
+# Leader/Student profile image for transformation stories - called image to be compatible with maps plugin
+  image:
+    uploads_dir: "images/leaders/:title"
 
 _comments:
   map: Update the map location and display settings.
@@ -158,4 +167,6 @@ _comments:
   heroQuote: Featured inspirational quote to display on page header image
   hero_Quote_Cite: Ascribe the quote or author
   hero: Alternative title to display on page header. Default is page title
-  hero_image: The large featured image at the top of the page
+  hero_image: The large featured image at the top of the page. Should be at least 3000px wide.
+  bookCover_image: The cover of the program book. Speak to Sonya about creating the mockups.
+  curriculumSprite_image: To minimise loading time - all the corricula images are compiled as a single sprite. Speak to sonya about creating these.

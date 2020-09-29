@@ -135,7 +135,7 @@ hero_image: /images/couple.webp
     <!-- Programs -->
     <section class="pageSection porgramList">
         <div class="container max-container">
-            <div class="sectionImage contain" style="background-image:url({{site.baseurl}}/images/WomenTrainingBook.webp);"></div>
+            <div class="sectionImage contain" style="background-image:url({{site.baseurl}}/images/programs/WomenTrainingBook.webp);"></div>
             <div class="sectionIntro">
                 <h2 class="sectionTitle priority2 editable">EMIT<br>leadership programs<br><span class="emphasis">Current and Planned</span></h2>
 				<ul class="infoPoints">
@@ -160,7 +160,7 @@ hero_image: /images/couple.webp
                                 <a href="{{program.url}}">{{message}}</a>
                             {% endif %}
                             {% if program.status == "planned" %}
-                                <p>{{message}}</p>
+                                <a href="{{program.url}}">{{message}}</a>
                             {% endif %}
 					</li>
 					{% endfor %}
