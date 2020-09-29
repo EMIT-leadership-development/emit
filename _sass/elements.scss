@@ -325,6 +325,7 @@ p.introduction {
 	.sectionImage {
 		position: relative;
 		height: 200px;
+		min-height: 200px !important;
 		&:before {
 			content: "";
 			position: absolute;
