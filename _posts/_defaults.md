@@ -17,7 +17,7 @@ excerpt_separator: <!--more-->
 # Location used in hero map
 leaderName:
 leaderBio_description:
-image: /images/students/studentPlaceholder.jpg
+image: /images/leaders/studentPlaceholder.jpg
 country:
 location:
     latitude: -2.003878
