@@ -4,6 +4,7 @@ layout: post
 title:
 hero:
 heroQuote:
+hero_Quote_Cite:
 hero_image: /images/couple.webp
 # If the author is team member then select from datafile
 author:
