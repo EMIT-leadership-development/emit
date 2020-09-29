@@ -218,6 +218,7 @@ p.introduction {
 // Info Points - Icon List
 .infoPoints {
 	padding-left: 0;
+	list-style-type: none;
 	.point {
 		display: grid;
 		grid-template-columns: 40px auto;
