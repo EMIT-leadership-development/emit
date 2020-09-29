@@ -20,8 +20,8 @@ leaderBio_description: Paragraph here about this leader
 image: /images/leaders/ElvisJoseph.jpg
 country: Zimbabwe
 location:
-    latitude: -2.003878
-    longitude: 29.883200
+    latitude: -18.979907
+    longitude: 29.782165
 ---
 
 The testimony of Dr. Elvis Joseph is one of our EMIT success stories. Elvis grew up being passed from relative to relative, moving from one family to the next. Not knowing his father, he grew up questioning who he was and his purpose for existence.
