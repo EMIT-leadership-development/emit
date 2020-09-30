@@ -13,7 +13,7 @@
             <span class="postDate">{{ post.date | date: "%d %b %Y" }}</span>
         </div>
 
-        <div class="postContent">
+        <a  href="{{post.url}}" class="postContent">
             <div>
                 <h4 class="postTitle">{{post.title}}</h4>
                 <div class="byline"><span class="author">{{ authorName }}</span></div>
@@ -22,8 +22,8 @@
             <div class="postActions">
                 <span class="button secondary">Read more</span>
             </div>
-        </div>
-        <div class="overlay">
+        </a>
+        <a  href="{{post.url}}" class="overlay">
             <div class="authorImage">
                 <div class="sphere sphere3">
                     <div class="sphere sphere2">
@@ -33,10 +33,10 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </a>
         <ul class="links">
-            <a href=""><i data-feather="twitter"></i></a>
-            <a href=""><i data-feather="facebook"></i></a>
-            <a href=""><i data-feather="linkedin"></i></a>
+            <a href="https://facebook.com"><i data-feather="twitter"></i></a>
+            <a href="https://twitter.com"><i data-feather="facebook"></i></a>
+            <a href="https://linkedin.com"><i data-feather="linkedin"></i></a>
         </ul>
 </aside>

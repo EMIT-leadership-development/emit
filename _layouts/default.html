@@ -149,6 +149,43 @@
 		</script>
 
 		<script>
+			function animateCards() {
+				const cards = document.querySelectorAll('.postPreview');
+
+				cards.forEach(card => {
+					// const letters = card.querySelectorAll('a span');
+					const author = card.querySelector('.authorImage');
+					const overlay = card.querySelector('.overlay');
+					const button = card.querySelector('.button');
+					// Timeline
+					const tl = gsap.timeline({paused: true});
+					tl.from(overlay, {duration:0.2, autoAlpha:0})
+					tl.fromTo(author,
+					{	autoAlpha: 0,
+						xPercent: 100,
+						yPercent: 10,
+					},
+					{	autoAlpha: 1,
+						transformOrigin: "50% 50%",
+						duration:0.3,
+						ease: Expo.easeOut,
+						xPercent: 25,
+						yPercent: -10,
+					},"<")
+					tl.to(button, {duration:0.2, scale:1.2, transformOrigin:"50% 50%"},"<");
+					// HOVER
+					card.addEventListener("mouseenter", function(){
+						tl.play();
+					});
+					card.addEventListener("mouseleave", function(){
+						tl.reverse();
+					});
+				});
+			}
+			animateCards();
+		</script>
+
+		<script>
 			feather.replace()
 		</script>
 		<script>
@@ -168,7 +205,8 @@
 				}
 			});
 		</script>
-		{% include lazyload.html %}
+		<!-- Not yet using this - to be researched -->
+		<!-- {% include lazyload.html %} -->
 		<script src="{{ site.baseurl }}/js/application.js" type="text/javascript"></script>
 	</body>
 </html>

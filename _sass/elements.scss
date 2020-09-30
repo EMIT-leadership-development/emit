@@ -328,10 +328,17 @@ p.introduction {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr;
-	// grid-template-rows: 1fr 1fr 50px;
 	filter: drop-shadow(0.1rem 0.1rem 0.3rem rgba(20, 20, 180, 0.3));
 	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+	a {
+		color: unset;
+		text-decoration: none;
+		&:hover {
+			text-decoration: none;
+		}
+	}
 	&:hover {
+		cursor: pointer;
 		.sphere1 {
 			background-color: $sphere1BG;
 		}
@@ -341,15 +348,6 @@ p.introduction {
 		.sphere3 {
 			background-color: $sphere3BG;
 		}
-		.overlay {
-			opacity: 1;
-		}
-		// .authorImage {
-		// 	transform: translate(-40% -60%);
-		// 	opacity: 1;
-		// 	right: -20%;
-		// 	bottom: -60%;
-		// }
 	}
 	.postImage {
 		position: relative;
@@ -398,13 +396,10 @@ p.introduction {
 		z-index: 20;
 	}
 	.authorImage {
-		width: 100%;
-		// transition: all 1s cubic-bezier(.25,.8,.25,1);
-		// transform: translate(-100% -100%);
-		transform: translate(-40% -60%);
+		width: 90%;
 		position: absolute;
 		.sphere {
-			padding: 2rem;
+			padding: 2.2rem;
 		}
 	}
 	.postContent {
@@ -419,7 +414,7 @@ p.introduction {
 			margin-bottom: 1rem;
 		}
 		p {
-			margin: 0;
+			margin-bottom: 1rem;
 		}
 	}
 	.postActions {
@@ -452,8 +447,15 @@ p.introduction {
 				text-decoration: none;
 			}
 			color: #ffffff;
+			&:hover {
+				svg {
+					transform:scale(1.2);
+				}
+			}
 		}
 		svg {
+			transform:scale(1);
+			transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 			fill:  #ffffff;
 			path, rect, ellipse, circle {
 				stroke-width: 0;
