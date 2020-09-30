@@ -1,13 +1,53 @@
 ---
 layout: default
 ---
-<div class="content">
-	<div class="container">
 
+{% if page.category == "Transformation Stories" %}
+	{% assign authorName = page.leaderName %}
+	{% assign authorProfileImage = page.image %}
+{% else %}
+	{% assign author = site.data.team | where:"shortname", page.author  | first %}
+	{% assign authorName = author.name %}
+	{% assign authorProfileImage = author.profile_image %}
+{% endif %}
 
-		{% include authorBio.html %}
+<div class="page singlePost">
+		<!-- SideBar -->
+		{% include sidebarContent.html %}
 
-
-		{{ content }}
-	</div>
+		<!-- Section that holds the list of stories -->
+		<section class="pageSection postWrap">
+			<!-- The container below is the white paper -->
+			<div class="container max-container max-content">
+				<!-- Header for the page -->
+				<header class="postHeader">
+					<div class="pageMeta">
+						<p>Transforming Nations<br>by training leaders</p>
+						<div>
+							<div>{{ page.title }} by {{ authorName }}</div>
+							<div>Published in - {{ page.category }} - on {{ page.date | date: "%d %b %Y" }}</div>
+						</div>
+					</div>
+					<div class="brand">
+						<div class="logoWrap">{% include logo.html %}</div>
+						<div class="companyDetails">
+							{% assign address = site.data.contacts[0] %}
+							<ul>
+								<li>
+									<span>{{ address.phone }}</span>
+									<span class="icon"><i data-feather="phone"></i></span>
+								</li>
+								<li>
+									<span>{{ address.email }}</span>
+									<span class="icon"><i data-feather="mail"></i></span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</header>
+				<div class="postContent">
+					{{ content }}
+				</div>
+			</div>
+		</section>
 </div>

@@ -303,7 +303,6 @@ p.introduction {
 	}
 }
 // Featured Stories - featuredPost.html include
-
 .storiesList {
 	background: $brandContrastLight !important;
 	.container {
@@ -469,6 +468,94 @@ p.introduction {
 				stroke-width: 0;
 				// stroke: rgba(0,0,0,0.1);
 			}
+		}
+	}
+}
+// Single Post Page
+.singlePost {
+	.postWrap {
+		background: $brandContrastLight !important;
+		padding: 0 120px 0 60px;
+		.container {
+			height: 100%;
+			background: #ffffff;
+			box-shadow: 1px 3px 7px 1px rgba(8, 8, 8, 0.28), -17px -7px 20px 20px rgba(255, 255, 255, 0.13);
+		}
+		.postHeader {
+			display: grid;
+			grid-template-columns: auto auto;
+			justify-content: space-between;
+			padding: 60px;
+			// border-bottom: 6px solid $brand-color;
+			.brand {
+				display: flex;
+				align-items: flex-end;
+				flex-direction: column;
+				justify-content: flex-start;
+				.logoWrap {
+					transform: translate(5px, -10px);
+					width: 100px;
+					svg {
+						width: 100%;
+						height: auto;
+						path, ellipse {
+							fill: darken($brand-color, 6%);
+						}
+					}
+				}
+				.companyDetails {
+					// border: 1px solid rebeccapurple;
+					font-size: 0.8rem;
+					text-align: left;
+					margin-top: 1rem;
+					ul {
+						list-style-type: none;
+						padding: 0;
+						margin: 0;
+						li {
+							font-size: 0.8rem;
+							width: 100%;
+							display: flex;
+							justify-content: flex-end;
+							align-items: center;
+							margin: 0;
+							svg {
+								width: 20px;
+								height: 20px;
+								margin-left: 20px;
+								path {
+									fill: darken($brand-color, 6%);
+									stroke-width: 0;
+								}
+								polyline {
+									fill: darken($brand-color, 6%);
+									stroke: #ffffff
+								}
+							}
+						};
+					}
+				}
+			}
+			.pageMeta {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				align-items: flex-start;
+				p {
+					font-weight: 500;
+					letter-spacing: 1px;
+					font-size: 1.3rem;
+				}
+				div {
+					font-size: 0.8rem;
+					&:first-of-type {
+						margin-bottom: 0.5rem;
+					}
+				}
+			}
+		}
+		.postContent {
+			padding: 60px;
 		}
 	}
 }

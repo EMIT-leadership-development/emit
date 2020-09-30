@@ -1,10 +1,14 @@
 ---
 layout: post
-title: "Our Vision"
-subtitle: "The Leadership Challenge of our Time"
+title: Our Vision
+subtitle: The Leadership Challenge of our Time
+
+heroQuote: I am not afraid of an army of lions led by a sheep; I am afraid of an army of sheep led by a lion
+hero_Quote_Cite: Alexander the Great
+customHeroPosition: "center bottom"
 
 # IMAGES
-heroImage: /images/fetchingWater.webp
+hero_image: /images/happyVillageGirl.webp
 sprite_image: /images/sprites/sprite-Set1.jpg
 sprite_selection_number: 14
 
