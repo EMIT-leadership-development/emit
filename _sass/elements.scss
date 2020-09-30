@@ -316,20 +316,23 @@ p.introduction {
 	}
 }
 .postPreview {
-	height: 100%;
 	margin: 0;
 	padding: 0;
 	border-radius: 2px;
 	background-color: #ffffff;
 	overflow: hidden;
-	color: rgba(0,0,0,0.7);
-	text-decoration: none;
 	position: relative;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr;
+	padding-bottom: 75%;
 	filter: drop-shadow(0.1rem 0.1rem 0.3rem rgba(20, 20, 180, 0.3));
 	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+	.postWrap {
+		position: absolute;
+		display: grid;
+		grid-template-columns: 50% 50%;
+		grid-template-rows: 1fr;
+		width: 100%;
+   		height: 100%;
+	}
 	a {
 		color: unset;
 		text-decoration: none;
@@ -351,18 +354,16 @@ p.introduction {
 	}
 	.postImage {
 		position: relative;
-		border-top-right-radius: 50%;
-		border-bottom-right-radius: 50%;
+		border-top-right-radius: 60%;
 		overflow: hidden;
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: center;
 		z-index: 1;
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-end;
 		align-items: flex-start;
-		padding: 1rem;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
 		&:before {
 			content: "";
 			background: rgba(0,0,0,0.3);
@@ -418,7 +419,7 @@ p.introduction {
 			font-weight: 500;
 			font-size: 1.5rem;
 			color: rgba(0,0,0,0.8);
-			margin-bottom: 1rem;
+			margin: 1rem 0;
 		}
 		p {
 			margin-bottom: 1rem;
@@ -485,7 +486,7 @@ p.introduction {
 		letter-spacing: 1px;
 		color: #4b4e53;
 		outline: none !important;
-		};
+		}
 }
 // Counter Row
 .counters {
@@ -1074,6 +1075,9 @@ section.curriculum {
 					}
 				}
 			}
+		}
+		.sphere {
+			padding: 1rem !important;
 		}
 	}
 }
