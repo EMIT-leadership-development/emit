@@ -10,6 +10,10 @@ title: Stories
 	<section class="pageSection storiesList">
 		<div class="container max-container max-content">
 				<div class="sectionContent">
+
+					{% assign distance = 5 %}
+					{% assign counter = 0 %}
+					{% assign position = 0 %}
 					{% for post in site.posts %}
 					{% include featuredPost.html %}
 					{% endfor %}
