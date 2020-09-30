@@ -1,10 +1,15 @@
 ---
 layout: post
-title: "AFMIN to EMIT"
-subtitle: "Why we decided to change our name"
+title: AFMIN to EMIT
+subtitle: In 1960 we decided it was time for a change - here's Why we decided to change our name
+
+# IMAGES
 heroImage: "fetchingWater.webp"
+sprite_image: /images/sprites/sprite-Set1.jpg
+sprite_selection_number: 18
+
 author: Kobus
-authorImg: "team/KobusSmall.jpg"
+
 tags: EMIT transformation Africa Leadership Training
 category: About EMIT
 excerpt_separator: <!--more-->

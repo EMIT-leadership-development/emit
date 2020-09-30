@@ -1,12 +1,20 @@
 ---
 layout: post
-title: "Transformational Adult Learning"
-subtitle: " Adults learn much differently than children."
-hero_image: /images/helpingElderly.webp
+title: Transformational Adult Learning
+subtitle: Adults learn much differently than children.
+
+# Hero defaults are set in config if not in post
+# Sprite Image for listings - to make site fast
+sprite_image: /images/sprites/sprite-Set1.jpg
+sprite_selection_number: 11
+
+# If the author is team member then select from datafile
 author: Lydia
 
-tags: EMIT transformation Africa Leadership Training
+# Post meta : todo: select field for cc?
+tags: Leadership Transformation Training
 category: Thought Leaders
+excerpt_separator: <!--more-->
 ---
 
 ### Facilitating Transformational Adult Learning

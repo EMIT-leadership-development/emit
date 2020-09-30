@@ -3,8 +3,13 @@
 layout: post
 title: She's transforming families
 subtitle: A woman’s calling to work with families affected by alcoholism, drug abuse, femicide, and child abuse
+
 heroQuote:
 hero_image: /images/africanFamily.webp
+# Sprite Image for listings - to make site fast
+sprite_image: /images/sprites/sprite-Set1.jpg
+sprite_selection_number: 20
+
 # If the author is team member then select from datafile
 author:
 

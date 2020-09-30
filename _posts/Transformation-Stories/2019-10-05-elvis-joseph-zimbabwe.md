@@ -2,9 +2,14 @@
 # Standard for all posts - title and hero content
 layout: post
 title: EMIT graduate becomes leader to leaders
-subtitle: A lonely child’s journey to becoming a top-level advisor.
+subtitle: A lonely child’s journey to becoming a top-level advisor
+
 heroQuote:
 hero_image: /images/african-politics-EMIT-leadership-development.webp
+# Sprite Image for listings - to make site fast
+sprite_image: /images/sprites/sprite-Set1.jpg
+sprite_selection_number: 6
+
 # If the author is team member then select from datafile
 author:
 

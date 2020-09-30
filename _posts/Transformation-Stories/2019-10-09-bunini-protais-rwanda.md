@@ -5,11 +5,15 @@ title: EMIT leader brings hope to genocide survivors
 subtitle: How an EMIT leader is changing the lives of young genocide survivors
 heroQuote:
 hero_image: /images/curiousChildren.webp
+# Sprite Image for listings - to make site fast
+sprite_image: /images/sprites/sprite-Set1.jpg
+sprite_selection_number: 7
+
 # If the author is team member then select from datafile
 author:
 
 # Post meta : todo: select field for cc?
-tags:
+tags: Rwanda EMIT-student
 category: Transformation Stories
 excerpt_separator: <!--more-->
 

@@ -1,11 +1,20 @@
 ---
 layout: post
-title: "First News Post"
-subtitle: "Subtitle goes here"
-heroImage: /images/happyVillageGirl.webp
+title: How EMIT is handling the Corona Crisis
+subtitle: Who would have thought that such a crisis could be the inspiration for a highly effective delivery method!
+
+# Hero defaults are set in config if not in post
+# Sprite Image for listings - to make site fast
+sprite_image: /images/sprites/sprite-Set1.jpg
+sprite_selection_number: 5
+
+# If the author is team member then select from datafile
 author: Johan
-tags: EMIT transformation Africa Leadership Training News
+
+# Post meta : todo: select field for cc?
+tags: Student-Portal
 category: News
+excerpt_separator: <!--more-->
 ---
 
 This is a news post. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, nostrum, cumque culpa provident aliquam commodi assumenda laudantium magnam illo nostrum. Donec nibh sapien, molestie quis elementum et, dim non atino ipsum.

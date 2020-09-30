@@ -9,7 +9,7 @@
 
 		<!-- ICONS -->
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-		<script src="https://unpkg.com/feather-icons"></script>
+		<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
 		<!-- GOOGLE FONT -->
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="{{ site.baseurl }}/css/screen.css">
@@ -50,6 +50,7 @@
 			<!-- If page is articles then show map else show normal hero -->
 			{% if page.title == "Stories" %}
 			<section class="hero map geoLocatedStories">
+				<!-- Todo: Page Title on Map -->
 				{% google_map
 					width="100%"
 					height="100%"
@@ -145,7 +146,7 @@
 					});
 				})
 			}
-			animateSections();
+			// animateSections();
 		</script>
 
 		<script>
@@ -157,9 +158,10 @@
 					const author = card.querySelector('.authorImage');
 					const overlay = card.querySelector('.overlay');
 					const button = card.querySelector('.button');
+					const postImage = card.querySelector('.postImage');
 					// Timeline
 					const tl = gsap.timeline({paused: true});
-					tl.from(overlay, {duration:0.2, autoAlpha:0})
+					tl.from(overlay, {duration:0.2, autoAlpha:0});
 					tl.fromTo(author,
 					{	autoAlpha: 0,
 						x: -200,
@@ -171,7 +173,8 @@
 						ease: Expo.easeOut,
 						x: 0,
 						y: 0
-					},"<")
+					},"<");
+					tl.to(postImage, {duration:0.3, autoAlpha:0},"<");
 					tl.to(button, {duration:0.2, scale:1.2, transformOrigin:"100% 50%"},"<");
 					// HOVER
 					card.addEventListener("mouseenter", function(){

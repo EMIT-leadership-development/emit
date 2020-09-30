@@ -1,19 +1,17 @@
 ---
 title: Stories
+hero: Our Stories
 ---
 <div class="page stories">
 	<!-- SideBar -->
-	<aside class="sidebar">
-		<h4>SIDEBAR HERE</h4>
-	</aside>
+	{% include sidebarContent.html %}
+
 	<!-- Section that holds the list of stories -->
 	<section class="pageSection storiesList">
 		<div class="container max-container max-content">
 				<div class="sectionContent">
 
 					{% assign distance = 5 %}
-					{% assign counter = 0 %}
-					{% assign position = 0 %}
 					{% for post in site.posts %}
 					{% include featuredPost.html %}
 					{% endfor %}

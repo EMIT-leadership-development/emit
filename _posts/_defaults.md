@@ -1,7 +1,13 @@
 ---
 # Standard for all posts
-# Hero defaults are set in config
+title:
+subtitle:
 layout: post
+
+# Hero defaults are set in config if not in post
+# Sprite Image for listings - to make site fast
+sprite_image: /images/sprites/sprite-Set1.jpg
+sprite_selection_number: 9
 
 # If the author is team member then select from datafile
 author:

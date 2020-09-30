@@ -254,6 +254,7 @@ hero_image: /images/couple.webp
 		<div class="container max-content">
 			<div class="sectionContent">
 				{% assign featured = site.posts | where:"category","Transformation Stories" %}
+				{% assign distance = 5 %}
 				{% for post in featured limit:4 %}
 				{% include featuredPost.html %}
 				{% endfor %}

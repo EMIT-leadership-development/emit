@@ -472,22 +472,6 @@ p.introduction {
 		}
 	}
 }
-
-// Cluster of Tags - wherever they're used
-.tagsCluster, .byline, .tagify {
-	span, a, {
-		display: inline-block;
-		margin: 0 2px 5px 0;
-		padding: 3px 10px;
-		border: 1px solid #e9e9e9;
-		font-size: 11px;
-		text-transform: uppercase;
-		text-decoration: none;
-		letter-spacing: 1px;
-		color: #4b4e53;
-		outline: none !important;
-		}
-}
 // Counter Row
 .counters {
 	.count {
@@ -1081,7 +1065,103 @@ section.curriculum {
 		}
 	}
 }
-
+// Sidebar
+.sidebar {
+	// border: 1px solid green;
+	padding: 120px 0 120px 60px;
+	ul {
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+	}
+	a {
+		color: rgba(0,0,0,0.8);
+		text-decoration: none;
+		transition: all .3s ease 0s;
+		&:hover {
+			text-decoration: none;
+			color: rgba(0,0,0,0.4);
+		}
+	}
+	.sidebarSection {
+		// border: 1px solid red;
+		margin-bottom: 60px;
+	}
+	.categoryNav {
+		li {
+			margin-bottom: 0.5rem;
+			a {
+				.slash-divider, .categoryCount {
+					margin: 0 5px;
+					color: rgba(0,0,0,0.4);
+					font-size: 0.6;
+				}
+			}
+		}
+	}
+	.announcement {
+		display: grid;
+		grid-template-columns: 24px auto;
+		grid-gap: 12px;
+		h5 {
+			font-size: 1rem;
+			margin-top: 0;
+			margin-bottom: 12px;
+		}
+		&:hover {
+			a {
+				text-decoration: underline;
+			}
+		}
+	}
+	.recentPosts {
+		li {
+			width: 100%;
+			padding-bottom: 60%;
+			margin-bottom: 30px;
+			position: relative;
+			.recentPostWrap {
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				position: absolute;
+				display: grid;
+				grid-gap: 12px;
+				grid-template-columns: 70px auto;
+			}
+			.postImage {
+				background-size: cover;
+				background-position: center center;
+			}
+			.postMeta {
+				grid-column: 1 / span2;
+			}
+		}
+	}
+}
+// Cluster of Tags - wherever they're used
+.tagsCluster, .tagify {
+	span, a {
+		display: inline-block;
+		margin: 0 2px 5px 0;
+		padding: 5px 10px !important;
+		border: 1px solid #d8d2d2;
+		font-size: 11px;
+		text-transform: uppercase;
+		text-decoration: none;
+		letter-spacing: 1px;
+		color: #4b4e53;
+		outline: none !important;
+		transition: all .3s ease 0s;
+		}
+	a {
+		&:hover {
+			color: #ffffff;
+			background: $brandContrastDark;
+		}
+	}
+}
 
 
 // Blockquote - orignal styling - to be redone

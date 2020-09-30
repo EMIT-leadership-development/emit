@@ -1,11 +1,18 @@
 ---
 layout: post
 title: "New learning portal is launching soon!"
-subtitle: "Subtitle goes here"
-hero_image: /images/happyVillageGirl.webp
-author: Theo
+subtitle: Atention all project leaders - we'll be doing training in November. Please book your session.
 
-tags: EMIT transformation Africa Leadership Training News Student Announcement
+# Hero defaults are set in config if not in post
+# Sprite Image for listings - to make site fast
+sprite_image: /images/sprites/sprite-Set1.jpg
+sprite_selection_number: 8
+
+# If the author is team member then select from datafile
+author: Christa
+
+# Post meta : todo: select field for cc?
+tags: Student-Portal
 category: Announcements
 excerpt_separator: <!--more-->
 ---

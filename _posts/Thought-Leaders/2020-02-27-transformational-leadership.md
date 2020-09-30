@@ -1,12 +1,19 @@
 ---
 layout: post
-title: "Transformational Leadership"
-subtitle: "Why we focus on leadership development"
-heroImage: "AfricanLeaderPlanning.webp"
+title: Transformational Leadership
+subtitle: This is why we focus on leadership development
+# Hero defaults are set in config if not in post
+# Sprite Image for listings - to make site fast
+sprite_image: /images/sprites/sprite-Set1.jpg
+sprite_selection_number: 13
+
+# If the author is team member then select from datafile
 author: Johan
-authorImg: "team/JohanLarge.jpg"
-tags: EMIT transformation Africa Leadership Training
+
+# Post meta : todo: select field for cc?
+tags: Leadership Transformation Training
 category: Thought Leaders
+excerpt_separator: <!--more-->
 ---
 
 <div class="mb-50">

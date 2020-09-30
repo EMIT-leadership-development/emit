@@ -1,11 +1,16 @@
 ---
 layout: post
 title: "What we've learned"
-subtitle: "What’s not working."
-heroImage: "Josef.webp"
+subtitle: "Over the years we have learned so much - this is what doesn't work."
+
+# IMAGES
+heroImage: "fetchingWater.webp"
+sprite_image: /images/sprites/sprite-Set1.jpg
+sprite_selection_number: 12
+
 author: Kobus
-authorImg: "team/KobusSmall.jpg"
-tags: EMIT transformation Africa Leadership Training
+
+tags: EMIT Strategy
 category: About EMIT
 excerpt_separator: <!--more-->
 ---

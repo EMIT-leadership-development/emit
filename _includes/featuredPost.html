@@ -9,14 +9,14 @@
         {% endif %}
         <!-- If category is Transformation Stories then author image is in data file for transformationStories -->
 
-        <!-- Muliply counter by distance to get the background X position -->
-        {% assign counter = counter | plus: 1 %}
-        {% assign position = counter | times: distance %}
+        <!-- Muliply sprite-selection by distance to get the background X position -->
+
+        {% assign position = distance | times: post.sprite_selection_number %}
 
 
         <div class="postWrap">
             <!-- <div class="postImage"  style="background-image:url({{site.baseurl}}{{post.hero_image}});"> -->
-                <div class="postImage"  style="background-image:url({{site.baseurl}}/images/programs/sprite-ComingSoon.jpg); background-position: 0 {{position}}%;">
+                <div class="postImage"  style="background-image:url({{site.baseurl}}{{post.sprite_image}}); background-position: 0 {{position}}%;">
                     <span class="postDate">{{ post.date | date: "%d %b %Y" }}</span>
             </div>
 

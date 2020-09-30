@@ -1,11 +1,16 @@
 ---
 layout: post
 title: "Next Steps"
-subtitle: "2020 and beyond"
-headerImg: "/road.jpg"
+subtitle: "2020 and beyond - our plans for the next few years."
+
+# IMAGES
+heroImage: "fetchingWater.webp"
+sprite_image: /images/sprites/sprite-Set1.jpg
+sprite_selection_number: 1
+
 author: Kobus
-authorImg: "team/KobusSmall.jpg"
-tags: EMIT transformation Africa Leadership Training
+
+tags: EMIT Strategy
 category: About EMIT
 excerpt_separator: <!--more-->
 ---

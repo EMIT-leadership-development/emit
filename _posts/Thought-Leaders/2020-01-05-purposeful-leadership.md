@@ -1,12 +1,19 @@
 ---
 layout: post
-title: "Purposeful Leadership"
-subtitle: " Passionate about transforming communities"
-heroImage: "nurse.webp"
+title: Purposeful Leadership
+subtitle: We are passionate about transforming communities
+# Hero defaults are set in config if not in post
+# Sprite Image for listings - to make site fast
+sprite_image: /images/sprites/sprite-Set1.jpg
+sprite_selection_number: 16
+
+# If the author is team member then select from datafile
 author: Johan
-authorImg: "team/JohanSmall.jpg"
-tags: EMIT transformation Africa Leadership Training
+
+# Post meta : todo: select field for cc?
+tags: Leadership Transformation Training
 category: Thought Leaders
+excerpt_separator: <!--more-->
 ---
 
 It is not disputable that Africa is the poorest continent in the world, and the richest in terms of natural resources. Today the image of this blessed continent is battered by corruption, nepotism and a leadership crisis. Corruption has tragically devastated African societies and made millions of people destitute. The tentacles of corruption have reached everywhere on the African continent. We find corruption in the offices of presidents and prime ministers to the smallest administration unit of government. Businesses, and even the church, are not excluded. Crucial to this crisis of corruption engulfing the African continent is the problem of purposeful leadership that could act as architect and engineer of progressive change and development.

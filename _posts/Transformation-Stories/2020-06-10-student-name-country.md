@@ -3,8 +3,13 @@
 layout: post
 title: She's empowering women business leaders
 subtitle: Tempor habitant rhoncus imperdiet curabitur metus odit ex lacinia neque.
+
 heroQuote:
 hero_image: /images/Projectmeeting.webp
+# Sprite Image for listings - to make site fast
+sprite_image: /images/sprites/sprite-Set1.jpg
+sprite_selection_number: 19
+
 # If the author is team member then select from datafile
 author:
 
@@ -16,9 +21,9 @@ excerpt_separator: <!--more-->
 # If transformation story then "author and bio" is populated from these fields
 # Image can't be named anything else because of maps plugin
 # Location used in hero map
-leaderName: Super Woman
-leaderBio_description: Karen's bio to come here.
-image: /images/leaders/KarenFeris.webp
+leaderName: Lydia
+leaderBio_description: A paragraph about this leader
+image: /images/team/Lydia.webp
 country: Zambia
 location:
     latitude: -13.340436

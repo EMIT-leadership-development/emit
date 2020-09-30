@@ -1,11 +1,16 @@
 ---
 layout: post
-title: "How we do it"
-subtitle: " A network of leaders reaching into the remotest areas of Africa."
-headerImg: "about/meetingUnderTree.webp"
+title: How we do it
+subtitle: A network of leaders reaching into the remotest areas of Africa.
+
+# IMAGES
+heroImage: /images/fetchingWater.webp
+sprite_image: /images/sprites/sprite-Set1.jpg
+sprite_selection_number: 15
+
 author: Theo
-authorImg: "team/TheoSmall.jpg"
-tags: EMIT transformation Africa Leadership Training
+
+tags: EMIT Strategy
 category: About EMIT
 excerpt_separator: <!--more-->
 ---
