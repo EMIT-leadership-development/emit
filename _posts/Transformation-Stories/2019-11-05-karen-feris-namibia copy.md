@@ -1,7 +1,8 @@
 ---
 # Standard for all posts - title and hero content
 layout: post
-title: A woman’s calling to work with families affected by alcoholism, drug abuse, femicide, and child abuse
+title: She's transforming families
+subtitle: A woman’s calling to work with families affected by alcoholism, drug abuse, femicide, and child abuse
 heroQuote:
 hero_image: /images/africanFamily.webp
 # If the author is team member then select from datafile

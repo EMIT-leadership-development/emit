@@ -249,13 +249,15 @@ hero_image: /images/couple.webp
 		</div>
 	</section>
 
-	<!-- 3 TRANSFORMATION STORIES -->
-	<section class="pageSection featuredStories">
-		<div class="container col-1-1-1">
-			{% assign featured = site.posts | where:"category","Transformation Stories" %}
-				{% for post in featured limit:3 %}
+	<!-- 4 TRANSFORMATION STORIES -->
+	<section class="pageSection storiesList">
+		<div class="container max-content">
+			<div class="sectionContent">
+				{% assign featured = site.posts | where:"category","Transformation Stories" %}
+				{% for post in featured limit:4 %}
 				{% include featuredPost.html %}
-			{% endfor %}
+				{% endfor %}
+			</div>
 		</div>
 	</section>
 

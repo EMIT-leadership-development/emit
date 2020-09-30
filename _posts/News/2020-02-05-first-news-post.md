@@ -2,9 +2,8 @@
 layout: post
 title: "First News Post"
 subtitle: "Subtitle goes here"
-heroImage: "happyVillageGirl.webp"
-author: "Name Surname"
-authorImg: "/assets/images/team/KobusSmall.jpg"
+heroImage: /images/happyVillageGirl.webp
+author: Johan
 tags: EMIT transformation Africa Leadership Training News
 category: News
 ---

@@ -2,11 +2,18 @@
 title: Stories
 ---
 <div class="page stories">
-	<section class="pageSection featuredStories">
-		<div class="container col-1-1-1">
-				{% for post in site.posts %}
-				{% include featuredPost.html %}
-				{% endfor %}
+	<!-- SideBar -->
+	<aside class="sidebar">
+		<h4>SIDEBAR HERE</h4>
+	</aside>
+	<!-- Section that holds the list of stories -->
+	<section class="pageSection storiesList">
+		<div class="container max-container max-content">
+				<div class="sectionContent">
+					{% for post in site.posts %}
+					{% include featuredPost.html %}
+					{% endfor %}
+				</div>
 		</div>
 	</section>
 </div>

@@ -39,6 +39,12 @@ section.hero.geoLocatedStories {
 	}
 }
 
+// Stories page has sidebar
+.stories  {
+	display: grid;
+	grid-template-columns: 1fr 4fr;
+}
+
 // ------- Page Section Layouts
 // Layout: program.html
 .program section {

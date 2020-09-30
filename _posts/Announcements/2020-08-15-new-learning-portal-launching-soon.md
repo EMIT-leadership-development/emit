@@ -2,9 +2,9 @@
 layout: post
 title: "New learning portal is launching soon!"
 subtitle: "Subtitle goes here"
-headerImg: "/EMIT-leadership-training-businessMan.webp"
-author: "Name Surname"
-authorImg: "/assets/images/team/KobusSmall.jpg"
+hero_image: /images/happyVillageGirl.webp
+author: Theo
+
 tags: EMIT transformation Africa Leadership Training News Student Announcement
 category: Announcements
 excerpt_separator: <!--more-->

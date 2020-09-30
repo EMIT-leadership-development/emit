@@ -2,8 +2,8 @@
 layout: post
 title: "First Country Report"
 subtitle: "Subtitle goes here"
-heroImage: "handsInAir.webp"
-author: "Name Surname"
+heroImage: /images/handsInAir.webp
+author: Theo
 authorImg: "/assets/images/team/KobusSmall.jpg"
 tags: EMIT transformation Africa Leadership Training News Student Announcement Country-Report Zimbabwe
 category: Reports

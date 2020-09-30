@@ -1,7 +1,8 @@
 ---
 # Standard for all posts - title and hero content
 layout: post
-title: How an EMIT leader is changing the lives of young genocide survivors
+title: EMIT leader brings hope to genocide survivors
+subtitle: How an EMIT leader is changing the lives of young genocide survivors
 heroQuote:
 hero_image: /images/curiousChildren.webp
 # If the author is team member then select from datafile
