@@ -386,18 +386,24 @@ p.introduction {
 		}
 	}
 	.overlay {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-end;
 		visibility: hidden;
-		background: rgba(0,0,0,0.6);
+		background: rgba(0,0,0,0);
 		position: absolute;
+		overflow: hidden;
 		left: 0;
 		top: 0;
-		right: 0;
+		right: 49%;
 		bottom: 0;
 		z-index: 20;
 	}
 	.authorImage {
-		width: 90%;
-		position: absolute;
+		width: 170%;
+		// height: 100%;
+		// position: absolute;
 		.sphere {
 			padding: 2.2rem;
 		}
@@ -408,8 +414,9 @@ p.introduction {
 		flex-direction: column;
 		justify-content: space-between;
 		.postTitle {
+			z-index: 100;
 			font-weight: 500;
-			font-size: 1.1rem;
+			font-size: 1.5rem;
 			color: rgba(0,0,0,0.8);
 			margin-bottom: 1rem;
 		}
@@ -465,7 +472,21 @@ p.introduction {
 	}
 }
 
-
+// Cluster of Tags - wherever they're used
+.tagsCluster, .byline, .tagify {
+	span, a, {
+		display: inline-block;
+		margin: 0 2px 5px 0;
+		padding: 3px 10px;
+		border: 1px solid #e9e9e9;
+		font-size: 11px;
+		text-transform: uppercase;
+		text-decoration: none;
+		letter-spacing: 1px;
+		color: #4b4e53;
+		outline: none !important;
+		};
+}
 // Counter Row
 .counters {
 	.count {

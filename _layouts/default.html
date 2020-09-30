@@ -162,17 +162,17 @@
 					tl.from(overlay, {duration:0.2, autoAlpha:0})
 					tl.fromTo(author,
 					{	autoAlpha: 0,
-						xPercent: 100,
-						yPercent: 10,
+						x: -200,
+						y: 200
 					},
 					{	autoAlpha: 1,
 						transformOrigin: "50% 50%",
 						duration:0.3,
 						ease: Expo.easeOut,
-						xPercent: 25,
-						yPercent: -10,
+						x: 0,
+						y: 0
 					},"<")
-					tl.to(button, {duration:0.2, scale:1.2, transformOrigin:"50% 50%"},"<");
+					tl.to(button, {duration:0.2, scale:1.2, transformOrigin:"100% 50%"},"<");
 					// HOVER
 					card.addEventListener("mouseenter", function(){
 						tl.play();

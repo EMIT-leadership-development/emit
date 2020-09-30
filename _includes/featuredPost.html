@@ -16,8 +16,8 @@
         <a  href="{{post.url}}" class="postContent">
             <div>
                 <h4 class="postTitle">{{post.title}}</h4>
-                <div class="byline"><span class="author">{{ authorName }}</span></div>
                 <p class="postSubtitle">{{post.subtitle}}</p>
+                <div class="byline tagify"><span>{{ authorName }}</span><span>{{post.category}}</span><span>{{ post.date | date: "%d %b %Y" }}</span></div>
             </div>
             <div class="postActions">
                 <span class="button secondary">Read more</span>

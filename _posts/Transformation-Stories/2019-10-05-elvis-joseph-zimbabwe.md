@@ -9,14 +9,14 @@ hero_image: /images/african-politics-EMIT-leadership-development.webp
 author:
 
 # Post meta : todo: select field for cc?
-tags:
+tags: Zimbabwe EMIT-Student
 category: Transformation Stories
 excerpt_separator: <!--more-->
 
 # If transformation story then "author and bio" is populated from these fields
 # Image can't be named anything else because of maps plugin
 # Location used in hero map
-leaderName: Dr. Elvis Joseph - ZIMBABWE
+leaderName: Dr. Elvis Joseph
 leaderBio_description: Paragraph here about this leader
 image: /images/leaders/ElvisJoseph.jpg
 country: Zimbabwe
