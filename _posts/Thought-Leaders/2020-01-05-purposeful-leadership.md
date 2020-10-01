@@ -17,6 +17,8 @@ category: Thought Leaders
 excerpt_separator: <!--more-->
 ---
 
+## Incompetence in leadership in African countries is a reflection of the leadership culture
+
 It is not disputable that Africa is the poorest continent in the world, and the richest in terms of natural resources. Today the image of this blessed continent is battered by corruption, nepotism and a leadership crisis. Corruption has tragically devastated African societies and made millions of people destitute. The tentacles of corruption have reached everywhere on the African continent. We find corruption in the offices of presidents and prime ministers to the smallest administration unit of government. Businesses, and even the church, are not excluded. Crucial to this crisis of corruption engulfing the African continent is the problem of purposeful leadership that could act as architect and engineer of progressive change and development.
 
 Incompetence in leadership in African countries is not only the problem of people who occupy positions in government but it is also a reflection of the leadership culture. We’ve had different leaders with the same results for decades. The power distance that exists between leaders in government and citizens is also apparent in organizations and families. In such a structure, leaders don’t serve; they are served because occupying leadership positions make leaders superior and unaccountable to the people they lead.
