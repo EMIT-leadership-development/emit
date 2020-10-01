@@ -162,20 +162,21 @@
 					const postImage = card.querySelector('.postImage');
 					// Timeline
 					const tl = gsap.timeline({paused: true});
-					tl.from(overlay, {duration:0.2, autoAlpha:0});
-					tl.fromTo(author,
-					{	autoAlpha: 0,
-						x: -200,
-						y: 200
-					},
-					{	autoAlpha: 1,
-						transformOrigin: "50% 50%",
-						duration:0.3,
-						ease: Expo.easeOut,
-						x: 0,
-						y: 0
-					},"<");
-					tl.to(postImage, {duration:0.3, autoAlpha:0},"<");
+					// tl.from(overlay, {duration:0.2, autoAlpha:0});
+					tl.to(author, {duration:0.2, scale:1.3}, "<");
+					// tl.fromTo(author,
+					// {	autoAlpha: 0,
+					// 	x: -200,
+					// 	y: 200
+					// },
+					// {	autoAlpha: 1,
+					// 	transformOrigin: "50% 50%",
+					// 	duration:0.3,
+					// 	ease: Expo.easeOut,
+					// 	x: 0,
+					// 	y: 0
+					// },"<");
+					// tl.to(postImage, {duration:0.3, autoAlpha:0},"<");
 					tl.to(button, {duration:0.2, scale:1.2, transformOrigin:"100% 50%"},"<");
 					// HOVER
 					card.addEventListener("mouseenter", function(){

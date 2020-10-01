@@ -19,50 +19,36 @@ category: About EMIT
 excerpt_separator: <!--more-->
 ---
 
-### Transforming nations by developing leaders
+## Transforming nations by developing leaders
 
-<div class="mb-50"><blockquote class="custom-blockquote"><p>I am not afraid of an army of lions led by a sheep; I am afraid of an army of sheep led by a lion.</p><footer>Alexander the Great</footer></blockquote></div>
 
-### &nbsp;
 
-> Inserting a quote so that I can see how to style it.
+> I am not afraid of an army of lions led by a sheep; I am afraid of an army of sheep led by a lion.
 >
->
-> \- Sonya Ninja
-
-I really hope this markup recognises the citation part of a quote.
-
-Here is a numbered list:
-
-1. Get the style correct for single posts
-2. Go to sleep
-
-This is an unordered list:
-
-* Tomorrow - responsiveness for posts and post
+> <cite>Alexander the Great</cite>
 
 ### The Leadership Challenge of our Time
 
 The twenty-first century provides unprecedented opportunities for leaders to impact their organizations positively. However, the new millennium also brings unforeseen challenges to leaders.
 <!--more-->
 
-* #### The unrelenting advance of technology.
+#### The unrelenting advance of technology.
 
   Today’s technology has radically changed the dynamics of communication (for example: e-mail & smart phones).
 
-* #### The impact of the Information Age.
+#### The impact of the Information Age.
 
   The rise of the Information Age is continuously flooding leaders with a flood of new information that must be processed as quickly as possible if they want to remain relevant.
 
-* #### Globalization.
+#### Globalization.
 
   Globalization has truly changed a huge world into a “global village”.
 
-* #### The challenge of post-modernism.
+#### The challenge of post-modernism.
 
   Post-modernism believes that we are just another level of animal that must define my own identity according to my context. It emphasizes moral relativism (no right or wrong) with tolerance the highest virtue. Stress style over substance – you must look cool. The post-modern culture is very environmentally conscious.
 
-* #### Change.
+#### Change.
 
   Change is affecting us all and perhaps more so in Third World countries. The rapid pace of change is increasing constantly. Everything is changing and if leaders do not understand and adjust, it we will quickly become irrelevant.
 
@@ -86,7 +72,9 @@ Despite the multitude of ways people define leadership, the following components
 
 Based on these components, EMIT uses this working definition of leadership:
 
-> “Leadership is a process whereby an individual influences a group of individuals to achieve a common goal.” (Northouse, 2013, p.5)
+> Leadership is a process whereby an individual influences a group of individuals to achieve a common goal.
+>
+> <cite>Northouse, 2013, p.5</cite>
 
 ### Trait versus Process Leadership
 
@@ -96,7 +84,9 @@ This view restricts leadership to those who are believed to have special charact
 
 In contrast, the approach that EMIT will follow is that leadership is a process that can be learned, and that it is available to everyone.
 
-<div class="mb-50"><blockquote class="custom-blockquote"><p>Most of the outstanding leaders I have worked with are neither tall nor especially handsome; they are often mediocre public speakers; they do not stand out in the crowd; they do not mesmerize an attending audience with their brilliance or eloquence. Rather, what distinguishes them is their clarity and persuasiveness of their ideas, the depth of their commitment, and their openness to continually learning more.</p><footer>Peter Senge, 2006, p.359</footer></blockquote></div>
+> Most of the outstanding leaders I have worked with are neither tall nor especially handsome; they are often mediocre public speakers; they do not stand out in the crowd; they do not mesmerize an attending audience with their brilliance or eloquence. Rather, what distinguishes them is their clarity and persuasiveness of their ideas, the depth of their commitment, and their openness to continually learning more.
+>
+> <cite>Peter Senge, 2006, p.359</cite>
 
 ### Assigned versus Emergent Leadership
 
@@ -148,12 +138,14 @@ Characteristics of Authentic Leadership:
 
 More and more organizations, companies and scholars of Leadership are starting to look at “Servant Leadership.” Servant leadership is a paradoxical approach to leadership – leaders influence, and servants follow, so how can a person be a leader and servant at the same time?
 
-<div class="mb-50"><blockquote class="custom-blockquote"><p>Servant leadership emphasizes that leaders should be attentive to the needs of followers, empower them, and help them to develop their full capacities.</p><p>Servant leaders make a conscious choice to serve first &ndash; to place the good of followers over the leaders&rsquo; self-interests. They build strong relationships with others, are empathic, and lead in ways that serve the greater good of followers, the organization, the community and society at large</p><footer>Peter G. Northouse, 2013, p.21</footer></blockquote></div>
+> Servant leadership emphasizes that leaders should be attentive to the needs of followers, empower them, and help them to develop their full capacities.
+>
+> Servant leaders make a conscious choice to serve first &ndash; to place the good of followers over the leaders&rsquo; self-interests. They build strong relationships with others, are empathic, and lead in ways that serve the greater good of followers, the organization, the community and society at large
+>
+> <cite>Peter G. Northouse, 2013, p.21</cite>
 
 #### Bibliography:
 
-*Blackaby, Henry & Richard: Spiritual Leadership. Nashville, TN: Broadman & Holman Publishers, 2001.*
-
-*Northouse, Peter G. Leadership – Theory & Practice. New Delhi: SAGE Publications, 2013.*
-
-*Senge, Peter: The Fifth Discipline. Doubleday, 2006*
+* Blackaby, Henry & Richard: Spiritual Leadership. Nashville, TN: Broadman & Holman Publishers, 2001.
+* Northouse, Peter G. Leadership – Theory & Practice. New Delhi: SAGE Publications, 2013.
+* Senge, Peter: The Fifth Discipline. Doubleday, 2006

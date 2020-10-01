@@ -5,6 +5,8 @@ subtitle: Who would have thought that such a crisis could be the inspiration for
 
 # Hero defaults are set in config if not in post
 # Sprite Image for listings - to make site fast
+hero_image: images/ClusterOfAfricaChildrenWaitingForLeadership.webp
+customHeroPosition: "center bottom"
 sprite_image: /images/sprites/sprite-Set1.jpg
 sprite_selection_number: 5
 

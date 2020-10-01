@@ -6,6 +6,7 @@ subtitle: A lonely child’s journey to becoming a top-level advisor
 
 heroQuote:
 hero_image: /images/african-politics-EMIT-leadership-development.webp
+customHeroPosition: "center 130%"
 # Sprite Image for listings - to make site fast
 sprite_image: /images/sprites/sprite-Set1.jpg
 sprite_selection_number: 6
@@ -29,6 +30,8 @@ location:
     latitude: -18.979907
     longitude: 29.782165
 ---
+
+## EMIT training gave Elvis the confidence to advise politicians and business people
 
 The testimony of Dr. Elvis Joseph is one of our EMIT success stories. Elvis grew up being passed from relative to relative, moving from one family to the next. Not knowing his father, he grew up questioning who he was and his purpose for existence.
 

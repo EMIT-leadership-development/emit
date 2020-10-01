@@ -5,6 +5,7 @@ subtitle: These are some of the descriptions of the situation in the Portuguese 
 
 # Hero defaults are set in config if not in post
 # Sprite Image for listings - to make site fast
+hero_image: /images/African-Church-musician-leadership.webp
 sprite_image: /images/sprites/sprite-Set1.jpg
 sprite_selection_number: 4
 
@@ -16,6 +17,8 @@ tags: Mozambique Angola
 category: Reports
 excerpt_separator: <!--more-->
 ---
+
+## EMIT Report 2020 - Portuguese Speaking Countries
 
 Political unrest. Natural disasters. Continued economic deterioration. These are some of the descriptions of the situation in the Portuguese speaking countries in Africa during 2019.
 

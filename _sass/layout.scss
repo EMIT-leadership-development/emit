@@ -40,7 +40,7 @@ section.hero.geoLocatedStories {
 }
 
 // Stories page and Single-Post have sidebar
-.stories, .singlePost  {
+.stories  {
 	display: grid;
 	grid-template-columns: 1fr 4fr;
 	grid-auto-rows: 1fr;
@@ -99,6 +99,9 @@ section.hero.geoLocatedStories {
 			}
 			&.col-2-3 {
 				grid-template-columns: 2fr 3fr;
+			}
+			&.col-2-5 {
+				grid-template-columns: 2fr 5fr;
 			}
 			&.col-3-2 {
 				grid-template-columns: 3fr 2fr;

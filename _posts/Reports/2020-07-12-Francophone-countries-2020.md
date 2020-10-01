@@ -5,6 +5,7 @@ subtitle: The prosperity and wellbeing of Francophone Africa are continuously un
 
 # Hero defaults are set in config if not in post
 # Sprite Image for listings - to make site fast
+hero_image: /images/littleBoyWithBible.webp
 sprite_image: /images/sprites/sprite-Set1.jpg
 sprite_selection_number: 17
 
@@ -16,6 +17,8 @@ tags: Rwanda DR-Congo
 category: Reports
 excerpt_separator: <!--more-->
 ---
+
+## EMIT Report 2020 - French Speaking Countries
 
 The prosperity and wellbeing of Francophone Africa are continuously under threat by political unrest, disease, corruption and more. These countries are some of the richest in natural resources, yet they are also some of the poorest. Despite all these challenges, there are many encouraging signs of progress.
 

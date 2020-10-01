@@ -4,7 +4,7 @@ title: "What we've learned"
 subtitle: "Over the years we have learned so much - this is what doesn't work."
 
 # IMAGES
-heroImage: "fetchingWater.webp"
+hero_image: /images/fetchingWater.webp
 sprite_image: /images/sprites/sprite-Set1.jpg
 sprite_selection_number: 12
 
@@ -15,7 +15,7 @@ category: About EMIT
 excerpt_separator: <!--more-->
 ---
 
-### After decades of financial support why does the African problem persist?
+## After decades of financial support why does the African problem persist?
 
 Africa has been on the receiving end of philanthropic giving for more than 300 years. Billions of dollars have been invested by well-meaning donors, governments and non-profit agencies into thousands of projects. These projects range from feeding schemes for the poor to massive rebuilding projects of failed governments and economies. <!--more--> For the most part, these have not resulted in a prosperous Africa. Donors are asking, “Why, after decades of support, does the African problem still exist?” “Donor fatigue” and “Africa is a bottomless pit” are common sentiments. After all this giving, why do we still struggle with issues such as corruption, poor education, socio-economic hardship, tribal and territorial wars, and failing governments?
 

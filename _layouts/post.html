@@ -5,49 +5,86 @@ layout: default
 {% if page.category == "Transformation Stories" %}
 	{% assign authorName = page.leaderName %}
 	{% assign authorProfileImage = page.image %}
+	{% assign authorbio = page.leaderBio_description %}
 {% else %}
 	{% assign author = site.data.team | where:"shortname", page.author  | first %}
 	{% assign authorName = author.name %}
 	{% assign authorProfileImage = author.profile_image %}
+	{% assign authorbio = author.bio_description %}
 {% endif %}
 
 <div class="page singlePost">
-		<!-- SideBar -->
-		{% include sidebarContent.html %}
 
-		<!-- Section that holds the list of stories -->
-		<section class="pageSection postWrap">
-			<!-- The container below is the white paper -->
-			<div class="container max-container max-content">
+	<!-- Section -->
+	<section class="pageSection postWrap">
+		<!-- The container below is the white paper -->
+		<div class="container col-2-5">
+
+			<div class="sidebar">
 				<!-- Header for the page -->
 				<header class="postHeader">
-					<div class="pageMeta">
-						<p>Transforming Nations<br>by training leaders</p>
-						<div>
-							<div>{{ page.title }} by {{ authorName }}</div>
-							<div>Published in - {{ page.category }} - on {{ page.date | date: "%d %b %Y" }}</div>
+					<!-- Author Pic at top of sidebar -->
+					<div class="authorImageWrap">
+						<div class="authorImage">
+							<div class="sphere sphere3">
+								<div class="sphere sphere2">
+									<div class="sphere sphere1">
+										<img src="{{ site.baseurl }}{{ authorProfileImage }}" alt="">
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
+					<!-- Page title and date etc. -->
+					<div class="pageMeta">
+						<div>
+							<h3>{{ page.title }}</h3>
+							<p>{{page.subtitle}}</p>
+							<div> by {{ authorName }}</div>
+							<div>Category | {{ page.category }}</div>
+							<div>Date | {{ page.date | date: "%d %b %Y" }}</div>
+						</div>
+						<p>{{ authorbio }}</p>
+					</div>
+					<!-- EMIT's logo and contacts -->
 					<div class="brand">
 						<div class="logoWrap">{% include logo.html %}</div>
+						<p>Transforming Nations<br>by developing leaders</p>
 						<div class="companyDetails">
 							{% assign address = site.data.contacts[0] %}
+							<h5>SOUTH AFRICA</h5>
 							<ul>
 								<li>
-									<span>{{ address.phone }}</span>
 									<span class="icon"><i data-feather="phone"></i></span>
+									<span>{{ address.phone }}</span>
 								</li>
 								<li>
-									<span>{{ address.email }}</span>
 									<span class="icon"><i data-feather="mail"></i></span>
+									<span>{{ address.email }}</span>
+								</li>
+							</ul>
+							{% assign address = site.data.contacts[1] %}
+							<h5>USA</h5>
+							<ul>
+								<li>
+									<span class="icon"><i data-feather="phone"></i></span>
+									<span>{{ address.phone }}</span>
+								</li>
+								<li>
+									<span class="icon"><i data-feather="mail"></i></span>
+									<span>{{ address.email }}</span>
 								</li>
 							</ul>
 						</div>
 					</div>
 				</header>
-				<div class="postContent">
-					{{ content }}
-				</div>
+
 			</div>
-		</section>
+
+		
+			<div class="postContent">
+				{{ content }}
+			</div>
+		</div>
+	</section>
 </div>

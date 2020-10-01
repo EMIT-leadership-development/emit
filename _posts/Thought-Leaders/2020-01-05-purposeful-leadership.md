@@ -4,6 +4,7 @@ title: Purposeful Leadership
 subtitle: We are passionate about transforming communities
 # Hero defaults are set in config if not in post
 # Sprite Image for listings - to make site fast
+hero_image: /images/lady-WIth-Mic.webp
 sprite_image: /images/sprites/sprite-Set1.jpg
 sprite_selection_number: 16
 

@@ -1,6 +1,7 @@
 ---
 # Default hero from config
-title: Politital Leaders
+hero_image: /images/youngLeaderThinking.webp
+title: Youth Leaders
 
 id: 3
 objective_markdown: Paragraph describing the objective for this program. For example - when you have completed this program you will be able to...

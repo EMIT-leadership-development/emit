@@ -5,6 +5,8 @@ subtitle: The maturity of our church members is a direct result of better-traine
 
 # Hero defaults are set in config if not in post
 # Sprite Image for listings - to make site fast
+hero_image: images/Young-African-Youth-Leader.webp
+customHeroPosition: "center top"
 sprite_image: /images/sprites/sprite-Set1.jpg
 sprite_selection_number: 2
 
@@ -17,6 +19,7 @@ category: Reports
 excerpt_separator: <!--more-->
 ---
 
+## EMIT Report 2020 - English Speaking Countries
 The maturity of our church members is a direct result of better-trained leaders. Church leaders trained by EMIT have greater skills, theological knowledge, and the necessary tools to equip their members for the work of the Lord. This training translates into transformational efforts like never before.
 
 During the outbreak of the black plague in Madagascar, it was mem- bers and church leaders who stood by to help health workers stop the spread of the epidemic.

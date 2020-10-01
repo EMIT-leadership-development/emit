@@ -4,7 +4,7 @@ title: "Next Steps"
 subtitle: "2020 and beyond - our plans for the next few years."
 
 # IMAGES
-heroImage: "fetchingWater.webp"
+hero_image: /images/road.webp
 sprite_image: /images/sprites/sprite-Set1.jpg
 sprite_selection_number: 1
 
@@ -15,7 +15,7 @@ category: About EMIT
 excerpt_separator: <!--more-->
 ---
 
-### 2020 - what do we have planned?
+## 2020 - what do we have planned?
 
 The name change from AFMIN to EMIT was significant in more than one way. We realized in 2010 that we needed to be more relevant and effective to a new generation of leaders and the challenges they faced. The leadership of EMIT (AFMIN) knew that the time had come to increase our Kingdom impact. After five years of prayer and deliberation, the way forward was made clear by the Lord.
 
@@ -27,5 +27,8 @@ In 2016 the first students enrolled. What a rollercoaster ride. Thrilling. Excit
 
 The success of this program proves that EMIT is addressing a need that is not currently served by others. We will, therefore, continue to implement our growth strategy and expand our efforts to other spheres of leadership.
 
+#### We feel the urgency to equip the new generation of leaders
 The development of a youth curriculum is already in advanced stages. Meetings with various stakeholders will take place in the second half of 2020. We will roll out pilot programs at the beginning of 2021, and intend to enroll our first youth leaders in the second half of 2021.
 With the guidance of the Holy Spirit, we are confident that we will continue to impact communities on the continent of Africa.
+
+You can help us get this program to the youth leaders of Africa - [Sponsor the program development](/programs/youth-leaders)

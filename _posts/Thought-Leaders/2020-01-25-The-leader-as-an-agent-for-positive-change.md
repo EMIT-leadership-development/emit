@@ -5,8 +5,9 @@ subtitle: All leaders exhibit one common quality - influence
 
 # Hero defaults are set in config if not in post
 # Sprite Image for listings - to make site fast
+hero_image: images/african-leadership-mother-EMIT.webp
 sprite_image: /images/sprites/sprite-Set1.jpg
-sprite_selection_number: 11
+sprite_selection_number: 3
 
 # If the author is team member then select from datafile
 author: Borniface
@@ -16,6 +17,7 @@ tags: Leadership Transformation Training
 category: Thought Leaders
 excerpt_separator: <!--more-->
 ---
+## All leaders exhibit one common quality - influence
 
 When we look at history, we see many outstanding individuals that influenced others in their generation. From Genghis Khan to George Washington and many others in between, communities have been shaped by those who led them. Some past leaders have lifted people from abject poverty and deprivation to greater economic achievements, while other leaders have had a very negative impact on their communities.
 
