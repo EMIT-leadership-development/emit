@@ -248,8 +248,8 @@ hero_image: /images/couple.webp
 </section>
 
 <!-- 4 TRANSFORMATION STORIES -->
-<section class="storiesList item--contained">
-	<div class="container">
+<section class="item--contained transormationStories">
+	<div class="container storiesList">
 		{% assign featured = site.posts | where:"category","Transformation Stories" %}
 		{% assign distance = 5 %}
 		{% for post in featured limit:4 %}
