@@ -81,6 +81,24 @@ section {
 		grid-column: 5 / span 4;
 		padding-left: 2rem;
 	}
+	.leftToOne {
+		grid-column: 1 / span 2;
+		padding-right: 2rem;
+		padding-left: 2rem;
+	}
+	.TwoToRight {
+		grid-column: 3 / span 6;
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+	.contained-FirstOne {
+		grid-column: 2 / span 1;
+		padding-left: 2rem;
+	}
+	.contained-LastFive {
+		grid-column: 3 / span 5;
+		padding-left: 2rem;
+	}
 	.containedLeft {
 		grid-column: 2 / span 3;
 		padding-right: 2rem;
@@ -122,6 +140,7 @@ section {
 }
 
 // CUSTOM TWEAKS FOR INDIVIDUAL SECTIONS
+// ----- ABOUT PAGE
 .whatWeDo {
 	.containedRight div:first-of-type {
 		padding-left: 3.5rem;
@@ -147,5 +166,48 @@ section {
 .relatedLinksRow {
 	aside {
 		margin-left: 0;
+	}
+}
+// -----SINGLE POST PAGE
+
+.singlePost {
+	.postWrap {
+		display: grid;
+		grid-template-columns: 2fr 5fr;
+	}
+}
+
+// ----- PROGRAMS PAGE (TRAINING)
+.trainingMethodTitle {
+	.contained-LastFour {
+		margin-bottom: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+}
+.learnerPortal {
+	.contained-LastFour {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+}
+.programList {
+	.leftToCenter {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		@media (min-width: 900px) {
+			grid-row: -1;
+		}
+	}
+	.sectionIntro {
+		background-color: #ffffff;
+		padding-left: 2rem;
+		@media (min-width: 900px) {
+			padding-left: 4rem;
+			grid-row: -1;
+		}
 	}
 }

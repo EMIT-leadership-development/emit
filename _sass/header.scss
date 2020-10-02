@@ -414,11 +414,15 @@ section.hero{
     background-repeat: no-repeat;
     background-attachment: fixed;
     padding: 0 0 2rem 0;
+    &.map {
+        padding: 0;
+    }
     .container {
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
         align-items: flex-start;
+        padding: 0;
     }
     // Flex row on larger screens
     @media #{$mid-point} {
