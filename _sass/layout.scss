@@ -12,152 +12,140 @@ main.content {
 	padding: 0;
 }
 
-// sections inside pages
+// Six Center columns with full width bg's when required
+// Based on the single center column from the example below
+// https://medium.com/@igloude/how-css-grid-makes-single-columns-better-def5a7dd5045
+
+.grid {
+	display: grid;
+	grid-template-columns:
+	//       | vp |   vp   |   vp  |   vp   |   vp  |   vp   |   vp  | vp |
+	//       |    |  cont  |  cont |  cont  |  cont |  cont  |  cont |    |
+	//       |    |  col2  |  col3 |  col4  |  col5 |  col6  |  col7 |    |
+
+	[viewport-start]
+		minmax(2em, 1fr)
+		[container-start]
+			minmax(0, 12em)
+			minmax(0, 12em)
+			minmax(0, 12em)
+			minmax(0, 12em)
+			minmax(0, 12em)
+			minmax(0, 12em)
+		[container-end]
+		minmax(2em, 1fr)
+	[viewport-end];
+}
+
 section {
+	// Default layout puts the content of section into container spanning middle six columns
+	grid-column: container;
+	// border: 1px solid blue;
 	padding: 0;
 	margin: 0;
 	position: relative;
 }
-
-// The hero map on stories page
-section.hero.geoLocatedStories {
-	height: 100vh;
-	margin-top: -99px;
-	margin-left: -1px;
-}
-
-// containers inside sections allow for setting the max width of section
-.container {
-	max-width: 1140px;
-	margin: 0 auto;
-	position: relative;
-	padding: 0;
-	// This container takes up full screen
-	&.max-container {
-		max-width: 100%;
-		padding: 0;
+.item--full {
+	// Inherits all the columns and puts the content into the center container span
+	grid-column: viewport;
+	// grid-gap: 2rem;
+    display: inherit;
+    grid-template-columns: inherit;
+    & > * {
+        grid-column: container;
+	}
+	// Force full width of content blocks
+	// For things like maps
+	.max-content {
+		grid-column: viewport;
 	}
 }
-
-// Stories page and Single-Post have sidebar
-.stories  {
-	display: grid;
-	grid-template-columns: 1fr 4fr;
-	grid-auto-rows: 1fr;
+.white {
+	background-color: #ffffff;
+}
+.dark {
+	background: $brandContrastDark;
 }
 
-// ------- Page Section Layouts
-// Layout: program.html
-.program section {
-	// The z-index is important for the book shadows on curriculum pages
-	z-index: 1;
+// Granular control of center columns
+// First make sure the section is item-full so that you have all the columns to work with
+// Then apply any of the following
+// They ony kick in after 900px
+// Todo: convert these to mixins and make everything semantic
+@media (min-width: 900px) {
+	.leftToCenter {
+		grid-column: 1 / span 4;
+		padding-right: 2rem;
+	}
+	.centerToRight {
+		grid-column: 5 / span 4;
+		padding-left: 2rem;
+	}
+	.containedLeft {
+		grid-column: 2 / span 3;
+		padding-right: 2rem;
+	}
+	.containedRight {
+		grid-column: 5 / span 3;
+		padding-left: 2rem;
+	}
+	.contained-FirstTwo {
+		grid-column: 2 / span 2;
+		padding-right: 2rem;
+	}
+	.contained-LastFour {
+		grid-column: 4 / span 4;
+		padding-left: 2rem;
+	}
 }
-.pageSection {
-	// Alternate the background color
-	&:nth-child(even) {
-		background: #ffffff;
+
+// The content within the sections
+// SectionImage
+// SectionIntro
+// SectionContent
+// container - for single block of content
+.sectionImage {
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	// Min height so when the columns break for small phones the image still shows
+	min-height: 400px;
+}
+.container:not(.no-padding), .sectionIntro, .sectionContent {
+	// border: 1px solid blue;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	@media (min-width: 900px) {
+		padding-top: 6rem;
+		padding-bottom: 6rem;
 	}
-	.container {
-		// ------- Default styles (Small screens)
-		// The container is display block by default - not a grid
-		// The content blocks: Most sections wll have one or any of: intro, content and image
-		.sectionIntro, .sectionContent {
-			padding: 30px;
-		}
-		.sectionImage {
-			background-repeat: no-repeat;
-			background-size: cover;
-			background-position: center center;
-			min-height: 400px;
-			&.contain {
-				background-size: contain;
-			}
-		}
-		// -------large screens
-		@media #{$mid-point} {
-			// Default two column layout
-			display: grid;
-			grid-column-gap: 60px;
-			grid-template-columns: 1fr 1fr;
-			// Content blocks have bigger padding on large screens
-			.sectionIntro, .sectionContent {
-				padding: 120px 0;
-			}
-			// max-content - basically col-1 : when i want a single column even on a large screen
-			&.max-content {
-				display: block;
-			}
-			// container column settings
-			&.col-1-4 {
-				grid-template-columns: 1fr 4fr;
-			}
-			&.col-3-2 {
-				grid-template-columns: 3fr 2fr;
-			}
-			&.col-1-3 {
-				grid-template-columns: 1fr 3fr;
-			}
-			&.col-2-3 {
-				grid-template-columns: 2fr 3fr;
-			}
-			&.col-2-5 {
-				grid-template-columns: 2fr 5fr;
-			}
-			&.col-3-2 {
-				grid-template-columns: 3fr 2fr;
-			}
-			&.col-1-1-1 {
-				grid-template-columns: 1fr 1fr 1fr;
-			}
-			&.col-1-1-1-1 {
-				grid-template-columns: 1fr 1fr 1fr 1fr;
-			}
-		}
-		// We sometimes need a full width column
-		&.max-container {
-			// --------When the container is stretched to full width on large screens
-			@media #{$mid-point} {
-				grid-gap: 0;
-				.sectionIntro, .sectionContent {
-					padding: 120px 60px;
-				}
-			}
-		}
+}
+
+// CUSTOM TWEAKS FOR INDIVIDUAL SECTIONS
+.whatWeDo {
+	.containedRight div:first-of-type {
+		padding-left: 3.5rem;
 	}
-	&.videoPlayer {
-		.container {
-			@media #{$mid-point} {
-				padding-top: 60px;
-				padding-bottom: 60px;
-				display: grid;
-				grid-template-columns: 1fr 6rem 1fr;
-				grid-gap: 1rem;
-			}
-		}
+}
+.visionMission {
+	.contained-LastFour {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
 	}
-	// Display the little article link as a grid.
-	.relatedArticles {
-		@media #{$mid-point} {
-			display: grid;
-			grid-template-columns: 1fr 1fr;
-			margin: 0 0 30px 0;
-		}
+}
+.itsWorking .containedLeft {
+	display: flex;
+		flex-direction: column;
+		justify-content: center;
+}
+.goal, .howWeDoIt {
+	aside {
+		margin-top: 4rem;
 	}
-	// The transformation author pics cause horizontal scroll on small screens
-	// overflow hidden for small screens
-	&.featuredStories {
-		@media #{$below-mid-point} {
-			overflow: hidden;
-		}
-	}
-	&.trainingMethodTitle {
-		.sectionContent {
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-		}
-	}
-	&.learnerPortal {
-		padding-top: 60px;
+}
+.relatedLinksRow {
+	aside {
+		margin-left: 0;
 	}
 }
