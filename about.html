@@ -392,17 +392,57 @@ hero_image: /images/couple.webp
 	</div>
 </section>
 
-<!-- ADDRESSES -->
+<!-- ADDRESS SA -->
 <section class="item--full white contactRow">
-	<div class="container">
-		<div class="sectionContent">
-			Address
+	<div class="container addressRow">
+		<div class="address contactBlock">
+			<span class="icon"><i data-feather="map"></i></span>
+			{% assign address = site.data.contacts[0] %}
+			<div class="addresses">
+				<h5>SA HEADOFFICE</h5>
+				<p>{{ address.address }}</p>
+			</div>
 		</div>
-		<div class="sectionContent">
-			Email
+		<div class="email contactBlock">
+			<span class="icon"><i data-feather="mail"></i></span>
+			<div class="addresses">
+				<h5>SA EMAIL</h5>
+				<p>{{ address.email }}</p>
+			</div>
 		</div>
-		<div class="sectionContent">
-			Phone
+		<div class="phone contactBlock">
+			<span class="icon"><i data-feather="smartphone"></i></span>
+			<div class="addresses">
+				<h5>SA PHONE</h5>
+				<p>{{ address.phone }}</p>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- ADDRESS SA -->
+<section class="item--full contactRow">
+	<div class="container addressRow">
+		<div class="address contactBlock">
+			<span class="icon"><i data-feather="map"></i></span>
+			{% assign address = site.data.contacts[1] %}
+			<div class="addresses">
+				<h5>USA HEADOFFICE</h5>
+				<p>{{ address.address }}</p>
+			</div>
+		</div>
+		<div class="email contactBlock">
+			<span class="icon"><i data-feather="mail"></i></span>
+			<div class="addresses">
+				<h5>USA EMAIL</h5>
+				<p>{{ address.email }}</p>
+			</div>
+		</div>
+		<div class="phone contactBlock">
+			<span class="icon"><i data-feather="smartphone"></i></span>
+			<div class="addresses">
+				<h5>USA PHONE</h5>
+				<p>{{ address.phone }}</p>
+			</div>
 		</div>
 	</div>
 </section>

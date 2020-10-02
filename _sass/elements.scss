@@ -1444,40 +1444,50 @@ section.curriculum {
 	}
 }
 
+// ADDRESS ROW
+.addressRow {
+	@media #{$mid-point} {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 2rem;
+	}
+	.contactBlock {
+		// border: 1px solid red;
+		display: grid;
+		grid-template-columns: auto 1fr;
+		span {
+			padding: 0.5rem 2rem;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			border-right: 1px solid darken($brandContrastLight, 5%);
+			svg {
+				width: 3rem;
+				height: 3rem;
+				stroke-width: 1px;
+				stroke: rgba(0,0,0,0.3);
+			}
+		}
+		.addresses {
+			// border: 1px solid green;
+			padding: 0.5rem 2rem;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: flex-start;
+			h5 {
+				margin-bottom: 0.5rem;
+				font-size: 1.1rem;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+				color: rgba(0,0,0,0.9);
+			}
+			p {
+				margin: 0;
+				font-size: 0.9rem;
+			}
+		}
+	}
 
-// Blockquote - orignal styling - to be redone
-// blockquote {
-// 	padding: 18px 25px;
-// 	margin: 0 auto;
-// 	quotes: "\201C""\201D""\2018""\2019";
-// 	font-style: italic;
-// 	line-height: 2.5;
-// 	font-size: 1.1em;
-// 	max-width: 900px;
-
-// 	.author {
-// 		display: block;
-// 		font-weight: bold;
-// 		margin: 20px 0 0 0;
-// 		font-size: 1.1em;
-// 		font-style: normal;
-// 		text-align: right;
-// 	}
-
-// 	p {
-// 		display: inline;
-// 	}
-// }
-// blockquote .quote:before,
-// blockquote .quote:after {
-// 	color: #ccc;
-// 	content: open-quote;
-// 	font-size: 4em;
-// 	line-height: 0.1em;
-// 	margin-right: 0.1em;
-// 	vertical-align: -0.4em;
-// }
-
-// blockquote .quote:after {
-// 	content: close-quote;
-// }
+}
