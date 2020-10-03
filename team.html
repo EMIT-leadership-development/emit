@@ -6,33 +6,28 @@ hero_Quote_Cite: Kathy Austin
 hero_image: /images/lightAFire.webp
 ---
 
-<div class="page team">
-    <!-- INTRO -->
-    <section class="pageSection">
-        <div class="container col-2-3">
-            <div class="sectionIntro">
-                <h2 class="sectionTitle priority2 editable">Our spheres of <span class="emphasis">impact</span></h2>
-                <p class="editable introduction">THE EMIT TEAM are experts in African transformation.</p>
-            </div>
-            <div class="sectionContent">
-                <p class="editable">They are mentors that multiply themselves by imparting skills and life-changing values. Non illo molestiae tortor, nemo officia, quo nibh deleniti? Neque velit? Voluptatem? Mauris? Suscipit error, nemo ullamcorper class eum rerum nesciunt, incidunt leo primis senectus, pulvinar enim nascetur perspiciatis iste adipiscing do provident curae iaculis quibusdam eiusmod leo numquam augue.</p>
-                <p class="editable">Ipsam duis parturient architecto consectetuer incidunt id cum curabitur similique wisi fusce repellat, elementum, quas, cubilia. Possimus, habitant, risus ratione? Placeat voluptates posuere natus et. Fugiat nostrum magna, eleifend diamlorem! Nostrud sociosqu fusce officia egestas nascetur commodi magnam delectus nobis.</p>
-            </div>
-        </div>
-    </section>
-    <!-- SECTION LIST OF MEMBERS -->
-    <section class="pageSection teamList">
-        <div class="container max-content">
-            <ul class="sectionContent">
-                {% for teamMember in site.data.team%}
-                <li>
-                    <!-- if group is team -->
-                    {% if teamMember.group == "team" %}
-                        {% include teamMemberPreview.html %}
-                    {% endif %}
-                </li>
-                {% endfor %}
-            </ul>
-        </div>
-    </section>
-</div>
+
+<!-- INTRO -->
+<section class="item--full">
+    <div class="sectionIntro contained-FirstTwo">
+        <h2 class="sectionTitle priority2 editable">Our spheres of <span class="emphasis">impact</span></h2>
+        <p class="editable introduction">THE EMIT TEAM are experts in African transformation.</p>
+    </div>
+    <div class="sectionContent contained-LastFour">
+        <p class="editable">They are mentors that multiply themselves by imparting skills and life-changing values. Non illo molestiae tortor, nemo officia, quo nibh deleniti? Neque velit? Voluptatem? Mauris? Suscipit error, nemo ullamcorper class eum rerum nesciunt, incidunt leo primis senectus, pulvinar enim nascetur perspiciatis iste adipiscing do provident curae iaculis quibusdam eiusmod leo numquam augue.</p>
+        <p class="editable">Ipsam duis parturient architecto consectetuer incidunt id cum curabitur similique wisi fusce repellat, elementum, quas, cubilia. Possimus, habitant, risus ratione? Placeat voluptates posuere natus et. Fugiat nostrum magna, eleifend diamlorem! Nostrud sociosqu fusce officia egestas nascetur commodi magnam delectus nobis.</p>
+    </div>
+</section>
+<!-- SECTION LIST OF MEMBERS -->
+<section class="teamList item--full white">
+    <ul class="sectionContent">
+        {% for teamMember in site.data.team%}
+        <li>
+            <!-- if group is team -->
+            {% if teamMember.group == "team" %}
+                {% include teamMemberPreview.html %}
+            {% endif %}
+        </li>
+        {% endfor %}
+    </ul>
+</section>
