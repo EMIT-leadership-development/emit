@@ -1,4 +1,4 @@
-<!-- If page is articles then show map else show normal hero -->
+<!-- If page is articles then show hero map -->
 {% if page.title == "Stories" %}
 <section class="hero item--full map geoLocatedStories">
     <!-- Todo: Page Title on Map -->
@@ -11,11 +11,6 @@
         no_cluster
         marker_icon="/images/interface/mapMarker.png" %}
 </section>
-
-
-
-
-
 
 {% else %}
 <!-- Todo: only insert custom position if it exists. -->

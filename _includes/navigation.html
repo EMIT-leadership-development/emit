@@ -13,7 +13,7 @@
 			{% assign class = class | append: " active" %}
 			{% endif %}
 			<li class="nav-link" style="--i: .6s">
-				<a href="{% include relative-src.html src=link.link %}" class="{{ class }}">{{ link.name }}</a>
+				<a href="{% include relative-src.html src=link.link %}" class="{{ class }} topLevel hideToStart">{{ link.name }}</a>
 				{% if link.subPages %}
 				<div class="dropdown">
 					<ul>
@@ -46,7 +46,7 @@
 	</div>
 
 	<div class="log-sign" style="--i: 1.8s">
-		<a href="#" class="button secondary">Sign in</a>
-		<a href="{{ site.baseurl }}/donate" class="button primary">Donate</a>
+		<a id="loginBtn" href="#" class="button secondary">Sign in</a>
+		<a id="donateBtn" href="{{ site.baseurl }}/donate" class="button primary hideToStart">Donate</a>
 	</div>
 </div>

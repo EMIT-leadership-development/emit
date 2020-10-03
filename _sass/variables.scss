@@ -20,6 +20,7 @@ $below-mid-point: "(max-width: 849px)";
 
 
 // Sonya found these breakpoints here: https://codepen.io/davidgilbertson/pen/aBpJzO
+// May remove these when finished with new layout grid
 @mixin for-phone-only {
     @media (max-width: 599px) { @content; }
 }
@@ -44,3 +45,6 @@ $below-mid-point: "(max-width: 849px)";
 @mixin for-big-desktop-up {
     @media (min-width: 1800px) { @content; }
 }
+
+
+// Scrollytelling
