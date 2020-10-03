@@ -21,5 +21,8 @@ description_markdown: >-
 curricula:
   - title:
     objective:
+    credits:
+    days:
+    projects:
 
 ---

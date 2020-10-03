@@ -46,50 +46,15 @@
 				</div>
 			</nav>
 		</header>
-		<main class="content">
-			<!-- If page is articles then show map else show normal hero -->
-			{% if page.title == "Stories" %}
-			<section class="hero map geoLocatedStories">
-				<!-- Todo: Page Title on Map -->
-				{% google_map
-					width="100%"
-					height="100%"
-					zoom="4"
-					src="_posts/Transformation-Stories"
-					styles="darkMinimum"
-					no_cluster
-					marker_icon="/images/interface/mapMarker.png" %}
-			</section>
-			{% else %}
-			<!-- Todo: only insert custom position if it exists. -->
-		<section class="hero" style="background-image:url({{site.baseurl}}{{page.hero_image}}); background-position:{{page.customHeroPosition}};">
-				<div class="overlay"></div>
-				{% if page.heroQuote %}
-				<blockquote class="heroQuote">
-					<p>{{page.heroQuote}}</p>
-					<footer><cite>- {{page.hero_Quote_Cite}}</cite></footer>
-				</blockquote>
-				{% else %}
-				<div class="spacer"></div>
-				{% endif %}
-				<div class="heroTitle">
-					<!-- If hero text exists then show it else show page title -->
-					{% if page.hero %}
-					<h1>{{page.hero}}</h1>
-					{% else %}
-					<h1>{{page.title}}</h1>
-					{% endif %}
-					<div class="breadcrumbs">{% include breadcrumbs.html %}</div>
-				</div>
-			</section>
-			{% endif %}
-
+		<main class="content grid">
+			<!-- Hero -->
+			{% include hero.html %}
 
 			<!-- Main content -->
 			{{ content }}
 		</main>
 		<!-- Footer -->
-		<footer>
+		<footer class="grid">
 			{% include footer.html %}
 		</footer>
 		<!-- <script>

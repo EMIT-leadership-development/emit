@@ -23,31 +23,73 @@ description_markdown: >-
 
 curricula:
   - title: Basic Computer skills
-    objective: A short paragraph describing objective of this section
+    objective: Venenatis quisquam, magni? Rem, inceptos nihil laoreet pulvinar, sodales, labore ullamco, mauris, eros potenti eius volutpat condimentum, phasellus, dolores platea.
+    credits: 5
+    days: 20
+    projects: 3
   - title: Biblical Worldview
-    objective: A short paragraph describing objective of this section
+    objective: A short paragraph describing objective of this section. Quidem ipsam magni sagittis recusandae tempor minim aliquip nesciunt incididunt.
+    credits: 10
+    days: 5
+    projects: 1
   - title: Business skills 1
-    objective: Paragraph describing objective of this section
+    objective: Paragraph describing objective of this section. Error quo luctus eligendi? Quidem ipsa taciti, sed, aute volutpat.
+    credits: 30
+    days: 16
+    projects: 6
   - title: Business skills 2
-    objective: Paragraph describing objective of this section
+    objective: Paragraph describing objective of this section. Gravida sequi adipiscing ipsam? Natus pretium minima ultrices? Id consectetur.
+    credits: 3
+    days: 15
+    projects: 6
   - title: Emotional Wellness 1
-    objective: Paragraph describing objective of this section
+    objective: Paragraph describing objective of this section. Ad nulla maecenas. Dignissim cupidatat totam netus culpa commodi est.
+    credits: 14
+    days: 5
+    projects: 3
   - title: Emotional Wellness 2
-    objective: Paragraph describing objective of this section
+    objective: Paragraph describing objective of this section. Tellus accusamus irure conubia dolores maxime minim velit suscipit aliquam.
+    credits: 5
+    days: 6
+    projects: 4
   - title: Family
-    objective: Paragraph describing objective of this section
+    objective: Paragraph describing objective of this section. Occaecat. Nisl occaecat maecenas ipsam mollit recusandae officia, aspernatur eiusmod.
+    credits: 13
+    days: 5
+    projects: 10
   - title: Gender Theory
-    objective: Paragraph describing objective of this section
+    objective: Paragraph describing objective of this section. Felis lacinia nascetur magnis consequatur anim fuga? Tempus. Porta officia.
+    credits: 28
+    days: 22
+    projects: 9
   - title: Introduction to Leadership
-    objective: Paragraph describing objective of this section
+    objective: Paragraph describing objective of this section. Viverra cursus purus delectus illo fugiat. Pariatur nostrud molestie quisque.
+    credits: 13
+    days: 7
+    projects: 2
   - title: Life skills 1
-    objective: Paragraph describing objective of this section
+    objective: Paragraph describing objective of this section. Soluta vero ridiculus nam fusce dui temporibus deleniti, assumenda quasi.
+    credits: 14
+    days: 7
+    projects: 3
   - title: Life skills 2
-    objective: Paragraph describing objective of this section
+    objective: Paragraph describing objective of this section. Officiis atque etiam odit, sagittis vitae dicta ac veritatis delectus.
+    credits: 20
+    days: 15
+    projects: 5
   - title: In the workplace
-    objective: Paragraph describing objective of this section
+    objective: Paragraph describing objective of this section. Consequat pretium voluptatum tellus at! Perspiciatis ducimus dignissim, pulvinar doloribus.
+    credits: 10
+    days: 6
+    projects: 2
   - title: The Kingdom of God
-    objective: Paragraph describing objective of this section
+    objective: Paragraph describing objective of this section. Nec erat sequi risus ac aliquip dolores mus aperiam pede.
+    credits: 17
+    days: 12
+    projects: 2
   - title: Women & the Law
-    objective: Paragraph describing objective of this section
+    objective: Paragraph describing objective of this section. Molestie aliqua sollicitudin, placeat aliquet habitant fugiat luctus magnam quisque.
+    credits: 16
+    days: 10
+    projects: 7
 ---

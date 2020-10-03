@@ -2,6 +2,7 @@ html, body {
 	margin: 0;
 	padding: 0;
 	font-size: 16px;
+	background-color: $brandContrastLight;
 }
 body {
 	font-family: "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
@@ -45,8 +46,8 @@ h4 {
 }
 p, address, label, ul {
 	font-size: 1rem;
-	margin: 0 0 30px 0;
-	line-height: 1.4em;
+	margin: 0 0 2rem 0;
+	line-height: 1.5;
 }
 p, address, label, ul, div  {
 	.emphasis {
@@ -87,8 +88,8 @@ h1, h2, h3, h4 {
 .sectionTitle.priority3 {
 	// Adding a top margin to balance with partner logos
 	margin-top: 30px;
-	font-size: 1.4rem;
-	font-weight: 400;
+	font-size: 1.9rem;
+	font-weight: 300;
 }
 // Horizontal divider lines
 .seperationLine {
@@ -174,16 +175,16 @@ p.introduction {
 	margin-bottom: 15px;
 }
 // aside: Article Link will be used in a few places on the site
+.articleAside {
+	margin-left: -60px;
+}
 .articleLink {
-	@media #{$mid-point} {
-		margin-left: -30px;
-	}
 	color: darken($brandContrastLight, 80%);
 	text-decoration: none;
 	&:hover {
 		text-decoration: none;
 	}
-	margin: 0 0 30px 0;
+	margin: 0;
 	display: grid;
 	grid-gap: 10px;
 	grid-template-columns: 120px auto;
@@ -203,30 +204,78 @@ p.introduction {
 		flex-direction: column;
 		justify-content: center;
 		align-items: flex-start;
-		max-width: 250px;
-		.leaderLine {
-			margin-bottom: 5px;
-		}
+		max-width: 300px;
+		margin: 0;
 		.content {
 			font-weight: 500;
 			color: darken($brandContrastLight, 90%);
 			margin-bottom: 15px;
 			margin-top: 0;
+			h5 {
+				margin: 0 0 0.3rem 0;
+				font-size: 1.1rem;
+				text-transform: uppercase;
+			}
+			p {
+				margin: 0;
+				font-size: 1rem;
+				color: rgba(0,0,0,0.7);
+			}
 		}
 	}
 }
+
+
+
 // Info Points - Icon List
 .infoPoints {
 	padding-left: 0;
 	list-style-type: none;
+	margin: 0;
+
+	// Default
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 3rem;
+
+	// before 600 singles
+	@media (max-width: 600px) {
+		display: block;
+		.point {
+			margin-bottom: 3rem;
+		}
+	}
+	// 600 to 850 grid
+	@media (min-width: 600px) and (max-width: 850px) {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 3rem;
+	}
+	// 850 to 1000 singles
+	@media (min-width: 850px) and (max-width: 1000px) {
+		display: block;
+		&.col-1-1-1 {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+	// After 1000 grid
+	@media (min-width: 1000px) {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 3rem;
+		&.col-1-1-1 {
+			grid-template-columns: 1fr 1fr 1fr;
+		}
+	}
 	.point {
 		display: grid;
-		grid-template-columns: 40px auto;
-		grid-column-gap: 20px;
-		grid-row-gap: 10px;
+		grid-template-columns: 3rem auto;
+		grid-column-gap: 0.5rem;
+		grid-row-gap: 0.5rem;
 		grid-template-rows: fit-content(100px) auto;
-		@media #{$below-mid-point} {
-			margin-bottom: 30px;
+		&:last-of-type {
+			margin-bottom: 0;
 		}
 		.icon {
 			grid-row: 1 / span 2;
@@ -240,7 +289,7 @@ p.introduction {
 		.pointTitle {
 			font-size: 1.2rem;
 			line-height: 1.5;
-			// font-weight: 600;
+			font-weight: 500;
 			padding: 0;
 			margin: 0;
 			// text-transform: uppercase;
@@ -253,27 +302,32 @@ p.introduction {
 			margin-bottom: 0;
 		}
 	}
-	@media #{$mid-point} {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-gap: 30px;
-		&.col-1-1-1 {
-			grid-template-columns: 1fr 1fr 1fr;
-		}
-	}
 }
+
+
+
+
+
+
+
 // Video player section - layout is in layout.scss
 .videoPlayer {
+	// Min height is set by .sectionImage at 400px - the video player should be
+	min-height: 200px !important;
+	background-attachment: fixed;
+	background-size: cover;
+	padding-top: 60px;
+	padding-bottom: 60px;
 	a {
+		@media #{$mid-point} {
+			display: grid;
+			grid-template-columns: 1fr 5rem 1fr;
+		}
 		color: lighten($brandContrastLight, 80%);
 		&:hover {
 			text-decoration: none;
 		}
 	}
-	background-attachment: fixed;
-	background-size: cover;
-	padding-top: 60px;
-	padding-bottom: 60px;
 	span {
 		font-size: 3rem;
 		font-weight: 300;
@@ -281,16 +335,8 @@ p.introduction {
 		color: #ffffff;
 		text-align: center;
 		display: flex;
-		  justify-content: center;
+		justify-content: center;
 		align-items: center;
-		@media #{$mid-point} {
-			&:first-of-type {
-				justify-content: flex-end;
-			}
-			&:last-of-type {
-				justify-content: flex-start;
-			}
-		}
 	}
 	.icon {
 		text-align: center;
@@ -306,14 +352,13 @@ p.introduction {
 // Appears on About page and Blog List - Stories Page
 .storiesList {
 	background: $brandContrastLight !important;
-	.container {
-		.sectionContent	{
-			grid-gap: 60px !important;
-			display: grid;
-			grid-template-columns: 1fr 1fr;
-			grid-auto-rows: 1fr;
-		}
+	@media (min-width: 1150px) {
+		grid-gap: 4rem;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-auto-rows: 1fr;
 	}
+	// TODO - make these responsive!
 }
 .postPreview {
 	margin: 0;
@@ -478,7 +523,9 @@ p.introduction {
 // Single Post Page
 .singlePost {
 	.postWrap {
-		background: $brandContrastLight !important;
+		height: 100%;
+		background-color: $brandContrastLight;
+		box-shadow: 1px 3px 7px 1px rgba(8, 8, 8, 0.28), -17px -7px 20px 20px rgba(255, 255, 255, 0.13);
 		h4, h5 {
 			line-height: 1.5;
 		}
@@ -504,11 +551,6 @@ p.introduction {
 		}
 		p {
 			line-height: 1.5;
-		}
-		.container {
-			height: 100%;
-			background: #ffffff;
-			box-shadow: 1px 3px 7px 1px rgba(8, 8, 8, 0.28), -17px -7px 20px 20px rgba(255, 255, 255, 0.13);
 		}
 		.sidebar {
 			color: rgba(255,255,255,0.8);
@@ -601,7 +643,8 @@ p.introduction {
 			}
 		}
 		.postContent {
-			padding: 60px 60px 60px 0;
+			background-color: #ffffff;
+			padding: 3rem 4rem 4rem 4rem;
 			footer {
 				background: transparent;
 			}
@@ -706,12 +749,16 @@ p.introduction {
 		}
 	}
 }
+
+
 // Counter Row
-.counters {
+.counterwrap {
+	padding: 3rem 0;
+	@media #{$mid-point} {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+	}
 	.count {
-		@media #{$mid-point} {
-			margin: 120px 0;
-		}
 		padding: 30px 0 !important;
 		display: flex;
 		flex-direction: column;
@@ -730,7 +777,6 @@ p.introduction {
 // Full width featured button
 .ctaFeatured {
 	a {
-		background: $brandContrastDark;
 		color: #ffffff;
 		padding: 60px 0 !important;
 		width: 100%;
@@ -973,249 +1019,117 @@ p.introduction {
 // Section - Little Curriculum Books
 section.curriculum {
 	background: #e0e8ea !important;
-}
-.curriculaList {
-	padding: 30px;
-	margin-bottom: 0;
-	list-style: none;
-	counter-reset: my-awesome-counter;
-	display: grid;
-	grid-gap: 3rem;
 
-	// Single column on phones
-	@include for-phone-only {
-		grid-template-columns: 1fr;
-		padding: 10px;
-		* {
-			font-size: 13px;
-		}
-	}
-	// Two columns on tablet Portrait
-	@include for-tablet-portait-only {
-		grid-template-columns: 1fr 1fr;
-		* {
-			font-size: 10px;
-		}
-	}
-	// Two columns on tablet Landscape
-	@include for-tablet-landscape-only {
-		grid-template-columns: 1fr 1fr;
-		grid-gap: 4rem;
-		padding: 4rem;
-		* {
-			font-size: 13px;
-		}
-	}
-	// Three columns on desktop
-	@include for-desktop-only {
-		grid-template-columns: 1fr 1fr 1fr;
-		grid-gap: 5rem;
-		padding: 5rem;
-		* {
-			font-size: 13px;
-		}
-	}
-
-	// Three columns on very large screens up
-	@include for-big-desktop-up {
-		grid-template-columns: 1fr 1fr 1fr;
-		grid-gap: 5rem;
-		padding: 10rem;
-		* {
-			font-size: 13px;
-		}
-	}
-
-
-	// The title of the curriculum item
-	h3 {
-		font-size: 1.8em;
-		font-weight: 900;
-		padding: 10px;
-		color: #ffffff;
-		backdrop-filter: blur(4px);
-		background: rgba(0,0,0,0.4);
-		text-transform: capitalize;
-	}
-	// Objective of curriculum item
-	h4 {
-		font-size: 1.3em;
-		color: #000000;
-		font-weight: 900;
-		margin-bottom: 3%;
-		line-height: 1.3;
-	}
-	// Porgrame title above the objective
-	.leaderline {
-		font-size: 0.7em;
-		font-weight: 600;
-		color: #000000;
-		margin-bottom: 7px;
-		text-transform: uppercase;
-	}
-	// Fake text for below the objective
-	.fakecopy {
-		margin-top: 5%;
-		margin-bottom: 5%;
-		background-image: url(/images/interface/fakeCopy.webp);
-		background-size: 100% auto;
-		background-repeat: repeat-y;
-	}
-	// Footer inside each "page" position and color
-	.curriculaFooter {
-		font-size: 0.5em;
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		line-height: 1;
-		padding: 3%;
-		color: #000000;
-	}
-
-	// The inital list item shows the program book cover
-	.bookCover {
-		position: relative;
-		// Hide overflow or it causes horizontal scroll on small screens
-		overflow: hidden;
-		padding-bottom: 75%;
-		img {
-			position: absolute;
-			max-width: 140%;
-			left: -20%;
-			top: -20%;
-		}
-	}
-	// The list of curricula from program array
-	.curricula {
-		// Single list-item (little book)
+	.curriculaList {
+		padding: 0;
 		margin: 0;
-		position: relative;
-		counter-increment: my-awesome-counter;
-		background: #eeeeee;
-		box-shadow: 0 1px 4px 3px rgba(0, 0, 0, 0.3), -5px -6px 20px 20px rgba(255, 255, 255, 0.45);
-		// box-shadow: 0 1px 4px 3px rgba(0, 0, 0, 0.3), -4px -1px 15px 13px rgba(255, 255, 255, 0.4);
-  		padding-bottom: 75%;
-		// Counter - chapter number
-		&::before {
-			font-size: 3em;
-			content: counter(my-awesome-counter) ". ";
-			color: darken(#A5ABAD, 30%);
-			font-weight: 900;
-			position: absolute;
-			left: 10px;
-			top: 10px;
-			z-index: 10;
-		}
-		// Inside each page (intro and content) is an absolute container - so that we use apect ratio for height of page
-		.container {
-			display: grid;
-			grid-template-columns: 1fr 1fr;
-			grid-auto-rows: 1fr;
-			position: absolute;
-			top: 0;
-			left: 0;
-			right: 0;
-			bottom: 0;
-			grid-gap: 0;
-		}
-		// The left page - background image and title
-		.curriculaIntro {
-			height: 100%;
+		list-style-type: none;
+		display: grid;
+		grid-gap: 4rem;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr;
+		grid-template-columns: repeat( auto-fit, minmax(24em, 1fr) );
+		// grid-template-columns: repeat( auto-fit, minmax(24em, 1fr) );
+
+		.curriculaCard {
 			position: relative;
-			background-size: cover;
-			background-repeat: no-repeat;
-			background-position: center center;
-			display: flex;
-			flex-direction: column;
-			justify-content: flex-end;
-			// The gradient overlay on the page
-			&:after {
-				content: "";
+			counter-increment: my-awesome-counter;
+			border-radius: 2px;
+			filter: drop-shadow(0.1rem 0.1rem 0.3rem rgba(20, 20, 180, 0.3));
+			&::before {
+				font-size: 2rem;
+				content: counter(my-awesome-counter);
+				// color: darken(#A5ABAD, 30%);
+				color: #000000;
+				background-color: $brand-color;
+				border-radius: 50%;
+				width: 3rem;
+				height: 3rem;
+				line-height: 3rem;
+				font-weight: 900;
 				position: absolute;
-				top:0;
-				left: 0;
-				bottom: 0;
-				right: 0;
-				background: linear-gradient(270deg, rgba(0,0,0,0.5368522408963585) 0%, rgba(0,0,0,0.0718662464985994) 1%, rgba(255,255,255,0.5564600840336135) 8%, rgba(255,255,255,0.6432948179271709) 14%, rgba(255,255,255,0.3491771708683473) 19%, rgba(255,255,255,0) 100%);
+				left: 1.2rem;
+				top: 1.2rem;
+				z-index: 10;
+				// letter-spacing: -5px;
+				display: table-cell;
+				text-align: center;
 			}
-			// The curved shadow at bottom of page
-			.shadow{
-				opacity: 0.7;
-				position: absolute;
-				display: block;
-				// border: 1px solid red;
-				z-index: -1;
-				left: -3px;
-				right: 0;
-				bottom: 0;
-				top: 0;
-				background: #ffffff;
-				box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-				&:before {
-					content: "";
-					position: absolute;
-					box-shadow: 7px 15px 40px 2px rgba(0, 0, 0, 0.8);
-					height: 20%;
-					left: 20%;
-					right: 0;
-					bottom: 1%;
-					border-radius: 100%;
-					transform: skew(5deg, 10deg);
+			.curiculaWrap {
+				position: relative;
+				border: 1rem solid #ffffff;
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				grid-template-rows: 1fr;
+				overflow: hidden;
+				.curriculaImage {
+					// border: 1px solid red;
+					display: flex;
+					flex-direction: column;
+					position: relative;
+					background-size: 100%;
+					background-repeat: no-repeat;
+					z-index: 1;
+					padding-top: 600 / 405 * 100%;
 				}
-			}
-		}
-		// The right page - curriculum objective
-		.curriculaContent {
-			position: relative;
-			padding: 10% 10% 20px 10%;
-			// display: flex;
-			// flex-direction: column;
-			// justify-content: space-between;
-			display: grid;
-			grid-template-rows: auto 1fr;
-			// The gradient overlay on the page
-			&:after {
-				content: "";
-				position: absolute;
-				top:0;
-				left: 0;
-				bottom: 0;
-				right: 0;
-				background: linear-gradient(90deg, rgba(0,0,0,0.5368522408963585) 0%, rgba(0,0,0,0.0718662464985994) 1%, rgba(255,255,255,0.5060399159663865) 13%, rgba(255,255,255,0.4023984593837535) 21%, rgba(255,255,255,0) 100%);
-			}
-			// The curved shadow at bottom of page
-			.shadow{
-				position: absolute;
-				display: block;
-				// border: 1px solid red;
-				z-index: -1;
-				right: -3px;
-				left: 0;
-				bottom: 0;
-				top: 0;
-				background: #ffffff;
-				box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-				&:before {
-					content: "";
-					position: absolute;
-					position: absolute;
-					box-shadow: 7px 15px 40px 2px rgba(0, 0, 0, 0.8);
-					height: 20%;
-					left: 0;
-					right: 20%;
-					bottom: 1%;
-					border-radius: 100%;
-					transform: skew(-5deg, -10deg);
+				.curriculDescription {
+					// border: 1px solid blue;
+					background: $brandContrastLight;
+					padding: 1rem;
+					display: flex;
+					flex-direction: column;
+					justify-content: space-between;
+					.curriculaIntro {
+						// border: 1px solid yellow;
+						position: relative;
+						h3 {
+							font-size: 1.4rem;
+							color: rgba(0,0,0,0.9);
+							font-weight: 500;
+							margin-bottom: 1rem;
+						}
+					}
+					.curriculaObjective {
+						// border: 1px solid green;
+						h4 {
+							font-size: 1rem;
+							line-height: 1.5;
+							margin-bottom: 0;
+						}
+					}
+					.charts {
+						.bar {
+							display: grid;
+							margin-bottom: 0.3rem;
+							grid-template-columns: 1fr;
+							grid-template-rows: 1rem 15px;
+							align-items: center;
+							.label {
+								font-size: 0.8rem;
+								color: #000000;
+								text-transform: uppercase;
+							}
+							.data {
+								display: flex;
+								background: darken($brand-color, 5%);
+								border-radius: 0px;
+								height: 8px;
+								border-radius: 8px;
+							}
+						}
+					}
 				}
-			}
-			// Footer position and color is different on right page
-			.curriculaFooter {
-				text-align: right;
 			}
 		}
 	}
 }
+
+
+
+
+
+
+
 // Team Lists
 .teamList {
 	margin-bottom: 0;
@@ -1299,10 +1213,9 @@ section.curriculum {
 		}
 	}
 }
-// Sidebar
+// Sidebar on the Stories Page Articles/Blog list)
 .sidebar {
 	// border: 1px solid green;
-	padding: 120px 0 120px 60px;
 	ul {
 		list-style-type: none;
 		padding: 0;
@@ -1397,40 +1310,175 @@ section.curriculum {
 	}
 }
 
+// ADDRESS ROW
+.addressRow {
+	@media #{$mid-point} {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 2rem;
+	}
+	.contactBlock {
+		// border: 1px solid red;
+		display: grid;
+		grid-template-columns: auto 1fr;
+		span {
+			padding: 0.5rem 2rem;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			border-right: 1px solid darken($brandContrastLight, 5%);
+			svg {
+				width: 3rem;
+				height: 3rem;
+				stroke-width: 1px;
+				stroke: rgba(0,0,0,0.3);
+			}
+		}
+		.addresses {
+			// border: 1px solid green;
+			padding: 0.5rem 2rem;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: flex-start;
+			h5 {
+				margin-bottom: 0.5rem;
+				font-size: 1.1rem;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+				color: rgba(0,0,0,0.9);
+			}
+			p {
+				margin: 0;
+				font-size: 0.9rem;
+			}
+		}
+	}
 
-// Blockquote - orignal styling - to be redone
-// blockquote {
-// 	padding: 18px 25px;
-// 	margin: 0 auto;
-// 	quotes: "\201C""\201D""\2018""\2019";
-// 	font-style: italic;
-// 	line-height: 2.5;
-// 	font-size: 1.1em;
-// 	max-width: 900px;
+}
 
-// 	.author {
-// 		display: block;
-// 		font-weight: bold;
-// 		margin: 20px 0 0 0;
-// 		font-size: 1.1em;
-// 		font-style: normal;
-// 		text-align: right;
-// 	}
 
-// 	p {
-// 		display: inline;
-// 	}
-// }
-// blockquote .quote:before,
-// blockquote .quote:after {
-// 	color: #ccc;
-// 	content: open-quote;
-// 	font-size: 4em;
-// 	line-height: 0.1em;
-// 	margin-right: 0.1em;
-// 	vertical-align: -0.4em;
-// }
+// SAVING THIS FOR MAP MARKER
+ul.testing {
+	font-size: 1.5em;
+	line-height: 1.6;
+	font-weight: 400;
+	font-family: "Roboto", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #222;
+	-webkit-tap-highlight-color: transparent;
+	text-align: center;
+	box-sizing: border-box;
+	padding-left: 1.8em;
+	margin-top: 0.5em;
+}
 
-// blockquote .quote:after {
-// 	content: close-quote;
-// }
+.cd-single-point {
+	font-size: 1.5em;
+	line-height: 1.6;
+	font-weight: 400;
+	font-family: "Roboto", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #222;
+	-webkit-tap-highlight-color: transparent;
+	box-sizing: border-box;
+	position: relative;
+	width: 30px;
+    height: 30px;
+	border-radius: 50%;
+	list-style: none outside none;
+	top: 40px;
+	left: 19px;
+}
+.cd-img-replace {
+	font-size: 1.5em;
+	line-height: 1.6;
+	font-weight: 400;
+	font-family: "Roboto", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	-webkit-tap-highlight-color: transparent;
+	list-style: none outside none;
+	box-sizing: border-box;
+	color: #1EAEDB;
+	overflow: hidden;
+	text-indent: 100%;
+	white-space: nowrap;
+	position: relative;
+	z-index: 2;
+	display: block;
+	width: 30px;
+	height: 30px;
+	border-radius: inherit;
+	background: #d95353;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+	transition: background-color 0.2s;
+}
+.cd-single-point > a::before {
+    height: 12px;
+    width: 2px;
+}
+.cd-single-point > a::after {
+    height: 2px;
+    width: 12px;
+}
+.cd-single-point > a::after, .cd-single-point > a:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    bottom: auto;
+    right: auto;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: #ffffff;
+    transition-property: transform;
+    transition-duration: 0.2s;
+}
+.cd-single-point::after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: inherit;
+    background-color: transparent;
+    animation: cd-pulse 2s infinite;
+}
+@-webkit-keyframes cd-pulse {
+	0% {
+	  -webkit-transform: scale(1);
+	  box-shadow: inset 0 0 1px 1px rgba(217, 83, 83, 0.8);
+	}
+	50% {
+	  box-shadow: inset 0 0 1px 1px rgba(217, 83, 83, 0.8);
+	}
+	100% {
+	  -webkit-transform: scale(1.6);
+	  box-shadow: inset 0 0 1px 1px rgba(217, 83, 83, 0);
+	}
+  }
+  @-moz-keyframes cd-pulse {
+	0% {
+	  -moz-transform: scale(1);
+	  box-shadow: inset 0 0 1px 1px rgba(217, 83, 83, 0.8);
+	}
+	50% {
+	  box-shadow: inset 0 0 1px 1px rgba(217, 83, 83, 0.8);
+	}
+	100% {
+	  -moz-transform: scale(1.6);
+	  box-shadow: inset 0 0 1px 1px rgba(217, 83, 83, 0);
+	}
+  }
+  @keyframes cd-pulse {
+	0% {
+	  transform: scale(1);
+	  box-shadow: inset 0 0 1px 1px rgba(217, 83, 83, 0.8);
+	}
+	50% {
+	  box-shadow: inset 0 0 1px 1px rgba(217, 83, 83, 0.8);
+	}
+	100% {
+	  transform: scale(1.6);
+	  box-shadow: inset 0 0 1px 1px rgba(217, 83, 83, 0);
+	}
+  }

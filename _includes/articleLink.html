@@ -1,5 +1,5 @@
 
-<aside>
+<aside class="articleAside">
     {% for post in thepost %}
     <a class="articleLink" href="{{ site.baseurl }}{{ post.url }}">
         <!-- {% assign author = site.data.team[post.author] %} -->
@@ -18,12 +18,11 @@
             </div>
         </div>
         <div class="articleInfo">
-            <div class="leaderLine">You may find this interesting!</div>
-            <p class="content">
-                <span class="title">{{ post.title }}</span>
-                : <span class="subtitle">{{ post.subtitle }}</span>
-            </p>
-            <div class="byline"><span class="author">- {{ author.name }}</span> on <span class="postDate">{{ post.date | date: "%d %b %Y" }}</span></div>
+            <div class="content">
+                <h5 class="title">{{ post.title }}</h5>
+                <p class="subtitle">{{ post.subtitle }}</p>
+            </div>
+            <div class="byline"><span class="author">by {{ author.name }}</span> on <span class="postDate">{{ post.date | date: "%d %b %Y" }}</span></div>
         </div>
     </a>
     {% endfor %}

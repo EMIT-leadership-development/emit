@@ -2,20 +2,18 @@
 title: Stories
 hero: Our Stories
 ---
-<div class="page stories">
+
+<!-- Section that holds the list of stories -->
+<section class="item--full">
 	<!-- SideBar -->
-	{% include sidebarContent.html %}
+	<div class="sidebar container leftToOne">
+		{% include sidebarContent.html %}
+	</div>
 
-	<!-- Section that holds the list of stories -->
-	<section class="pageSection storiesList">
-		<div class="container max-container max-content">
-				<div class="sectionContent">
-
-					{% assign distance = 5 %}
-					{% for post in site.posts %}
-					{% include featuredPost.html %}
-					{% endfor %}
-				</div>
-		</div>
-	</section>
-</div>
+	<div class="container storiesList TwoToRight">
+		{% assign distance = 5 %}
+		{% for post in site.posts %}
+		{% include featuredPost.html %}
+		{% endfor %}
+	</div>
+</section>

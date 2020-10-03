@@ -2,119 +2,158 @@
 layout: default
 ---
 
-
-<div class="page program">
-    <!-- Program Intro -->
-    <section class="pageSection programIntro">
-        <div class="container col-2-3">
-			<div class="sectionIntro">
-				<h2 class="sectionTitle priority2">{{ page.title }}</span></h2>
-                <p class="introduction">{{ page.objective_markdown }}</p>
-                <!-- If current then show register button -->
-                <!-- If planned then show sponsor this program -->
-                {% if page.status == "current"%}
-                    <div class="callToAction">
-                        <a href="cloudcannon:collections/{{ page.relative_path }}" class="editor-link button edit">
-                            <span class="icon"><i data-feather="edit-2"></i></span>
-                            <div class="tooltip">
-                                <div class="tooltipcontent editor">
-                                    <div class="message">Click to edit this program and curriculum list.</div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="" class="button">Sponsor a student</a>
-                        <a href="" class="button primary">REGISTER</a>
+<!-- Program Intro -->
+<section class="programIntro white item--full">
+    <div class="sectionIntro containedLeft">
+        <h2 class="sectionTitle priority2">{{ page.title }}</h2>
+        <p class="introduction">{{ page.objective_markdown }}</p>
+        <!-- If current then show register button -->
+        <!-- If planned then show sponsor this program -->
+        {% if page.status == "current"%}
+            <div class="callToAction">
+                <a href="cloudcannon:collections/{{ page.relative_path }}" class="editor-link button edit">
+                    <span class="icon"><i data-feather="edit-2"></i></span>
+                    <div class="tooltip">
+                        <div class="tooltipcontent editor">
+                            <div class="message">Click to edit this program and curriculum list.</div>
+                        </div>
                     </div>
-                {% else %}
-                    <div class="callToAction">
-                        <a href="cloudcannon:collections/{{ page.relative_path }}" class="editor-link button edit">
-                            <span class="icon"><i data-feather="edit-2"></i></span>
-                            <div class="tooltip">
-                                <div class="tooltipcontent editor">
-                                    <div class="message">Click to edit this program and curriculum list.</div>
-                                </div>
-                            </div>
-                        </a>
-                        <h4>Help us get this program to the people that need it.</h4>
-                        <p class="editable">By donating towards program development you are transforming lives.</p>
-                        <a href="" class="button primary">Sponsor this program</a>
+                </a>
+                <a href="" class="button">Sponsor a student</a>
+                <a href="" class="button primary">REGISTER</a>
+            </div>
+        {% else %}
+            <div class="callToAction">
+                <a href="cloudcannon:collections/{{ page.relative_path }}" class="editor-link button edit">
+                    <span class="icon"><i data-feather="edit-2"></i></span>
+                    <div class="tooltip">
+                        <div class="tooltipcontent editor">
+                            <div class="message">Click to edit this program and curriculum list.</div>
+                        </div>
                     </div>
-                {% endif %}
-			</div>
-			<div class="sectionContent">
-                <h3 class="sectionTitle priority3">About this program</h3>
-                <p>{{ page.description_markdown }}</p>
-				<ul class="infoPoints">
-					<li class="point">
-						<span class="icon"><i data-feather="log-in"></i></span>
-						<h3 class="pointTitle">Entrance Requirements</h3>
-						<p class="pointContent">{{ page.entrance }}</p>
-					</li>
-					<li class="point">
-						<span class="icon"><i data-feather="users"></i></span>
-						<h3 class="pointTitle">Delivery</h3>
-						<p class="pointContent">{{ page.delivery }}</p>
-                    </li>
-                    <li class="point">
-						<span class="icon"><i data-feather="calendar"></i></span>
-						<h3 class="pointTitle">Duration</h3>
-						<p class="pointContent">{{page.duration}}</p>
-					</li>
-					<li class="point">
-						<span class="icon"><i data-feather="check-circle"></i></span>
-						<h3 class="pointTitle">Assessment</h3>
-						<p class="pointContent">{{ page.assessment }}</p>
-					</li>
-					<li class="point">
-						<span class="icon"><i data-feather="award"></i></span>
-						<h3 class="pointTitle">Certification</h3>
-						<p class="pointContent">{{ page.certification }}</p>
-					</li>
-					<li class="point">
-						<span class="icon"><i data-feather="smile"></i></span>
-						<h3 class="pointTitle">Graduation</h3>
-						<p class="pointContent">{{ page.graduation }}</p>
-					</li>
-                </ul>
-			</div>
-		</div>
-    </section>
-    <!-- List of program curriculum -->
-    <section class="pageSection curriculum">
-        <div class="container max-container max-content">
-            <ol class="curriculaList">
-                <li class="bookCover">
-                    <img src="{{site.baseurl}}{{page.bookCover_image}}" alt="">
-                </li>
-                {% assign distance = 5 %}
-                {% assign counter = 0 %}
-                {% assign position = 0 %}
-                {% for curricula in page.curricula %}
-                <!-- Muliply counter by distance to get the background X position -->
-                {% assign counter = counter | plus: 1 %}
-                {% assign position = counter | times: distance %}
+                </a>
+                <h4>Help us get this program to the people that need it.</h4>
+                <p class="editable">By donating towards program development you are transforming lives.</p>
+                <a href="" class="button primary">Sponsor this program</a>
+            </div>
+        {% endif %}
+    </div>
+    <div class="sectionContent containedRight">
+        <h3 class="sectionTitle priority3">About this program</h3>
+        <p>{{ page.description_markdown }}</p>
+    </div>
+</section>
 
-                <li class="curricula">
-                    <div class="container">
-                        <div class="curriculaIntro" style="background-image:url({{site.baseurl}}{{page.curriculumSprite_image}}); background-position: 0 {{position}}%;">
-                            <div class="shadow"></div>
+<!-- PROGRAM INFO LIST -->
+<section class="programInfoList item--full">
+    <div class="container containedLeft">
+        <img src="{{site.baseurl}}{{page.bookCover_image}}" alt="">
+    </div>
+    <div class="container containedRight">
+        <ul class="infoPoints">
+            <li class="point">
+                <span class="icon"><i data-feather="log-in"></i></span>
+                <h3 class="pointTitle">Entrance Requirements</h3>
+                <p class="pointContent">{{ page.entrance }}</p>
+            </li>
+            <li class="point">
+                <span class="icon"><i data-feather="users"></i></span>
+                <h3 class="pointTitle">Delivery</h3>
+                <p class="pointContent">{{ page.delivery }}</p>
+            </li>
+            <li class="point">
+                <span class="icon"><i data-feather="calendar"></i></span>
+                <h3 class="pointTitle">Duration</h3>
+                <p class="pointContent">{{page.duration}}</p>
+            </li>
+            <li class="point">
+                <span class="icon"><i data-feather="check-circle"></i></span>
+                <h3 class="pointTitle">Assessment</h3>
+                <p class="pointContent">{{ page.assessment }}</p>
+            </li>
+            <li class="point">
+                <span class="icon"><i data-feather="award"></i></span>
+                <h3 class="pointTitle">Certification</h3>
+                <p class="pointContent">{{ page.certification }}</p>
+            </li>
+            <li class="point">
+                <span class="icon"><i data-feather="smile"></i></span>
+                <h3 class="pointTitle">Graduation</h3>
+                <p class="pointContent">{{ page.graduation }}</p>
+            </li>
+        </ul>
+    </div>
+</section>
+<!-- List of program curriculum -->
+<section class="item--full curriculum">
+    <div class="container">
+        <h2 class="sectionTitle priority2">Program <span class="emphasis">MODULES</span></h2>
+        <ol class="curriculaList">
+            {% assign distance = 5 %}
+            {% assign counter = 0 %}
+            {% assign position = 0 %}
+
+            {% assign creditSort = page.curricula | sort: 'credits' | reverse %}
+            {% for item in creditSort limit:1 %}
+            {% assign maxCredits = item.credits %}
+            {% endfor %}
+
+            {% assign daysSort = page.curricula | sort: 'days' | reverse %}
+            {% for item in daysSort limit:1 %}
+            {% assign maxDays = item.days %}
+            {% endfor %}
+
+            {% assign projectsSort = page.curricula | sort: 'projects' | reverse %}
+            {% for item in projectsSort limit:1 %}
+            {% assign maxProjects = item.projects %}
+            {% endfor %}
+
+            {% for curricula in page.curricula %}
+            <!-- Muliply counter by distance to get the background X position -->
+            {% assign counter = counter | plus: 1 %}
+            {% assign position = counter | times: distance %}
+
+            <li class="curriculaCard">
+                <div class="curiculaWrap">
+                    <!-- IMAGE -->
+                    <div class="imageWrap">
+                        <div class="curriculaImage" style="background-image:url({{site.baseurl}}{{page.curriculumSprite_image}}); background-position: 0 {{position}}%;">
+                        </div>
+                    </div>
+                    <div class="curriculDescription">
+                        <!-- INTRO -->
+                        <div class="curriculaIntro">
+                            <div class="programName">{{page.title}}</div>
                             <h3 class="curriculaTitle">{{curricula.title}}</h3>
-                            <div class="curriculaFooter">EMIT Leadership - 2020</div>
+                            <div class="charts">
+                                {% if curricula.credits %}
+                                <div class="bar credits">
+                                    <span class="label">{{curricula.credits}} Credits</span>
+                                    <span style="width: {{curricula.credits | times: 100 | divided_by: maxCredits}}%" class="data"></span>
+                                </div>
+                                {% endif %}
+                                {% if curricula.days %}
+                                <div class=" bar days">
+                                    <span class="label">{{curricula.days}} Days</span>
+                                    <span style="width: {{curricula.days | times: 100 | divided_by: maxDays}}%" class="data"></span>
+                                </div>
+                                {% endif %}
+                                {% if curricula.projects %}
+                                <div class=" bar projects">
+                                    <span class="label">{{curricula.projects}} Projects</span>
+                                    <span style="width: {{curricula.projects | times: 100 | divided_by: maxProjects}}%" class="data"></span>
+                                </div>
+                                {% endif %}
+                            </div>
                         </div>
-                        <div class="curriculaContent">
-                            <div class="shadow"></div>
-                            <div class="heading">
-                                <div class="leaderline">{{page.title}}</div>
-                                <h4>{{curricula.objective}}</h3>
-                            </div>
-                            <div class="fakecopy">
-                            </div>
-                            <div class="curriculaFooter">EMIT Leadership - 2020</div>
+                        <!-- CONTENT -->
+                        <div class="curriculaObjective">
+                            <h4>{{curricula.objective}}</h3>
                         </div>
                     </div>
-                </li>
-                {% endfor %}
-            </ol>
-        </div>
-    </section>
-</div>
+                </div>
+            </li>
+            {% endfor %}
+        </ol>
+    </div>
+</section>

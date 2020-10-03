@@ -53,23 +53,22 @@ footer {
 		}
 	}
 	.footer-columns {
-		padding: 60px;
+		padding: 4rem 0;
 		display: grid;
 		grid-template-columns: 1fr;
-		grid-gap: 60px;
+		grid-gap: 2rem;
 		@media #{$mid-point} {
-			padding: 60px 0;
+			padding: 4rem 0;
 			grid-template-columns: 2fr 1fr 1fr 1fr;
 		}
 	}
 }
 
 .footerClosingInfo {
-	padding: 0 60px 0 60px;
+	// padding: 0 60px 0 60px;
 	.content {
 		border-top: 1px solid rgba(255,255,255,0.15);
-		padding: 60px 10px 30px 10px;
-		width: 100%;
+		padding: 2rem 1rem 2rem 1rem;
 		text-align: left;
 		* {
 			font-size: 0.8rem;
@@ -100,9 +99,16 @@ footer {
 			grid-template-columns: 1fr 1fr 1fr;
 			.copyright {
 				text-align: left;
+				margin: 0;
+				display: flex;
+    			align-items: center;
 			}
 			.designAttribute {
 				text-align: center;
+				margin: 0;
+				display: flex;
+				align-items: center;
+				justify-content: center;
 			}
 			.links {
 				justify-content: flex-end;
