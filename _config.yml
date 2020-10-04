@@ -91,7 +91,7 @@ exclude:
 # MAP PLUGIN NEEDS GOGGLE API
 maps:
   google:
-    api_key: AIzaSyCL26-sipFBbMnRYXRf_QAaa3Zp6eZmGUc
+    api_key: AIzaSyCopZOMs4afUxxRSYN36lBdL5dzANTsvFA
 
 # -----------
 # CloudCannon
