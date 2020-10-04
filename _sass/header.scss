@@ -491,7 +491,7 @@ section.hero{
             }
         }
     }
-    .overlay{
+    .overlay, .heroOverlay{
         grid-column: unset;
         position: absolute;
         width: 100%;

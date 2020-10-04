@@ -48,3 +48,45 @@ $below-mid-point: "(max-width: 849px)";
 
 
 // Scrollytelling
+// ----------COLOR VARIABLES
+$brand: #abe116;
+$primary: #abe116;
+$brandDarker: #99ca13;
+$brandLighter: #bbfd02;
+
+// The two outer sphere colors
+$sphere1BG: #87C52F;
+$sphere2BG : #3AAB66;
+$sphere3BG : #49A687;
+
+// ---Colors for fonts
+// RGBA fonts light and dark
+$brandTDark: rgba(0,0,0,0.8);
+$brandTLight: rgba(255,255,255,0.8);
+
+// Used by Haswell: consider changing?
+$brandTBrown1: #7e8082;
+$brandTBrown2: #4b4e53;
+
+// ---Colors for Backgrounds
+// Dark Brown backgrounds
+
+$brandContrastDarkest: #1c2127;
+// Pale grayish-blueish backgrounds
+
+$brandContrastLight2: #e0e8ea;
+$brandContrastLight3: #BCC4C6;
+$brandContrastLight4: #A5ABAD;
+
+/* ----------WIDTH VARIABLES */
+/* ---Large Screens */
+$youWidth: 200px;
+$sphere1Width: 300px;
+$sphere2Width: 400px;
+$sphere3Width: 500px;
+$networkWidth: 600px;
+$planetWidth: 500px;
+$glow1Width: 600px;
+$glow2Width: 700px;
+$glow3Width: 800px;
+$textContainerWidth: 800px;

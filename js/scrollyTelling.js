@@ -5,32 +5,32 @@ window.onload = function() {
 	tl_mother.call(NINJA_FUNCTIONS.startup);
 	tl_mother.call(NINJA_FUNCTIONS.topNav);
 	tl_mother.call(NINJA_FUNCTIONS.pinDonation);
-	// tl_mother.call(NINJA_FUNCTIONS.yourStoryTitle);
-	// tl_mother.call(NINJA_FUNCTIONS.yourImpact);
-	// tl_mother.call(NINJA_FUNCTIONS.thePeopleYouImpact);
-	// tl_mother.call(NINJA_FUNCTIONS.yourLegacy);
-	// tl_mother.add(NINJA_FUNCTIONS.introduceAnna);
-	// tl_mother.add(NINJA_FUNCTIONS.africaProblem);
-	// tl_mother.add(NINJA_FUNCTIONS.africanLeaders);
-	// tl_mother.add(NINJA_FUNCTIONS.solution);
-	// tl_mother.add(NINJA_FUNCTIONS.meetAnna);
-	// tl_mother.add(NINJA_FUNCTIONS.annasLeaders);
-	// tl_mother.add(NINJA_FUNCTIONS.ifOnly);
-	// tl_mother.add(NINJA_FUNCTIONS.imagineIntro);
-	// tl_mother.add(NINJA_FUNCTIONS.imagine);
-	// tl_mother.add(NINJA_FUNCTIONS.joseph);
-	// tl_mother.add(NINJA_FUNCTIONS.josephOnTenIntro);
-	// tl_mother.add(NINJA_FUNCTIONS.josephOnTen);
-	// tl_mother.add(NINJA_FUNCTIONS.josephTrainingIntro);
-	// tl_mother.add(NINJA_FUNCTIONS.josephTraining);
-	// tl_mother.add(NINJA_FUNCTIONS.josephEquipped);
-	// tl_mother.add(NINJA_FUNCTIONS.josephTransformIntro);
-	// tl_mother.add(NINJA_FUNCTIONS.josephTransformation);
-	// tl_mother.add(NINJA_FUNCTIONS.emitImpact);
-	// tl_mother.add(NINJA_FUNCTIONS.waitingList);
-	// tl_mother.add(NINJA_FUNCTIONS.makeADifference);
-	// tl_mother.add(NINJA_FUNCTIONS.smilingAnna);
-	// tl_mother.add(NINJA_FUNCTIONS.donate);
+	tl_mother.call(NINJA_FUNCTIONS.yourStoryTitle);
+	tl_mother.call(NINJA_FUNCTIONS.yourImpact);
+	tl_mother.call(NINJA_FUNCTIONS.thePeopleYouImpact);
+	tl_mother.call(NINJA_FUNCTIONS.yourLegacy);
+	tl_mother.add(NINJA_FUNCTIONS.introduceAnna);
+	tl_mother.add(NINJA_FUNCTIONS.africaProblem);
+	tl_mother.add(NINJA_FUNCTIONS.africanLeaders);
+	tl_mother.add(NINJA_FUNCTIONS.solution);
+	tl_mother.add(NINJA_FUNCTIONS.meetAnna);
+	tl_mother.add(NINJA_FUNCTIONS.annasLeaders);
+	tl_mother.add(NINJA_FUNCTIONS.ifOnly);
+	tl_mother.add(NINJA_FUNCTIONS.imagineIntro);
+	tl_mother.add(NINJA_FUNCTIONS.imagine);
+	tl_mother.add(NINJA_FUNCTIONS.joseph);
+	tl_mother.add(NINJA_FUNCTIONS.josephOnTenIntro);
+	tl_mother.add(NINJA_FUNCTIONS.josephOnTen);
+	tl_mother.add(NINJA_FUNCTIONS.josephTrainingIntro);
+	tl_mother.add(NINJA_FUNCTIONS.josephTraining);
+	tl_mother.add(NINJA_FUNCTIONS.josephEquipped);
+	tl_mother.add(NINJA_FUNCTIONS.josephTransformIntro);
+	tl_mother.add(NINJA_FUNCTIONS.josephTransformation);
+	tl_mother.add(NINJA_FUNCTIONS.emitImpact);
+	tl_mother.add(NINJA_FUNCTIONS.waitingList);
+	tl_mother.add(NINJA_FUNCTIONS.makeADifference);
+	tl_mother.add(NINJA_FUNCTIONS.smilingAnna);
+	tl_mother.add(NINJA_FUNCTIONS.donate);
 }
 
 // VARIABLES COPIED FROM SCSS pre.scss
@@ -108,7 +108,7 @@ var NINJA_FUNCTIONS = {
 		});
         tl.to('#introCTA', {duration:0.5, autoAlpha:0});
 		tl.from('#donateBtn', {duration:0.5, autoAlpha:0},"<");
-		tl.from('#loginBtn', {duration:0.5, background:"transparent", border:"1px solid #fff", color:"#ffffff", x:105},"<");
+		tl.from('#loginBtn', {duration:0.5, background:"transparent", border:"1px solid #fff", color:"#ffffff", x:108},"<");
 		tl.to('.ctaTitle', {duration:0.5, autoAlpha:0},"<");
 		return tl;
 	},
@@ -125,9 +125,7 @@ var NINJA_FUNCTIONS = {
 				end: "bottom bottom",
 				toggleActions: "play complete reverse reverse",			}
 		});
-		// tl.to('#ninjaLogin',{duration:0.3, x:-200});
-		// tl.to('.backgroundLayer.colorBG', {duration:1, backgroundColor:"rgba(0, 0, 0, 0.7)"},"<");
-		tl.to('#intro h1.subtitle', {duration: 1, autoAlpha:0, rotateX:10},"<");
+		tl.to('.introHeadline h1', {duration: 1, autoAlpha:0, rotateX:10},"<");
 		tl.from('#yourStoryTitle .sectionHeading span ', {autoAlpha:0, y:"300", stagger:"0.2"},">");
 		return tl;
 	},
