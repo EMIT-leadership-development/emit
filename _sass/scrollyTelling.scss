@@ -8,58 +8,32 @@
     src: url(../fonts/HelveticaLTStd-UltraComp.otf);
 }
 
-// SCROLLYTELLING WRAP FROM HERE
-#scrollyTellingWrap {
+// SCROLLYTELLING BODY WRAP FROM HERE
+#scrollyTellingWrap main {
+    background-color: transparent;
+    pointer-events: none;
+
+    /* -----------DEFAULTS ACROSS ALL SCENES*/
     .hideToStart {
         visibility: hidden;
         display: block;
     }
-
-
-    /* ---------------DEFAULTS */
-    .backgroundLayer {
-        position: fixed;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        z-index: 0;
-        section {
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            height: 100vh;
-            overflow: hidden;
-        }
-    }
     section {
-        border: 1px solid red;
-        height: 100vh;
-        .container {
-            border: 1px solid blue;
-        }
+        border-bottom: 1px solid blue;
+        height: calc(100vh - 65px);
         .textContainer {
-            border: 1px solid blue;
+            border: 1px solid red;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            // width: $textContainerWidth;
             height: 100%;
             .sectionHeading {
+                border: 1px solid green;
                 strong {
                     font-weight: 400;
                 }
                 text-align: center;
-                // Trying to let most font styling be controlled by haswell
-                // For some reason fontweight was being overridden - forcing it here
                 font-weight: 300;
                 // If the heading contains a span then I may be animating it
                 span{
@@ -69,7 +43,7 @@
             }
         }
     }
-    /* -----------INTRO SECTION (Hero Scene)*/
+    /* -----------INTRO SECTION - TOP NAV AND HERO*/
     header.mainNavigation {
         background-color: transparent;
         background-image: none;
@@ -96,7 +70,7 @@
             padding-right: 2rem;
             z-index: 10;
             grid-row: 1;
-            grid-column: 6 / span 3;
+            grid-column: 2 / span 7;
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
@@ -120,8 +94,13 @@
                 .ctaBtn {
                     margin: 0;
                     pointer-events: all;
-                    z-index: 30;
                     background: $brand-color;
+                    height: 2.5rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 0 1rem;
                 }
             }
             .introHeadline {
@@ -140,516 +119,7 @@
             }
         }
     }
-    .bg_brandContrastLight {
-        background-color: $brandContrastLight;
-    }
-
-    // Customisations for text that is in the animation layer
-    #animatedTextWrap {
-        z-index: 20;
-        section {
-            // Default hidden - js will reveal the text
-            visibility: hidden;
-            position: absolute;
-            .textContainer {
-                // The animated text circles
-                width: $sphere3Width;
-                height: $sphere3Width;
-                position: absolute;
-                background: $brandContrastLight2;
-                border-radius: 50%;
-                padding: 3rem;
-                // .sectionHeading - no styling
-            }
-        }
-        // BG COLORS FOR AFRICA PROBLEM WHAMBAM
-        #text_africaProblem2 .textContainer{
-            background: #353C45;
-        }
-        #text_africaProblem3 .textContainer{
-            background: #2E353D;
-        }
-        #text_africaProblem4 .textContainer{
-            background: #282E36;
-        }
-        #text_africaProblem5 .textContainer{
-            background: #2E353D;
-        }
-        #text_africaProblem6 .textContainer{
-            background: $brandContrastDarkest;
-        }
-        // BG COLORS FOR TRAINING WHAMBAN
-        #text_josephTraining1 .textContainer{
-            background: #BBFD02            ;
-        }
-        #text_josephTraining2 .textContainer{
-            background: #ADE905            ;
-        }
-        #text_josephTraining3 .textContainer{
-            background: #A0D609            ;
-        }
-        #text_josephTraining4 .textContainer{
-            background: #93C30D            ;
-        }
-        #text_josephTraining5 .textContainer{
-            background: #86B011            ;
-        }
-    }
-    #transformation {
-        // background: $brandContrastLight2;
-        justify-content: center;
-        .sectionHeading {
-            padding: 0;
-            margin: 0;
-        }
-        h3 {
-            font-weight: 300;
-            margin-top: 2rem;
-            text-align: center;
-        }
-        .subtitle {
-            margin-top: 2rem;
-            color: rgba(255,255,255,0.7);
-            font-size: 1.8rem;
-            font-style: italic;
-            font-weight: 300 !important;
-            position: relative;
-        }
-        .subtitle:after {
-            content: "";
-            position: absolute;
-            width: 100px;
-            border-bottom: 1px solid #ffffff30;
-            right: -120px;
-            height: 1px;
-            top: 50%;
-        }
-        .subtitle:before {
-            content: "";
-            position: absolute;
-            width: 100px;
-            border-bottom: 1px solid #ffffff30;
-            left: -120px;
-            height: 1px;
-            top: 50%;
-        }
-    }
-    #donate {
-        width: 100%;
-        display: flex;
-        flex-direction:column;
-        justify-content: flex-end;
-        align-items: center;
-        text-align: center;
-        padding-bottom: 5rem;;
-        .finalCTABtn {
-            width: 300px;
-            height: 70px;
-            font-size: 2rem;
-            // color: $brandTDark;
-        }
-    }
-    #text_makeADifference {
-        visibility: visible !important;
-        .textContainer {
-            background: transparent !important;
-            div {
-                color: #ffffff;
-                line-height: 1.1;
-                text-align: center;
-                position: absolute;
-                font-size: 4.5rem;
-            }
-        }
-    }
-    // --------------Global Network - planet
-    #globalNetwork {
-        overflow:visible;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        #yourNetwork {
-            z-index:11;
-            position: absolute;
-            width: 1130px;
-        }
-        .yourWorldWrap {
-            #yourNetwork {
-                position: absolute;
-                width: $networkWidth;
-                height: $networkWidth;
-            }
-            .planet {
-                // background: red;
-                // border: 10px solid yellow;
-                box-sizing: border-box;
-                width: $planetWidth;
-                height: $planetWidth;
-                border-radius: 50%;
-                display:flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                .planetGlow {
-                    position: absolute;
-                    border-radius: 50%;
-                    background: rgba(255,255,255,.02);
-                }
-                .glow1 {
-                    width: $glow1Width;
-                    height: $glow1Width
-                }
-                .glow2 {
-                    width: $glow2Width;
-                    height: $glow2Width
-                }
-                .glow3 {
-                    width: $glow3Width;
-                    height: $glow3Width
-                }
-                .circle {
-                    box-sizing: border-box;
-                    position: relative;
-                    width: $planetWidth;
-                    height: $planetWidth;
-                    border-radius: 50%;
-                    overflow: hidden;
-                    z-index:10;
-                    background: $brandContrastDark;
-                    background-image: radial-gradient(circle at 35% 40%,rgba(255,255,255,0.4),rgba(0,0,0,.4));
-                    #countries {
-                        position: absolute;
-                        left: 0;
-                        top: 0;
-                        display: flex;
-                        align-items: stretch;;
-                        height: $planetWidth;
-                        #map1 img, #map2 img {
-                            display: block;
-                            box-sizing: border-box;
-                            height: $planetWidth;
-                            width: auto;
-                        }
-                    }
-                }
-            }
-        }
-        .circle2 {
-            box-sizing: border-box;
-            position: absolute;
-            width: $planetWidth;
-            height: $planetWidth;
-            border-radius: 50%;
-            overflow: hidden;
-            z-index:15;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: left;
-            .planetText {
-                position: absolute;
-                // border: 1px solid red;
-                display: grid;
-                grid-template-columns: $planetWidth auto;
-                div{
-                    // background: navy;
-                    // border: 1px solid blue;
-                    h1 {
-                        // background: black;
-                        // border: 1px solid yellow;
-                        // backdrop-filter: blur(2px);
-                        // background: $brandDarker;
-                        font-size: 4.5rem;
-                        padding: 0;
-                        margin: 0;
-                        color: white;
-                        font-weight: bold;
-                        white-space: nowrap;
-                        padding: 0;
-                        text-shadow: 5px 6px 7px rgba(0,0,0,0.5);
-                    }
-                }
-            }
-        }
-    }
-    // ---------------Anna in Africa
-    #annaInAfrica {
-        position: fixed;
-        width:100%;
-        height:100vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        // border: 10px solid red;
-        img {
-            // opacity: 0.5;
-            width: $sphere3Width;
-            position: absolute;
-        }
-    }
-    /* -----------BACKGROUNDS */
-    .backgroundLayer.colorBG {
-        background-color: $brandContrastLight2;
-    }
-    .overlay,
-    .overlay2,
-    .overlay3 {
-        /* background-color: rgba(14, 22, 38, 0.4); */
-        background-color: rgba(0, 0, 0, 0.2);
-        width: 150%;
-        position: absolute;
-        border-radius: 50%;
-    }
-    .overlay:before,
-    .overlay2:before,
-    .overlay3:before {
-        content: "";
-        padding-bottom: 100%;
-        display: block;
-    }
-    .overlay2 {
-        width: 120%;
-        background-color: rgba(14, 22, 38, 0.5);
-        border: 1px solid #86b744;
-        /* background-color: rgba(5,171,55,0.5); */
-        /* background-color: transparent; */
-        /* backdrop-filter: saturate(2); */
-    }
-    .overlay3 {
-        width: 120%;
-        background-color: #e0e8ea;
-        border: 1px solid #ffffff;
-    }
-    /* -----------YOUR IMPACT - FIXED BACKGROUND SECTION THAT HOLDS THE STORY ANIMATIONS*/
-    #animationWrap {
-        position: relative;
-        width:100%;
-        height:100vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .yourImpactBackgrounds {
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        z-index: 2;
-        overflow: visible;
-    }
-    .sphere3, .sphere2, .sphere1 {
-        position: absolute;
-        border-radius: 50%;
-        border: 1px solid $brand;
-        // border: 1px solid #86b744;
-        display: block;
-        opacity: 0.8;
-        z-index:0;
-    }
-    .sphere3 {
-        /* background-color: #0e1625; */
-        background-color: #03956d;
-        width: $sphere3Width;
-        height: $sphere3Width;
-    }
-    .sphere2 {
-        background-color: #37ab5d;
-        width: $sphere2Width;
-        height: $sphere2Width;
-    }
-    .sphere1 {
-        /* background-color: rgba(0,0,0,0.6); */
-        // background-color: #85b744;
-        background-color: $brandDarker;
-        width: $sphere1Width;
-        height: $sphere1Width;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        overflow: hidden;
-    }
-    /**** Animated Logo*/
-    .you {
-        position: absolute;
-        width: $youWidth;
-        height: $youWidth;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        transform-origin: center center;
-        z-index: 3;
-        border-radius: 50%;
-    }
-    #svg-impactRingCircle {
-        stroke: $brand;
-        stroke-width: 2px;
-        // transform: rotate(-180deg);
-        // transform-origin: 50% 50%;
-    }
-
-    /* -----------ANNA'S STORY*/
-    /* Anna's leaders titles are actually in the impact background layer */
-    //  Also The People you impact - animation and graphics are basically the same with different words
-    #annasLeadersWrap,
-    #thePeopleYouImpactWrap {
-        position: absolute;
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        z-index:2;
-
-        .yourSpheresTitle {
-            margin-top:45%;
-        }
-    }
-    .annasLeaders,
-    .yourPeople {
-        position: absolute;
-        width: $sphere3Width;
-        height: $sphere3Width;
-    }
-    .annasLeaders path,
-    .yourPeople path {
-        /* fill: #0e1625; */
-        fill: #ffffff;
-    }
-    #parents{
-        transform-origin: 50% 50%;
-        transform: rotate(-50deg);
-    }
-    #teachers{
-        transform-origin: 50% 50%;
-        transform: rotate(-40deg);
-    }
-    #polititians{
-        transform-origin: 50% 50%;
-        transform: rotate(-30deg);
-    }
-
-    #religious{
-        transform-origin: 50% 50%;
-        transform: rotate(30deg);
-    }
-    #community{
-        transform-origin: 50% 50%;
-        transform: rotate(35deg);
-    }
-    #peers{
-        transform-origin: 50% 50%;
-        transform: rotate(45deg);
-    }
-    #annaAtTheCenter,
-    #josephAtTheCenter {
-        width: $youWidth;
-        height: $youWidth;
-        background-image: url(../images/scrollyTelling/Anna.jpg);
-        background-position: 0 75%;
-        background-size: 200%;
-        border-radius: 50%;
-        z-index:3;
-    }
-    // YOUR IMPACT PEOPLE
-    #family {
-        transform-origin: 50% 50%;
-        transform: rotate(-50deg);
-    }
-    #spouse {
-        transform-origin: 50% 50%;
-        transform: rotate(25deg);
-    }
-    #friends {
-        transform-origin: 50% 50%;
-        transform: rotate(-30deg);
-    }
-    #colleagues {
-        transform-origin: 50% 50%;
-        transform: rotate(35deg);
-    }
-    #yourcommunity {
-        transform-origin: 50% 50%;
-        transform: rotate(-15deg);
-    }
-    #country {
-        transform-origin: 50% 50%;
-        transform: rotate(45deg);
-    }
-    #joseph {
-        height: 200vh;
-    }
-    .josephStory {
-        /* overflow: hidden; */
-        width:100%;
-        height: 100vh;
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        box-sizing: border-box;
-    }
-    #josephZoomIn {
-        position: absolute;
-    }
-    #vid_josephZoomIn {
-        filter: grayscale(1);
-    }
-    #mapStuff {
-        /* width: 80%; */
-        position: absolute;
-        /* background: blue; */
-    }
-    #josephAtTheCenter {
-        background-image: url(../images/scrollyTelling/Josef-EDITED.jpg);
-        background-position: 50% 30%;
-        border: 1px solid #0e1625;
-        background-size: 250%;
-    }
-    #josephAtTheCenter {
-        position: absolute;
-    }
-
-    #leaderStuff {
-        position: absolute;
-        width:100%;
-    }
-    #darkAfrica .leader ellipse {
-        stroke-width: 0.2px;
-        fill: $brandContrastDarkest;
-        stroke: rgba(255,255,255,0.5) !important;
-    }
-
-    // ----------HEIGHT ADJUSTMENTS
-    #introduceAnna {
-        height: 50vh;
-    }
-    #josephTraining {
-        height: 200vh;
-    }
-    #africaProblem {
-        height: 200vh;
-    }
-    #makeADifference {
-        height: 250vh;
-    }
-    #imagine {
-        height: 200vh;
-    }
-    #yourLegacy {
-        height: 200vh;
-    }
-    #yourImpact {
-        height: 200vh;
-    }
+    
 
 }
 // END scrollytelling wrap

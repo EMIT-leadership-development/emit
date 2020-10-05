@@ -1,0 +1,14 @@
+{% for i in (1..50) %}
+  {% if i == 50 %}
+    {% continue %}
+  {% else %}
+  <div class="singleLeader">
+        <svg height="302" width="302">
+            <circle class="sphere3" cx="151" cy="152" r="150" stroke="#ffffff" stroke-width="1" fill="#1c2127" />
+            <circle class="sphere2" cx="151" cy="152" r="120" stroke="#ffffff" stroke-width="1" fill="#1c2127" />
+            <circle class="sphere1" cx="151" cy="152" r="85" stroke="#ffffff" stroke-width="1" fill="#1c2127" />
+            <circle class="sphere0" cx="151" cy="152" r="45" stroke="#ffffff" stroke-width="1" fill="#1c2127" />
+        </svg>
+    </div>
+  {% endif %}
+{% endfor %}
