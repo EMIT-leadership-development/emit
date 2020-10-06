@@ -13,7 +13,7 @@ window.onload = function() {
 	tl_mother.add(NINJA_FUNCTIONS.zoomInToAfrica);
 	tl_mother.add(NINJA_FUNCTIONS.africaProblem);
 	tl_mother.add(NINJA_FUNCTIONS.africanLeaders);
-	// tl_mother.add(NINJA_FUNCTIONS.solution);
+	tl_mother.add(NINJA_FUNCTIONS.solution);
 	// tl_mother.add(NINJA_FUNCTIONS.meetAnna);
 	// tl_mother.add(NINJA_FUNCTIONS.annasLeaders);
 	// tl_mother.add(NINJA_FUNCTIONS.ifOnly);
@@ -206,7 +206,7 @@ var NINJA_FUNCTIONS = {
 
 		return tl;
 	},
-	// --------INTRODUCE ANNA: ZOOM IN TO AFRICA ON MAP -------------------------------------
+	// --------ZOOM IN TO AFRICA ON MAP -------------------------------------
 	zoomInToAfrica: function() {
 		var tl = gsap.timeline({
 			paused: true,
@@ -247,7 +247,7 @@ var NINJA_FUNCTIONS = {
 		tl.from('#text_africaProblem6',{duration:1, scale:0, autoAlpha:0},">");
 
 		// Center the logo behind the text in preparation for solution scene
-		tl.set('#animatedLogoWrap, .yourImpactBackgrounds',{x:0, y:0, scale:1});
+		tl.set('#animatedLogoWrap, #spheresWrap',{x:0, y:0, scale:1});
 		tl.set('#spheresWrap', {duration:0.5, scale:0.3},"<");
 		tl.set("#svg_body", {duration:0.5, morphSVG:"#svg_body-2", ease:"expo.out"},">");
 		tl.set("#svg_shadow", {duration:0.5, morphSVG:"#svg_shadow-2", ease:"expo.out"},"<");
@@ -277,13 +277,13 @@ var NINJA_FUNCTIONS = {
 				trigger: "#africanLeaders",
 				endTrigger: "#africanLeadersEnding",
 				start: "top bottom",
-				end: "bottom bottom",
+				end: "bottom center",
 				toggleActions: "play complete reverse reverse",
 			}
 		});
 		tl.fromTo('.singleLeader',{autoAlpha:0, scale:0}, {stagger:0.1, duration:3, autoAlpha:1, scale:0.8, ease:"bounce-out", x:"random(-" + maxX + ", " + maxX + ")", y:"random(-" + maxY + ", " + maxY + ")", transformOrigin:"center"}).duration(3);
 		tl.to('#clusterOfLeaders',{duration:3, background:$brandContrastDarkest},'>');
-		tl.to('#sadAnnaInAfrica', {duration:1, autoAlpha:0},"<2")
+		tl.to('#sadAnnaInAfrica', {duration:1, autoAlpha:0},"<")
 		return tl;
 	},
 
@@ -306,10 +306,10 @@ var NINJA_FUNCTIONS = {
 		// EXIT THE TEXT
 		tl.to('#text_solution',{duration:0.5, x:300, delay:1, autoAlpha:0},">");
 
-		// Scale up .you and reveal Anna at the center while we're exiting the text
-		tl.to('.you',{duration:1, scale:1, autoAlpha:1},"<");
-		tl.to('.yourImpactBackgrounds', {duration:1, scale:0.5, autoAlpha:1},"<");
-		tl.to("#svg_body", {duration:0.6, morphSVG:"#svg_body", ease:"expo.out"},"<");
+		// Scale up spheres and logo
+		tl.to('#animatedLogoWrap',{duration:1, scale:1, autoAlpha:1},"<");
+		tl.to('#spheresWrap', {duration:1, scale:0.5, autoAlpha:1},"<");
+		tl.to("#svg_body", {duration:0.6, morphSVG:"#svg_body", ease:"expo.out"},">");
 		tl.to("#svg_shadow", {duration:0.6, morphSVG:"#svg_shadow", ease:"expo.out"},"<");
 
 		return tl;
