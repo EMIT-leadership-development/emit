@@ -341,6 +341,9 @@ $textContainerWidth: 800px;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            h2 {
+                visibility: hidden;
+            }
             .yourPeople {
                 position: absolute;
                 width: 100%;

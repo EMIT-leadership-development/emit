@@ -171,8 +171,8 @@ var NINJA_FUNCTIONS = {
 				toggleActions: "play complete reverse reverse",
 			}
 		});
-		tl.from('.impactTitle',{duration:1, autoAlpha:0, x:-20},'<')
-		tl.from('.yourPeople',{autoAlpha:0, ease:"linear", stagger:1, rotate:-30, transformOrigin:"50% 50%"},"<");
+		tl.from('.yourPeople',{autoAlpha:0, ease:"linear", stagger:1, rotate:-30, transformOrigin:"50% 50%"});
+		tl.from('.impactTitle',{duration:1, autoAlpha:0, x:-20},"<1")
 		return tl;
 	},
 	// --------YOUR LEGACY ANIMATION: SPINNING PLANET-------------------------------------
@@ -189,7 +189,7 @@ var NINJA_FUNCTIONS = {
 			},
 		});
 		tl.to('#spinningPlanet', {duration:1, autoAlpha:1});
-		tl.fromTo('.impactTitle',{autoAlpha:1, x:0}, {duration:0.5, autoAlpha:0, x:-20},">");
+		tl.to('.impactTitle',{duration:0.5, autoAlpha:0, x:-20},">");
 		tl.fromTo('#planetWrap',{scale:0.5, autoAlpha:0, x:200, y:-300}, {duration: 2.5, scale:1, autoAlpha:1, x:0, y:0},"<");
 
 		tl.to('#animatedLogoWrap', {duration:1.5, scale: 0.4, y:105, x:-20, transformOrigin:"50% 50%"},"<");
