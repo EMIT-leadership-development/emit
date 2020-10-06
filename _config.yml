@@ -25,7 +25,7 @@ social:
 
 # -----
 # Build
-timezone: Etc/UTC
+timezone: Africa/Johannesburg
 
 collections:
   staff_members:
