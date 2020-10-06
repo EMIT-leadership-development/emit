@@ -15,7 +15,7 @@ main.content {
 // Six Center columns with full width bg's when required
 // Based on the single center column from the example below
 // https://medium.com/@igloude/how-css-grid-makes-single-columns-better-def5a7dd5045
-
+// Included #theStage for positioning scrollytelling animations
 .grid {
 	display: grid;
 	grid-template-columns:
@@ -66,6 +66,10 @@ section {
 .dark {
 	background: $brandContrastDark;
 }
+.contrastLight {
+	background: $brandContrastLight;
+}
+
 
 // Granular control of center columns
 // First make sure the section is item-full so that you have all the columns to work with

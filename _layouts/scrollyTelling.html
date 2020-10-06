@@ -31,12 +31,13 @@
 			<script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" id="snipcart" data-api-key="{{ site.snipcart_key }}"></script>
 		{% endif %}
 	</head>
+	<!-- BODY START -->
 	<body id="scrollyTellingWrap">
+		<!-- TOP NAV -->
 		<header class="mainNavigation">
 			<nav class="container">
 				<input type="checkbox" name="" id="check">
 				<a id="headerLogo" class="logo-container hideToStart" href="{{ site.url }}">
-					<!-- <h3 class="logo">Brand<span>Name</span></h3> -->
 					{% include logo.html %}
 				</a>
 				{% include navigation.html %}
@@ -47,19 +48,31 @@
 				</div>
 			</nav>
 		</header>
-		<main class="content grid">
-			<!-- Hero -->
-			{% include scrollyTellingHero.html %}
+		<div class="storyNav">
+			<ul>
+				<li><a href="#hero">0</a></li>
+				<li><a href="#yourStoryTitle">1</a></li>
+				<li><a href="#yourImpact">2</a></li>
+				<li><a href="#whoDoYouImpact">3</a></li>
+				<li><a href="#yourPeopleImpactEnding">4</a></li>
+				<li><a href="#yourLegacyMiddle">5</a></li>
+				<li><a href="#yourLegacyEnding">6</a></li>
+				<li><a href="#zoomInToAfrica">7</a></li>
+				<li><a href="#africaProblem">8</a></li>
+				<li><a href="#africanLeadersEnding">8</a></li>
 
-			<!-- Main content -->
+			</ul>
+		</div>
+		<!-- THE STAGE FOR ANIMATED CHARACTERS -->
+		{% include scrollytelling/theStage.html %}
+		<!-- GRID STARTS HERE -->
+		<main class="content grid">
+			<!-- HERO VIDEO -->
+			{% include scrollytelling/hero.html %}
+			<!-- SCROLLYTELLING CONTENT-->
 			{{ content }}
 		</main>
-		<!-- <script>
-			document.getElementById("open-nav").onclick = function () {
-				document.body.classList.toggle("nav-open");
-				return false;
-			};
-		</script> -->
+
 		<!-- ADDING GSAP -->
 		<script src="{{ site.baseurl }}/js/gsap/gsap.min.js"></script>
 		<script src="{{ site.baseurl }}/js/gsap/ScrollTrigger.min.js"></script>
@@ -67,7 +80,7 @@
 		<script src="{{ site.baseurl }}/js/gsap/MorphSVGPlugin.min.js"></script>
 		<script src="{{ site.baseurl }}/js/gsap/SplitText.min.js"></script>
 
-		<!-- NINJA SCROLLYTELLING FRONT PAGE -->
+		<!-- NINJA SCROLLYTELLING JS -->
 		<script src="{{ site.baseurl }}/js/scrollyTelling.js"></script>
 
 	</body>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Keyshape -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" enable_background="new 0 0 2000 1001" pretty_print="False" viewBox="0 0 600 600" fill="none" stroke="#000" stroke-linejoin="round" style="background: rgba(17,24,39,0.00);">
+    <style>
+@keyframes P-2-LIGHTB_t { 0% { transform: scale(1,1); } 43.3333% { transform: scale(1,1); } 73.3333% { transform: scale(1,1); } 76.6666% { transform: scale(3,3); } 86.6666% { transform: scale(0,0); } 100% { transform: scale(0,0); } }
+@keyframes P-2-LIGHTB_mo { 0% { offset-distance: 0%; } 43.3333% { offset-distance: 0%; } 76.6667% { offset-distance: 100%; } 86.6667% { offset-distance: 100%; } 100% { offset-distance: 100%; } }
+@keyframes P-2-LIGHTA_t { 0% { transform: scale(1,1); } 43.3333% { transform: scale(1,1); } 73.3333% { transform: scale(1,1); } 76.6666% { transform: scale(3,3); } 86.6666% { transform: scale(0,0); } 100% { transform: scale(0,0); } }
+@keyframes P-2-LIGHTA_mo { 0% { offset-distance: 0%; } 43.3333% { offset-distance: 0%; } 76.6667% { offset-distance: 100%; } 100% { offset-distance: 100%; } }
+@keyframes P-3-LIGHTA_t { 0% { transform: scale(1,1); } 43.3333% { transform: scale(1,1); } 73.3333% { transform: scale(1,1); } 76.6666% { transform: scale(3,3); } 86.6666% { transform: scale(0,0); } 100% { transform: scale(0,0); } }
+@keyframes P-3-LIGHTA_mo { 0% { offset-distance: 0%; } 43.3333% { offset-distance: 0%; } 76.6667% { offset-distance: 100%; } 100% { offset-distance: 100%; } }
+@keyframes P-3-LIGHTB_t { 0% { transform: scale(1,1); } 43.3333% { transform: scale(1,1); } 73.3333% { transform: scale(1,1); } 76.6666% { transform: scale(3,3); } 86.6666% { transform: scale(0,0); } 100% { transform: scale(0,0); } }
+@keyframes P-3-LIGHTB_mo { 0% { offset-distance: 0%; } 43.3333% { offset-distance: 0%; } 76.6667% { offset-distance: 100%; } 100% { offset-distance: 100%; } }
+@keyframes P-12-LIGHTA_t { 0% { transform: scale(1,1); } 43.3333% { transform: scale(1,1); } 73.3333% { transform: scale(1,1); } 76.6666% { transform: scale(3,3); } 86.6666% { transform: scale(0,0); } 100% { transform: scale(0,0); } }
+@keyframes P-12-LIGHTA_mo { 0% { offset-distance: 0%; } 43.3333% { offset-distance: 0%; } 76.6667% { offset-distance: 100%; } 100% { offset-distance: 100%; } }
+@keyframes P-12-LIGHTB_t { 0% { transform: scale(1,1); } 43.3333% { transform: scale(1,1); } 73.3333% { transform: scale(1,1); } 76.6666% { transform: scale(3,3); } 86.6666% { transform: scale(0,0); } 100% { transform: scale(0,0); } }
+@keyframes P-12-LIGHTB_mo { 0% { offset-distance: 0%; } 43.3333% { offset-distance: 0%; } 76.6667% { offset-distance: 100%; } 100% { offset-distance: 100%; } }
+@keyframes EMIT-45_f { 0% { fill: #03956d; } 83.3333% { fill: #03956d; } 93.3333% { fill: #e8f7f3; } 100% { fill: #03956d; } }
+@keyframes EMIT-46_f { 0% { fill: #37ab5d; } 83.3333% { fill: #37ab5d; } 90% { fill: #e2f3e7; } 93.3333% { fill: #37ab5d; } 100% { fill: #37ab5d; } }
+@keyframes EMIT-47_f { 0% { fill: #85b744; } 83.3333% { fill: #85b744; } 86.6667% { fill: #fefffc; } 90% { fill: #85b744; } 100% { fill: #85b744; } }
+@keyframes P-11-LIGHTA-7_t { 0% { transform: scale(1,1); } 66.6666% { transform: scale(1,1); } 78.2% { transform: scale(1,1); } 79.4666% { transform: scale(3,3); } 83.3333% { transform: scale(0,0); } 100% { transform: scale(0,0); } }
+@keyframes P-11-LIGHTA-7_mo { 0% { offset-distance: 0%; } 66.6667% { offset-distance: 0%; } 79.4667% { offset-distance: 100%; } 100% { offset-distance: 100%; } }
+@keyframes EMIT-29_f { 0% { fill: #03956d; } 83.3333% { fill: #03956d; } 93.3333% { fill: #e8f7f3; } 100% { fill: #03956d; } }
+@keyframes EMIT-30_f { 0% { fill: #37ab5d; } 83.3333% { fill: #37ab5d; } 90% { fill: #e2f3e7; } 93.3333% { fill: #37ab5d; } 100% { fill: #37ab5d; } }
+@keyframes EMIT-31_f { 0% { fill: #85b744; } 83.3333% { fill: #85b744; } 86.6667% { fill: #fefffc; } 90% { fill: #85b744; } 100% { fill: #85b744; } }
+@keyframes P-11-LIGHTA-3_t { 0% { transform: scale(1,1); } 66.6666% { transform: scale(1,1); } 78.2% { transform: scale(1,1); } 79.4666% { transform: scale(3,3); } 83.3333% { transform: scale(0,0); } 100% { transform: scale(0,0); } }
+@keyframes P-11-LIGHTA-3_mo { 0% { offset-distance: 0%; } 66.6667% { offset-distance: 0%; } 79.4667% { offset-distance: 100%; } 100% { offset-distance: 100%; } }
+@keyframes EMIT-33_f { 0% { fill: #03956d; } 83.3333% { fill: #03956d; } 93.3333% { fill: #e8f7f3; } 100% { fill: #03956d; } }
+@keyframes EMIT-34_f { 0% { fill: #37ab5d; } 83.3333% { fill: #37ab5d; } 90% { fill: #e2f3e7; } 93.3333% { fill: #37ab5d; } 100% { fill: #37ab5d; } }
+@keyframes EMIT-35_f { 0% { fill: #85b744; } 83.3333% { fill: #85b744; } 86.6667% { fill: #fefffc; } 90% { fill: #85b744; } 100% { fill: #85b744; } }
+@keyframes P-11-LIGHTA-4_t { 0% { transform: scale(1,1); } 66.6666% { transform: scale(1,1); } 78.2% { transform: scale(1,1); } 79.4666% { transform: scale(3,3); } 83.3333% { transform: scale(0,0); } 100% { transform: scale(0,0); } }
+@keyframes P-11-LIGHTA-4_mo { 0% { offset-distance: 0%; } 66.6667% { offset-distance: 0%; } 79.4667% { offset-distance: 100%; } 100% { offset-distance: 100%; } }
+@keyframes EMIT-37_f { 0% { fill: #03956d; } 83.3333% { fill: #03956d; } 93.3333% { fill: #e8f7f3; } 100% { fill: #03956d; } }
+@keyframes EMIT-38_f { 0% { fill: #37ab5d; } 83.3333% { fill: #37ab5d; } 90% { fill: #e2f3e7; } 93.3333% { fill: #37ab5d; } 100% { fill: #37ab5d; } }
+@keyframes EMIT-39_f { 0% { fill: #85b744; } 83.3333% { fill: #85b744; } 86.6667% { fill: #fefffc; } 90% { fill: #85b744; } 100% { fill: #85b744; } }
+@keyframes P-11-LIGHTA-5_t { 0% { transform: scale(1,1); } 66.6666% { transform: scale(1,1); } 78.2% { transform: scale(1,1); } 79.4666% { transform: scale(3,3); } 83.3333% { transform: scale(0,0); } 100% { transform: scale(0,0); } }
+@keyframes P-11-LIGHTA-5_mo { 0% { offset-distance: 0%; } 66.6667% { offset-distance: 0%; } 79.4667% { offset-distance: 100%; } 100% { offset-distance: 100%; } }
+@keyframes EMIT-9_f { 0% { fill: #03956d; } 66.6667% { fill: #03956d; } 76.6667% { fill: #e8f7f3; } 83.3333% { fill: #03956d; } 100% { fill: #03956d; } }
+@keyframes EMIT-10_f { 0% { fill: #37ab5d; } 66.6667% { fill: #37ab5d; } 73.3333% { fill: #e2f3e7; } 76.6667% { fill: #37ab5d; } 100% { fill: #37ab5d; } }
+@keyframes EMIT-11_f { 0% { fill: #85b744; } 66.6667% { fill: #85b744; } 70% { fill: #fefffc; } 73.3333% { fill: #85b744; } 100% { fill: #85b744; } }
+@keyframes EMIT-13_f { 0% { fill: #03956d; } 63.3333% { fill: #03956d; } 73.3333% { fill: #e8f7f3; } 80% { fill: #03956d; } 100% { fill: #03956d; } }
+@keyframes EMIT-14_f { 0% { fill: #37ab5d; } 63.3333% { fill: #37ab5d; } 70% { fill: #e2f3e7; } 73.3333% { fill: #37ab5d; } 100% { fill: #37ab5d; } }
+@keyframes EMIT-15_f { 0% { fill: #85b744; } 63.3333% { fill: #85b744; } 66.6667% { fill: #fefffc; } 70% { fill: #85b744; } 100% { fill: #85b744; } }
+@keyframes EMIT-41_f { 0% { fill: #03956d; } 83.3333% { fill: #03956d; } 93.3333% { fill: #e8f7f3; } 100% { fill: #03956d; } }
+@keyframes EMIT-42_f { 0% { fill: #37ab5d; } 83.3333% { fill: #37ab5d; } 90% { fill: #e2f3e7; } 93.3333% { fill: #37ab5d; } 100% { fill: #37ab5d; } }
+@keyframes EMIT-43_f { 0% { fill: #85b744; } 83.3333% { fill: #85b744; } 86.6667% { fill: #fefffc; } 90% { fill: #85b744; } 100% { fill: #85b744; } }
+@keyframes P-11-LIGHTA-6_t { 0% { transform: scale(1,1); } 66.6666% { transform: scale(1,1); } 78.2% { transform: scale(1,1); } 79.4666% { transform: scale(3,3); } 83.3333% { transform: scale(0,0); } 100% { transform: scale(0,0); } }
+@keyframes P-11-LIGHTA-6_mo { 0% { offset-distance: 0%; } 66.6667% { offset-distance: 0%; } 79.4667% { offset-distance: 100%; } 100% { offset-distance: 100%; } }
+@keyframes EMIT-17_f { 0% { fill: #03956d; } 56.6667% { fill: #03956d; } 66.6667% { fill: #e8f7f3; } 73.3333% { fill: #03956d; } 100% { fill: #03956d; } }
+@keyframes EMIT-18_f { 0% { fill: #37ab5d; } 56.6667% { fill: #37ab5d; } 63.3333% { fill: #e2f3e7; } 66.6667% { fill: #37ab5d; } 100% { fill: #37ab5d; } }
+@keyframes EMIT-19_f { 0% { fill: #85b744; } 56.6667% { fill: #85b744; } 60% { fill: #fefffc; } 63.3333% { fill: #85b744; } 100% { fill: #85b744; } }
+@keyframes EMIT-21_f { 0% { fill: #03956d; } 83.3333% { fill: #03956d; } 93.3333% { fill: #e8f7f3; } 100% { fill: #03956d; } }
+@keyframes EMIT-22_f { 0% { fill: #37ab5d; } 83.3333% { fill: #37ab5d; } 90% { fill: #e2f3e7; } 93.3333% { fill: #37ab5d; } 100% { fill: #37ab5d; } }
+@keyframes EMIT-23_f { 0% { fill: #85b744; } 83.3333% { fill: #85b744; } 86.6667% { fill: #fefffc; } 90% { fill: #85b744; } 100% { fill: #85b744; } }
+@keyframes P-11-LIGHTA_t { 0% { transform: scale(1,1); } 66.6666% { transform: scale(1,1); } 78.2% { transform: scale(1,1); } 79.4666% { transform: scale(3,3); } 83.3333% { transform: scale(0,0); } 100% { transform: scale(0,0); } }
+@keyframes P-11-LIGHTA_mo { 0% { offset-distance: 0%; } 66.6667% { offset-distance: 0%; } 79.4667% { offset-distance: 100%; } 100% { offset-distance: 100%; } }
+@keyframes EMIT-25_f { 0% { fill: #03956d; } 83.3333% { fill: #03956d; } 93.3333% { fill: #e8f7f3; } 100% { fill: #03956d; } }
+@keyframes EMIT-26_f { 0% { fill: #37ab5d; } 83.3333% { fill: #37ab5d; } 90% { fill: #e2f3e7; } 93.3333% { fill: #37ab5d; } 100% { fill: #37ab5d; } }
+@keyframes EMIT-27_f { 0% { fill: #85b744; } 83.3333% { fill: #85b744; } 86.6667% { fill: #fefffc; } 90% { fill: #85b744; } 100% { fill: #85b744; } }
+@keyframes P-11-LIGHTA-2_t { 0% { transform: scale(1,1); } 66.6666% { transform: scale(1,1); } 78.2% { transform: scale(1,1); } 79.4666% { transform: scale(3,3); } 83.3333% { transform: scale(0,0); } 100% { transform: scale(0,0); } }
+@keyframes P-11-LIGHTA-2_mo { 0% { offset-distance: 0%; } 66.6667% { offset-distance: 0%; } 79.4667% { offset-distance: 100%; } 100% { offset-distance: 100%; } }
+@keyframes EMIT-5_f { 0% { fill: #03956d; } 53.3333% { fill: #03956d; } 63.3333% { fill: #e8f7f3; } 70% { fill: #03956d; } 100% { fill: #03956d; } }
+@keyframes EMIT-6_f { 0% { fill: #37ab5d; } 53.3333% { fill: #37ab5d; } 60% { fill: #e2f3e7; } 63.3333% { fill: #37ab5d; } 100% { fill: #37ab5d; } }
+@keyframes EMIT-7_f { 0% { fill: #85b744; } 53.3333% { fill: #85b744; } 56.6667% { fill: #fefffc; } 60% { fill: #85b744; } 100% { fill: #85b744; } }
+@keyframes EMIT-4_f { 0% { fill: #03956d; } 26.6667% { fill: #03956d; } 36.6667% { fill: #e8f7f3; } 43.3333% { fill: #03956d; } 100% { fill: #03956d; } }
+@keyframes EMIT-3_f { 0% { fill: #37ab5d; } 26.6667% { fill: #37ab5d; } 33.3333% { fill: #e2f3e7; } 36.6667% { fill: #37ab5d; } 100% { fill: #37ab5d; } }
+@keyframes EMIT-2_f { 0% { fill: #85b744; } 26.6667% { fill: #85b744; } 30% { fill: #fefffc; } 33.3333% { fill: #85b744; } 100% { fill: #85b744; } }
+    </style>
+    <defs>
+        <filter id="Filter-0" x="-107%" y="-107%" width="420%" height="420%" color-interpolation-filters="sRGB">
+            <feGaussianBlur stdDeviation="5"/>
+        </filter>
+        <filter id="Filter-1" color-interpolation-filters="sRGB">
+            <feGaussianBlur in="SourceAlpha" stdDeviation="11"/>
+            <feOffset dx="6" dy="6" result="offsetblur"/>
+            <feFlood flood-color="#000000" flood-opacity="0.5"/>
+            <feComposite in2="offsetblur" operator="in"/>
+            <feMerge>
+                <feMergeNode/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+    <ellipse rx="250" ry="250" stroke="#ffffff" fill="#05162b" stroke-width="1" display="none" transform="translate(300,300)"/>
+    <g id="networkSphere" transform="translate(300,300) scale(0.6,0.6) translate(-470.168,-473.697)">
+        <g id="NETWORK" transform="translate(470.184,473.819) translate(-470.184,-473.599)">
+            <path id="P-2" d="M0,0C-47.0131,131.868,35.7826,70.4424,154.884,-75.2711C366.484,-334.151,667.618,-883.366,444.881,-702.042" opacity="0.5" stroke="#fefefe" fill="none" stroke-width="1" transform="translate(218.452,805.241)"/>
+            <path id="P-3" d="M-36.6801,-7.96876C-278.953,-52.1946,-51.4286,228.311,192.746,414.979C406.855,578.662,691.212,724.02,609.866,512.775" opacity="0.5" stroke="#fefefe" fill="none" stroke-width="1" transform="translate(210.686,189.602)"/>
+            <path id="p-5" d="M0,0C39.3256,21.3135,71.1971,33.7277,96.9465,15.0574C286.301,-122.239,-213.092,-1015.94,-363.762,-781.861C-375.37,-763.827,-375.37,-753.66,-375.37,-728.311" stroke="#fefefe" fill="none" stroke-width="1" opacity="0.5" transform="translate(585.652,876.259)"/>
+            <path id="p-6" d="M-20.7346,-9.39782C-101.825,-57.1713,-73.4539,-74.7325,-11.8382,-84.8112C147.811,-110.926,651.796,23.7073,806.582,131.494C860.587,169.101,881.065,209.439,783.622,205.651" stroke="#fefefe" fill="none" stroke-width="1" opacity="0.5" transform="translate(82.2033,406.18)"/>
+            <path id="p-7" d="M-96.3728,-60.8205C-244.633,-313.972,790.061,-727.23,704.765,-433.06" stroke="#fefefe" fill="none" stroke-width="1" opacity="0.5" transform="translate(130.876,700.706)"/>
+            <path id="p-8" d="M-2.35675,0C-195.989,-60.6478,94.1399,-97.2099,389.873,-94.9742C696.447,-92.6566,1011.44,-51.2848,802.38,-0.0112889" stroke="#fefefe" fill="none" stroke-width="1" opacity="0.5" transform="translate(70.3651,504.368)"/>
+            <path id="p-9" d="M22.7369,-50.3817C38.7256,-84.08,56.1577,-97.3497,88.121,-114.951C274.983,-217.851,446.031,81.9907,455.488,373.57C464.461,650.219,346.841,925.919,146.302,751.095" stroke="#fefefe" fill="none" stroke-width="1" opacity="0.5" transform="translate(289.427,139.167)"/>
+            <path id="p-10" d="M-25.2168,-50.5366C-137.166,-227.104,-254.631,-79.6958,-293.809,152.902C-353.52,507.4,-164.592,986.175,-94.707,776.092" stroke="#fefefe" fill="none" stroke-width="1" opacity="0.5" transform="translate(596.171,119.667)"/>
+            <path id="p-11" d="M0,0C-320.997,47.3196,-586.656,44.6658,-805.337,-0.10728" stroke="#fefefe" fill="none" stroke-width="1" opacity="0.5" transform="translate(872.781,504.368)"/>
+            <path id="p-12" d="M-100.319,-65.926C67.8739,155.984,602.213,-118.507,759.895,-352.775C788.807,-395.729,737.592,-406.467,719.42,-395.729" stroke="#fefefe" fill="none" stroke-width="1" opacity="0.5" transform="translate(133.782,704.576)"/>
+            <path id="p-13" d="M0,0C73.186,-275.744,28.8846,-1161.04,-56.9567,-838.422" stroke="#fefefe" fill="none" stroke-width="1" opacity="0.5" transform="translate(501.464,895.759)"/>
+            <g id="hideMe" transform="translate(467.461,476.74) translate(-467.461,-467.465)"/>
+            <path id="P-2-LIGHTB" fill="#ffffff" filter="url(#Filter-0)" stroke="none" stroke-linecap="round" stroke-width="3" d="M7.5,0C7.5,4.14214,4.14214,7.5,0,7.5C-4.14214,7.5,-7.5,4.14214,-7.5,0C-7.5,-4.14214,-4.14214,-7.5,0,-7.5C4.14214,-7.5,7.5,-4.14214,7.5,0Z" style="animation: 3s linear infinite both P-2-LIGHTB_t, 3s linear infinite both P-2-LIGHTB_mo; offset-path: path('M435.554,640.28L435.554,640.28C434.009,664.43,162.576,1004.29,218.452,805.241L218.452,805.241L218.452,805.241'); offset-rotate: 0deg;"/>
+            <ellipse id="P-2-LIGHTA" rx="7.5" ry="7.5" stroke="none" fill="#ffffff" stroke-width="3" stroke-linecap="round" filter="url(#Filter-0)" style="animation: 3s linear infinite both P-2-LIGHTA_t, 3s linear infinite both P-2-LIGHTA_mo; offset-path: path('M466.519,610.479L466.519,610.479C557.269,476.046,895.02,-80.7144,663.333,102.828L663.333,102.828'); offset-rotate: 0deg;"/>
+            <ellipse id="P-3-LIGHTA" rx="7.5" ry="7.5" stroke="none" fill="#ffffff" stroke-width="3" stroke-linecap="round" filter="url(#Filter-0)" style="animation: 3s linear infinite both P-3-LIGHTA_t, 3s linear infinite both P-3-LIGHTA_mo; offset-path: path('M444.49,642.926L444.49,642.926C560.047,706.069,889.852,930.308,818.415,693.2L818.415,693.2'); offset-rotate: 0deg;"/>
+            <ellipse id="P-3-LIGHTB" rx="7.5" ry="7.5" stroke="none" fill="#ffffff" stroke-width="3" stroke-linecap="round" filter="url(#Filter-0)" style="animation: 3s linear infinite both P-3-LIGHTB_t, 3s linear infinite both P-3-LIGHTB_mo; offset-path: path('M444.489,638.65L444.489,638.65C372.903,604.923,-144.559,123.181,174.104,181.633L174.104,181.633'); offset-rotate: 0deg;"/>
+            <ellipse id="P-12-LIGHTA" rx="7.5" ry="7.5" stroke="none" fill="#ffffff" stroke-width="3" stroke-linecap="round" filter="url(#Filter-0)" style="animation: 3s linear infinite both P-12-LIGHTA_t, 3s linear infinite both P-12-LIGHTA_mo; offset-path: path('M473.405,655.603L473.405,655.603C530.85,681.823,1062.92,293.451,853.202,308.33L853.202,308.33'); offset-rotate: 0deg;"/>
+            <ellipse id="P-12-LIGHTB" rx="7.5" ry="7.5" stroke="none" fill="#ffffff" stroke-width="3" stroke-linecap="round" filter="url(#Filter-0)" style="animation: 3s linear infinite both P-12-LIGHTB_t, 3s linear infinite both P-12-LIGHTB_mo; offset-path: path('M441.134,641.707L441.134,641.707C468.884,748.418,-117.327,782.81,53.5008,501.432L53.5008,501.432'); offset-rotate: 0deg;"/>
+        </g>
+        <g id="LEADERS" transform="translate(534.778,406.512) translate(-376.093,-382.088)">
+            <g id="Leader0" transform="translate(304.003,807.047) rotate(70) translate(-65,-65)">
+                <path id="arm1-6" d="M62.6983,-47.9289C37.6635,2.46762,52.5425,124.126,84.2525,130.562" fill="none" stroke-width="1" stroke-linecap="round" stroke="#eaf7f3" transform="translate(-87.8325,99.033) rotate(-70)"/>
+                <ellipse id="EMIT-45" rx="65" ry="65" fill="#03956d" stroke="none" transform="translate(65,65) scale(0.4,0.4)" style="animation: 3s linear infinite both EMIT-45_f;"/>
+                <ellipse id="EMIT-46" rx="50" ry="50" fill="#37ab5d" stroke="none" transform="translate(64.9999,64.9999) scale(0.4,0.4)" style="animation: 3s linear infinite both EMIT-46_f;"/>
+                <ellipse id="EMIT-47" rx="35" ry="35" fill="#85b744" stroke="none" transform="translate(64.9994,64.9997) scale(0.4,0.4)" style="animation: 3s linear infinite both EMIT-47_f;"/>
+                <ellipse id="EMIT-48" rx="20" ry="20" fill="#e7eedf" stroke="none" transform="translate(64.999,65) scale(0.4,0.4)"/>
+                <ellipse id="P-11-LIGHTA-7" rx="7.5" ry="7.5" stroke="none" fill="#ffffff" stroke-width="3" stroke-linecap="round" filter="url(#Filter-0)" style="animation: 3s linear infinite both P-11-LIGHTA-7_t, 3s linear infinite both P-11-LIGHTA-7_mo; offset-path: path('M-119.159,20.9089L-119.159,20.9089C-35.6862,85.2004,81.0755,84.1987,62.428,64.0637L62.428,64.0637'); offset-rotate: 0deg;"/>
+            </g>
+            <g id="Leader2-1" transform="translate(294.926,258.119) rotate(70) translate(-65,-65)">
+                <path id="arm1-2" d="M313.32,71.1375C203.874,43.776,89.3054,75.5605,84.2525,130.562" fill="none" stroke-width="1" stroke-linecap="round" stroke="#e2eeea" transform="translate(-87.8325,99.033) rotate(-70)"/>
+                <ellipse id="EMIT-29" rx="65" ry="65" fill="#03956d" stroke="none" transform="translate(65,65) scale(0.4,0.4)" style="animation: 3s linear infinite both EMIT-29_f;"/>
+                <ellipse id="EMIT-30" rx="50" ry="50" fill="#37ab5d" stroke="none" transform="translate(64.9999,64.9999) scale(0.4,0.4)" style="animation: 3s linear infinite both EMIT-30_f;"/>
+                <ellipse id="EMIT-31" rx="35" ry="35" fill="#85b744" stroke="none" transform="translate(64.9994,64.9997) scale(0.4,0.4)" style="animation: 3s linear infinite both EMIT-31_f;"/>
+                <ellipse id="EMIT-32" rx="20" ry="20" fill="#e7eedf" stroke="none" transform="translate(64.999,65) scale(0.4,0.4)"/>
+                <ellipse id="P-11-LIGHTA-3" rx="7.5" ry="7.5" stroke="none" fill="#ffffff" stroke-width="3" stroke-linecap="round" filter="url(#Filter-0)" style="animation: 3s linear infinite both P-11-LIGHTA-3_t, 3s linear infinite both P-11-LIGHTA-3_mo; offset-path: path('M86.039,-171.111L86.039,-171.111C18.1555,-59.7265,16.809,35.9328,63.6715,64.5168L63.6715,64.5168'); offset-rotate: 0deg;"/>
+            </g>
+            <g id="Leader2-2" transform="translate(209.65,117.597) rotate(70) translate(-65,-65)">
+                <path id="arm1-3" d="M400.136,209.889C364.314,34.6158,89.3054,75.5605,84.2525,130.562" fill="none" stroke-width="1" stroke-linecap="round" stroke="#e6f1ee" transform="translate(-87.8325,99.033) rotate(-70)"/>
+                <ellipse id="EMIT-33" rx="65" ry="65" fill="#03956d" stroke="none" transform="translate(65,65) scale(0.4,0.4)" style="animation: 3s linear infinite both EMIT-33_f;"/>
+                <ellipse id="EMIT-34" rx="50" ry="50" fill="#37ab5d" stroke="none" transform="translate(64.9999,64.9999) scale(0.4,0.4)" style="animation: 3s linear infinite both EMIT-34_f;"/>
+                <ellipse id="EMIT-35" rx="35" ry="35" fill="#85b744" stroke="none" transform="translate(64.9994,64.9997) scale(0.4,0.4)" style="animation: 3s linear infinite both EMIT-35_f;"/>
+                <ellipse id="EMIT-36" rx="20" ry="20" fill="#e7eedf" stroke="none" transform="translate(64.999,65) scale(0.4,0.4)"/>
+                <ellipse id="P-11-LIGHTA-4" rx="7.5" ry="7.5" stroke="none" fill="#ffffff" stroke-width="3" stroke-linecap="round" filter="url(#Filter-0)" style="animation: 3s linear infinite both P-11-LIGHTA-4_t, 3s linear infinite both P-11-LIGHTA-4_mo; offset-path: path('M248.785,-199.895L248.785,-199.895C72.1447,-246.772,16.809,35.9328,63.6715,64.5168L63.6715,64.5168'); offset-rotate: 0deg;"/>
+            </g>
+            <g id="Leader2-3" transform="translate(653.436,253.853) rotate(70) translate(-65,-65)">
+                <path id="arm1-4" d="M-44.9203,75.2884C26.0854,0,89.3054,75.5605,84.2525,130.562" fill="none" stroke-width="1" stroke-linecap="round" stroke="#edf9f6" transform="translate(-87.8325,99.033) rotate(-70)"/>
+                <ellipse id="EMIT-37" rx="65" ry="65" fill="#03956d" stroke="none" transform="translate(65,65) scale(0.4,0.4)" style="animation: 3s linear infinite both EMIT-37_f;"/>
+                <ellipse id="EMIT-38" rx="50" ry="50" fill="#37ab5d" stroke="none" transform="translate(64.9999,64.9999) scale(0.4,0.4)" style="animation: 3s linear infinite both EMIT-38_f;"/>
+                <ellipse id="EMIT-39" rx="35" ry="35" fill="#85b744" stroke="none" transform="translate(64.9994,64.9997) scale(0.4,0.4)" style="animation: 3s linear infinite both EMIT-39_f;"/>
+                <ellipse id="EMIT-40" rx="20" ry="20" fill="#e7eedf" stroke="none" transform="translate(64.999,65) scale(0.4,0.4)"/>
+                <ellipse id="P-11-LIGHTA-5" rx="7.5" ry="7.5" stroke="none" fill="#ffffff" stroke-width="3" stroke-linecap="round" filter="url(#Filter-0)" style="animation: 3s linear infinite both P-11-LIGHTA-5_t, 3s linear infinite both P-11-LIGHTA-5_mo; offset-path: path('M-33.5691,165.234L-33.5691,165.234C-76.5582,79.7975,16.809,35.9328,63.6715,64.5168L63.6715,64.5168'); offset-rotate: 0deg;"/>
+            </g>
+            <g id="Leader2" transform="translate(523.913,197.135) translate(-65,-65)">
+                <ellipse id="EMIT-9" rx="65" ry="65" fill="#03956d" stroke="none" transform="translate(65,65) scale(0.4,0.4)" style="animation: 3s linear infinite both EMIT-9_f;"/>
+                <ellipse id="EMIT-10" rx="50" ry="50" fill="#37ab5d" stroke="none" transform="translate(64.9999,64.9999) scale(0.4,0.4)" style="animation: 3s linear infinite both EMIT-10_f;"/>
+                <ellipse id="EMIT-11" rx="35" ry="35" fill="#85b744" stroke="none" transform="translate(64.9994,64.9997) scale(0.4,0.4)" style="animation: 3s linear infinite both EMIT-11_f;"/>
+                <ellipse id="EMIT-12" rx="20" ry="20" fill="#e7eedf" stroke="none" transform="translate(64.999,65) scale(0.4,0.4)"/>
+            </g>
+            <g id="Leader3" transform="translate(26,691.426) translate(-65,-65)">
+                <ellipse id="EMIT-13" rx="65" ry="65" fill="#03956d" stroke="none" transform="translate(65,65) scale(0.4,0.4)" style="animation: 3s linear infinite both EMIT-13_f;"/>
+                <ellipse id="EMIT-14" rx="50" ry="50" fill="#37ab5d" stroke="none" transform="translate(64.9999,64.9999) scale(0.4,0.4)" style="animation: 3s linear infinite both EMIT-14_f;"/>
+                <ellipse id="EMIT-15" rx="35" ry="35" fill="#85b744" stroke="none" transform="translate(64.9994,64.9997) scale(0.4,0.4)" style="animation: 3s linear infinite both EMIT-15_f;"/>
+                <ellipse id="EMIT-16" rx="20" ry="20" fill="#e7eedf" stroke="none" transform="translate(64.999,65) scale(0.4,0.4)"/>
+            </g>
+            <g id="Leader4-1" transform="translate(39.851,298.677) rotate(70) translate(-65,-65)">
+                <path id="arm1-5" d="M116.899,265.203C78.7433,201.677,71.704,158.802,84.2525,130.562" fill="none" stroke-width="1" stroke-linecap="round" stroke="#dff0ec" transform="translate(-87.8325,99.033) rotate(-70)"/>
+                <ellipse id="EMIT-41" rx="65" ry="65" fill="#03956d" stroke="none" transform="translate(65,65) scale(0.4,0.4)" style="animation: 3s linear infinite both EMIT-41_f;"/>
+                <ellipse id="EMIT-42" rx="50" ry="50" fill="#37ab5d" stroke="none" transform="translate(64.9999,64.9999) scale(0.4,0.4)" style="animation: 3s linear infinite both EMIT-42_f;"/>
+                <ellipse id="EMIT-43" rx="35" ry="35" fill="#85b744" stroke="none" transform="translate(64.9994,64.9997) scale(0.4,0.4)" style="animation: 3s linear infinite both EMIT-43_f;"/>
+                <ellipse id="EMIT-44" rx="20" ry="20" fill="#e7eedf" stroke="none" transform="translate(64.999,65) scale(0.4,0.4)"/>
+                <ellipse id="P-11-LIGHTA-6" rx="7.5" ry="7.5" stroke="none" fill="#ffffff" stroke-width="3" stroke-linecap="round" filter="url(#Filter-0)" style="animation: 3s linear infinite both P-11-LIGHTA-6_t, 3s linear infinite both P-11-LIGHTA-6_mo; offset-path: path('M200.074,79.9518L200.074,79.9518C131.124,96.5552,81.0755,84.1987,62.428,64.0637L62.428,64.0637'); offset-rotate: 0deg;"/>
+            </g>
+            <g id="Leader4" transform="translate(72,430.719) translate(-65,-65)">
+                <ellipse id="EMIT-17" rx="65" ry="65" fill="#03956d" stroke="none" transform="translate(65,65) scale(0.4,0.4)" style="animation: 3s linear infinite both EMIT-17_f;"/>
+                <ellipse id="EMIT-18" rx="50" ry="50" fill="#37ab5d" stroke="none" transform="translate(64.9999,64.9999) scale(0.4,0.4)" style="animation: 3s linear infinite both EMIT-18_f;"/>
+                <ellipse id="EMIT-19" rx="35" ry="35" fill="#85b744" stroke="none" transform="translate(64.9994,64.9997) scale(0.4,0.4)" style="animation: 3s linear infinite both EMIT-19_f;"/>
+                <ellipse id="EMIT-20" rx="20" ry="20" fill="#e7eedf" stroke="none" transform="translate(64.999,65) scale(0.4,0.4)"/>
+            </g>
+            <g id="Leader1-1" transform="translate(726.186,472.942) translate(-65,-65)">
+                <ellipse id="EMIT-21" rx="65" ry="65" fill="#03956d" stroke="none" transform="translate(65,65) scale(0.4,0.4)" style="animation: 3s linear infinite both EMIT-21_f;"/>
+                <ellipse id="EMIT-22" rx="50" ry="50" fill="#37ab5d" stroke="none" transform="translate(64.9999,64.9999) scale(0.4,0.4)" style="animation: 3s linear infinite both EMIT-22_f;"/>
+                <ellipse id="EMIT-23" rx="35" ry="35" fill="#85b744" stroke="none" transform="translate(64.9994,64.9997) scale(0.4,0.4)" style="animation: 3s linear infinite both EMIT-23_f;"/>
+                <ellipse id="EMIT-24" rx="20" ry="20" fill="#e7eedf" stroke="none" transform="translate(64.999,65) scale(0.4,0.4)"/>
+                <ellipse id="P-11-LIGHTA" rx="7.5" ry="7.5" stroke="none" fill="#ffffff" stroke-width="3" stroke-linecap="round" filter="url(#Filter-0)" style="animation: 3s linear infinite both P-11-LIGHTA_t, 3s linear infinite both P-11-LIGHTA_mo; offset-path: path('M-153.803,98.9997L-153.803,98.9997C-99.7931,90.9184,18.84,80.2762,64.999,65L64.999,65'); offset-rotate: 0deg;"/>
+            </g>
+            <g id="Leader1-2" transform="translate(596.576,638.917) rotate(70) translate(-65,-65)">
+                <path id="arm1" d="M0,0C51.968,35.2458,89.3054,75.5605,84.2525,130.562" fill="none" stroke-width="1" stroke-linecap="round" stroke="#e6f5f1" transform="translate(-87.8325,99.033) rotate(-70)"/>
+                <ellipse id="EMIT-25" rx="65" ry="65" fill="#03956d" stroke="none" transform="translate(65,65) scale(0.4,0.4)" style="animation: 3s linear infinite both EMIT-25_f;"/>
+                <ellipse id="EMIT-26" rx="50" ry="50" fill="#37ab5d" stroke="none" transform="translate(64.9999,64.9999) scale(0.4,0.4)" style="animation: 3s linear infinite both EMIT-26_f;"/>
+                <ellipse id="EMIT-27" rx="35" ry="35" fill="#85b744" stroke="none" transform="translate(64.9994,64.9997) scale(0.4,0.4)" style="animation: 3s linear infinite both EMIT-27_f;"/>
+                <ellipse id="EMIT-28" rx="20" ry="20" fill="#e7eedf" stroke="none" transform="translate(64.999,65) scale(0.4,0.4)"/>
+                <ellipse id="P-11-LIGHTA-2" rx="7.5" ry="7.5" stroke="none" fill="#ffffff" stroke-width="3" stroke-linecap="round" filter="url(#Filter-0)" style="animation: 3s linear infinite both P-11-LIGHTA-2_t, 3s linear infinite both P-11-LIGHTA-2_mo; offset-path: path('M-86.3519,96.8422L-86.3519,96.8422C-57.0701,79.1872,1.20223,33.0055,64.999,65L64.999,65'); offset-rotate: 0deg;"/>
+            </g>
+            <g id="Leader1" transform="translate(507.388,506.942) translate(-65,-65)">
+                <ellipse id="EMIT-5" rx="65" ry="65" fill="#03956d" stroke="none" transform="translate(65,65) scale(0.4,0.4)" style="animation: 3s linear infinite both EMIT-5_f;"/>
+                <ellipse id="EMIT-6" rx="50" ry="50" fill="#37ab5d" stroke="none" transform="translate(64.9999,64.9999) scale(0.4,0.4)" style="animation: 3s linear infinite both EMIT-6_f;"/>
+                <ellipse id="EMIT-7" rx="35" ry="35" fill="#85b744" stroke="none" transform="translate(64.9994,64.9997) scale(0.4,0.4)" style="animation: 3s linear infinite both EMIT-7_f;"/>
+                <ellipse id="EMIT-8" rx="20" ry="20" fill="#e7eedf" stroke="none" transform="translate(64.999,65) scale(0.4,0.4)"/>
+            </g>
+        </g>
+        <g id="emit-start" transform="translate(444.489,641.927) translate(-65,-65)">
+            <ellipse id="EMIT-4" rx="65" ry="65" fill="#03956d" stroke="none" transform="translate(65,65)" style="animation: 3s linear infinite both EMIT-4_f;"/>
+            <ellipse id="EMIT-3" rx="50" ry="50" fill="#37ab5d" stroke="none" transform="translate(64.9999,64.9999)" style="animation: 3s linear infinite both EMIT-3_f;"/>
+            <ellipse id="EMIT-2" rx="35" ry="35" fill="#85b744" stroke="none" transform="translate(64.9994,64.9997)" style="animation: 3s linear infinite both EMIT-2_f;"/>
+            <ellipse id="EMIT-1" rx="20" ry="20" fill="#e7eedf" stroke="none" transform="translate(64.999,65)"/>
+            <image xlink:href="" width="182.536" height="239.158" preserveAspectRatio="none" filter="url(#Filter-1)" display="none" transform="translate(668.433,-119.342) translate(-720.969,44.0666)"/>
+        </g>
+    </g>
+</svg>

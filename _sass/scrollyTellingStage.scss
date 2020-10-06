@@ -1,0 +1,376 @@
+$animatedLogoWidth: 200px;
+$sphere1Width: 300px;
+$sphere2Width: 400px;
+$sphere3Width: 500px;
+$networkWidth: 600px;
+$planetWidth: 500px;
+$glow1Width: 600px;
+$glow2Width: 700px;
+$glow3Width: 800px;
+$textContainerWidth: 800px;
+
+#theStage {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    // SONYA - REMOVE THIS Z-INDEX WHEN YOU'RE DONE!
+    // z-index: 2001;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    section {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        padding: 0;
+        margin: 0;
+        background: transparent;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    #storyText {
+        // Text styling is set in scrollyTelling.scss
+        .sectionContent {
+            visibility: hidden;
+            width: $sphere3Width;
+            height: $sphere3Width;
+            position: absolute;
+            background: $brandContrastLight2;
+            border-radius: 50%;
+            padding: 3rem;
+        }
+        // Specific styles for text bubbles
+        #text_africaProblem {
+            background: $brandContrastLight;
+        }
+        #text_africaProblem2{
+            background: #353C45;
+            color: rgba(255,255,255,0.8);
+        }
+        #text_africaProblem3{
+            background: #2E353D;
+            color: rgba(255,255,255,0.8);
+        }
+        #text_africaProblem4{
+            background: #282E36;
+            color: rgba(255,255,255,0.8);
+        }
+        #text_africaProblem5{
+            background: #2E353D;
+            color: rgba(255,255,255,0.8);
+        }
+        #text_africaProblem6{
+            background: darken($brandContrastDark, 10%);
+            color: rgba(255,255,255,0.8);
+        }
+    }
+    #spheres {
+        #spheresWrap {
+            position: relative;
+            width: 500px;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .sphere {
+                visibility: hidden;
+                border-radius: 50%;
+                border: 1px solid $brand-color;
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .sphere3 {
+                width: $sphere3Width;
+                height: $sphere3Width;
+                background-color: $sphere3BG;
+            }
+            .sphere2{
+                width: $sphere2Width;
+                height: $sphere2Width;
+                background-color: $sphere2BG;
+            }
+            .sphere1 {
+                width: $sphere1Width;
+                height: $sphere1Width;
+                background-color: $sphere1BG;
+            }
+        }
+    }
+    #animatedLogo {
+        #animatedLogoWrap {
+            visibility: hidden;
+            width: $animatedLogoWidth;
+            svg {
+                #logoBorder {
+                    stroke: $brand-color;
+                    stroke-width: 3px;
+                }
+            }
+        }
+    }
+    #spinningPlanet {
+        visibility: hidden;
+        background: $brandContrastDark;
+        overflow:visible;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        #planetWrap {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            // visibility: hidden;
+            .planet {
+                position: absolute;
+                box-sizing: border-box;
+                width: $planetWidth;
+                height: $planetWidth;
+                border-radius: 50%;
+                display:flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                .planetGlow {
+                    position: absolute;
+                    border-radius: 50%;
+                    background: rgba(255,255,255,.02);
+                }
+                .glow1 {
+                    width: $glow1Width;
+                    height: $glow1Width
+                }
+                .glow2 {
+                    width: $glow2Width;
+                    height: $glow2Width
+                }
+                .glow3 {
+                    width: $glow3Width;
+                    height: $glow3Width
+                }
+                .circle {
+                    box-sizing: border-box;
+                    position: relative;
+                    width: $planetWidth;
+                    height: $planetWidth;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    z-index:10;
+                    background: $brandContrastDark;
+                    background-image: radial-gradient(circle at 35% 40%,rgba(255,255,255,0.4),rgba(0,0,0,.4));
+                    #countries {
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        display: flex;
+                        align-items: stretch;;
+                        height: $planetWidth;
+                        #map1 img, #map2 img {
+                            display: block;
+                            box-sizing: border-box;
+                            height: $planetWidth;
+                            width: auto;
+                            max-width: unset;
+                        }
+                    }
+                }
+            }
+            #planetNetwork {
+                position: absolute;
+                width: $networkWidth;
+                height: $networkWidth;
+                z-index: 11;
+                max-width: unset
+            }
+            .circleShadow {
+                width: 500px;
+                height: 250px;
+                top: -220px;
+                background: rgba(0, 0, 0, 0.7);
+                position: absolute;
+                filter: blur(20px);
+                z-index: 10;
+                border-radius: 50%;
+            }
+            .circle2 {
+                visibility: hidden;
+                position: absolute;
+                box-sizing: border-box;
+                width: $planetWidth;
+                height: $planetWidth;
+                border-radius: 50%;
+                overflow: hidden;
+                z-index:10;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                &.bannerWrap {
+                    width: $glow1Width;
+                    height: $glow1Width;
+                    z-index: 11;
+                }
+                .planetText {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: center;
+                    div.banner{
+                        z-index: 12;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        height: 50%;
+                        width: 100%;
+                        background-color: lighten($brandContrastDark, 6%);
+                        filter: drop-shadow(0px 1px 3px rgba(0,0,0,0.3));
+                        background-image: radial-gradient(transparent, #10101091);
+                        h2 {
+                            font-size: 2rem;
+                            margin: 0;
+                            color: white;
+                            font-weight: 100;
+                            text-align: center;
+                            strong {
+                                font-weight: 400;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #annaInAfrica {
+        img {
+            visibility: hidden;
+            position: absolute;
+            max-width: unset;
+            width: $sphere3Width;
+            position: absolute;
+        }
+    }
+    #clusterOfLeaders {
+        .singleLeader {
+            visibility: hidden;
+            position: absolute;
+        }
+    }
+    #anna {
+        visibility: hidden;
+        #annasLeadersWrap {
+            position: absolute;
+            width: $sphere3Width;
+            height: $sphere3Width;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .annasLeaders {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                visibility: hidden;
+            }
+            #parents{
+                transform-origin: 50% 50%;
+                transform: rotate(-50deg);
+            }
+            #teachers{
+                transform-origin: 50% 50%;
+                transform: rotate(-40deg);
+            }
+            #polititians{
+                transform-origin: 50% 50%;
+                transform: rotate(-30deg);
+            }
+            #religious{
+                transform-origin: 50% 50%;
+                transform: rotate(30deg);
+            }
+            #community{
+                transform-origin: 50% 50%;
+                transform: rotate(35deg);
+            }
+            #peers{
+                transform-origin: 50% 50%;
+                transform: rotate(45deg);
+            }
+        }
+        #annaAtTheCenter {
+            width: $animatedLogoWidth;
+            height: $animatedLogoWidth;
+            background-position: 0 75%;
+            background-size: 200%;
+            border-radius: 50%;
+            z-index:3;
+        }
+    }
+    #thePeopleYouImpact {
+        h2 {
+            visibility: hidden;
+            position: absolute;
+            bottom: 0;
+            text-align: center;
+            line-height: 1;
+            width: 100%;
+        }
+        #thePeopleYouImpactWrap {
+            position: absolute;
+            width: $sphere3Width;
+            height: $sphere3Width;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .yourPeople {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                visibility: hidden;
+            }
+            #family {
+                transform-origin: 50% 50%;
+                transform: rotate(-50deg);
+            }
+            #spouse {
+                transform-origin: 50% 50%;
+                transform: rotate(25deg);
+            }
+            #friends {
+                transform-origin: 50% 50%;
+                transform: rotate(-30deg);
+            }
+            #colleagues {
+                transform-origin: 50% 50%;
+                transform: rotate(35deg);
+            }
+            #yourcommunity {
+                transform-origin: 50% 50%;
+                transform: rotate(-15deg);
+            }
+            #country {
+                transform-origin: 50% 50%;
+                transform: rotate(45deg);
+            }
+        }
+    }
+}

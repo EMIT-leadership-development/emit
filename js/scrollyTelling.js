@@ -7,30 +7,31 @@ window.onload = function() {
 	tl_mother.call(NINJA_FUNCTIONS.pinDonation);
 	tl_mother.call(NINJA_FUNCTIONS.yourStoryTitle);
 	tl_mother.call(NINJA_FUNCTIONS.yourImpact);
-	tl_mother.call(NINJA_FUNCTIONS.thePeopleYouImpact);
+	tl_mother.call(NINJA_FUNCTIONS.whoDoYouImpact);
+	tl_mother.call(NINJA_FUNCTIONS.yourPeopleImpact);
 	tl_mother.call(NINJA_FUNCTIONS.yourLegacy);
-	tl_mother.add(NINJA_FUNCTIONS.introduceAnna);
+	tl_mother.add(NINJA_FUNCTIONS.zoomInToAfrica);
 	tl_mother.add(NINJA_FUNCTIONS.africaProblem);
 	tl_mother.add(NINJA_FUNCTIONS.africanLeaders);
-	tl_mother.add(NINJA_FUNCTIONS.solution);
-	tl_mother.add(NINJA_FUNCTIONS.meetAnna);
-	tl_mother.add(NINJA_FUNCTIONS.annasLeaders);
-	tl_mother.add(NINJA_FUNCTIONS.ifOnly);
-	tl_mother.add(NINJA_FUNCTIONS.imagineIntro);
-	tl_mother.add(NINJA_FUNCTIONS.imagine);
-	tl_mother.add(NINJA_FUNCTIONS.joseph);
-	tl_mother.add(NINJA_FUNCTIONS.josephOnTenIntro);
-	tl_mother.add(NINJA_FUNCTIONS.josephOnTen);
-	tl_mother.add(NINJA_FUNCTIONS.josephTrainingIntro);
-	tl_mother.add(NINJA_FUNCTIONS.josephTraining);
-	tl_mother.add(NINJA_FUNCTIONS.josephEquipped);
-	tl_mother.add(NINJA_FUNCTIONS.josephTransformIntro);
-	tl_mother.add(NINJA_FUNCTIONS.josephTransformation);
-	tl_mother.add(NINJA_FUNCTIONS.emitImpact);
-	tl_mother.add(NINJA_FUNCTIONS.waitingList);
-	tl_mother.add(NINJA_FUNCTIONS.makeADifference);
-	tl_mother.add(NINJA_FUNCTIONS.smilingAnna);
-	tl_mother.add(NINJA_FUNCTIONS.donate);
+	// tl_mother.add(NINJA_FUNCTIONS.solution);
+	// tl_mother.add(NINJA_FUNCTIONS.meetAnna);
+	// tl_mother.add(NINJA_FUNCTIONS.annasLeaders);
+	// tl_mother.add(NINJA_FUNCTIONS.ifOnly);
+	// tl_mother.add(NINJA_FUNCTIONS.imagineIntro);
+	// tl_mother.add(NINJA_FUNCTIONS.imagine);
+	// tl_mother.add(NINJA_FUNCTIONS.joseph);
+	// tl_mother.add(NINJA_FUNCTIONS.josephOnTenIntro);
+	// tl_mother.add(NINJA_FUNCTIONS.josephOnTen);
+	// tl_mother.add(NINJA_FUNCTIONS.josephTrainingIntro);
+	// tl_mother.add(NINJA_FUNCTIONS.josephTraining);
+	// tl_mother.add(NINJA_FUNCTIONS.josephEquipped);
+	// tl_mother.add(NINJA_FUNCTIONS.josephTransformIntro);
+	// tl_mother.add(NINJA_FUNCTIONS.josephTransformation);
+	// tl_mother.add(NINJA_FUNCTIONS.emitImpact);
+	// tl_mother.add(NINJA_FUNCTIONS.waitingList);
+	// tl_mother.add(NINJA_FUNCTIONS.makeADifference);
+	// tl_mother.add(NINJA_FUNCTIONS.smilingAnna);
+	// tl_mother.add(NINJA_FUNCTIONS.donate);
 }
 
 // VARIABLES COPIED FROM SCSS pre.scss
@@ -61,7 +62,6 @@ var $brand = "#abe116",
 var NINJA_FUNCTIONS = {
 	//--------STARTUP: ANIMATIONS ON PAGE LOAD -------------------------------------
 	startup: function() {
-		console.log("Hello Ninja");
 		var tl = gsap.timeline({
 			id: "Landing Scene",
 			defaults:{duration:0.5},
@@ -71,7 +71,6 @@ var NINJA_FUNCTIONS = {
 		tl.from('.introHeadline h1 span', {autoAlpha:0, x:"100", stagger:0.1, ease:"power.out"},"<" );
 		return tl;
 	},
-
 	//--------TOPNAV: ANIMATE THE TOP NAV SHRINKING -------------------------------------
 	topNav: function() {
 		var tl = gsap.timeline({
@@ -93,7 +92,6 @@ var NINJA_FUNCTIONS = {
 				backgroundColor:$brand},"<");
 			return tl;
 	},
-
 	//--------PIN DONATION : FAKE PINS THE BUTTON TOP RIGHT OF THE SCREEN-------------------------------------
 	pinDonation: function() {
 		var tl = gsap.timeline({
@@ -112,7 +110,6 @@ var NINJA_FUNCTIONS = {
 		tl.to('.ctaTitle', {duration:0.5, autoAlpha:0},"<");
 		return tl;
 	},
-
 	// --------YOUR STORY TITLE: WHO YOU ARE, YOUR CHOICES... -----------------------------------
 	yourStoryTitle: function() {
 		var tl = gsap.timeline({
@@ -129,8 +126,7 @@ var NINJA_FUNCTIONS = {
 		tl.from('#yourStoryTitle .sectionHeading span ', {autoAlpha:0, y:"300", stagger:"0.2"},">");
 		return tl;
 	},
-
-	// --------YOUR IMPACT ENTRANCE: WHO ARE THE PEOPLE YOU IMPACT -------------------------------------
+	// --------YOUR IMPACT - ENTER THE SPHERES AND LOGO -------------------------------------
 	yourImpact: function () {
 		var tl = gsap.timeline({
 			id: "Impact Entrance",
@@ -142,94 +138,93 @@ var NINJA_FUNCTIONS = {
 				end: "bottom bottom",
 				toggleActions: "play complete reverse reverse",			}
 		});
-		tl.from('.backgroundLayer.colorBG', {duration:0.3, autoAlpha:0});
-		tl.to('.you', {duration:0.3, autoAlpha:1},"<");
-		tl.from('#sphere3, #sphere2, #sphere1',{duration:1.5, scale:0, autoAlpha:0, backgroundColor:"#0e1625", transformOrigin:"50% 50%"},">");
-		tl.from('#text_yourImpact',{duration:1.5, scale:0, autoAlpha:0},">");
-		tl.fromTo('#text_yourImpact',{scale:1, autoAlpha:1}, {duration:1.5, delay:3, scale:0, autoAlpha:0, immediateRender:false});
+		tl.from('.sphere, #animatedLogoWrap',{stagger:0.3, scale:0, autoAlpha:0, transformOrigin:"50% 50%"},">");
 
 		return tl;
 	},
-
+	// --------WHO ARE THE PEOPLE YOU IMPACT -------------------------------------
+	whoDoYouImpact: function () {
+		var tl = gsap.timeline({
+			id: "Impact Question",
+			defaults:{duration:1},
+			scrollTrigger: {
+				trigger: "#whoDoYouImpact",
+				start: "top bottom",
+				end: "bottom bottom",
+				toggleActions: "play complete reverse reverse",			}
+		});
+		tl.from('#text_yourImpact',{duration:1.5, scale:0, autoAlpha:0, immediateRender:false},">");
+		tl.to('#text_yourImpact', {duration:1.5, delay: 3, scale:0, autoAlpha:0},">");
+		return tl;
+	},
 	// --------THE PEOPLE YOU IMPACT: SPOUSE, FAMILY, COMMUNITY...THE CURVED TEXT IN SPHERES -------------------------------------
-	thePeopleYouImpact: function() {
+	yourPeopleImpact: function() {
 		var tl = gsap.timeline({
 			defaults:{duration:1},
 			scrollTrigger: {
-				id: "Your Impact",
+				id: "yourPeopleImpact",
 				// markers: true,
-				trigger: "#thePeopleYouImpact",
-				start: "top 50%",
+				trigger: "#yourPeopleImpact",
+				endTrigger: "#yourPeopleImpactEnding",
+				start: "top bottom",
 				end: "bottom bottom",
 				toggleActions: "play complete reverse reverse",
 			}
 		});
-		// Set starting values for this scene
-		tl.set('#thePeopleYouImpactWrap',{autoAlpha:1});
-		tl.from('.yourSpheresTitle',{duration:0.5, autoAlpha:0, x:-20},'<')
-		// Reveal Leader Titles
+		tl.from('.impactTitle',{duration:1, autoAlpha:0, x:-20},'<')
 		tl.from('.yourPeople',{autoAlpha:0, ease:"linear", stagger:1, rotate:-30, transformOrigin:"50% 50%"},"<");
 		return tl;
-	}, //END ANNA'S STORY
-
-
+	},
 	// --------YOUR LEGACY ANIMATION: SPINNING PLANET-------------------------------------
 	yourLegacy: function() {
-
-		var split = new SplitText(".planetText h1", {type:"chars"})
-
 		var tl = gsap.timeline({
 			scrollTrigger: {
 				id: "Legacy",
 				// markers: true,
 				trigger: "#yourLegacy",
-				start: "top bottom",
+				endTrigger: "#yourLegacyEnding",
+				start: "top top",
 				end: "bottom bottom",
-				toggleActions: "play complete reverse reverse",			},
+				toggleActions: "play complete reverse reverse",
+			},
 		});
-		tl.to('.backgroundLayer.colorBG', {duration:0.5, backgroundColor:$brandContrastDark},"<");
-		tl.fromTo('#globalNetwork',{scale:0.5, autoAlpha:0, x:200, y:-300}, {duration: 2.5, scale:1, autoAlpha:1, x:0, y:0},"<");
+		tl.to('#spinningPlanet', {duration:1, autoAlpha:1});
+		tl.fromTo('.impactTitle',{autoAlpha:1, x:0}, {duration:0.5, autoAlpha:0, x:-20},">");
+		tl.fromTo('#planetWrap',{scale:0.5, autoAlpha:0, x:200, y:-300}, {duration: 2.5, scale:1, autoAlpha:1, x:0, y:0},"<");
 
-		tl.to('.you', {duration:1.5, scale: 0.4, y:105, x:-20, transformOrigin:"50% 50%"},"<");
+		tl.to('#animatedLogoWrap', {duration:1.5, scale: 0.4, y:105, x:-20, transformOrigin:"50% 50%"},"<");
+		tl.to('#logoBorder', {duration:1.5, autoAlpha:0},"<");
 		tl.to("#svg_body", {duration: 1.5, morphSVG:"#svg_body-2", ease:"expo.out"},"<");
 		tl.to("#svg_shadow", {duration: 1.5, morphSVG:"#svg_shadow-2", ease:"expo.out"},"<");
-		tl.to('#svg-impactRingCircle',{duration:1.5, autoAlpha:0},"<");
 
-		tl.to('.yourImpactBackgrounds, #thePeopleYouImpactWrap', {duration:2.5, y:105, x:-15, autoAlpha:0, transformOrigin:"50% 50%", scale:0.2},"<");
+		tl.to('#spheresWrap, #thePeopleYouImpactWrap', {duration:2.5, y:105, x:-15, autoAlpha:0, transformOrigin:"50% 50%", scale:0.2},"<");
 
 		// Spin planet
 		tl.to('#countries',{duration:10, xPercent:"-65", transformOrigin:"50% 50%"},">");
-		tl.to('.planetText',{duration:10, xPercent:"-100", transformOrigin:"0 50%"},"<");
-
-		// split.chars.forEach(c => {
-		// 	tl.to(c, {duration:5, scale:3, repeat:1, yoyo:true, ease:"circ"},"<");
-		// });
+		tl.from('.circle2',{duration:2, autoAlpha: 0, y:-10, transformOrigin:"50% 50%"},"<4");
+		tl.from('.circleShadow',{duration:3, autoAlpha: 0, y:-20, transformOrigin:"50% 50%"},"<3");
 
 		return tl;
 	},
-
 	// --------INTRODUCE ANNA: ZOOM IN TO AFRICA ON MAP -------------------------------------
-	introduceAnna: function() {
+	zoomInToAfrica: function() {
 		var tl = gsap.timeline({
 			paused: true,
 			defaults:{duration:1},
 			scrollTrigger: {
 				id: "Introduce Anna",
 				// markers: true,
-				trigger: "#introduceAnna",
+				trigger: "#zoomInToAfrica",
 				start: "top bottom",
 				end: "bottom bottom",
 				toggleActions: "play complete reverse reverse",			}
 		});
-
-		tl.to('.backgroundLayer.colorBG', {duration:1, backgroundColor:$brandContrastLight},"<");
-		tl.to('#globalNetwork', {duration:1, autoAlpha:0},"<");
-		// Reveal Anna
+		tl.to('#spinningPlanet', {duration:3, autoAlpha:0});
 		tl.fromTo('#sadAnnaInAfrica', {scale:0.43, x:5, y:35, autoAlpha:0, transformOrigin: "50% 50%"}, {duration:2, scale:1, autoAlpha:1, transformOrigin: "50% 50%"},"<");
-		tl.to('.you', {duration:1, autoAlpha:0},"<");
+		tl.to('#annaInAfrica', {duration:2, backgroundColor:$brandContrastLight2},"<");
+		tl.to('#animatedLogoWrap', {duration:1, autoAlpha:0},"<");
 		return tl;
 	},
-
 	// --------THE AFRICA PROBLEM: AFTER DECADES OF SUPPORT - WHAMBAM TEXT -------------------------------------
 	africaProblem: function() {
 		var tl = gsap.timeline({
@@ -252,15 +247,11 @@ var NINJA_FUNCTIONS = {
 		tl.from('#text_africaProblem6',{duration:1, scale:0, autoAlpha:0},">");
 
 		// Center the logo behind the text in preparation for solution scene
-		tl.set('.you, .yourImpactBackgrounds',{x:0, y:0, scale:1});
-		tl.set('.yourImpactBackgrounds', {duration:0.5, scale:0.3},"<");
+		tl.set('#animatedLogoWrap, .yourImpactBackgrounds',{x:0, y:0, scale:1});
+		tl.set('#spheresWrap', {duration:0.5, scale:0.3},"<");
 		tl.set("#svg_body", {duration:0.5, morphSVG:"#svg_body-2", ease:"expo.out"},">");
 		tl.set("#svg_shadow", {duration:0.5, morphSVG:"#svg_shadow-2", ease:"expo.out"},"<");
-
-
-
-
-
+		// Exit the text
 		tl.to('.whamBam', {duration:0.3, scale:0, autoAlpha:0},">");
 		return tl;
 	},
@@ -268,23 +259,31 @@ var NINJA_FUNCTIONS = {
 	// --------AFRICAN LEADERS: CLUSTER OF DARK SPHERES OVER AFRICA-------------------------------------
 	africanLeaders: function() {
 
-		gsap.set('#leaderStuff', {xPercent:-50, yPercent:-50, left:"50%", top:"50%", transformOrigin:"50% 50%", scale:1});
-		gsap.set('.leader',{x:1000, y:600, scale:0.5, transformOrigin:"50% 50%", autoAlpha:0});
+		// gsap.set('#leaderStuff', {xPercent:-50, yPercent:-50, left:"50%", top:"50%", transformOrigin:"50% 50%", scale:1});
+		// gsap.set('.leader',{x:1000, y:600, scale:0.5, transformOrigin:"50% 50%", autoAlpha:0});
+		var container = document.querySelector('#clusterOfLeaders'),
+			maxY = container.getBoundingClientRect().height /2,
+			maxX = container.getBoundingClientRect().width /2;
+
+
+		console.log(maxY, "by", maxX);
+
 
 		var tl = gsap.timeline({
 			defaults:{duration:1},
 			scrollTrigger: {
-				id: "African LEadersn",
+				id: "African Leaders",
 				// markers: true,
 				trigger: "#africanLeaders",
+				endTrigger: "#africanLeadersEnding",
 				start: "top bottom",
-				end: "bottom center",
+				end: "bottom bottom",
 				toggleActions: "play complete reverse reverse",
 			}
 		});
-		tl.to('.backgroundLayer.colorBG', {duration:1, backgroundColor:$brandContrastDarkest});
-		tl.to('.leader',{stagger:0.01, scale:10, ease:"bounce-out", autoAlpha:1, xPercent:"random(-3000, 3000)", yPercent:"random(-1500, 1500)", transformOrigin:"center"},"<");
-		tl.to('#annaInAfrica #sadAnnaInAfrica', {duration:1, autoAlpha:0},"<0.5")
+		tl.fromTo('.singleLeader',{autoAlpha:0, scale:0}, {stagger:0.1, duration:3, autoAlpha:1, scale:0.8, ease:"bounce-out", x:"random(-" + maxX + ", " + maxX + ")", y:"random(-" + maxY + ", " + maxY + ")", transformOrigin:"center"}).duration(3);
+		tl.to('#clusterOfLeaders',{duration:3, background:$brandContrastDarkest},'>');
+		tl.to('#sadAnnaInAfrica', {duration:1, autoAlpha:0},"<2")
 		return tl;
 	},
 
