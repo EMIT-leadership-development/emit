@@ -36,8 +36,44 @@ $textContainerWidth: 800px;
         align-items: center;
         overflow: hidden;
     }
+    #storyText {
+        // Text styling is set in scrollyTelling.scss
+        .sectionContent {
+            visibility: hidden;
+            width: $sphere3Width;
+            height: $sphere3Width;
+            position: absolute;
+            background: $brandContrastLight2;
+            border-radius: 50%;
+            padding: 3rem;
+        }
+        // Specific styles for text bubbles
+        #text_africaProblem {
+            background: $brandContrastLight;
+        }
+        #text_africaProblem2{
+            background: #353C45;
+            color: rgba(255,255,255,0.8);
+        }
+        #text_africaProblem3{
+            background: #2E353D;
+            color: rgba(255,255,255,0.8);
+        }
+        #text_africaProblem4{
+            background: #282E36;
+            color: rgba(255,255,255,0.8);
+        }
+        #text_africaProblem5{
+            background: #2E353D;
+            color: rgba(255,255,255,0.8);
+        }
+        #text_africaProblem6{
+            background: darken($brandContrastDark, 10%);
+            color: rgba(255,255,255,0.8);
+        }
+    }
     #spheres {
-        .spheresWrap {
+        #spheresWrap {
             position: relative;
             width: 500px;
             height: 500px;
@@ -223,9 +259,9 @@ $textContainerWidth: 800px;
             }
         }
     }
-    #annInAfrica {
-        visibility: hidden;
+    #annaInAfrica {
         img {
+            visibility: hidden;
             position: absolute;
             max-width: unset;
             width: $sphere3Width;
@@ -233,9 +269,8 @@ $textContainerWidth: 800px;
         }
     }
     #clusterOfLeaders {
-        visibility: hidden;
-        background: $brandContrastDark;
         .singleLeader {
+            visibility: hidden;
             position: absolute;
         }
     }
@@ -336,18 +371,6 @@ $textContainerWidth: 800px;
                 transform-origin: 50% 50%;
                 transform: rotate(45deg);
             }
-        }
-    }
-    #storyText {
-        // Text styling is set in scrollyTelling.scss
-        .sectionContent {
-            visibility: hidden;
-            width: $sphere3Width;
-            height: $sphere3Width;
-            position: absolute;
-            background: $brandContrastLight2;
-            border-radius: 50%;
-            padding: 3rem;
         }
     }
 }

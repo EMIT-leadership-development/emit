@@ -10,9 +10,9 @@ window.onload = function() {
 	tl_mother.call(NINJA_FUNCTIONS.whoDoYouImpact);
 	tl_mother.call(NINJA_FUNCTIONS.yourPeopleImpact);
 	tl_mother.call(NINJA_FUNCTIONS.yourLegacy);
-	// tl_mother.add(NINJA_FUNCTIONS.introduceAnna);
-	// tl_mother.add(NINJA_FUNCTIONS.africaProblem);
-	// tl_mother.add(NINJA_FUNCTIONS.africanLeaders);
+	tl_mother.add(NINJA_FUNCTIONS.zoomInToAfrica);
+	tl_mother.add(NINJA_FUNCTIONS.africaProblem);
+	tl_mother.add(NINJA_FUNCTIONS.africanLeaders);
 	// tl_mother.add(NINJA_FUNCTIONS.solution);
 	// tl_mother.add(NINJA_FUNCTIONS.meetAnna);
 	// tl_mother.add(NINJA_FUNCTIONS.annasLeaders);
@@ -71,7 +71,6 @@ var NINJA_FUNCTIONS = {
 		tl.from('.introHeadline h1 span', {autoAlpha:0, x:"100", stagger:0.1, ease:"power.out"},"<" );
 		return tl;
 	},
-
 	//--------TOPNAV: ANIMATE THE TOP NAV SHRINKING -------------------------------------
 	topNav: function() {
 		var tl = gsap.timeline({
@@ -93,7 +92,6 @@ var NINJA_FUNCTIONS = {
 				backgroundColor:$brand},"<");
 			return tl;
 	},
-
 	//--------PIN DONATION : FAKE PINS THE BUTTON TOP RIGHT OF THE SCREEN-------------------------------------
 	pinDonation: function() {
 		var tl = gsap.timeline({
@@ -112,7 +110,6 @@ var NINJA_FUNCTIONS = {
 		tl.to('.ctaTitle', {duration:0.5, autoAlpha:0},"<");
 		return tl;
 	},
-
 	// --------YOUR STORY TITLE: WHO YOU ARE, YOUR CHOICES... -----------------------------------
 	yourStoryTitle: function() {
 		var tl = gsap.timeline({
@@ -129,7 +126,6 @@ var NINJA_FUNCTIONS = {
 		tl.from('#yourStoryTitle .sectionHeading span ', {autoAlpha:0, y:"300", stagger:"0.2"},">");
 		return tl;
 	},
-
 	// --------YOUR IMPACT - ENTER THE SPHERES AND LOGO -------------------------------------
 	yourImpact: function () {
 		var tl = gsap.timeline({
@@ -161,7 +157,6 @@ var NINJA_FUNCTIONS = {
 		tl.to('#text_yourImpact', {duration:1.5, delay: 3, scale:0, autoAlpha:0},">");
 		return tl;
 	},
-
 	// --------THE PEOPLE YOU IMPACT: SPOUSE, FAMILY, COMMUNITY...THE CURVED TEXT IN SPHERES -------------------------------------
 	yourPeopleImpact: function() {
 		var tl = gsap.timeline({
@@ -180,8 +175,6 @@ var NINJA_FUNCTIONS = {
 		tl.from('.yourPeople',{autoAlpha:0, ease:"linear", stagger:1, rotate:-30, transformOrigin:"50% 50%"},"<");
 		return tl;
 	},
-
-
 	// --------YOUR LEGACY ANIMATION: SPINNING PLANET-------------------------------------
 	yourLegacy: function() {
 		var tl = gsap.timeline({
@@ -204,7 +197,7 @@ var NINJA_FUNCTIONS = {
 		tl.to("#svg_body", {duration: 1.5, morphSVG:"#svg_body-2", ease:"expo.out"},"<");
 		tl.to("#svg_shadow", {duration: 1.5, morphSVG:"#svg_shadow-2", ease:"expo.out"},"<");
 
-		tl.to('.spheresWrap, #thePeopleYouImpactWrap', {duration:2.5, y:105, x:-15, autoAlpha:0, transformOrigin:"50% 50%", scale:0.2},"<");
+		tl.to('#spheresWrap, #thePeopleYouImpactWrap', {duration:2.5, y:105, x:-15, autoAlpha:0, transformOrigin:"50% 50%", scale:0.2},"<");
 
 		// Spin planet
 		tl.to('#countries',{duration:10, xPercent:"-65", transformOrigin:"50% 50%"},">");
@@ -213,29 +206,25 @@ var NINJA_FUNCTIONS = {
 
 		return tl;
 	},
-
 	// --------INTRODUCE ANNA: ZOOM IN TO AFRICA ON MAP -------------------------------------
-	introduceAnna: function() {
+	zoomInToAfrica: function() {
 		var tl = gsap.timeline({
 			paused: true,
 			defaults:{duration:1},
 			scrollTrigger: {
 				id: "Introduce Anna",
 				// markers: true,
-				trigger: "#introduceAnna",
+				trigger: "#zoomInToAfrica",
 				start: "top bottom",
 				end: "bottom bottom",
 				toggleActions: "play complete reverse reverse",			}
 		});
-
-		tl.to('.backgroundLayer.colorBG', {duration:1, backgroundColor:$brandContrastLight},"<");
-		tl.to('#globalNetwork', {duration:1, autoAlpha:0},"<");
-		// Reveal Anna
+		tl.to('#spinningPlanet', {duration:3, autoAlpha:0});
 		tl.fromTo('#sadAnnaInAfrica', {scale:0.43, x:5, y:35, autoAlpha:0, transformOrigin: "50% 50%"}, {duration:2, scale:1, autoAlpha:1, transformOrigin: "50% 50%"},"<");
-		tl.to('.you', {duration:1, autoAlpha:0},"<");
+		tl.to('#annaInAfrica', {duration:2, backgroundColor:$brandContrastLight2},"<");
+		tl.to('#animatedLogoWrap', {duration:1, autoAlpha:0},"<");
 		return tl;
 	},
-
 	// --------THE AFRICA PROBLEM: AFTER DECADES OF SUPPORT - WHAMBAM TEXT -------------------------------------
 	africaProblem: function() {
 		var tl = gsap.timeline({
@@ -258,15 +247,11 @@ var NINJA_FUNCTIONS = {
 		tl.from('#text_africaProblem6',{duration:1, scale:0, autoAlpha:0},">");
 
 		// Center the logo behind the text in preparation for solution scene
-		tl.set('.you, .yourImpactBackgrounds',{x:0, y:0, scale:1});
-		tl.set('.yourImpactBackgrounds', {duration:0.5, scale:0.3},"<");
+		tl.set('#animatedLogoWrap, .yourImpactBackgrounds',{x:0, y:0, scale:1});
+		tl.set('#spheresWrap', {duration:0.5, scale:0.3},"<");
 		tl.set("#svg_body", {duration:0.5, morphSVG:"#svg_body-2", ease:"expo.out"},">");
 		tl.set("#svg_shadow", {duration:0.5, morphSVG:"#svg_shadow-2", ease:"expo.out"},"<");
-
-
-
-
-
+		// Exit the text
 		tl.to('.whamBam', {duration:0.3, scale:0, autoAlpha:0},">");
 		return tl;
 	},
@@ -274,23 +259,31 @@ var NINJA_FUNCTIONS = {
 	// --------AFRICAN LEADERS: CLUSTER OF DARK SPHERES OVER AFRICA-------------------------------------
 	africanLeaders: function() {
 
-		gsap.set('#leaderStuff', {xPercent:-50, yPercent:-50, left:"50%", top:"50%", transformOrigin:"50% 50%", scale:1});
-		gsap.set('.leader',{x:1000, y:600, scale:0.5, transformOrigin:"50% 50%", autoAlpha:0});
+		// gsap.set('#leaderStuff', {xPercent:-50, yPercent:-50, left:"50%", top:"50%", transformOrigin:"50% 50%", scale:1});
+		// gsap.set('.leader',{x:1000, y:600, scale:0.5, transformOrigin:"50% 50%", autoAlpha:0});
+		var container = document.querySelector('#clusterOfLeaders'),
+			maxY = container.getBoundingClientRect().height /2,
+			maxX = container.getBoundingClientRect().width /2;
+
+
+		console.log(maxY, "by", maxX);
+
 
 		var tl = gsap.timeline({
 			defaults:{duration:1},
 			scrollTrigger: {
-				id: "African LEadersn",
+				id: "African Leaders",
 				// markers: true,
 				trigger: "#africanLeaders",
+				endTrigger: "#africanLeadersEnding",
 				start: "top bottom",
-				end: "bottom center",
+				end: "bottom bottom",
 				toggleActions: "play complete reverse reverse",
 			}
 		});
-		tl.to('.backgroundLayer.colorBG', {duration:1, backgroundColor:$brandContrastDarkest});
-		tl.to('.leader',{stagger:0.01, scale:10, ease:"bounce-out", autoAlpha:1, xPercent:"random(-3000, 3000)", yPercent:"random(-1500, 1500)", transformOrigin:"center"},"<");
-		tl.to('#annaInAfrica #sadAnnaInAfrica', {duration:1, autoAlpha:0},"<0.5")
+		tl.fromTo('.singleLeader',{autoAlpha:0, scale:0}, {stagger:0.1, duration:3, autoAlpha:1, scale:0.8, ease:"bounce-out", x:"random(-" + maxX + ", " + maxX + ")", y:"random(-" + maxY + ", " + maxY + ")", transformOrigin:"center"}).duration(3);
+		tl.to('#clusterOfLeaders',{duration:3, background:$brandContrastDarkest},'>');
+		tl.to('#sadAnnaInAfrica', {duration:1, autoAlpha:0},"<2")
 		return tl;
 	},
 
