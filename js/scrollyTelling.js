@@ -12,8 +12,10 @@ window.onload = function() {
 	tl_mother.call(NINJA_FUNCTIONS.yourLegacy);
 	tl_mother.add(NINJA_FUNCTIONS.zoomInToAfrica);
 	tl_mother.add(NINJA_FUNCTIONS.africaProblem);
+	tl_mother.add(NINJA_FUNCTIONS.africaProblemEnding);
 	tl_mother.add(NINJA_FUNCTIONS.africanLeaders);
 	tl_mother.add(NINJA_FUNCTIONS.solution);
+	tl_mother.add(NINJA_FUNCTIONS.logoReappears);
 	// tl_mother.add(NINJA_FUNCTIONS.meetAnna);
 	// tl_mother.add(NINJA_FUNCTIONS.annasLeaders);
 	// tl_mother.add(NINJA_FUNCTIONS.ifOnly);
@@ -225,7 +227,7 @@ var NINJA_FUNCTIONS = {
 		tl.to('#animatedLogoWrap', {duration:1, autoAlpha:0},"<");
 		return tl;
 	},
-	// --------THE AFRICA PROBLEM: AFTER DECADES OF SUPPORT - WHAMBAM TEXT -------------------------------------
+	// --------THE AFRICA PROBLEM: AFTER DECADES OF SUPPORT -------------------------------------
 	africaProblem: function() {
 		var tl = gsap.timeline({
 			defaults:{duration:1},
@@ -240,6 +242,22 @@ var NINJA_FUNCTIONS = {
 		});
 		// ENTRANCE THE TEXT
 		tl.from('#text_africaProblem',{duration:1, scale:0, autoAlpha:0},">");
+		return tl;
+	},
+	// --------THE AFRICA PROBLEM ENDING - WHAMBAM TEXT -------------------------------------
+	africaProblemEnding: function() {
+		var tl = gsap.timeline({
+			defaults:{duration:1},
+			scrollTrigger: {
+				id: "Africa Problem Ending",
+				// markers: true,
+				trigger: "#africaProblemEnding",
+				start: "top 90%",
+				end: "bottom bottom",
+				toggleActions: "play complete reverse reverse",
+			}
+		});
+		// ENTRANCE THE TEXT
 		tl.from('#text_africaProblem2',{duration:1, scale:0, autoAlpha:0},">");
 		tl.from('#text_africaProblem3',{duration:1, scale:0, autoAlpha:0},">");
 		tl.from('#text_africaProblem4',{duration:1, scale:0, autoAlpha:0},">");
@@ -277,7 +295,7 @@ var NINJA_FUNCTIONS = {
 				trigger: "#africanLeaders",
 				endTrigger: "#africanLeadersEnding",
 				start: "top bottom",
-				end: "bottom center",
+				end: "bottom bottom",
 				toggleActions: "play complete reverse reverse",
 			}
 		});
@@ -304,8 +322,23 @@ var NINJA_FUNCTIONS = {
 		tl.from('#text_solution',{duration:0.3, scale:0, autoAlpha:0},">");
 
 		// EXIT THE TEXT
-		tl.to('#text_solution',{duration:0.5, x:300, delay:1, autoAlpha:0},">");
+		tl.to('#text_solution',{duration:0.5, x:300, delay:3, autoAlpha:0},">");
 
+		return tl;
+	},
+	// --------LOGO REAPPEARS-------------------------------------
+	logoReappears: function() {
+		var tl = gsap.timeline({
+			defaults:{duration:1},
+			scrollTrigger: {
+				id: "logoReappears",
+				// markers: true,
+				trigger: "#logoReappears",
+				start: "top bottom",
+				end: "bottom bottom",
+				toggleActions: "play complete reverse reverse",
+			}
+		});
 		// Scale up spheres and logo
 		tl.to('#animatedLogoWrap',{duration:1, scale:1, autoAlpha:1},"<");
 		tl.to('#spheresWrap', {duration:1, scale:0.5, autoAlpha:1},"<");
@@ -314,7 +347,6 @@ var NINJA_FUNCTIONS = {
 
 		return tl;
 	},
-	//
 	// --------MEET ANNA -------------------------------------
 	meetAnna: function() {
 		var tl = gsap.timeline({
