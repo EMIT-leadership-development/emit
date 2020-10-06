@@ -6,9 +6,10 @@ window.onload = function() {
 	tl_mother.call(NINJA_FUNCTIONS.topNav);
 	tl_mother.call(NINJA_FUNCTIONS.pinDonation);
 	tl_mother.call(NINJA_FUNCTIONS.yourStoryTitle);
-	// tl_mother.call(NINJA_FUNCTIONS.yourImpact);
-	// tl_mother.call(NINJA_FUNCTIONS.thePeopleYouImpact);
-	// tl_mother.call(NINJA_FUNCTIONS.yourLegacy);
+	tl_mother.call(NINJA_FUNCTIONS.yourImpact);
+	tl_mother.call(NINJA_FUNCTIONS.whoDoYouImpact);
+	tl_mother.call(NINJA_FUNCTIONS.yourPeopleImpact);
+	tl_mother.call(NINJA_FUNCTIONS.yourLegacy);
 	// tl_mother.add(NINJA_FUNCTIONS.introduceAnna);
 	// tl_mother.add(NINJA_FUNCTIONS.africaProblem);
 	// tl_mother.add(NINJA_FUNCTIONS.africanLeaders);
@@ -129,7 +130,7 @@ var NINJA_FUNCTIONS = {
 		return tl;
 	},
 
-	// --------YOUR IMPACT ENTRANCE: WHO ARE THE PEOPLE YOU IMPACT -------------------------------------
+	// --------YOUR IMPACT - ENTER THE SPHERES AND LOGO -------------------------------------
 	yourImpact: function () {
 		var tl = gsap.timeline({
 			id: "Impact Entrance",
@@ -141,68 +142,74 @@ var NINJA_FUNCTIONS = {
 				end: "bottom bottom",
 				toggleActions: "play complete reverse reverse",			}
 		});
-		tl.from('.backgroundLayer.colorBG', {duration:0.3, autoAlpha:0});
-		tl.to('.you', {duration:0.3, autoAlpha:1},"<");
-		tl.from('#sphere3, #sphere2, #sphere1',{duration:1.5, scale:0, autoAlpha:0, backgroundColor:"#0e1625", transformOrigin:"50% 50%"},">");
-		tl.from('#text_yourImpact',{duration:1.5, scale:0, autoAlpha:0},">");
-		tl.fromTo('#text_yourImpact',{scale:1, autoAlpha:1}, {duration:1.5, delay:3, scale:0, autoAlpha:0, immediateRender:false});
+		tl.from('.sphere, #animatedLogoWrap',{stagger:0.3, scale:0, autoAlpha:0, transformOrigin:"50% 50%"},">");
 
+		return tl;
+	},
+	// --------WHO ARE THE PEOPLE YOU IMPACT -------------------------------------
+	whoDoYouImpact: function () {
+		var tl = gsap.timeline({
+			id: "Impact Question",
+			defaults:{duration:1},
+			scrollTrigger: {
+				trigger: "#whoDoYouImpact",
+				start: "top bottom",
+				end: "bottom bottom",
+				toggleActions: "play complete reverse reverse",			}
+		});
+		tl.from('#text_yourImpact',{duration:1.5, scale:0, autoAlpha:0, immediateRender:false},">");
+		tl.to('#text_yourImpact', {duration:1.5, delay: 3, scale:0, autoAlpha:0},">");
 		return tl;
 	},
 
 	// --------THE PEOPLE YOU IMPACT: SPOUSE, FAMILY, COMMUNITY...THE CURVED TEXT IN SPHERES -------------------------------------
-	thePeopleYouImpact: function() {
+	yourPeopleImpact: function() {
 		var tl = gsap.timeline({
 			defaults:{duration:1},
 			scrollTrigger: {
-				id: "Your Impact",
+				id: "yourPeopleImpact",
 				// markers: true,
-				trigger: "#thePeopleYouImpact",
-				start: "top 50%",
+				trigger: "#yourPeopleImpact",
+				endTrigger: "#yourPeopleImpactEnding",
+				start: "top bottom",
 				end: "bottom bottom",
 				toggleActions: "play complete reverse reverse",
 			}
 		});
-		// Set starting values for this scene
-		tl.set('#thePeopleYouImpactWrap',{autoAlpha:1});
-		tl.from('.yourSpheresTitle',{duration:0.5, autoAlpha:0, x:-20},'<')
-		// Reveal Leader Titles
+		tl.from('.impactTitle',{duration:1, autoAlpha:0, x:-20},'<')
 		tl.from('.yourPeople',{autoAlpha:0, ease:"linear", stagger:1, rotate:-30, transformOrigin:"50% 50%"},"<");
 		return tl;
-	}, //END ANNA'S STORY
+	},
 
 
 	// --------YOUR LEGACY ANIMATION: SPINNING PLANET-------------------------------------
 	yourLegacy: function() {
-
-		var split = new SplitText(".planetText h1", {type:"chars"})
-
 		var tl = gsap.timeline({
 			scrollTrigger: {
 				id: "Legacy",
 				// markers: true,
 				trigger: "#yourLegacy",
-				start: "top bottom",
+				endTrigger: "#yourLegacyEnding",
+				start: "top top",
 				end: "bottom bottom",
-				toggleActions: "play complete reverse reverse",			},
+				toggleActions: "play complete reverse reverse",
+			},
 		});
-		tl.to('.backgroundLayer.colorBG', {duration:0.5, backgroundColor:$brandContrastDark},"<");
-		tl.fromTo('#globalNetwork',{scale:0.5, autoAlpha:0, x:200, y:-300}, {duration: 2.5, scale:1, autoAlpha:1, x:0, y:0},"<");
+		tl.to('#spinningPlanet', {duration:1, autoAlpha:1});
+		tl.fromTo('.impactTitle',{autoAlpha:1, x:0}, {duration:0.5, autoAlpha:0, x:-20},">");
+		tl.fromTo('#planetWrap',{scale:0.5, autoAlpha:0, x:200, y:-300}, {duration: 2.5, scale:1, autoAlpha:1, x:0, y:0},"<");
 
-		tl.to('.you', {duration:1.5, scale: 0.4, y:105, x:-20, transformOrigin:"50% 50%"},"<");
+		tl.to('#animatedLogoWrap', {duration:1.5, scale: 0.4, y:105, x:-20, transformOrigin:"50% 50%"},"<");
+		tl.to('#logoBorder', {duration:1.5, autoAlpha:0},"<");
 		tl.to("#svg_body", {duration: 1.5, morphSVG:"#svg_body-2", ease:"expo.out"},"<");
 		tl.to("#svg_shadow", {duration: 1.5, morphSVG:"#svg_shadow-2", ease:"expo.out"},"<");
-		tl.to('#svg-impactRingCircle',{duration:1.5, autoAlpha:0},"<");
 
-		tl.to('.yourImpactBackgrounds, #thePeopleYouImpactWrap', {duration:2.5, y:105, x:-15, autoAlpha:0, transformOrigin:"50% 50%", scale:0.2},"<");
+		tl.to('.spheresWrap, #thePeopleYouImpactWrap', {duration:2.5, y:105, x:-15, autoAlpha:0, transformOrigin:"50% 50%", scale:0.2},"<");
 
 		// Spin planet
 		tl.to('#countries',{duration:10, xPercent:"-65", transformOrigin:"50% 50%"},">");
-		tl.to('.planetText',{duration:10, xPercent:"-100", transformOrigin:"0 50%"},"<");
-
-		// split.chars.forEach(c => {
-		// 	tl.to(c, {duration:5, scale:3, repeat:1, yoyo:true, ease:"circ"},"<");
-		// });
+		tl.from('.circle2',{duration:2, autoAlpha: 0, y:-10, transformOrigin:"50% 50%"},"<4");
+		tl.from('.circleShadow',{duration:3, autoAlpha: 0, y:-20, transformOrigin:"50% 50%"},"<3");
 
 		return tl;
 	},

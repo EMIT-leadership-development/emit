@@ -4,6 +4,7 @@ html, body {
 	font-size: 16px;
 	background-color: $brandContrastLight;
 }
+@media (max-width: 300px) { html, body{font-size:14px;} }
 body {
 	font-family: "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 	-webkit-font-smoothing: antialiased;

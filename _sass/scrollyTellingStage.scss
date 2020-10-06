@@ -9,10 +9,6 @@ $glow2Width: 700px;
 $glow3Width: 800px;
 $textContainerWidth: 800px;
 
-.hideToStart {
-    visibility: hidden;
-}
-
 #theStage {
     position: fixed;
     top: 0;
@@ -20,7 +16,7 @@ $textContainerWidth: 800px;
     right: 0;
     bottom: 0;
     // SONYA - REMOVE THIS Z-INDEX WHEN YOU'RE DONE!
-    z-index: 2001;
+    // z-index: 2001;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -41,14 +37,6 @@ $textContainerWidth: 800px;
         overflow: hidden;
     }
     #spheres {
-        visibility: hidden;
-        h2 {
-            position: absolute;
-            bottom: 0;
-            text-align: center;
-            line-height: 1;
-            width: 100%;
-        }
         .spheresWrap {
             position: relative;
             width: 500px;
@@ -58,6 +46,7 @@ $textContainerWidth: 800px;
             justify-content: center;
             align-items: center;
             .sphere {
+                visibility: hidden;
                 border-radius: 50%;
                 border: 1px solid $brand-color;
                 position: absolute;
@@ -84,9 +73,9 @@ $textContainerWidth: 800px;
         }
     }
     #animatedLogo {
-        visibility: hidden;
         #animatedLogoWrap {
-            width: animatedLogoWidth;
+            visibility: hidden;
+            width: $animatedLogoWidth;
             svg {
                 #logoBorder {
                     stroke: $brand-color;
@@ -103,14 +92,15 @@ $textContainerWidth: 800px;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        #planetNetwork {
-            position: absolute;
-            width: $networkWidth;
-            height: $networkWidth;
-            z-index: 11;
-        }
-        .planetWrap {
+        #planetWrap {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            // visibility: hidden;
             .planet {
+                position: absolute;
                 box-sizing: border-box;
                 width: $planetWidth;
                 height: $planetWidth;
@@ -163,34 +153,71 @@ $textContainerWidth: 800px;
                     }
                 }
             }
-        }
-        .circle2 {
-            box-sizing: border-box;
-            position: absolute;
-            width: $planetWidth;
-            height: $planetWidth;
-            border-radius: 50%;
-            overflow: hidden;
-            z-index:15;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: left;
-            .planetText {
+            #planetNetwork {
                 position: absolute;
-                display: grid;
-                grid-template-columns: $planetWidth auto;
-                div{
-                    h1 {
-                        font-size: 4.5rem;
-                        padding: 0;
-                        margin: 0;
-                        color: white;
-                        font-weight: bold;
-                        white-space: nowrap;
-                        padding: 0;
-                        text-shadow: 5px 6px 7px rgba(0,0,0,0.5);
+                width: $networkWidth;
+                height: $networkWidth;
+                z-index: 11;
+                max-width: unset
+            }
+            .circleShadow {
+                width: 500px;
+                height: 250px;
+                top: -220px;
+                background: rgba(0, 0, 0, 0.7);
+                position: absolute;
+                filter: blur(20px);
+                z-index: 10;
+                border-radius: 50%;
+            }
+            .circle2 {
+                visibility: hidden;
+                position: absolute;
+                box-sizing: border-box;
+                width: $planetWidth;
+                height: $planetWidth;
+                border-radius: 50%;
+                overflow: hidden;
+                z-index:10;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                &.bannerWrap {
+                    width: $glow1Width;
+                    height: $glow1Width;
+                    z-index: 11;
+                }
+                .planetText {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: center;
+                    div.banner{
+                        z-index: 12;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        height: 50%;
+                        width: 100%;
+                        background-color: lighten($brandContrastDark, 6%);
+                        filter: drop-shadow(0px 1px 3px rgba(0,0,0,0.3));
+                        background-image: radial-gradient(transparent, #10101091);
+                        h2 {
+                            font-size: 2rem;
+                            margin: 0;
+                            color: white;
+                            font-weight: 100;
+                            text-align: center;
+                            strong {
+                                font-weight: 400;
+                            }
+                        }
                     }
                 }
             }
@@ -214,7 +241,6 @@ $textContainerWidth: 800px;
     }
     #anna {
         visibility: hidden;
-        border: 10px solid red;
         #annasLeadersWrap {
             position: absolute;
             width: $sphere3Width;
@@ -263,6 +289,65 @@ $textContainerWidth: 800px;
             z-index:3;
         }
     }
-
-
+    #thePeopleYouImpact {
+        h2 {
+            visibility: hidden;
+            position: absolute;
+            bottom: 0;
+            text-align: center;
+            line-height: 1;
+            width: 100%;
+        }
+        #thePeopleYouImpactWrap {
+            position: absolute;
+            width: $sphere3Width;
+            height: $sphere3Width;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .yourPeople {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                visibility: hidden;
+            }
+            #family {
+                transform-origin: 50% 50%;
+                transform: rotate(-50deg);
+            }
+            #spouse {
+                transform-origin: 50% 50%;
+                transform: rotate(25deg);
+            }
+            #friends {
+                transform-origin: 50% 50%;
+                transform: rotate(-30deg);
+            }
+            #colleagues {
+                transform-origin: 50% 50%;
+                transform: rotate(35deg);
+            }
+            #yourcommunity {
+                transform-origin: 50% 50%;
+                transform: rotate(-15deg);
+            }
+            #country {
+                transform-origin: 50% 50%;
+                transform: rotate(45deg);
+            }
+        }
+    }
+    #storyText {
+        // Text styling is set in scrollyTelling.scss
+        .sectionContent {
+            visibility: hidden;
+            width: $sphere3Width;
+            height: $sphere3Width;
+            position: absolute;
+            background: $brandContrastLight2;
+            border-radius: 50%;
+            padding: 3rem;
+        }
+    }
 }
