@@ -42,8 +42,11 @@
     .mainNavigation {
         background-color: transparent;
         background-image: none;
-        .nav-link > a {
+        .topLevel {
             color: #ffffff;
+        }
+        .topLevel.blackText {
+            color: #000000;
         }
     }
     .storyNav {

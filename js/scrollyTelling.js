@@ -4,18 +4,19 @@ window.onload = function() {
 	var tl_mother = gsap.timeline();
 	tl_mother.call(NINJA_FUNCTIONS.startup);
 	tl_mother.call(NINJA_FUNCTIONS.topNav);
+	tl_mother.call(NINJA_FUNCTIONS.storyNav);
 	tl_mother.call(NINJA_FUNCTIONS.pinDonation);
 	tl_mother.call(NINJA_FUNCTIONS.yourStoryTitle);
 	tl_mother.call(NINJA_FUNCTIONS.yourImpact);
-	tl_mother.call(NINJA_FUNCTIONS.whoDoYouImpact);
-	tl_mother.call(NINJA_FUNCTIONS.yourPeopleImpact);
-	tl_mother.call(NINJA_FUNCTIONS.yourLegacy);
-	tl_mother.add(NINJA_FUNCTIONS.zoomInToAfrica);
-	tl_mother.add(NINJA_FUNCTIONS.africaProblem);
-	tl_mother.add(NINJA_FUNCTIONS.africaProblemEnding);
-	tl_mother.add(NINJA_FUNCTIONS.africanLeaders);
-	tl_mother.add(NINJA_FUNCTIONS.solution);
-	tl_mother.add(NINJA_FUNCTIONS.logoReappears);
+	// tl_mother.call(NINJA_FUNCTIONS.whoDoYouImpact);
+	// tl_mother.call(NINJA_FUNCTIONS.yourPeopleImpact);
+	// tl_mother.call(NINJA_FUNCTIONS.yourLegacy);
+	// tl_mother.add(NINJA_FUNCTIONS.zoomInToAfrica);
+	// tl_mother.add(NINJA_FUNCTIONS.africaProblem);
+	// tl_mother.add(NINJA_FUNCTIONS.africaProblemEnding);
+	// tl_mother.add(NINJA_FUNCTIONS.africanLeaders);
+	// tl_mother.add(NINJA_FUNCTIONS.solution);
+	// tl_mother.add(NINJA_FUNCTIONS.logoReappears);
 	// tl_mother.add(NINJA_FUNCTIONS.meetAnna);
 	// tl_mother.add(NINJA_FUNCTIONS.annasLeaders);
 	// tl_mother.add(NINJA_FUNCTIONS.ifOnly);
@@ -75,6 +76,10 @@ var NINJA_FUNCTIONS = {
 	},
 	//--------TOPNAV: ANIMATE THE TOP NAV SHRINKING -------------------------------------
 	topNav: function() {
+		const links = gsap.utils.toArray(".topLevel");
+		function changeColor() {
+			links.forEach(link => link.classList.toggle("blackText") )
+		}
 		var tl = gsap.timeline({
 			id: "topNavShrink",
 			defaults:{duration:1},
@@ -83,10 +88,12 @@ var NINJA_FUNCTIONS = {
 				start: 0,
 				end: 130,
 				toggleActions: "play complete reverse reverse",
+				onEnter: changeColor,
+				onEnterBack: changeColor,
 				scrub: 1
 			}
 			});
-			tl.to('#headerLogo .logo', {duration:1, height:55, ease:"linear"},"<");
+			tl.to('#headerLogo .logo', {duration:1, height:55, ease:"linear"});
 			tl.to('.mainNavigation',{
 				duration:1,
 				boxShadow: "0 1px 15px rgba(0,0,0, .15)",
@@ -112,6 +119,16 @@ var NINJA_FUNCTIONS = {
 		tl.to('.ctaTitle', {duration:0.5, autoAlpha:0},"<");
 		return tl;
 	},
+	storyNav: function() {
+		const navLinks = gsap.utils.toArray(".storyNav li a");
+		navLinks.forEach(link => {
+			link.addEventListener("click", e => {
+				e.preventDefault();
+				const section = document.querySelector(link.getAttribute("href"));
+				gsap.to(window, {scrollTo: section});
+			});
+		});
+	},
 	// --------YOUR STORY TITLE: WHO YOU ARE, YOUR CHOICES... -----------------------------------
 	yourStoryTitle: function() {
 		var tl = gsap.timeline({
@@ -136,11 +153,12 @@ var NINJA_FUNCTIONS = {
 			// paused: true,
 			scrollTrigger: {
 				trigger: "#yourImpact",
-				start: "top bottom",
+				start: "top center",
 				end: "bottom bottom",
-				toggleActions: "play complete reverse reverse",			}
+				toggleActions: "play complete reverse reverse"		}
 		});
-		tl.from('.sphere, #animatedLogoWrap',{stagger:0.3, scale:0, autoAlpha:0, transformOrigin:"50% 50%"},">");
+		// tl.from('#animatedLogoWrap',{duration:0.3, scale:0, autoAlpha:0, transformOrigin:"50% 50%"});
+		tl.from('.sphere, #animatedLogoWrap',{stagger:-0.3, scale:0, autoAlpha:0, transformOrigin:"50% 50%"},"<-0.3");
 
 		return tl;
 	},
@@ -258,17 +276,17 @@ var NINJA_FUNCTIONS = {
 			}
 		});
 		// ENTRANCE THE TEXT
-		tl.from('#text_africaProblem2',{duration:1, scale:0, autoAlpha:0},">");
-		tl.from('#text_africaProblem3',{duration:1, scale:0, autoAlpha:0},">");
-		tl.from('#text_africaProblem4',{duration:1, scale:0, autoAlpha:0},">");
-		tl.from('#text_africaProblem5',{duration:1, scale:0, autoAlpha:0},">");
-		tl.from('#text_africaProblem6',{duration:1, scale:0, autoAlpha:0},">");
+		tl.from('#text_africaProblem2',{duration:2, scale:0, autoAlpha:0},">");
+		tl.from('#text_africaProblem3',{duration:2, scale:0, autoAlpha:0},">");
+		tl.from('#text_africaProblem4',{duration:2, scale:0, autoAlpha:0},">");
+		tl.from('#text_africaProblem5',{duration:2, scale:0, autoAlpha:0},">");
+		tl.from('#text_africaProblem6',{duration:2, scale:0, autoAlpha:0},">");
 
 		// Center the logo behind the text in preparation for solution scene
-		tl.set('#animatedLogoWrap, #spheresWrap',{x:0, y:0, scale:1});
-		tl.set('#spheresWrap', {duration:0.5, scale:0.3},"<");
-		tl.set("#svg_body", {duration:0.5, morphSVG:"#svg_body-2", ease:"expo.out"},">");
-		tl.set("#svg_shadow", {duration:0.5, morphSVG:"#svg_shadow-2", ease:"expo.out"},"<");
+		// tl.set('#animatedLogoWrap',{x:0, y:0, scale:1});
+		// tl.set('#spheresWrap', {x:0, y:0, scale:0.3},"<");
+		// tl.set("#svg_body", {morphSVG:"#svg_body-2", ease:"expo.out"},">");
+		// tl.set("#svg_shadow", {smorphSVG:"#svg_shadow-2", ease:"expo.out"},"<");
 		// Exit the text
 		tl.to('.whamBam', {duration:0.3, scale:0, autoAlpha:0},">");
 		return tl;
@@ -340,8 +358,8 @@ var NINJA_FUNCTIONS = {
 			}
 		});
 		// Scale up spheres and logo
-		tl.to('#animatedLogoWrap',{duration:1, scale:1, autoAlpha:1},"<");
-		tl.to('#spheresWrap', {duration:1, scale:0.5, autoAlpha:1},"<");
+		tl.to('#animatedLogoWrap',{duration:1, x:0, y:0, scale:1, autoAlpha:1},"<");
+		tl.to('#spheresWrap', {duration:1, x:0, y:0, scale:0.5, autoAlpha:1},"<");
 		tl.to("#svg_body", {duration:0.6, morphSVG:"#svg_body", ease:"expo.out"},">");
 		tl.to("#svg_shadow", {duration:0.6, morphSVG:"#svg_shadow", ease:"expo.out"},"<");
 
@@ -394,6 +412,7 @@ var NINJA_FUNCTIONS = {
 		tl.set('.annasLeaders',{scale:0.95});
 		tl.to('#annaAtTheCenter',{duration:2, scale:1},"<");
 		// SPHERES
+		
 		tl.to('.sphere1', {duration:2, scale:1, autoAlpha:1, border:"0.5px solid rgba(255,255,255,0.3)", backgroundColor:"#1c2127"},"<");
 		tl.to('.sphere2', {duration:2, scale:1, autoAlpha:1, border:"0.5px solid rgba(255,255,255,0.3)", backgroundColor:"#1c2127"},">");
 		tl.to('.sphere3', {duration:2, scale:1, autoAlpha:1, border:"0.5px solid rgba(255,255,255,0.3)", backgroundColor:"#1c2127"},">");
