@@ -116,6 +116,7 @@ window.onload = function() {
 	tl_mother.add(NINJA_FUNCTIONS.solution());
 	tl_mother.addLabel("solution");
 	tl_mother.add(NINJA_FUNCTIONS.logoReappears());
+	tl_mother.addLabel("logoReappears");
 	// tl_mother.add(NINJA_FUNCTIONS.meetAnna);
 	// tl_mother.add(NINJA_FUNCTIONS.annasLeaders);
 	// tl_mother.add(NINJA_FUNCTIONS.ifOnly);
