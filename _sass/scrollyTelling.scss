@@ -141,17 +141,22 @@
         }
     }
     main {
+        // z-index:1500;
+        // border: 10px solid red;
         background-color: transparent;
         section {
+            // height: calc(100vh - 65px);
             height: 100vh;
+            border-top: 1px solid red;
+            position: relative;
         }
         // Custom timing for specific sections
-        #whoDoYouImpact {
-            height: 150vh;
+        #yourLegacy, #africaProblemEnding {
+            height: 200vh;
         }
-        #solution {
-            height: 130vh;
-        }
+        // #solution {
+        //     height: 130vh;
+        // }
     }
 }
 // END scrollytelling wrap

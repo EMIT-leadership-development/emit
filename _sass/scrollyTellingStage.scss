@@ -113,7 +113,9 @@ $textContainerWidth: 800px;
             visibility: hidden;
             width: $animatedLogoWidth;
             svg {
+                width: 100%;
                 #logoBorder {
+                    fill: $sphere1BG;
                     stroke: $brand-color;
                     stroke-width: 3px;
                 }
@@ -341,9 +343,6 @@ $textContainerWidth: 800px;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            h2 {
-                visibility: hidden;
-            }
             .yourPeople {
                 position: absolute;
                 width: 100%;
