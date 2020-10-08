@@ -117,8 +117,10 @@ window.onload = function() {
 	tl_mother.addLabel("solution");
 	tl_mother.add(NINJA_FUNCTIONS.logoReappears());
 	tl_mother.addLabel("logoReappears");
-	// tl_mother.add(NINJA_FUNCTIONS.meetAnna);
-	// tl_mother.add(NINJA_FUNCTIONS.annasLeaders);
+	tl_mother.add(NINJA_FUNCTIONS.meetAnna());
+	tl_mother.addLabel("meetAnna");
+	tl_mother.add(NINJA_FUNCTIONS.annasLeaders());
+	tl_mother.addLabel("annasLeaders");
 	// tl_mother.add(NINJA_FUNCTIONS.ifOnly);
 	// tl_mother.add(NINJA_FUNCTIONS.imagineIntro);
 	// tl_mother.add(NINJA_FUNCTIONS.imagine);
@@ -308,35 +310,25 @@ var NINJA_FUNCTIONS = {
 		tl.to('#text_solution',{duration:1, x:300, autoAlpha:0, delay:3});
 		tl.to('#animatedLogoWrap',{duration:1, x:0, y:0, scale:1, autoAlpha:1},"<");
 		tl.to('#spheresWrap', {duration:1, x:0, y:0, scale:0.5, autoAlpha:1},"<");
-		tl.to("#svg_body", {duration:0.6, morphSVG:"#svg_body", ease:"expo.out"},">");
-		tl.to("#svg_shadow", {duration:0.6, morphSVG:"#svg_shadow", ease:"expo.out"},"<");
+		// tl.to("#svg_body", {duration:0.6, morphSVG:"#svg_body", ease:"expo.out"},">");
+		// tl.to("#svg_shadow", {duration:0.6, morphSVG:"#svg_shadow", ease:"expo.out"},"<");
 
 		return tl;
 	},
 	// --------MEET ANNA -------------------------------------
 	meetAnna: function() {
 		var tl = gsap.timeline({
-			defaults:{duration:1},
-			scrollTrigger: {
-				id: "Meet Anna",
-				// markers: true,
-				trigger: "#meetAnna",
-				start: "top bottom",
-				end: "bottom bottom",
-				toggleActions: "play complete reverse reverse",
-			}
+			totalDuration: 5
 		});
 		// Animate little logo
 		// tl.to('#svg-impactRingCircle',{duration:0.3, autoAlpha:0});
-		tl.to("#svg_body", {duration:0.4, morphSVG:"#svg_body-2", ease:"expo.out"},"<");
-		tl.to("#svg_shadow", {duration:0.4, morphSVG:"#svg_shadow-2", ease:"expo.out"},"<");
-		tl.to('.you', {duration:0.4, x:-130, ease:"expo.out"},"<");
+		tl.to("#svg_body", {duration:1, morphSVG:"#svg_body", ease:"expo.out"});
+		tl.to("#svg_shadow", {duration:1, morphSVG:"#svg_shadow", ease:"expo.out"},"<");
+		tl.to('#animatedLogoWrap', {duration:1, x:-130, ease:"expo.out"},"<");
 		// Show annaAtTheCentre
-		tl.fromTo('#annaAtTheCenter',{scale:0, autoAlpha:0}, {duration:0.6, ease:"expo.out", scale:1.5, autoAlpha:1},'<');
+		tl.fromTo('#annaAtTheCenter',{scale:0, autoAlpha:0}, {duration:1.5, ease:"expo.out", scale:1.5, autoAlpha:1},'<');
 		// ENTRANCE THE TEXT
-		tl.from('#text_meetAnna',{duration:1, scale:0, autoAlpha:0},">");
-		// EXIT THE MEET ANNA TEXT
-		tl.to('#text_meetAnna',{duration:1, x:1000, scale:0, delay:2, autoAlpha:0},">");
+		tl.from('#text_meetAnna',{duration:3.5, scale:0, autoAlpha:0},">");
 		return tl;
 
 	},
@@ -344,26 +336,21 @@ var NINJA_FUNCTIONS = {
 	// --------ANNA'S LEADERS : ANIMATED CURVED TITLES IN SPHERES-------------------------------------
 	annasLeaders: function() {
 		var tl = gsap.timeline({
-			defaults:{duration:1},
-			scrollTrigger: {
-				id: "Annas Leaders",
-				// markers: true,
-				trigger: "#annasleaders",
-				start: "top bottom",
-				end: "bottom bottom",
-				toggleActions: "play complete reverse reverse",
-			}
+			totalDuration: 10
 		});
+		// EXIT THE MEET ANNA TEXT
+		tl.to('#text_meetAnna',{duration:3.5, x:1000, scale:0, delay:2, autoAlpha:0},">");
+
 		// Set starting values for this scene
-		tl.set('.sphere3, .sphere2, .sphere1',{autoAlpha:0, scale:1.8, backgroundColor:"rgba(0,0,0,0.7)", border:"1px solid rgba(255,255,255,0.2)", immediateRender:false});
-		tl.set('.yourImpactBackgrounds',{x:0, y:0, scale:1, autoAlpha:1, transformOrigin:"50% 50%", immediateRender:false});
+		tl.set('#spheres .sphere3, #spheres .sphere2, #spheres .sphere1',{autoAlpha:0, scale:1.8, backgroundColor:"rgba(0,0,0,0.7)", border:"1px solid rgba(255,255,255,0.2)", immediateRender:false});
+		tl.set('#spheresWrap',{x:0, y:0, scale:1, autoAlpha:1, transformOrigin:"50% 50%", immediateRender:false});
 		tl.set('.annasLeaders',{scale:0.95});
 		tl.to('#annaAtTheCenter',{duration:2, scale:1},"<");
 		// SPHERES
 		
-		tl.to('.sphere1', {duration:2, scale:1, autoAlpha:1, border:"0.5px solid rgba(255,255,255,0.3)", backgroundColor:"#1c2127"},"<");
-		tl.to('.sphere2', {duration:2, scale:1, autoAlpha:1, border:"0.5px solid rgba(255,255,255,0.3)", backgroundColor:"#1c2127"},">");
-		tl.to('.sphere3', {duration:2, scale:1, autoAlpha:1, border:"0.5px solid rgba(255,255,255,0.3)", backgroundColor:"#1c2127"},">");
+		tl.to('#spheres .sphere1', {duration:2, scale:1, autoAlpha:1, border:"0.5px solid rgba(255,255,255,0.3)", backgroundColor:"#1c2127"},"<");
+		tl.to('#spheres .sphere2', {duration:2, scale:1, autoAlpha:1, border:"0.5px solid rgba(255,255,255,0.3)", backgroundColor:"#1c2127"},">");
+		tl.to('#spheres .sphere3', {duration:2, scale:1, autoAlpha:1, border:"0.5px solid rgba(255,255,255,0.3)", backgroundColor:"#1c2127"},">");
 
 		// Reveal Leader Titles
 		tl.from('.annasLeaders',{autoAlpha:0, ease:"linear", stagger:2, rotate:-30, transformOrigin:"50% 50%"},'<-4');
