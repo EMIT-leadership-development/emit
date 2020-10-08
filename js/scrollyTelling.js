@@ -121,7 +121,8 @@ window.onload = function() {
 	tl_mother.addLabel("meetAnna");
 	tl_mother.add(NINJA_FUNCTIONS.annasLeaders());
 	tl_mother.addLabel("annasLeaders");
-	// tl_mother.add(NINJA_FUNCTIONS.ifOnly);
+	tl_mother.add(NINJA_FUNCTIONS.ifOnly());
+	tl_mother.addLabel("ifOnly");
 	// tl_mother.add(NINJA_FUNCTIONS.imagineIntro);
 	// tl_mother.add(NINJA_FUNCTIONS.imagine);
 	// tl_mother.add(NINJA_FUNCTIONS.joseph);
@@ -340,18 +341,15 @@ var NINJA_FUNCTIONS = {
 		});
 		// EXIT THE MEET ANNA TEXT
 		tl.to('#text_meetAnna',{duration:3.5, x:1000, scale:0, delay:2, autoAlpha:0},">");
-
 		// Set starting values for this scene
 		tl.set('#spheres .sphere3, #spheres .sphere2, #spheres .sphere1',{autoAlpha:0, scale:1.8, backgroundColor:"rgba(0,0,0,0.7)", border:"1px solid rgba(255,255,255,0.2)", immediateRender:false});
 		tl.set('#spheresWrap',{x:0, y:0, scale:1, autoAlpha:1, transformOrigin:"50% 50%", immediateRender:false});
 		tl.set('.annasLeaders',{scale:0.95});
 		tl.to('#annaAtTheCenter',{duration:2, scale:1},"<");
 		// SPHERES
-		
 		tl.to('#spheres .sphere1', {duration:2, scale:1, autoAlpha:1, border:"0.5px solid rgba(255,255,255,0.3)", backgroundColor:"#1c2127"},"<");
 		tl.to('#spheres .sphere2', {duration:2, scale:1, autoAlpha:1, border:"0.5px solid rgba(255,255,255,0.3)", backgroundColor:"#1c2127"},">");
 		tl.to('#spheres .sphere3', {duration:2, scale:1, autoAlpha:1, border:"0.5px solid rgba(255,255,255,0.3)", backgroundColor:"#1c2127"},">");
-
 		// Reveal Leader Titles
 		tl.from('.annasLeaders',{autoAlpha:0, ease:"linear", stagger:2, rotate:-30, transformOrigin:"50% 50%"},'<-4');
 
@@ -361,20 +359,9 @@ var NINJA_FUNCTIONS = {
 	// --------IF WE CAN IMPACT HER LEADERS WE CAN CHANGE HER LIFE -------------------------------------
 	ifOnly: function() {
 		var tl = gsap.timeline({
-			defaults:{duration:1},
-			scrollTrigger: {
-				id: "If Only",
-				// markers: true,
-				trigger: "#ifOnly",
-				start: "top bottom",
-				endTrigger: "#imagineIntro",
-				end: "center center",
-				toggleActions: "play complete reverse reverse",
-			}
+			totalDuration: 5
 		});
-		// ENTRANCE THE TEXT
 		tl.from('#text_ifOnly', {duration:1, scale:0, delay:1, autoAlpha:0});
-		tl.to('#text_ifOnly', {duration:1, scale:0, autoAlpha:0, delay:3},">");
 		return tl;
 	},
 
@@ -391,6 +378,7 @@ var NINJA_FUNCTIONS = {
 				toggleActions: "play complete reverse reverse",
 			}
 		});
+		tl.to('#text_ifOnly', {duration:1, scale:0, autoAlpha:0, delay:3},">");
 		// ENTRANCE THE TEXT
 		tl.from('#imagineIntro .sectionHeading span ', {autoAlpha:0, y:"300", stagger:"0.2"});
 		return tl;
