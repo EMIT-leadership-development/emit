@@ -5,9 +5,109 @@ window.onload = function() {
 	topnav();
 	storyNav();
 	pinDonation();
-	yourStoryTitle();
-	exitHeading();
 
+	//--------MOTHER OF ALL TIMELINES : MAIN SCROLLING ANIMATION-------------------------------------
+	var tl_mother = gsap.timeline({});
+	tl_mother.addLabel("hero");
+	tl_mother.add(NINJA_FUNCTIONS.hero());
+	
+	
+	tl_mother.add(NINJA_FUNCTIONS.yourStoryTitle());
+	tl_mother.addLabel("yourStoryTitle");
+	
+	tl_mother.add(NINJA_FUNCTIONS.yourImpact());
+	tl_mother.addLabel("yourImpact");
+	
+	tl_mother.add(NINJA_FUNCTIONS.whoDoYouImpactEntrance());
+	tl_mother.addLabel("whoDoYouImpactEntrance");
+	
+	tl_mother.add(NINJA_FUNCTIONS.whoDoYouImpactExit());
+	tl_mother.addLabel("whoDoYouImpactExit");
+	
+	tl_mother.add(NINJA_FUNCTIONS.yourPeopleImpact());
+	tl_mother.addLabel("yourPeopleImpact");
+	
+	tl_mother.add(NINJA_FUNCTIONS.yourLegacy());
+	tl_mother.addLabel("yourLegacy");
+	
+	tl_mother.add(NINJA_FUNCTIONS.zoomInToAfrica());
+	tl_mother.addLabel("zoomInToAfrica");
+	
+	tl_mother.add(NINJA_FUNCTIONS.africaProblem());
+	tl_mother.addLabel("africaProblem");
+	
+	tl_mother.add(NINJA_FUNCTIONS.africaProblemEnding());
+	tl_mother.addLabel("africaProblemEnding");
+	
+	tl_mother.add(NINJA_FUNCTIONS.africanLeaders());
+	tl_mother.addLabel("africanLeaders");
+	
+	tl_mother.add(NINJA_FUNCTIONS.solution());
+	tl_mother.addLabel("solution");
+	
+	tl_mother.add(NINJA_FUNCTIONS.logoReappears());
+	tl_mother.addLabel("logoReappears");
+	
+	tl_mother.add(NINJA_FUNCTIONS.meetAnna());
+	tl_mother.addLabel("meetAnna");
+	
+	tl_mother.add(NINJA_FUNCTIONS.annasLeaders());
+	tl_mother.addLabel("annasLeaders");
+	
+	tl_mother.add(NINJA_FUNCTIONS.ifOnly());
+	tl_mother.addLabel("ifOnly");
+
+	tl_mother.add(NINJA_FUNCTIONS.imagineIntro());
+	tl_mother.addLabel("imagineIntro");
+
+
+	// tl_mother.add(NINJA_FUNCTIONS.imagine);
+
+	// tl_mother.add(NINJA_FUNCTIONS.joseph);
+	// tl_mother.add(NINJA_FUNCTIONS.josephOnTenIntro);
+	// tl_mother.add(NINJA_FUNCTIONS.josephOnTen);
+	// tl_mother.add(NINJA_FUNCTIONS.josephTrainingIntro);
+	// tl_mother.add(NINJA_FUNCTIONS.josephTraining);
+	// tl_mother.add(NINJA_FUNCTIONS.josephEquipped);
+	// tl_mother.add(NINJA_FUNCTIONS.josephTransformIntro);
+	// tl_mother.add(NINJA_FUNCTIONS.josephTransformation);
+	// tl_mother.add(NINJA_FUNCTIONS.emitImpact);
+	// tl_mother.add(NINJA_FUNCTIONS.waitingList);
+	// tl_mother.add(NINJA_FUNCTIONS.makeADifference);
+	// tl_mother.add(NINJA_FUNCTIONS.smilingAnna);
+	// tl_mother.add(NINJA_FUNCTIONS.donate);
+
+	const myST = ScrollTrigger.create({
+		animation: tl_mother,
+		trigger: "main.content",
+		start: "top bottom",
+		endTrigger: "main.content",
+		end: "bottom bottom",
+		toggleActions: "play complete reverse reverse",
+		scrub: true
+	});
+	console.log("LABELS", tl_mother.labels);
+	console.log("DURATION", tl_mother.totalDuration());
+
+	//--------STORY NAV : LEFT LINKS THAT NAVIGATE THE HOME PAGE STORY -------------------------------------
+	function storyNav() {
+		gsap.utils.toArray(".storyNav li a").forEach(function(a) {
+			a.addEventListener("click", function(e) {
+				e.preventDefault();
+				var label = e.target.getAttribute("data-jump")
+				if (label) {
+					const percent = tl_mother.labels[label] / tl_mother.totalDuration();
+					const scrollPos = myST.start + (myST.end - myST.start) * percent;
+					gsap.to(window, {duration: 1, scrollTo: scrollPos});
+					console.log("START", myST.start);
+					console.log("END", myST.end);
+				} else {
+					const section = document.querySelector(a.getAttribute("href"));
+					gsap.to(window, {scrollTo: section});
+				}
+			});
+		});
+	}
 	//--------STARTUP: ANIMATIONS ON PAGE LOAD -------------------------------------
 	function startup() {
 		var tl = gsap.timeline({
@@ -64,110 +164,6 @@ window.onload = function() {
 		tl.to('.ctaTitle', {duration:1, autoAlpha:0},"<");
 		return tl;
 	}
-	// --------YOUR STORY TITLE: WHO YOU ARE, YOUR CHOICES... -----------------------------------
-	function yourStoryTitle() {
-		var tl = gsap.timeline({
-			scrollTrigger: {
-				trigger: "#yourStoryTitle",
-				start: "top bottom",
-				end: "center center",
-				toggleActions: "play complete reverse reverse",
-				scrub: 1
-			}
-		});
-		tl.from('#yourStoryTitle .sectionHeading span ', {autoAlpha:0, y:"300", stagger:"0.05"},">");
-		return tl;
-	}
-	// --------YOUR STORY TITLE: WHO YOU ARE, YOUR CHOICES... -----------------------------------
-	function exitHeading() {
-		var tl = gsap.timeline({
-			scrollTrigger: {
-				trigger: ".introHeadline",
-				start: "top center",
-				end: "center top",
-				toggleActions: "play complete reverse reverse",
-				scrub: 1
-			}
-		});
-		tl.to('.introHeadline h1', {duration: 10, autoAlpha:0, rotateX:10},"<");
-		return tl;
-	}
-
-	//--------MOTHER OF ALL TIMELINES : MAIN SCROLLING SECTION-------------------------------------
-	var tl_mother = gsap.timeline({});
-	tl_mother.add(NINJA_FUNCTIONS.yourImpact());
-	tl_mother.addLabel("yourImpact");
-	tl_mother.add(NINJA_FUNCTIONS.whoDoYouImpactEntrance());
-	tl_mother.addLabel("whoDoYouImpactEntrance");
-	tl_mother.add(NINJA_FUNCTIONS.whoDoYouImpactExit(),"whoDoYouImpactExit");
-	tl_mother.addLabel("whoDoYouImpactExit");
-	tl_mother.add(NINJA_FUNCTIONS.yourPeopleImpact());
-	tl_mother.addLabel("yourPeopleImpact");
-	tl_mother.add(NINJA_FUNCTIONS.yourLegacy(),"yourLegacy");
-	tl_mother.addLabel("yourLegacy");
-	tl_mother.add(NINJA_FUNCTIONS.zoomInToAfrica());
-	tl_mother.addLabel("zoomInToAfrica");
-	tl_mother.add(NINJA_FUNCTIONS.africaProblem());
-	tl_mother.addLabel("africaProblem");
-	tl_mother.add(NINJA_FUNCTIONS.africaProblemEnding());
-	tl_mother.addLabel("africaProblemEnding");
-	tl_mother.add(NINJA_FUNCTIONS.africanLeaders());
-	tl_mother.addLabel("africanLeaders");
-	tl_mother.add(NINJA_FUNCTIONS.solution());
-	tl_mother.addLabel("solution");
-	tl_mother.add(NINJA_FUNCTIONS.logoReappears());
-	tl_mother.addLabel("logoReappears");
-	tl_mother.add(NINJA_FUNCTIONS.meetAnna());
-	tl_mother.addLabel("meetAnna");
-	tl_mother.add(NINJA_FUNCTIONS.annasLeaders());
-	tl_mother.addLabel("annasLeaders");
-	tl_mother.add(NINJA_FUNCTIONS.ifOnly());
-	tl_mother.addLabel("ifOnly");
-	// tl_mother.add(NINJA_FUNCTIONS.imagineIntro);
-	// tl_mother.add(NINJA_FUNCTIONS.imagine);
-	// tl_mother.add(NINJA_FUNCTIONS.joseph);
-	// tl_mother.add(NINJA_FUNCTIONS.josephOnTenIntro);
-	// tl_mother.add(NINJA_FUNCTIONS.josephOnTen);
-	// tl_mother.add(NINJA_FUNCTIONS.josephTrainingIntro);
-	// tl_mother.add(NINJA_FUNCTIONS.josephTraining);
-	// tl_mother.add(NINJA_FUNCTIONS.josephEquipped);
-	// tl_mother.add(NINJA_FUNCTIONS.josephTransformIntro);
-	// tl_mother.add(NINJA_FUNCTIONS.josephTransformation);
-	// tl_mother.add(NINJA_FUNCTIONS.emitImpact);
-	// tl_mother.add(NINJA_FUNCTIONS.waitingList);
-	// tl_mother.add(NINJA_FUNCTIONS.makeADifference);
-	// tl_mother.add(NINJA_FUNCTIONS.smilingAnna);
-	// tl_mother.add(NINJA_FUNCTIONS.donate);
-
-	const myST = ScrollTrigger.create({
-		animation: tl_mother,
-		trigger: "#yourImpact",
-		start: "top bottom",
-		endTrigger: "main#content",
-		end: "bottom bottom",
-		toggleActions: "play complete reverse reverse",
-		scrub: 1
-	});
-
-	//--------STORY NAV : LEFT LINKS THAT NAVIGATE THE HOME PAGE STORY -------------------------------------
-	function storyNav() {
-		gsap.utils.toArray(".storyNav li a").forEach(function(a) {
-			a.addEventListener("click", function(e) {
-				e.preventDefault();
-				var label = e.target.getAttribute("data-jump")
-				if (label) {
-					console.log
-					const percent = tl_mother.labels[label] / tl_mother.totalDuration();
-					const scrollPos = myST.start + (myST.end - myST.start) * percent;
-					console.log(scrollPos);
-					gsap.to(window, {duration: 1, scrollTo: scrollPos});
-				} else {
-					const section = document.querySelector(a.getAttribute("href"));
-					gsap.to(window, {scrollTo: section});
-				}
-			});
-		});
-	}
 }
 
 // VARIABLES COPIED FROM SCSS pre.scss
@@ -191,43 +187,72 @@ var $brand = "#abe116",
 
 // ALL THE ANIMATION NINJA_FUNCTIONS IN A NAMESPACE
 var NINJA_FUNCTIONS = {
+	// -,-------HERO -----------------------------------
+	hero: function() {
+		var tl = gsap.timeline({
+			// scrollTrigger: {
+			// 	trigger: ".introHeadline",
+			// 	start: "top center",
+			// 	end: "center top",
+			// 	toggleActions: "play complete reverse reverse",
+			// 	scrub: 1
+			// }
+		});
+		tl.to('.introHeadline h1', {duration:5, autoAlpha:0, rotateX:10}).duration(5);
+		return tl;
+	},
+	// --------YOUR STORY TITLE: WHO YOU ARE, YOUR CHOICES... -----------------------------------
+	yourStoryTitle: function() {
+		var tl = gsap.timeline({
+			// scrollTrigger: {
+			// 	trigger: "#yourStoryTitle",
+			// 	start: "top bottom",
+			// 	end: "center center",
+			// 	toggleActions: "play complete reverse reverse",
+			// 	scrub: 1
+			// }
+		});
+		// 1.5
+		tl.from('#yourStoryTitle .sectionHeading span ', {autoAlpha:0, y:"300", stagger:"0.1", ease:"Sine.easeOut", delay:2});
+		tl.totalDuration(5);
+		return tl;
+	},
 	// --------YOUR IMPACT - ENTER THE SPHERES AND LOGO -------------------------------------
 	yourImpact: function () {
 		var tl = gsap.timeline({
-			totalDuration: 5
 		});
-		tl.fromTo('.sphere, #animatedLogoWrap', {scale:0, autoAlpha:0, x:0, y:0}, {duration: 5, stagger:{amount:5}, scale:1, autoAlpha:1, transformOrigin:"50% 50%"});
+		tl.fromTo('.sphere, #animatedLogoWrap', {scale:0, autoAlpha:0, x:0, y:0}, {stagger:0.1, scale:1, autoAlpha:1, transformOrigin:"50% 50%"}).duration(5);
+		tl.totalDuration(5);
 		return tl;
 	},
 	// --------WHO ARE THE PEOPLE YOU IMPACT -------------------------------------
 	whoDoYouImpactEntrance: function () {
 		var tl = gsap.timeline({
-			totalDuration: 5
 		});
 		tl.from('#text_yourImpact',{duration:5, scale:0, autoAlpha:0},">");
+		tl.totalDuration(5);
 		return tl;
 	},
 	// --------WHO ARE THE PEOPLE YOU IMPACT -------------------------------------
 	whoDoYouImpactExit: function () {
 		var tl = gsap.timeline({
-			totalDuration: 5
 		});
 		tl.to('#text_yourImpact', {duration:3, delay: 2, scale:0, autoAlpha:0},">");
+		tl.totalDuration(5);
 		return tl;
 	},
 	// --------THE PEOPLE YOU IMPACT: SPOUSE, FAMILY, COMMUNITY...THE CURVED TEXT IN SPHERES -------------------------------------
 	yourPeopleImpact: function() {
 		var tl = gsap.timeline({
-			totalDuration: 5
 		});
 		tl.from('.yourPeople',{autoAlpha:0, ease:"linear", stagger:{amount:5}, rotate:-30, transformOrigin:"50% 50%"});
-		tl.from('.impactTitle',{duration:2, autoAlpha:0, x:-20},"<")
+		tl.from('.impactTitle',{duration:2, autoAlpha:0, x:-20},"<");
+		tl.totalDuration(5);
 		return tl;
 	},
 	// --------YOUR LEGACY ANIMATION: SPINNING PLANET-------------------------------------
 	yourLegacy: function() {
 		var tl = gsap.timeline({
-			totalDuration: 10
 		});
 		// 1
 		tl.to('#spinningPlanet', {duration:1, autoAlpha:1});
@@ -246,25 +271,28 @@ var NINJA_FUNCTIONS = {
 		tl.from('.circle2',{duration:2, autoAlpha: 0, y:-10, transformOrigin:"50% 50%"},"<4");
 		tl.from('.circleShadow',{duration:3, autoAlpha: 0, y:-20, transformOrigin:"50% 50%"},"<3");
 
+		// tl.totalDuration(10);
+		tl.totalDuration(5);
+
 		return tl;
 	},
 	// --------ZOOM IN TO AFRICA ON MAP -------------------------------------
 	zoomInToAfrica: function() {
 		var tl = gsap.timeline({
-			totalDuration: 5
 		});
 		tl.to('#spinningPlanet', {duration:3, autoAlpha:0});
 		tl.fromTo('#sadAnnaInAfrica', {scale:0.43, x:5, y:35, autoAlpha:0, transformOrigin: "50% 50%"}, {duration:2, scale:1, autoAlpha:1, transformOrigin: "50% 50%"},"<");
 		tl.to('#annaInAfrica', {duration:2, backgroundColor:$brandContrastLight2},"<");
 		tl.to('#animatedLogoWrap', {duration:1, autoAlpha:0},"<");
+		tl.totalDuration(5);
 		return tl;
 	},
 	// --------WHO ARE THE PEOPLE YOU IMPACT -------------------------------------
 	africaProblem: function () {
 		var tl = gsap.timeline({
-			totalDuration: 5
 		});
 		tl.from('#text_africaProblem',{duration:5, scale:0, autoAlpha:0},">");
+		tl.totalDuration(5);
 		return tl;
 	},
 	// --------THE AFRICA PROBLEM ENDING - WHAMBAM TEXT -------------------------------------
@@ -278,6 +306,8 @@ var NINJA_FUNCTIONS = {
 		tl.from('#text_africaProblem5',{duration:1.5, scale:0, autoAlpha:0},">");
 		tl.from('#text_africaProblem6',{duration:1.5, scale:0, autoAlpha:0},">");
 		tl.to('.whamBam', {duration:0.3, scale:0, autoAlpha:0},">");
+		// tl.totalDuration(10);
+		tl.totalDuration(5);
 		return tl;
 	},
 
@@ -286,41 +316,38 @@ var NINJA_FUNCTIONS = {
 		var container = document.querySelector('#clusterOfLeaders'),
 			maxY = container.getBoundingClientRect().height /2,
 			maxX = container.getBoundingClientRect().width /2;
-		console.log(maxY, "by", maxX);
 		var tl = gsap.timeline({
-			totalDuration: 5
 		});
 		tl.to('#annaInAfrica', {duration:5, background:$brandContrastDarkest});
 		tl.to('#sadAnnaInAfrica', {duration:5, autoAlpha:0},"<")
 		tl.fromTo('.singleLeader',{autoAlpha:0, scale:0}, {stagger:0.1, autoAlpha:1, scale:0.8, ease:"bounce-out", x:"random(-" + maxX + ", " + maxX + ")", y:"random(-" + maxY + ", " + maxY + ")", transformOrigin:"center"},"<");
+		tl.totalDuration(5);
 		return tl;
 	},
 
 	// --------SOLUTION: EMIT BELIEVES TEXT-------------------------------------
 	solution: function() {
 		var tl = gsap.timeline({
-			totalDuration: 1
 		});
 		tl.from('#text_solution',{duration:1, scale:0, autoAlpha:0});
+		tl.totalDuration(5);
 		return tl;
 	},
 	// --------LOGO REAPPEARS-------------------------------------
 	logoReappears: function() {
 		var tl = gsap.timeline({
-			totalDuration: 8
 		});
 		tl.to('#text_solution',{duration:1, x:300, autoAlpha:0, delay:3});
 		tl.to('#animatedLogoWrap',{duration:1, x:0, y:0, scale:1, autoAlpha:1},"<");
 		tl.to('#spheresWrap', {duration:1, x:0, y:0, scale:0.5, autoAlpha:1},"<");
 		// tl.to("#svg_body", {duration:0.6, morphSVG:"#svg_body", ease:"expo.out"},">");
 		// tl.to("#svg_shadow", {duration:0.6, morphSVG:"#svg_shadow", ease:"expo.out"},"<");
-
+		tl.totalDuration(5);
 		return tl;
 	},
 	// --------MEET ANNA -------------------------------------
 	meetAnna: function() {
 		var tl = gsap.timeline({
-			totalDuration: 5
 		});
 		// Animate little logo
 		// tl.to('#svg-impactRingCircle',{duration:0.3, autoAlpha:0});
@@ -331,6 +358,7 @@ var NINJA_FUNCTIONS = {
 		tl.fromTo('#annaAtTheCenter',{scale:0, autoAlpha:0}, {duration:1.5, ease:"expo.out", scale:1.5, autoAlpha:1},'<');
 		// ENTRANCE THE TEXT
 		tl.from('#text_meetAnna',{duration:3.5, scale:0, autoAlpha:0},">");
+		tl.totalDuration(5);
 		return tl;
 
 	},
@@ -338,7 +366,6 @@ var NINJA_FUNCTIONS = {
 	// --------ANNA'S LEADERS : ANIMATED CURVED TITLES IN SPHERES-------------------------------------
 	annasLeaders: function() {
 		var tl = gsap.timeline({
-			totalDuration: 10
 		});
 		// EXIT THE MEET ANNA TEXT
 		tl.to('#text_meetAnna',{duration:3.5, x:1000, scale:0, delay:2, autoAlpha:0},">");
@@ -353,35 +380,37 @@ var NINJA_FUNCTIONS = {
 		tl.to('#spheres .sphere3', {duration:2, scale:1, autoAlpha:1, border:"0.5px solid rgba(255,255,255,0.3)", backgroundColor:"#1c2127"},">");
 		// Reveal Leader Titles
 		tl.from('.annasLeaders',{autoAlpha:0, ease:"linear", stagger:2, rotate:-30, transformOrigin:"50% 50%"},'<-4');
-
+		// tl.totalDuration(10);
+		tl.totalDuration(5);
 		return tl;
 	}, //END ANNA'S STORY
 
 	// --------IF WE CAN IMPACT HER LEADERS WE CAN CHANGE HER LIFE -------------------------------------
 	ifOnly: function() {
 		var tl = gsap.timeline({
-			totalDuration: 5
 		});
 		tl.from('#text_ifOnly', {duration:1, scale:0, delay:1, autoAlpha:0});
+		tl.totalDuration(5);
 		return tl;
 	},
 
 	// --------IMAGINE - INTRO (TEXT)-------------------------------------
 	imagineIntro: function() {
 		var tl = gsap.timeline({
-			defaults:{duration:1},
-			scrollTrigger: {
-				id: "Imagine Intro",
-				// markers: true,
-				trigger: "#imagineIntro",
-				start: "top bottom",
-				end: "bottom bottom",
-				toggleActions: "play complete reverse reverse",
-			}
+			// defaults:{duration:1},
+			// scrollTrigger: {
+			// 	id: "Imagine Intro",
+			// 	// markers: true,
+			// 	trigger: "#imagineIntro",
+			// 	start: "top bottom",
+			// 	end: "bottom bottom",
+			// 	toggleActions: "play complete reverse reverse",
+			// }
 		});
 		tl.to('#text_ifOnly', {duration:1, scale:0, autoAlpha:0, delay:3},">");
 		// ENTRANCE THE TEXT
 		tl.from('#imagineIntro .sectionHeading span ', {autoAlpha:0, y:"300", stagger:"0.2"});
+		tl.totalDuration(5);
 		return tl;
 	},
 

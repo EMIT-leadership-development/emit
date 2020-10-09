@@ -10,6 +10,7 @@ $glow3Width: 800px;
 $textContainerWidth: 800px;
 
 #theStage {
+    pointer-events: none;
     position: fixed;
     top: 0;
     left: 0;

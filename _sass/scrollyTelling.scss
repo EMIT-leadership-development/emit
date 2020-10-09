@@ -21,8 +21,6 @@
         justify-content: center;
         align-items: center;
         height: 100%;
-        // Turn off pointer events by default - turn then on for specific sections
-        pointer-events: none;
         h1, h2, p {
             font-size: 2em;
             font-weight: 300;
@@ -40,6 +38,9 @@
         }
     }
     .mainNavigation {
+        position: fixed;
+        top: 0;
+        left: 0;
         background-color: transparent;
         background-image: none;
         .topLevel {
@@ -51,7 +52,7 @@
     }
     .storyNav {
         position: fixed;
-        z-index: 999;
+        z-index: 1500;
         left: 0;
         top:0;
         bottom: 0;
@@ -75,7 +76,7 @@
     .hero {
         box-sizing: border-box;
         height: 100vh;
-        margin-top: -100px;
+        // margin-top: -100px;
         overflow: hidden;
         padding: 0;
         video{
@@ -141,7 +142,8 @@
         }
     }
     main {
-        // z-index:1500;
+        // z-index:1250;
+        // top: -100px;
         // border: 10px solid red;
         background-color: transparent;
         section {
@@ -149,10 +151,11 @@
             height: 100vh;
             border-top: 1px solid red;
             position: relative;
+            box-sizing: border-box;
         }
         // Custom timing for specific sections
         #yourLegacy, #africaProblemEnding, #annasLeaders {
-            height: 200vh;
+            // height: 200vh;
         }
         // #solution {
         //     height: 130vh;
