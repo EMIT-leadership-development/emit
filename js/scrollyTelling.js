@@ -84,7 +84,7 @@ window.onload = function() {
 		endTrigger: "main.content",
 		end: "bottom bottom",
 		toggleActions: "play complete reverse reverse",
-		scrub: true
+		scrub: 1
 	});
 	// console.log("LABELS", tl_mother.labels);
 	// console.log("DURATION", tl_mother.totalDuration());
