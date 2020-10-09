@@ -156,6 +156,7 @@ window.onload = function() {
 				e.preventDefault();
 				var label = e.target.getAttribute("data-jump")
 				if (label) {
+					console.log
 					const percent = tl_mother.labels[label] / tl_mother.totalDuration();
 					const scrollPos = myST.start + (myST.end - myST.start) * percent;
 					console.log(scrollPos);
