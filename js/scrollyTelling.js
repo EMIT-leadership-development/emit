@@ -8,10 +8,6 @@ window.onload = function() {
 
 	//--------MOTHER OF ALL TIMELINES : MAIN SCROLLING ANIMATION-------------------------------------
 	var tl_mother = gsap.timeline({});
-	tl_mother.addLabel("hero");
-	tl_mother.add(NINJA_FUNCTIONS.hero());
-	
-	
 	tl_mother.add(NINJA_FUNCTIONS.yourStoryTitle());
 	tl_mother.addLabel("yourStoryTitle");
 	
@@ -79,15 +75,15 @@ window.onload = function() {
 
 	const myST = ScrollTrigger.create({
 		animation: tl_mother,
-		trigger: "main.content",
+		trigger: "#yourStoryTitle",
 		start: "top bottom",
 		endTrigger: "main.content",
 		end: "bottom bottom",
 		toggleActions: "play complete reverse reverse",
 		scrub: 1
 	});
-	// console.log("LABELS", tl_mother.labels);
-	// console.log("DURATION", tl_mother.totalDuration());
+	console.log("LABELS", tl_mother.labels);
+	console.log("DURATION", tl_mother.totalDuration());
 
 	//--------STORY NAV : LEFT LINKS THAT NAVIGATE THE HOME PAGE STORY -------------------------------------
 	function storyNav() {
@@ -185,20 +181,13 @@ var $brand = "#abe116",
 
 // ALL THE ANIMATION NINJA_FUNCTIONS IN A NAMESPACE
 var NINJA_FUNCTIONS = {
-	// -,-------HERO -----------------------------------
-	hero: function() {
-		var tl = gsap.timeline({
-		});
-		tl.to('.introHeadline h1', {duration:5, autoAlpha:0, rotateX:10});
-		tl.totalDuration(5);
-		return tl;
-	},
 	// --------YOUR STORY TITLE: WHO YOU ARE, YOUR CHOICES... -----------------------------------
 	yourStoryTitle: function() {
 		var tl = gsap.timeline({
 		});
 		// 1.5
-		tl.from('#yourStoryTitle .sectionHeading span ', {autoAlpha:0, y:"300", stagger:"0.1", ease:"Sine.easeOut", delay:1});
+		tl.fromTo('.introHeadline h1',{autoAlpha:1, rotateX:0}, {duration:5, autoAlpha:0, rotateX:10});
+		tl.from('#yourStoryTitle .sectionHeading span', {autoAlpha:0, y:"300", stagger:"0.1", ease:"Sine.easeOut"},"<+4");
 		tl.totalDuration(5);
 		return tl;
 	},
