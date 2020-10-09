@@ -86,8 +86,8 @@ window.onload = function() {
 		toggleActions: "play complete reverse reverse",
 		scrub: true
 	});
-	console.log("LABELS", tl_mother.labels);
-	console.log("DURATION", tl_mother.totalDuration());
+	// console.log("LABELS", tl_mother.labels);
+	// console.log("DURATION", tl_mother.totalDuration());
 
 	//--------STORY NAV : LEFT LINKS THAT NAVIGATE THE HOME PAGE STORY -------------------------------------
 	function storyNav() {
@@ -99,8 +99,6 @@ window.onload = function() {
 					const percent = tl_mother.labels[label] / tl_mother.totalDuration();
 					const scrollPos = myST.start + (myST.end - myST.start) * percent;
 					gsap.to(window, {duration: 1, scrollTo: scrollPos});
-					console.log("START", myST.start);
-					console.log("END", myST.end);
 				} else {
 					const section = document.querySelector(a.getAttribute("href"));
 					gsap.to(window, {scrollTo: section});
