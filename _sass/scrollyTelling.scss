@@ -142,24 +142,17 @@
         }
     }
     main {
-        // z-index:1250;
-        // top: -100px;
-        // border: 10px solid red;
         background-color: transparent;
         section {
-            // height: calc(100vh - 65px);
             height: 100vh;
             border-top: 1px solid red;
             position: relative;
             box-sizing: border-box;
         }
         // Custom timing for specific sections
-        #yourLegacy, #africaProblemEnding, #annasLeaders {
-            // height: 200vh;
+        #reachIntoVillage {
+            height: 200vh;
         }
-        // #solution {
-        //     height: 130vh;
-        // }
     }
 }
 // END scrollytelling wrap

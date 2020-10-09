@@ -5,59 +5,48 @@ window.onload = function() {
 	topnav();
 	storyNav();
 	pinDonation();
+	playVillageVideo();
 
 	//--------MOTHER OF ALL TIMELINES : MAIN SCROLLING ANIMATION-------------------------------------
 	var tl_mother = gsap.timeline({});
 	tl_mother.add(NINJA_FUNCTIONS.yourStoryTitle());
 	tl_mother.addLabel("yourStoryTitle");
-	
 	tl_mother.add(NINJA_FUNCTIONS.yourImpact());
 	tl_mother.addLabel("yourImpact");
-	
 	tl_mother.add(NINJA_FUNCTIONS.whoDoYouImpactEntrance());
 	tl_mother.addLabel("whoDoYouImpactEntrance");
-	
 	tl_mother.add(NINJA_FUNCTIONS.whoDoYouImpactExit());
 	tl_mother.addLabel("whoDoYouImpactExit");
-	
 	tl_mother.add(NINJA_FUNCTIONS.yourPeopleImpact());
 	tl_mother.addLabel("yourPeopleImpact");
-	
 	tl_mother.add(NINJA_FUNCTIONS.yourLegacy());
 	tl_mother.addLabel("yourLegacy");
-	
 	tl_mother.add(NINJA_FUNCTIONS.zoomInToAfrica());
 	tl_mother.addLabel("zoomInToAfrica");
-	
 	tl_mother.add(NINJA_FUNCTIONS.africaProblem());
 	tl_mother.addLabel("africaProblem");
-	
 	tl_mother.add(NINJA_FUNCTIONS.africaProblemEnding());
 	tl_mother.addLabel("africaProblemEnding");
-	
 	tl_mother.add(NINJA_FUNCTIONS.africanLeaders());
 	tl_mother.addLabel("africanLeaders");
-	
 	tl_mother.add(NINJA_FUNCTIONS.solution());
 	tl_mother.addLabel("solution");
-	
 	tl_mother.add(NINJA_FUNCTIONS.logoReappears());
 	tl_mother.addLabel("logoReappears");
-	
 	tl_mother.add(NINJA_FUNCTIONS.meetAnna());
 	tl_mother.addLabel("meetAnna");
-	
 	tl_mother.add(NINJA_FUNCTIONS.annasLeaders());
 	tl_mother.addLabel("annasLeaders");
-	
 	tl_mother.add(NINJA_FUNCTIONS.ifOnly());
 	tl_mother.addLabel("ifOnly");
-
 	tl_mother.add(NINJA_FUNCTIONS.imagineIntro());
 	tl_mother.addLabel("imagineIntro");
 
+	tl_mother.add(NINJA_FUNCTIONS.villageReveal());
+	tl_mother.addLabel("villageReveal");
 
-	// tl_mother.add(NINJA_FUNCTIONS.imagine);
+	tl_mother.add(NINJA_FUNCTIONS.reachIntoVillage());
+	tl_mother.addLabel("reachIntoVillage");
 
 	// tl_mother.add(NINJA_FUNCTIONS.joseph);
 	// tl_mother.add(NINJA_FUNCTIONS.josephOnTenIntro);
@@ -82,8 +71,8 @@ window.onload = function() {
 		toggleActions: "play complete reverse reverse",
 		scrub: 1
 	});
-	console.log("LABELS", tl_mother.labels);
-	console.log("DURATION", tl_mother.totalDuration());
+	// console.log("LABELS", tl_mother.labels);
+	// console.log("DURATION", tl_mother.totalDuration());
 
 	//--------STORY NAV : LEFT LINKS THAT NAVIGATE THE HOME PAGE STORY -------------------------------------
 	function storyNav() {
@@ -158,7 +147,29 @@ window.onload = function() {
 		tl.to('.ctaTitle', {duration:1, autoAlpha:0},"<");
 		return tl;
 	}
-}
+	function playVillageVideo() {
+		var vd = document.getElementById("vid_village");
+		function playVideo(progress) {
+			var progress = (progress / 1 * 100);
+			var vdProgress = (progress / 100) * vd.duration;
+			vd.currentTime = vdProgress;
+		}
+		var tl = gsap.timeline({
+			defaults:{duration:1},
+			scrollTrigger: {
+				trigger: "#reachIntoVillage",
+				start: "top 10%",
+				end: "bottom bottom",
+				onUpdate: st => {
+					playVideo(st.progress)
+				},
+				// onEnter:function(){vd.play()},
+				toggleActions: "play complete reverse reverse",
+			}
+		});
+		return tl;
+	}
+} //End window.load
 
 // VARIABLES COPIED FROM SCSS pre.scss
 // BRAND COLORS
@@ -272,7 +283,6 @@ var NINJA_FUNCTIONS = {
 	// --------THE AFRICA PROBLEM ENDING - WHAMBAM TEXT -------------------------------------
 	africaProblemEnding: function() {
 		var tl = gsap.timeline({
-			totalDuration: 10
 		});
 		tl.from('#text_africaProblem2',{duration:1.5, scale:0, autoAlpha:0},">");
 		tl.from('#text_africaProblem3',{duration:1.5, scale:0, autoAlpha:0},">");
@@ -368,58 +378,72 @@ var NINJA_FUNCTIONS = {
 		return tl;
 	},
 
-	// --------IMAGINE - INTRO (TEXT)-------------------------------------
+	// --------IMAGINE IF YOU COULD-------------------------------------
 	imagineIntro: function() {
 		var tl = gsap.timeline({
-			// defaults:{duration:1},
-			// scrollTrigger: {
-			// 	id: "Imagine Intro",
-			// 	// markers: true,
-			// 	trigger: "#imagineIntro",
-			// 	start: "top bottom",
-			// 	end: "bottom bottom",
-			// 	toggleActions: "play complete reverse reverse",
-			// }
 		});
-		tl.to('#text_ifOnly', {duration:1, scale:0, autoAlpha:0, delay:3},">");
-		// ENTRANCE THE TEXT
-		tl.from('#imagineIntro .sectionHeading span ', {autoAlpha:0, y:"300", stagger:"0.2"});
+		tl.from('#imagineIntro .sectionHeading span ', {duration:3, autoAlpha:0, y:"300", stagger:"0.5"});
 		tl.totalDuration(5);
 		return tl;
 	},
 
-	// --------IMAGINE ANIMATION: ZOOM INTO THE VILLAGE -------------------------------------
-	imagine: function() {
-		var vd = document.getElementById("vid_josephZoomIn");
-		function playVideo(progress) {
-			var progress = (progress / 1 * 100);
-			var vdProgress = (progress / 100) * vd.duration;
-			vd.currentTime = vdProgress;
-		}
+	// --------REVEAL VILLAGE -------------------------------------
+	villageReveal: function() {
 		var tl = gsap.timeline({
-			defaults:{duration:1},
-			scrollTrigger: {
-				id: "Imagine",
-				// markers: true,
-				trigger: "#imagine",
-				start: "top bottom",
-				end: "bottom bottom",
-				onUpdate: st => {
-					playVideo(st.progress)
-				},
-				toggleActions: "play complete reverse reverse",
-			}
 		});
-		tl.to('#josephZoomIn', {duration:0.3, autoAlpha:1});
-		tl.to('.leader', {scale:0, stagger:{amount:0.3}, autoAlpha:0},"<");
-		tl.to('#annasLeadersWrap',{duration:0.3, scale:0.3, autoAlpha:0},"<");
-
-		tl.to(".yourImpactBackgrounds", {duration:1, scale:0.4},"<");
-		tl.to('.you', {duration:1, x:0, ease:"expo.out"},"<");
-		tl.to("#svg_body", {duration:1, morphSVG:"#svg_body", ease:"expo.out"},"<");
-		tl.to("#svg_shadow", {duration:1, morphSVG:"#svg_shadow", ease:"expo.out"},"<");
+		tl.to('#villageVideoWrap', {duration:5, autoAlpha:1},"<");
+		tl.to('#text_ifOnly', {duration:3, scale:0, autoAlpha:0, delay:1},"<");
+		tl.totalDuration(5);
 		return tl;
 	},
+
+	// --------REACH INTO THE VILLAGE -------------------------------------
+	reachIntoVillage: function() {
+		var tl = gsap.timeline({
+		});
+		tl.to('#annaInAfrica', {duration:5, background:"transparent"});
+		tl.to('#annasLeadersWrap',{duration:5, scale:0.3, autoAlpha:0},"<");
+		tl.to("#spheresWrap", {duration:5, scale:0.4},"<");
+		tl.to('#animatedLogoWrap', {duration:2, x:0, ease:"expo.out"},"<");
+		tl.to("#svg_body", {duration:2, morphSVG:"#svg_body-2", ease:"expo.out"},"<");
+		tl.to("#svg_shadow", {duration:2, morphSVG:"#svg_shadow-2", ease:"expo.out"},"<");
+		tl.to("#annaAtTheCenter", {duration:5, scale:0, autoAlpha:0},"<");
+		tl.to('.singleLeader svg', {duration:5, scale:0, stagger:{amount:0.3}, delay:2, autoAlpha:0},"<");
+		// Taking up space for the video player with this tween - not visible
+		tl.to('#josephAtTheCenter',{duration: 5, autoAlpha:1, border:"1px solid #86b744"},'>');
+		tl.totalDuration(10);
+		return tl;
+	},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	// --------MEET JOSEPH -------------------------------------
 	joseph: function() {
@@ -436,7 +460,6 @@ var NINJA_FUNCTIONS = {
 		});
 		// ENTRANCE THE TEXT
 		tl.from('#text_joseph',{duration:1, scale:0, autoAlpha:0},">");
-		tl.set('#josephAtTheCenter',{autoAlpha:1, border:"1px solid #86b744"},'>');
 		// EXIT THE TEXT
 		tl.to('#text_joseph',{duration:1, scale:0, delay:1, autoAlpha:0},">");
 
