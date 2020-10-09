@@ -188,30 +188,17 @@ var NINJA_FUNCTIONS = {
 	// -,-------HERO -----------------------------------
 	hero: function() {
 		var tl = gsap.timeline({
-			// scrollTrigger: {
-			// 	trigger: ".introHeadline",
-			// 	start: "top center",
-			// 	end: "center top",
-			// 	toggleActions: "play complete reverse reverse",
-			// 	scrub: 1
-			// }
 		});
-		tl.to('.introHeadline h1', {duration:5, autoAlpha:0, rotateX:10}).duration(5);
+		tl.to('.introHeadline h1', {duration:5, autoAlpha:0, rotateX:10});
+		tl.totalDuration(5);
 		return tl;
 	},
 	// --------YOUR STORY TITLE: WHO YOU ARE, YOUR CHOICES... -----------------------------------
 	yourStoryTitle: function() {
 		var tl = gsap.timeline({
-			// scrollTrigger: {
-			// 	trigger: "#yourStoryTitle",
-			// 	start: "top bottom",
-			// 	end: "center center",
-			// 	toggleActions: "play complete reverse reverse",
-			// 	scrub: 1
-			// }
 		});
 		// 1.5
-		tl.from('#yourStoryTitle .sectionHeading span ', {autoAlpha:0, y:"300", stagger:"0.1", ease:"Sine.easeOut", delay:2});
+		tl.from('#yourStoryTitle .sectionHeading span ', {autoAlpha:0, y:"300", stagger:"0.1", ease:"Sine.easeOut", delay:1});
 		tl.totalDuration(5);
 		return tl;
 	},
