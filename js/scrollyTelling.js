@@ -44,10 +44,14 @@ window.onload = function() {
 	tl_mother.addLabel("meetJoseph");
 	tl_mother.add(NINJA_FUNCTIONS.transformedHisLife());
 	tl_mother.addLabel("transformedHisLife");
-	// tl_mother.add(NINJA_FUNCTIONS.josephOnTenIntro);
-	// tl_mother.add(NINJA_FUNCTIONS.josephOnTen);
-	// tl_mother.add(NINJA_FUNCTIONS.josephTrainingIntro);
-	// tl_mother.add(NINJA_FUNCTIONS.josephTraining);
+	tl_mother.add(NINJA_FUNCTIONS.josephMandate());
+	tl_mother.addLabel("josephMandate");
+	tl_mother.add(NINJA_FUNCTIONS.josephOnTen());
+	tl_mother.addLabel("josephOnTen");
+	tl_mother.add(NINJA_FUNCTIONS.josephTrainingIntro());
+	tl_mother.addLabel("josephTrainingIntro");
+	tl_mother.add(NINJA_FUNCTIONS.josephTraining());
+	tl_mother.addLabel("josephTraining");
 	// tl_mother.add(NINJA_FUNCTIONS.josephEquipped);
 	// tl_mother.add(NINJA_FUNCTIONS.josephTransformIntro);
 	// tl_mother.add(NINJA_FUNCTIONS.josephTransformation);
@@ -296,7 +300,6 @@ var NINJA_FUNCTIONS = {
 		tl.totalDuration(10);
 		return tl;
 	},
-
 	// --------AFRICAN LEADERS: CLUSTER OF DARK SPHERES OVER AFRICA-------------------------------------
 	africanLeaders: function() {
 		var container = document.querySelector('#clusterOfLeaders'),
@@ -311,7 +314,6 @@ var NINJA_FUNCTIONS = {
 		tl.totalDuration(5);
 		return tl;
 	},
-
 	// --------SOLUTION: EMIT BELIEVES TEXT-------------------------------------
 	solution: function() {
 		var tl = gsap.timeline({
@@ -327,49 +329,39 @@ var NINJA_FUNCTIONS = {
 		tl.to('#text_solution',{duration:1, x:300, autoAlpha:0, delay:3});
 		tl.to('#animatedLogoWrap',{duration:1, x:0, y:0, scale:1, autoAlpha:1},"<");
 		tl.to('#spheresWrap', {duration:1, x:0, y:0, scale:0.5, autoAlpha:1},"<");
-		// Animate little logo
 		tl.to("#svg_body", {duration:1, morphSVG:"#svg_body", ease:"expo.out"});
 		tl.to("#svg_shadow", {duration:1, morphSVG:"#svg_shadow", ease:"expo.out"},"<");
 		tl.to('#animatedLogoWrap', {duration:1, x:-130, ease:"expo.out"},"<");
-		// Show annaAtTheCentre
+		tl.to('#animatedLogoWrap linearGradient #offsetEnd', {duration:1, attr: {'offset': 0.6, 'stop-opacity':0.01}, ease:"expo.out"},"<");
 		tl.fromTo('#annaAtTheCenter',{scale:0, autoAlpha:0}, {duration:1.5, ease:"expo.out", scale:1.5, autoAlpha:1},'<');
-		// ENTRANCE THE TEXT
 		tl.from('#text_meetAnna',{duration:3.5, scale:0, autoAlpha:0},">");
 		tl.totalDuration(10);
 		return tl;
 	},
-
 	// --------ANNA'S LEADERS : ANIMATED CURVED TITLES IN SPHERES-------------------------------------
 	annasLeaders: function() {
 		var tl = gsap.timeline({
 		});
-		// EXIT THE MEET ANNA TEXT
 		tl.to('#text_meetAnna',{duration:3.5, x:1000, scale:0, delay:2, autoAlpha:0},">");
-		// Set starting values for this scene
 		tl.set('#spheres .sphere3, #spheres .sphere2, #spheres .sphere1',{autoAlpha:0, scale:1.8, backgroundColor:"rgba(0,0,0,0.7)", border:"1px solid rgba(255,255,255,0.2)", immediateRender:false});
 		tl.set('#spheresWrap',{x:0, y:0, scale:1, autoAlpha:1, transformOrigin:"50% 50%", immediateRender:false});
 		tl.set('.annasLeaders',{scale:0.95});
 		tl.to('#annaAtTheCenter',{duration:2, scale:1},"<");
-		// SPHERES
 		tl.to('#spheres .sphere1', {duration:2, scale:1, autoAlpha:1, border:"0.5px solid rgba(255,255,255,0.3)", backgroundColor:"#1c2127"},"<");
 		tl.to('#spheres .sphere2', {duration:2, scale:1, autoAlpha:1, border:"0.5px solid rgba(255,255,255,0.3)", backgroundColor:"#1c2127"},">");
 		tl.to('#spheres .sphere3', {duration:2, scale:1, autoAlpha:1, border:"0.5px solid rgba(255,255,255,0.3)", backgroundColor:"#1c2127"},">");
-		// Reveal Leader Titles
 		tl.from('.annasLeaders',{autoAlpha:0, ease:"linear", stagger:2, rotate:-30, transformOrigin:"50% 50%"},'<-4');
-		// tl.totalDuration(10);
 		tl.totalDuration(10);
 		return tl;
-	}, //END ANNA'S STORY
-
-	// --------IF WE CAN IMPACT HER LEADERS WE CAN CHANGE HER LIFE -------------------------------------
+	},
+	// --------IF WE CAN EQUIP HER LEADERS WE CAN CHANGE HER LIFE -------------------------------------
 	ifOnly: function() {
 		var tl = gsap.timeline({
 		});
 		tl.from('#text_ifOnly', {duration:1, scale:0, delay:1, autoAlpha:0});
-		tl.totalDuration(5);
+		tl.totalDuration(2.5);
 		return tl;
 	},
-
 	// --------IMAGINE IF YOU COULD-------------------------------------
 	imagineIntro: function() {
 		var tl = gsap.timeline({
@@ -378,7 +370,6 @@ var NINJA_FUNCTIONS = {
 		tl.totalDuration(5);
 		return tl;
 	},
-
 	// --------REVEAL VILLAGE -------------------------------------
 	villageReveal: function() {
 		var tl = gsap.timeline({
@@ -390,172 +381,79 @@ var NINJA_FUNCTIONS = {
 		tl.totalDuration(5);
 		return tl;
 	},
-
 	// --------MEET JOSEPH -------------------------------------
 	meetJoseph: function() {
 		var tl = gsap.timeline({
 		});
-
 		tl.to('#annasLeadersWrap',{duration:4, scale:0.3, autoAlpha:0},"<");
 		tl.to("#annaAtTheCenter", {duration:4, scale:0, autoAlpha:0},"<");
 		tl.to("#spheresWrap", {duration:4, scale:0.4},"<");
-
 		tl.to('#animatedLogoWrap', {duration:2, x:0, ease:"expo.out"},"<");
 		tl.to("#svg_body", {duration:2, morphSVG:"#svg_body-2", ease:"expo.out"},"<");
 		tl.to("#svg_shadow", {duration:2, morphSVG:"#svg_shadow-2", ease:"expo.out"},"<");
-
-
-		// MEET JOSEPH TEXT
-		tl.from('#text_joseph',{duration:1, scale:0, autoAlpha:0, delay:4},"<");
+		tl.from('#text_joseph',{duration:2, scale:0, autoAlpha:0, delay:4},"<");
 		tl.totalDuration(5);
 		return tl;
 	},
-
 	// --------EMIT HAS TRANSFORMED HIS LIFE -------------------------------------
 	transformedHisLife: function() {
 		var tl = gsap.timeline({
 		});
-		// EXIT THE TEXT
-		tl.to('#text_joseph',{duration:1, scale:0, delay:1, autoAlpha:0},">");
-		tl.from('#josephAtTheCenter',{duration: 1, scale:0, autoAlpha:0, },"<");
-		tl.to('#josephAtTheCenter',{duration: 5, autoAlpha:1});
-
-		tl.to('#animatedLogoWrap', {duration:1, x:-130, ease:"expo.out"},"<");
-		tl.to("#svg_body", {duration:1, morphSVG:"#svg_body-2", ease:"expo.out"},"<");
-		tl.to("#svg_shadow", {duration:1, morphSVG:"#svg_shadow-2", ease:"expo.out"},"<");
-
-		// tl.add('colorChange',"<0.3");
+		tl.to('#text_joseph',{duration:2, scale:0, autoAlpha:0},+2);
+		tl.from('#josephAtTheCenter',{duration: 3, scale:0, autoAlpha:0, },"<");
+		tl.to('#animatedLogoWrap', {duration:2, x:-130, ease:"expo.out"},"<");
+		tl.to("#svg_body", {duration:2, morphSVG:"#svg_body", ease:"expo.out"},"<");
+		tl.to("#svg_shadow", {duration:2, morphSVG:"#svg_shadow", ease:"expo.out"},"<");
 		tl.to('#spheresWrap', {duration:1, scale:1},"<");
-		// tl.to('.sphere3, .sphere2, .sphere1',{duration: 1, border:"1px solid #86b744"},"<");
-
-		// SPHERES
-		tl.to('#spheresWrap .sphere1', {duration:1, backgroundColor:"#85b744", border:"1px solid #86b744"},"colorChange");
-		tl.to('#spheresWrap .sphere2', {duration:1, backgroundColor:"#37ab5d", border:"1px solid #86b744"},"<0.5");
-		tl.to('#spheresWrap .sphere3', {duration:1, backgroundColor:"#03956d", border:"1px solid #86b744"},"<0.5");
+		tl.to('#spheresWrap .sphere1', {duration:2, backgroundColor:"#85b744", border:"1px solid #86b744"},"<");
+		tl.to('#spheresWrap .sphere2', {duration:2, backgroundColor:"#37ab5d", border:"1px solid #86b744"},"<1");
+		tl.to('#spheresWrap .sphere3', {duration:2, backgroundColor:"#03956d", border:"1px solid #86b744"},"<1");
+		tl.totalDuration(10);
+		return tl;
+	},
+	// --------JOSEPH MANDATE-------------------------------------
+	josephMandate: function() {
+		var tl = gsap.timeline({
+		});
+		tl.from('#text_josephOnTenIntro',{duration:1, scale:2, autoAlpha:0});
+		tl.totalDuration(2.5);
+		return tl;
+	},
+	// --------JOSEPH ON TEN: ANIMATION ONLY-------------------------------------
+	josephOnTen: function() {
+		var tl = gsap.timeline({
+		});
+		tl.to('#text_josephOnTenIntro',{duration:2, scale:0, delay:2, autoAlpha:0});
+		tl.from('#josephOnTenPeople', {duration:3, scale:0, rotate:360, autoAlpha:0},">");
+		tl.to('#josephAtTheCenter', {duration:3, filter:"drop-shadow(2px 2px 5px rgba(0,0,0,0.5)"},"<");
+		tl.to("#svg_body", {duration:2, morphSVG:"#svg_body-2", ease:"expo.out"},"<");
+		tl.to("#svg_shadow", {duration:2, morphSVG:"#svg_shadow-2", ease:"expo.out"},"<");
 		tl.totalDuration(5);
 		return tl;
 	},
-
-
-
-	// JOSEPH ON TEN INTRO - TEXT ONLY
-	josephOnTenIntro: function() {
-		var tl = gsap.timeline({
-			defaults:{duration:1},
-			scrollTrigger: {
-				id: "Joseph",
-				// markers: true,
-				trigger: "#josephOnTenIntro",
-				start: "top bottom",
-				end: "bottom bottom",
-				toggleActions: "play complete reverse reverse",
-			}
-		});
-		// ENTRANCE THE TEXT
-		tl.from('#text_josephOnTenIntro',{duration:1, scale:2, autoAlpha:0});
-
-		// EXIT THE TEXT
-		tl.to('#text_josephOnTenIntro',{duration:1, scale:0, delay:3, autoAlpha:0},">");
-
-		return tl;
-	},
-
-	// --------JOSEPH ON TEN: ANIMATION ONLY-------------------------------------
-	josephOnTen: function() {
-		var allLeaders = gsap.utils.toArray(".leader");
-		var onTenLeaders = allLeaders.slice([0], [10]);
-		var vd = document.getElementById("vid_josephZoomIn");
-		function playVideo(progress) {
-			var progress = 1-progress / 2;
-			// console.log(progress);
-			progress = (progress / 1 * 100);
-			var vdProgress = (progress / 100) * vd.duration;
-			vd.currentTime = vdProgress;
-		}
-		var tl = gsap.timeline({
-			defaults:{duration:1},
-			scrollTrigger: {
-				id: "Joseph On Ten",
-				// markers: true,
-				trigger: "#josephOnTen",
-				start: "top bottom",
-				end: "bottom bottom",
-				onUpdate: st => {
-					playVideo(st.progress)
-				},
-				toggleActions: "play complete reverse reverse",
-			}
-		});
-
-		// tl.set('.leader',{xPercent:0, yPercent:0, scale:2, autoAlpha:1, transformOrigin:"50% 50%", rotation:angle + 'rad'});
-		tl.set('.leader', {scale:5, xPercent:0, yPercent:0, scale:2, autoAlpha:0});
-		tl.set(onTenLeaders, {rotation:angle + 'rad'},"<");
-
-		tl.to('.yourImpactBackgrounds',{duration:0.5, scale:0.6},"<");
-		tl.to('#josephAtTheCenter',{duration:0.5, scale:0.6},"<");
-
-		// Loop through OnTen leaders and animate them
-		var rads = 36  * (Math.PI / 180);
-		var angle = 0;
-		var distance = 750;
-		onTenLeaders.forEach(leader => {
-			angle = angle + rads;
-			tl.to(leader, {
-				scale: 5,
-				duration:0.3,
-				autoAlpha:1,
-				rotation:angle + 'rad',
-				transformOrigin:"center",
-				autoAlpha:1,
-				xPercent: Math.cos(angle) * distance,
-				yPercent: Math.sin(angle) * distance
-			},">");
-		});
-		//End forEach onTenLeader loop
-
-		return tl;
-	},
-
 	// --------JOSEPH AND TEAM TRAINING - WHAMBAM TEXT -------------------------------------
 	josephTrainingIntro: function() {
 		var tl = gsap.timeline({
-			defaults:{duration:1},
-			scrollTrigger: {
-				id: "Joseph Training Intro",
-				// markers: true,
-				trigger: "#josephTrainingIntro",
-				start: "top bottom",
-				end: "bottom bottom",
-				toggleActions: "play complete reverse reverse",
-			}
 		});
-		// ENTRANCE THE TEXT
-		tl.from('#text_josephTrainingIntro',{duration:1, scale:0, autoAlpha:0},">");
+		tl.from('#text_josephTrainingIntro',{duration:2.5, scale:0, autoAlpha:0},">");
+		tl.totalDuration(2.5);
 		return tl;
 	},
 
 	// --------JOSEPH AND TEAM TRAINING - WHAMBAM TEXT -------------------------------------
 	josephTraining: function() {
 		var tl = gsap.timeline({
-			defaults:{duration:1},
-			scrollTrigger: {
-				id: "Joseph Training",
-				// markers: true,
-				trigger: "#josephTraining",
-				start: "top bottom",
-				end: "bottom bottom",
-				toggleActions: "play complete reverse reverse",
-			}
 		});
 		// ENTRANCE THE TEXT
-		tl.from('#text_josephTraining1',{duration:1, scale:0, autoAlpha:0},">");
+		tl.from('#text_josephTraining1',{duration:1, scale:0, autoAlpha:0});
 		tl.from('#text_josephTraining2',{duration:1, scale:0, autoAlpha:0},">");
 		tl.from('#text_josephTraining3',{duration:1, scale:0, autoAlpha:0},">");
 		tl.from('#text_josephTraining4',{duration:1, scale:0, autoAlpha:0},">");
 		tl.from('#text_josephTraining5',{duration:1, scale:0, autoAlpha:0},">");
 
 		// Exit the text
-		tl.to('.whamBam2', {duration:0.3, scale:0, autoAlpha:0},">");
+		// tl.to('.whamBam2', {duration:0.3, scale:0, autoAlpha:0},">");
+		tl.totalDuration(10);
 		return tl;
 	},
 

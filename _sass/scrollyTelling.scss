@@ -150,8 +150,11 @@
             box-sizing: border-box;
         }
         // Custom timing for specific sections
-        #yourLegacy, #annasLeaders, #meetAnna, #africaProblemSymptoms {
+        #yourLegacy, #annasLeaders, #meetAnna, #africaProblemSymptoms, #transformedHisLife, #josephTraining {
             height: 200vh;
+        }
+        #josephMandate, #ifOnly, #josephTrainingIntro {
+            height: 50vh;
         }
     }
 }

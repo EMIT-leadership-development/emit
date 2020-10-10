@@ -72,6 +72,21 @@ $textContainerWidth: 800px;
             background: darken($brandContrastDark, 10%);
             color: rgba(255,255,255,0.8);
         }
+        #text_josephTraining1{
+            background: #BBFD02            ;
+        }
+        #text_josephTraining2{
+            background: #ADE905            ;
+        }
+        #text_josephTraining3{
+            background: #A0D609            ;
+        }
+        #text_josephTraining4{
+            background: #93C30D            ;
+        }
+        #text_josephTraining5{
+            background: #86B011            ;
+        }
     }
     #spheres {
         #spheresWrap {
@@ -347,6 +362,27 @@ $textContainerWidth: 800px;
             background-position: center center;
             background-size: cover;
             border-radius: 50%;
+        }
+        #josephOnTenPeople {
+            visibility: hidden;
+            position: absolute;
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            width: $sphere3Width;
+            height: $sphere3Width;
+            border-radius: 50%;
+            overflow: hidden;
+            &:before {
+                content: "";
+                width: 100%;
+                height: 100%;
+                background-color: $brand-color;
+                opacity: 0.6;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
         }
     }
     #thePeopleYouImpact {
