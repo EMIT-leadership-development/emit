@@ -41,7 +41,7 @@ collections:
     _icon: school
     sort_by: id
 
-# permalink: /:title.html
+permalink: /:title.html
 
 defaults:
   -
