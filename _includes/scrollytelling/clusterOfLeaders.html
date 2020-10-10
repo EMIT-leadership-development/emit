@@ -1,14 +1,14 @@
-{% for i in (1..100) %}
-  {% if i == 100 %}
-    {% continue %}
-  {% else %}
-  <div class="singleLeader">
-        <svg height="302" width="302">
-            <circle class="sphere3" cx="151" cy="152" r="150" stroke="#ffffff" stroke-width="1" fill="#1c2127" />
-            <circle class="sphere2" cx="151" cy="152" r="120" stroke="#ffffff" stroke-width="1" fill="#1c2127" />
-            <circle class="sphere1" cx="151" cy="152" r="85" stroke="#ffffff" stroke-width="1" fill="#1c2127" />
-            <circle class="sphere0" cx="151" cy="152" r="45" stroke="#ffffff" stroke-width="1" fill="#1c2127" />
-        </svg>
-    </div>
-  {% endif %}
-{% endfor %}
+<svg viewBox="0 0 2000 1200">
+    {% for i in (1..90) %}
+    {% if i == 90 %}
+      {% continue %}
+    {% else %}
+    <g class="singleLeader">
+      <circle class="sphere3" cx="0" cy="0" r="17" stroke="rgba(255,255,255,0.5)" stroke-width="0.2" fill="#1c2127" />
+      <circle class="sphere2" cx="0" cy="0" r="13" stroke="rgba(255,255,255,0.5)" stroke-width="0.2" fill="#1c2127" />
+      <circle class="sphere1" cx="0" cy="0" r="8" stroke="rgba(255,255,255,0.5)" stroke-width="0.2" fill="#1c2127" />
+      <circle class="sphere0" cx="0" cy="0" r="4" stroke="rgba(255,255,255,0.5)" stroke-width="0.2" fill="#1c2127" />
+    </g>
+    {% endif %}
+    {% endfor %}
+</svg>

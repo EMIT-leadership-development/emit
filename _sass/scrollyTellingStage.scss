@@ -272,6 +272,18 @@ $textContainerWidth: 800px;
         }
     }
     #clusterOfLeaders {
+        @media (max-width: 300px) {
+            svg {
+                position: absolute;
+                width:auto;
+                height:100%;
+            }
+        }
+        svg {
+            position: absolute;
+            width:100%;
+            height:auto;
+        }
         .singleLeader {
             visibility: hidden;
             position: absolute;
@@ -386,6 +398,7 @@ $textContainerWidth: 800px;
                 left: 0;
                 display: block !important;
                 grid-row: 1;
+                filter: grayscale(1);
             }
         }
     }

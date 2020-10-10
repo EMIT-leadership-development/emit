@@ -6,6 +6,7 @@ window.onload = function() {
 	storyNav();
 	pinDonation();
 	playVillageVideo();
+	leaderSVGSettings();
 
 	//--------MOTHER OF ALL TIMELINES : MAIN SCROLLING ANIMATION-------------------------------------
 	var tl_mother = gsap.timeline({});
@@ -21,18 +22,14 @@ window.onload = function() {
 	tl_mother.addLabel("yourPeopleImpact");
 	tl_mother.add(NINJA_FUNCTIONS.yourLegacy());
 	tl_mother.addLabel("yourLegacy");
-	tl_mother.add(NINJA_FUNCTIONS.zoomInToAfrica());
-	tl_mother.addLabel("zoomInToAfrica");
 	tl_mother.add(NINJA_FUNCTIONS.africaProblem());
 	tl_mother.addLabel("africaProblem");
-	tl_mother.add(NINJA_FUNCTIONS.africaProblemEnding());
-	tl_mother.addLabel("africaProblemEnding");
+	tl_mother.add(NINJA_FUNCTIONS.africaProblemSymptoms());
+	tl_mother.addLabel("africaProblemSymptoms");
 	tl_mother.add(NINJA_FUNCTIONS.africanLeaders());
 	tl_mother.addLabel("africanLeaders");
 	tl_mother.add(NINJA_FUNCTIONS.solution());
 	tl_mother.addLabel("solution");
-	tl_mother.add(NINJA_FUNCTIONS.logoReappears());
-	tl_mother.addLabel("logoReappears");
 	tl_mother.add(NINJA_FUNCTIONS.meetAnna());
 	tl_mother.addLabel("meetAnna");
 	tl_mother.add(NINJA_FUNCTIONS.annasLeaders());
@@ -147,6 +144,7 @@ window.onload = function() {
 		tl.to('.ctaTitle', {duration:1, autoAlpha:0},"<");
 		return tl;
 	}
+	//--------PLAY THE VILLAGE VIDEO-------------------------------------
 	function playVillageVideo() {
 		var vd = document.getElementById("vid_village");
 		function playVideo(progress) {
@@ -154,21 +152,42 @@ window.onload = function() {
 			var vdProgress = (progress / 100) * vd.duration;
 			vd.currentTime = vdProgress;
 		}
+		function playBacwards() {
+			vd.pause();
+			var fps = 25;
+			var intervalRewind = setInterval(function() {
+				if(vd.currentTime == 0){
+				   clearInterval(intervalRewind);
+				   vd.pause();
+				}
+				else {
+					vd.currentTime += -(1/fps);
+				}
+			}, 1000 / fps);
+		};
 		var tl = gsap.timeline({
 			defaults:{duration:1},
 			scrollTrigger: {
 				trigger: "#reachIntoVillage",
-				start: "top 10%",
+				start: "top bottom",
 				end: "bottom bottom",
-				onUpdate: st => {
-					playVideo(st.progress)
-				},
-				// onEnter:function(){vd.play()},
+				scrub: 1,
+				// onUpdate: st => {
+				// 	playVideo(st.progress)
+				// },
+				onEnter:function(){vd.play()},
+				onEnterBack:function(){playBacwards()},
+				onLeaveBack:function(){playBacwards()},
 				toggleActions: "play complete reverse reverse",
 			}
 		});
 		return tl;
 	}
+	function leaderSVGSettings() {
+		gsap.set('#clusterOfLeaders svg', {xPercent:-50, yPercent:-50, left:"50%", top:"50%", transformOrigin:"50% 50%", scale:1});
+		gsap.set('.singleLeader',{x:1000, y:600, scale:0.5, transformOrigin:"50% 50%", autoAlpha:0});
+	}
+
 } //End window.load
 
 // VARIABLES COPIED FROM SCSS pre.scss
@@ -198,7 +217,7 @@ var NINJA_FUNCTIONS = {
 		});
 		// 1.5
 		tl.fromTo('.introHeadline h1',{autoAlpha:1, rotateX:0}, {duration:5, autoAlpha:0, rotateX:10});
-		tl.from('#yourStoryTitle .sectionHeading span', {autoAlpha:0, y:"300", stagger:"0.1", ease:"Sine.easeOut"},"<+4");
+		tl.from('#yourStoryTitle .sectionHeading span', {duration:3, autoAlpha:0, y:"300", stagger:"0.2", ease:"Sine.easeOut"},"<+1");
 		tl.totalDuration(5);
 		return tl;
 	},
@@ -239,59 +258,43 @@ var NINJA_FUNCTIONS = {
 	yourLegacy: function() {
 		var tl = gsap.timeline({
 		});
-		// 1
 		tl.to('#spinningPlanet', {duration:1, autoAlpha:1});
-		// + 0.5
 		tl.to('.impactTitle',{duration:0.5, autoAlpha:0, x:-20},">");
 		tl.fromTo('#planetWrap',{scale:0.5, autoAlpha:0, x:200, y:-300}, {duration: 2.5, scale:1, autoAlpha:1, x:0, y:0},"<");
-		// +1
 		tl.to('#animatedLogoWrap', {duration:1.5, scale: 0.4, y:105, x:-20, transformOrigin:"50% 50%"},"<");
 		tl.to('#logoBorder', {duration:1.5, autoAlpha:0},"<");
 		tl.to("#svg_body", {duration: 1.5, morphSVG:"#svg_body-2", ease:"expo.out"},"<");
 		tl.to("#svg_shadow", {duration: 1.5, morphSVG:"#svg_shadow-2", ease:"expo.out"},"<");
-		// +1
 		tl.to('#spheresWrap, #thePeopleYouImpactWrap', {duration:2.5, y:105, x:-15, autoAlpha:0, transformOrigin:"50% 50%", scale:0.2},"<");
-		// Spin planet
 		tl.to('#countries',{duration:10, xPercent:"-65", transformOrigin:"50% 50%"},">");
 		tl.from('.circle2',{duration:2, autoAlpha: 0, y:-10, transformOrigin:"50% 50%"},"<4");
 		tl.from('.circleShadow',{duration:3, autoAlpha: 0, y:-20, transformOrigin:"50% 50%"},"<3");
-
-		// tl.totalDuration(10);
-		tl.totalDuration(5);
-
+		tl.totalDuration(10);
 		return tl;
 	},
-	// --------ZOOM IN TO AFRICA ON MAP -------------------------------------
-	zoomInToAfrica: function() {
+	// --------AFRICA PROBLEM -------------------------------------
+	africaProblem: function () {
 		var tl = gsap.timeline({
 		});
 		tl.to('#spinningPlanet', {duration:3, autoAlpha:0});
 		tl.fromTo('#sadAnnaInAfrica', {scale:0.43, x:5, y:35, autoAlpha:0, transformOrigin: "50% 50%"}, {duration:2, scale:1, autoAlpha:1, transformOrigin: "50% 50%"},"<");
 		tl.to('#annaInAfrica', {duration:2, backgroundColor:$brandContrastLight2},"<");
 		tl.to('#animatedLogoWrap', {duration:1, autoAlpha:0},"<");
-		tl.totalDuration(5);
-		return tl;
-	},
-	// --------WHO ARE THE PEOPLE YOU IMPACT -------------------------------------
-	africaProblem: function () {
-		var tl = gsap.timeline({
-		});
-		tl.from('#text_africaProblem',{duration:5, scale:0, autoAlpha:0},">");
+		tl.from('#text_africaProblem',{duration:2, scale:0, autoAlpha:0},">");
 		tl.totalDuration(5);
 		return tl;
 	},
 	// --------THE AFRICA PROBLEM ENDING - WHAMBAM TEXT -------------------------------------
-	africaProblemEnding: function() {
+	africaProblemSymptoms: function() {
 		var tl = gsap.timeline({
 		});
-		tl.from('#text_africaProblem2',{duration:1.5, scale:0, autoAlpha:0},">");
+		tl.from('#text_africaProblem2',{duration:1.5, scale:0, autoAlpha:0, delay:3},">");
 		tl.from('#text_africaProblem3',{duration:1.5, scale:0, autoAlpha:0},">");
 		tl.from('#text_africaProblem4',{duration:1.5, scale:0, autoAlpha:0},">");
 		tl.from('#text_africaProblem5',{duration:1.5, scale:0, autoAlpha:0},">");
 		tl.from('#text_africaProblem6',{duration:1.5, scale:0, autoAlpha:0},">");
 		tl.to('.whamBam', {duration:0.3, scale:0, autoAlpha:0},">");
-		// tl.totalDuration(10);
-		tl.totalDuration(5);
+		tl.totalDuration(10);
 		return tl;
 	},
 
@@ -304,7 +307,8 @@ var NINJA_FUNCTIONS = {
 		});
 		tl.to('#annaInAfrica', {duration:5, background:$brandContrastDarkest});
 		tl.to('#sadAnnaInAfrica', {duration:5, autoAlpha:0},"<")
-		tl.fromTo('.singleLeader',{autoAlpha:0, scale:0}, {stagger:0.1, autoAlpha:1, scale:0.8, ease:"bounce-out", x:"random(-" + maxX + ", " + maxX + ")", y:"random(-" + maxY + ", " + maxY + ")", transformOrigin:"center"},"<");
+		// tl.fromTo('.singleLeader',{autoAlpha:0, scale:0}, {stagger:0.1, autoAlpha:1, scale:0.8, ease:"bounce-out", x:"random(-" + maxX + ", " + maxX + ")", y:"random(-" + maxY + ", " + maxY + ")", transformOrigin:"center"},"<");
+		tl.to('.singleLeader',{duration:5, stagger:0.1, scale:10, ease:"bounce-out", autoAlpha:1, xPercent:"random(-3000, 3000)", yPercent:"random(-1500, 1500)", transformOrigin:"center"},"<");
 		tl.totalDuration(5);
 		return tl;
 	},
@@ -317,24 +321,14 @@ var NINJA_FUNCTIONS = {
 		tl.totalDuration(5);
 		return tl;
 	},
-	// --------LOGO REAPPEARS-------------------------------------
-	logoReappears: function() {
+	// --------MEET ANNA -------------------------------------
+	meetAnna: function() {
 		var tl = gsap.timeline({
 		});
 		tl.to('#text_solution',{duration:1, x:300, autoAlpha:0, delay:3});
 		tl.to('#animatedLogoWrap',{duration:1, x:0, y:0, scale:1, autoAlpha:1},"<");
 		tl.to('#spheresWrap', {duration:1, x:0, y:0, scale:0.5, autoAlpha:1},"<");
-		// tl.to("#svg_body", {duration:0.6, morphSVG:"#svg_body", ease:"expo.out"},">");
-		// tl.to("#svg_shadow", {duration:0.6, morphSVG:"#svg_shadow", ease:"expo.out"},"<");
-		tl.totalDuration(5);
-		return tl;
-	},
-	// --------MEET ANNA -------------------------------------
-	meetAnna: function() {
-		var tl = gsap.timeline({
-		});
 		// Animate little logo
-		// tl.to('#svg-impactRingCircle',{duration:0.3, autoAlpha:0});
 		tl.to("#svg_body", {duration:1, morphSVG:"#svg_body", ease:"expo.out"});
 		tl.to("#svg_shadow", {duration:1, morphSVG:"#svg_shadow", ease:"expo.out"},"<");
 		tl.to('#animatedLogoWrap', {duration:1, x:-130, ease:"expo.out"},"<");
@@ -342,9 +336,8 @@ var NINJA_FUNCTIONS = {
 		tl.fromTo('#annaAtTheCenter',{scale:0, autoAlpha:0}, {duration:1.5, ease:"expo.out", scale:1.5, autoAlpha:1},'<');
 		// ENTRANCE THE TEXT
 		tl.from('#text_meetAnna',{duration:3.5, scale:0, autoAlpha:0},">");
-		tl.totalDuration(5);
+		tl.totalDuration(10);
 		return tl;
-
 	},
 
 	// --------ANNA'S LEADERS : ANIMATED CURVED TITLES IN SPHERES-------------------------------------
@@ -365,7 +358,7 @@ var NINJA_FUNCTIONS = {
 		// Reveal Leader Titles
 		tl.from('.annasLeaders',{autoAlpha:0, ease:"linear", stagger:2, rotate:-30, transformOrigin:"50% 50%"},'<-4');
 		// tl.totalDuration(10);
-		tl.totalDuration(5);
+		tl.totalDuration(10);
 		return tl;
 	}, //END ANNA'S STORY
 
@@ -393,6 +386,14 @@ var NINJA_FUNCTIONS = {
 		});
 		tl.to('#villageVideoWrap', {duration:5, autoAlpha:1},"<");
 		tl.to('#text_ifOnly', {duration:3, scale:0, autoAlpha:0, delay:1},"<");
+		tl.to('#annaInAfrica', {duration:5, background:"transparent"},"<");
+		tl.to('#annasLeadersWrap',{duration:5, scale:0.3, autoAlpha:0},"<");
+		tl.to("#spheresWrap", {duration:5, scale:0.4},"<");
+		tl.to('#animatedLogoWrap', {duration:2, x:0, ease:"expo.out"},"<");
+		tl.to("#svg_body", {duration:2, morphSVG:"#svg_body-2", ease:"expo.out"},"<");
+		tl.to("#svg_shadow", {duration:2, morphSVG:"#svg_shadow-2", ease:"expo.out"},"<");
+		tl.to("#annaAtTheCenter", {duration:5, scale:0, autoAlpha:0},"<");
+		tl.to('.singleLeader', {duration:5, scale:0, stagger:0.1, rotation:0.01, force3D:true, autoAlpha:0},"<");
 		tl.totalDuration(5);
 		return tl;
 	},
@@ -401,17 +402,9 @@ var NINJA_FUNCTIONS = {
 	reachIntoVillage: function() {
 		var tl = gsap.timeline({
 		});
-		tl.to('#annaInAfrica', {duration:5, background:"transparent"});
-		tl.to('#annasLeadersWrap',{duration:5, scale:0.3, autoAlpha:0},"<");
-		tl.to("#spheresWrap", {duration:5, scale:0.4},"<");
-		tl.to('#animatedLogoWrap', {duration:2, x:0, ease:"expo.out"},"<");
-		tl.to("#svg_body", {duration:2, morphSVG:"#svg_body-2", ease:"expo.out"},"<");
-		tl.to("#svg_shadow", {duration:2, morphSVG:"#svg_shadow-2", ease:"expo.out"},"<");
-		tl.to("#annaAtTheCenter", {duration:5, scale:0, autoAlpha:0},"<");
-		tl.to('.singleLeader svg', {duration:5, scale:0, stagger:{amount:0.3}, delay:2, autoAlpha:0},"<");
-		// Taking up space for the video player with this tween - not visible
+		// This tween is not visible - just taking up space to allow the playVideo function to run
 		tl.to('#josephAtTheCenter',{duration: 5, autoAlpha:1, border:"1px solid #86b744"},'>');
-		tl.totalDuration(10);
+		tl.totalDuration(5);
 		return tl;
 	},
 
