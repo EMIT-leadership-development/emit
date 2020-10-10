@@ -338,6 +338,17 @@ $textContainerWidth: 800px;
             border-radius: 50%;
         }
     }
+    #joseph {
+        #josephAtTheCenter {
+            visibility: hidden;
+            // border: 1px solid #86b744;
+            width: $animatedLogoWidth;
+            height: $animatedLogoWidth;
+            background-position: center center;
+            background-size: cover;
+            border-radius: 50%;
+        }
+    }
     #thePeopleYouImpact {
         h2 {
             visibility: hidden;

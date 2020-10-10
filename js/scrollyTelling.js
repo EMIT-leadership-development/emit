@@ -38,14 +38,12 @@ window.onload = function() {
 	tl_mother.addLabel("ifOnly");
 	tl_mother.add(NINJA_FUNCTIONS.imagineIntro());
 	tl_mother.addLabel("imagineIntro");
-
 	tl_mother.add(NINJA_FUNCTIONS.villageReveal());
 	tl_mother.addLabel("villageReveal");
-
-	tl_mother.add(NINJA_FUNCTIONS.reachIntoVillage());
-	tl_mother.addLabel("reachIntoVillage");
-
-	// tl_mother.add(NINJA_FUNCTIONS.joseph);
+	tl_mother.add(NINJA_FUNCTIONS.meetJoseph());
+	tl_mother.addLabel("meetJoseph");
+	tl_mother.add(NINJA_FUNCTIONS.transformedHisLife());
+	tl_mother.addLabel("transformedHisLife");
 	// tl_mother.add(NINJA_FUNCTIONS.josephOnTenIntro);
 	// tl_mother.add(NINJA_FUNCTIONS.josephOnTen);
 	// tl_mother.add(NINJA_FUNCTIONS.josephTrainingIntro);
@@ -152,7 +150,7 @@ window.onload = function() {
 			var vdProgress = (progress / 100) * vd.duration;
 			vd.currentTime = vdProgress;
 		}
-		function playBacwards() {
+		function playBackwards() {
 			vd.pause();
 			var fps = 25;
 			var intervalRewind = setInterval(function() {
@@ -168,7 +166,7 @@ window.onload = function() {
 		var tl = gsap.timeline({
 			defaults:{duration:1},
 			scrollTrigger: {
-				trigger: "#reachIntoVillage",
+				trigger: "#meetJoseph",
 				start: "top bottom",
 				end: "bottom bottom",
 				scrub: 1,
@@ -176,13 +174,14 @@ window.onload = function() {
 				// 	playVideo(st.progress)
 				// },
 				onEnter:function(){vd.play()},
-				onEnterBack:function(){playBacwards()},
-				onLeaveBack:function(){playBacwards()},
+				onEnterBack:function(){playBackwards()},
+				onLeaveBack:function(){playBackwards()},
 				toggleActions: "play complete reverse reverse",
 			}
 		});
 		return tl;
 	}
+	//--------LEADER SVG SETTINGS -------------------------------------
 	function leaderSVGSettings() {
 		gsap.set('#clusterOfLeaders svg', {xPercent:-50, yPercent:-50, left:"50%", top:"50%", transformOrigin:"50% 50%", scale:1});
 		gsap.set('.singleLeader',{x:1000, y:600, scale:0.5, transformOrigin:"50% 50%", autoAlpha:0});
@@ -387,89 +386,57 @@ var NINJA_FUNCTIONS = {
 		tl.to('#villageVideoWrap', {duration:5, autoAlpha:1},"<");
 		tl.to('#text_ifOnly', {duration:3, scale:0, autoAlpha:0, delay:1},"<");
 		tl.to('#annaInAfrica', {duration:5, background:"transparent"},"<");
-		tl.to('#annasLeadersWrap',{duration:5, scale:0.3, autoAlpha:0},"<");
-		tl.to("#spheresWrap", {duration:5, scale:0.4},"<");
-		tl.to('#animatedLogoWrap', {duration:2, x:0, ease:"expo.out"},"<");
-		tl.to("#svg_body", {duration:2, morphSVG:"#svg_body-2", ease:"expo.out"},"<");
-		tl.to("#svg_shadow", {duration:2, morphSVG:"#svg_shadow-2", ease:"expo.out"},"<");
-		tl.to("#annaAtTheCenter", {duration:5, scale:0, autoAlpha:0},"<");
 		tl.to('.singleLeader', {duration:5, scale:0, stagger:0.1, rotation:0.01, force3D:true, autoAlpha:0},"<");
 		tl.totalDuration(5);
 		return tl;
 	},
 
-	// --------REACH INTO THE VILLAGE -------------------------------------
-	reachIntoVillage: function() {
+	// --------MEET JOSEPH -------------------------------------
+	meetJoseph: function() {
 		var tl = gsap.timeline({
 		});
-		// This tween is not visible - just taking up space to allow the playVideo function to run
-		tl.to('#josephAtTheCenter',{duration: 5, autoAlpha:1, border:"1px solid #86b744"},'>');
+
+		tl.to('#annasLeadersWrap',{duration:4, scale:0.3, autoAlpha:0},"<");
+		tl.to("#annaAtTheCenter", {duration:4, scale:0, autoAlpha:0},"<");
+		tl.to("#spheresWrap", {duration:4, scale:0.4},"<");
+
+		tl.to('#animatedLogoWrap', {duration:2, x:0, ease:"expo.out"},"<");
+		tl.to("#svg_body", {duration:2, morphSVG:"#svg_body-2", ease:"expo.out"},"<");
+		tl.to("#svg_shadow", {duration:2, morphSVG:"#svg_shadow-2", ease:"expo.out"},"<");
+
+
+		// MEET JOSEPH TEXT
+		tl.from('#text_joseph',{duration:1, scale:0, autoAlpha:0, delay:4},"<");
+		tl.totalDuration(5);
+		return tl;
+	},
+
+	// --------EMIT HAS TRANSFORMED HIS LIFE -------------------------------------
+	transformedHisLife: function() {
+		var tl = gsap.timeline({
+		});
+		// EXIT THE TEXT
+		tl.to('#text_joseph',{duration:1, scale:0, delay:1, autoAlpha:0},">");
+		tl.from('#josephAtTheCenter',{duration: 1, scale:0, autoAlpha:0, },"<");
+		tl.to('#josephAtTheCenter',{duration: 5, autoAlpha:1});
+
+		tl.to('#animatedLogoWrap', {duration:1, x:-130, ease:"expo.out"},"<");
+		tl.to("#svg_body", {duration:1, morphSVG:"#svg_body-2", ease:"expo.out"},"<");
+		tl.to("#svg_shadow", {duration:1, morphSVG:"#svg_shadow-2", ease:"expo.out"},"<");
+
+		// tl.add('colorChange',"<0.3");
+		tl.to('#spheresWrap', {duration:1, scale:1},"<");
+		// tl.to('.sphere3, .sphere2, .sphere1',{duration: 1, border:"1px solid #86b744"},"<");
+
+		// SPHERES
+		tl.to('#spheresWrap .sphere1', {duration:1, backgroundColor:"#85b744", border:"1px solid #86b744"},"colorChange");
+		tl.to('#spheresWrap .sphere2', {duration:1, backgroundColor:"#37ab5d", border:"1px solid #86b744"},"<0.5");
+		tl.to('#spheresWrap .sphere3', {duration:1, backgroundColor:"#03956d", border:"1px solid #86b744"},"<0.5");
 		tl.totalDuration(5);
 		return tl;
 	},
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	// --------MEET JOSEPH -------------------------------------
-	joseph: function() {
-		var tl = gsap.timeline({
-			defaults:{duration:1},
-			scrollTrigger: {
-				id: "Joseph",
-				// markers: true,
-				trigger: "#joseph",
-				start: "top bottom",
-				end: "bottom bottom",
-				toggleActions: "play complete reverse reverse",
-			}
-		});
-		// ENTRANCE THE TEXT
-		tl.from('#text_joseph',{duration:1, scale:0, autoAlpha:0},">");
-		// EXIT THE TEXT
-		tl.to('#text_joseph',{duration:1, scale:0, delay:1, autoAlpha:0},">");
-
-		tl.to('.you', {duration:1, x:-130, ease:"expo.out"},"<");
-		tl.to("#svg_body", {duration:1, morphSVG:"#svg_body-2", ease:"expo.out"},"<");
-		tl.to("#svg_shadow", {duration:1, morphSVG:"#svg_shadow-2", ease:"expo.out"},"<");
-
-		// tl.add('colorChange',"<0.3");
-		tl.to('.yourImpactBackgrounds', {duration:1, scale:1},"<");
-		tl.to('.sphere3, .sphere2, .sphere1',{duration: 1, border:"1px solid #86b744"},"<");
-
-		// SPHERES
-		tl.to('.sphere1', {duration:1, backgroundColor:"#85b744"},"colorChange");
-		tl.to('.sphere2', {duration:1, backgroundColor:"#37ab5d"},"<0.5");
-		tl.to('.sphere3', {duration:1, backgroundColor:"#03956d"},"<0.5");
-		return tl;
-	},
 
 	// JOSEPH ON TEN INTRO - TEXT ONLY
 	josephOnTenIntro: function() {
