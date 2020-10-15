@@ -145,16 +145,13 @@
         background-color: transparent;
         section {
             height: 100vh;
-            // border-top: 1px solid red;
+            border-top: 1px solid red;
             position: relative;
             box-sizing: border-box;
         }
         // Custom timing for specific sections
-        #yourLegacy, #annasLeaders, #meetAnna, #africaProblemSymptoms, #transformedHisLife, #josephTraining {
+        #yourLegacy, #annasLeaders, #meetAnna, #africaProblemSymptoms, #meetJoseph, #transformation {
             height: 200vh;
-        }
-        #josephMandate, #ifOnly, #josephTrainingIntro {
-            height: 50vh;
         }
     }
 }

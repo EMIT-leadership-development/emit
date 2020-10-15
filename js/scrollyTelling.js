@@ -5,11 +5,12 @@ window.onload = function() {
 	topnav();
 	storyNav();
 	pinDonation();
-	playVillageVideo();
-	leaderSVGSettings();
+	initialSettings();
+	// videoScrub();
+	// videoScrubReverse();
 
 	//--------MOTHER OF ALL TIMELINES : MAIN SCROLLING ANIMATION-------------------------------------
-	var tl_mother = gsap.timeline({});
+	const tl_mother = gsap.timeline({});
 	tl_mother.add(NINJA_FUNCTIONS.yourStoryTitle());
 	tl_mother.addLabel("yourStoryTitle");
 	tl_mother.add(NINJA_FUNCTIONS.yourImpact());
@@ -44,17 +45,20 @@ window.onload = function() {
 	tl_mother.addLabel("meetJoseph");
 	tl_mother.add(NINJA_FUNCTIONS.transformedHisLife());
 	tl_mother.addLabel("transformedHisLife");
+	tl_mother.add(NINJA_FUNCTIONS.transformedHisLife2());
+	tl_mother.addLabel("transformedHisLife2");
 	tl_mother.add(NINJA_FUNCTIONS.josephMandate());
 	tl_mother.addLabel("josephMandate");
 	tl_mother.add(NINJA_FUNCTIONS.josephOnTen());
 	tl_mother.addLabel("josephOnTen");
-	tl_mother.add(NINJA_FUNCTIONS.josephTrainingIntro());
-	tl_mother.addLabel("josephTrainingIntro");
-	tl_mother.add(NINJA_FUNCTIONS.josephTraining());
-	tl_mother.addLabel("josephTraining");
-	// tl_mother.add(NINJA_FUNCTIONS.josephEquipped);
-	// tl_mother.add(NINJA_FUNCTIONS.josephTransformIntro);
-	// tl_mother.add(NINJA_FUNCTIONS.josephTransformation);
+	tl_mother.add(NINJA_FUNCTIONS.emitTrainingIntro());
+	tl_mother.addLabel("emitTrainingIntro");
+	tl_mother.add(NINJA_FUNCTIONS.emitTrainingContent());
+	tl_mother.addLabel("emitTrainingContent");
+	tl_mother.add(NINJA_FUNCTIONS.transformIntro());
+	tl_mother.addLabel("transformIntro");
+	tl_mother.add(NINJA_FUNCTIONS.transformation());
+	tl_mother.addLabel("transformation");
 	// tl_mother.add(NINJA_FUNCTIONS.emitImpact);
 	// tl_mother.add(NINJA_FUNCTIONS.waitingList);
 	// tl_mother.add(NINJA_FUNCTIONS.makeADifference);
@@ -63,10 +67,12 @@ window.onload = function() {
 
 	const myST = ScrollTrigger.create({
 		animation: tl_mother,
+		id: "myST",
 		trigger: "#yourStoryTitle",
 		start: "top bottom",
 		endTrigger: "main.content",
 		end: "bottom bottom",
+		// onUpdate: self => console.log("direction:", self.direction),
 		toggleActions: "play complete reverse reverse",
 		scrub: 1
 	});
@@ -146,48 +152,11 @@ window.onload = function() {
 		tl.to('.ctaTitle', {duration:1, autoAlpha:0},"<");
 		return tl;
 	}
-	//--------PLAY THE VILLAGE VIDEO-------------------------------------
-	function playVillageVideo() {
-		var vd = document.getElementById("vid_village");
-		function playVideo(progress) {
-			var progress = (progress / 1 * 100);
-			var vdProgress = (progress / 100) * vd.duration;
-			vd.currentTime = vdProgress;
-		}
-		function playBackwards() {
-			vd.pause();
-			var fps = 25;
-			var intervalRewind = setInterval(function() {
-				if(vd.currentTime == 0){
-				   clearInterval(intervalRewind);
-				   vd.pause();
-				}
-				else {
-					vd.currentTime += -(1/fps);
-				}
-			}, 1000 / fps);
-		};
-		var tl = gsap.timeline({
-			defaults:{duration:1},
-			scrollTrigger: {
-				trigger: "#meetJoseph",
-				start: "top bottom",
-				end: "bottom bottom",
-				scrub: 1,
-				// onUpdate: st => {
-				// 	playVideo(st.progress)
-				// },
-				onEnter:function(){vd.play()},
-				onEnterBack:function(){playBackwards()},
-				onLeaveBack:function(){playBackwards()},
-				toggleActions: "play complete reverse reverse",
-			}
-		});
-		return tl;
-	}
-	//--------LEADER SVG SETTINGS -------------------------------------
-	function leaderSVGSettings() {
-		gsap.set('#clusterOfLeaders svg', {xPercent:-50, yPercent:-50, left:"50%", top:"50%", transformOrigin:"50% 50%", scale:1});
+	//--------INITIAL SETTINGS -------------------------------------
+	function initialSettings() {
+		var bgVideo = document.querySelector("#vid_village");
+		bgVideo.currentTime = 20;
+		gsap.set('#clusterOfLeaders svg, .overlayCircleWrap svg', {xPercent:-50, yPercent:-50, left:"50%", top:"50%", transformOrigin:"50% 50%", scale:1});
 		gsap.set('.singleLeader',{x:1000, y:600, scale:0.5, transformOrigin:"50% 50%", autoAlpha:0});
 	}
 
@@ -359,7 +328,7 @@ var NINJA_FUNCTIONS = {
 		var tl = gsap.timeline({
 		});
 		tl.from('#text_ifOnly', {duration:1, scale:0, delay:1, autoAlpha:0});
-		tl.totalDuration(2.5);
+		tl.totalDuration(5);
 		return tl;
 	},
 	// --------IMAGINE IF YOU COULD-------------------------------------
@@ -381,9 +350,32 @@ var NINJA_FUNCTIONS = {
 		tl.totalDuration(5);
 		return tl;
 	},
-	// --------MEET JOSEPH -------------------------------------
+
+
+	scrubVideo: function(progress, scrubDir) {
+		var bgVideo = document.querySelector("#vid_village");
+		if (scrubDir == "reverse") {
+			var progress = 1 - progress
+		} else {
+			var progress = progress;
+		}
+		let videoTween = gsap.fromTo(bgVideo,
+			{currentTime: 0 },
+			{currentTime: 20,
+			duration: 5,
+			ease: "none",
+			paused: true
+			});
+		console.log(progress);
+		videoTween.progress(progress);
+	},
+
+	// --------MEET JOSEPH (ZOOM IN TO VILLAGE)-------------------------------------
 	meetJoseph: function() {
 		var tl = gsap.timeline({
+			onUpdate: function() {
+				NINJA_FUNCTIONS.scrubVideo(this.progress(), "reverse");
+			}
 		});
 		tl.to('#annasLeadersWrap',{duration:4, scale:0.3, autoAlpha:0},"<");
 		tl.to("#annaAtTheCenter", {duration:4, scale:0, autoAlpha:0},"<");
@@ -391,8 +383,8 @@ var NINJA_FUNCTIONS = {
 		tl.to('#animatedLogoWrap', {duration:2, x:0, ease:"expo.out"},"<");
 		tl.to("#svg_body", {duration:2, morphSVG:"#svg_body-2", ease:"expo.out"},"<");
 		tl.to("#svg_shadow", {duration:2, morphSVG:"#svg_shadow-2", ease:"expo.out"},"<");
-		tl.from('#text_joseph',{duration:2, scale:0, autoAlpha:0, delay:4},"<");
-		tl.totalDuration(5);
+		tl.from('#text_joseph',{duration:1, scale:0, autoAlpha:0},">");
+		tl.totalDuration(10);
 		return tl;
 	},
 	// --------EMIT HAS TRANSFORMED HIS LIFE -------------------------------------
@@ -404,22 +396,33 @@ var NINJA_FUNCTIONS = {
 		tl.to('#animatedLogoWrap', {duration:2, x:-130, ease:"expo.out"},"<");
 		tl.to("#svg_body", {duration:2, morphSVG:"#svg_body", ease:"expo.out"},"<");
 		tl.to("#svg_shadow", {duration:2, morphSVG:"#svg_shadow", ease:"expo.out"},"<");
-		tl.to('#spheresWrap', {duration:1, scale:1},"<");
+		tl.totalDuration(5);
+		return tl;
+	},
+	// --------EMIT HAS TRANSFORMED HIS LIFE -------------------------------------
+	transformedHisLife2: function() {
+		var tl = gsap.timeline({
+		});
+		tl.to('#spheresWrap', {duration:1, scale:1});
 		tl.to('#spheresWrap .sphere1', {duration:2, backgroundColor:"#85b744", border:"1px solid #86b744"},"<");
 		tl.to('#spheresWrap .sphere2', {duration:2, backgroundColor:"#37ab5d", border:"1px solid #86b744"},"<1");
 		tl.to('#spheresWrap .sphere3', {duration:2, backgroundColor:"#03956d", border:"1px solid #86b744"},"<1");
-		tl.totalDuration(10);
+		tl.totalDuration(5);
 		return tl;
 	},
+
+
+
+
 	// --------JOSEPH MANDATE-------------------------------------
 	josephMandate: function() {
 		var tl = gsap.timeline({
 		});
 		tl.from('#text_josephOnTenIntro',{duration:1, scale:2, autoAlpha:0});
-		tl.totalDuration(2.5);
+		tl.totalDuration(5);
 		return tl;
 	},
-	// --------JOSEPH ON TEN: ANIMATION ONLY-------------------------------------
+	// --------JOSEPH ON TEN -------------------------------------
 	josephOnTen: function() {
 		var tl = gsap.timeline({
 		});
@@ -431,113 +434,68 @@ var NINJA_FUNCTIONS = {
 		tl.totalDuration(5);
 		return tl;
 	},
-	// --------JOSEPH AND TEAM TRAINING - WHAMBAM TEXT -------------------------------------
-	josephTrainingIntro: function() {
+	// --------EMIT TRAINING INTRO -------------------------------------
+	emitTrainingIntro: function() {
 		var tl = gsap.timeline({
 		});
-		tl.from('#text_josephTrainingIntro',{duration:2.5, scale:0, autoAlpha:0},">");
-		tl.totalDuration(2.5);
+		tl.from('#text_josephTrainingIntro',{duration:2.5, delay:2.5, scale:0, autoAlpha:0});
+		tl.totalDuration(5);
 		return tl;
 	},
-
-	// --------JOSEPH AND TEAM TRAINING - WHAMBAM TEXT -------------------------------------
-	josephTraining: function() {
+	// --------EMIT TRAINING CONTENT -------------------------------------
+	emitTrainingContent: function() {
 		var tl = gsap.timeline({
 		});
-		// ENTRANCE THE TEXT
 		tl.from('#text_josephTraining1',{duration:1, scale:0, autoAlpha:0});
 		tl.from('#text_josephTraining2',{duration:1, scale:0, autoAlpha:0},">");
 		tl.from('#text_josephTraining3',{duration:1, scale:0, autoAlpha:0},">");
 		tl.from('#text_josephTraining4',{duration:1, scale:0, autoAlpha:0},">");
 		tl.from('#text_josephTraining5',{duration:1, scale:0, autoAlpha:0},">");
-
-		// Exit the text
-		// tl.to('.whamBam2', {duration:0.3, scale:0, autoAlpha:0},">");
+		tl.totalDuration(5);
+		return tl;
+	},
+	// --------TRANSFORM INTRO -------------------------------------
+	transformIntro: function() {
+		var tl = gsap.timeline({
+		});
+		tl.to('.whamBam2', {duration:1, scale:0, autoAlpha:0});
+		tl.from('#text_josephTransformationIntro',{duration:4, scale:0, autoAlpha:0},">");
+		tl.totalDuration(5);
+		return tl;
+	},
+	// --------TRANSFORMATION-------------------------------------
+	transformation: function() {
+		var tl = gsap.timeline({
+			onUpdate: function() {
+				NINJA_FUNCTIONS.scrubVideo(this.progress(), "forward");
+			}
+		});
+		tl.to('#text_josephTransformationIntro', {duration:1, delay:1, scale:0, autoAlpha:0});
+		tl.to('#josephOnTenPeople', {duration:2, scale:3, rotate:360, autoAlpha:0},"<");
+		tl.from('.overlayCircleWrap svg',{duration:2, scale:0, autoAlpha:0},'>');
+		tl.to('#villageVideoWrap video',{duration:2.5, filter: "saturate(5)"},'<+0.5');
 		tl.totalDuration(10);
 		return tl;
 	},
 
 
-	// --------JOSEPH AND TEAM EQUIPPED: ANIMATION ONLY-------------------------------------
-	josephEquipped: function() {
-		var allLeaders = gsap.utils.toArray(".leader");
-		var onTenLeaders = allLeaders.slice([0], [10]);
-		let fillColors = ["#03956d", "#37ab5d", $brandDarker, $brand];
-		var tl = gsap.timeline({
-			defaults:{duration:1},
-			scrollTrigger: {
-				id: "Joseph equipped",
-				// markers: true,
-				trigger: "#josephEquipped",
-				start: "top bottom",
-				end: "bottom bottom",
-				toggleActions: "play complete reverse reverse",
-			}
-		});
-		onTenLeaders.forEach(leader => {
-			var leaderSpheres = leader.getElementsByTagName("ellipse");
-			tl.to(leaderSpheres, {
-				fill: function(index, elem) { return fillColors[index] }
-			},0);
-		});
-		//End forEach leader
-		return tl;
-	},
-
-	// --------JOSEPH AND TEAM TRANSFORM INTRO -------------------------------------
-	josephTransformIntro: function() {
-		var tl = gsap.timeline({
-			defaults:{duration:1},
-			scrollTrigger: {
-				id: "Joseph Transform Intro",
-				// markers: true,
-				trigger: "#josephTransformationIntro",
-				start: "top bottom",
-				end: "bottom bottom",
-				toggleActions: "play complete reverse reverse",
-			}
-		});
-		// ENTRANCE THE TEXT
-		tl.from('#text_josephTransformationIntro',{duration:1, scale:0, autoAlpha:0},">");
-
-		// Exit the text
-		tl.to('#text_josephTransformationIntro', {duration:1, delay:1, scale:0, autoAlpha:0},">");
-		return tl;
-	},
 
 
-	// --------JOSEPH AND HIS TEAM TRANSFORM COMMUNITY : ANIMATION ONLY-------------------------------------
-	josephTransformation: function() {
 
-		var vd = document.getElementById("vid_josephZoomIn");
-		function playVideo(progress) {
-			var progress = 0.5-progress / 2;
-			// console.log(progress);
-			progress = (progress / 1 * 100);
-			var vdProgress = (progress / 100) * vd.duration;
-			vd.currentTime = vdProgress;
-		}
 
-		var tl = gsap.timeline({
-			defaults:{duration:1},
-			scrollTrigger: {
-				id: "Joseph and Team Transformation",
-				// markers: true,
-				trigger: "#josephTransformation",
-				start: "top bottom",
-				end: "bottom bottom",
-				onUpdate: st => {
-					playVideo(st.progress)
-				},
-				toggleActions: "play complete reverse reverse",
-			}
-		});
-		// color change
-		tl.from('.overlay2', { duration:1, autoAlpha:0, scale:0, ease: "linear"},"<");
-		tl.to('.leader',{scale:0.3, autoAlpha:0, xPercent:"random(-3000, 3000)", yPercent:"random(-1500, 1500)", transformOrigin:"center"},"<");
-		tl.to('#vid_josephZoomIn',{duration:1, filter:"grayscale(0)", filter: "saturate(5)"},'<0.3');
-		return tl;
-	},
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	// SONYA - ADD HERE - SPINNING PLANET AGAIN?
 
