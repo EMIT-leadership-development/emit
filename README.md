@@ -37,7 +37,7 @@ Find more templates, themes and Jekyll tutorials at [CloudCannon Academy](https:
 
 ## Develop
 
-Fur was built with [Jekyll](http://jekyllrb.com/) version 3.4.3, but should support newer versions as well.
+built with [Jekyll](http://jekyllrb.com/) version 3.4.3, but should support newer versions as well.
 
 Install the dependencies with [Bundler](http://bundler.io/):
 
@@ -48,24 +48,17 @@ $ bundle install
 Run `jekyll` commands through Bundler to ensure you're using the right versions:
 
 ~~~bash
-$ bundle exec jekyll serve
+$ bundle exec jekyll serve --livereload
 ~~~
 
-## Editing
+Sonya: from https://stackoverflow.com/questions/51126403/you-dont-have-write-permissions-for-the-library-ruby-gems-2-3-0-directory-ma
 
-Fur is already optimised for adding, updating and removing products and editing the navigation and footer in CloudCannon.
+** SONYA - USE THIS WHEN YOU RESTART VISUAL STUDIO TO CHANGE THE SOURCE OF RUBY
+source ~/.bash_profile
 
-### Posts
+To check that you're now using the non-system version of Ruby, you can run the following commands:
 
-* Add, update or remove a post in the *Posts* collection.
-* Change the defaults when new posts are created in `_posts/_defaults.md`.
+which ruby
+It should be something other than /usr/bin/ruby
 
-### Navigation
-
-* Exposed as a data file to give clients better access.
-* Set in the *Data* / *Navigation* section.
-
-### Footer
-
-* Exposed as a data file to give clients better access.
-* Set in the *Data* / *Footer* section.
+ruby -v
