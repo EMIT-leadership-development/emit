@@ -533,10 +533,11 @@ var NINJA_FUNCTIONS = {
 		tl.totalDuration(5);
 		return tl;
 	},
-	// --------SAD ANNA-------------------------------------
+	// --------SAD ANNA TO SMILING ANNA -------------------------------------
 	sadAnna: function() {
 		var tl = gsap.timeline({
 		});
+		tl.set('#smilingAnnaInAfrica', {x:5, y:35, transformOrigin: "50% 50%"});
 		tl.to('#animatedLogoWrap', {duration:0.1, x:-130}, 0);
 		tl.to('#sadAnnaInAfrica', {duration:0.1, autoAlpha:1, filter:"grayscale(100%)"}, 0);
 		tl.to("#makeDif3", {duration:1, autoAlpha:0, scale:0}, "textAnimate", ">");
@@ -545,6 +546,11 @@ var NINJA_FUNCTIONS = {
 		tl.to("#spheresWrap", {duration:0.5, x:-130, ease:"expo.out", scale:0.30},"<");
 		tl.to("#svg_body", {duration:0.6, morphSVG:"#svg_body-2", ease:"expo.out"},"<");
 		tl.to("#svg_shadow", {duration:0.6, morphSVG:"#svg_shadow-2", ease:"expo.out"},"<");
+
+		tl.to('#spheresWrap .sphere',{duration:2, scale:5, stagger:0.1, autoAlpha:0},">");
+		tl.to('#annaInAfrica', {duration:1, delay:1, background:$brandContrastLight},"<");
+		tl.from('#smilingAnnaInAfrica', {duration:2, autoAlpha:0, ease:"linear"},"<");
+
 		tl.totalDuration(10);
 		return tl;
 	},
@@ -552,10 +558,6 @@ var NINJA_FUNCTIONS = {
 	donate: function() {
 		var tl = gsap.timeline({
 		});
-		tl.set('#smilingAnnaInAfrica', {x:5, y:35, transformOrigin: "50% 50%"});
-		tl.to('#spheresWrap .sphere',{duration:2, scale:5, stagger:0.1, autoAlpha:0},"<");
-		tl.to('#annaInAfrica', {duration:1, delay:1, background:$brandContrastLight},"<");
-		tl.from('#smilingAnnaInAfrica', {duration:2, autoAlpha:0, ease:"linear"},"<");
 		tl.to('#animatedLogoWrap',{duration:3, ease:"circ.out", scale:1.5, top:0, right:0, autoAlpha:"0"},">");
 		tl.to("#svg_body", {duration:3, morphSVG:"#svg_body", ease:"expo.out"},"<");
 		tl.to("#svg_shadow", {duration:3, morphSVG:"#svg_shadow", ease:"expo.out"},"<");
