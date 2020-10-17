@@ -35,8 +35,8 @@ window.onload = function() {
 	tl_mother.addLabel("meetAnna");
 	tl_mother.add(NINJA_FUNCTIONS.annasLeaders());
 	tl_mother.addLabel("annasLeaders");
-	tl_mother.add(NINJA_FUNCTIONS.ifOnly());
-	tl_mother.addLabel("ifOnly");
+	tl_mother.add(NINJA_FUNCTIONS.ifWeCan());
+	tl_mother.addLabel("ifWeCan");
 	tl_mother.add(NINJA_FUNCTIONS.imagineIntro());
 	tl_mother.addLabel("imagineIntro");
 	tl_mother.add(NINJA_FUNCTIONS.villageReveal());
@@ -45,8 +45,6 @@ window.onload = function() {
 	tl_mother.addLabel("meetJoseph");
 	tl_mother.add(NINJA_FUNCTIONS.transformedHisLife());
 	tl_mother.addLabel("transformedHisLife");
-	tl_mother.add(NINJA_FUNCTIONS.transformedHisLife2());
-	tl_mother.addLabel("transformedHisLife2");
 	tl_mother.add(NINJA_FUNCTIONS.josephMandate());
 	tl_mother.addLabel("josephMandate");
 	tl_mother.add(NINJA_FUNCTIONS.josephOnTen());
@@ -59,11 +57,23 @@ window.onload = function() {
 	tl_mother.addLabel("transformIntro");
 	tl_mother.add(NINJA_FUNCTIONS.transformation());
 	tl_mother.addLabel("transformation");
-	// tl_mother.add(NINJA_FUNCTIONS.emitImpact);
-	// tl_mother.add(NINJA_FUNCTIONS.waitingList);
-	// tl_mother.add(NINJA_FUNCTIONS.makeADifference);
-	// tl_mother.add(NINJA_FUNCTIONS.smilingAnna);
-	// tl_mother.add(NINJA_FUNCTIONS.donate);
+
+	// Empty scrolling for 100vh
+	tl_mother.addLabel("emitImpact","+=5");
+
+	tl_mother.add(NINJA_FUNCTIONS.waitingList(),"+=5");
+	tl_mother.addLabel("waitingList");
+
+	tl_mother.add(NINJA_FUNCTIONS.makeADifference());
+	tl_mother.addLabel("makeADifference");
+	tl_mother.add(NINJA_FUNCTIONS.largerLife());
+	tl_mother.addLabel("largerLife");
+	tl_mother.add(NINJA_FUNCTIONS.sadAnna());
+	tl_mother.addLabel("sadAnna");
+	// tl_mother.add(NINJA_FUNCTIONS.smilingAnna());
+	// tl_mother.addLabel("smilingAnna");
+	// tl_mother.add(NINJA_FUNCTIONS.donate());
+	// tl_mother.addLabel("donate");
 
 	const myST = ScrollTrigger.create({
 		animation: tl_mother,
@@ -156,7 +166,7 @@ window.onload = function() {
 	function initialSettings() {
 		var bgVideo = document.querySelector("#vid_village");
 		bgVideo.currentTime = 20;
-		gsap.set('#clusterOfLeaders svg, .overlayCircleWrap svg', {xPercent:-50, yPercent:-50, left:"50%", top:"50%", transformOrigin:"50% 50%", scale:1});
+		gsap.set('#clusterOfLeaders svg, #overlayCircleWrap svg', {xPercent:-50, yPercent:-50, left:"50%", top:"50%", transformOrigin:"50% 50%", scale:1});
 		gsap.set('.singleLeader',{x:1000, y:600, scale:0.5, transformOrigin:"50% 50%", autoAlpha:0});
 	}
 
@@ -170,6 +180,11 @@ var $brand = "#abe116",
 // COLORS FOR FONTS
 	$brandTDark = "rgba(0,0,0,0.8)",
 	$brandTLight = "rgba(255,255,255,0.8)",
+
+	// SPHERES
+	$sphere1BG = "#85b744",
+	$sphere2BG = "#37ab5d",
+	$sphere3BG = "#03956d",
 
 // $brandContrastDark: #272D32;
 	$brandContrastDark = "#272c33",
@@ -324,10 +339,10 @@ var NINJA_FUNCTIONS = {
 		return tl;
 	},
 	// --------IF WE CAN EQUIP HER LEADERS WE CAN CHANGE HER LIFE -------------------------------------
-	ifOnly: function() {
+	ifWeCan: function() {
 		var tl = gsap.timeline({
 		});
-		tl.from('#text_ifOnly', {duration:1, scale:0, delay:1, autoAlpha:0});
+		tl.from('#text_ifWeCan', {duration:1, scale:0, delay:1, autoAlpha:0});
 		tl.totalDuration(5);
 		return tl;
 	},
@@ -343,15 +358,19 @@ var NINJA_FUNCTIONS = {
 	villageReveal: function() {
 		var tl = gsap.timeline({
 		});
+		tl.set('#annasLeadersWrap',{scale:0, autoAlpha:0});
+		tl.set("#annaAtTheCenter", {scale:0, autoAlpha:0});
+		tl.set("#spheresWrap", {scale:0.4, autoAlpha:0});
+		tl.set('#animatedLogoWrap', {x:0, autoAlpha:0});
 		tl.to('#villageVideoWrap', {duration:5, autoAlpha:1},"<");
-		tl.to('#text_ifOnly', {duration:3, scale:0, autoAlpha:0, delay:1},"<");
+		tl.to('#text_ifWeCan', {duration:3, scale:0, autoAlpha:0, delay:1},"<");
 		tl.to('#annaInAfrica', {duration:5, background:"transparent"},"<");
 		tl.to('.singleLeader', {duration:5, scale:0, stagger:0.1, rotation:0.01, force3D:true, autoAlpha:0},"<");
 		tl.totalDuration(5);
 		return tl;
 	},
 
-
+	// --------HELPER FUNCTION: VIDEO SCRUB -------------------------------------
 	scrubVideo: function(progress, scrubDir) {
 		var bgVideo = document.querySelector("#vid_village");
 		if (scrubDir == "reverse") {
@@ -366,7 +385,7 @@ var NINJA_FUNCTIONS = {
 			ease: "none",
 			paused: true
 			});
-		console.log(progress);
+		// console.log(progress);
 		videoTween.progress(progress);
 	},
 
@@ -377,13 +396,7 @@ var NINJA_FUNCTIONS = {
 				NINJA_FUNCTIONS.scrubVideo(this.progress(), "reverse");
 			}
 		});
-		tl.to('#annasLeadersWrap',{duration:4, scale:0.3, autoAlpha:0},"<");
-		tl.to("#annaAtTheCenter", {duration:4, scale:0, autoAlpha:0},"<");
-		tl.to("#spheresWrap", {duration:4, scale:0.4},"<");
-		tl.to('#animatedLogoWrap', {duration:2, x:0, ease:"expo.out"},"<");
-		tl.to("#svg_body", {duration:2, morphSVG:"#svg_body-2", ease:"expo.out"},"<");
-		tl.to("#svg_shadow", {duration:2, morphSVG:"#svg_shadow-2", ease:"expo.out"},"<");
-		tl.from('#text_joseph',{duration:1, scale:0, autoAlpha:0},">");
+		tl.from('#text_joseph',{duration:1, delay:9, scale:0, autoAlpha:0},">");
 		tl.totalDuration(10);
 		return tl;
 	},
@@ -391,29 +404,18 @@ var NINJA_FUNCTIONS = {
 	transformedHisLife: function() {
 		var tl = gsap.timeline({
 		});
+		tl.set('#josephAtTheCenter',{scale:1, autoAlpha:1, });
 		tl.to('#text_joseph',{duration:2, scale:0, autoAlpha:0},+2);
-		tl.from('#josephAtTheCenter',{duration: 3, scale:0, autoAlpha:0, },"<");
 		tl.to('#animatedLogoWrap', {duration:2, x:-130, ease:"expo.out"},"<");
 		tl.to("#svg_body", {duration:2, morphSVG:"#svg_body", ease:"expo.out"},"<");
 		tl.to("#svg_shadow", {duration:2, morphSVG:"#svg_shadow", ease:"expo.out"},"<");
-		tl.totalDuration(5);
+		tl.to('#spheresWrap', {duration:1, autoAlpha:1, scale:1});
+		tl.to('#spheresWrap .sphere1', {duration:2, backgroundColor:$sphere1BG, border:"1px solid #86b744"},"<");
+		tl.to('#spheresWrap .sphere2', {duration:2, backgroundColor:$sphere2BG, border:"1px solid #86b744"},"<1");
+		tl.to('#spheresWrap .sphere3', {duration:2, backgroundColor:$sphere3BG, border:"1px solid #86b744"},"<1");
+		tl.totalDuration(10);
 		return tl;
 	},
-	// --------EMIT HAS TRANSFORMED HIS LIFE -------------------------------------
-	transformedHisLife2: function() {
-		var tl = gsap.timeline({
-		});
-		tl.to('#spheresWrap', {duration:1, scale:1});
-		tl.to('#spheresWrap .sphere1', {duration:2, backgroundColor:"#85b744", border:"1px solid #86b744"},"<");
-		tl.to('#spheresWrap .sphere2', {duration:2, backgroundColor:"#37ab5d", border:"1px solid #86b744"},"<1");
-		tl.to('#spheresWrap .sphere3', {duration:2, backgroundColor:"#03956d", border:"1px solid #86b744"},"<1");
-		tl.totalDuration(5);
-		return tl;
-	},
-
-
-
-
 	// --------JOSEPH MANDATE-------------------------------------
 	josephMandate: function() {
 		var tl = gsap.timeline({
@@ -442,24 +444,24 @@ var NINJA_FUNCTIONS = {
 		tl.totalDuration(5);
 		return tl;
 	},
-	// --------EMIT TRAINING CONTENT -------------------------------------
+	// --------EMIT TRAINING CONTENT-------------------------------------
 	emitTrainingContent: function() {
 		var tl = gsap.timeline({
 		});
-		tl.from('#text_josephTraining1',{duration:1, scale:0, autoAlpha:0});
+		tl.from('#text_josephTraining1',{duration:1, delay:3, scale:0, autoAlpha:0});
 		tl.from('#text_josephTraining2',{duration:1, scale:0, autoAlpha:0},">");
 		tl.from('#text_josephTraining3',{duration:1, scale:0, autoAlpha:0},">");
 		tl.from('#text_josephTraining4',{duration:1, scale:0, autoAlpha:0},">");
 		tl.from('#text_josephTraining5',{duration:1, scale:0, autoAlpha:0},">");
-		tl.totalDuration(5);
+		tl.totalDuration(10);
 		return tl;
 	},
-	// --------TRANSFORM INTRO -------------------------------------
+	// --------TRANSFORM INTRO: WITH RENEWED VISION THEY BEGIN... -------------------------------------
 	transformIntro: function() {
 		var tl = gsap.timeline({
 		});
 		tl.to('.whamBam2', {duration:1, scale:0, autoAlpha:0});
-		tl.from('#text_josephTransformationIntro',{duration:4, scale:0, autoAlpha:0},">");
+		tl.from('#text_josephTransformationIntro',{duration:3, scale:0, autoAlpha:0},">");
 		tl.totalDuration(5);
 		return tl;
 	},
@@ -470,193 +472,105 @@ var NINJA_FUNCTIONS = {
 				NINJA_FUNCTIONS.scrubVideo(this.progress(), "forward");
 			}
 		});
-		tl.to('#text_josephTransformationIntro', {duration:1, delay:1, scale:0, autoAlpha:0});
-		tl.to('#josephOnTenPeople', {duration:2, scale:3, rotate:360, autoAlpha:0},"<");
-		tl.from('.overlayCircleWrap svg',{duration:2, scale:0, autoAlpha:0},'>');
-		tl.to('#villageVideoWrap video',{duration:2.5, filter: "saturate(5)"},'<+0.5');
-		tl.totalDuration(10);
+		tl.set('#josephOnTenPeople', {scale:0, autoAlpha:0},"<");
+		tl.set('#josephAtTheCenter', {scale:0, autoAlpha:0},"<");
+		tl.set('#spheresWrap',{autoAlpha:0, scale: 0},'<');
+		tl.to('#text_josephTransformationIntro', {duration:1, delay:1, scale:0, autoAlpha:0},"<");
+		tl.from('.overlayCircle',{duration:5, delay:4, scale:0, autoAlpha:0, transformOrigin:"center center"},">");
+		tl.totalDuration(5);
 		return tl;
 	},
 
+	// -------- EMIT IMPACT: Empty scrolling for 5s / 100vh : Emit has already infulenced
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	// SONYA - ADD HERE - SPINNING PLANET AGAIN?
-
-	// --------EMIT IMPACT-------------------------------------
-	emitImpact: function() {
-		var allLeaders = gsap.utils.toArray(".leader");
-		var onTenLeaders = allLeaders.slice([0], [10]);
-		var tl = gsap.timeline({
-			defaults:{duration:1},
-			scrollTrigger: {
-				id: "EMIT impact",
-				// markers: true,
-				trigger: "#emitImpact",
-				start: "top center",
-				end: "bottom bottom",
-				toggleActions: "play complete reverse reverse",
-			}
-		});
-
-		// ENTRANCE THE TEXT
-		tl.from('#emitImpact .sectionHeading span, .exploreDescription, #explorebtn', {autoAlpha:0, y:"300", stagger:"0.2"});
-		// ENTRANCE THE BUTTON
-		// tl.from('#explorebtn',{duration:1, y:50, autoAlpha:0},'>');
-		// prepare for next scene
-		tl.set('.leader',{scale:10, autoAlpha:1, xPercent:"random(-3000, 3000)", yPercent:"random(-1500, 1500)", transformOrigin:"center"});
-		tl.set('.leader ellipse', {fill:"#1c2127", stroke:"rgba(255,255,255,0.5)"});
-		return tl;
-	},
-
-	// --------WAITING LIST-------------------------------------
+	// -------- WE HAVE A WAITING LIST-------------------------------------
 	waitingList: function() {
-		// var allLeaders = gsap.utils.toArray(".leader");
-		// var onTenLeaders = allLeaders.slice([0], [10]);
-
 		var tl = gsap.timeline({
-			scrollTrigger: {
-				id: "EMIT waitingList",
-				// markers: true,
-				trigger: "#waitingList",
-				start: "top 10%",
-				end: "bottom bottom",
-				toggleActions: "play complete reverse reverse",
-			}
 		});
-		tl.to('#josephAtTheCenter',{autoAlpha:0},"<");
-		tl.set('#josephZoomIn', {autoAlpha:0},"<");
-		// tl.set('.overlay', { autoAlpha:1, scale:1, backgroundColor:"#678220"},"<");
-
+		tl.to('#villageVideoWrap',{duration:5, autoAlpha:0});
+		tl.totalDuration(5);
 		return tl;
 	},
-
 	// --------MAKE A DIFFERENCE : CHANGE TO GREEN LEADERS-------------------------------------
 	makeADifference: function() {
-		var emitLeaders = gsap.utils.toArray(".leader");
+		var emitLeaders = gsap.utils.toArray(".singleLeader");
 		let fillColors = ["#03956d", "#37ab5d", "#85b744", "rgba(255,255,255,0.2)"];
 		var tl = gsap.timeline({
-			defaults:{duration:1},
-			scrollTrigger: {
-				id: "Make a Difference",
-				// markers: true,
-				trigger: "#makeADifference",
-				start: "top center",
-				end: "bottom bottom",
-				toggleActions: "play complete reverse reverse",
-			}
 		});
-
-		// YOU CAN
-		tl.to("#svg_body", {duration:0.6, morphSVG:"#svg_body", ease:"expo.out"});
+		tl.fromTo('#annaInAfrica', {background:$brandContrastDark}, {duration:5, background:$sphere3BG, immediateRender:false});
+		tl.to('.singleLeader',{duration:2, scale:10, autoAlpha:1, transformOrigin:"center"},"<");
+		tl.to('#animatedLogoWrap', {duration:0.6, autoAlpha:1, scale:0.7},"<");
+		tl.to("#svg_body", {duration:0.6, morphSVG:"#svg_body", ease:"expo.out"},"<");
 		tl.to("#svg_shadow", {duration:0.6, morphSVG:"#svg_shadow", ease:"expo.out"},"<");
-		tl.to('.yourImpactBackgrounds', {duration:1, scale:0.7}, "<");
-		tl.from("#makeDif1", {duration:1, autoAlpha:0, scale:0}, "<");
+		tl.to('#spheresWrap', {duration:1, scale:0.7, autoAlpha:1}, "<");
+		// YOU CAN
+		tl.from("#makeDif1", {duration:1, delay:2, autoAlpha:0, scale:0}, ">");
 		tl.to("#makeDif1", {duration:1, delay:3, autoAlpha:0, scale:0}, "<");
 		tl.add("textAnimate");
-
 		emitLeaders.forEach(leader => {
-			var leaderSpheres = leader.getElementsByTagName("ellipse");
+			var leaderSpheres = leader.getElementsByTagName("circle");
 			tl.to(leaderSpheres, {
 				stagger:0.1,
 				// amount: 0.1,
 				fill: function(index, elem) { return fillColors[index] }
 			},"<+0.1");
 		}); //End forEach leader
-
 		// BE THE
-		tl.to(".you", {duration:0.6, x:-150, ease:"expo.out"}, "textAnimate");
+		tl.to("#animatedLogoWrap", {duration:0.6, x:-150, ease:"expo.out"}, "textAnimate");
 		tl.to("#svg_body", {duration:0.6, morphSVG:"#svg_body-2", ease:"expo.out"}, "textAnimate");
 		tl.to("#svg_shadow", {duration:0.6, morphSVG:"#svg_shadow-2", ease:"expo.out"}, "textAnimate");
-		tl.to('.yourImpactBackgrounds', {duration:1, scale:0.8}, "textAnimate");
+		tl.to('#spheresWrap', {duration:1, scale:0.8}, "textAnimate");
 		tl.from("#makeDif2", {duration:1, autoAlpha:0, scale:0}, "textAnimate");
 		tl.to("#makeDif2", {duration:1, delay:3, autoAlpha:0, scale:0}, "textAnimate");
-		// tl.add("textAnimate2");
-
-
+		tl.add("textAnimate2");
 		// CHANGE
-		tl.to(".you", {duration:0.6, x:-190, ease:"expo.out"}, ">");
+		tl.to("#animatedLogoWrap", {duration:0.6, x:-190, ease:"expo.out"}, ">");
 		tl.to("#svg_body", {duration:0.6, morphSVG:"#svg_body", ease:"expo.out"}, "<");
 		tl.to("#svg_shadow", {duration:0.6, morphSVG:"#svg_shadow", ease:"expo.out"}, "<");
-		tl.to('.yourImpactBackgrounds', {duration:1, scale:0.9}, "<");
+		tl.to('#spheresWrap', {duration:1, scale:0.9}, "<");
 		tl.from("#makeDif3", {duration:1, autoAlpha:0, scale:0}, "<");
-
-		// PREPARE FOR NEXT SCENE
-		tl.to('.backgroundLayer.colorBG', {duration:1, backgroundColor:"#04956D"}, 0);
-
+		tl.totalDuration(10);
 		return tl;
 	},
-
-
-	// LIVE A LARGER LIFE: NO ANIMATION FOR ONE SCROLLING SECTION
-
-	// --------SMILING ANNA-------------------------------------
-	smilingAnna: function() {
+	// --------LARGER LIFE-------------------------------------
+	largerLife: function() {
 		var tl = gsap.timeline({
-			defaults:{duration:1},
-			scrollTrigger: {
-				id: "Smiling Anna",
-				// markers: true,
-				trigger: "#smilingAnna",
-				start: "top bottom",
-				end: "bottom bottom",
-				toggleActions: "play complete reverse reverse",
-			}
 		});
-		tl.to('.you', {duration:0.1, x:-130}, 0);
+		tl.to('#annaInAfrica', {duration:1, delay:4, background:$brandContrastLight2});
+		tl.totalDuration(5);
+		return tl;
+	},
+	// --------SMILING ANNA-------------------------------------
+	sadAnna: function() {
+		var tl = gsap.timeline({
+		});
+		tl.to('#animatedLogoWrap', {duration:0.1, x:-130}, 0);
 		tl.to('#sadAnnaInAfrica', {duration:0.1, autoAlpha:1, filter:"grayscale(100%)"}, 0);
-		tl.to('#smilingAnnaInAfrica', {duration:0.1, x:5, y:35, transformOrigin: "50% 50%"}, 0);
 		tl.to("#makeDif3", {duration:1, autoAlpha:0, scale:0}, "textAnimate", ">");
-
-		tl.to('.backgroundLayer.colorBG', {duration:0.5, backgroundColor: $brandContrastLight4},0);
-		tl.to('.leader',{autoAlpha:0, scale:0, xPercent:"random(-3000, 3000)", yPercent:"random(-1500, 1500)", transformOrigin:"center"},"<");
-
-		tl.to(".you", {duration:0.6, ease:"expo.out", scale:0.6},"<");
-		tl.to(".yourImpactBackgrounds", {duration:0.5, x:-130, ease:"expo.out", scale:0.30},"<");
+		tl.to('.singleLeader',{autoAlpha:0, scale:0, xPercent:"random(-3000, 3000)", yPercent:"random(-1500, 1500)", transformOrigin:"center"},"<");
+		tl.to("#animatedLogoWrap", {duration:0.6, ease:"expo.out", scale:0.6},"<");
+		tl.to("#spheresWrap", {duration:0.5, x:-130, ease:"expo.out", scale:0.30},"<");
 		tl.to("#svg_body", {duration:0.6, morphSVG:"#svg_body-2", ease:"expo.out"},"<");
 		tl.to("#svg_shadow", {duration:0.6, morphSVG:"#svg_shadow-2", ease:"expo.out"},"<");
-
+		tl.totalDuration(10);
 		return tl;
 	},
 
 	// --------DONATE BUTTON-------------------------------------
 	donate: function() {
 		var tl = gsap.timeline({
-			defaults:{duration:1},
-			scrollTrigger: {
-				id: "Donate now",
-				// markers: true,
-				trigger: "#donate",
-				start: "top bottom",
-				end: "bottom bottom",
-				toggleActions: "play complete reverse reverse",
-			}
 		});
 
 		// Pulse out the yourImpact spheres
-		tl.to('.yourImpactBackgrounds .sphere',{duration:2, scale:5, stagger:0.1, autoAlpha:0});
-		// tl.to('.overlay', { duration:1, autoAlpha:1, scale:1, backgroundColor:"#678220", ease:"linear"},"<");
+		tl.to('#spheresWrap .sphere',{duration:2, scale:5, stagger:0.1, autoAlpha:0});
+		tl.to('.overlay', { duration:1, autoAlpha:1, scale:1, backgroundColor:"#678220", ease:"linear"},"<");
 		// tl.to('.backgroundLayer.colorBG', {duration:1, ease:"linear", backgroundColor:"#678220"},"<");
+		// tl.to('#annaInAfrica', {duration:1, delay:4, background:$brandContrastLight},"<");
 
 		// ANNA SMILING CHANGE HERE
-		tl.from('#smilingAnnaInAfrica', {duration:1, autoAlpha:0, ease:"linear"},"<");
-		tl.to('.backgroundLayer.colorBG', {duration:1, backgroundColor: $brandContrastLight3}, 0);
+		// tl.set('#smilingAnnaInAfrica', {x:5, y:35, transformOrigin: "50% 50%"}, 0);
+		// tl.from('#smilingAnnaInAfrica', {duration:1, autoAlpha:0, ease:"linear"},"<");
+		// tl.to('.backgroundLayer.colorBG', {duration:1, backgroundColor: $brandContrastLight3}, 0);
 
 		// tl.to('.overlay', {duration:1, ease:"linear", backgroundColor:"#A5ABAD"},"<");
 
@@ -666,6 +580,7 @@ var NINJA_FUNCTIONS = {
 		tl.to("#svg_shadow", {duration:3, morphSVG:"#svg_shadow", ease:"expo.out"},"<");
 
 		tl.to('#donateBtn', {duration:0.5, repeat:1, scale:1.1, opacity:0.7, yoyo:true},"<2.5");
+		tl.totalDuration(5);
 		return tl;
 	}
 

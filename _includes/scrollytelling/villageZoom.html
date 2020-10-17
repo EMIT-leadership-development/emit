@@ -1,8 +1,13 @@
 <div id="villageVideoWrap">
-    <video src="{{site.baseurl}}/video/start.mp4" type="video/mp4" id="vid_village" preload="auto" muted="" plays-inline=""></video>
     <div class="overlayCircleWrap">
+        <video src="{{site.baseurl}}/video/out.mp4" type="video/mp4" id="vid_village" preload="auto" muted="" plays-inline=""></video>
         <svg viewBox="0 0 32 32">
-            <circle class="overlayCircle" cx="16" cy="16" r="15" stroke="0" stroke-width="0" fill="rgba(0,0,0,0.2)" />
+            <defs>
+                <clipPath id="overlayCircleClip">
+                    <circle class="overlayCircle" cx="16" cy="16" r="20" stroke="0" stroke-width="0" fill="rgba(0,0,0,0.2)" />
+                </clipPath>
+            </defs>
+            <image style="width:100%; height:100%" xlink:href="{{site.baseurl}}/images/scrollyTelling/AfricanVillageColor.webp" clip-path="url(#overlayCircleClip)" />
         </svg>
     </div>
 </div>

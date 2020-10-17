@@ -20,6 +20,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        grid-column: 3 / span 4;
         height: 100%;
         h1, h2, p {
             font-size: 2em;
@@ -35,6 +36,52 @@
         span{
             text-align: center;
             display: block;
+        }
+    }
+    #largerLife {
+        background: $brandContrastDark;
+        justify-content: center;
+        .sectionHeading {
+            font-size: 3rem;
+            color: #ffffff;
+            padding: 0;
+            margin: 0;
+        }
+        h3 {
+            font-weight: 300;
+            margin-top: 2rem;
+            text-align: center;
+        }
+        .subtitle {
+            margin-top: 2rem;
+            color: rgba(255,255,255,0.95);
+            font-size: 1.8rem;
+            font-style: italic;
+            font-weight: 300 !important;
+            position: relative;
+        }
+        .subtitle:after {
+            content: "";
+            position: absolute;
+            width: 100px;
+            border-bottom: 1px solid #ffffff30;
+            right: -120px;
+            height: 1px;
+            top: 50%;
+        }
+        .subtitle:before {
+            content: "";
+            position: absolute;
+            width: 100px;
+            border-bottom: 1px solid #ffffff30;
+            left: -120px;
+            height: 1px;
+            top: 50%;
+        }
+        p {
+            color: rgba(255,255,255,0.8);
+            font-size: 1.6rem;
+            margin-top: 2rem;
         }
     }
     .mainNavigation {
@@ -150,7 +197,7 @@
             box-sizing: border-box;
         }
         // Custom timing for specific sections
-        #yourLegacy, #annasLeaders, #meetAnna, #africaProblemSymptoms, #meetJoseph, #transformation {
+        #yourLegacy, #annasLeaders, #meetAnna, #africaProblemSymptoms, #meetJoseph, #transformedHisLife, #emitTrainingContent, #makeADifference, #sadAnna {
             height: 200vh;
         }
     }
