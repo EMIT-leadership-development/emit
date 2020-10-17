@@ -86,7 +86,8 @@ window.onload = function() {
 
 	//--------STORY NAV : LEFT LINKS THAT NAVIGATE THE HOME PAGE STORY -------------------------------------
 	function storyNav() {
-		gsap.utils.toArray(".storyNav li a").forEach(function(a) {
+		// Also slipped the scrolldown link in here
+		gsap.utils.toArray(".storyNav li a, #scrollDown").forEach(function(a) {
 			a.addEventListener("click", function(e) {
 				e.preventDefault();
 				var label = e.target.getAttribute("data-jump")
@@ -110,6 +111,7 @@ window.onload = function() {
 		tl.from('.nav-link a.topLevel', {autoAlpha:0, x:-100, stagger:0.1, ease:"linear"});
 		tl.from('#headerLogo', {autoAlpha:0, x:-100, ease:"linear"}, "<");
 		tl.from('.introHeadline h1 span', {autoAlpha:0, x:"100", stagger:0.1, ease:"linear"},"<" );
+		tl.to('#scrollDown',{duration:1, yoyo:true, y:-10, repeat:-1},'<');
 		return tl;
 	}
 	//--------TOPNAV: ANIMATE THE TOP NAV SHRINKING -------------------------------------
