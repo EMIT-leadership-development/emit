@@ -84,6 +84,13 @@
             margin-top: 2rem;
         }
     }
+    #donate {
+        .textContainer {
+            .button {
+                margin-top: 45%;
+            }
+        }
+    }
     .mainNavigation {
         position: fixed;
         top: 0;
@@ -192,7 +199,7 @@
         background-color: transparent;
         section {
             height: 100vh;
-            border-top: 1px solid red;
+            // border-top: 1px solid red;
             position: relative;
             box-sizing: border-box;
         }

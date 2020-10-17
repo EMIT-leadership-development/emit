@@ -57,23 +57,18 @@ window.onload = function() {
 	tl_mother.addLabel("transformIntro");
 	tl_mother.add(NINJA_FUNCTIONS.transformation());
 	tl_mother.addLabel("transformation");
-
 	// Empty scrolling for 100vh
 	tl_mother.addLabel("emitImpact","+=5");
-
 	tl_mother.add(NINJA_FUNCTIONS.waitingList(),"+=5");
 	tl_mother.addLabel("waitingList");
-
 	tl_mother.add(NINJA_FUNCTIONS.makeADifference());
 	tl_mother.addLabel("makeADifference");
 	tl_mother.add(NINJA_FUNCTIONS.largerLife());
 	tl_mother.addLabel("largerLife");
 	tl_mother.add(NINJA_FUNCTIONS.sadAnna());
 	tl_mother.addLabel("sadAnna");
-	// tl_mother.add(NINJA_FUNCTIONS.smilingAnna());
-	// tl_mother.addLabel("smilingAnna");
-	// tl_mother.add(NINJA_FUNCTIONS.donate());
-	// tl_mother.addLabel("donate");
+	tl_mother.add(NINJA_FUNCTIONS.donate());
+	tl_mother.addLabel("donate");
 
 	const myST = ScrollTrigger.create({
 		animation: tl_mother,
@@ -369,7 +364,6 @@ var NINJA_FUNCTIONS = {
 		tl.totalDuration(5);
 		return tl;
 	},
-
 	// --------HELPER FUNCTION: VIDEO SCRUB -------------------------------------
 	scrubVideo: function(progress, scrubDir) {
 		var bgVideo = document.querySelector("#vid_village");
@@ -388,7 +382,6 @@ var NINJA_FUNCTIONS = {
 		// console.log(progress);
 		videoTween.progress(progress);
 	},
-
 	// --------MEET JOSEPH (ZOOM IN TO VILLAGE)-------------------------------------
 	meetJoseph: function() {
 		var tl = gsap.timeline({
@@ -540,7 +533,7 @@ var NINJA_FUNCTIONS = {
 		tl.totalDuration(5);
 		return tl;
 	},
-	// --------SMILING ANNA-------------------------------------
+	// --------SAD ANNA-------------------------------------
 	sadAnna: function() {
 		var tl = gsap.timeline({
 		});
@@ -555,31 +548,18 @@ var NINJA_FUNCTIONS = {
 		tl.totalDuration(10);
 		return tl;
 	},
-
 	// --------DONATE BUTTON-------------------------------------
 	donate: function() {
 		var tl = gsap.timeline({
 		});
-
-		// Pulse out the yourImpact spheres
-		tl.to('#spheresWrap .sphere',{duration:2, scale:5, stagger:0.1, autoAlpha:0});
-		tl.to('.overlay', { duration:1, autoAlpha:1, scale:1, backgroundColor:"#678220", ease:"linear"},"<");
-		// tl.to('.backgroundLayer.colorBG', {duration:1, ease:"linear", backgroundColor:"#678220"},"<");
-		// tl.to('#annaInAfrica', {duration:1, delay:4, background:$brandContrastLight},"<");
-
-		// ANNA SMILING CHANGE HERE
-		// tl.set('#smilingAnnaInAfrica', {x:5, y:35, transformOrigin: "50% 50%"}, 0);
-		// tl.from('#smilingAnnaInAfrica', {duration:1, autoAlpha:0, ease:"linear"},"<");
-		// tl.to('.backgroundLayer.colorBG', {duration:1, backgroundColor: $brandContrastLight3}, 0);
-
-		// tl.to('.overlay', {duration:1, ease:"linear", backgroundColor:"#A5ABAD"},"<");
-
-		// Logo animates to top right of screen and donate button pulses
-		tl.to('.you',{duration:3, ease:"circ.out", scale:1.5, top:0, x:450, autoAlpha:"0"},">");
+		tl.set('#smilingAnnaInAfrica', {x:5, y:35, transformOrigin: "50% 50%"});
+		tl.to('#spheresWrap .sphere',{duration:2, scale:5, stagger:0.1, autoAlpha:0},"<");
+		tl.to('#annaInAfrica', {duration:1, delay:1, background:$brandContrastLight},"<");
+		tl.from('#smilingAnnaInAfrica', {duration:2, autoAlpha:0, ease:"linear"},"<");
+		tl.to('#animatedLogoWrap',{duration:3, ease:"circ.out", scale:1.5, top:0, right:0, autoAlpha:"0"},">");
 		tl.to("#svg_body", {duration:3, morphSVG:"#svg_body", ease:"expo.out"},"<");
 		tl.to("#svg_shadow", {duration:3, morphSVG:"#svg_shadow", ease:"expo.out"},"<");
-
-		tl.to('#donateBtn', {duration:0.5, repeat:1, scale:1.1, opacity:0.7, yoyo:true},"<2.5");
+		tl.to('#donateBtn', {duration:0.5, repeat:1, scale:1.2, opacity:0.7, yoyo:true},"<2.5");
 		tl.totalDuration(5);
 		return tl;
 	}

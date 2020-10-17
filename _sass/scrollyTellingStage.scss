@@ -138,6 +138,7 @@ $textContainerWidth: 800px;
     }
     #animatedLogo {
         #animatedLogoWrap {
+            position: absolute;
             visibility: hidden;
             width: $animatedLogoWidth;
             svg {
