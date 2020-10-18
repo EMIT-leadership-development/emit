@@ -109,32 +109,95 @@
             color: #000000;
         }
     }
-    .storyNav {
+    #scrollProgress {
         position: fixed;
-        z-index: 1500;
-        left: 0;
-        top:0;
-        bottom: 0;
-        // background: black;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        padding: 2rem;
+        top: 130px;
+        bottom: 2rem;
+        left: 1rem;
+        z-index: 999;
+        #progressIndicator {
+            position: relative;
+            display: block;
+            width: 4px;
+            background: $brand-color;
+        }
+    }
+    .storyNav {
+        @media (max-width: 650px) {
+            display: none;
+        }
+        position: fixed;
+        z-index: 999;
+        left: 1rem;
+        top:130px;
+        bottom: 2rem;
+        transition: all 0.5s ease-in-out;
+        mix-blend-mode: difference;
         ul {
+            border-left: 1px solid #ffffff;
+            position: relative;
             list-style-type: none;
             padding: 0;
             margin: 0;
             display: flex;
             flex-direction: column;
-            li a {
-                color: $brand-color;
+            justify-content: space-between;
+            height: 100%;
+            li {
+                a {
+                    height: 1px;
+                    overflow: visible;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    text-decoration: none;
+                    color: #ffffff;
+                    font-size: 1rem;
+                    transition: all 0.5s ease-in-out;
+                    padding: 0 0;
+                    &:hover {
+                        text-decoration: none;
+                        &:before {
+                            width: 15px;
+                        }
+                        span {
+                            opacity: 1;
+                            transition: all 0.5s ease-in-out;
+                        }
+                    }
+                    span {
+                        margin-left: 5px;
+                        opacity: 0;
+                    }
+                    &:before {
+                        content: "";
+                        width: 10px;
+                        height: 1px;
+                        border-top: 1px solid #ffffff;
+                        display: inline-block;
+                        transition: all 0.5s ease-in-out;
+                    }
+                }
+            }
+        }
+        &.blackNav {
+            border-left: 1px solid #000000;
+            ul {
+                li {
+                    a {
+                        color: #000000;
+                        &:before {
+                            border-top: 1px solid #000000;
+                        }
+                    }
+                }
             }
         }
     }
     .hero {
         box-sizing: border-box;
         height: 100vh;
+        border-top: 0;
         // margin-top: -100px;
         overflow: hidden;
         padding: 0;
@@ -218,12 +281,21 @@
         background-color: transparent;
         section {
             height: 100vh;
-            // border-top: 1px solid red;
+            min-height: 100vh;
+            border-top: 1px dashed $brand-color;
             position: relative;
             box-sizing: border-box;
         }
         // Custom timing for specific sections
-        #yourLegacy, #annasLeaders, #meetAnna, #africaProblemSymptoms, #meetJoseph, #transformedHisLife, #emitTrainingContent, #makeADifference, #sadAnna {
+        #yourLegacy,
+        #meetAnna,
+        #annasLeaders,
+        #africaProblemSymptoms,
+        #meetJoseph,
+        #transformedHisLife,
+        #emitTrainingContent,
+        #makeADifference,
+        #sadAnna {
             height: 200vh;
         }
     }

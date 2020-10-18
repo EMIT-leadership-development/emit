@@ -6,8 +6,6 @@ window.onload = function() {
 	storyNav();
 	pinDonation();
 	initialSettings();
-	// videoScrub();
-	// videoScrubReverse();
 
 	//--------MOTHER OF ALL TIMELINES : MAIN SCROLLING ANIMATION-------------------------------------
 	const tl_mother = gsap.timeline({});
@@ -77,27 +75,39 @@ window.onload = function() {
 		start: "top bottom",
 		endTrigger: "main.content",
 		end: "bottom bottom",
-		// onUpdate: self => console.log("direction:", self.direction),
+		onUpdate: self => scrollProgress(self.progress),
 		toggleActions: "play complete reverse reverse",
 		scrub: 1
 	});
-	// console.log("LABELS", tl_mother.labels);
+	console.log("LABELS", tl_mother.labels);
 	// console.log("DURATION", tl_mother.totalDuration());
-
+	// -------SCROLL PROGRESS INDICATOR
+	function scrollProgress(progress) {
+		// console.log(progress);
+		let progressTween = gsap.fromTo("#progressIndicator",
+			{height: 0 },
+			{height: "100%",
+			duration: 5,
+			ease: "none",
+			paused: true
+			});
+		progressTween.progress(progress);
+	}
 	//--------STORY NAV : LEFT LINKS THAT NAVIGATE THE HOME PAGE STORY -------------------------------------
 	function storyNav() {
 		// Also slipped the scrolldown link in here
-		gsap.utils.toArray(".storyNav li a, #scrollDown").forEach(function(a) {
+		gsap.utils.toArray(".storyNav li a span, #scrollDown").forEach(function(a) {
 			a.addEventListener("click", function(e) {
 				e.preventDefault();
-				var label = e.target.getAttribute("data-jump")
+				var label = e.target.closest("a").getAttribute("data-jump");
+				console.log("clicked: ", label);
 				if (label) {
 					const percent = tl_mother.labels[label] / tl_mother.totalDuration();
 					const scrollPos = myST.start + (myST.end - myST.start) * percent;
 					gsap.to(window, {duration: 1, scrollTo: scrollPos});
-				} else {
-					const section = document.querySelector(a.getAttribute("href"));
-					gsap.to(window, {scrollTo: section});
+				}else {
+					const section = document.querySelector(a.closest("a").getAttribute("href"));
+					gsap.to(window, {duration: 1, scrollTo: section});
 				}
 			});
 		});
@@ -199,7 +209,6 @@ var NINJA_FUNCTIONS = {
 	yourStoryTitle: function() {
 		var tl = gsap.timeline({
 		});
-		// 1.5
 		tl.fromTo('.introHeadline h1',{autoAlpha:1, rotateX:0}, {duration:5, autoAlpha:0, rotateX:10});
 		tl.from('#yourStoryTitle .sectionHeading span', {duration:3, autoAlpha:0, y:"300", stagger:"0.2", ease:"Sine.easeOut"},"<+1");
 		tl.totalDuration(5);
