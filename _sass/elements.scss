@@ -225,9 +225,6 @@ p.introduction {
 		}
 	}
 }
-
-
-
 // Info Points - Icon List
 .infoPoints {
 	padding-left: 0;
@@ -304,14 +301,7 @@ p.introduction {
 		}
 	}
 }
-
-
-
-
-
-
-
-// Video player section - layout is in layout.scss
+// Popup Video player section - layout is in layout.scss
 .videoPlayer {
 	// Min height is set by .sectionImage at 400px - the video player should be
 	min-height: 200px !important;
@@ -750,8 +740,6 @@ p.introduction {
 		}
 	}
 }
-
-
 // Counter Row
 .counterwrap {
 	padding: 3rem 0;
@@ -1124,13 +1112,6 @@ section.curriculum {
 		}
 	}
 }
-
-
-
-
-
-
-
 // Team Lists
 .teamList {
 	margin-bottom: 0;
@@ -1310,7 +1291,6 @@ section.curriculum {
 		}
 	}
 }
-
 // ADDRESS ROW
 .addressRow {
 	@media #{$mid-point} {
@@ -1358,6 +1338,128 @@ section.curriculum {
 	}
 
 }
+// History Page Timeline
+.timelineWrap {
+	.timelineCard {
+		border: 2px solid lighten($brandContrastDark, 70%);
+		background: #ffffff;
+		text-align: left;
+		padding: 1.5rem 1.5rem 1rem 1.5rem;
+		h3 {
+			margin-bottom: 0.6rem;
+			font-size: 1.2rem;
+			text-transform: uppercase;
+		}
+		p {
+			margin-bottom: 0.5rem;
+		}
+		ul {
+			list-style-type: none;
+			list-style-position: outside;
+			padding: 0;
+			margin: 0;
+		}
+		li {
+			margin-bottom: 0.5rem;
+			position: relative;
+			padding-left: 2rem;
+			line-height: 1.5;
+			&:before {
+				content: "";
+				width: 15px;
+				height: 7px;
+				background: $brand-color;
+				display: block;
+				position: absolute;
+				top: 9px;
+				left: 0;
+			}
+		}
+	}
+	.timelineIntro {
+		padding-top: 4rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		.timelineCard {
+			text-align: center;
+			h2 {
+				font-size: 1.5rem;
+				margin-bottom: 0;
+				text-transform: uppercase;
+			}
+			max-width: 300px;
+			padding: 2rem;
+		}
+	}
+	.timelineSection {
+		display: flex;
+		&:nth-child(odd) {
+			flex-direction: row-reverse;
+			.year {
+				text-align:left;
+			}
+		}
+		.year {
+			padding: 4rem 2rem;
+			flex: 1;
+			// border: 1px solid red;
+			text-align: right;
+			font-size: 2rem;
+		}
+		.info {
+			padding: 4rem 2rem;
+			flex: 1;
+			// border: 1px solid yellow;
+		}
+		.iconWrap {
+			position: relative;
+			width: 80px;
+			// border: 1px solid blue;
+			display: flex;
+			justify-content: center;
+			align-items: flex-start;
+			&:before {
+				content: "";
+				position: absolute;
+				width: 3px;
+				height: 100%;
+				background-color: lighten($brandContrastDark, 50%);
+				z-index: 0;
+			}
+			.icon {
+				margin-top: 4rem;
+				z-index:1;
+				width: 60px;
+				height: 60px;
+				border-radius: 50%;
+				background: lighten($brandContrastDark, 50%);
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				svg {
+					stroke-width: 0.9px;
+					stroke: #ffffff;
+					width: 30px;
+					height: 30px;
+					color: #ffffff;
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // SAVING THIS FOR MAP MARKER
@@ -1373,7 +1475,6 @@ ul.testing {
 	padding-left: 1.8em;
 	margin-top: 0.5em;
 }
-
 .cd-single-point {
 	font-size: 1.5em;
 	line-height: 1.6;
