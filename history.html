@@ -13,37 +13,20 @@ hero_image: /images/road.webp
             <h2 class="editable"><span class="emphasis">27 years</span> in Africa</h2>
         </div>
     </div>
-    <div class="timelineSection">
-        <div class="year">
-            2000
-        </div>
-        <div class="iconWrap">
-            <span class="icon"><i data-feather="calendar"></i></span>
-        </div>
-        <div class="info">
-            <div class="timelineCard">
-                <h3>Title Here</h3>
-                <p>Information paragraph or list of things that happened.</p>
-                <ul>
-                    <li>Something that happened in this time</li>
-                    <li>Another thing that happened in this time</li>
-                </ul>
+    {% for item in site.data.history %}
+        <div class="timelineSection">
+            <div class="year">
+                {{item.year}}
+            </div>
+            <div class="iconWrap">
+                <span class="icon"><i data-feather="{{item.iconName}}"></i></span>
+            </div>
+            <div class="info">
+                <div class="timelineCard">
+                    <h3>{{item.name}}</h3>
+                    {{item.description_html}}
+                </div>
             </div>
         </div>
-    </div>
-    <div class="timelineSection">
-        <div class="year">
-            2000
-        </div>
-        <div class="iconWrap">
-            <span class="icon"><i data-feather="calendar"></i></span>
-        </div>
-        <div class="info">
-            <div class="timelineCard">
-                <h3>Title Here</h3>
-                <p>Information paragraph or list of things that happened.</p>
-                <p>Convallis vehicula dictumst et tortor scelerisque pede penatibus, quae vestibulum molestie? Rem? Quaerat eos rerum mus! Vel accusamus nascetur omnis dis voluptas ante mollis, ullamcorper. A commodi, illo ullamco recusandae.</p>
-            </div>
-        </div>
-	</div>
+    {% endfor %}
 </section>
