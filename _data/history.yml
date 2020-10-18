@@ -7,9 +7,8 @@
 - name: AFMIN IS FOUNDED
   year: 1993
   iconName: calendar
-  description_html: |
-    <p>This is a description of what happened in this time</p>
-    <ul>
-      <li>Something happened</li>
-      <li>Another thing happened</li>
-    </ul>
+  description_html: >-
+    <p>Chris de Wet and Karel Sanders join their respective ministries to form a
+    new organization called Africa Ministries Network - soon referred to as
+    &ldquo;AFMIN.&rdquo;</p><ul><li>Executive leadership is shared by Karel and
+    Chris.</li><li>AFMIN hosts training events in Malawi &amp; Zambia.</li></ul>
