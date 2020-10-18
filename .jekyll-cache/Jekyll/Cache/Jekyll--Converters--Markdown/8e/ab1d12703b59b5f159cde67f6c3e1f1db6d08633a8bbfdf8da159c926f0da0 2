@@ -1,0 +1,36 @@
+I"
+<h2 id="this-is-a-fake-story---replace-it-with-a-story-from-one-of-the-emit-countries">This is a fake story - replace it with a story from one of the EMIT countries</h2>
+
+<p>I suggest that we have at least one story from each country with geo-location. This will automatically populate the hero-map at the top of the Stories Page.</p>
+
+<ol>
+  <li>
+    <h4 id="add-the-latitude-and-longitude">Add the latitude and longitude</h4>
+    <p>The geolocations can be as accurate as you want them to be. I suggest at least one location (story) per country to show EMIT’s footprint.</p>
+  </li>
+  <li>
+    <h4 id="add-the-leader-name-and-bio-the-main-character-of-the-story">Add the leader name and bio (the main character of the story)</h4>
+    <p>For transformation stories, the author bio and pic is replaced with the main character’s info.</p>
+  </li>
+  <li>
+    <h4 id="the-title-of-the-story-and-the-hero-title">The title of the story and the Hero Title</h4>
+    <p>The title becomes the page url. If the title is too long, then create a shorter version to show in the hero image of the page.</p>
+  </li>
+  <li>
+    <h4 id="the-subtitle-will-show-as-an-excerpt-for-the-story-in-all-listings">The subtitle will show as an excerpt for the story in all listings.</h4>
+    <p>Make the subtitle explanitory and use keywords for search engines. Cupidatat fames nemo tristique magnam perferendis! Minim provident sem, deserunt, ante nostrud quisquam curae aliquam possimus! Dui hymenaeos mollitia, natoque.</p>
+  </li>
+  <li>
+    <h4 id="change-the-hero-image-for-the-page-header">Change the hero image for the page header</h4>
+    <p>Est hic labore inventore quibusdam accusantium animi rem, expedita soluta! Ac nonummy repellendus consequuntur! Aperiam architecto, maiores odio? Purus, consectetuer.</p>
+  </li>
+  <li>
+    <h4 id="select-an-image-from-the-sprite-for-post-listings">Select an image from the sprite for post listings</h4>
+    <p>The sprite image is a single composite image that will be used on listing pages (such as the Stories Page). The page loads much faster with one large image than 30 small ones.  Select the number of the image you want to use according to its order in the sprite.  The first slot is blank. Count from the first image down.</p>
+  </li>
+  <li>
+    <h4 id="embed-images-and-video-in-the-content">Embed images and video in the content</h4>
+    <p>Some actual photos and video from these stories would be faintastic.  Contact Sonya when you embed your first image or video so that I can make sure the styling is working.</p>
+  </li>
+</ol>
+:ET
