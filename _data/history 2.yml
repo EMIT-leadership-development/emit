@@ -1,0 +1,19 @@
+- name: A meeting of visionaries
+  year: 1991
+  iconName: calendar
+  description_html: |
+    <p>This is a description of what happened in this time</p>
+    <ul>
+      <li>Something happened</li>
+      <li>Another thing happened</li>
+    </ul>
+
+- name: AFMIN IS FOUNDED
+  year: 1993
+  iconName: calendar
+  description_html: |
+    <p>This is a description of what happened in this time</p>
+    <ul>
+      <li>Something happened</li>
+      <li>Another thing happened</li>
+    </ul>
