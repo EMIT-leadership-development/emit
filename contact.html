@@ -5,62 +5,121 @@ heroQuote: Although leaders and followers are closely linked, it is the leader w
 hero_Quote_Cite: Peter Northouse
 hero_image: /images/handWorld.webp
 description: Get in touch
-email: fur@example.com
-map:
-  latitude: -45.873511
-  longitude: 170.503704
-  address: 'Dunedin, New Zealand'
-  zoom: 13
+email: admin@emit.global
 ---
-
-<div class="contact-box">
-	<form action="{{ site.baseurl }}/contact-success/" method="post" class="contact-form">
+<!-- ADDRESS SA -->
+<section class="item--full white contactRow">
+	<div class="container addressRow">
+		<div class="address contactBlock">
+			<span class="icon"><i data-feather="map"></i></span>
+			{% assign address = site.data.contacts[0] %}
+			<div class="addresses">
+				<h5>SA HEADOFFICE</h5>
+				<p>{{ address.address }}</p>
+			</div>
+		</div>
+		<div class="email contactBlock">
+			<span class="icon"><i data-feather="mail"></i></span>
+			<div class="addresses">
+				<h5>SA EMAIL</h5>
+				<p>{{ address.email }}</p>
+			</div>
+		</div>
+		<div class="phone contactBlock">
+			<span class="icon"><i data-feather="smartphone"></i></span>
+			<div class="addresses">
+				<h5>SA PHONE</h5>
+				<p>{{ address.phone }}</p>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- ADDRESS SA -->
+<section class="item--full contactRow">
+	<div class="container addressRow">
+		<div class="address contactBlock">
+			<span class="icon"><i data-feather="map"></i></span>
+			{% assign address = site.data.contacts[1] %}
+			<div class="addresses">
+				<h5>USA HEADOFFICE</h5>
+				<p>{{ address.address }}</p>
+			</div>
+		</div>
+		<div class="email contactBlock">
+			<span class="icon"><i data-feather="mail"></i></span>
+			<div class="addresses">
+				<h5>USA EMAIL</h5>
+				<p>{{ address.email }}</p>
+			</div>
+		</div>
+		<div class="phone contactBlock">
+			<span class="icon"><i data-feather="smartphone"></i></span>
+			<div class="addresses">
+				<h5>USA PHONE</h5>
+				<p>{{ address.phone }}</p>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="contactForm map item--full contrastLight2">
+	<div class="leftToCenter mapWrap">
+		<!-- Sonya - check Fur template for how they did maps -->
+		<!-- 10 Sinclair Road, Selection Park, Springs, 1560 -->
+		{% google_map
+			width="100%"
+			height="630"
+			zoom="15"
+			latitude= "-26.273030"
+				longitude= "28.440429"
+			styles="dark"
+			url_text: "View on Google"
+			marker_icon="/images/interface/mapMarker.png"
+			marker_title="<span>EMIT Office in SA</span><span>10 Sinclair Road<br>Selection Park<br>Springs</span>"
+			marker_url="https://goo.gl/maps/fzAtpWu6GWeBrZZ38" %}
+	</div>
+	<div class="containedRight sectionContent">
 		<h3>Send us a message</h3>
-		<label for="name">Full Name</label>
-		<input type="text" name="name" id="name" placeholder="Enter your name..." autofocus>
+			<form class="materialForm" action="{{ site.baseurl }}/contact-success/" method="post" class="contact-form">
+				<!-- SONYA - CHECK ALL THE FIELD NAMES AND ACTIONS - ORIGINAL FORM FROM CC FUR TEMPLATE -->
+				<!-- <h3>Send us a message</h3>
+				<label for="name">Full Name</label>
+				<input type="text" name="name" id="name" placeholder="Enter your name..." autofocus>
+				<label for="email">Email Address</label>
+				<input type="email" name="email" id="email" placeholder="Enter your email..." required inputmode="email">
+				<label for="message">Message</label>
+				<textarea name="message" id="message" placeholder="Enter your message..."></textarea> -->
+				<div class="form-group">
+					<input type="text" required="required"/>
+					<label for="input" class="control-label">Name</label><i class="bar"></i>
+				</div>
+				<div class="form-group">
+					<input type="text" required="required"/>
+					<label for="input" class="control-label">Email</label><i class="bar"></i>
+				</div>
+				<div class="form-group">
+					<textarea required="required"></textarea>
+					<label for="textarea" class="control-label">Your Message</label><i class="bar"></i>
+				  </div>
+				<input type="hidden" name="_to" value="{{ page.email }}">
+				<input type="text" name="_gotcha" style="display: none;">
+				<input class="button" type="submit" value="Send Message">
+			</form>
+	</div>
+</section>
 
-		<label for="email">Email Address</label>
-		<input type="email" name="email" id="email" placeholder="Enter your email..." required inputmode="email">
-
-		<label for="message">Message</label>
-		<textarea name="message" id="message" placeholder="Enter your message..."></textarea>
-
-		<input type="hidden" name="_to" value="{{ page.email }}">
-		<input type="text" name="_gotcha" style="display: none;">
-
-		<input type="submit" value="Send Message">
-	</form>
-
-	<div class="contact-details">
-		<div class="map" id="map"></div>
-</div>
-
-<script type="text/javascript">
-	window.mapData = {{ page.map | jsonify }};
-
-	function initMap() {
-		var myOptions = {
-			scrollwheel: false,
-			draggable: false,
-			panControl: false,
-			disableDefaultUI: true,
-			styles:[ { stylers: [{ invert_lightness: true }, { saturation: -100 }, { lightness: 10 }] }, {featureType: "all", elementType: "labels", stylers: [{ visibility: "off" }]}, ],
-			// styles: [{"featureType":"administrative","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#fcfcfc"}]},{"featureType":"poi","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#fcfcfc"}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#dddddd"}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#dddddd"}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#eeeeee"}]},{"featureType":"water","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#dddddd"}]}],
-			zoom: window.mapData.zoom,
-			maxZoom: window.mapData.zoom,
-			minZoom: window.mapData.zoom,
-			center: new google.maps.LatLng(window.mapData.latitude, window.mapData.longitude),
-			mapTypeId: google.maps.MapTypeId.ROADMAP
-		};
-		map = new google.maps.Map(document.getElementById("map"), myOptions);
-		marker = new google.maps.Marker({
-			map: map,
-			position: new google.maps.LatLng(window.mapData.latitude, window.mapData.longitude)
-		});
-
-		google.maps.event.addDomListener(window, "resize", function () {
-			map.setCenter(myOptions.center);
-		});
-	}
-</script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key={{ site.google_maps_javascript_api_key }}&amp;callback=initMap"></script>
+<!-- REGIONAL OFFICES -->
+<section class="item--full white contactRow">
+	<div class="container addressRow">
+		{% for item in site.data.contacts offset: 2 %}
+		<div class="address contactBlock">
+			<span class="icon"><i data-feather="flag"></i></span>
+			<div class="addresses">
+				<h5>{{ item.name }}</h5>
+				<p>{{ item.email }}</p>
+				<p>{{ item.phone }}</p>
+				<p>{{ item.address }}</p>
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+</section>

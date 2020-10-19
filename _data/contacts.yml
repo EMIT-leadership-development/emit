@@ -10,3 +10,39 @@
   phone: "+1 719 648 0674"
   address: Edit contacts data file to change across entire site
   postal: "PO BOX 26369 COLORADO SPRINGS, CO 80936"
+- name: "ZIMBABWE OFFICE"
+  country: "Zimbabwe"
+  email: "email@domain.com"
+  phone: "+00 000 0000"
+  address: 10 Street, Suburb, City, 1234
+  postal: "PO BOX 123, SUBURB, COUNTRY, 1234"
+- name: "MALAWI OFFICE"
+  country: "Malawi"
+  email: "email@domain.com"
+  phone: "+00 000 0000"
+  address: 10 Street, Suburb, City, 1234
+  postal: "PO BOX 123, SUBURB, COUNTRY, 1234"
+- name: "RWANDA OFFICE"
+  country: "Rwanda"
+  email: "email@domain.com"
+  phone: "+00 000 0000"
+  address: 10 Street, Suburb, City, 1234
+  postal: "PO BOX 123, SUBURB, COUNTRY, 1234"
+- name: "ZAMBIA OFFICE"
+  country: "Zambia"
+  email: "email@domain.com"
+  phone: "+00 000 0000"
+  address: 10 Street, Suburb, City, 1234
+  postal: "PO BOX 123, SUBURB, COUNTRY, 1234"
+- name: "TANZANIA OFFICE"
+  country: "Tanzania"
+  email: "email@domain.com"
+  phone: "+00 000 0000"
+  address: 10 Street, Suburb, City, 1234
+  postal: "PO BOX 123, SUBURB, COUNTRY, 1234"
+- name: "COUNTRY OFFICE"
+  country: "Country"
+  email: "email@domain.com"
+  phone: "+00 000 0000"
+  address: 10 Street, Suburb, City, 1234
+  postal: "PO BOX 123, SUBURB, COUNTRY, 1234"

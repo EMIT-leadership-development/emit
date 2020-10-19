@@ -98,6 +98,16 @@ section {
 		padding-left: 2rem;
 		padding-right: 2rem;
 	}
+	.FirstSix {
+		grid-column: 1 / span 6;
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+	.SevenToRight {
+		grid-column: 7 / span 2;
+		padding-right: 2rem;
+		padding-left: 2rem;
+	}
 	.contained-FirstOne {
 		grid-column: 2 / span 1;
 		padding-left: 2rem;
@@ -219,5 +229,14 @@ section {
 			padding-left: 4rem;
 			grid-row: -1;
 		}
+	}
+}
+
+// CONTACT PAGE
+.contactForm {
+	height: auto !important;
+	grid-auto-rows: 1fr;
+	.button {
+		margin: 2rem 0 2rem 0;
 	}
 }

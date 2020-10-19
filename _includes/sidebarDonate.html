@@ -1,0 +1,55 @@
+    <!-- SECTION: DONATIN OPTIONS -->
+    <div class="sidebarSection">
+        <h4>THANK YOU!</h4>
+        <p>
+            Your support will help EMIT leaders to transform their communities in every sphere of society across Africa. We would like to make it simple for you to extend your own impact.  Here are a few ways you can support us:
+        </p>
+        <ul class="optionList">
+            <li>Extend your impact with a <a href="#subscription">monthly subscription</a></li>
+            <li>Determine your own impact with a <a href="#contribution">customised contribution</a></li>
+            <li>Power-up your impact by giving a <a href="#contribution">once-off gift</a> towards a specific need.</li>
+            <li>Experience your impact by getting involved.</li>
+        </ul>
+    </div>
+    <!-- SECTION: SECURITY -->
+    <div class="sidebarSection">
+        <h4>IS MY DONATION SECURE?</h4>
+        <p>
+            Absolutely. The security and confidentiality of your information is our highest priority. We use industry-standard SSL (secure socket layer) technology to protect your information and provide a safe and secure environment for online donations. We will not sell, trade or share your personal information with anyone else, nor send donor mailings on behalf of other organizations, and we will only share personal information if you have given us specific permission to do so.
+        </p>
+    </div>
+    <!-- SECTION: TAX -->
+    <div class="sidebarSection">
+        <h4>IS MY DONATION TAX-DEDUCTABLE?</h4>
+        <p>
+            A donation receipt will be sent to you at the email address you provide on this form. Please be sure to keep a copy of your receipt for tax purposes. If you select a recurring donation, you will be sent an individual receipt each month when your donation is processed.
+        </p>
+    </div>
+    <!-- SECTION: RECEIPT -->
+    <div class="sidebarSection">
+        <h4>DO I GET A RECEIPT?</h4>
+        <p>
+            A donation receipt will be sent to you at the email address you provide on this form. Please be sure to keep a copy of your receipt for tax purposes. If you select a recurring donation, you will be sent an individual receipt each month when your donation is processed.
+        </p>
+    </div>
+    <!-- SECTION: RECENT POSTS -->
+    <div class="sidebarSection recentPosts">
+        <h4>TRANSFORMATION STORIES</h4>
+        <ul class="clearlist widget-posts">
+            {% for post in site.posts limit:3 %}
+            <li>
+                <div class="recentPostWrap">
+                    <!-- Todo: replace this HUGE image with the minature sprite bg -->
+                    <a class="postImage" href="{{ post.url }}" style="background-image:url({{site.baseurl}}{{post.hero_image}})"></a>
+                    <div class="postDescription">
+                        <a class="postTitle" href="{{ post.url }}" title="">{{ post.title }}</a>
+                    </div>
+                    <div class="postMeta tagify">
+                        <span>{{ post.date | date: "%d %b %Y" }}</span>
+                        <span>{{ post.author }}</span>
+                    </div>
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
