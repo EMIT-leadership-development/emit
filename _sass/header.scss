@@ -65,6 +65,19 @@ header.mainNavigation {
         text-transform: uppercase;
     }
 
+    .cart {
+        position: relative;
+        display: grid;
+        place-items: center;
+        justify-content: center;
+        padding: .9rem 1.3rem 0.2rem 1.3rem;
+        // border: 1px solid red;
+        svg {
+            // position: absolute;
+            stroke: #000000;
+        }
+    }
+
     .nav-links > ul{
         display: flex;
         justify-content: center;

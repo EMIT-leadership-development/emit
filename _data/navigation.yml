@@ -8,24 +8,24 @@
       new_window: false
       highlight: false
     - name: Articles
-      link: /articles/about-emit
+      link: /articles
       new_window: false
       highlight: false
       subPages:
         - name: Our Vision
-          link: /articles/about-emit/vision
+          link: /our-vision
           new_window: false
           highlight: false
         - name: What we do
-          link: /articles/about-emit/what-we-do
+          link: /what-we-do
           new_window: false
           highlight: false
         - name: How we do it
-          link: /articles/about-emit/how-we-do-it
+          link: /how-we-do-it
           new_window: false
           highlight: false
         - name: More About EMIT
-          link: /articles/about-emit/articles/about-emit
+          link: /articles
           new_window: false
           highlight: false
     - name: History
@@ -65,15 +65,15 @@
   link: /donate
   new_window: false
   highlight: false
-  subPages:
-    - name: Donate
-      link: /donate
-      new_window: false
-      highlight: false
-    - name: Get Involved
-      link: /get-involved
-      new_window: false
-      highlight: false
+  # subPages:
+  #   - name: Donate
+  #     link: /donate
+  #     new_window: false
+  #     highlight: false
+    # - name: Get Involved
+    #   link: /get-involved
+    #   new_window: false
+    #   highlight: false
 - name: Contact
   link: /contact
   new_window: false
