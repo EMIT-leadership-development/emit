@@ -104,9 +104,27 @@
 			{{ content }}
 		</main>
 
+		<!-- Loader -->
+		<div id="loader">
+			{% include loader.html %}
+		</div>
+
 		<!-- FEATHER ICONS -->
 		<script>
 			feather.replace()
+		</script>
+
+		<script>
+			// LOADER
+			function loader() {
+				var tl = gsap.timeline({
+					defaults:{duration:3}
+				});
+				tl.fromTo(".loadersphere.sphere3",{scale:0}, {stagger:0.3, autoAlpha:0, scale:2, repeat:-1});
+				tl.fromTo(".loadersphere.sphere2",{scale:0}, {stagger:0.3, autoAlpha:0, scale:2, repeat:-1},"<+1");
+				tl.fromTo(".loadersphere.sphere1",{scale:0}, {stagger:0.3, autoAlpha:0, scale:2, repeat:-1},"<+1");
+			}
+			loader();
 		</script>
 
 		<!-- ADDING GSAP -->
