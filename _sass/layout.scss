@@ -17,10 +17,25 @@ main.content {
 	z-index: 999;
 	display: grid;
 	place-items: center;
-	h2 {
+	.info {
 		position: absolute;
 		bottom: 0;
 		color: #fff;
+		max-width: 800px;
+		display: flex;
+		h2 {
+			color: #ffffff;
+			border-left: 1px solid #ffffff;
+			padding: 1rem;
+		}
+		p {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			max-width: 400px;
+			color: #ffffff;
+			text-align: left;
+		}
 	}
 	#loaderspheres {
 		position: absolute;
