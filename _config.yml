@@ -96,7 +96,7 @@ _explore:
     - heading: Pages
       collections:
         - pages
-        programs:
+        - programs:
           _icon: school
     - heading: Articles
       collections:
