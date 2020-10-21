@@ -100,10 +100,10 @@ _explore:
       collections:
         - posts
         - drafts
-    - heading: Data
-      collections:
-        programs:
-          _icon: school
+    # - heading: Data
+    #   collections:
+    #     programs:
+    #       _icon: school
         # - Products
         # - Contacts
         # - History
