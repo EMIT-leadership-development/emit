@@ -101,7 +101,7 @@ _explore:
       collections:
         - posts
         - drafts
-    - heading: Data Lists
+    - heading: Data
       collections:
         - Programs
         - Products
