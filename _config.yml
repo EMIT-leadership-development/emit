@@ -92,7 +92,25 @@ maps:
 
 # -----------
 # CloudCannon
+_explore:
+  groups:
+    - heading: Pages
+      collections:
+        - pages
+    - heading: Articles
+      collections:
+        - posts
+        - drafts
+    - heading: Data Lists
+      collections:
+        - Programs
+        - Products
+        - Contacts
+        - History
+        - Partners
+        - Team
 
+# Sonya changed this to donation types
 garment_types:
   - hat
   - top
