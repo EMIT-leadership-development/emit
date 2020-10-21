@@ -100,14 +100,10 @@ _explore:
       collections:
         - posts
         - drafts
-    - heading: Data Lists
+    - heading: Lists
       collections:
         programs:
           _icon: school
-          _sort_key: status
-          _image_key: bookCover_image
-          _image_size: cover
-          _singular_name: title
         # - Products
         # - Contacts
         # - History
