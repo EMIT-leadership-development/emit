@@ -111,7 +111,6 @@
     }
     #scrollProgress {
         position: fixed;
-        top: 130px;
         bottom: 2rem;
         left: 1rem;
         z-index: 999;
@@ -127,25 +126,26 @@
             display: none;
         }
         position: fixed;
-        z-index: 999;
+        z-index: 998;
         left: 1rem;
-        top:130px;
         bottom: 2rem;
         transition: all 0.5s ease-in-out;
         mix-blend-mode: difference;
         ul {
-            border-left: 1px solid #ffffff;
             position: relative;
             list-style-type: none;
             padding: 0;
             margin: 0;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
-            height: 100%;
+            justify-content: flex-end;
             li {
                 a {
-                    height: 1px;
+                    border-left: 1px solid #000000;
+                    box-sizing: border-box;
+                    // border-top: 1px solid red;
+                    height: 12px;
+                    margin-bottom: 0;
                     overflow: visible;
                     display: flex;
                     justify-content: flex-start;
@@ -155,6 +155,12 @@
                     font-size: 1rem;
                     transition: all 0.5s ease-in-out;
                     padding: 0 0;
+                    &.height2 {
+                        height: 24px;
+                    }
+                    &.height3 {
+                        height: 36px;
+                    }
                     &:hover {
                         text-decoration: none;
                         &:before {
@@ -172,7 +178,7 @@
                     &:before {
                         content: "";
                         width: 10px;
-                        height: 1px;
+                        height: 100%;
                         border-top: 1px solid #ffffff;
                         display: inline-block;
                         transition: all 0.5s ease-in-out;
@@ -273,6 +279,9 @@
                     letter-spacing: 2px;
                     transform-style: preserve-3d;
                     margin-bottom: 0;
+                    span {
+                        display: block;
+                    }
                 }
             }
         }
@@ -282,22 +291,22 @@
         section {
             height: 100vh;
             min-height: 100vh;
-            border-top: 1px dashed $brand-color;
+            border-top: 5px dashed $brand-color;
             position: relative;
             box-sizing: border-box;
         }
         // Custom timing for specific sections
-        #yourLegacy,
-        #meetAnna,
-        #annasLeaders,
-        #africaProblemSymptoms,
-        #meetJoseph,
-        #transformedHisLife,
-        #emitTrainingContent,
-        #makeADifference,
-        #sadAnna {
-            height: 200vh;
-        }
+        // #yourLegacy,
+        // #meetAnna,
+        // #annasLeaders,
+        // #africaProblemSymptoms,
+        // #meetJoseph,
+        // #transformedHisLife,
+        // #emitTrainingContent,
+        // #makeADifference,
+        // #sadAnna {
+        //     height: 200vh;
+        // }
     }
 }
 // END scrollytelling wrap
