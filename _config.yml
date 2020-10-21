@@ -28,10 +28,6 @@ social:
 timezone: Africa/Johannesburg
 
 collections:
-  pages:
-    output: true
-    _image_key:	hero_image
-    _image_size: cover
   products:
     _hide_content: true
     output: true
