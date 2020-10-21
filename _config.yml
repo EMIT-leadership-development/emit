@@ -35,6 +35,7 @@ collections:
   programs:
     _hide_content: true
     _icon: school
+    _image_key:	bookCover_image
     output: true
     sort_by: id
   products:
