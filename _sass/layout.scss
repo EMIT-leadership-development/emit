@@ -6,6 +6,71 @@ main.content {
 	position: relative;
 }
 
+// Animated Pre-Loader
+#loader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: $brandContrastDark;
+	z-index: 999;
+	display: grid;
+	place-items: center;
+	h2 {
+		position: absolute;
+		bottom: 0;
+		color: #fff;
+	}
+	#loaderspheres {
+		position: absolute;
+        #loaderSpheresWrap {
+            position: relative;
+            width: 500px;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .loadersphere {
+                border-radius: 50%;
+                border: 1px solid $brand-color;
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .sphere3 {
+                width: 300px;
+                height: 300px;
+                background-color: $sphere3BG;
+            }
+            .sphere2{
+                width: 300px;
+                height: 300px;
+                background-color: $sphere2BG;
+            }
+            .sphere1 {
+                width: 300px;
+                height: 300px;
+                background-color: $sphere1BG;
+            }
+        }
+    }
+    #loaderanimatedLogo {
+		position: absolute;
+            svg {
+                width: 200px;
+                #logoBorderGuide {
+                    fill: $sphere1BG;
+                    stroke: $brand-color;
+                    stroke-width: 3px;
+                }
+            }
+    }
+}
+
 // page content wrap - exists to give individual pages a wrapping class
 .page {
 	margin: 0;
