@@ -37,26 +37,27 @@ collections:
     _icon: school
     output: true
     sort_by: id
-  contacts:
-    _hide_content: true
-    _icon: tour
-    output: false
   products:
     _hide_content: true
     _icon: shopping_cart
     output: false
-  history:
-    _hide_content: true
-    _icon: calendar_today
-    output: false
-  team:
-    _hide_content: true
-    _icon: people
-    output: false
-  partners:
-    _hide_content: true
-    _icon: verified
-    output: false
+
+  # contacts:
+  #   _hide_content: true
+  #   _icon: tour
+  #   output: false
+  # history:
+  #   _hide_content: true
+  #   _icon: calendar_today
+  #   output: false
+  # team:
+  #   _hide_content: true
+  #   _icon: people
+  #   output: false
+  # partners:
+  #   _hide_content: true
+  #   _icon: verified
+  #   output: false
 
 permalink: /:title.html
 
