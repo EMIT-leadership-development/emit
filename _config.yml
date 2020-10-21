@@ -96,14 +96,16 @@ _explore:
     - heading: Pages
       collections:
         - pages
+        programs:
+          _icon: school
     - heading: Articles
       collections:
         - posts
         - drafts
-    # - heading: Data
-    #   collections:
-    #     programs:
-    #       _icon: school
+    - heading: Data Lists
+      collections:
+        programs:
+          _icon: school
         # - Products
         # - Contacts
         # - History
