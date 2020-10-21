@@ -34,8 +34,13 @@ collections:
     _icon: shopping_cart
   programs:
     _hide_content: true
+    _icon: school
     output: true
     sort_by: id
+  contacts:
+    _hide_content: true
+    _icon: contact_mail
+    output: false
 
 permalink: /:title.html
 
@@ -96,21 +101,18 @@ _explore:
     - heading: Pages
       collections:
         - pages
-        - programs:
-          _icon: school
     - heading: Articles
       collections:
         - posts
         - drafts
-    # - heading: Data Lists
-    #   collections:
-    #     programs:
-    #       _icon: school
-        # - Products
-        # - Contacts
-        # - History
-        # - Partners
-        # - Team
+    - heading: Data Lists
+      collections:
+        - programs
+        - Products
+        - Contacts
+        - History
+        - Partners
+        - Team
 
 # Sonya changed this to donation types
 garment_types:
