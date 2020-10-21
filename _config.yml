@@ -100,7 +100,7 @@ _explore:
       collections:
         - posts
         - drafts
-    - heading: Lists
+    - heading: Data
       collections:
         programs:
           _icon: school
