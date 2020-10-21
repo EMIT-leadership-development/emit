@@ -101,9 +101,15 @@ _explore:
       collections:
         - posts
         - drafts
-    - heading: Data
+    - heading: Data Lists
       collections:
-        - Programs
+        programs:
+          output: true
+          _icon: school
+          _sort_key: status
+          _image_key: bookCover_image
+          _image_size: cover
+          _singular_name: title
         - Products
         - Contacts
         - History
