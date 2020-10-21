@@ -28,6 +28,8 @@ social:
 timezone: Africa/Johannesburg
 
 collections:
+  pages:
+    _image_size: cover
   products:
     _hide_content: true
     output: true
