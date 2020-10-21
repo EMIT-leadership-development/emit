@@ -104,7 +104,6 @@ _explore:
     - heading: Data Lists
       collections:
         programs:
-          output: true
           _icon: school
           _sort_key: status
           _image_key: bookCover_image
