@@ -44,23 +44,6 @@ collections:
     _icon: shopping_cart
     output: false
 
-  # contacts:
-  #   _hide_content: true
-  #   _icon: tour
-  #   output: false
-  # history:
-  #   _hide_content: true
-  #   _icon: calendar_today
-  #   output: false
-  # team:
-  #   _hide_content: true
-  #   _icon: people
-  #   output: false
-  # partners:
-  #   _hide_content: true
-  #   _icon: verified
-  #   output: false
-
 permalink: /:title.html
 
 defaults:
@@ -124,11 +107,11 @@ _explore:
       collections:
         - posts
         - drafts
-    - heading: Data Lists
+    - heading: Data-Lists
       collections:
         - programs
         - products
-    - heading: data
+        - data
 
 # Sonya changed this to donation types
 garment_types:
