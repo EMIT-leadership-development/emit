@@ -110,11 +110,11 @@ _explore:
           _image_key: bookCover_image
           _image_size: cover
           _singular_name: title
-        - Products
-        - Contacts
-        - History
-        - Partners
-        - Team
+        # - Products
+        # - Contacts
+        # - History
+        # - Partners
+        # - Team
 
 # Sonya changed this to donation types
 garment_types:
