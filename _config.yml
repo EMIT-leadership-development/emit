@@ -124,9 +124,8 @@ _explore:
         - drafts
     - heading: Data Lists
       collections:
-        - team
         - programs
-        - contacts
+        - products
 
 # Sonya changed this to donation types
 garment_types:
