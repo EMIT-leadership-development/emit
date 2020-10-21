@@ -108,11 +108,11 @@ _explore:
     - heading: Data Lists
       collections:
         - programs
-        - Products
-        - Contacts
-        - History
-        - Partners
-        - Team
+        - contacts
+        # - products
+        # - history
+        # - partners
+        # - team
 
 # Sonya changed this to donation types
 garment_types:
