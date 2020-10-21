@@ -36,6 +36,7 @@ collections:
     _hide_content: true
     _icon: school
     _image_key:	bookCover_image
+    _image_size: cover
     output: true
     sort_by: id
   products:
@@ -127,6 +128,7 @@ _explore:
       collections:
         - programs
         - products
+    - heading: data
 
 # Sonya changed this to donation types
 garment_types:
