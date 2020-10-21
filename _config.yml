@@ -28,9 +28,6 @@ social:
 timezone: Africa/Johannesburg
 
 collections:
-  staff_members:
-    _hide_content: true
-    _icon: account_circle
   products:
     _hide_content: true
     output: true
