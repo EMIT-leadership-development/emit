@@ -102,10 +102,10 @@ _explore:
       collections:
         - posts
         - drafts
-    - heading: Data Lists
-      collections:
-        programs:
-          _icon: school
+    # - heading: Data Lists
+    #   collections:
+    #     programs:
+    #       _icon: school
         # - Products
         # - Contacts
         # - History
