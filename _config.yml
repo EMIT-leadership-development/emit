@@ -127,9 +127,6 @@ _explore:
         - team
         - programs
         - contacts
-        - products
-        - history
-        - partners
 
 # Sonya changed this to donation types
 garment_types:
