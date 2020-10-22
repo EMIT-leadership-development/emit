@@ -1,6 +1,7 @@
 ---
 # Default hero from config
 hero_image: /images/youngLeaderThinking.webp
+bookCover_image: /images/programs/YouthTrainingBook.webp
 title: Youth Leaders
 
 id: 3
