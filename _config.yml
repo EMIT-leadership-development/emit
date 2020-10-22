@@ -76,6 +76,12 @@ defaults:
     values:
       layout: "default"
 
+  -
+    scope:
+      path: "_data"
+    values:
+      hero_image: "" # or any placeholder image you want
+
 jekyll-archives:
   enabled:
     - categories
