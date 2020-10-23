@@ -307,7 +307,7 @@ hero_image: /images/couple.webp
 					{% assign url = item.websiteUrl %}
 					{% assign urlText = "Read more on their website" %}
 					{% assign description = item.description %}
-					<li>
+					<li class="cms-editor-link" data-cms-editor-link="cloudcannon:collections/_data/partners.yml">
 						<span class="modalBtn">
 							<img src="{{site.baseurl}}{{item.partner_image}}" alt="{{item.name}}">
 						</span>
@@ -323,16 +323,6 @@ hero_image: /images/couple.webp
 		<div class="sectionIntro containedRight">
 			<h2 class="editable sectionTitle priority3">Partners & Accreditations</h2>
 			<p class="editable">Paragraph describing EMIT's relationship with their partners and accreditations. The purpose of this section is to demonstrate: "They trust us - so can you".</p>
-			<div class="callToAction">
-				<a href="cloudcannon:collections/_data/partners.yml" class="editor-link button edit">
-					<span class="icon"><i data-feather="edit-2"></i></span>
-					<div class="tooltip">
-						<div class="tooltipcontent editor">
-							<div class="message">Click to edit the list of partners.</div>
-						</div>
-					</div>
-				</a>
-			</div>
 		</div>
 </section>
 
