@@ -1,8 +1,8 @@
 ---
+title:
+hero_image:
 bookCover_image: /images/programs/NewProgramTrainingBook.webp
 curriculumSprite_image: /images/sprites/sprite-Set2.webp
-
-title:
 id:
 objective_markdown:
 motivation:
