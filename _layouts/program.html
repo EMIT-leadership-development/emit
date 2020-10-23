@@ -6,7 +6,7 @@ layout: default
 <section class="programIntro white item--full">
     <div class="sectionIntro containedLeft">
         <h2 class="sectionTitle priority2">{{ page.title }}</h2>
-        <p class="introduction">{{ page.objective_markdown }}</p>
+        <p data-cms-editor-link="cloudcannon:collections/{{ page.relative_path }}" class="cms-editor-link introduction">{{ page.objective_markdown }}</p>
         <!-- If current then show register button -->
         <!-- If planned then show sponsor this program -->
         {% if page.status == "current"%}
