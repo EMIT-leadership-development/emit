@@ -75,21 +75,11 @@ hero_image: /images/couple.webp
 			{% assign thepost = site.posts | where:"title","Our Vision" %}
 			{% include articleLink.html %}
 		</div>
-		<!-- <div class="callToAction">
-			<a href="cloudcannon:collections/_programs/" class="editor-link button edit">
-				<span class="icon"><i data-feather="edit-2"></i></span>
-				<div class="tooltip">
-					<div class="tooltipcontent editor">
-						<div class="message">Click to edit the data-list of programs. Any edits you make will update all program occurences across the entire site</div>
-					</div>
-				</div>
-			</a>
-		</div> -->
 	</div>
 	<div class="sectionContent contained-LastFour">
 		<ul class="infoPoints">
 			{% for program in site.programs %}
-			<li data-cms-editor-link="cloudcannon:collections/_programs/" class="point">
+			<li data-cms-editor-link="cloudcannon:collections/_programs/" class="point cms-editor-link">
 				<span class="icon"><i data-feather="target"></i></span>
 				<h3 class="pointTitle">{{program.title}}</h3>
 				<p class="pointContent">{{program.motivation}}</p>
