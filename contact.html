@@ -153,7 +153,7 @@ contact_form_email: hello@sonya.ninja
 		if (request.status === 200) { // CloudCannon redirects on success
 		// It worked
 		console.log("success");
-		formWrapper.innerHTML("<h3>Send us a message</h3><p>Thanks for making contact! Your message has been sent - we'll be in touch soon.</p>");
+		formWrapper.innerHTML = "<h3>Send us a message</h3><p>Thanks for making contact! Your message has been sent - we'll be in touch soon.</p>";
 
 		}
 	});
