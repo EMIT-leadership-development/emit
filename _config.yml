@@ -78,7 +78,7 @@ defaults:
       hero_image: "" # or any placeholder image you want
   -
     scope:
-      path: "pages"
+      path: "/explore/pages"
     values:
       _image_key:	bookCover_image
       _image_size: cover
