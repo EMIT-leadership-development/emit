@@ -184,7 +184,7 @@ _comments:
   color: The background color used in the plan name and call to action.
   new_window: Open link in new window
   description: This is used for facebook shares of the page and google indexing
-  status: Current/Planned/Developing. Developing programs will be visible for spoonsorship.
+  status: Current/Planned/Developing. Current- open for registration. Developing- visible for sponsorship. Planned- visible in lists only.
   image: Student / Leader profile image (500px X 500px) displays in map and sidebar for transformation stories
   leaderBio_description: Displays in sidebar on transformation story posts
   bio_description: Short paragraph about this person
@@ -193,6 +193,6 @@ _comments:
   hero: Alternative title to display on page header. Default is page title
   hero_image: The large featured image at the top of the page. Should be at least 3000px wide.
   bookCover_image: The cover of the program book. Speak to Sonya about creating the mockups.
-  curriculumSprite_image: To minimise loading time - all the corricula images are compiled as a single sprite. Speak to sonya about creating these.
+  curriculumSprite_image: To minimise loading time - all the corricula images are compiled as a single sprite. Speak to sonya about creating these and linking them.
   title: Keep it short and to the point
   subtitle: Clickbait. In one sentence describe why this content is interesting to the reader
