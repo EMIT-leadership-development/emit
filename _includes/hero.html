@@ -13,8 +13,7 @@
 </section>
 
 {% else %}
-<!-- Todo: only insert custom position if it exists. -->
-<section class="hero item--full" style="background-image:url({{site.baseurl}}{{page.hero_image}}); background-position:{{page.customHeroPosition}};">
+<section class="hero item--full" style="background-image:url({{site.baseurl}}{{page.hero_image}}); {% if page.customHeroPosition %}background-position:{{page.customHeroPosition}}{% endif %};">
     <div class="overlay"></div>
 
     <div class="container">
