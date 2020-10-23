@@ -76,6 +76,12 @@ defaults:
       path: "_data"
     values:
       hero_image: "" # or any placeholder image you want
+  -
+    scope:
+      path: "pages"
+    values:
+      _image_key:	bookCover_image
+      _image_size: cover
 
 jekyll-archives:
   enabled:
