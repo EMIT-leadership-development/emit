@@ -77,9 +77,9 @@ contact_form_email: hello@sonya.ninja
 			marker_title="<span>EMIT Office in SA</span><span>10 Sinclair Road<br>Selection Park<br>Springs</span>"
 			marker_url="https://goo.gl/maps/fzAtpWu6GWeBrZZ38" %}
 	</div>
-	<div class="containedRight sectionContent">
+	<div id="contactFormWrapper" class="containedRight sectionContent">
 		<h3>Send us a message</h3>
-			<form class="materialForm" action="{{ site.baseurl }}/contact-success" method="post" class="contact-form">
+			<form id="contact-form" class="materialForm" action="{{ site.baseurl }}/contact-success" method="post">
 				<div class="form-group">
 					<input name="name" type="text" required="required"/>
 					<label for="name" class="control-label">Name</label><i class="bar"></i>
@@ -115,3 +115,47 @@ contact_form_email: hello@sonya.ninja
 		{% endfor %}
 	</div>
 </section>
+
+<script>
+	// Helper function to get form data in the supported format
+	function getFormDataString(formEl) {
+	var formData = new FormData(formEl),
+		data = [];
+
+	for (var keyValue of formData) {
+		data.push(encodeURIComponent(keyValue[0]) + "=" + encodeURIComponent(keyValue[1]));
+	}
+
+	return data.join("&");
+	}
+
+	// Fetch the form element
+	var formEl = document.getElementById("contact-form");
+	var formWrapper = document.getElementById("contactFormWrapper");
+
+	// Override the submit event
+	formEl.addEventListener("submit", function (e) {
+	e.preventDefault();
+
+	if (grecaptcha) {
+		var recaptchaResponse = grecaptcha.getResponse();
+		if (!recaptchaResponse) { // reCAPTCHA not clicked yet
+		return false;
+		}
+	}
+
+	var request = new XMLHttpRequest();
+
+	request.addEventListener("load", function () {
+		if (request.status === 302) { // CloudCannon redirects on success
+		// It worked
+		formWrapper.innerHTML("<h3>Send us a message</h3><p>Thanks for making contact! Your message has been sent - we'll be in touch soon.</p>");
+
+		}
+	});
+
+	request.open(formEl.method, formEl.action);
+	request.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+	request.send(getFormDataString(formEl));
+	});
+</script>
