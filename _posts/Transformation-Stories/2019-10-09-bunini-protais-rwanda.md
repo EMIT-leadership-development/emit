@@ -8,7 +8,7 @@ hero: Hope for the children of Rwanda
 hero_image: /images/curiousChildren.webp
 customHeroPosition: "center bottom"
 # Sprite Image for listings - to make site fast
-sprite_image: /images/sprites/sprite-Set1.jpg
+sprite_image: /images/sprites/sprite-Set1.webp
 sprite_selection_number: 7
 
 # If the author is team member then select from datafile

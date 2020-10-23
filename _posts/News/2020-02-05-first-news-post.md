@@ -7,7 +7,7 @@ subtitle: Who would have thought that such a crisis could be the inspiration for
 # Sprite Image for listings - to make site fast
 hero_image: images/ClusterOfAfricaChildrenWaitingForLeadership.webp
 customHeroPosition: "center bottom"
-sprite_image: /images/sprites/sprite-Set1.jpg
+sprite_image: /images/sprites/sprite-Set1.webp
 sprite_selection_number: 5
 
 # If the author is team member then select from datafile

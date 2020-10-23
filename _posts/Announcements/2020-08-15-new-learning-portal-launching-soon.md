@@ -7,7 +7,7 @@ hero_image: /images/wman-leader-training-workplace.webp
 # customHeroPosition: "50% 150%"
 # Hero defaults are set in config if not in post
 # Sprite Image for listings - to make site fast
-sprite_image: /images/sprites/sprite-Set1.jpg
+sprite_image: /images/sprites/sprite-Set1.webp
 sprite_selection_number: 8
 
 # If the author is team member then select from datafile

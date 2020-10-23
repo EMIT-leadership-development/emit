@@ -6,7 +6,7 @@ subtitle: These are some of the descriptions of the situation in the Portuguese 
 # Hero defaults are set in config if not in post
 # Sprite Image for listings - to make site fast
 hero_image: /images/African-Church-musician-leadership.webp
-sprite_image: /images/sprites/sprite-Set1.jpg
+sprite_image: /images/sprites/sprite-Set1.webp
 sprite_selection_number: 4
 
 # If the author is team member then select from datafile
