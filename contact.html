@@ -9,8 +9,8 @@ contact_form_email: hello@sonya.ninja
 ---
 <!-- ADDRESS SA -->
 <section class="item--full white contactRow">
-	<div data-cms-editor-link="cloudcannon:collections/_data/contacts.yml" class="cms-editor-link container addressRow">
-		<div class="address contactBlock">
+	<div class="container addressRow">
+		<div data-cms-editor-link="cloudcannon:collections/_data/contacts.yml" class="cms-editor-link  address contactBlock">
 			<span class="icon"><i data-feather="map"></i></span>
 			{% assign address = site.data.contacts[0] %}
 			<div class="addresses">
@@ -18,14 +18,14 @@ contact_form_email: hello@sonya.ninja
 				<p>{{ address.address }}</p>
 			</div>
 		</div>
-		<div class="email contactBlock">
+		<div data-cms-editor-link="cloudcannon:collections/_data/contacts.yml" class="cms-editor-link email contactBlock">
 			<span class="icon"><i data-feather="mail"></i></span>
 			<div class="addresses">
 				<h5>SA EMAIL</h5>
 				<p>{{ address.email }}</p>
 			</div>
 		</div>
-		<div class="phone contactBlock">
+		<div data-cms-editor-link="cloudcannon:collections/_data/contacts.yml" class="cms-editor-link phone contactBlock">
 			<span class="icon"><i data-feather="smartphone"></i></span>
 			<div class="addresses">
 				<h5>SA PHONE</h5>
@@ -35,8 +35,8 @@ contact_form_email: hello@sonya.ninja
 	</div>
 </section>
 <!-- ADDRESS USA -->
-<section data-cms-editor-link="cloudcannon:collections/_data/contacts.yml" class="cms-editor-link item--full contactRow">
-	<div class="container addressRow">
+<section class="item--full contactRow">
+	<div data-cms-editor-link="cloudcannon:collections/_data/contacts.yml" class="cms-editor-link container addressRow">
 		<div class="address contactBlock">
 			<span class="icon"><i data-feather="map"></i></span>
 			{% assign address = site.data.contacts[1] %}
@@ -45,14 +45,14 @@ contact_form_email: hello@sonya.ninja
 				<p>{{ address.address }}</p>
 			</div>
 		</div>
-		<div class="email contactBlock">
+		<div data-cms-editor-link="cloudcannon:collections/_data/contacts.yml"  class="cms-editor-link email contactBlock">
 			<span class="icon"><i data-feather="mail"></i></span>
 			<div class="addresses">
 				<h5>USA EMAIL</h5>
 				<p>{{ address.email }}</p>
 			</div>
 		</div>
-		<div class="phone contactBlock">
+		<div data-cms-editor-link="cloudcannon:collections/_data/contacts.yml"  class="cms-editor-link phone contactBlock">
 			<span class="icon"><i data-feather="smartphone"></i></span>
 			<div class="addresses">
 				<h5>USA PHONE</h5>
@@ -111,7 +111,7 @@ contact_form_email: hello@sonya.ninja
 <section class="item--full white contactRow">
 	<div class="container addressRow">
 		{% for item in site.data.contacts offset: 2 %}
-		<div class="address contactBlock">
+		<div data-cms-editor-link="cloudcannon:collections/_data/contacts.yml"  class="cms-editor-link address contactBlock">
 			<span class="icon"><i data-feather="flag"></i></span>
 			<div class="addresses">
 				<h5>{{ item.name }}</h5>
