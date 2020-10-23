@@ -175,6 +175,7 @@ _options:
     uploads_dir: "images/leaders/:title"
 
 _comments:
+  id: Give this item an id number or code. Does not normally display anywhere on the front-end but sometimes used to sort a list when displaying it on a page.
   map: Update the map location and display settings.
   latitude: Coordinates for the center marker on the map.
   longitude: Coordinates for the center marker on the map.
@@ -184,7 +185,7 @@ _comments:
   color: The background color used in the plan name and call to action.
   new_window: Open link in new window
   description: This is used for facebook shares of the page and google indexing
-  status: Current/Planned/Developing. Current- open for registration. Developing- visible for sponsorship. Planned- visible in lists only.
+  status: Current/Planned/Developing. Current- open for registration. Developing- visible for sponsorship. Planned- visible only in lists.
   image: Student / Leader profile image (500px X 500px) displays in map and sidebar for transformation stories
   leaderBio_description: Displays in sidebar on transformation story posts
   bio_description: Short paragraph about this person
