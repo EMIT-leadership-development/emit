@@ -74,7 +74,6 @@ defaults:
   -
     scope:
       path: "_data"
-      _subtext_key: name
     values:
       hero_image: "" # or any placeholder image you want
 
