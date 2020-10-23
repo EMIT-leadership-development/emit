@@ -38,7 +38,7 @@ collections:
   products:
     _hide_content: true
     _icon: shopping_cart
-    output: false
+    output: true
 
 permalink: /:title.html
 
