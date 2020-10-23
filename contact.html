@@ -79,7 +79,7 @@ contact_form_email: hello@sonya.ninja
 	</div>
 	<div id="contactFormWrapper" class="containedRight sectionContent">
 		<h3>Send us a message</h3>
-			<form id="contact-form" class="materialForm" method="post">
+			<form id="contact-form" class="materialForm" action="{{ site.baseurl }}/contact-success" method="post">
 				<div class="form-group">
 					<input name="name" type="text" required="required"/>
 					<label for="name" class="control-label">Name</label><i class="bar"></i>
@@ -132,6 +132,8 @@ contact_form_email: hello@sonya.ninja
 	// Fetch the form element
 	var formEl = document.getElementById("contact-form");
 	var formWrapper = document.getElementById("contactFormWrapper");
+
+	console.log(formEl);
 
 	// Override the submit event
 	formEl.addEventListener("submit", function (e) {
