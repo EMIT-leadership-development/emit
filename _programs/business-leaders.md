@@ -3,8 +3,8 @@ title: Business Leaders
 heroQuote: Education is the most powerful weapon which you can use to change the world.
 hero_Quote_Cite: Nelson Mandela
 
-hero_image: /images/couple.webp
-bookCover_image: /images/programs/NewProgramTrainingBook.webp
+hero_image: /images/AfricanLeadershipPowerCouple.webp
+bookCover_image: /images/NewProgramTrainingBook.webp
 curriculumSprite_image: /images/sprites/sprite-Set2.webp
 
 id: 4
