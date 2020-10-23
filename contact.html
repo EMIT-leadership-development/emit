@@ -89,16 +89,16 @@ contact_form_email: hello@sonya.ninja
 				<label for="message">Message</label>
 				<textarea name="message" id="message" placeholder="Enter your message..."></textarea> -->
 				<div class="form-group">
-					<input type="text" required="required"/>
-					<label for="input" class="control-label">Name</label><i class="bar"></i>
+					<input name="name" type="text" required="required"/>
+					<label for="name" class="control-label">Name</label><i class="bar"></i>
 				</div>
 				<div class="form-group">
-					<input type="text" required="required"/>
+					<input for="email" type="email" required="required"/>
 					<label for="input" class="control-label">Email</label><i class="bar"></i>
 				</div>
 				<div class="form-group">
-					<textarea required="required"></textarea>
-					<label for="textarea" class="control-label">Your Message</label><i class="bar"></i>
+					<textarea name="message" required="required"></textarea>
+					<label for="message" class="control-label">Your Message</label><i class="bar"></i>
 				  </div>
 				<input type="hidden" name="_to" value="{{ page.email }}">
 				<input type="text" name="_gotcha" style="display: none;">
