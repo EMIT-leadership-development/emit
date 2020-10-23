@@ -4,7 +4,7 @@ heroQuote: Education is the most powerful weapon which you can use to change the
 hero_Quote_Cite: Nelson Mandela
 
 hero_image: /images/AfricanLeadershipPowerCouple.webp
-bookCover_image: /images/NewProgramTrainingBook.webp
+bookCover_image: /images/programs/NewProgramTrainingBook.webp
 curriculumSprite_image: /images/sprites/sprite-Set2.webp
 
 id: 4
