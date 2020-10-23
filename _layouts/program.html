@@ -75,19 +75,19 @@ layout: default
         <ol class="curriculaList">
             {% assign distance = 5 %}
 
-            {% assign creditSort = page.curricula | sort: 'credits' | reverse %}
+            {% assign creditSort = page.curricula | sort: 'credits_number' | reverse %}
             {% for item in creditSort limit:1 %}
-            {% assign maxCredits = item.credits %}
+            {% assign maxCredits = item.credits_number %}
             {% endfor %}
 
-            {% assign daysSort = page.curricula | sort: 'days' | reverse %}
+            {% assign daysSort = page.curricula | sort: 'days_number' | reverse %}
             {% for item in daysSort limit:1 %}
-            {% assign maxDays = item.days %}
+            {% assign maxDays = item.days_number %}
             {% endfor %}
 
-            {% assign projectsSort = page.curricula | sort: 'projects' | reverse %}
+            {% assign projectsSort = page.curricula | sort: 'projects_number' | reverse %}
             {% for item in projectsSort limit:1 %}
-            {% assign maxProjects = item.projects %}
+            {% assign maxProjects = item.projects_number %}
             {% endfor %}
 
             {% for curricula in page.curricula %}
@@ -107,22 +107,22 @@ layout: default
                             <div class="programName">{{page.title}}</div>
                             <h3 class="curriculaTitle">{{curricula.title}}</h3>
                             <div class="charts">
-                                {% if curricula.credits %}
+                                {% if curricula.credits_number %}
                                 <div class="bar credits">
-                                    <span class="label">{{curricula.credits}} Credits</span>
-                                    <span style="width: {{curricula.credits | times: 100 | divided_by: maxCredits}}%" class="data"></span>
+                                    <span class="label">{{curricula.credits_number}} Credits</span>
+                                    <span style="width: {{curricula.credits_number | times: 100 | divided_by: maxCredits}}%" class="data"></span>
                                 </div>
                                 {% endif %}
-                                {% if curricula.days %}
+                                {% if curricula.days_number %}
                                 <div class=" bar days">
-                                    <span class="label">{{curricula.days}} Days</span>
-                                    <span style="width: {{curricula.days | times: 100 | divided_by: maxDays}}%" class="data"></span>
+                                    <span class="label">{{curricula.days_number}} Days</span>
+                                    <span style="width: {{curricula.days_number | times: 100 | divided_by: maxDays}}%" class="data"></span>
                                 </div>
                                 {% endif %}
-                                {% if curricula.projects %}
+                                {% if curricula.projects_number %}
                                 <div class=" bar projects">
-                                    <span class="label">{{curricula.projects}} Projects</span>
-                                    <span style="width: {{curricula.projects | times: 100 | divided_by: maxProjects}}%" class="data"></span>
+                                    <span class="label">{{curricula.projects_number}} Projects</span>
+                                    <span style="width: {{curricula.projects_number | times: 100 | divided_by: maxProjects}}%" class="data"></span>
                                 </div>
                                 {% endif %}
                             </div>
