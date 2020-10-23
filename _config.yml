@@ -70,7 +70,7 @@ defaults:
     scope:
       path: "index.html"
     values:
-      layout: "default"
+      layout: "scrollyTelling"
   -
     scope:
       path: "_data"
