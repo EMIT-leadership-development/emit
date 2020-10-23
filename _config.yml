@@ -192,3 +192,4 @@ _comments:
   curriculumSprite_image: To minimise loading time - all the corricula images are compiled as a single sprite. Speak to sonya about creating these and linking them.
   title: This will be the page url.
   subtitle: Clickbait. In one sentence describe why this content is interesting to the reader
+  contact_form_email: The email address where the contact form submissions should be sent
