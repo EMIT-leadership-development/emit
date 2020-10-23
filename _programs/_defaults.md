@@ -20,9 +20,9 @@ description_markdown: >-
 curricula:
   - title:
     objective:
-    credits:
-    days:
-    projects:
+    credits_number:
+    days_number:
+    projects_number:
     sprite_selection_number:
 
 ---
