@@ -22,7 +22,7 @@ hero_image: /images/lightAFire.webp
 <section class="teamList item--full white">
     <ul class="sectionContent">
         {% for teamMember in site.data.team%}
-        <li>
+        <li data-cms-editor-link="cloudcannon:collections/_data/history.yml" class="cms-editor-link">
             <!-- if group is team -->
             {% if teamMember.group == "team" %}
                 {% include teamMemberPreview.html %}
