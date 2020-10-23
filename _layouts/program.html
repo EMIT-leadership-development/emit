@@ -11,36 +11,20 @@ layout: default
         <!-- If planned then show sponsor this program -->
         {% if page.status == "current"%}
             <div class="callToAction">
-                <a href="cloudcannon:collections/{{ page.relative_path }}" class="editor-link button edit">
-                    <span class="icon"><i data-feather="edit-2"></i></span>
-                    <div class="tooltip">
-                        <div class="tooltipcontent editor">
-                            <div class="message">Click to edit this program and curriculum list.</div>
-                        </div>
-                    </div>
-                </a>
-                <a href="" class="button">Sponsor a student</a>
-                <a href="" class="button primary">REGISTER</a>
+                <a href="{{site.baseurl}}/donate" class="button editable">Sponsor a student</a>
+                <a href="{{site.baseurl}}/register" class="button primary editable">REGISTER</a>
             </div>
         {% else %}
             <div class="callToAction">
-                <a href="cloudcannon:collections/{{ page.relative_path }}" class="editor-link button edit">
-                    <span class="icon"><i data-feather="edit-2"></i></span>
-                    <div class="tooltip">
-                        <div class="tooltipcontent editor">
-                            <div class="message">Click to edit this program and curriculum list.</div>
-                        </div>
-                    </div>
-                </a>
-                <h4>Help us get this program to the people that need it.</h4>
+                <h4 class="editable">Help us get this program to the people that need it.</h4>
                 <p class="editable">By donating towards program development you are transforming lives.</p>
-                <a href="" class="button primary">Sponsor this program</a>
+                <a href="{{site.baseurl}}/donate" class="button primary editable">Sponsor this program</a>
             </div>
         {% endif %}
     </div>
     <div class="sectionContent containedRight">
         <h3 class="sectionTitle priority3">About this program</h3>
-        <p>{{ page.description_markdown }}</p>
+        <p data-cms-editor-link="cloudcannon:collections/{{ page.relative_path }}" class="cms-editor-link">{{ page.description_markdown }}</p>
     </div>
 </section>
 
@@ -50,7 +34,7 @@ layout: default
         <img src="{{site.baseurl}}{{page.bookCover_image}}" alt="">
     </div>
     <div class="container containedRight">
-        <ul class="infoPoints">
+        <ul data-cms-editor-link="cloudcannon:collections/{{ page.relative_path }}" class="cms-editor-link infoPoints">
             <li class="point">
                 <span class="icon"><i data-feather="log-in"></i></span>
                 <h3 class="pointTitle">Entrance Requirements</h3>
@@ -110,7 +94,7 @@ layout: default
             <!-- Muliply sprite-selection by distance to get the background Y position -->
             {% assign position = distance | times: curricula.sprite_selection_number %}
 
-            <li class="curriculaCard">
+            <li data-cms-editor-link="cloudcannon:collections/{{ page.relative_path }}" class="curriculaCard cms-editor-link">
                 <div class="curiculaWrap">
                     <!-- IMAGE -->
                     <div class="imageWrap">
