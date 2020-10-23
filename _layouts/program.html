@@ -90,8 +90,6 @@ layout: default
         <h2 class="sectionTitle priority2">Program <span class="emphasis">MODULES</span></h2>
         <ol class="curriculaList">
             {% assign distance = 5 %}
-            {% assign counter = 0 %}
-            {% assign position = 0 %}
 
             {% assign creditSort = page.curricula | sort: 'credits' | reverse %}
             {% for item in creditSort limit:1 %}
@@ -109,9 +107,8 @@ layout: default
             {% endfor %}
 
             {% for curricula in page.curricula %}
-            <!-- Muliply counter by distance to get the background X position -->
-            {% assign counter = counter | plus: 1 %}
-            {% assign position = counter | times: distance %}
+            <!-- Muliply sprite-selection by distance to get the background Y position -->
+            {% assign position = distance | times: curricula.sprite_selection_number %}
 
             <li class="curriculaCard">
                 <div class="curiculaWrap">

@@ -1,6 +1,6 @@
 ---
 bookCover_image: /images/programs/NewProgramTrainingBook.webp
-curriculumSprite_image: /images/programs/sprite-ComingSoon.webp
+curriculumSprite_image: /images/sprites/sprite-Set2.webp
 
 title:
 id:
@@ -23,5 +23,6 @@ curricula:
     credits:
     days:
     projects:
+    sprite_selection_number:
 
 ---

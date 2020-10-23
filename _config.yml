@@ -60,7 +60,7 @@ defaults:
     values:
       layout: "program"
       bookCover_image: /images/programs/NewProgramTrainingBook.webp
-      curriculumSprite_image: /images/programs/sprite-ComingSoon.webp
+      curriculumSprite_image: /images/sprites/sprite-Set2.webp
   -
     scope:
       path: ""
