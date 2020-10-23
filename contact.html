@@ -137,18 +137,19 @@ contact_form_email: hello@sonya.ninja
 	formEl.addEventListener("submit", function (e) {
 	e.preventDefault();
 
-	if (grecaptcha) {
-		var recaptchaResponse = grecaptcha.getResponse();
-		if (!recaptchaResponse) { // reCAPTCHA not clicked yet
-		return false;
-		}
-	}
+	// if (grecaptcha) {
+	// 	var recaptchaResponse = grecaptcha.getResponse();
+	// 	if (!recaptchaResponse) { // reCAPTCHA not clicked yet
+	// 	return false;
+	// 	}
+	// }
 
 	var request = new XMLHttpRequest();
 
 	request.addEventListener("load", function () {
 		if (request.status === 302) { // CloudCannon redirects on success
 		// It worked
+		console.log("success");
 		formWrapper.innerHTML("<h3>Send us a message</h3><p>Thanks for making contact! Your message has been sent - we'll be in touch soon.</p>");
 
 		}
