@@ -149,7 +149,7 @@ contact_form_email: hello@sonya.ninja
 	var request = new XMLHttpRequest();
 
 	request.addEventListener("load", function () {
-		console.log("request.status");
+		console.log(request.status);
 		if (request.status === 302) { // CloudCannon redirects on success
 		// It worked
 		console.log("success");
