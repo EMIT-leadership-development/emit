@@ -143,7 +143,7 @@ hero_image: /images/businessMan.webp
                 {% assign icon = 'data-feather="target"' %}
                 {% assign message = "Planned" %}
             {% endif %}
-            <li data-cms-editor-link="cloudcannon:collections/{{ program.path }}" class="point {{program.status}}">
+            <li data-cms-editor-link="cloudcannon:collections/{{ program.path }}" class="cms-editor-link point {{program.status}}">
                 <span class="icon"><i {{icon}}></i></span>
                 <h3 class="pointTitle">{{program.title}}</h3>
                     {% if program.status == "current" %}
