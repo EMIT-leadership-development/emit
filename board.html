@@ -24,7 +24,7 @@ customHeroPosition: "center 25%"
         {% for teamMember in site.data.team%}
             <!-- if group is team -->
             {% if teamMember.group == "board" %}
-            <li>
+            <li data-cms-editor-link="cloudcannon:collections/_data/team.yml" class="cms-editor-link">
                 {% include teamMemberPreview.html %}
             </li>
             {% endif %}
