@@ -76,6 +76,7 @@ defaults:
       path: "_data"
     values:
       hero_image: "" # or any placeholder image you want
+      _subtext_key: name
 
 jekyll-archives:
   enabled:
