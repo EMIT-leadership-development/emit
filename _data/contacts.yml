@@ -16,25 +16,25 @@
   postal: 'PO BOX 26369 COLORADO SPRINGS, CO 80936'
   latitude: 38.867236
   longitude: -104.76284
-- name: NORTHERN AFRICA
+- name: OFFICE TITLE / FUNCTION
   country: Zimbabwe
-  team-member: Jones Singini
+  team-member: Peter Mkandawire
   email: email@domain.com
   phone: +00 000 0000
   address: '10 Street, Suburb, City, 1234'
   postal: 'PO BOX 123, SUBURB, COUNTRY, 1234'
   latitude: -18.831596
   longitude: 29.934379
-- name: SOUTHERN AFRICAN
+- name: OFFICE TITLE / FUNCTION
   country: Malawi
-  team-member: Johan Fourie
+  team-member: Leonard Daffa
   email: email@domain.com
   phone: +00 000 0000
   address: '10 Street, Suburb, City, 1234'
   postal: 'PO BOX 123, SUBURB, COUNTRY, 1234'
   latitude: -13.13668
   longitude: 34.210565
-- name: EASTERN AFRICA
+- name: OFFICE TITLE / FUNCTION
   country: Rwanda
   team-member: Steven Todd
   email: email@domain.com
@@ -43,16 +43,16 @@
   postal: 'PO BOX 123, SUBURB, COUNTRY, 1234'
   latitude: -1.94895
   longitude: 29.916171
-- name: WESTERN AFRICA
+- name: OFFICE TITLE / FUNCTION
   country: Zambia
-  team-member:
+  team-member: Julio Da Silva
   email: email@domain.com
   phone: +00 000 0000
   address: '10 Street, Suburb, City, 1234'
   postal: 'PO BOX 123, SUBURB, COUNTRY, 1234'
   latitude: -13.901039
   longitude: 27.71449
-- name: ANOTHER DEPARTMENT
+- name: OFFICE TITLE / FUNCTION
   country: Tanzania
   team-member: Borniface Shonga
   email: email@domain.com
@@ -61,8 +61,8 @@
   postal: 'PO BOX 123, SUBURB, COUNTRY, 1234'
   latitude: -5.918119
   longitude: 34.963934
-- name: ANOTHER OFFICE
-  country: Country
+- name: OFFICE TITLE / FUNCTION
+  country: Gabon
   team-member: Constantin Gasore
   email: email@domain.com
   phone: +00 000 0000
