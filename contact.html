@@ -132,7 +132,7 @@ contact_form_email: admin@emit.global
 		// Start loop through stories / create markers
 		{% for location in locations %}
 			var position = new google.maps.LatLng({{location.latitude}}, {{location.longitude}});
-			// console.log({{location.latitude}}, "-", {{location.longitude}});
+			{% assign teamMember = site.data.team-members | where:"name", location.team-member | first  %}
 			bounds.extend(position);
 			var marker = new google.maps.Marker({
 				icon: emitIcon,
@@ -143,8 +143,7 @@ contact_form_email: admin@emit.global
 			});
 			google.maps.event.addListener(marker, 'click', (function(marker) {
 				return function() {
-					infowindow.setContent("<div class='infoWrap'><div class='locationInfo'><h4>{{location.name}}</h4><p>Contact: {{location.team-member}} in {{location.country}}<br>{{location.email}}</p></div><div class='locationImage'><a href='{{site.baseurl}}{{story.url}}'><div class='mapsphere2'><div class='mapsphere1'><svg width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-mail'><path d='M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z'></path><polyline points='22,6 12,13 2,6'></polyline></svg></div></div></a></div></div>");
-					// infowindow.setContent("Hello");
+					infowindow.setContent("<div class='infoWrap'><div class='locationInfo'><h4>{{location.name}}</h4><p>Contact Person: {{location.team-member}} in {{location.country}}<br>{{location.email}}</p></div><div class='locationImage' style='background-image:url({{teamMember.profile_image}});'><a href='{{site.baseurl}}{{story.url}}'><div class='mapsphere2'><div class='mapsphere1'><svg width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-mail'><path d='M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z'></path><polyline points='22,6 12,13 2,6'></polyline></svg></div></div></a></div></div>");
 					infowindow.open(map, marker);
 				}
 			})(marker));
