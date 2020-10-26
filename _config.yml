@@ -178,9 +178,8 @@ _options:
 _comments:
   id: Give this item an id number or code. Does not normally display anywhere on the front-end but sometimes used to sort a list when displaying it on a page.
   map: Update the map location and display settings.
-  latitude: Coordinates for the center marker on the map.
-  longitude: Coordinates for the center marker on the map.
-  zoom: The zoom level for the map.
+  latitude: Coordinates for the marker on the map.
+  longitude: Coordinates for the marker on the map.
   pricing_table: Update the information in the pricing tables.
   highlight: Emphasis the text
   color: The background color used in the plan name and call to action.
@@ -200,3 +199,4 @@ _comments:
   title: This will be the page url.
   subtitle: Clickbait. In one sentence describe why this content is interesting to the reader
   contact_form_email: The email address where the contact form submissions should be sent
+  team_member: Select a team-member (For posts this person is the author, for Map Markers this is the contact person)
