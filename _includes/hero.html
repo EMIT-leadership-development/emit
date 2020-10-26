@@ -1,15 +1,7 @@
 <!-- If page is articles then show hero map -->
 {% if page.title == "Stories" %}
-<section class="hero item--full map geoLocatedStories">
-    <!-- Todo: Page Title on Map -->
-    {% google_map
-        width="100%"
-        height="100%"
-        zoom="4"
-        src="_posts/Transformation-Stories"
-        styles="darkMinimum"
-        no_cluster
-        marker_icon="/images/interface/mapMarker.png" %}
+<section class="item--full geoLocatedStories googleMapWrap hero dark">
+    <div id="map-canvas" class="max-content" style="width:100%; height:100%"></div>
 </section>
 
 {% else %}

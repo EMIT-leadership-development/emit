@@ -24,11 +24,10 @@ excerpt_separator: <!--more-->
 # Location used in hero map
 leaderName: Miss Amazing EMIT student
 leaderBio_description: A paragraph about this leader
-image: /images/team/Lydia.webp
+leader_image: /images/team/Lydia.webp
 country: Zambia
-location:
-    latitude: -13.340436
-    longitude: 27.903660
+latitude: -13.340436
+longitude: 27.903660
 ---
 ## This is a fake story - replace it with a story from one of the EMIT countries
 

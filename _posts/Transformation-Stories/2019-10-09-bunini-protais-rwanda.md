@@ -24,11 +24,10 @@ excerpt_separator: <!--more-->
 # Location used in hero map
 leaderName: Dr. Bunini Gahungu Protais
 leaderBio_description: Karen's bio to come here.
-image: /images/leaders/BuniniProtais.webp
+leader_image: /images/leaders/BuniniProtais.webp
 country: Rwanda
-location:
-    latitude: -2.003878
-    longitude: 29.883200
+latitude: -2.003878
+longitude: 29.883200
 ---
 
 ## At first, we brought leaders together filled with hatred, fear, and trauma.

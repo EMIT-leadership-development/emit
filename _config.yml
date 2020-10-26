@@ -5,7 +5,7 @@ title: EMIT
 url: "http://adored-pea.cloudvent.net"
 baseurl:
 google_analytics_key:
-google_maps_javascript_api_key: AIzaSyCL26-sipFBbMnRYXRf_QAaa3Zp6eZmGUc
+google_maps_javascript_api_key: AIzaSyCopZOMs4afUxxRSYN36lBdL5dzANTsvFA
 snipcart_key: "NWFiMDUzOWItMDg2Yi00MDhjLWE1YmItODQ0M2EwYTI5YWI1NjM3MzU3Nzg2ODIyNjc0NDAz"
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
@@ -93,9 +93,9 @@ exclude:
   - LICENCE
 
 # MAP PLUGIN NEEDS GOGGLE API
-maps:
-  google:
-    api_key: AIzaSyCopZOMs4afUxxRSYN36lBdL5dzANTsvFA
+# maps:
+#   google:
+#     api_key: AIzaSyCopZOMs4afUxxRSYN36lBdL5dzANTsvFA
 
 # -----------
 # CloudCannon
@@ -114,19 +114,20 @@ _explore:
         - products
         - data
 
-# Sonya changed this to donation types
-garment_types:
-  - hat
-  - top
-# SELECT FIELD: Program Status determines whether program can be viewed
-statuses:
-  - current
-  - planned
-  - developing
-# SELECT FIELD: Team members are categorised in groups
-groups:
-  - team
-  - board
+_select_data:
+  # Sonya changed this to donation types
+  garment_types:
+    - hat
+    - top
+  # SELECT FIELD: Program Status determines whether program can be viewed
+  statuses:
+    - current
+    - planned
+    - developing
+  # SELECT FIELD: Team members are categorised in groups
+  groups:
+    - team
+    - board
 
 social_icons:
   - Email
@@ -181,8 +182,9 @@ _comments:
   new_window: Open link in new window
   description: This is used for facebook shares of the page and google indexing
   status: Current/Planned/Developing. Current- open for registration. Developing- visible for sponsorship. Planned- visible only in lists.
-  image: Student / Leader profile image (500px X 500px) displays in map and sidebar for transformation stories
-  leaderBio_description: Displays in sidebar on transformation story posts
+  Leadername: If this story is a transformation story - the name of the leader / student
+  image: For transformation stories - Student / Leader profile image (500px X 500px) displays in map and sidebar
+  leaderBio_description: If this is a transformation story then the leader will be featured in the sidebar, not the post author.
   bio_html: Short paragraph or two about this person
   heroQuote: Featured inspirational quote to display on page header image
   hero_Quote_Cite: Ascribe the quote or author

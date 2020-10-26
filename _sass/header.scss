@@ -5,6 +5,21 @@ header.mainNavigation {
     background-image: linear-gradient(90deg, #89b412 5%, transparent 30%);
     width: 100%;
     z-index: 1000;
+    &.transparentNav {
+        background: transparent;
+        a.topLevel {
+            color: rgba(255,255,255,0.6);
+            &.active {
+                color: #ffffff !important;
+            }
+            &.blackText {
+                color: rgba(0,0,0,0.7) !important;
+                &.active {
+                    color: rgba(0,0,0,1) !important;
+                }
+            }
+        }
+    }
     *{
         padding: 0;
         margin: 0;

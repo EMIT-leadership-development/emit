@@ -1,7 +1,7 @@
 <aside class="postPreview">
         {% if post.category == "Transformation Stories" %}
             {% assign authorName = post.leaderName %}
-            {% assign authorProfileImage = post.image %}
+            {% assign authorProfileImage = post.leader_image %}
         {% else %}
             {% assign author = site.data.team | where:"shortname", post.author  | first %}
             {% assign authorName = author.name %}

@@ -24,11 +24,10 @@ excerpt_separator: <!--more-->
 # Location used in hero map
 leaderName: Dr. Elvis Joseph
 leaderBio_description: Paragraph here about this leader
-image: /images/leaders/ElvisJoseph.jpg
+leader_image: /images/leaders/ElvisJoseph.jpg
 country: Zimbabwe
-location:
-    latitude: -18.979907
-    longitude: 29.782165
+latitude: -18.979907
+longitude: 29.782165
 ---
 
 ## EMIT training gave Elvis the confidence to advise politicians and business people

@@ -4,7 +4,7 @@ layout: default
 
 {% if page.category == "Transformation Stories" %}
 	{% assign authorName = page.leaderName %}
-	{% assign authorProfileImage = page.image %}
+	{% assign authorProfileImage = page.leader_image %}
 	{% assign authorbio = page.leaderBio_description %}
 {% else %}
 	{% assign author = site.data.team | where:"shortname", page.author  | first %}

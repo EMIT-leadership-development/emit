@@ -24,11 +24,10 @@ excerpt_separator: <!--more-->
 # Location used in hero map
 leaderName: Karen Feris
 leaderBio_description: Karen's bio to come here.
-image: /images/leaders/KarenFeris.webp
+leader_image: /images/leaders/KarenFeris.webp
 country: Namibia
-location:
-    latitude: -22.180274
-    longitude: 17.177725
+latitude: -22.180274
+longitude: 17.177725
 ---
 ## Karen in Namibia offers a healing facility for the whole family
 
