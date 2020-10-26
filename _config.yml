@@ -130,8 +130,8 @@ _select_data:
     - board
   # Select Field for Map Contact Locations
   teams:
-    - collections:
-      - data:
+    collections:
+      data:
         - team
 
 # Sonya - todo - remove all uses of these
