@@ -66,6 +66,7 @@ defaults:
       heroQuote: The essence of leadership is to make a difference in your sphere of influence.
       hero_Quote_Cite: O O Isaac
       hero_image: /images/couple.webp
+      description:
   -
     scope:
       path: "index.html"
@@ -84,18 +85,12 @@ jekyll-archives:
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
-  - jekyll-maps
 
 exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
   - LICENCE
-
-# MAP PLUGIN NEEDS GOGGLE API
-# maps:
-#   google:
-#     api_key: AIzaSyCopZOMs4afUxxRSYN36lBdL5dzANTsvFA
 
 # -----------
 # CloudCannon
