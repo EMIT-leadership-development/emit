@@ -128,7 +128,12 @@ _select_data:
   groups:
     - team
     - board
+  # Select Field for Map Contact Locations
+  contact_person:
+    - teams
 
+# Sonya - todo - remove all uses of these
+# Replace with feather icons and delete the social icons file
 social_icons:
   - Email
   - Facebook
@@ -183,7 +188,7 @@ _comments:
   description: This is used for facebook shares of the page and google indexing
   status: Current/Planned/Developing. Current- open for registration. Developing- visible for sponsorship. Planned- visible only in lists.
   Leadername: If this story is a transformation story - the name of the leader / student
-  image: For transformation stories - Student / Leader profile image (500px X 500px) displays in map and sidebar
+  leader_image: For transformation stories - Student / Leader profile image (500px X 500px) displays in map and sidebar
   leaderBio_description: If this is a transformation story then the leader will be featured in the sidebar, not the post author.
   bio_html: Short paragraph or two about this person
   heroQuote: Featured inspirational quote to display on page header image
