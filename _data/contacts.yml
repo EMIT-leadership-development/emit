@@ -36,7 +36,7 @@
   longitude: 34.210565
 - name: EASTERN AFRICA
   country: Rwanda
-  team-member:
+  team-member: Steven Todd
   email: email@domain.com
   phone: +00 000 0000
   address: '10 Street, Suburb, City, 1234'
@@ -54,7 +54,7 @@
   longitude: 27.71449
 - name: ANOTHER DEPARTMENT
   country: Tanzania
-  team-member:
+  team-member: Borniface Shonga
   email: email@domain.com
   phone: +00 000 0000
   address: '10 Street, Suburb, City, 1234'
@@ -63,7 +63,7 @@
   longitude: 34.963934
 - name: ANOTHER OFFICE
   country: Country
-  team-member:
+  team-member: Constantin Gasore
   email: email@domain.com
   phone: +00 000 0000
   address: '10 Street, Suburb, City, 1234'
