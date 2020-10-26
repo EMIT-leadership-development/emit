@@ -179,7 +179,7 @@ _comments:
   highlight: Emphasis the text
   color: The background color used in the plan name and call to action.
   new_window: Open link in new window
-  description: This is used for facebook shares of the page and google indexing
+  description: Sonya will handle this - used for SEO and social shares of the page
   status: Current/Planned/Developing. Current- open for registration. Developing- visible for sponsorship. Planned- visible only in lists.
   Leadername: If this story is a transformation story - the name of the leader / student
   leader_image: For transformation stories - Student / Leader profile image (500px X 500px) displays in map and sidebar
