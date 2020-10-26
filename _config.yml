@@ -129,7 +129,7 @@ _select_data:
     - team
     - board
   # Select Field for Map Contact Locations
-  teams
+  - teams
 
 # Sonya - todo - remove all uses of these
 # Replace with feather icons and delete the social icons file
