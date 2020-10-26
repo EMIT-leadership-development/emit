@@ -199,4 +199,4 @@ _comments:
   title: This will be the page url.
   subtitle: Clickbait. In one sentence describe why this content is interesting to the reader
   contact_form_email: The email address where the contact form submissions should be sent
-  team_member: Select a team-member (For posts this person is the author, for Map Markers this is the contact person)
+  team-member: Select a team-member (For posts this person is the author, for Map Markers this is the contact person)
