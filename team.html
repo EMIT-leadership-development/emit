@@ -21,10 +21,10 @@ hero_image: /images/lightAFire.webp
 <!-- SECTION LIST OF MEMBERS -->
 <section class="teamList item--full white">
     <ul class="sectionContent">
-        {% for teamMember in site.data.team%}
+        {% for teamMember in site.data.team-members%}
         <!-- if group is team -->
         {% if teamMember.group == "team" %}
-        <li data-cms-editor-link="cloudcannon:collections/_data/team.yml" class="cms-editor-link">
+        <li data-cms-editor-link="cloudcannon:collections/_data/team-members.yml" class="cms-editor-link">
             {% include teamMemberPreview.html %}
         </li>
         {% endif %}

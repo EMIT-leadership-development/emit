@@ -18,13 +18,11 @@ category:
 excerpt_separator: <!--more-->
 
 # If transformation story then "author and bio" is populated from these fields
-# Image can't be named anything else because of maps plugin
-# Location used in hero map
+# Location used in hero stories map
 leaderName:
 leaderBio_description:
 image: /images/leaders/studentPlaceholder.jpg
 country:
-location:
-    latitude:
-    longitude:
+latitude:
+longitude:
 ---

@@ -2,8 +2,7 @@
 <aside class="articleAside">
     {% for post in thepost %}
     <a class="articleLink" href="{{ site.baseurl }}{{ post.url }}">
-        <!-- {% assign author = site.data.team[post.author] %} -->
-        {% for member in site.data.team %}
+        {% for member in site.data.team-members %}
             {% if member.shortname == post.author %}
                 {% assign author = member %}
             {% endif %}

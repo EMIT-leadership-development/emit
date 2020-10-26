@@ -3,7 +3,7 @@
             {% assign authorName = post.leaderName %}
             {% assign authorProfileImage = post.leader_image %}
         {% else %}
-            {% assign author = site.data.team | where:"shortname", post.author  | first %}
+            {% assign author = site.data.team-members | where:"shortname", post.author  | first %}
             {% assign authorName = author.name %}
             {% assign authorProfileImage = author.profile_image %}
         {% endif %}

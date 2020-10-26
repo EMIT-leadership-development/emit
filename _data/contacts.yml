@@ -1,6 +1,6 @@
 - name: "SA Head Office"
   country: "South Africa"
-  team:
+  team-member:
   email: "admin@emit.global"
   phone: "+27 11 362 6655"
   address: "10 Sinclair Road, Selection Park, Springs, 1560, South Africa"
@@ -9,7 +9,7 @@
   longitude: 28.440429
 - name: "USA Head Office"
   country: "USA"
-  team:
+  team-member:
   email: "info@emit.global"
   phone: "+1 719 648 0674"
   address: Edit contacts data file to change across entire site
@@ -18,7 +18,7 @@
   longitude: -104.762840
 - name: "ZIMBABWE OFFICE"
   country: "Zimbabwe"
-  team:
+  team-member:
   email: "email@domain.com"
   phone: "+00 000 0000"
   address: 10 Street, Suburb, City, 1234
@@ -27,7 +27,7 @@
   longitude: 29.934379
 - name: "MALAWI OFFICE"
   country: "Malawi"
-  team:
+  team-member:
   email: "email@domain.com"
   phone: "+00 000 0000"
   address: 10 Street, Suburb, City, 1234
@@ -36,7 +36,7 @@
   longitude: 34.210565
 - name: "RWANDA OFFICE"
   country: "Rwanda"
-  team:
+  team-member:
   email: "email@domain.com"
   phone: "+00 000 0000"
   address: 10 Street, Suburb, City, 1234
@@ -45,7 +45,7 @@
   longitude: 29.916171
 - name: "ZAMBIA OFFICE"
   country: "Zambia"
-  team:
+  team-member:
   email: "email@domain.com"
   phone: "+00 000 0000"
   address: 10 Street, Suburb, City, 1234
@@ -54,7 +54,7 @@
   longitude: 27.714490
 - name: "TANZANIA OFFICE"
   country: "Tanzania"
-  team:
+  team-member:
   email: "email@domain.com"
   phone: "+00 000 0000"
   address: 10 Street, Suburb, City, 1234
@@ -63,7 +63,7 @@
   longitude: 34.963934
 - name: "COUNTRY OFFICE"
   country: "Country"
-  team:
+  team-member:
   email: "email@domain.com"
   phone: "+00 000 0000"
   address: 10 Street, Suburb, City, 1234

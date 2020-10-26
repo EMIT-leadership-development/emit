@@ -150,7 +150,7 @@ _options:
 # Hero image for all page headers
   hero_image:
     uploads_dir: "images/:title"
-# Profile Image in data/team
+# Profile Image in data/team-members
   profile_image: # Front matter field
     uploads_dir: "images/team/:title"
     width: 500
