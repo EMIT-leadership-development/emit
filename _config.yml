@@ -130,8 +130,7 @@ _select_data:
     - board
 
 cloudcannon:
-  data:
-    teams: true
+  data: true
 
 # Sonya - todo - remove all uses of these
 # Replace with feather icons and delete the social icons file
