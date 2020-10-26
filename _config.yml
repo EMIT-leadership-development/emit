@@ -129,7 +129,7 @@ _select_data:
     - team
     - board
   # Select Field for Map Contact Locations
-  contact_persons:
+  contact_person:
     - team
 
 # Sonya - todo - remove all uses of these
