@@ -1,7 +1,7 @@
 {% if page.title == "Stories" %}
-<article class="postPreview cms-editor-link" data-cms-editor-link="cloudcannon:{{post.url}}">
+<article class="postPreview cms-editor-link" data-cms-editor-link="cloudcannon:collections/{{ post.path }}">
 {% else %}
-<aside class="postPreview cms-editor-link" data-cms-editor-link="cloudcannon:{{post.url}}">
+<aside class="postPreview cms-editor-link" data-cms-editor-link="cloudcannon:collections/{{ post.path }}">
 {% endif %}
 
         {% if post.category == "Transformation Stories" %}
