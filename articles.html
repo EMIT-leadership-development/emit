@@ -7,16 +7,16 @@ description:
 ---
 
 <!-- Section that holds the list of stories -->
-<section class="item--full">
+<section id="blogPage" class="item--full">
 	<!-- SideBar -->
-	<div class="sidebar container leftToOne">
+	<div class="sidebar container">
 		{% include sidebarContent.html %}
 	</div>
 
-	<div id="storiesWrap" class="container storiesList TwoToRight">
+	<div id="storiesWrap" class="container storiesList">
 		{% assign distance = 5 %}
 		{% for post in site.posts %}
-		{% include featuredPost.html %}
+		{% include postPreview.html %}
 		{% endfor %}
 	</div>
 </section>

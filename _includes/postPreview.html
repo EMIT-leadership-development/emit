@@ -1,4 +1,9 @@
+{% if page.title == "Stories" %}
+<article class="postPreview">
+{% else %}
 <aside class="postPreview">
+{% endif %}
+
         {% if post.category == "Transformation Stories" %}
             {% assign authorName = post.leaderName %}
             {% assign authorProfileImage = post.leader_image %}
@@ -14,21 +19,10 @@
 
 
         <div class="postWrap">
-            <!-- <div class="postImage"  style="background-image:url({{site.baseurl}}{{post.hero_image}});"> -->
+            <div class="postImageWrap">
                 <div class="postImage"  style="background-image:url({{site.baseurl}}{{post.sprite_image}}); background-position: 0 {{position}}%;">
-            </div>
-
-            <a  href="{{post.url}}" class="postContent">
-                <div>
-                    <h4 class="postTitle">{{post.title}}</h4>
-                    <p class="postSubtitle">{{post.subtitle}}</p>
-                    <div class="byline tagify"><span>{{ authorName }}</span><span>{{post.category}}</span><span>{{ post.date | date: "%d %b %Y" }}</span></div>
                 </div>
-                <div class="postActions">
-                    <span class="button secondary">Read more</span>
-                </div>
-            </a>
-            <a  href="{{post.url}}" class="overlay">
+                <!-- Absolute Position -->
                 <div class="authorImage">
                     <div class="sphere sphere3">
                         <div class="sphere sphere2">
@@ -38,11 +32,29 @@
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <a  href="{{post.url}}" class="postContent">
+                <div>
+                    <h4 class="postTitle">{{post.title}}</h4>
+                    <p class="postSubtitle">{{post.subtitle}}</p>
+                    <div class="byline tagify"><span>{{ authorName }}</span><span>{{post.category}}</span><span>{{ post.date | date: "%d %b %Y" }}</span></div>
+                </div>
             </a>
-            <ul class="links">
-                <a href="https://facebook.com"><i data-feather="twitter"></i></a>
-                <a href="https://twitter.com"><i data-feather="facebook"></i></a>
-                <a href="https://linkedin.com"><i data-feather="linkedin"></i></a>
-            </ul>
+            <div class="postActions">
+                <ul class="links">
+                    <a href="https://facebook.com"><i data-feather="twitter"></i></a>
+                    <a href="https://twitter.com"><i data-feather="facebook"></i></a>
+                    <a href="https://linkedin.com"><i data-feather="linkedin"></i></a>
+                </ul>
+                <a href="{{post.url}}" class="button secondary">Read more</a>
+            </div>
         </div>
+
+
+
+{% if page.title == "Stories" %}
+</article>
+{% else %}
 </aside>
+{% endif %}
