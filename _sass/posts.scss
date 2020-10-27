@@ -165,6 +165,7 @@
             margin: 0;
             padding: 0;
             a {
+                margin: 0 5px 0 0;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -179,14 +180,20 @@
                         transform:scale(1.2);
                     }
                 }
+                &.email {
+                    justify-content: flex-end;
+                    padding-top: 4px;
+                }
             }
             svg {
                 transform:scale(1);
                 transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-                fill:  $brandContrastDark;
                 path, rect, ellipse, circle {
                     stroke-width: 0;
-                    // stroke: rgba(0,0,0,0.1);
+                    fill: rgba(0,0,0,0.5);
+                }
+                polyline {
+                    stroke: #ffffff;
                 }
             }
         }

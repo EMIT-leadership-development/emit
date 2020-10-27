@@ -23,7 +23,7 @@
                 <div class="postImage"  style="background-image:url({{site.baseurl}}{{post.sprite_image}}); background-position: 0 {{position}}%;">
                 </div>
                 <!-- Absolute Position -->
-                <div class="authorImage">
+                <a class="authorImage" href="{{post.url}}">
                     <div class="sphere sphere3">
                         <div class="sphere sphere2">
                             <div class="sphere sphere1">
@@ -31,7 +31,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
 
             <a  href="{{post.url}}" class="postContent">
@@ -43,9 +43,11 @@
             </a>
             <div class="postActions">
                 <ul class="links">
-                    <a href="https://facebook.com"><i data-feather="twitter"></i></a>
-                    <a href="https://twitter.com"><i data-feather="facebook"></i></a>
-                    <a href="https://linkedin.com"><i data-feather="linkedin"></i></a>
+                    {% assign share_url = post.url | absolute_url | cgi_escape %}
+                    <a href="https://twitter.com/intent/tweet?url={{ share_url }}&amp;text=I%20love%20this%20post%20on%20EMIT's%20website!" onclick="window.open(this.href, 'mywin', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i data-feather="twitter"></i></a>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u={{share_url}}" onclick="window.open(this.href, 'mywin', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i data-feather="facebook"></i></a>
+                    <a href="https://www.linkedin.com/shareArticle?mini=true&url={{share_url}}&title=&summary=Check out this interesting article on EMIT's website.&source="><i data-feather="linkedin" onclick="window.open(this.href, 'mywin', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"></i></a>
+                    <a class="email" href="mailto:?subject=I've%20found%20an%20article%20you%20may%20like&amp;body=Check%20it%20out%20-%20{{ share_url }}"><i data-feather="mail"></i></a>
                 </ul>
                 <a href="{{post.url}}" class="button secondary">Read more</a>
             </div>
