@@ -1,0 +1,214 @@
+// Featured Stories - featuredPost.html include
+// Appears on About page and Blog List - Stories Page
+.storiesList {
+	background: $brandContrastLight !important;
+	grid-gap: 3rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-auto-rows: 1fr;
+	grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat( auto-fit, minmax(24em, 1fr) );
+    @media (max-width: 400px) {
+        grid-template-columns: repeat( auto-fit, minmax(10em, 1fr) );;
+    }
+}
+.postPreview {
+	margin: 0;
+	padding: 0;
+	border-radius: 2px;
+	background-color: #ffffff;
+	overflow: hidden;
+	position: relative;
+	filter: drop-shadow(0.1rem 0.1rem 0.3rem rgba(20, 20, 180, 0.3));
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+	.postWrap {
+		display: grid;
+		grid-template-columns: 50% 50%;
+		grid-template-rows: 1fr;
+		width: 100%;
+		height: 100%;
+		@media (min-width: 1081px) and (max-width: 1350px) {
+			display: flex;
+			flex-direction: column;
+			.postImageWrap {
+                position: relative;
+                height: 350px;
+                overflow: hidden;
+                justify-content: center;
+                .postImage {
+                    border-radius: 0;
+                }
+                .authorImage {
+                    width: 40%;
+                }
+            }
+            .postContent {
+                padding: 1rem;
+            }
+        }
+        @media (min-width: 708px) and (max-width: 1080px) {
+            grid-template-columns: 30% 70%;
+			.postImageWrap {
+                position: relative;
+                justify-content: center;
+                .postImage {
+                }
+                .authorImage {
+                    width: 70%;
+                }
+            }
+            .postContent {
+                padding: 1rem;
+            }
+        }
+        @media (max-width: 540px) {
+            display: flex;
+            flex-direction: column;
+            .postImageWrap {
+                position: relative;
+                height: 260px;
+                overflow: hidden;
+                justify-content: center;
+                .postImage {
+                    border-radius: 0;
+                }
+                .authorImage {
+                    width: 60%;
+                }
+            }
+            .postContent {
+                padding: 1rem;
+            }
+        }
+	}
+	a {
+		color: unset;
+		text-decoration: none;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+	&:hover {
+		cursor: pointer;
+	}
+	.postImageWrap {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+        align-items: flex-start;
+        position: relative;
+	}
+	.postImage {
+		width: 100%;
+		padding-bottom: 150%;
+		position: relative;
+		border-top-right-radius: 60%;
+		overflow: hidden;
+		z-index: 1;
+		background-size: cover;
+		background-repeat: no-repeat;
+		&:before {
+			content: "";
+			background: rgba(0,0,0,0.3);
+			position: absolute;
+			left: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
+		}
+		.postDate {
+			position: absolute;
+			top: 1rem;
+			left: 1rem;
+			background: $brandContrastDark;
+			border-radius: 5px;
+			padding: 5px;
+			color: #ffffff;
+			font-size: 0.9rem;
+			z-index: 2;
+		}
+	}
+	.authorImage {
+		position: absolute;
+		left: -10%;
+		bottom: -10%;
+        width: 70%;
+        z-index: 2;
+		.sphere {
+			padding: 0.6rem;
+		}
+		.sphere1 {
+			background-color: $sphere1BG;
+		}
+		.sphere2{
+			background-color: $sphere2BG;
+		}
+		.sphere3 {
+			background-color: $sphere3BG;
+		}
+	}
+	.postContent {
+        flex: 1;
+		padding: 0 1rem 1rem 0.5rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		.postTitle {
+			z-index: 100;
+			font-weight: 500;
+			font-size: 1.5rem;
+			color: rgba(0,0,0,0.8);
+			margin: 1rem 0;
+		}
+		p {
+			margin-bottom: 1rem;
+		}
+	}
+	.postActions {
+
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+	}
+	.button {
+		z-index: 50;
+		margin: 0 !important;
+		padding: 5px 10px !important;
+	}
+	.links {
+		position: absolute;
+		left: 1rem;
+		top: 1rem;
+		z-index: 50;
+		display: flex;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		a {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			text-decoration: none;
+			&:hover {
+				text-decoration: none;
+			}
+			color: #ffffff;
+			&:hover {
+				svg {
+					transform:scale(1.2);
+				}
+			}
+		}
+		svg {
+			transform:scale(1);
+			transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+			fill:  #ffffff;
+			path, rect, ellipse, circle {
+				stroke-width: 0;
+				// stroke: rgba(0,0,0,0.1);
+			}
+		}
+	}
+}
