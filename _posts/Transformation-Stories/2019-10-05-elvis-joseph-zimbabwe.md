@@ -24,7 +24,7 @@ excerpt_separator: <!--more-->
 # Location used in hero map
 leaderName: Dr. Elvis Joseph
 leaderBio_description: Paragraph here about this leader
-leader_image: /images/leaders/ElvisJoseph.jpg
+leader_image: /images/leaders/ElvisJoseph.webp
 country: Zimbabwe
 latitude: -18.979907
 longitude: 29.782165
