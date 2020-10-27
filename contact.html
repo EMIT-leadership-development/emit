@@ -61,12 +61,10 @@ description:
 		</div>
 	</div>
 </section>
-<section class="item--full googleMapWrap dark">
-    <div id="map-canvas" class="max-content" style="width:100%; height:100%"></div>
-</section>
+<!-- MAO AND CONTACT FORM -->
 <section class="contactForm map item--full contrastLight2">
 	<div class="leftToCenter googleMapWrap">
-		<!-- <div id="map-canvas" class="max-content" style="width:100%; height:100%"></div> -->
+		<div id="map-canvas" class="max-content" style="width:100%; height:100%"></div>
 	</div>
 	<div id="contactFormWrapper" class="containedRight sectionContent">
 		<h3>Send us a message</h3>
@@ -89,7 +87,6 @@ description:
 			</form>
 	</div>
 </section>
-
 <!-- REGIONAL OFFICES -->
 <section class="item--full white contactRow">
 	<div class="container addressRow">
@@ -151,7 +148,7 @@ description:
 		{% endfor %}
 		// End loop through stories / create markers
 		var boundsListener = google.maps.event.addListener((map), 'bounds_changed', function(event) {
-			this.setZoom(3);
+			this.setZoom(2);
 			google.maps.event.removeListener(boundsListener);
 		});
 		var myoverlay = new google.maps.OverlayView();
