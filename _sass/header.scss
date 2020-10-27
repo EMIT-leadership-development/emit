@@ -442,8 +442,19 @@ section.hero{
     background-repeat: no-repeat;
     background-attachment: fixed;
     padding: 0 0 2rem 0;
-    &.map {
-        padding: 0;
+    #scrollDown {
+        position: absolute;
+        bottom: 0;
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        svg {
+            width: 40px;
+            height: 40px;
+            stroke: #ffffff;
+        }
     }
     .container {
         display: flex;
@@ -530,28 +541,3 @@ section.hero{
         z-index: 1;
     }
 }
-
-// Originally from the layout scss file
-// Perhaps move hero stuff to header.scss
-
-// .hero {
-// 	color: #ffffff;
-// 	text-align: center;
-// 	position: relative;
-// 	z-index: 99;
-// 	h2 {
-// 		font-size: 3.2rem;
-// 		line-height: 1.5;
-// 		font-weight: bold;
-// 	}
-
-// 	@media (min-width: 500px) {
-// 		h2 {
-// 			font-size: 3.5rem;
-// 		}
-// 	}
-
-// 	p {
-// 		color: #fff;
-// 	}
-// }

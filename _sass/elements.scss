@@ -882,9 +882,21 @@ p.introduction {
 // Google Maps
 .geoLocatedStories {
 	height: 100vh !important;
-	min-height: unset;
+	box-sizing: border-box;
+	// max-height: 100vh !important;
+	// min-height: unset;
 	margin-top: -100px;
-	padding: 0 !important;
+	.container {
+		grid-row: 1;
+	}
+	#map-canvas {
+		grid-row: 1;
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+	}
 }
 .googleMapWrap {
 	min-height: 600px;

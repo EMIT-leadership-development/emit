@@ -1,6 +1,8 @@
 ---
 title: Stories
 hero: Our Stories
+heroQuote:  Every success story is a tale of constant adaption, revision and change.
+hero_Quote_Cite: Richard Branson
 description:
 ---
 
@@ -11,7 +13,7 @@ description:
 		{% include sidebarContent.html %}
 	</div>
 
-	<div class="container storiesList TwoToRight">
+	<div id="storiesWrap" class="container storiesList TwoToRight">
 		{% assign distance = 5 %}
 		{% for post in site.posts %}
 		{% include featuredPost.html %}
