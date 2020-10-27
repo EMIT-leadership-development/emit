@@ -923,7 +923,7 @@ p.introduction {
 		max-width: 300px;
 		display: grid;
 		grid-gap: 1rem;
-		grid-template-columns: 1fr 90px;
+		grid-template-columns: 1fr 1fr;
 		.locationInfo {
 			h4 {
 				font-size: 1.1rem;
@@ -931,6 +931,7 @@ p.introduction {
 			}
 			p {
 				margin-bottom: 0;
+				font-size: 0.9rem;
 			}
 		}
 		.locationImage {
