@@ -1,0 +1,91 @@
+// Sidebar on the Stories Page Articles/Blog list)
+.sidebar {
+	// border: 1px solid green;
+	ul {
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+	}
+	ul.optionList {
+		list-style-type: none;
+		list-style-position: outside;
+		padding: 0;
+		li {
+			margin-bottom: 1rem;
+			position: relative;
+			padding-left: 2rem;
+			line-height: 1.5;
+			&:before {
+				content: "";
+				width: 15px;
+				height: 7px;
+				background: $brand-color;
+				display: block;
+				position: absolute;
+				top: 9px;
+				left: 0;
+			}
+		}
+	}
+	a {
+		color: rgba(0,0,0,0.8);
+		text-decoration: none;
+		transition: all .3s ease 0s;
+		&:hover {
+			text-decoration: none;
+			color: rgba(0,0,0,0.4);
+		}
+	}
+	.sidebarSection {
+		// border: 1px solid red;
+		margin-bottom: 60px;
+	}
+	.categoryNav {
+		li {
+			margin-bottom: 0.5rem;
+			a {
+				.slash-divider, .categoryCount {
+					margin: 0 5px;
+					color: rgba(0,0,0,0.4);
+					font-size: 0.6;
+				}
+			}
+		}
+	}
+	.announcement {
+		display: grid;
+		grid-template-columns: 24px auto;
+		grid-gap: 12px;
+		h5 {
+			font-size: 1rem;
+			margin-top: 0;
+			margin-bottom: 12px;
+		}
+		&:hover {
+			a {
+				text-decoration: underline;
+			}
+		}
+	}
+	.recentPosts {
+		li {
+			width: 100%;
+            position: relative;
+            margin-bottom: 1rem;
+			.recentPostWrap {
+				display: grid;
+				grid-gap: 1rem;
+				grid-template-columns: 70px auto;
+			}
+			.postImage {
+                width: 100%;
+                padding-bottom: 150%;
+                background-size: cover;
+                display: block;
+			}
+			.postMeta {
+				grid-column: 1 / span2;
+			}
+		}
+	}
+}
