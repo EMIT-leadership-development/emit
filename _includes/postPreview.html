@@ -43,11 +43,23 @@
             </a>
             <div class="postActions">
                 <ul class="links">
+                    <!-- Sonya - check here for all analytics and customisation options: https://www.addtoany.com/ -->
                     {% assign share_url = post.url | absolute_url | cgi_escape %}
-                    <a href="https://twitter.com/intent/tweet?url={{ share_url }}&amp;text=I%20love%20this%20post%20on%20EMIT's%20website!" onclick="window.open(this.href, 'mywin', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i data-feather="twitter"></i></a>
-                    <a href="https://www.facebook.com/sharer/sharer.php?u={{share_url}}" onclick="window.open(this.href, 'mywin', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i data-feather="facebook"></i></a>
-                    <a href="https://www.linkedin.com/shareArticle?mini=true&url={{share_url}}&title=&summary=Check out this interesting article on EMIT's website.&source="><i data-feather="linkedin" onclick="window.open(this.href, 'mywin', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"></i></a>
-                    <a class="email" href="mailto:?subject=I've%20found%20an%20article%20you%20may%20like&amp;body=Check%20it%20out%20-%20{{ share_url }}"><i data-feather="mail"></i></a>
+                    {% assign page_name = post.subtitle %}
+                    <div class="links a2a_kit a2a_kit_size_32 a2a_default_style" data-a2a-url="{{share_url}}" data-a2a-title="{{page_name}}">
+                        <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+                        <a class="a2a_button_facebook"></a>
+                        <a class="a2a_button_twitter"></a>
+                        <a class="a2a_button_email"></a>
+                        <a class="a2a_button_linkedin"></a>
+                    </div>
+                    <script>
+                    var a2a_config = a2a_config || {};
+                    a2a_config.onclick = 1;
+                    a2a_config.icon_color = "transparent";
+                    </script>
+                    <script async src="https://static.addtoany.com/menu/page.js"></script>
+                    <!-- AddToAny END -->
                 </ul>
                 <a href="{{post.url}}" class="button secondary">Read more</a>
             </div>
