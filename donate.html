@@ -7,12 +7,42 @@ hero_image: /images/TwoGirls.webp
 description:
 ---
 
-<section class="donations item--full">
-	<!-- SideBar -->
-	<div class="sidebar container leftToOne">
-		{% include sidebarDonate.html %}
+<!-- DONATION INTRO -->
+<section class="item--full white donationIntro">
+	<div class="sectionIntro contained-FirstTwo">
+		<h2 class="sectionTitle priority2 editable">Thank you!</h2>
+		<p class="editable introduction">Your support will help EMIT leaders to transform their communities in every sphere of society across Africa. We would like to make it simple for you to extend your own impact.  Here are a few ways you can support us.</p>
 	</div>
-	<div class="container TwoToRight">
+	<div class="sectionContent contained-LastFour supportOptions">
+		<ul class="infoPoints">
+			<li class="point">
+				<span class="icon"><i data-feather="check-circle"></i></span>
+				<h3 class="pointTitle editable">Subscription</h3>
+				<p class="pointContent editable">Extend your impact with a <a href="#subscription">monthly subscription</a></p>
+			</li>
+			<li class="point">
+				<span class="icon"><i data-feather="check-circle"></i></span>
+				<h3 class="pointTitle editable">Contribution</h3>
+				<p class="pointContent editable">Determine your own impact with a <a href="#contribution">customised contribution</a></p>
+			</li>
+			<li class="point">
+				<span class="icon"><i data-feather="check-circle"></i></span>
+				<h3 class="pointTitle editable">Gift</h3>
+				<p class="pointContent editable">Power-up your impact by giving a <a href="#contribution">once-off gift</a> towards a specific need.</p>
+			</li>
+			<li class="point">
+				<span class="icon"><i data-feather="check-circle"></i></span>
+				<h3 class="pointTitle editable">Get involved</h3>
+				<p class="pointContent editable">Experience your impact by getting involved.</p>
+			</li>
+		</ul>
+	</div>
+</section>
+
+<section class="donations item--full">
+
+	<!-- Content -->
+	<div id="donationsWrap" class="container">
 
 		<div id="subscription" class="donationOption">
 			<div class="optionTitle">
@@ -164,7 +194,6 @@ description:
 				<h2 class="sectionTitle priority2 editable">Power up<br><span class="emphasis">your impact with a gift</span></h2>
 				<div class="optionDescription">
 					<p class="introduction">Give the gift of transformation.  These once-off donations could impact the future of someone you have never met.</p>
-					<p class="editor-link" style="text-align: center;"><a href="cloudcannon:collections/_products" class="btn"><strong>&#9998;</strong> Manage products</a></p>		
 				</div>
 			</div>
 			<ul class="product-list">
@@ -190,5 +219,12 @@ description:
 			<li></li>
 			</ul>
 		</div>
+	</div>
+</section>
+
+<section>
+	<!-- SideBar -->
+	<div class="sidebar container leftToOne">
+		{% include sidebarDonate.html %}
 	</div>
 </section>

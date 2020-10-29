@@ -172,6 +172,15 @@
 	}
 }
 
+.donationIntro {
+	.supportOptions {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
 .donations {
 	.donationOption {
 		margin-bottom: 8rem;
