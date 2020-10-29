@@ -54,7 +54,7 @@ description:
 	<div class="subscriptionWrap container">
 		{% assign subscriptions = site.products | where:'product_type', 'subscription' %}
 		{% for product in subscriptions %}
-			<div class="{{product.sku}} cms-editor-link" data-cms-editor-link="cloudcannon:collections/{{ product.path }}">
+			<div class="{{product.sku}} cms-editor-link subscriptionProduct" data-cms-editor-link="cloudcannon:collections/{{ product.path }}">
 				<div class="subscriptionImage">
 					<div class="authorImageWrap">
 						<div class="authorImage">
@@ -68,21 +68,23 @@ description:
 						</div>
 					</div>
 				</div>
-				<h3>{{product.name}}</h3>
-				<div class="price-container">
-					{% assign priceParts = product.price | split: "." %}
-					<span class="currency">$</span>
-					<span class="price">{{ priceParts[0] }}</span>
-					<span class="cents-cont">
-						<span class="cents">{{ priceParts[1] }}</span>
-						<span class="place2">{{ product.terms }}</span>
-					</span>
-				</div>
-				<div>
-					{{product.description_html}}
-				</div>
-				<div class=" price-button-container">
-					<a>SIGN UP</a>
+				<div class="infoWrap">
+					<h3>{{product.name}}</h3>
+					<div class="price-container">
+						{% assign priceParts = product.price | split: "." %}
+						<span class="currency">$</span>
+						<span class="price">{{ priceParts[0] }}</span>
+						<span class="cents-cont">
+							<span class="cents">{{ priceParts[1] }}</span>
+							<span class="place2">{{ product.terms }}</span>
+						</span>
+					</div>
+					<div>
+						{{product.description_html}}
+					</div>
+					<div class=" price-button-container">
+						<a>SIGN UP</a>
+					</div>
 				</div>
 			</div>
 		{% endfor %}
