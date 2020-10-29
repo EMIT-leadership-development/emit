@@ -51,7 +51,7 @@ description:
 
 <!-- SUBSCRIPTIONS -->
 <section class="item--full contrastLight2">
-	<div class="subscriptionWrap container" data-cms-editor-link="cloudcannon:collections/product.url">
+	<div class="subscriptionWrap container cms-editor-link" data-cms-editor-link="cloudcannon:collections/_products/product.url">
 		{% assign subscriptions = site.products | where:'product_type', 'subscription' %}
 		{% for product in subscriptions %}
 			<div class="{{product.sku}}">
