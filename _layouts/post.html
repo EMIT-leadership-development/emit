@@ -7,7 +7,7 @@ layout: default
 	{% assign authorProfileImage = page.leader_image %}
 	{% assign authorbio = page.leaderBio_html %}
 {% else %}
-	{% assign author = site.data.team-members | where:"shortname", page.author  | first %}
+	{% assign author = site.data.team-members | where:"name", page.team-member  | first %}
 	{% assign authorName = author.name %}
 	{% assign authorProfileImage = author.profile_image %}
 	{% assign authorbio = author.bio_html %}

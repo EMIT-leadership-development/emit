@@ -8,7 +8,7 @@ hero_image: /images/road.webp
 sprite_image: /images/sprites/sprite-Set1.webp
 sprite_selection_number: 1
 
-author: Kobus
+team-member: Kobus Grobler
 
 tags: EMIT Strategy
 category: About EMIT

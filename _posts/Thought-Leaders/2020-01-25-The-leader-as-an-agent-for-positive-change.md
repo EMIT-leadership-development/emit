@@ -10,7 +10,7 @@ sprite_image: /images/sprites/sprite-Set1.webp
 sprite_selection_number: 3
 
 # If the author is team member then select from datafile
-author: Borniface
+team-member: Borniface Shonga
 
 # Post meta : todo: select field for cc?
 tags: Leadership Transformation Training

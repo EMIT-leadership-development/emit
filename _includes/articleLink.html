@@ -3,7 +3,7 @@
     {% for post in thepost %}
     <a class="articleLink" href="{{ site.baseurl }}{{ post.url }}">
         {% for member in site.data.team-members %}
-            {% if member.shortname == post.author %}
+            {% if member.name == post.team-member %}
                 {% assign author = member %}
             {% endif %}
         {% endfor %}

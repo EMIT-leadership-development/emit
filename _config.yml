@@ -188,7 +188,7 @@ _comments:
   leaderBio_html: If this is a transformation story then the leader will be featured in the sidebar, not the post author.
   bio_html: Short paragraph or two about this person
   heroQuote: Featured inspirational quote to display on page header image
-  hero_Quote_Cite: Ascribe the quote or author
+  hero_Quote_Cite: Who said this? Ascribe the quote
   hero: Alternative title to display on page header. Default is page title
   hero_image: The large featured image at the top of the page. Should be at least 3000px wide.
   bookCover_image: The cover of the program book. Speak to Sonya about creating the mockups.

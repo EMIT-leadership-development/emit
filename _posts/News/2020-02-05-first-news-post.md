@@ -11,7 +11,7 @@ sprite_image: /images/sprites/sprite-Set1.webp
 sprite_selection_number: 5
 
 # If the author is team member then select from datafile
-author: Johan
+team-member: Johan Fourie
 
 # Post meta : todo: select field for cc?
 tags: Student-Portal

@@ -8,7 +8,7 @@ hero_image: /images/fetchingWater.webp
 sprite_image: /images/sprites/sprite-Set1.webp
 sprite_selection_number: 12
 
-author: Kobus
+team-member: Kobus Grobler
 
 tags: EMIT Strategy
 category: About EMIT

@@ -8,7 +8,7 @@ hero_image: /images/man-Reading.webp
 sprite_image: /images/sprites/sprite-Set1.webp
 sprite_selection_number: 18
 
-author: Kobus
+team-member: Kobus Grobler
 
 tags: EMIT transformation Africa Leadership Training
 category: About EMIT

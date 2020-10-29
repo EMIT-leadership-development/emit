@@ -12,7 +12,7 @@ sprite_image: /images/sprites/sprite-Set1.webp
 sprite_selection_number: 6
 
 # If the author is team member then select from datafile
-author:
+team-member:
 
 # Post meta : todo: select field for cc?
 tags: Zimbabwe EMIT-Student leadership

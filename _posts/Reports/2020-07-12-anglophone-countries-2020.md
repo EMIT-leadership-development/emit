@@ -11,7 +11,7 @@ sprite_image: /images/sprites/sprite-Set1.webp
 sprite_selection_number: 2
 
 # If the author is team member then select from datafile
-author: Theo
+team-member: Theo Faber
 
 # Post meta : todo: select field for cc?
 tags: Zambia Zimbabwe Madagascar
