@@ -20,7 +20,7 @@ excerpt_separator: <!--more-->
 # If transformation story then "author and bio" is populated from these fields
 # Location used in hero stories map
 leaderName:
-leaderBio_description:
+leaderBio_html:
 image: /images/leaders/studentPlaceholder.jpg
 country:
 latitude:

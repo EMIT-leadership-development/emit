@@ -23,7 +23,7 @@ excerpt_separator: <!--more-->
 # Image can't be named anything else because of maps plugin
 # Location used in hero map
 leaderName: Dr. Bunini Gahungu Protais
-leaderBio_description: Karen's bio to come here.
+leaderBio_html: Bunini's bio to come here.
 leader_image: /images/leaders/BuniniProtais.webp
 country: Rwanda
 latitude: -2.003878

@@ -23,7 +23,7 @@ excerpt_separator: <!--more-->
 # Image can't be named anything else because of maps plugin
 # Location used in hero map
 leaderName: Dr. Elvis Joseph
-leaderBio_description: Paragraph here about this leader
+leaderBio_html: Paragraph here about this leader
 leader_image: /images/leaders/ElvisJoseph.webp
 country: Zimbabwe
 latitude: -18.979907

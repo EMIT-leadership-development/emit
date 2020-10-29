@@ -23,7 +23,7 @@ excerpt_separator: <!--more-->
 # Image can't be named anything else because of maps plugin
 # Location used in hero map
 leaderName: Miss Amazing EMIT student
-leaderBio_description: A paragraph about this leader
+leaderBio_html: A paragraph about this leader
 leader_image: /images/team/Lydia.webp
 country: Zambia
 latitude: -13.340436

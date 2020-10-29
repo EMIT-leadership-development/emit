@@ -5,12 +5,12 @@ layout: default
 {% if page.category == "Transformation Stories" %}
 	{% assign authorName = page.leaderName %}
 	{% assign authorProfileImage = page.leader_image %}
-	{% assign authorbio = page.leaderBio_description %}
+	{% assign authorbio = page.leaderBio_html %}
 {% else %}
 	{% assign author = site.data.team-members | where:"shortname", page.author  | first %}
 	{% assign authorName = author.name %}
 	{% assign authorProfileImage = author.profile_image %}
-	{% assign authorbio = author.bio_description %}
+	{% assign authorbio = author.bio_html %}
 {% endif %}
 
 <!-- Section -->
@@ -41,7 +41,7 @@ layout: default
 						<div>Category | {{ page.category }}</div>
 						<div>Date | {{ page.date | date: "%d %b %Y" }}</div>
 					</div>
-					<p>{{ authorbio }}</p>
+					<div class="bio">{{ authorbio }}</div>
 				</div>
 				<!-- EMIT's logo and contacts -->
 				<div class="brand">

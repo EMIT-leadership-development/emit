@@ -23,7 +23,7 @@ excerpt_separator: <!--more-->
 # Image can't be named anything else because of maps plugin
 # Location used in hero map
 leaderName: Karen Feris
-leaderBio_description: Karen's bio to come here.
+leaderBio_html: Karen's bio to come here.
 leader_image: /images/leaders/KarenFeris.webp
 country: Namibia
 latitude: -22.180274
