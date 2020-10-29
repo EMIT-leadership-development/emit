@@ -181,32 +181,22 @@
 	}
 }
 
-.donations {
-	.donationOption {
-		margin-bottom: 8rem;
-		.optionTitle {
-			display: grid;
-			grid-gap: 2rem;
-			grid-template-columns: 2fr 3fr;
-		}
-	}
-	#contribution {
-		form {
-			padding: 2rem;
-			background: #ffffff;
-			filter: drop-shadow(0.1rem 0.1rem 0.3rem rgba(20, 20, 180, 0.3));
-			.button {
-				margin: 2rem 0 0 0;
-			}
+#contribution {
+	form {
+		padding: 2rem;
+		background: #ffffff;
+		filter: drop-shadow(0.1rem 0.1rem 0.3rem rgba(20, 20, 180, 0.3));
+		.button {
+			margin: 2rem 0 0 0;
 		}
 	}
 }
+
 // Subscriptions - not yet linked to snipcart
 .subscriptionWrap {
 	display: grid;
 	grid-gap: 1rem;
 	grid-template-columns: 1fr 1fr 1fr;
-	margin-bottom: 4rem;
 	.sphere2Subscription {
 		.price-container {
 			background: $brandContrastDark;
