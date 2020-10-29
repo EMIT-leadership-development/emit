@@ -54,7 +54,7 @@ description:
 	<div class="subscriptionWrap container">
 		{% assign subscriptions = site.products | where:'product_type', 'subscription' %}
 		{% for product in subscriptions %}
-			<div class="{{product.sku}} cms-editor-link" data-cms-editor-link="cloudcannon:collections/_products/product.path">
+			<div class="{{product.sku}} cms-editor-link" data-cms-editor-link="cloudcannon:collections/{{ product.path }}">
 				<div class="subscriptionImage">
 					<div class="authorImageWrap">
 						<div class="authorImage">
