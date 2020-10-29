@@ -9,8 +9,5 @@ description_html: >-
 product_type: donation
 price: '500.00'
 sku: cd
-styles:
-  - name: Impact
-    color: '#abe116'
-    image: /images/products/curriculumDevelopment/curriculumDevelopment.webp
+product_image: /images/products/curriculumDevelopment/curriculumDevelopment.webp
 ---

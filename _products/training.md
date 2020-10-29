@@ -6,8 +6,5 @@ description_html: >-
 product_type: donation
 price: '150.00'
 sku: tr1
-styles:
-  - name: Impact
-    color: '#abe116'
-    image: /images/products/training/leadership-training.webp
+product_image: /images/products/training/leadership-training.webp
 ---

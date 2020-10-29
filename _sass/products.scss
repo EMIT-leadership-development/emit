@@ -1,66 +1,49 @@
-.styles {
-	width: 100%;
-	background: $brandContrastLight2;
-	position: relative;
-	// padding: 20px;
+a.productImage {
 	box-sizing: border-box;
-	border-radius: 3px;
-
-	a {
-		display: flex;
-		filter: drop-shadow(0.1rem 0.1rem 0.3rem rgba(20, 20, 180, 0.3));
-		border: 1rem solid #ffffff;
-	}
-
-	.style-picker {
-		z-index: 2;
-		display: block;
-		line-height: 0;
+	position: relative;
+	display: block;
+	margin: 0;
+	padding: 0;
+	filter: drop-shadow(0.1rem 0.1rem 0.3rem rgba(20, 20, 180, 0.3));
+	border: 1rem solid #ffffff;
+	&:before {
+		content: "";
 		position: absolute;
-		bottom: 20px;
-		right: 20px;
-
-		> div {
-			width: 20px;
-			height: 20px;
-			border: 1px solid #000;
-			display: inline-block;
-			margin: 0 5px 0 0;
-			border-radius: 20px;
-			cursor: pointer;
-		}
+		left: 0;
+		right: 0;
+		bottom: 0;
+		top: 0;
+		background: rgba(0,0,0,0.3);
+		z-index: 2;
 	}
-
-	> div + div {
-		display: none;
+	img {
+		position: relative;
+		display: flex;
+		width: 100%;
 	}
-
-	i {
-		font-size: 14rem;
-		color: #fff;
+}
+#donationsWrap .links,
+.product-container .links{
+	position: absolute !important;
+	left: 1.5rem;
+	top: 1.5rem;
+	z-index: 10;
+	margin: 0;
+	padding: 0;
+	svg {
+		stroke: #ffffff;
 	}
 }
 
 .product-container {
 	position: relative;
-	display: flex;
-	flex-wrap: wrap;
-	margin-left: -40px;
-
-	.styles {
-		width: auto;
-		flex: 1 1 300px;
-		// margin-left: 40px;
+	.imageWrap {
+		position: relative;
 	}
-
 	.product-details {
 		flex: 2 1 500px;
 		text-align: left;
 		margin-left: 40px;
-
-		h4 {
-			color: $brand-color;
-		}
 	}
 
 	form {
@@ -130,44 +113,6 @@
 		&:hover {
 			background: #f5f5f5;
 			color: #000;
-		}
-	}
-}
-
-.product-list, .product-container {
-	.links {
-		position: absolute;
-		left: 1.5rem;
-		top: 1.5rem;
-		z-index: 50;
-		display: flex;
-		list-style-type: none;
-		margin: 0;
-		padding: 0;
-		a {
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-			text-decoration: none;
-			&:hover {
-				text-decoration: none;
-			}
-			color: #ffffff;
-			&:hover {
-				svg {
-					transform:scale(1.2);
-				}
-			}
-		}
-		svg {
-			transform:scale(1);
-			transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-			fill:  #ffffff;
-			path, rect, ellipse, circle {
-				stroke-width: 0;
-				// stroke: rgba(0,0,0,0.1);
-			}
 		}
 	}
 }

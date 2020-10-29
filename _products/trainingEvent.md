@@ -6,8 +6,5 @@ description_html: >-
 product_type: donation
 price: '75.00'
 sku: te
-styles:
-  - name: Impact
-    color: '#abe116'
-    image: /images/products/trainingEvent/training-event.webp
+product_image: /images/products/trainingEvent/training-event.webp
 ---

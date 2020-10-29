@@ -6,8 +6,5 @@ description_html: >-
 product_type: donation
 price: '19.00'
 sku: w4w
-styles:
-  - name: Green
-    color: '#abe116'
-    image: /images/products/womenForWomen/women-for-women.webp
+product_image: /images/products/womenForWomen/women-for-women.webp
 ---

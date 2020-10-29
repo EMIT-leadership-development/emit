@@ -2,24 +2,34 @@
 layout: default
 ---
 
-<section>
-	<div class="container">
-		<div class="product-container">
-			<ul class="links">
-				<a href="https://facebook.com"><i data-feather="twitter"></i></a>
-				<a href="https://twitter.com"><i data-feather="facebook"></i></a>
-				<a href="https://linkedin.com"><i data-feather="linkedin"></i></a>
-			</ul>
-			{% include product-styles.html product=page %}
-			<div class="product-details" id="add">
-				<h3>{{ page.name }}</h3>
-				{{ page.description_markdown | markdownify }}
-
-				<h4>${{ page.price }}</h4>
-				<div>{% include snipcart-button.html product=page %}</div>
+<section class="item--full product-container">
+		<div class="sectionIntro contained-FirstTwo">
+			<div class="imageWrap">
+				<a class="productImage" href="{{ product.url }}">
+					<img src="{{ site.baseurl }}{{ page.product_image }}">
+				</a>
+				{% assign share_url = page.url | absolute_url | cgi_escape %}
+				{% assign page_name = page.name %}
+				<div class="links a2a_kit a2a_kit_size_32 a2a_default_style" data-a2a-url="{{share_url}}" data-a2a-title="{{page_name}}">
+					<a class="a2a_dd" href="https://www.addtoany.com/share">
+						<span class="icon"><i data-feather="share-2"></i></span>
+					</a>
+				</div>
+				<script>
+                    var a2a_config = a2a_config || {};
+                    a2a_config.onclick = 1;
+                    a2a_config.icon_color = "transparent";
+                    </script>
+                    <script async src="https://static.addtoany.com/menu/page.js"></script>
+                    <!-- AddToAny END -->
 			</div>
 		</div>
-	</div>
+		<div class="product-details sectionContent contained-LastFour" id="add">
+			<h3>{{ page.name }}</h3>
+			{{ page.description_html | markdownify }}
+			<h4>${{ page.price }}</h4>
+			<div>{% include snipcart-button.html product=page %}</div>
+		</div>
 </section>
 
 
