@@ -34,24 +34,27 @@
                 </a>
             </div>
 
-            <a  href="{{post.url}}" class="postContent">
+            <div class="postContent">
                 <div>
                     <h4 class="postTitle">{{post.title}}</h4>
+                    <div class="byline"><span>{{ authorName }}</span> | <span>{{post.category}}</span> | <span>{{ post.date | date: "%d %b %Y" }}</span></div>
+                    <div class="tagsCluster">
+                        {% for tag in post.tags %}
+                            <span>{{ tag }}</span>
+                        {% endfor %}
+                    </div>
                     <p class="postSubtitle">{{post.subtitle}}</p>
-                    <div class="byline tagify"><span>{{ authorName }}</span><span>{{post.category}}</span><span>{{ post.date | date: "%d %b %Y" }}</span></div>
                 </div>
-            </a>
+            </div>
             <div class="postActions">
                 <ul class="links">
                     <!-- Sonya - check here for all analytics and customisation options: https://www.addtoany.com/ -->
                     {% assign share_url = post.url | absolute_url | cgi_escape %}
                     {% assign page_name = post.subtitle %}
                     <div class="links a2a_kit a2a_kit_size_32 a2a_default_style" data-a2a-url="{{share_url}}" data-a2a-title="{{page_name}}">
-                        <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
-                        <a class="a2a_button_facebook"></a>
-                        <a class="a2a_button_twitter"></a>
-                        <a class="a2a_button_email"></a>
-                        <a class="a2a_button_linkedin"></a>
+                        <a class="a2a_dd" href="https://www.addtoany.com/share">
+                            <span class="icon"><i data-feather="share-2"></i></span>
+                        </a>
                     </div>
                     <script>
                     var a2a_config = a2a_config || {};

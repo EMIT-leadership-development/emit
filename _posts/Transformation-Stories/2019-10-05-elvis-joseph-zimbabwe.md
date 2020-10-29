@@ -15,7 +15,7 @@ sprite_selection_number: 6
 author:
 
 # Post meta : todo: select field for cc?
-tags: Zimbabwe EMIT-Student
+tags: Zimbabwe EMIT-Student leadership
 category: Transformation Stories
 excerpt_separator: <!--more-->
 

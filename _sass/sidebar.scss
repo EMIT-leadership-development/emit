@@ -52,6 +52,40 @@
 			}
 		}
 	}
+	.searchForm {
+		h4 {
+			margin-bottom: 0;
+		}
+		form {
+			display: flex;
+			justify-content: center;
+			.form-group {
+				flex: 4;
+			}
+			button {
+				cursor: pointer;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				flex: 1;
+				padding: 0;
+				border: 0;
+				background: none;
+				svg {
+					margin-top: 12px;
+				}
+				&:hover {
+					svg {
+						stroke: rgba(0,0,0,0.5);
+					}
+				}
+				&:active {
+					border: 0;
+				}
+			}
+		}
+	}
 	.announcement {
 		display: grid;
 		grid-template-columns: 24px auto;

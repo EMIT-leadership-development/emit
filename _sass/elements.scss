@@ -172,8 +172,12 @@ p.introduction {
 // Byline used in a few places
 .byline {
 	width: 100%;
-	font-size: 0.9rem;
+	font-size: 0.8rem;
 	margin-bottom: 15px;
+	span {
+		text-transform: uppercase;
+		color: rgba(0,0,0,0.5);
+	}
 }
 // aside: Article Link will be used in a few places on the site
 .articleAside {

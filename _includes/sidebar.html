@@ -1,11 +1,25 @@
+    <div class="sidebarSection searchForm">
+        <h4>SEARCH</h4>
+        <form class="materialForm" action="{{ site.baseurl }}/results/" method="get">
+            <!-- <input type="search" name="q" {% if include.add_id %}id="search-input"{% endif %} placeholder="What would you like to know?" autofocus> -->
+            <!-- <span class="icon"><i data-feather="search"></i></span> -->
+            <!-- <input type="submit" value="Search" style="display: none;"> -->
 
+            <div class="form-group">
+                <input type="search" name="q" {% if include.add_id %}id="search-input"{% endif %} required="required"/>
+                <label for="input" class="control-label">Looking for something specific?</label><i class="bar"></i>
+            </div>
+            <button type="submit"><span class="icon"><i data-feather="search"></i></span></button>
+
+        </form>
+    </div>
     <!-- SECTION: CATEGORY NAV -->
     <nav class="sidebarSection categoryNav">
         <h4>CATEGORIES</h4>
         <ul class="categoryNav">
             {% for category in site.categories %}
                 <li>
-                    <a href="{{ site.baseurl }}/{{category|first}}" title="">{{category|first}}
+                    <a href="{{ site.baseurl }}/results/?q={{category|first}}&k=category" title="">{{category|first}}
                         <span class="slash-divider">/</span>
                         <span class="categoryCount">{{category[1].size}}</span>
                     </a>
@@ -17,7 +31,7 @@
     <div class="sidebarSection tagsCluster">
         <h4>TAGS</h4>
         {% for tag in site.tags %}
-        <a href="#{{ tag[0] | slugify }}">{{ tag[0] }}</a>
+        <a href="{{ site.baseurl }}/results/?q={{tag[0]}}&k=tags" title="">{{ tag[0] }}</a>
         {% endfor %}
     </div>
     <!-- SECTION: ANNOUCEMENTS -->

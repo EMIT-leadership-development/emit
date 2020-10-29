@@ -15,7 +15,7 @@ sprite_selection_number: 7
 author:
 
 # Post meta : todo: select field for cc?
-tags: Rwanda EMIT-student
+tags: Rwanda EMIT-Student
 category: Transformation Stories
 excerpt_separator: <!--more-->
 
