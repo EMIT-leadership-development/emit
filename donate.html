@@ -135,7 +135,7 @@ description:
 			<ul class="product-list">
 				{% assign donations = site.products | where:'product_type', 'donation' %}
 				{% for product in donations %}
-				<li>
+				<li class="cms-editor-link" data-cms-editor-link="cloudcannon:collections/{{ product.path }}">
 					<ul class="links">
 						<a href="https://facebook.com"><i data-feather="twitter"></i></a>
 						<a href="https://twitter.com"><i data-feather="facebook"></i></a>
