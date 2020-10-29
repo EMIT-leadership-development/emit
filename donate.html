@@ -45,121 +45,47 @@ description:
 		<h2 class="sectionTitle priority2 editable">Extend your impact<br><span class="emphasis">with a subscription</span></h2>
 	</div>
 	<div class="sectionContent contained-LastFour">
-		<p class="introduction">EMIT leaders are making a difference across Africa. They feed the hungry, advise politicians, educate, heal brokenness, improve quality of life - bring light in darkness.  Who are the people you impact? You can leave a legacy that spans continents and generations. Join the EMIT family of leaders by supporting these heros.</p>	
+		<p class="introduction editable">EMIT leaders are making a difference across Africa. They feed the hungry, advise politicians, educate, heal brokenness, improve quality of life - bring light in darkness.  Who are the people you impact? You can leave a legacy that spans continents and generations. Join the EMIT family of leaders by supporting these heros.</p>	
 	</div>
 </section>
 
 <!-- SUBSCRIPTIONS -->
 <section class="item--full contrastLight2">
-	<div class="subscriptionWrap container">
-		<div class="sphere1Subscription">
-			<div class="subscriptionImage">
-				<div class="authorImageWrap">
-					<div class="authorImage">
-						<div class="sphere sphere3">
-							<div class="sphere sphere2">
-								<div class="sphere sphere1">
-									<img src="/images/products/subscriptions/sphere1.webp" alt="">
+	<div class="subscriptionWrap container" data-cms-editor-link="cloudcannon:collections/product.url">
+		{% assign subscriptions = site.products | where:'product_type', 'subscription' %}
+		{% for product in subscriptions %}
+			<div class="{{product.sku}}">
+				<div class="subscriptionImage">
+					<div class="authorImageWrap">
+						<div class="authorImage">
+							<div class="sphere sphere3">
+								<div class="sphere sphere2">
+									<div class="sphere sphere1">
+										<img src="{{site.baseurl}}{{product.product_image}}" alt="">
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<h3>SPHERE 1 IMPACT</h3>
-			<div class="price-container">
-				<span class="currency">$</span>
-				<span class="price">29</span>
-				<span class="cents-cont">
-					<span class="cents">99</span>
-					<span class="place2">monthly</span>
-				</span>
-			</div>
-			<div>
-				<ul>
-					<li>Measure of Impact</li>
-					<li>1 Students</li>
-					<li>1 Events</li>
-					<li>1 Material</li>
-					<li>1 Salaries</li>
-				</ul>
-			</div>
-			<div class=" price-button-container">
-				<a>SIGN UP</a>
-			</div>
-		</div>
-		<div class="sphere2Subscription">
-			<div class="subscriptionImage">
-				<div class="authorImageWrap">
-					<div class="authorImage">
-						<div class="sphere sphere3">
-							<div class="sphere sphere2">
-								<div class="sphere sphere1">
-									<img src="/images/products/subscriptions/sphere2.webp" alt="">
-								</div>
-							</div>
-						</div>
-					</div>
+				<h3>{{product.name}}</h3>
+				<div class="price-container">
+					{% assign priceParts = product.price | split: "." %}
+					<span class="currency">$</span>
+					<span class="price">{{ priceParts[0] }}</span>
+					<span class="cents-cont">
+						<span class="cents">{{ priceParts[1] }}</span>
+						<span class="place2">{{ product.terms }}</span>
+					</span>
+				</div>
+				<div>
+					{{product.description_markdown}}
+				</div>
+				<div class=" price-button-container">
+					<a>SIGN UP</a>
 				</div>
 			</div>
-			<h3>SPHERE 2 IMPACT</h3>
-			<div class="price-container">
-				<span class="currency">$</span>
-				<span class="price">75</span>
-				<span class="cents-cont">
-					<span class="cents">99</span>
-					<span class="place2">monthly</span>
-				</span>
-			</div>
-			<div>
-				<ul>
-					<li>Measure of Impact</li>
-					<li>3 Students</li>
-					<li>3 Events</li>
-					<li>3 Material</li>
-					<li>3 Salaries</li>
-				</ul>
-			</div>
-			<div class=" price-button-container">
-				<a>SIGN UP</a>
-			</div>
-		</div>
-		<div class="sphere3Subscription">
-			<div class="subscriptionImage">
-				<div class="authorImageWrap">
-					<div class="authorImage">
-						<div class="sphere sphere3">
-							<div class="sphere sphere2">
-								<div class="sphere sphere1">
-									<img src="/images/products/subscriptions/sphere3.webp" alt="">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<h3>SPHERE 3 IMPACT</h3>
-			<div class="price-container">
-				<span class="currency">$</span>
-				<span class="price">100</span>
-				<span class="cents-cont">
-					<span class="cents">99</span>
-					<span class="place2">monthly</span>
-				</span>
-			</div>
-			<div>
-				<ul>
-					<li>Measure of Impact</li>
-					<li>5 Students</li>
-					<li>5 Events</li>
-					<li>5 Material</li>
-					<li>5 Salaries</li>
-				</ul>
-			</div>
-			<div class=" price-button-container">
-				<a>SIGN UP</a>
-			</div>
-		</div>
+		{% endfor %}
 	</div>
 </section>
 
@@ -191,7 +117,7 @@ description:
 	</div>
 </section>
 
-<!-- SUBSCRIPTION HEADING -->
+<!-- GIFT HEADING -->
 <section id="gift" class="item--full white">
 	<div class="sectionIntro contained-FirstTwo">
 		<h2 class="sectionTitle priority2 editable">Power up<br><span class="emphasis">your impact with a gift</span></h2>
@@ -207,7 +133,8 @@ description:
 	<div id="donationsWrap" class="container">
 		<div id="gift" class="donationOption">
 			<ul class="product-list">
-			{% for product in site.products %}
+				{% assign donations = site.products | where:'product_type', 'donation' %}
+				{% for product in donations %}
 				<li>
 					<ul class="links">
 						<a href="https://facebook.com"><i data-feather="twitter"></i></a>
@@ -224,9 +151,6 @@ description:
 					</div>
 				</li>
 			{% endfor %}
-			<li></li>
-			<li></li>
-			<li></li>
 			</ul>
 		</div>
 	</div>

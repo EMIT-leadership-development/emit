@@ -197,7 +197,7 @@
 	display: grid;
 	grid-gap: 1rem;
 	grid-template-columns: 1fr 1fr 1fr;
-	.sphere2Subscription {
+	.subscription2 {
 		.price-container {
 			background: $brandContrastDark;
 			color: #ffffff;
@@ -216,7 +216,7 @@
 			border-color: #C9C9C9 !important;
 		}
 	}
-	.sphere1Subscription {
+	.subscription1 {
 		.sphere2 {
 			background: #949494 !important;
 			border-color: #C9C9C9 !important;

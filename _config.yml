@@ -111,9 +111,9 @@ _explore:
 
 _select_data:
   # Sonya changed this to donation types
-  garment_types:
-    - hat
-    - top
+  product_type:
+    - donation
+    - subscription
   # SELECT FIELD: Program Status determines whether program can be viewed
   statuses:
     - current
@@ -195,3 +195,4 @@ _comments:
   subtitle: Clickbait. In one sentence describe why this content is interesting to the reader
   contact_form_email: The email address where the contact form submissions should be sent
   team-member: Select a team-member (For posts this person is the author, for Map Markers this is the contact person)
+  description_markdown: For a subscription, this should be a bullet list. For any other product - write a nice detailed description that will entice donors.
