@@ -1,6 +1,6 @@
 ---
 name: SPHERE 1 IMPACT
-description_markdown: >-
+description_html: >-
     <ul>
         <li><strong>Measure of Impact</strong></li>
         <li>1 Students</li>

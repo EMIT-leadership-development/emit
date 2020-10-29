@@ -1,6 +1,6 @@
 ---
 name: Women for Women
-description_markdown: >-
+description_html: >-
   Placeat sequi penatibus dolor congue accusamus convallis! Molestias scelerisque, ducimus, habitant magnam molestiae inceptos, tenetur tempora orci dictum, unde ea.
 
 product_type: donation

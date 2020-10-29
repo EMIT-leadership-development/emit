@@ -1,6 +1,6 @@
 ---
 name: Training 1 year
-description_markdown: >-
+description_html: >-
   Massa commodo cubilia. Dictumst? Aut dignissim, quas asperiores egestas! Sollicitudin curae rerum faucibus occaecat mattis nobis vero primis, inceptos, facilis.
 
 product_type: donation

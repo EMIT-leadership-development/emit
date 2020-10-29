@@ -79,7 +79,7 @@ description:
 					</span>
 				</div>
 				<div>
-					{{product.description_markdown}}
+					{{product.description_html}}
 				</div>
 				<div class=" price-button-container">
 					<a>SIGN UP</a>
@@ -145,7 +145,7 @@ description:
 					<div class="product-details">
 						<h4><a href="{{ product.url }}">{{ product.name }}</a></h4>
 						<div class="product-description">
-							{{ product.description_markdown | truncate: 45 | markdownify }}
+							{{ product.description_html | truncate: 45 | markdownify }}
 						</div>
 						<p class="productPrice">${{ product.price }}</p>
 					</div>

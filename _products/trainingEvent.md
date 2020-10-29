@@ -1,6 +1,6 @@
 ---
 name: Training Event
-description_markdown: >-
+description_html: >-
   Quaerat aspernatur impedit tincidunt. Exercitation sodales! Eligendi varius esse tortor, consectetur facilis! Cupiditate ad condimentum, modi, praesentium aptent, mollis voluptates.
 
 product_type: donation

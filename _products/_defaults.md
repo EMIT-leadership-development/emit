@@ -3,5 +3,5 @@ name:
 product_type: donation
 price:
 sku:
-description:
+description_html:
 ---

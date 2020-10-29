@@ -1,6 +1,6 @@
 ---
 name: Sponsor Curriculum Development
-description_markdown: >-
+description_html: >-
   Inspiring Paragraph about how this donation will transform lives. Illo nascetur dolor, aliquip! Aliquet assumenda ducimus veritatis adipisicing cupidatat pellentesque nulla do corporis eligendi vehicula elit. Nonummy odio nulla.
 
 
