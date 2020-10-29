@@ -113,7 +113,7 @@ _explore:
 
 _select_data:
   # Sonya changed this to donation types
-  product_type:
+  product_types:
     - donation
     - subscription
   # SELECT FIELD: Program Status determines whether program can be viewed
