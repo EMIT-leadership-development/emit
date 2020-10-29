@@ -1,7 +1,8 @@
 ---
 name:
-product_type: donation
+description_html:
+product_type:
 price:
 sku:
-description_html:
+product_image:
 ---

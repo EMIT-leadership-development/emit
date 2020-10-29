@@ -38,6 +38,8 @@ collections:
   products:
     _hide_content: true
     _icon: shopping_cart
+    _image_key:	product_image
+    _image_size: cover
     output: true
 
 permalink: /:title.html
