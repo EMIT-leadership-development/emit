@@ -2,7 +2,11 @@
 # Standard for all posts
 title:
 subtitle:
-layout: post
+
+hero:
+heroQuote:
+hero_Quote_Cite:
+hero_image:
 
 # Hero defaults are set in config if not in post
 # Sprite Image for listings - to make site fast
@@ -25,4 +29,6 @@ image: /images/leaders/studentPlaceholder.jpg
 country:
 latitude:
 longitude:
+
+description:
 ---
