@@ -8,11 +8,11 @@ subtitle: Tempor habitant rhoncus imperdiet curabitur metus odit ex lacinia nequ
 heroQuote:
 hero_image: /images/AfricanLeadershipPowerCouple.webp
 # Sprite Image for listings - to make site fast
-sprite_image: /images/sprites/sprite-Set1.jpg
+sprite_image: /images/sprites/sprite-Set1.webp
 sprite_selection_number: 19
 
 # If the author is team member then select from datafile
-author:
+team-member:
 
 # Post meta : todo: select field for cc?
 tags:
@@ -23,12 +23,11 @@ excerpt_separator: <!--more-->
 # Image can't be named anything else because of maps plugin
 # Location used in hero map
 leaderName: Miss Amazing EMIT student
-leaderBio_description: A paragraph about this leader
-image: /images/team/Lydia.webp
+leaderBio_html: A paragraph about this leader
+leader_image: /images/team/Lydia.webp
 country: Zambia
-location:
-    latitude: -13.340436
-    longitude: 27.903660
+latitude: -13.340436
+longitude: 27.903660
 ---
 ## This is a fake story - replace it with a story from one of the EMIT countries
 

@@ -17,6 +17,26 @@ main.content {
 	z-index: 999;
 	display: grid;
 	place-items: center;
+	.info {
+		position: absolute;
+		bottom: 0;
+		color: #fff;
+		max-width: 800px;
+		display: flex;
+		h2 {
+			color: #ffffff;
+			border-left: 1px solid #ffffff;
+			padding: 1rem;
+		}
+		p {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			max-width: 400px;
+			color: #ffffff;
+			text-align: left;
+		}
+	}
 	#loaderspheres {
 		position: absolute;
         #loaderSpheresWrap {
@@ -246,6 +266,15 @@ section {
 .relatedLinksRow {
 	aside {
 		margin-left: 0;
+	}
+}
+.transformationStories {
+	.storiesList {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		.postWrap {
+			grid-template-columns: 1fr 1fr;
+		}
 	}
 }
 // -----SINGLE POST PAGE

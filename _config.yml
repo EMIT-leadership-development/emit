@@ -5,7 +5,7 @@ title: EMIT
 url: "http://adored-pea.cloudvent.net"
 baseurl:
 google_analytics_key:
-google_maps_javascript_api_key: AIzaSyCL26-sipFBbMnRYXRf_QAaa3Zp6eZmGUc
+google_maps_javascript_api_key: AIzaSyCopZOMs4afUxxRSYN36lBdL5dzANTsvFA
 snipcart_key: "NWFiMDUzOWItMDg2Yi00MDhjLWE1YmItODQ0M2EwYTI5YWI1NjM3MzU3Nzg2ODIyNjc0NDAz"
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
@@ -28,18 +28,19 @@ social:
 timezone: Africa/Johannesburg
 
 collections:
-  staff_members:
-    _hide_content: true
-    _icon: account_circle
-  products:
-    _hide_content: true
-    output: true
-    _icon: shopping_cart
   programs:
     _hide_content: true
-    output: true
     _icon: school
+    _image_key:	bookCover_image
+    _image_size: cover
+    output: true
     sort_by: id
+  products:
+    _hide_content: true
+    _icon: shopping_cart
+    _image_key:	product_image
+    _image_size: cover
+    output: true
 
 permalink: /:title.html
 
@@ -57,7 +58,7 @@ defaults:
     values:
       layout: "program"
       bookCover_image: /images/programs/NewProgramTrainingBook.webp
-      curriculumSprite_image: /images/programs/sprite-ComingSoon.webp
+      curriculumSprite_image: /images/sprites/sprite-Set2.webp
   -
     scope:
       path: ""
@@ -67,11 +68,17 @@ defaults:
       heroQuote: The essence of leadership is to make a difference in your sphere of influence.
       hero_Quote_Cite: O O Isaac
       hero_image: /images/couple.webp
+      description:
   -
     scope:
       path: "index.html"
     values:
-      layout: "default"
+      layout: "scrollyTelling"
+  -
+    scope:
+      path: "_data"
+    values:
+      hero_image: "" # or any placeholder image you want
 
 jekyll-archives:
   enabled:
@@ -80,7 +87,6 @@ jekyll-archives:
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
-  - jekyll-maps
 
 exclude:
   - Gemfile
@@ -88,27 +94,43 @@ exclude:
   - README.md
   - LICENCE
 
-# MAP PLUGIN NEEDS GOGGLE API
-maps:
-  google:
-    api_key: AIzaSyCopZOMs4afUxxRSYN36lBdL5dzANTsvFA
-
 # -----------
 # CloudCannon
+_explore:
+  groups:
+    - heading: Pages
+      collections:
+        - pages
+    - heading: Articles
+      collections:
+        - posts
+        - drafts
+    - heading: Data-Lists
+      collections:
+        - programs
+        - products
+        - data
 
-garment_types:
-  - hat
-  - top
-# SELECT FIELD: Program Status determines whether program can be viewed
-statuses:
-  - current
-  - planned
-  - developing
-# SELECT FIELD: Team members are categorised in groups
-groups:
-  - team
-  - board
+_select_data:
+  # Sonya changed this to donation types
+  product_types:
+    - donation
+    - subscription
+  # SELECT FIELD: Program Status determines whether program can be viewed
+  statuses:
+    - current
+    - planned
+    - developing
+  # SELECT FIELD: Team members are categorised in groups
+  groups:
+    - team
+    - board
 
+cloudcannon:
+  data: true
+
+# Sonya - todo - remove all uses of these
+# Replace with feather icons and delete the social icons file
 social_icons:
   - Email
   - Facebook
@@ -125,7 +147,7 @@ _options:
 # Hero image for all page headers
   hero_image:
     uploads_dir: "images/:title"
-# Profile Image in data/team
+# Profile Image in data/team-members
   profile_image: # Front matter field
     uploads_dir: "images/team/:title"
     width: 500
@@ -151,24 +173,28 @@ _options:
     uploads_dir: "images/leaders/:title"
 
 _comments:
+  id: Give this item an id number or code. Does not normally display anywhere on the front-end but sometimes used to sort a list when displaying it on a page.
   map: Update the map location and display settings.
-  latitude: Coordinates for the center marker on the map.
-  longitude: Coordinates for the center marker on the map.
-  zoom: The zoom level for the map.
+  latitude: Coordinates for the marker on the map.
+  longitude: Coordinates for the marker on the map.
   pricing_table: Update the information in the pricing tables.
   highlight: Emphasis the text
   color: The background color used in the plan name and call to action.
   new_window: Open link in new window
-  description: This is used for facebook shares of the page and google indexing
-  status: Current/Planned/Developing. Developing programs will be visible for spoonsorship.
-  image: Student / Leader profile image (500px X 500px) displays in map and sidebar for transformation stories
-  leaderBio_description: Displays in sidebar on transformation story posts
-  bio_description: Short paragraph about this person
+  description: Sonya will handle this - used for SEO and social shares of the page
+  status: Current/Planned/Developing. Current- open for registration. Developing- visible for sponsorship. Planned- visible only in lists.
+  Leadername: If this story is a transformation story - the name of the leader / student
+  leader_image: For transformation stories - Student / Leader profile image (500px X 500px) displays in map and sidebar
+  leaderBio_html: If this is a transformation story then the leader will be featured in the sidebar, not the post author.
+  bio_html: Short paragraph or two about this person
   heroQuote: Featured inspirational quote to display on page header image
-  hero_Quote_Cite: Ascribe the quote or author
+  hero_Quote_Cite: Who said this? Ascribe the quote
   hero: Alternative title to display on page header. Default is page title
   hero_image: The large featured image at the top of the page. Should be at least 3000px wide.
   bookCover_image: The cover of the program book. Speak to Sonya about creating the mockups.
-  curriculumSprite_image: To minimise loading time - all the corricula images are compiled as a single sprite. Speak to sonya about creating these.
-  title: Keep it short and to the point
+  curriculumSprite_image: To minimise loading time - all the corricula images are compiled as a single sprite. Speak to sonya about creating these and linking them.
+  title: This will be the page url.
   subtitle: Clickbait. In one sentence describe why this content is interesting to the reader
+  contact_form_email: The email address where the contact form submissions should be sent
+  team-member: Select a team-member (For posts this person is the author, for Map Markers this is the contact person)
+  description_markdown: For a subscription, this should be a bullet list. For any other product - write a nice detailed description that will entice donors.

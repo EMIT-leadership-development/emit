@@ -4,190 +4,176 @@ hero: Donate
 heroQuote: Vision is the art of seeing what is invisible to others.
 hero_Quote_Cite: Jonathan Swift
 hero_image: /images/TwoGirls.webp
+description:
 ---
 
-<section class="donations item--full">
-	<!-- SideBar -->
-	<div class="sidebar container leftToOne">
-		{% include sidebarDonate.html %}
+<!-- DONATION INTRO -->
+<section class="item--full white donationIntro">
+	<div class="sectionIntro contained-FirstTwo">
+		<h2 class="sectionTitle priority2 editable">Thank you!</h2>
+		<p class="editable introduction">Your support will help EMIT leaders to transform their communities in every sphere of society across Africa. We would like to make it simple for you to extend your own impact.  Here are a few ways you can support us.</p>
 	</div>
-	<div class="container TwoToRight">
+	<div class="sectionContent contained-LastFour supportOptions">
+		<ul class="infoPoints">
+			<li class="point">
+				<span class="icon"><i data-feather="check-circle"></i></span>
+				<h3 class="pointTitle editable">Subscription</h3>
+				<p class="pointContent editable">Extend your impact with a <a href="#subscription">monthly subscription</a></p>
+			</li>
+			<li class="point">
+				<span class="icon"><i data-feather="check-circle"></i></span>
+				<h3 class="pointTitle editable">Contribution</h3>
+				<p class="pointContent editable">Determine your own impact with a <a href="#contribution">customised contribution</a></p>
+			</li>
+			<li class="point">
+				<span class="icon"><i data-feather="check-circle"></i></span>
+				<h3 class="pointTitle editable">Gift</h3>
+				<p class="pointContent editable">Power-up your impact by giving a <a href="#gift">once-off gift</a> towards a specific need.</p>
+			</li>
+			<li class="point">
+				<span class="icon"><i data-feather="check-circle"></i></span>
+				<h3 class="pointTitle editable">Get involved</h3>
+				<p class="pointContent editable">Experience your impact by <a href="{{site.baseurl}}/get-involved">getting involved.</a></p>
+			</li>
+		</ul>
+	</div>
+</section>
 
-		<div id="subscription" class="donationOption">
-			<div class="optionTitle">
-				<h2 class="sectionTitle priority2 editable">Extend your impact<br><span class="emphasis">with a subscription</span></h2>
-				<p class="introduction">EMIT leaders are making a difference across Africa. They feed the hungry, advise politicians, educate, heal brokenness, improve quality of life - bring light in darkness.  Who are the people you impact? You can leave a legacy that spans continents and generations. Join the EMIT family of leaders by supporting these heros.</p>	
-			</div>
-			<div class="subscriptionWrap">
-				<div class="sphere1Subscription">
-					<div class="subscriptionImage">
-						<div class="authorImageWrap">
-							<div class="authorImage">
-								<div class="sphere sphere3">
-									<div class="sphere sphere2">
-										<div class="sphere sphere1">
-											<img src="/images/products/subscriptions/sphere1.webp" alt="">
-										</div>
+<!-- SUBSCRIPTION HEADING -->
+<section id="subscription" class="item--full">
+	<div class="sectionIntro contained-FirstTwo">
+		<h2 class="sectionTitle priority2 editable">Extend your impact<br><span class="emphasis">with a subscription</span></h2>
+	</div>
+	<div class="sectionContent contained-LastFour">
+		<p class="introduction editable">EMIT leaders are making a difference across Africa. They feed the hungry, advise politicians, educate, heal brokenness, improve quality of life - bring light in darkness.  Who are the people you impact? You can leave a legacy that spans continents and generations. Join the EMIT family of leaders by supporting these heros.</p>	
+	</div>
+</section>
+
+<!-- SUBSCRIPTIONS -->
+<section class="item--full contrastLight2">
+	<div class="subscriptionWrap container">
+		{% assign subscriptions = site.products | where:'product_type', 'subscription' %}
+		{% for product in subscriptions %}
+			<div class="{{product.sku}} cms-editor-link subscriptionProduct" data-cms-editor-link="cloudcannon:collections/{{ product.path }}">
+				<div class="subscriptionImage">
+					<div class="authorImageWrap">
+						<div class="authorImage">
+							<div class="sphere sphere3">
+								<div class="sphere sphere2">
+									<div class="sphere sphere1">
+										<img src="{{site.baseurl}}{{product.product_image}}" alt="">
 									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<h3>SPHERE 1 IMPACT</h3>
-					<div class="price-container">
-						<span class="currency">$</span>
-						<span class="price">29</span>
-						<span class="cents-cont">
-							<span class="cents">99</span>
-							<span class="place2">monthly</span>
-						</span>
-					</div>
-					<div>
-						<ul>
-							<li>Measure of Impact</li>
-							<li>1 Students</li>
-							<li>1 Events</li>
-							<li>1 Material</li>
-							<li>1 Salaries</li>
-						</ul>
-					</div>
-					<div class=" price-button-container">
-						<a>SIGN UP</a>
 					</div>
 				</div>
-				<div class="sphere2Subscription">
-					<div class="subscriptionImage">
-						<div class="authorImageWrap">
-							<div class="authorImage">
-								<div class="sphere sphere3">
-									<div class="sphere sphere2">
-										<div class="sphere sphere1">
-											<img src="/images/products/subscriptions/sphere2.webp" alt="">
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<h3>SPHERE 2 IMPACT</h3>
+				<div class="infoWrap">
+					<h3>{{product.name}}</h3>
 					<div class="price-container">
+						{% assign priceParts = product.price | split: "." %}
 						<span class="currency">$</span>
-						<span class="price">75</span>
+						<span class="price">{{ priceParts[0] }}</span>
 						<span class="cents-cont">
-							<span class="cents">99</span>
-							<span class="place2">monthly</span>
+							<span class="cents">{{ priceParts[1] }}</span>
+							<span class="place2">{{ product.terms }}</span>
 						</span>
 					</div>
 					<div>
-						<ul>
-							<li>Measure of Impact</li>
-							<li>3 Students</li>
-							<li>3 Events</li>
-							<li>3 Material</li>
-							<li>3 Salaries</li>
-						</ul>
-					</div>
-					<div class=" price-button-container">
-						<a>SIGN UP</a>
-					</div>
-				</div>
-				<div class="sphere3Subscription">
-					<div class="subscriptionImage">
-						<div class="authorImageWrap">
-							<div class="authorImage">
-								<div class="sphere sphere3">
-									<div class="sphere sphere2">
-										<div class="sphere sphere1">
-											<img src="/images/products/subscriptions/sphere3.webp" alt="">
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<h3>SPHERE 3 IMPACT</h3>
-					<div class="price-container">
-						<span class="currency">$</span>
-						<span class="price">100</span>
-						<span class="cents-cont">
-							<span class="cents">99</span>
-							<span class="place2">monthly</span>
-						</span>
-					</div>
-					<div>
-						<ul>
-							<li>Measure of Impact</li>
-							<li>5 Students</li>
-							<li>5 Events</li>
-							<li>5 Material</li>
-							<li>5 Salaries</li>
-						</ul>
+						{{product.description_html}}
 					</div>
 					<div class=" price-button-container">
 						<a>SIGN UP</a>
 					</div>
 				</div>
 			</div>
-		</div>
+		{% endfor %}
+	</div>
+</section>
 
-		<div id="contribution" class="donationOption">
-			<div class="optionTitle">
-				<div>
-					<h2 class="sectionTitle priority2 editable">Determine your<br><span class="emphasis">own impact</span></h2>
-					<p class="introduction">Determine the extent of your influence - make a custom contribution.</p>	
-				</div>
-				<form class="materialForm" action="">
-					<div class="formheader">
-						<h3>CONTRIBUTE</h3>
-					</div>
-					<div class="form-group">
-						<input type="text" required="required"/>
-						<label for="input" class="control-label">Full Name</label><i class="bar"></i>
-					</div>
-					<div class="form-group">
-						<input type="text" required="required"/>
-						<label for="input" class="control-label">Email</label><i class="bar"></i>
-					</div>
-					<div class="form-group">
-						<input type="text" required="required"/>
-						<label for="input" class="control-label">Amount</label><i class="bar"></i>
-					</div>
-					<a href="#" class="button primary">GIVE!</a>
-				</form>
+<!-- CONTRIBUTIONS -->
+<section id="contribution"  class="item--full">
+	<div class="sectionIntro contained-FirstTwo">
+		<h2 class="sectionTitle priority2 editable">Determine your<br><span class="emphasis">own impact</span></h2>
+		<p class="introduction editable">Determine the extent of your influence - make a custom contribution.</p>
+	</div>
+	<div class="sectionContent contained-LastFour">
+		<form class="materialForm" action="">
+			<div class="formheader">
+				<h3>CONTRIBUTE</h3>
 			</div>
-		</div>
+			<div class="form-group">
+				<input type="text" required="required"/>
+				<label for="input" class="control-label">Full Name</label><i class="bar"></i>
+			</div>
+			<div class="form-group">
+				<input type="text" required="required"/>
+				<label for="input" class="control-label">Email</label><i class="bar"></i>
+			</div>
+			<div class="form-group">
+				<input type="text" required="required"/>
+				<label for="input" class="control-label">Amount</label><i class="bar"></i>
+			</div>
+			<a href="#" class="button primary">GIVE!</a>
+		</form>
+	</div>
+</section>
 
+<!-- GIFT HEADING -->
+<section id="gift" class="item--full white">
+	<div class="sectionIntro contained-FirstTwo">
+		<h2 class="sectionTitle priority2 editable">Power up<br><span class="emphasis">your impact with a gift</span></h2>
+	</div>
+	<div class="sectionContent contained-LastFour">
+		<p class="introduction editable">Give the gift of transformation.  These once-off donations could impact the future of someone you have never met.</p>
+	</div>
+</section>
 
+<!-- GIFT OPTIONS -->
+<section class="item--full">
+	<!-- Content -->
+	<div id="donationsWrap" class="container">
 		<div id="gift" class="donationOption">
-			<div class="optionTitle">
-				<h2 class="sectionTitle priority2 editable">Power up<br><span class="emphasis">your impact with a gift</span></h2>
-				<div class="optionDescription">
-					<p class="introduction">Give the gift of transformation.  These once-off donations could impact the future of someone you have never met.</p>
-					<p class="editor-link" style="text-align: center;"><a href="cloudcannon:collections/_products" class="btn"><strong>&#9998;</strong> Manage products</a></p>		
-				</div>
-			</div>
 			<ul class="product-list">
-			{% for product in site.products %}
-				<li>
-					<ul class="links">
-						<a href="https://facebook.com"><i data-feather="twitter"></i></a>
-						<a href="https://twitter.com"><i data-feather="facebook"></i></a>
-						<a href="https://linkedin.com"><i data-feather="linkedin"></i></a>
-					</ul>
-					{% include product-styles.html product=product %}
+				{% assign donations = site.products | where:'product_type', 'donation' %}
+				{% for product in donations %}
+				<li class="cms-editor-link" data-cms-editor-link="cloudcannon:collections/{{ product.path }}">
+					<div class="imageWrap">
+						<a class="productImage" href="{{ product.url }}">
+							<img src="{{ site.baseurl }}{{ product.product_image }}">
+						</a>
+						{% assign share_url = product.url | absolute_url | cgi_escape %}
+						{% assign page_name = product.name %}
+						<div class="links a2a_kit a2a_kit_size_32 a2a_default_style" data-a2a-url="{{share_url}}" data-a2a-title="{{page_name}}">
+							<a class="a2a_dd" href="https://www.addtoany.com/share">
+								<span class="icon"><i data-feather="share-2"></i></span>
+							</a>
+						</div>
+						<script>
+							var a2a_config = a2a_config || {};
+							a2a_config.onclick = 1;
+							a2a_config.icon_color = "transparent";
+							</script>
+							<script async src="https://static.addtoany.com/menu/page.js"></script>
+							<!-- AddToAny END -->
+					</div>
 					<div class="product-details">
 						<h4><a href="{{ product.url }}">{{ product.name }}</a></h4>
 						<div class="product-description">
-							{{ product.description_markdown | truncate: 45 | markdownify }}
+							{{ product.description_html | truncate: 45 | markdownify }}
 						</div>
 						<p class="productPrice">${{ product.price }}</p>
 					</div>
 				</li>
 			{% endfor %}
-			<li></li>
-			<li></li>
-			<li></li>
 			</ul>
 		</div>
+	</div>
+</section>
+
+<!-- FAQ'S -->
+<section class="white item--full">
+	<div class="container">
+		{% include faqsDonate.html %}
 	</div>
 </section>

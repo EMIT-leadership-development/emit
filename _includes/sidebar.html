@@ -1,0 +1,70 @@
+    <div class="sidebarSection searchForm">
+        <h4>SEARCH</h4>
+        <form class="materialForm" action="{{ site.baseurl }}/results/" method="get">
+            <div class="form-group">
+                <input type="search" name="q" {% if include.add_id %}id="search-input"{% endif %} required="required"/>
+                <label for="input" class="control-label">Looking for something specific?</label><i class="bar"></i>
+            </div>
+            <button type="submit"><span class="icon"><i data-feather="search"></i></span></button>
+
+        </form>
+    </div>
+    <!-- SECTION: CATEGORY NAV -->
+    <nav class="sidebarSection categoryNav">
+        <h4>CATEGORIES</h4>
+        <ul class="categoryNav">
+            {% for category in site.categories %}
+                <li>
+                    <a href="{{ site.baseurl }}/results?q={{category|first}}&k=category" title="">{{category|first}}
+                        <span class="slash-divider">/</span>
+                        <span class="categoryCount">{{category[1].size}}</span>
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+    </nav>
+    <!-- SECTION: TAGS -->
+    <div class="sidebarSection tagsCluster">
+        <h4>TAGS</h4>
+        {% for tag in site.tags %}
+        <a href="{{ site.baseurl }}/results?q={{tag[0]}}&k=tags" title="">{{ tag[0] }}</a>
+        {% endfor %}
+    </div>
+    <!-- SECTION: ANNOUCEMENTS -->
+    <div class="sidebarSection latestAnnouncements">
+        <h4>ANNOUNCEMENTS</h4>
+        {% assign filtered_posts = site.posts | where: 'category', "Announcements" %}
+        {% for post in filtered_posts limit:3 %}
+            <div class="announcement">
+                <span class="icon"><i data-feather="alert-circle"></i></span>
+                <div class="content">
+                    <h5>{{ post.title }}</h5>
+                    <p>{{ post.excerpt | strip_html | | normalize_whitespace | truncate: 80 }} <a href="{{ site.baseurl }}{{ post.url }}">Continue reading.</a></p>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+    <!-- SECTION: RECENT POSTS -->
+    <div class="sidebarSection recentPosts">
+        <h4>RECENT POSTS</h4>
+        <ul class="clearlist widget-posts">
+            {% for post in site.posts limit:3 %}
+            {% assign distance = 5 %}
+            {% assign position = distance | times: post.sprite_selection_number %}
+            <li>
+                <div class="recentPostWrap">
+                    <div>
+                        <a class="postImage" href="{{ post.url }}" style="background-image:url({{site.baseurl}}{{post.sprite_image}}); background-position: 0 {{position}}%;"></a>
+                    </div>
+                    <div class="postDescription">
+                        <a class="postTitle" href="{{ post.url }}" title="">{{ post.title }}</a>
+                        <div class="postMeta tagify">
+                            <span>{{ post.date | date: "%d %b %Y" }}</span>
+                            <span>{{ post.author }}</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>

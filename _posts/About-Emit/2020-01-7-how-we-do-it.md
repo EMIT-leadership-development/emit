@@ -5,10 +5,10 @@ subtitle: A network of leaders reaching into the remotest areas of Africa.
 
 # IMAGES
 hero_image: /images/helpingElderly.webp
-sprite_image: /images/sprites/sprite-Set1.jpg
+sprite_image: /images/sprites/sprite-Set1.webp
 sprite_selection_number: 15
 
-author: Theo
+team-member: Theo Faber
 
 tags: EMIT Strategy
 category: About EMIT

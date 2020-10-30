@@ -1,0 +1,203 @@
+#blogPage {
+    .sidebar {
+        grid-column: 2 / span 2;
+        padding-right: 2rem
+    }
+    #storiesWrap {
+        grid-column: 4 / span 4;
+    }
+    @media (max-width: 900px) {
+        // display: flex;
+        // flex-direction: column;
+        // flex-direction: column-reverse;
+        .sidebar {
+            grid-row: 2;
+            grid-column: 2 / span 6
+        }
+        #storiesWrap {
+            grid-row: 1;
+            grid-column: 2 / span 6
+        }
+    }
+}
+
+.storiesList {
+    display: grid;
+    grid-gap: 2rem;
+    .postWrap {
+        border-radius: 2px;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-column-gap: 1rem;
+        grid-template-rows: 1fr auto;
+        background: #ffffff;
+        filter: drop-shadow(0.1rem 0.1rem 0.3rem rgba(20, 20, 180, 0.3));
+
+        @media (min-width: 1011px) and (max-width: 1080px) {
+            grid-template-columns: 1fr 2fr;
+        }
+        @media (min-width: 901px) and (max-width: 1010px) {
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 0;
+        }
+        @media (min-width: 801px) and (max-width: 900px) {
+            grid-template-columns: 1fr 3fr;
+            grid-gap: 1rem;
+        }
+        @media (min-width: 691px) and (max-width: 800px) {
+            grid-template-columns: 1fr 2fr;
+            grid-gap: 1rem;
+        }
+        @media (min-width: 614px) and (max-width: 690px) {
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 1rem;
+        }
+        @media (max-width: 613px) {
+            grid-template-columns: 1fr;
+            grid-template-rows: 400px 1fr auto;
+            grid-gap: 0;
+            .postImageWrap {
+                grid-row: 1;
+                grid-column: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .postImage {
+                    position: relative;
+                    background-color: $brandContrastLight2;
+                    background-repeat: no-repeat;
+                    width: 100%;
+                    padding-bottom: 150%;
+                    border-radius: 0;
+                    background-attachment: scroll;
+                }
+                .authorImage {
+                    width: 40%;
+                    left: -12%;
+                    bottom: -12%;
+                }
+            }
+            .postContent {
+                grid-row: 2 ;
+                grid-column: 1;
+            }
+            .postActions {
+                grid-column: 1;
+                grid-row: 3;
+                padding: 1rem;
+            }
+        }
+    }
+    .postImageWrap {
+        grid-column: 1;
+        grid-row: 1 / span 2;
+        position: relative;
+        overflow: hidden;
+        .postImage {
+            position: relative;
+            width: 100%;
+            padding-bottom: 150%;
+            background-size: cover;
+            border-top-right-radius: 60%;
+            overflow: hidden;
+            &:before {
+                content: "";
+                background: rgba(0,0,0,0.3);
+                position: absolute;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+            }
+        }
+        .authorImage {
+            position: absolute;
+            left: -20%;
+            bottom: -15%;
+            width: 70%;
+            z-index: 2;
+            .sphere {
+                padding: 0.6rem;
+            }
+            .sphere1 {
+                background-color: $sphere1BG;
+            }
+            .sphere2{
+                background-color: $sphere2BG;
+            }
+            .sphere3 {
+                background-color: $sphere3BG;
+            }
+        }
+    }
+    .postContent {
+        padding: 1rem;
+        color: unset;
+        text-decoration: none;
+        &:hover {
+            text-decoration: none;
+        }
+		.postTitle {
+			z-index: 100;
+			font-weight: 500;
+			font-size: 1.5rem;
+			color: rgba(0,0,0,0.8);
+			margin: 1rem 0;
+		}
+		p {
+			margin: 1rem 0;
+        }
+    }
+    .postActions {
+        box-sizing: border-box;
+        padding: 0 1rem 1rem 1rem;
+        grid-column: 2;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .button {
+            margin: 0 !important;
+            padding: 5px 10px !important;
+        }
+        .links {
+            display: flex;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            a {
+                margin: 0 5px 0 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+                &:hover {
+                    text-decoration: none;
+                }
+                color: $brandContrastDark;
+                &:hover {
+                    svg {
+                        transform:scale(1.2);
+                    }
+                }
+            }
+            svg {
+                transform:scale(1);
+                transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+            }
+        }
+    }
+}
+
+// The Share Menu from https://www.addtoany.com/buttons/customize/css_style_colors
+.a2a_menu, .a2a_menu_find_container {
+    border-radius: 5px !important;
+    background-color: $brandContrastDark !important;
+    a, a.a2a_i, a.a2a_i:visited, a.a2a_more, i.a2a_i {
+        border: $brandContrastDark !important;
+        svg {
+            fill: #ffffff;
+        }
+    }
+}

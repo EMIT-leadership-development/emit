@@ -7,11 +7,11 @@ subtitle: The maturity of our church members is a direct result of better-traine
 # Sprite Image for listings - to make site fast
 hero_image: images/Young-African-Youth-Leader.webp
 customHeroPosition: "center top"
-sprite_image: /images/sprites/sprite-Set1.jpg
+sprite_image: /images/sprites/sprite-Set1.webp
 sprite_selection_number: 2
 
 # If the author is team member then select from datafile
-author: Theo
+team-member: Theo Faber
 
 # Post meta : todo: select field for cc?
 tags: Zambia Zimbabwe Madagascar

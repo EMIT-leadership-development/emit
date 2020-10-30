@@ -4,6 +4,7 @@ hero: Our Team
 heroQuote: Managers light a fire under people; leaders light a fire in people.
 hero_Quote_Cite: Kathy Austin
 hero_image: /images/lightAFire.webp
+description:
 ---
 
 
@@ -21,13 +22,13 @@ hero_image: /images/lightAFire.webp
 <!-- SECTION LIST OF MEMBERS -->
 <section class="teamList item--full white">
     <ul class="sectionContent">
-        {% for teamMember in site.data.team%}
-        <li>
-            <!-- if group is team -->
-            {% if teamMember.group == "team" %}
-                {% include teamMemberPreview.html %}
-            {% endif %}
+        {% for teamMember in site.data.team-members%}
+        <!-- if group is team -->
+        {% if teamMember.group == "team" %}
+        <li data-cms-editor-link="cloudcannon:collections/_data/team-members.yml" class="cms-editor-link">
+            {% include teamMemberPreview.html %}
         </li>
+        {% endif %}
         {% endfor %}
     </ul>
 </section>

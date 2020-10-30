@@ -57,6 +57,10 @@
       link: /programs/church-leaders
       new_window: false
       highlight: false
+    - name: Youth Leaders
+      link: /programs/youth-leaders
+      new_window: false
+      highlight: false
 - name: Stories
   link: /articles
   new_window: false

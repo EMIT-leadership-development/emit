@@ -5,10 +5,10 @@ subtitle: In 2016 we decided it was time for a change - here's Why we decided to
 
 # IMAGES
 hero_image: /images/man-Reading.webp
-sprite_image: /images/sprites/sprite-Set1.jpg
+sprite_image: /images/sprites/sprite-Set1.webp
 sprite_selection_number: 18
 
-author: Kobus
+team-member: Kobus Grobler
 
 tags: EMIT transformation Africa Leadership Training
 category: About EMIT

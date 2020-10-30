@@ -12,11 +12,6 @@
     </div>
     <h3>{{ teamMember.name }}</h3>
     <div class="memberTitle">{{ teamMember.title }}</div>
-    <!-- <ul class="team-social">
-        <li><a href="{{teamMember.facebook_url}}"><span aria-hidden="true" class="social_facebook"></span></a></li>
-        <li><a href="{{teamMember.twitter_url}}"><span aria-hidden="true" class="social_twitter"></span></a></li>
-        <li><a href="{{teamMember.linkedin_url}}"><span aria-hidden="true" class="social_linkedin"></span></a></li>
-    </ul> -->
     <ul class="links">
         <li><a class="facebook" href="{{teamMember.facebook_url}}">{% include social-icon.html icon="Facebook2" %}</a></li>
         <li><a class="twitter" href="{{teamMember.twitter_url}}">{% include social-icon.html icon="Twitter" %}</a></li>
@@ -27,7 +22,7 @@
         {% assign image = teamMember.profile_image %}
         {% assign url = teamMember.facebook_url %}
         {% assign urlText = "See more on facebook" %}
-        {% assign description = teamMember.bio_description %}
+        {% assign description = teamMember.bio_html %}
         <div class="modalContent">
             {% include moreInfoPopup.html %}
         </div>

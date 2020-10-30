@@ -8,11 +8,11 @@ heroQuote:
 hero_image: /images/africanFamily.webp
 customHeroPosition: "center bottom"
 # Sprite Image for listings - to make site fast
-sprite_image: /images/sprites/sprite-Set1.jpg
+sprite_image: /images/sprites/sprite-Set1.webp
 sprite_selection_number: 20
 
 # If the author is team member then select from datafile
-author:
+team-member:
 
 # Post meta : todo: select field for cc?
 tags:
@@ -23,12 +23,11 @@ excerpt_separator: <!--more-->
 # Image can't be named anything else because of maps plugin
 # Location used in hero map
 leaderName: Karen Feris
-leaderBio_description: Karen's bio to come here.
-image: /images/leaders/KarenFeris.webp
+leaderBio_html: Karen's bio to come here.
+leader_image: /images/leaders/KarenFeris.webp
 country: Namibia
-location:
-    latitude: -22.180274
-    longitude: 17.177725
+latitude: -22.180274
+longitude: 17.177725
 ---
 ## Karen in Namibia offers a healing facility for the whole family
 

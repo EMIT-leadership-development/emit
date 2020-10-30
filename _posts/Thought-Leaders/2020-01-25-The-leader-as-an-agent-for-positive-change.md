@@ -6,11 +6,11 @@ subtitle: All leaders exhibit one common quality - influence
 # Hero defaults are set in config if not in post
 # Sprite Image for listings - to make site fast
 hero_image: images/african-leadership-mother-EMIT.webp
-sprite_image: /images/sprites/sprite-Set1.jpg
+sprite_image: /images/sprites/sprite-Set1.webp
 sprite_selection_number: 3
 
 # If the author is team member then select from datafile
-author: Borniface
+team-member: Borniface Shonga
 
 # Post meta : todo: select field for cc?
 tags: Leadership Transformation Training

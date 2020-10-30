@@ -1,9 +1,8 @@
 ---
-bookCover_image: /images/programs/NewProgramTrainingBook.webp
-curriculumSprite_image: /images/programs/sprite-ComingSoon.webp
-
 title:
-name:
+hero_image:
+bookCover_image: /images/programs/NewProgramTrainingBook.webp
+curriculumSprite_image: /images/sprites/sprite-Set2.webp
 id:
 objective_markdown:
 motivation:
@@ -21,8 +20,9 @@ description_markdown: >-
 curricula:
   - title:
     objective:
-    credits:
-    days:
-    projects:
+    credits_number:
+    days_number:
+    projects_number:
+    sprite_selection_number:
 
 ---

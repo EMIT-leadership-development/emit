@@ -1,0 +1,43 @@
+---
+title: Results
+_unlisted: true
+
+---
+
+<section>
+    <div class="container">
+        <h3><span id="search-process">Loading</span> <span id="descriptor">results for</span> <span id="search-query-container" style="display: none;"> "<strong id="search-query"></strong>"</span></h3>
+        <div id="search-results" class="storiesList"></div>
+    </div>
+</section>
+
+
+
+<script>
+	window.data = {
+		{% for post in site.posts %}
+			{% if post.title %}
+				{% unless post.excluded_in_search %}
+					{% if added %},{% endif %}
+                    {% assign added = false %}
+                    {% assign distance = 5 %}
+                    {% assign position = distance | times: post.sprite_selection_number %}
+					"{{ post.url | slugify }}": {
+                        "id": "{{ post.url | slugify }}",
+                        "title": "{{ post.title | xml_escape }}",
+                        "tags": "{{ post.tags | join: " " | xml_escape }}",
+						"category": ['{{ post.category | xml_escape }}'],
+                        "url": " {{ post.url | xml_escape }}",
+                        "pic": " {{ post.sprite_image }}",
+                        "picNumber": " {{ post.sprite_selection_number }}",
+                        "position": " {{ position }}",
+						"content": {{ post.content | strip_html | replace_regex: "[\s/\n]+"," " | strip | jsonify }}
+                    }
+					{% assign added = true %}
+				{% endunless %}
+			{% endif %}
+		{% endfor %}
+    };
+</script>
+<script src="https://unpkg.com/lunr/lunr.js"></script>
+<script src="{{ site.baseurl }}/js/search.js"></script>

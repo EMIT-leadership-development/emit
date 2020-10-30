@@ -4,6 +4,7 @@ hero: 27 Years of EMIT
 heroQuote: Leadership is a journey, not a destination. It is a marathon, not a sprint. It is a process, not an outcome.
 hero_Quote_Cite: John Donahoe
 hero_image: /images/road.webp
+description:
 ---
 
 <!-- MOTIVATION -->
@@ -14,7 +15,7 @@ hero_image: /images/road.webp
         </div>
     </div>
     {% for item in site.data.history %}
-        <div class="timelineSection">
+        <div data-cms-editor-link="cloudcannon:collections/_data/history.yml" class="cms-editor-link timelineSection">
             <div class="year">
                 {{item.year}}
             </div>

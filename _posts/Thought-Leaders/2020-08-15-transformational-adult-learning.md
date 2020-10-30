@@ -6,11 +6,11 @@ subtitle: Adults learn much differently than children.
 # Hero defaults are set in config if not in post
 # Sprite Image for listings - to make site fast
 hero_image: /images/ElderLearning.webp
-sprite_image: /images/sprites/sprite-Set1.jpg
+sprite_image: /images/sprites/sprite-Set1.webp
 sprite_selection_number: 11
 
 # If the author is team member then select from datafile
-author: Lydia
+team-member: Lydia Brown
 
 # Post meta : todo: select field for cc?
 tags: Leadership Transformation Training

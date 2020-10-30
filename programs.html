@@ -4,6 +4,7 @@ hero: EMIT Training Programs
 heroQuote: Leadership and learning are indispensable to each other.
 hero_Quote_Cite: John F Kennedy
 hero_image: /images/businessMan.webp
+description:
 ---
 
 <!-- Curriculum Strategy -->
@@ -48,8 +49,8 @@ hero_image: /images/businessMan.webp
         <hr class="seperationLine" />
         <p class="editable">Nibh, taciti fermentum quos, occaecat, nisl, magnam. Nullam quod posuere condimentum duis dapibus necessitatibus quisquam, ultrices praesentium tempore hendrerit rutrum.</p>
         <div class="callToAction">
-            <a href="{{site.baseurl}}/programs/church-leaders/" class="button">View the curriculum</a>
-            <a href="{{site.baseurl}}/contact/" class="button primary">Register</a>
+            <a href="{{site.baseurl}}/programs/church-leaders/" class="button editable">View the curriculum</a>
+            <a href="{{site.baseurl}}/contact/" class="button editable primary">Register</a>
         </div>
     </div>
     <div class="sectionImage centerToRight" style="background-image:url({{site.baseurl}}/images/couple.webp);">
@@ -63,8 +64,8 @@ hero_image: /images/businessMan.webp
         <hr class="seperationLine" />
         <p class="editable">Nibh, taciti fermentum quos, occaecat, nisl, magnam. Nullam quod posuere condimentum duis dapibus necessitatibus quisquam, ultrices praesentium tempore hendrerit rutrum.</p>
         <div class="callToAction">
-            <a href="{{site.baseurl}}/programs/women-leaders/" class="button">View the curriculum</a>
-            <a href="{{site.baseurl}}/contact/" class="button primary">Register</a>
+            <a href="{{site.baseurl}}/programs/women-leaders/" class="button editable">View the curriculum</a>
+            <a href="{{site.baseurl}}/contact/" class="button primary editable">Register</a>
         </div>
     </div>
 </section>
@@ -143,7 +144,7 @@ hero_image: /images/businessMan.webp
                 {% assign icon = 'data-feather="target"' %}
                 {% assign message = "Planned" %}
             {% endif %}
-            <li class="point {{program.status}}">
+            <li data-cms-editor-link="cloudcannon:collections/{{ program.path }}" class="cms-editor-link point {{program.status}}">
                 <span class="icon"><i {{icon}}></i></span>
                 <h3 class="pointTitle">{{program.title}}</h3>
                     {% if program.status == "current" %}
@@ -153,7 +154,7 @@ hero_image: /images/businessMan.webp
                         <a href="{{program.url}}">{{message}}</a>
                     {% endif %}
                     {% if program.status == "planned" %}
-                        <a href="{{program.url}}">{{message}}</a>
+                        <p>{{message}}</p>
                     {% endif %}
             </li>
             {% endfor %}

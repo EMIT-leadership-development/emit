@@ -219,7 +219,7 @@ window.onload = function() {
 				end: 130,
 				toggleActions: "play complete reverse reverse",
 				onEnter: changeColor,
-				onEnterBack: changeColor,
+				onLeaveBack: changeColor,
 				scrub: 1
 			}
 			});

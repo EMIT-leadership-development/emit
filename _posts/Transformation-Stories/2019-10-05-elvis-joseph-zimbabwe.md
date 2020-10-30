@@ -8,14 +8,14 @@ heroQuote:
 hero_image: /images/african-politics-EMIT-leadership-development.webp
 customHeroPosition: "center 130%"
 # Sprite Image for listings - to make site fast
-sprite_image: /images/sprites/sprite-Set1.jpg
+sprite_image: /images/sprites/sprite-Set1.webp
 sprite_selection_number: 6
 
 # If the author is team member then select from datafile
-author:
+team-member:
 
 # Post meta : todo: select field for cc?
-tags: Zimbabwe EMIT-Student
+tags: Zimbabwe EMIT-Student leadership
 category: Transformation Stories
 excerpt_separator: <!--more-->
 
@@ -23,12 +23,11 @@ excerpt_separator: <!--more-->
 # Image can't be named anything else because of maps plugin
 # Location used in hero map
 leaderName: Dr. Elvis Joseph
-leaderBio_description: Paragraph here about this leader
-image: /images/leaders/ElvisJoseph.jpg
+leaderBio_html: Paragraph here about this leader
+leader_image: /images/leaders/ElvisJoseph.webp
 country: Zimbabwe
-location:
-    latitude: -18.979907
-    longitude: 29.782165
+latitude: -18.979907
+longitude: 29.782165
 ---
 
 ## EMIT training gave Elvis the confidence to advise politicians and business people

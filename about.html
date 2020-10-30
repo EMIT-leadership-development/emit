@@ -4,6 +4,7 @@ hero: About Us
 heroQuote:  The essence of leadership is to make a difference in your sphere of influence.
 hero_Quote_Cite: O O Isaac
 hero_image: /images/couple.webp
+description:
 ---
 
 
@@ -79,23 +80,13 @@ hero_image: /images/couple.webp
 	<div class="sectionContent contained-LastFour">
 		<ul class="infoPoints">
 			{% for program in site.programs %}
-			<li class="point">
+			<li data-cms-editor-link="cloudcannon:collections/_programs/" class="point cms-editor-link">
 				<span class="icon"><i data-feather="target"></i></span>
 				<h3 class="pointTitle">{{program.title}}</h3>
 				<p class="pointContent">{{program.motivation}}</p>
 			</li>
 			{% endfor %}
 		</ul>
-		<div class="callToAction">
-			<a href="cloudcannon:collections/_programs/" class="editor-link button edit">
-				<span class="icon"><i data-feather="edit-2"></i></span>
-				<div class="tooltip">
-					<div class="tooltipcontent editor">
-						<div class="message">Click to edit the list of programs. This list is a bit like a database - any edits you make will update all program occurences across the entire site</div>
-					</div>
-				</div>
-			</a>
-		</div>
 	</div>
 </section>
 
@@ -221,9 +212,9 @@ hero_image: /images/couple.webp
 <!-- VIDEO PLAYER -->
 <section class="videoPlayer sectionImage item--full" style="background-image:url({{site.baseurl}}/images/videoBG.webp);">
 	<a class="container no-padding" data-lbxp-video href="{{ site.baseurl }}/video/BB-EMIT-30s_x264.mp4">
-		<span>It's Working</span>
+		<span class="editable">It's Working</span>
 		<span class="icon"><i data-feather="play-circle"></i></span>
-		<span>Watch!</span>
+		<span class="editable">Watch!</span>
 	</a>
 </section>
 
@@ -235,7 +226,7 @@ hero_image: /images/couple.webp
 	<div class="sectionIntro containedRight">
 		<h2 class="sectionTitle priority1 editable">17 COUNTRIES<br><span class="emphasis">8 LANGUAGES</span><br>470 000 STUDENTS</h2>
 		<hr class="seperationLine">
-		<p class="editable">Paragraph describing EMIT's traction.Convallis voluptates, consequat convallis veritatis fugit posuere expedita semper? Placerat nibh libero aliqua sapiente exercitation. </p>
+		<p class="editable">Paragraph describing EMIT's traction. Convallis voluptates, consequat convallis veritatis fugit posuere expedita semper? Placerat nibh libero aliqua sapiente exercitation. </p>
 		<p class="editable">Magnam voluptas libero expedita possimus, vitae, cumque ab voluptate quisquam quibusdam, magnam? Interdum consequuntur fugiat, consequuntur, maiores suscipit, architecto lobortis.</p>
 		<p class="editable introduction">
 			EXPLORE THE TRANSFORMATION STORIES!
@@ -248,12 +239,12 @@ hero_image: /images/couple.webp
 </section>
 
 <!-- 4 TRANSFORMATION STORIES -->
-<section class="item--contained transormationStories">
+<section class="item--contained transformationStories">
 	<div class="container storiesList">
 		{% assign featured = site.posts | where:"category","Transformation Stories" %}
 		{% assign distance = 5 %}
 		{% for post in featured limit:4 %}
-		{% include featuredPost.html %}
+		{% include postPreview.html %}
 		{% endfor %}
 	</div>
 </section>
@@ -317,7 +308,7 @@ hero_image: /images/couple.webp
 					{% assign url = item.websiteUrl %}
 					{% assign urlText = "Read more on their website" %}
 					{% assign description = item.description %}
-					<li>
+					<li class="cms-editor-link" data-cms-editor-link="cloudcannon:collections/_data/partners.yml">
 						<span class="modalBtn">
 							<img src="{{site.baseurl}}{{item.partner_image}}" alt="{{item.name}}">
 						</span>
@@ -333,16 +324,6 @@ hero_image: /images/couple.webp
 		<div class="sectionIntro containedRight">
 			<h2 class="editable sectionTitle priority3">Partners & Accreditations</h2>
 			<p class="editable">Paragraph describing EMIT's relationship with their partners and accreditations. The purpose of this section is to demonstrate: "They trust us - so can you".</p>
-			<div class="callToAction">
-				<a href="cloudcannon:collections/_data/partners.yml" class="editor-link button edit">
-					<span class="icon"><i data-feather="edit-2"></i></span>
-					<div class="tooltip">
-						<div class="tooltipcontent editor">
-							<div class="message">Click to edit the list of partners.</div>
-						</div>
-					</div>
-				</a>
-			</div>
 		</div>
 </section>
 
@@ -391,29 +372,28 @@ hero_image: /images/couple.webp
 		</div>
 	</div>
 </section>
-
-<!-- ADDRESS SA -->
+<!-- ADDRESS USA -->
 <section class="item--full white contactRow">
 	<div class="container addressRow">
-		<div class="address contactBlock">
+		<div data-cms-editor-link="cloudcannon:collections/_data/contacts.yml" class="address contactBlock cms-editor-link">
 			<span class="icon"><i data-feather="map"></i></span>
-			{% assign address = site.data.contacts[0] %}
+			{% assign address = site.data.contacts[1] %}
 			<div class="addresses">
-				<h5>SA HEADOFFICE</h5>
+				<h5>{{ address.name }}</h5>
 				<p>{{ address.address }}</p>
 			</div>
 		</div>
-		<div class="email contactBlock">
+		<div data-cms-editor-link="cloudcannon:collections/_data/contacts.yml" class="email contactBlock cms-editor-link">
 			<span class="icon"><i data-feather="mail"></i></span>
 			<div class="addresses">
-				<h5>SA EMAIL</h5>
+				<h5>EMAIL</h5>
 				<p>{{ address.email }}</p>
 			</div>
 		</div>
-		<div class="phone contactBlock">
+		<div data-cms-editor-link="cloudcannon:collections/_data/contacts.yml" class="phone contactBlock cms-editor-link">
 			<span class="icon"><i data-feather="smartphone"></i></span>
 			<div class="addresses">
-				<h5>SA PHONE</h5>
+				<h5>PHONE</h5>
 				<p>{{ address.phone }}</p>
 			</div>
 		</div>
@@ -422,57 +402,89 @@ hero_image: /images/couple.webp
 <!-- ADDRESS SA -->
 <section class="item--full contactRow">
 	<div class="container addressRow">
-		<div class="address contactBlock">
+		<div data-cms-editor-link="cloudcannon:collections/_data/contacts.yml" class="address contactBlock cms-editor-link">
 			<span class="icon"><i data-feather="map"></i></span>
-			{% assign address = site.data.contacts[1] %}
+			{% assign address = site.data.contacts[0] %}
 			<div class="addresses">
-				<h5>USA HEADOFFICE</h5>
+				<h5>{{ address.name }}</h5>
 				<p>{{ address.address }}</p>
 			</div>
 		</div>
-		<div class="email contactBlock">
+		<div data-cms-editor-link="cloudcannon:collections/_data/contacts.yml" class="email contactBlock cms-editor-link">
 			<span class="icon"><i data-feather="mail"></i></span>
 			<div class="addresses">
-				<h5>USA EMAIL</h5>
+				<h5>EMAIL</h5>
 				<p>{{ address.email }}</p>
 			</div>
 		</div>
-		<div class="phone contactBlock">
+		<div data-cms-editor-link="cloudcannon:collections/_data/contacts.yml" class="phone contactBlock cms-editor-link">
 			<span class="icon"><i data-feather="smartphone"></i></span>
 			<div class="addresses">
-				<h5>USA PHONE</h5>
+				<h5>PHONE</h5>
 				<p>{{ address.phone }}</p>
 			</div>
 		</div>
 	</div>
 </section>
 
-<!-- <section>
-	<div class="container">
-		<h1>SONYA - USE THIS FOR MAP MARKER</h1>
-		<ul class="testing">
-			<li class="cd-single-point" style="top: 40px;left:19px;">
-				<a class="cd-img-replace" href="#">More</a>
-			</li>
-		</ul>
-	</div>
-</section> -->
-
 <!-- MAP -->
-<section class="map item--full">
-	<div class="max-content">
-		<!-- 10 Sinclair Road, Selection Park, Springs, 1560 -->
-		{% google_map
-			width="100%"
-			height="500"
-			zoom="15"
-			latitude= "-26.273030"
-				longitude= "28.440429"
-			styles="dark"
-			url_text: "View on Google"
-			marker_icon="/images/interface/mapMarker.png"
-			marker_title="<span>EMIT Office in SA</span><span>10 Sinclair Road<br>Selection Park<br>Springs</span>"
-			marker_url="https://goo.gl/maps/fzAtpWu6GWeBrZZ38" %}
-	</div>
+<section class="item--full googleMapWrap dark">
+	<div id="map-canvas" class="max-content" style="width:100%; height:100%"></div>
 </section>
+
+<script src="https://maps.googleapis.com/maps/api/js?key={{ site.google_maps_javascript_api_key }}"></script>
+<script>
+	{% assign locations = site.data.contacts %}
+	var emitIcon = {
+		url: "{{ site.baseurl }}/images/interface/mapMarker.svg",
+		size: new google.maps.Size(30, 30),
+		scaledSize: new google.maps.Size(30, 30)
+	}
+	function initializeMap() {
+		var bounds = new google.maps.LatLngBounds(),
+		mapOptions = {
+			scrollwheel: false,
+			draggable: true,
+			panControl: false,
+			disableDefaultUI: true,
+			rotateControl: true,
+			tilt: 45,
+			mapTypeId: "satellite",
+		};
+		var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+		map.setTilt(45);
+		var infowindow = new google.maps.InfoWindow();
+		// Start loop through stories / create markers
+		{% for location in locations %}
+			var position = new google.maps.LatLng({{location.latitude}}, {{location.longitude}});
+			{% assign teamMember = site.data.team-members | where:"name", location.team-member | first  %}
+			bounds.extend(position);
+			var marker = new google.maps.Marker({
+				icon: emitIcon,
+				position: position,
+				map: map,
+				title: "{{location.title}}",
+				optimized: false
+			});
+			google.maps.event.addListener(marker, 'click', (function(marker) {
+				return function() {
+					infowindow.setContent("<div class='infoWrap'><div class='locationInfo'><h4>{{location.name}}</h4><p>Contact Person: {{location.team-member}} in {{location.country}}<br>{{location.email}}</p></div><div class='locationImage' style='background-image:url({{teamMember.profile_image}});'><a href='mailto:{{location.email}}'><div class='mapsphere2'><div class='mapsphere1'><svg width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-mail'><path d='M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z'></path><polyline points='22,6 12,13 2,6'></polyline></svg></div></div></a></div></div>");
+					infowindow.open(map, marker);
+				}
+			})(marker));
+			map.fitBounds(bounds);
+		{% endfor %}
+		// End loop through stories / create markers
+		var boundsListener = google.maps.event.addListener((map), 'bounds_changed', function(event) {
+			this.setZoom(3);
+			google.maps.event.removeListener(boundsListener);
+		});
+		var myoverlay = new google.maps.OverlayView();
+		myoverlay.draw = function () {
+			this.getPanes().markerLayer.id='markerLayer';
+		};
+		myoverlay.setMap(map);
+	}
+	google.maps.event.addDomListener(window, 'load', initializeMap);
+</script>
 

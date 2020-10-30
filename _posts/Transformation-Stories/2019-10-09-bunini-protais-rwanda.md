@@ -8,14 +8,14 @@ hero: Hope for the children of Rwanda
 hero_image: /images/curiousChildren.webp
 customHeroPosition: "center bottom"
 # Sprite Image for listings - to make site fast
-sprite_image: /images/sprites/sprite-Set1.jpg
+sprite_image: /images/sprites/sprite-Set1.webp
 sprite_selection_number: 7
 
 # If the author is team member then select from datafile
-author:
+team-member:
 
 # Post meta : todo: select field for cc?
-tags: Rwanda EMIT-student
+tags: Rwanda EMIT-Student
 category: Transformation Stories
 excerpt_separator: <!--more-->
 
@@ -23,12 +23,11 @@ excerpt_separator: <!--more-->
 # Image can't be named anything else because of maps plugin
 # Location used in hero map
 leaderName: Dr. Bunini Gahungu Protais
-leaderBio_description: Karen's bio to come here.
-image: /images/leaders/BuniniProtais.webp
+leaderBio_html: Bunini's bio to come here.
+leader_image: /images/leaders/BuniniProtais.webp
 country: Rwanda
-location:
-    latitude: -2.003878
-    longitude: 29.883200
+latitude: -2.003878
+longitude: 29.883200
 ---
 
 ## At first, we brought leaders together filled with hatred, fear, and trauma.

@@ -9,10 +9,10 @@ customHeroPosition: "center bottom"
 
 # IMAGES
 hero_image: /images/happyVillageGirl.webp
-sprite_image: /images/sprites/sprite-Set1.jpg
+sprite_image: /images/sprites/sprite-Set1.webp
 sprite_selection_number: 14
 
-author: Chris
+team-member: Chris de Wet
 
 tags: EMIT Strategy
 category: About EMIT

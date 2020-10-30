@@ -1,48 +1,72 @@
-- name: "Head Office"
-  country: "South Africa"
-  email: "admin@emit.global"
-  phone: "+27 11 362 6655"
-  address: "10 Sinclair Road, Selection Park, Springs, 1560, South Africa"
-  postal: "PO BOX 3710, SPRINGS 1560, SOUTH AFRICA"
-- name: "USA Head Office"
-  country: "USA"
-  email: "info@emit.global"
-  phone: "+1 719 648 0674"
+- name: SA Head Office
+  country: South Africa
+  team-member: Christa Greyvenstein
+  email: admin@emit.global
+  phone: +27 11 362 6655
+  address: '10 Sinclair Road, Selection Park, Springs, 1560, South Africa'
+  postal: 'PO BOX 3710, SPRINGS 1560, SOUTH AFRICA'
+  latitude: -26.27303
+  longitude: 28.440429
+- name: USA Head Office
+  country: USA
+  team-member: Lisa LaRochelle
+  email: info@emit.global
+  phone: +1 719 648 0674
   address: Edit contacts data file to change across entire site
-  postal: "PO BOX 26369 COLORADO SPRINGS, CO 80936"
-- name: "ZIMBABWE OFFICE"
-  country: "Zimbabwe"
-  email: "email@domain.com"
-  phone: "+00 000 0000"
-  address: 10 Street, Suburb, City, 1234
-  postal: "PO BOX 123, SUBURB, COUNTRY, 1234"
-- name: "MALAWI OFFICE"
-  country: "Malawi"
-  email: "email@domain.com"
-  phone: "+00 000 0000"
-  address: 10 Street, Suburb, City, 1234
-  postal: "PO BOX 123, SUBURB, COUNTRY, 1234"
-- name: "RWANDA OFFICE"
-  country: "Rwanda"
-  email: "email@domain.com"
-  phone: "+00 000 0000"
-  address: 10 Street, Suburb, City, 1234
-  postal: "PO BOX 123, SUBURB, COUNTRY, 1234"
-- name: "ZAMBIA OFFICE"
-  country: "Zambia"
-  email: "email@domain.com"
-  phone: "+00 000 0000"
-  address: 10 Street, Suburb, City, 1234
-  postal: "PO BOX 123, SUBURB, COUNTRY, 1234"
-- name: "TANZANIA OFFICE"
-  country: "Tanzania"
-  email: "email@domain.com"
-  phone: "+00 000 0000"
-  address: 10 Street, Suburb, City, 1234
-  postal: "PO BOX 123, SUBURB, COUNTRY, 1234"
-- name: "COUNTRY OFFICE"
-  country: "Country"
-  email: "email@domain.com"
-  phone: "+00 000 0000"
-  address: 10 Street, Suburb, City, 1234
-  postal: "PO BOX 123, SUBURB, COUNTRY, 1234"
+  postal: 'PO BOX 26369 COLORADO SPRINGS, CO 80936'
+  latitude: 38.867236
+  longitude: -104.76284
+- name: OFFICE TITLE / FUNCTION
+  country: Zimbabwe
+  team-member: Peter Mkandawire
+  email: email@domain.com
+  phone: +00 000 0000
+  address: '10 Street, Suburb, City, 1234'
+  postal: 'PO BOX 123, SUBURB, COUNTRY, 1234'
+  latitude: -18.831596
+  longitude: 29.934379
+- name: OFFICE TITLE / FUNCTION
+  country: Malawi
+  team-member: Leonard Daffa
+  email: email@domain.com
+  phone: +00 000 0000
+  address: '10 Street, Suburb, City, 1234'
+  postal: 'PO BOX 123, SUBURB, COUNTRY, 1234'
+  latitude: -13.13668
+  longitude: 34.210565
+- name: OFFICE TITLE / FUNCTION
+  country: Rwanda
+  team-member: Steven Todd
+  email: email@domain.com
+  phone: +00 000 0000
+  address: '10 Street, Suburb, City, 1234'
+  postal: 'PO BOX 123, SUBURB, COUNTRY, 1234'
+  latitude: -1.94895
+  longitude: 29.916171
+- name: OFFICE TITLE / FUNCTION
+  country: Zambia
+  team-member: Julio Da Silva
+  email: email@domain.com
+  phone: +00 000 0000
+  address: '10 Street, Suburb, City, 1234'
+  postal: 'PO BOX 123, SUBURB, COUNTRY, 1234'
+  latitude: -13.901039
+  longitude: 27.71449
+- name: OFFICE TITLE / FUNCTION
+  country: Tanzania
+  team-member: Borniface Shonga
+  email: email@domain.com
+  phone: +00 000 0000
+  address: '10 Street, Suburb, City, 1234'
+  postal: 'PO BOX 123, SUBURB, COUNTRY, 1234'
+  latitude: -5.918119
+  longitude: 34.963934
+- name: OFFICE TITLE / FUNCTION
+  country: Gabon
+  team-member: Constantin Gasore
+  email: email@domain.com
+  phone: +00 000 0000
+  address: '10 Street, Suburb, City, 1234'
+  postal: 'PO BOX 123, SUBURB, COUNTRY, 1234'
+  latitude: 0.14418
+  longitude: 11.215949

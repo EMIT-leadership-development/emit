@@ -6,41 +6,25 @@ layout: default
 <section class="programIntro white item--full">
     <div class="sectionIntro containedLeft">
         <h2 class="sectionTitle priority2">{{ page.title }}</h2>
-        <p class="introduction">{{ page.objective_markdown }}</p>
+        <p data-cms-editor-link="cloudcannon:collections/{{ page.relative_path }}" class="cms-editor-link introduction">{{ page.objective_markdown }}</p>
         <!-- If current then show register button -->
         <!-- If planned then show sponsor this program -->
         {% if page.status == "current"%}
             <div class="callToAction">
-                <a href="cloudcannon:collections/{{ page.relative_path }}" class="editor-link button edit">
-                    <span class="icon"><i data-feather="edit-2"></i></span>
-                    <div class="tooltip">
-                        <div class="tooltipcontent editor">
-                            <div class="message">Click to edit this program and curriculum list.</div>
-                        </div>
-                    </div>
-                </a>
-                <a href="" class="button">Sponsor a student</a>
-                <a href="" class="button primary">REGISTER</a>
+                <a href="{{site.baseurl}}/donate" class="button editable">Sponsor a student</a>
+                <a href="{{site.baseurl}}/register" class="button primary editable">REGISTER</a>
             </div>
         {% else %}
             <div class="callToAction">
-                <a href="cloudcannon:collections/{{ page.relative_path }}" class="editor-link button edit">
-                    <span class="icon"><i data-feather="edit-2"></i></span>
-                    <div class="tooltip">
-                        <div class="tooltipcontent editor">
-                            <div class="message">Click to edit this program and curriculum list.</div>
-                        </div>
-                    </div>
-                </a>
-                <h4>Help us get this program to the people that need it.</h4>
+                <h4 class="editable">Help us get this program to the people that need it.</h4>
                 <p class="editable">By donating towards program development you are transforming lives.</p>
-                <a href="" class="button primary">Sponsor this program</a>
+                <a href="{{site.baseurl}}/donate" class="button primary editable">Sponsor this program</a>
             </div>
         {% endif %}
     </div>
     <div class="sectionContent containedRight">
         <h3 class="sectionTitle priority3">About this program</h3>
-        <p>{{ page.description_markdown }}</p>
+        <p data-cms-editor-link="cloudcannon:collections/{{ page.relative_path }}" class="cms-editor-link">{{ page.description_markdown }}</p>
     </div>
 </section>
 
@@ -50,7 +34,7 @@ layout: default
         <img src="{{site.baseurl}}{{page.bookCover_image}}" alt="">
     </div>
     <div class="container containedRight">
-        <ul class="infoPoints">
+        <ul data-cms-editor-link="cloudcannon:collections/{{ page.relative_path }}" class="cms-editor-link infoPoints">
             <li class="point">
                 <span class="icon"><i data-feather="log-in"></i></span>
                 <h3 class="pointTitle">Entrance Requirements</h3>
@@ -90,30 +74,27 @@ layout: default
         <h2 class="sectionTitle priority2">Program <span class="emphasis">MODULES</span></h2>
         <ol class="curriculaList">
             {% assign distance = 5 %}
-            {% assign counter = 0 %}
-            {% assign position = 0 %}
 
-            {% assign creditSort = page.curricula | sort: 'credits' | reverse %}
+            {% assign creditSort = page.curricula | sort: 'credits_number' | reverse %}
             {% for item in creditSort limit:1 %}
-            {% assign maxCredits = item.credits %}
+            {% assign maxCredits = item.credits_number %}
             {% endfor %}
 
-            {% assign daysSort = page.curricula | sort: 'days' | reverse %}
+            {% assign daysSort = page.curricula | sort: 'days_number' | reverse %}
             {% for item in daysSort limit:1 %}
-            {% assign maxDays = item.days %}
+            {% assign maxDays = item.days_number %}
             {% endfor %}
 
-            {% assign projectsSort = page.curricula | sort: 'projects' | reverse %}
+            {% assign projectsSort = page.curricula | sort: 'projects_number' | reverse %}
             {% for item in projectsSort limit:1 %}
-            {% assign maxProjects = item.projects %}
+            {% assign maxProjects = item.projects_number %}
             {% endfor %}
 
             {% for curricula in page.curricula %}
-            <!-- Muliply counter by distance to get the background X position -->
-            {% assign counter = counter | plus: 1 %}
-            {% assign position = counter | times: distance %}
+            <!-- Muliply sprite-selection by distance to get the background Y position -->
+            {% assign position = distance | times: curricula.sprite_selection_number %}
 
-            <li class="curriculaCard">
+            <li data-cms-editor-link="cloudcannon:collections/{{ page.relative_path }}" class="curriculaCard cms-editor-link">
                 <div class="curiculaWrap">
                     <!-- IMAGE -->
                     <div class="imageWrap">
@@ -126,22 +107,22 @@ layout: default
                             <div class="programName">{{page.title}}</div>
                             <h3 class="curriculaTitle">{{curricula.title}}</h3>
                             <div class="charts">
-                                {% if curricula.credits %}
+                                {% if curricula.credits_number %}
                                 <div class="bar credits">
-                                    <span class="label">{{curricula.credits}} Credits</span>
-                                    <span style="width: {{curricula.credits | times: 100 | divided_by: maxCredits}}%" class="data"></span>
+                                    <span class="label">{{curricula.credits_number}} Credits</span>
+                                    <span style="width: {{curricula.credits_number | times: 100 | divided_by: maxCredits}}%" class="data"></span>
                                 </div>
                                 {% endif %}
-                                {% if curricula.days %}
+                                {% if curricula.days_number %}
                                 <div class=" bar days">
-                                    <span class="label">{{curricula.days}} Days</span>
-                                    <span style="width: {{curricula.days | times: 100 | divided_by: maxDays}}%" class="data"></span>
+                                    <span class="label">{{curricula.days_number}} Days</span>
+                                    <span style="width: {{curricula.days_number | times: 100 | divided_by: maxDays}}%" class="data"></span>
                                 </div>
                                 {% endif %}
-                                {% if curricula.projects %}
+                                {% if curricula.projects_number %}
                                 <div class=" bar projects">
-                                    <span class="label">{{curricula.projects}} Projects</span>
-                                    <span style="width: {{curricula.projects | times: 100 | divided_by: maxProjects}}%" class="data"></span>
+                                    <span class="label">{{curricula.projects_number}} Projects</span>
+                                    <span style="width: {{curricula.projects_number | times: 100 | divided_by: maxProjects}}%" class="data"></span>
                                 </div>
                                 {% endif %}
                             </div>

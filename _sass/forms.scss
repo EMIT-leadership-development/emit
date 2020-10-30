@@ -13,6 +13,7 @@ input[type=submit] {
 	text-transform: uppercase;
 	display: inline-block;
 	margin-right: 5px;
+	cursor: pointer;
 }
 .button:hover,
 button.button:hover,
@@ -26,8 +27,10 @@ input[type=submit]:hover {
 button.button:active,
 input[type=submit]:active {
 	border-width: 1px;
-	border-top: 3px solid transparent
+	border-top: 3px solid transparent;
 }
+button:focus {outline:0 !important;}
+
 // Primary button is slightly darker than brand with no obvious border
 .button.primary {
 	// background: darken($brand-color, 10%);

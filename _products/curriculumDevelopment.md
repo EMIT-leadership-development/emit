@@ -1,6 +1,6 @@
 ---
 name: Sponsor Curriculum Development
-description_markdown: >-
+description_html: >-
   Inspiring Paragraph about how this donation will transform lives. Illo nascetur dolor, aliquip! Aliquet assumenda ducimus veritatis adipisicing cupidatat pellentesque nulla do corporis eligendi vehicula elit. Nonummy odio nulla.
 
 
@@ -9,8 +9,5 @@ description_markdown: >-
 product_type: donation
 price: '500.00'
 sku: cd
-styles:
-  - name: Impact
-    color: '#abe116'
-    image: /images/products/curriculumDevelopment/curriculumDevelopment.webp
+product_image: /images/products/curriculumDevelopment/curriculumDevelopment.webp
 ---

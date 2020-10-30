@@ -1,19 +1,77 @@
 ---
 title: Stories
-hero: Our Stories
+hero: Blog Posts
+heroQuote:  Every success story is a tale of constant adaption, revision and change.
+hero_Quote_Cite: Richard Branson
+description:
 ---
 
 <!-- Section that holds the list of stories -->
-<section class="item--full">
+<section id="blogPage" class="item--full">
 	<!-- SideBar -->
-	<div class="sidebar container leftToOne">
-		{% include sidebarContent.html %}
+	<div class="sidebar container">
+		{% include sidebar.html %}
 	</div>
 
-	<div class="container storiesList TwoToRight">
+	<div id="storiesWrap" class="container storiesList">
 		{% assign distance = 5 %}
 		{% for post in site.posts %}
-		{% include featuredPost.html %}
+		{% include postPreview.html %}
 		{% endfor %}
 	</div>
 </section>
+
+<script src="https://maps.googleapis.com/maps/api/js?key={{ site.google_maps_javascript_api_key }}"></script>
+<script>
+	{% assign stories = site.posts | where:"category","Transformation Stories" %}
+	var emitIcon = {
+		url: "{{ site.baseurl }}/images/interface/mapMarker.svg",
+		size: new google.maps.Size(30, 30),
+		scaledSize: new google.maps.Size(30, 30)
+	}
+	function initializeMap() {
+		var bounds = new google.maps.LatLngBounds(),
+		mapOptions = {
+			scrollwheel: false,
+			draggable: false,
+			panControl: false,
+			disableDefaultUI: true,
+			rotateControl: true,
+			tilt: 45,
+			mapTypeId: "satellite",
+		};
+		var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+		map.setTilt(45);
+		var infowindow = new google.maps.InfoWindow();
+		// Start loop through stories / create markers
+		{% for story in stories %}
+			var position = new google.maps.LatLng({{story.latitude}}, {{story.longitude}});
+			bounds.extend(position);
+			var marker = new google.maps.Marker({
+				icon: emitIcon,
+				position: position,
+				map: map,
+				title: "{{story.title}}",
+				optimized: false
+			});
+			google.maps.event.addListener(marker, 'click', (function(marker) {
+				return function() {
+					infowindow.setContent("<div class='infoWrap'><div class='locationInfo'><h4>{{story.title}}</h4><p>{{story.subtitle}}</p></div><div class='locationImage' style='background-image:url({{site.baseurl}}{{story.leader_image}})'><a href='{{site.baseurl}}{{story.url}}'><div class='mapsphere2'><div class='mapsphere1'><svg width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='#000000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-arrow-right'><line x1='5' y1='12' x2='19' y2='12'></line><polyline points='12 5 19 12 12 19'></polyline></svg></div></div></a></div></div>");
+					infowindow.open(map, marker);
+				}
+			})(marker));
+			map.fitBounds(bounds);
+		{% endfor %}
+		// End loop through stories / create markers
+		var boundsListener = google.maps.event.addListener((map), 'bounds_changed', function(event) {
+			this.setZoom(4.3);
+			google.maps.event.removeListener(boundsListener);
+		});
+		var myoverlay = new google.maps.OverlayView();
+		myoverlay.draw = function () {
+			this.getPanes().markerLayer.id='markerLayer';
+		};
+		myoverlay.setMap(map);
+	}
+	google.maps.event.addDomListener(window, 'load', initializeMap);
+</script>

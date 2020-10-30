@@ -5,10 +5,10 @@ subtitle: "Over the years we have learned so much - this is what doesn't work."
 
 # IMAGES
 hero_image: /images/fetchingWater.webp
-sprite_image: /images/sprites/sprite-Set1.jpg
+sprite_image: /images/sprites/sprite-Set1.webp
 sprite_selection_number: 12
 
-author: Kobus
+team-member: Kobus Grobler
 
 tags: EMIT Strategy
 category: About EMIT
