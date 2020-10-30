@@ -2,6 +2,7 @@
 # Standard for all posts
 title:
 subtitle:
+layout: post
 
 hero:
 heroQuote:
