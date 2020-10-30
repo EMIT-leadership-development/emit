@@ -2,6 +2,10 @@
 title: Pushing forward in uncertain times
 subtitle: The challenge of providing leadership in a changing world
 layout: post
+hero:
+heroQuote:
+hero_Quote_Cite:
+hero_image: /images/AfricanLeaderPlanning.webp
 sprite_image: /images/sprites/sprite-Set1.webp
 sprite_selection_number: 9
 team-member: Borniface Shonga
@@ -29,8 +33,7 @@ Ancient writings quote the mind of a famous leader in the following words,
 
 > “But when He saw the multitudes, He was moved with compassion for them, because they were weary and scattered, like sheep without a shepherd.”
 >
->
-> Matthew 9:36.
+> <cite>Matthew 9:36</cite>
 
 It was this compassionate attitude that made Jesus such a great leader. In these times, that have witnessed the burden of disease, unemployment, fear, anxiety, collapse of businesses and isolation, we need leaders that have compassion for people. Great leadership has always been about care, if anyone does not understand this simple truth he will fail to rise to great leadership in these times. Today’s world needs more compassion. &nbsp;Furthermore, the leader must be clothed with *humility*, that wonderful recognition that others could hold the key to his success, this does not imply weakness. The greatest leaders are those who draw the best out of others, not by compulsive force, but by recognizing and encouraging their potential. It takes an attitude of humility to do this, yet the rewards are great, the leader will most likely have a team of people who stand with him to achieve greater goals. The most successful leaders in the corporate world and beyond are team players, humility is the bedrock of their great achievement. Above all this, the leader must be \*inspirational.*&nbsp;*Great leaders in history have often emerged in times of crisis. They inspire and rally others to look beyond the crisis and anticipate a better future. Their energy and enthusiasm are soon caught by their followers, setting the stage for greater things to be achieved. In the face of pending onslaught by the Germans in World War Two, Winston Churchill rallied the people in his country to be not afraid. He inspired a nation to rally together to resist being dominated by another. The call of the leader became the rallying cry of a nation. It was the turning point in the war, the UK never surrendered. In the face of all that is going on in the world now, we need inspirational leaders, who encourage people to look beyond the current crisis.&nbsp;
 
