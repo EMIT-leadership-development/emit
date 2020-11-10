@@ -30,6 +30,7 @@ window.onload = function() {
 	// storyNav();
 	pinDonation();
 	initialSettings();
+	preloader();
 
 	//--------MOTHER OF ALL TIMELINES : MAIN SCROLLING ANIMATION-------------------------------------
 	const tl_mother = gsap.timeline({
@@ -130,6 +131,41 @@ window.onload = function() {
 	let scrollProgressHeight = tl_mother.duration() * 12;
 	gsap.set('#scrollProgress',{height:scrollProgressHeight});
 
+
+
+	// -------PRELOADER
+	// Todo: Manage assets and create a preloading experience
+	function preloader() {
+		const preload = Preload();
+
+		preload.fetch([
+			'/video/out.mp4',
+			'/video/EMIT-hero2.mp4'
+			// 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4',
+			// 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
+			// 'https://images.pexels.com/photos/248797/pexels-photo-248797.jpeg'
+		]).then(items => {
+		// use either a promise or 'oncomplete'
+		console.log(items);
+		});
+
+		preload.oncomplete = items => {
+		console.log(items);
+		}
+
+		preload.onprogress = event => {
+		console.log(event.progress + '%');
+		}
+
+		preload.onfetched = item => {
+		console.log(item);
+		gsap.to("#loader", {duration:1, autoAlpha:0});
+		}
+
+		preload.onerror = item => {
+		console.log(item);
+		}
+	}
 	//--------SCROLL "SNAPPING" -------------------------------------
 	function goToSection(i, anim, direction) {
 		console.log("CurrentAnim", anim, direction);
@@ -326,9 +362,16 @@ var NINJA_FUNCTIONS = {
 		tl.to("#svg_shadow", {duration: 1.5, morphSVG:"#svg_shadow-2", ease:"expo.out"},"<");
 		tl.to('#spheresWrap, #thePeopleYouImpactWrap', {duration:2.5, y:105, x:-15, autoAlpha:0, transformOrigin:"50% 50%", scale:0.2},"<");
 		tl.to('#countries',{duration:10, xPercent:"-65", transformOrigin:"50% 50%"},">");
+		tl.totalDuration(1);
+		return tl;
+	},
+	// --------YOUR LEGACY ANIMATION: TEXT-------------------------------------
+	yourLegacyText: function() {
+		var tl = gsap.timeline({
+		});
 		tl.from('.circle2',{duration:2, autoAlpha: 0, y:-10, transformOrigin:"50% 50%"},"<4");
 		tl.from('.circleShadow',{duration:3, autoAlpha: 0, y:-20, transformOrigin:"50% 50%"},"<3");
-		tl.totalDuration(2);
+		tl.totalDuration(1);
 		return tl;
 	},
 	// --------AFRICA PROBLEM -------------------------------------
