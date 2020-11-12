@@ -224,13 +224,13 @@
   linkedin_url:
   profile_image: /images/team/Lydia.webp
   bio_html: >-
-    Lydia graduated with honors from the University of Colorado with a Masters
-    of Arts in Clinical Mental Health Counseling and is a Licensed Professional
-    Counselor specializing in emotional trauma in adults and children. Lydia has
-    a passion for giving women leaders the tools to address emotional trauma in
-    their personal life and communities; and to advocate for those without a
-    voice. Lydia is married to Joël, a Bible translator and they live in
-    Colorado Springs, CO, USA.
+    <p>Lydia graduated with honors from the University of Colorado with a
+    Masters of Arts in Clinical Mental Health Counseling and is a Licensed
+    Professional Counselor specializing in emotional trauma in adults and
+    children. Lydia has a passion for giving women leaders the tools to address
+    emotional trauma in their personal life and communities; and to advocate for
+    those without a voice. Lydia is married to Jo&euml;l, a Bible translator and
+    they live in Colorado Springs, CO, USA.</p>
 - name: Mervis Malambo
   shortname: Mervis
   title: 'General Secretary, Zambia'
@@ -377,3 +377,13 @@
     phasellus ullamco, aliquid, nunc exercitationem nostrud eiusmod hac
     ullamcorper, placeat maiores inventore pulvinar voluptates nihil voluptas.
     Ipsa hymenaeos quis.
+- name: Dr.Elvis Joseph
+  shortname: Joseph
+  title: Project Leader - Zimbabwe
+  group: team
+  email: admin@emit.global
+  facebook_url:
+  twitter_url:
+  linkedin_url:
+  profile_image:
+  bio_html:
