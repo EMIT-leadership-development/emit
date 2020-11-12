@@ -11,9 +11,7 @@ objective_markdown: >-
   have completed this program you will be able to…
 motivation: >-
   Why EMIT chose to develop this program. eg. Church leaders are an integral
-  part of
-  Africankwdjbckjbqwkjcbnwqejkbncwsdjbckjwedbckjwedbcfkjbewdfjkwqehjdvbjhwevcfjhwevbfcjhvbwejfchbwedhjkfbcwdhjbckjhwebcfikjbweckvjbwdjkvcbwdjbcvwdhjbcvkjwdhbvckjhwdbvjkhwdbfvjkhwdbfvjkhwdbvkjfhbwdjkhvbwdhjkvbdwjhbfwdvfwdfwefhwdebfjhwdbvfj
-  life.
+  part of African.
 status: current
 entrance: Explain the entrance requirements for this program
 delivery: Describe how the program is delivered
