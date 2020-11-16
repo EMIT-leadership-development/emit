@@ -53,7 +53,7 @@
       link: /programs/women-leaders
       new_window: false
       highlight: false
-    - name: Church Leaders
+    - name: Spiritual Leaders
       link: /programs/church-leaders
       new_window: false
       highlight: false
@@ -69,15 +69,6 @@
   link: /donate
   new_window: false
   highlight: false
-  # subPages:
-  #   - name: Donate
-  #     link: /donate
-  #     new_window: false
-  #     highlight: false
-    # - name: Get Involved
-    #   link: /get-involved
-    #   new_window: false
-    #   highlight: false
 - name: Contact
   link: /contact
   new_window: false
