@@ -179,12 +179,12 @@
   facebook_url:
   twitter_url:
   linkedin_url:
-  profile_image: /images/team/Jones.webp
+  profile_image: /images/team/Jones Singini 1.jpg
   bio_html: >-
-    bio_html still to come. Lacus proident occaecat magnam eros quas quisque
+    <p>bio_html still to come. Lacus proident occaecat magnam eros quas quisque
     quia, luctus omnis lacinia dolorum explicabo eleifend ipsa. Posuere sem mi
     augue? Vivamus veritatis? Leo ligula eiusmod scelerisque quibusdam purus,
-    optio convallis hymenaeos.
+    optio convallis hymenaeos.</p>
 - name: Christa Greyvenstein
   shortname: Christa
   title: Personal Assistant
