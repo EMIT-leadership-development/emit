@@ -10,8 +10,9 @@ objective_markdown: >-
   Paragraph describing the objective for this program. For example - when you
   have completed this program you will be able to…
 motivation: >-
-  Why EMIT chose to develop this program. eg. Church leaders are an integral
-  part of African.
+  Spiritual Leaders are not only leading at their places of worship, but also in
+  their communities in general. Therefor, they must be trained to serve
+  effectively as agents of change.
 status: current
 entrance: Explain the entrance requirements for this program
 delivery: Describe how the program is delivered
