@@ -8,8 +8,8 @@ objective_markdown: >-
   Paragraph describing the objective for this program. For example - when you
   have completed this program you will be able to…
 motivation: >-
-  Why EMIT chose to develop this program. eg. The role of women in Africa is
-  etc.
+  Women leaders are the lifeblood of African society. EMIT strives to empower
+  them to fulfill their significant role on every level of society.
 status: current
 entrance: Explain the entrance requirements for this program
 delivery: Describe how the program is delivered
