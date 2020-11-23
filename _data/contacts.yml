@@ -43,6 +43,15 @@
   postal: 'PO BOX 123, SUBURB, COUNTRY, 1234'
   latitude: -1.94995
   longitude: 30.05885
+- name: 'Project Leader, Burundi'
+  country: Burundi
+  team-member: Constantin Gasore
+  email: admin@emit.global
+  phone: +00 000 0000
+  address: '10 Street, Suburb, City, 1234'
+  postal: 'PO BOX 123, SUBURB, COUNTRY, 1234'
+  latitude: '-3.361260'
+  longitude: 29.347916
 - name: 'Project Leader, Angola'
   country: Angola
   team-member: Julio Da Silva
