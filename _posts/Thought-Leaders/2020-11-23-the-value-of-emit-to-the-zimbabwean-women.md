@@ -14,6 +14,7 @@ team-member: Elvis Joseph
 tags:
   - Zimbabwe
   - Women
+  - Strength
 category: Transformation Stories
 excerpt_separator: <!--more-->
 leaderName: Hon P. Zhou
