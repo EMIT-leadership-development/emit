@@ -1,33 +1,25 @@
 ---
-# Standard for all posts - title and hero content
 layout: post
 title: EMIT graduate becomes leader to leaders
 subtitle: A lonely child’s journey to becoming a top-level advisor
-
 heroQuote:
 hero_image: /images/african-politics-EMIT-leadership-development.webp
-customHeroPosition: "center 130%"
-# Sprite Image for listings - to make site fast
+customHeroPosition: center 130%
 sprite_image: /images/sprites/sprite-Set1.webp
 sprite_selection_number: 6
-
-# If the author is team member then select from datafile
 team-member:
-
-# Post meta : todo: select field for cc?
-tags: Zimbabwe EMIT-Student leadership
+tags:
+  - Zimbabwe
+  - EMIT-Student
+  - leadership
 category: Transformation Stories
 excerpt_separator: <!--more-->
-
-# If transformation story then "author and bio" is populated from these fields
-# Image can't be named anything else because of maps plugin
-# Location used in hero map
 leaderName: Dr. Elvis Joseph
-leaderBio_html: Paragraph here about this leader
+leaderBio_html: <p>Paragraph here about this leader</p>
 leader_image: /images/leaders/ElvisJoseph.webp
 country: Zimbabwe
-latitude: -18.979907
-longitude: 29.782165
+latitude: 19.0154° S
+longitude: 29.1549° E
 ---
 
 ## EMIT training gave Elvis the confidence to advise politicians and business people
