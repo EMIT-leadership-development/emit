@@ -1,6 +1,6 @@
 ---
 title: Five non-negotiables for combating a crisis
-subtitle:
+subtitle: People react differently to crisis.
 layout: post
 hero:
 heroQuote:
