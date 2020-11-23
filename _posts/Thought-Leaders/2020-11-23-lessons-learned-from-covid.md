@@ -10,6 +10,10 @@ sprite_image: /images/sprites/sprite-Set1.webp
 sprite_selection_number: 9
 team-member: Kobus Grobler
 tags:
+  - Freedom
+  - Creativity
+  - COVID
+  - COVID-19
 category:
 excerpt_separator: <!--more-->
 leaderName:
