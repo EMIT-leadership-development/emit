@@ -61,12 +61,12 @@
   postal: 'PO BOX 123, SUBURB, COUNTRY, 1234'
   latitude: -15.416667
   longitude: 28.283333
-- name: OFFICE TITLE / FUNCTION
-  country: Gabon
+- name: 'Project Leader, DR Congo'
+  country: DR Congo
   team-member: Constantin Gasore
-  email: email@domain.com
+  email: admin@emit.global
   phone: +00 000 0000
   address: '10 Street, Suburb, City, 1234'
   postal: 'PO BOX 123, SUBURB, COUNTRY, 1234'
-  latitude: 0.14418
-  longitude: 11.215949
+  latitude: -4.322447
+  longitude: 15.307045
