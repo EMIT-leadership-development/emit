@@ -106,3 +106,12 @@
   postal: 'PO BOX 123, SUBURB, COUNTRY, 1234'
   latitude: -18.91368
   longitude: 47.53613
+- name: 'Project Leader, Malawi'
+  country: South Africa
+  team-member: Theo Faber
+  email: admin@emit.global
+  phone: +00 000 0000
+  address: '10 Street, Suburb, City, 1234'
+  postal: 'PO BOX 123, SUBURB, COUNTRY, 1234'
+  latitude: -15.78499
+  longitude: 35.00854
