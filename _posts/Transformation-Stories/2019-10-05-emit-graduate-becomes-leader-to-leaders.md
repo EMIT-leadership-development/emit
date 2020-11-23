@@ -18,8 +18,8 @@ leaderName: Dr. Elvis Joseph
 leaderBio_html: <p>Paragraph here about this leader</p>
 leader_image: /images/leaders/ElvisJoseph.webp
 country: Zimbabwe
-latitude: 19.0154° S
-longitude: 29.1549° E
+latitude: 17.8216° S
+longitude: 31.0492° E
 ---
 
 ## EMIT training gave Elvis the confidence to advise politicians and business people
