@@ -10,7 +10,7 @@ sprite_image: /images/sprites/sprite-Set1.webp
 sprite_selection_number: 9
 team-member: Kobus Grobler
 tags:
-category:
+category: Thought Leaders
 excerpt_separator: <!--more-->
 leaderName:
 leaderBio_html:
