@@ -61,6 +61,15 @@
   postal: 'PO BOX 123, SUBURB, COUNTRY, 1234'
   latitude: -8.838333
   longitude: 13.234444
+- name: 'Project Leader, Mozambique'
+  country: Mozambique
+  team-member: Julio Da Silva
+  email: admin@emit.global
+  phone: +00 000 0000
+  address: '10 Street, Suburb, City, 1234'
+  postal: 'PO BOX 123, SUBURB, COUNTRY, 1234'
+  latitude: -25.953724
+  longitude: 32.588711
 - name: 'Country Coordinator, Zambia'
   country: Zambia
   team-member: Mervis Malambo
