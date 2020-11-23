@@ -1,6 +1,6 @@
 ---
 title: Lessons learned from COVID
-subtitle:
+subtitle: Discovering what is important!
 layout: post
 hero:
 heroQuote:
