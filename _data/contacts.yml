@@ -79,3 +79,12 @@
   postal: 'PO BOX 123, SUBURB, COUNTRY, 1234'
   latitude: -1.286389
   longitude: 36.817223
+- name: 'Project Leader, Uganda'
+  country: Uganda
+  team-member: Aaron Maingi
+  email: admin@emit.global
+  phone: +00 000 0000
+  address: '10 Street, Suburb, City, 1234'
+  postal: 'PO BOX 123, SUBURB, COUNTRY, 1234'
+  latitude: 0.31628
+  longitude: 32.58219
