@@ -88,3 +88,12 @@
   postal: 'PO BOX 123, SUBURB, COUNTRY, 1234'
   latitude: 0.31628
   longitude: 32.58219
+- name: 'Project Leader, South Africa'
+  country: South Africa
+  team-member: Jones Singini
+  email: admin@emit.global
+  phone: +00 000 0000
+  address: '10 Street, Suburb, City, 1234'
+  postal: 'PO BOX 123, SUBURB, COUNTRY, 1234'
+  latitude: -26.195246
+  longitude: 28.034088
