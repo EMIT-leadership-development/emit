@@ -70,3 +70,12 @@
   postal: 'PO BOX 123, SUBURB, COUNTRY, 1234'
   latitude: -4.322447
   longitude: 15.307045
+- name: 'Project Leader, Kenya'
+  country: Kenya
+  team-member: Aaron Maingi
+  email: admin@emit.global
+  phone: +00 000 0000
+  address: '10 Street, Suburb, City, 1234'
+  postal: 'PO BOX 123, SUBURB, COUNTRY, 1234'
+  latitude: -1.286389
+  longitude: 36.817223
