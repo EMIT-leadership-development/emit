@@ -7,7 +7,7 @@ heroQuote: >-
   I conclude by proudly proclaim that Emit encourages women to be well-groomed,
   confident, self-reliant, resourceful, caring and loving.
 hero_Quote_Cite: Hon P. Zhou
-hero_image:
+hero_image: /images/leaders/Hon P. Zhou.jpg
 sprite_image: /images/sprites/sprite-Set1.webp
 sprite_selection_number: 9
 team-member: Elvis Joseph
