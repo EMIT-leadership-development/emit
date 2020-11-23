@@ -10,7 +10,7 @@ hero_Quote_Cite: Hon P. Zhou
 hero_image:
 sprite_image: /images/sprites/sprite-Set1.webp
 sprite_selection_number: 9
-team-member:
+team-member: Elvis Joseph
 tags:
 category: Transformation Stories
 excerpt_separator: <!--more-->
