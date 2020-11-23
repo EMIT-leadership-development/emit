@@ -10,6 +10,13 @@ sprite_image: /images/sprites/sprite-Set1.webp
 sprite_selection_number: 9
 team-member: Kobus Grobler
 tags:
+  - Faith
+  - Calling
+  - vision
+  - Creativity
+  - Strong leadership
+  - Crisis
+  - Opportunity
 category: Thought Leaders
 excerpt_separator: <!--more-->
 leaderName:
