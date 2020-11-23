@@ -43,15 +43,15 @@
   postal: 'PO BOX 123, SUBURB, COUNTRY, 1234'
   latitude: -1.94895
   longitude: 29.916171
-- name: OFFICE TITLE / FUNCTION
-  country: Zambia
+- name: 'Project Leader, Angola'
+  country: Angola
   team-member: Julio Da Silva
-  email: email@domain.com
+  email: admin@emit.global
   phone: +00 000 0000
   address: '10 Street, Suburb, City, 1234'
   postal: 'PO BOX 123, SUBURB, COUNTRY, 1234'
-  latitude: -13.901039
-  longitude: 27.71449
+  latitude: -8.838333
+  longitude: 13.234444
 - name: OFFICE TITLE / FUNCTION
   country: Tanzania
   team-member: Borniface Shonga
