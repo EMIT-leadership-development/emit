@@ -1,11 +1,11 @@
 ---
-title: FIVE NON-NEGOTIABLES FOR COMBATING A CRISIS
+title: Five non-negotiables for combating a crisis
 subtitle:
 layout: post
 hero:
 heroQuote:
 hero_Quote_Cite:
-hero_image:
+hero_image: /images/five-non-negotiables-for-combating-a-crisis/guy-in-resturant.jpeg
 sprite_image: /images/sprites/sprite-Set1.webp
 sprite_selection_number: 9
 team-member: Kobus Grobler
