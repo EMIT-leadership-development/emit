@@ -14,7 +14,7 @@ tags:
   - Creativity
   - COVID
   - COVID-19
-category:
+category: Thought Leaders
 excerpt_separator: <!--more-->
 leaderName:
 leaderBio_html:
