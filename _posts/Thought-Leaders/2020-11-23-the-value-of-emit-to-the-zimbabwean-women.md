@@ -12,6 +12,8 @@ sprite_image: /images/sprites/sprite-Set1.webp
 sprite_selection_number: 9
 team-member: Elvis Joseph
 tags:
+  - Zimbabwe
+  - Women
 category: Transformation Stories
 excerpt_separator: <!--more-->
 leaderName: Hon P. Zhou
@@ -44,3 +46,17 @@ Emit has taught women how to use computers, how to communicate with others for b
 Financially, Emit has taught us that you have to make lemonade from your lemons. To be content with what one has and growing it gradually and honestly. To save some of the income and to give honour to whom it is due financially.&nbsp; This comes with great discipline and commitment.&nbsp; These lessons teach one to glide through turbulent times.
 
 Socially, Emit taught the women that they live with other families apart from theirs with different political, religious, financial, cultural and racial backgrounds. so it teaches one to respect, appreciate and live with others and to be respected and appreciated in return.
+
+With all this transfer of knowledge and love; Emit says share all you have learnt with at least ten more.&nbsp; Emit teaches one to share. It is an important lesson because sharing for some dies not come naturally.
+
+In the midst of it, came COVID 19 a pandemic which changed everything. The lockdown forced everyone to think differently and we are happy that EMIT also brought in a new model of learning which I find to be a well thought out strategy.
+
+This visionary approach to learning brings in easy of learning without the hustles of travelling long distances and losing ones hard-earned cash on transport and accommodation. The idea of working with small groups brings in issues of better management, efficiency and self-reliance. We also appreciate this move of going to the people and women learning within their environments under the tutorship of one of their own.
+
+We hope to expand EMIT in our surrounding geographical area including women from all walks of life.
+
+I conclude by proudly proclaim that Emit encourages women to be well-groomed, confident, self-reliant, resourceful, caring and loving.
+
+It teaches all forms of etiquette. This moulds one into an adorable; dependable; empathetic; a credible strong dynamic woman in society. These qualities make one influential and making it easier to light up other women who are in various divides.
+
+In a nutshell, Emit in Zimbabwe makes women Super\!
