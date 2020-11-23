@@ -5,7 +5,7 @@ layout: post
 hero:
 heroQuote:
 hero_Quote_Cite:
-hero_image: /images/five-non-negotiables-for-combating-a-crisis/guy-in-resturant-1.jpeg
+hero_image: /images/Guy in Resturant.jpeg
 sprite_image: /images/sprites/sprite-Set1.webp
 sprite_selection_number: 9
 team-member: Kobus Grobler
