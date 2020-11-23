@@ -27,8 +27,6 @@ The importance of faith is always highlighted during a period of crisis.&nbsp; W
 
 Faith isn’t the absence of fear, faith is what overcomes fear.&nbsp; We need to continue to actively trust in Jesus and refuse to let circumstances determine our faith in Him.&nbsp; Although we cannot see the complete picture while we are in a crisis, faith is the substance that changes uncertainty into reality.&nbsp; Faith in God permits Him to intervene in our circumstances.&nbsp; Just as Peter looked at the waves and winds of adversity and called upon Jesus for help, so we must put our complete faith in Him.&nbsp; Whatever impossible situations you and I have to face, our faith in Jesus will overcome all of those circumstances. &nbsp;
 
-&nbsp;
-
 **Calling and vision**
 
 During a time of crisis, it is easy to forget that God has called us for a purpose.&nbsp; Although the whole world came crashing down during the COVID-19 pandemic and in an instant, we had to face a new reality, God’s calling and plan for our lives did not change.&nbsp; As an organization, our clarity of calling and vision was one of the strongest motivations and reasons for our positive reaction to the challenges of COVID-19.&nbsp;
