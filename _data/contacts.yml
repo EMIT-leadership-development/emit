@@ -16,15 +16,15 @@
   postal: 'PO BOX 26369 COLORADO SPRINGS, CO 80936'
   latitude: 38.867236
   longitude: -104.76284
-- name: OFFICE TITLE / FUNCTION
+- name: Dr. Elvis Joseph
   country: Zimbabwe
-  team-member:
+  team-member: Elvis Joseph
   email: admin@emit.global
   phone: +00 000 0000
   address: '10 Street, Suburb, City, 1234'
   postal: 'PO BOX 123, SUBURB, COUNTRY, 1234'
-  latitude: -18.831596
-  longitude: 29.934379
+  latitude: -17.82772
+  longitude: 31.05337
 - name: OFFICE TITLE / FUNCTION
   country: Malawi
   team-member: Leonard Daffa
