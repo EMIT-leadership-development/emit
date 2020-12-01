@@ -1,8 +1,8 @@
 ---
 name: Women for Women
 description_html: >-
-  Placeat sequi penatibus dolor congue accusamus convallis! Molestias scelerisque, ducimus, habitant magnam molestiae inceptos, tenetur tempora orci dictum, unde ea.
-
+  <p>Our Women for Women project allows you to invest into the lives of women in
+  other parts of the world.</p>
 product_type: donation
 price: '19.00'
 sku: w4w
