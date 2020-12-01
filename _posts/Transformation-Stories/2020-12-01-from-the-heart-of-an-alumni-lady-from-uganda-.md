@@ -2,10 +2,12 @@
 title: From the heart of an alumni lady from Uganda.
 subtitle:
 layout: post
-hero:
-heroQuote:
+hero: Sarah Kwagala Kasozi
+heroQuote: >-
+  What a blessing because I knew what Emit meant, the wholesome teachings that
+  they give that are life-changing...
 hero_Quote_Cite:
-hero_image:
+hero_image: /images/Sarah Kwagala Kasozi.jpeg
 sprite_image: /images/sprites/sprite-Set1.webp
 sprite_selection_number: 9
 team-member: Aaron Maingi
@@ -29,12 +31,12 @@ Being the Executive Director of Heart to Heart Initiative, an organization that 
 
 The benefits are far beyond one’s initial expectations:
 
-* &nbsp;My personal life was sharpened. I am able to relate to all the teachings like on Trauma, Marriage, Leadership and Emotional Intelligence among others. Besides, we were given books that I usually refer to when I need to revisit a topic. This has helped me to grow day by day.
-* &nbsp;We were given permission to teach from the EMIT books. I have been privileged to teach women groups in my community especially on teachings of Health, Family and Marriage.
+* My personal life was sharpened. I am able to relate to all the teachings like on Trauma, Marriage, Leadership and Emotional Intelligence among others. Besides, we were given books that I usually refer to when I need to revisit a topic. This has helped me to grow day by day.
+* We were given permission to teach from the EMIT books. I have been privileged to teach women groups in my community especially on teachings of Health, Family and Marriage.
 * The women have loved these classes a lot because they can easily relate them to their day to day life. This helps us to have a foundation of our community counselling sessions.
-* &nbsp;The EMIT Leadership School has been a great networking opportunity too. I was able to meet ladies from all fields; church leaders, politicians, government representatives, business women and those from different organizations and companies. By the end of our school sessions,we were a family. I had made friends who have been very helpful to me, my husband and our organization.
+* The EMIT Leadership School has been a great networking opportunity too. I was able to meet ladies from all fields; church leaders, politicians, government representatives, business women and those from different organizations and companies. By the end of our school sessions, we were a family. I had made friends who have been very helpful to me, my husband and our organization.
 
-In all, I appreciate God for having given me this opportunity to both study and serve in Afmin. For over 10 years, since Emit came to Uganda, I have been blessed to serve as an interpreter to date. I have had opportunities to serve as a co teacher in some sessions where I have also shared in areas of my experience and expertise in the different classes. This is because I have been equipped with knowledge and skills that are worthwhile. I also appreciate my Pastor, Bishop John Kasiita for having believed in me and introduced me to such a wonderful program.
+In all, I appreciate God for having given me this opportunity to both study and serve in AFMIN. For over 10 years, since Emit came to Uganda, I have been blessed to serve as an interpreter to date. I have had opportunities to serve as a co teacher in some sessions where I have also shared in areas of my experience and expertise in the different classes. This is because I have been equipped with knowledge and skills that are worthwhile. I also appreciate my Pastor, Bishop John Kasiita for having believed in me and introduced me to such a wonderful program.
 
 Thank you Emit Team for empowering me, surely in so doing, you have empowered many other women that I have reached out and shared with. You have indeed built a lasting legacy, may God bless you.
 
