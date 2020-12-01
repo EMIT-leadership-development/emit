@@ -5,9 +5,9 @@ description_html: >-
   scratch the surface you will find that in reality, women are the lifeblood of
   African society. They are already the primary caregivers of their families and
   communities, the majority of workers in the church, and the vast majority of
-  entrepreneurs in society (91%). Yet, few is training and empowering them for
-  these critical roles.</p><p>Our Women for Women project allows you to invest
-  in the lives of women in other parts of the world.</p>
+  entrepreneurs in society (91%). And yet for these vital positions, few are
+  preparing and motivating them.</p><p>Our Women for Women project allows you to
+  invest in the lives of women in other parts of the world.</p>
 product_type: donation
 price: '19.00'
 sku: w4w
