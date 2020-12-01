@@ -7,7 +7,7 @@ heroQuote: >-
   What a blessing because I knew what Emit meant, the wholesome teachings that
   they give that are life-changing...
 hero_Quote_Cite:
-hero_image: /images/Sarah Kwagala Kasozi.jpeg
+hero_image:
 sprite_image: /images/sprites/sprite-Set1.webp
 sprite_selection_number: 9
 team-member: Aaron Maingi
