@@ -4,7 +4,7 @@ subtitle:
 layout: post
 hero: Sarah Kwagala Kasozi
 heroQuote: >-
-  What a blessing because I knew what Emit meant, the wholesome teachings that
+  What a blessing because I knew what EMIT meant, the wholesome teachings that
   they give that are life-changing...
 hero_Quote_Cite: Sarah Kwagala Kasozi
 hero_image:
