@@ -18,7 +18,7 @@ leaderName: Sarah Kwagala Kasozi
 leaderBio_html: >-
   <p>Executive Director of Heart to Heart Initiative, an organization that
   serves children and families in the Ugandan communities.</p>
-image: /images/Sarah Kwagala Kasozi.jpeg
+image: /images/leaders/Sarah Kwagala Kasozi.jpeg
 country: Uganda
 latitude: '0.31628'
 longitude: '32.58219'
