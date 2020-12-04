@@ -26,7 +26,7 @@ excerpt_separator: <!--more-->
 # Location used in hero stories map
 leaderName:
 leaderBio_html:
-image: /images/leaders/studentPlaceholder.jpg
+leader_image: /images/leaders/studentPlaceholder.jpg
 country:
 latitude:
 longitude:
