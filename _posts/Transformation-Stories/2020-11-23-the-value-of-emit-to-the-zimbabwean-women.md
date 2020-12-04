@@ -19,7 +19,7 @@ category: Transformation Stories
 excerpt_separator: <!--more-->
 leaderName: Hon P. Zhou
 leaderBio_html:
-image: /images/leaders/Hon P. Zhou.jpg
+leader_image: /images/leaders/Hon P. Zhou.jpg
 country: Zimbabwe
 latitude: '-17.82772'
 longitude: '31.05337'
