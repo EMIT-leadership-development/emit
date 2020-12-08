@@ -51,23 +51,38 @@ $textContainerWidth: 800px;
             background: $brandContrastLight;
         }
         #text_africaProblem2{
-            background: #353C45;
+            width: 200px;
+            height: 200px;
+            background: darken($brandContrastDark, 10%);
+            border: 1px solid white;
             color: rgba(255,255,255,0.8);
         }
         #text_africaProblem3{
-            background: #2E353D;
+            width: 200px;
+            height: 200px;
+            background: darken($brandContrastDark, 10%);
+            border: 1px solid white;
             color: rgba(255,255,255,0.8);
         }
         #text_africaProblem4{
-            background: #282E36;
+            width: 200px;
+            height: 200px;
+            background: darken($brandContrastDark, 10%);
+            border: 1px solid white;
             color: rgba(255,255,255,0.8);
         }
         #text_africaProblem5{
-            background: #2E353D;
+            width: 200px;
+            height: 200px;
+            background: darken($brandContrastDark, 10%);
+            border: 1px solid white;
             color: rgba(255,255,255,0.8);
         }
         #text_africaProblem6{
+            width: 200px;
+            height: 200px;
             background: darken($brandContrastDark, 10%);
+            border: 1px solid white;
             color: rgba(255,255,255,0.8);
         }
         #text_josephTraining1{
@@ -299,6 +314,60 @@ $textContainerWidth: 800px;
             position: absolute;
         }
     }
+    #africaSymptoms {
+        #africaSymptomsWrap {
+            position: absolute;
+            width: $sphere3Width;
+            height: $sphere3Width;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .symptom {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                visibility: hidden;
+            }
+            #terrorism {
+                transform-origin: 50% 50%;
+                transform: rotate(-80deg);
+            }
+            #famine {
+                transform-origin: 50% 50%;
+                transform: rotate(35deg);
+            }
+            #wars {
+                transform-origin: 50% 50%;
+                transform: rotate(-20deg);
+            }
+            #poverty {
+                transform-origin: 50% 50%;
+                transform: rotate(32deg);
+            }
+            #nepotism {
+                transform-origin: 50% 50%;
+                transform: rotate(-35deg);
+            }
+            #corruption {
+                transform-origin: 50% 50%;
+                transform: rotate(30deg);
+            }
+        }
+        #questionAtTheCenter {
+            visibility: hidden;
+            width: $animatedLogoWidth;
+            height: $animatedLogoWidth;
+            border-radius: 50%;
+            border: 0.5px solid rgba(255,255,255,0.7);
+            font-size: 4rem;
+            font-weight: bold;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
     #clusterOfLeaders {
         @media (max-width: 300px) {
             svg {
@@ -367,7 +436,12 @@ $textContainerWidth: 800px;
         }
     }
     #joseph {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         #josephAtTheCenter {
+            position: absolute;
             visibility: hidden;
             // border: 1px solid #86b744;
             width: $animatedLogoWidth;
@@ -396,6 +470,11 @@ $textContainerWidth: 800px;
                 top: 0;
                 left: 0;
             }
+        }
+        #emitTrainingText {
+            width: $sphere3Width;
+            height: $sphere3Width;
+            position: absolute;
         }
     }
     #thePeopleYouImpact {
