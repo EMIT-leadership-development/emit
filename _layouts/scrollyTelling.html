@@ -51,49 +51,6 @@
 		<div id="scrollProgress">
 			<div id="progressIndicator"></div>
 		</div>
-		<div id="storyNav" class="storyNav">
-			<ul>
-				<li><a href="#hero"><span>Hero</span></a></li>
-				<li><a data-jump="yourStoryTitle" href="#yourStoryTitle"><span>Title</span></a></li>
-				<li><a data-jump="yourImpact" href="#yourImpact"><span>Your Impact</span></a></li>
-				<li><a data-jump="whoDoYouImpactEntrance" href="#whoDoYouImpactEntrance"><span>Who?</span></a></li>
-				<li><a data-jump="whoDoYouImpactExit" href="#whoDoYouImpactExit"><span>Your Impact Exit</span></a></li>
-				<li><a data-jump="yourPeopleImpact" href="#yourPeopleImpact"><span>Your People</span></a></li>
-				<li><a data-jump="yourLegacy" href="#yourLegacy"><span>Your Legacy</span></a></li>
-				<li><a data-jump="yourLegacy" href="#yourLegacy"><span>Your Legacy 2</span></a></li>
-				<li><a data-jump="africaProblem" href="#africaProblem"><span>Africa Problem</span></a></li>
-				<li><a data-jump="africaProblemSymptoms" href="#africaProblemSymptoms"><span>Africa Problem Symptoms</span></a></li>
-				<li><a data-jump="africaProblemSymptoms" href="#africaProblemSymptoms"><span>Africa Problem Symptoms 2</span></a></li>
-				<li><a data-jump="africanLeaders" href="#africanLeaders"><span>African Leaders</span></a></li>
-				<li><a data-jump="solution" href="#solution"><span>Solution</span></a></li>
-				<li><a data-jump="meetAnna" href="#meetAnna"><span>Meet Anna</span></a></li>
-				<li><a data-jump="meetAnna" href="#meetAnna"><span>Meet Anna 2</span></a></li>
-				<li><a data-jump="annasLeaders" href="#annasLeaders"><span>Annas Leaders</span></a></li>
-				<li><a data-jump="annasLeaders" href="#annasLeaders"><span>Annas Leaders 2</span></a></li>
-				<li><a data-jump="ifWeCan" href="#ifWeCan"><span>If we can</span></a></li>
-				<li><a data-jump="imagineIntro" href="#imagineIntro"><span>Imagine</span></a></li>
-				<li><a data-jump="villageReveal" href="#villageReveal"><span>Village Reveal</span></a></li>
-				<li><a data-jump="meetJoseph" href="#meetJoseph"><span>Meet Joseph</span></a></li>
-				<li><a data-jump="meetJoseph" href="#meetJoseph"><span>Meet Joseph 2</span></a></li>
-				<li><a data-jump="transformedHisLife" href="#transformedHisLife"><span>Transformed his life</span></a></li>
-				<li><a data-jump="transformedHisLife" href="#transformedHisLife"><span>Transformed his life 2</span></a></li>
-				<li><a data-jump="josephMandate" href="#josephMandate"><span>Mandate</span></a></li>
-				<li><a data-jump="josephOnTen" href="#josephOnTen"><span>On-10</span></a></li>
-				<li><a data-jump="emitTrainingIntro" href="#emitTrainingIntro"><span>EMIT equips</span></a></li>
-				<li><a data-jump="emitTrainingContent" href="#emitTrainingContent"><span>Emit Training Content</span></a></li>
-				<li><a data-jump="emitTrainingContent" href="#emitTrainingContent"><span>Emit Training Content 2</span></a></li>
-				<li><a data-jump="transformIntro" href="#transformIntro"><span>Transform Intro</span></a></li>
-				<li><a data-jump="transformation" href="#transformation"><span>Transformation</span></a></li>
-				<li><a data-jump="emitImpact" href="#emitImpact"><span>Emit Impact</span></a></li>
-				<li><a data-jump="waitingList" href="#waitingList"><span>waitingList</span></a></li>
-				<li><a data-jump="makeADifference" href="#makeADifference"><span>makeADifference</span></a></li>
-				<li><a data-jump="makeADifference" href="#makeADifference"><span>makeADifference 2</span></a></li>
-				<li><a data-jump="largerLife" href="#largerLife"><span>largerLife</span></a></li>
-				<li><a data-jump="sadAnna" href="#sadAnna"><span>Anna Transformed</span></a></li>
-				<li><a data-jump="sadAnna" href="#sadAnna"><span>Anna Transformed 2</span></a></li>
-				<li><a data-jump="donate" href="#donate"><span>donate</span></a></li>
-			</ul>
-		</div>
 		<!-- THE STAGE FOR ANIMATED CHARACTERS -->
 		{% include scrollytelling/theStage.html %}
 		<!-- GRID STARTS HERE -->
@@ -109,6 +66,9 @@
 			{% include loader.html %}
 		</div>
 
+		<!-- PRELOADING SCRIPT -->
+		<script src="https://unpkg.com/preload-it"></script>
+
 		<!-- FEATHER ICONS -->
 		<script>
 			feather.replace()
@@ -119,7 +79,8 @@
 		<script src="{{ site.baseurl }}/js/gsap/ScrollToPlugin.min.js"></script>
 		<script src="{{ site.baseurl }}/js/gsap/CSSRulePlugin.min.js"></script>
 		<script src="{{ site.baseurl }}/js/gsap/MorphSVGPlugin.min.js"></script>
-		<script src="{{ site.baseurl }}/js/gsap/SplitText.min.js"></script>
+		<script src="{{ site.baseurl }}/js/gsap/DrawSVGPlugin.min.js"></script>
+		<!-- <script src="{{ site.baseurl }}/js/gsap/SplitText.min.js"></script> -->
 
 		<script>
 			// LOADER
@@ -136,6 +97,5 @@
 
 		<!-- NINJA SCROLLYTELLING JS -->
 		<script src="{{ site.baseurl }}/js/scrollyTelling.js"></script>
-
 	</body>
 </html>
