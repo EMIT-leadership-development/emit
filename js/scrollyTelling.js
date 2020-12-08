@@ -61,32 +61,12 @@ window.onload = function() {
 	tl_mother.addLabel("yourLegacyText");
 	tl_mother.add(NINJA_FUNCTIONS.yourLegacyText());
 	tl_mother.addPause()
-
-
 	tl_mother.addLabel("africaProblem");
 	tl_mother.add(NINJA_FUNCTIONS.africaProblem());
 	tl_mother.addPause()
-
 	tl_mother.addLabel("africanSymptoms");
 	tl_mother.add(NINJA_FUNCTIONS.africanSymptoms());
 	tl_mother.addPause()
-
-	// tl_mother.addLabel("africanLeadersCorruption");
-	// tl_mother.add(NINJA_FUNCTIONS.africanLeadersCorruption());
-	// tl_mother.addPause()
-	// tl_mother.addLabel("africanLeadersPoverty");
-	// tl_mother.add(NINJA_FUNCTIONS.africanLeadersPoverty());
-	// tl_mother.addPause()
-	// tl_mother.addLabel("africanLeadersNepotism");
-	// tl_mother.add(NINJA_FUNCTIONS.africanLeadersNepotism());
-	// tl_mother.addPause()
-	// tl_mother.addLabel("africanLeadersWars");
-	// tl_mother.add(NINJA_FUNCTIONS.africanLeadersWars());
-	// tl_mother.addPause()
-	// tl_mother.addLabel("africanLeadersFamine");
-	// tl_mother.add(NINJA_FUNCTIONS.africanLeadersFamine());
-	tl_mother.addPause()
-
 	tl_mother.addLabel("solution");
 	tl_mother.add(NINJA_FUNCTIONS.solution());
 	tl_mother.addPause()
@@ -148,8 +128,8 @@ window.onload = function() {
 	tl_mother.add(NINJA_FUNCTIONS.donate());
 	tl_mother.addPause()
 
-	let scrollProgressHeight = tl_mother.duration() * 12;
-	gsap.set('#scrollProgress',{height:scrollProgressHeight});
+	// let scrollProgressHeight = tl_mother.duration() * 12;
+	// gsap.set('#scrollProgress',{height:scrollProgressHeight});
 
 
 
@@ -628,11 +608,11 @@ var NINJA_FUNCTIONS = {
 		return tl;
 	},
 
-	// -------- EMIT IMPACT: Empty scrolling for 1 section / 100vh : Emit has already influenced
+	// -------- EMIT IMPACT: Emit has already influenced
 	emitImpact: function() {
 		var tl = gsap.timeline({
 		});
-		tl.from('#emitImpact .sectionHeading span', {duration:3, autoAlpha:0, y:"300", stagger:"0.2", ease:"Sine.easeOut"},"<+1");
+		tl.from('#emitImpact .sectionHeading span, #explorebtn', {duration:3, autoAlpha:0, y:"300", stagger:"0.2", ease:"Sine.easeOut"},"<+1");
 		tl.totalDuration(1);
 		return tl;
 	},
@@ -642,12 +622,12 @@ var NINJA_FUNCTIONS = {
 		var tl = gsap.timeline({
 		});
 		tl.to('#villageVideoWrap',{duration:5, autoAlpha:0});
-
 		tl.set('.singleLeader',{scale:10, autoAlpha:1, transformOrigin:"center"},"<");
 		tl.set('#animatedLogoWrap', {autoAlpha:1, scale:0.7},"<");
 		tl.set("#svg_body", {morphSVG:"#svg_body", ease:"expo.out"},"<");
 		tl.set("#svg_shadow", {morphSVG:"#svg_shadow", ease:"expo.out"},"<");
 		tl.set('#spheresWrap', {scale:0.7, autoAlpha:1}, "<");
+		tl.from('#waitingList .sectionHeading span', {duration:3, autoAlpha:0, y:"300", stagger:"0.2", ease:"Sine.easeOut"},"<+1");
 		tl.totalDuration(1);
 		return tl;
 	},
@@ -692,6 +672,7 @@ var NINJA_FUNCTIONS = {
 		var tl = gsap.timeline({
 		});
 		tl.to('#annaInAfrica', {duration:1, delay:4, background:$brandContrastLight2});
+		tl.from('#largerLife p', {duration:3, autoAlpha:0, y:"300", stagger:"0.2", ease:"Sine.easeOut"},"<+1");
 		tl.totalDuration(1);
 		return tl;
 	},
@@ -700,6 +681,7 @@ var NINJA_FUNCTIONS = {
 		var tl = gsap.timeline({
 		});
 		tl.set('#smilingAnnaInAfrica', {x:5, y:35, transformOrigin: "50% 50%"});
+
 		tl.to('#animatedLogoWrap', {duration:0.1, x:-130}, 0);
 		tl.to('#sadAnnaInAfrica', {duration:0.1, autoAlpha:1, filter:"grayscale(100%)"}, 0);
 		tl.to("#makeDif3", {duration:1, autoAlpha:0, scale:0}, "textAnimate", ">");
@@ -709,10 +691,6 @@ var NINJA_FUNCTIONS = {
 		tl.to("#svg_body", {duration:0.6, morphSVG:"#svg_body-2", ease:"expo.out"},"<");
 		tl.to("#svg_shadow", {duration:0.6, morphSVG:"#svg_shadow-2", ease:"expo.out"},"<");
 
-		tl.to('#spheresWrap .sphere',{duration:2, scale:5, stagger:0.1, autoAlpha:0},">");
-		tl.to('#annaInAfrica', {duration:1, delay:1, background:$brandContrastLight},"<");
-		tl.from('#smilingAnnaInAfrica', {duration:2, autoAlpha:0, ease:"linear"},"<");
-
 		tl.totalDuration(1);
 		return tl;
 	},
@@ -720,7 +698,10 @@ var NINJA_FUNCTIONS = {
 	donate: function() {
 		var tl = gsap.timeline({
 		});
-		tl.to('#animatedLogoWrap',{duration:3, ease:"circ.out", scale:1.5, top:0, right:0, autoAlpha:"0"},">");
+		tl.to('#spheresWrap .sphere',{duration:2, scale:5, stagger:0.1, autoAlpha:0},">");
+		tl.to('#annaInAfrica', {duration:1, delay:1, background:$brandContrastLight},"<");
+		tl.from('#smilingAnnaInAfrica', {duration:2, autoAlpha:0, ease:"linear"},"<");
+		tl.to('#animatedLogoWrap',{duration:3, ease:"circ.out", scale:1.5, top:0, right:0, autoAlpha:"0"},"<");
 		tl.to("#svg_body", {duration:3, morphSVG:"#svg_body", ease:"expo.out"},"<");
 		tl.to("#svg_shadow", {duration:3, morphSVG:"#svg_shadow", ease:"expo.out"},"<");
 		tl.to('#donateBtn', {duration:0.5, repeat:1, scale:1.2, opacity:0.7, yoyo:true},"<2.5");
