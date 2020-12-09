@@ -10,8 +10,10 @@ objective_markdown: >-
   Paragraph describing the objective for this program. For example - when you
   have completed this program you will be able to…
 motivation: >-
-  Especially amongst youth, Sport is one of the most effective and natural
-  environments to teach and demonstrate leadership.
+  The public presence of successful sportsmen and women make them natural
+  leaders. Their ability to influence society is at the heart of this course.
+  Leaders will be exposed to material that will help them to be role models
+  worthy of following and to have a positive influence in their culture.
 status: planned
 entrance: Explain the entrance requirements for this program
 delivery: Describe how the program is delivered
