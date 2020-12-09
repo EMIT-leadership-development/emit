@@ -1,7 +1,10 @@
+---
 - name: Kobus Grobler
   shortname: Kobus
   title: Global CEO
-  group: team
+  group:
+    - team
+    - board
   email:
   facebook_url: 'https://www.facebook.com/kobus.grobler.16'
   twitter_url:
@@ -490,3 +493,4 @@
     phasellus ullamco, aliquid, nunc exercitationem nostrud eiusmod hac
     ullamcorper, placeat maiores inventore pulvinar voluptates nihil voluptas.
     Ipsa hymenaeos quis.</p>
+---
