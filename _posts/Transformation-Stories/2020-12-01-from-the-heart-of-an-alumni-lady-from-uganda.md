@@ -1,6 +1,6 @@
 ---
 title: From the heart of an alumni lady from Uganda.
-subtitle: Johan! Please write a subtitle - describe this story in one sentence.
+subtitle: The benefits EMIT brings to thousands of women in Africa.
 layout: post
 hero: Sarah Kwagala Kasozi
 heroQuote: >-
