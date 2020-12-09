@@ -24,7 +24,7 @@ description:
     <ul class="sectionContent">
         {% for teamMember in site.data.team-members%}
         <!-- if group is team -->
-        {% if teamMember.group == "team" %}
+        {% if teamMember.group contains "team" %}
         <li data-cms-editor-link="cloudcannon:collections/_data/team-members.yml" class="cms-editor-link">
             {% include teamMemberPreview.html %}
         </li>
