@@ -18,10 +18,12 @@ assessment: Describe how the program is assessed
 certification: Description of the certification for this program
 graduation: Describe the graduation event
 description_markdown: >-
-  Introductory Paragraph for this curriculum. Sapien iusto curae porttitor
-  facilisis odio quaerat felis? Cursus sagittis facilisi lorem qui voluptatibus,
-  aliquam. Felis tortor deleniti ac\! Feugiat auctor exercitation sequi, cum
-  feugiat, eiusmod, pretium.
+  Participants who completed this program will have gained invaluable skills to
+  bring hope and transform the communities they serve with renewed
+  responsibility.
+
+
+  &nbsp;
 curricula:
   - title: Basic Computer skills
     objective: >-
