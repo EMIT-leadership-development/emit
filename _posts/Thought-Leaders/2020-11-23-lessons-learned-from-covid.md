@@ -3,11 +3,11 @@ title: Lessons learned from COVID
 subtitle: Discovering what is important!
 layout: post
 hero:
-heroQuote:
-hero_Quote_Cite:
-hero_image: /images/Corana-Virus-800px.jpg
-sprite_image: /images/sprites/sprite-Set1.webp
-sprite_selection_number: 9
+heroQuote: COVID showed us how easy it is to miss the gift of people around us
+hero_Quote_Cite: Kobus Grobler
+hero_image: /images/covid-affects-children-in-africa.webp
+sprite_image: /images/sprites/sprite-Set3.jpg
+sprite_selection_number: 3
 team-member: Kobus Grobler
 tags:
   - Freedom

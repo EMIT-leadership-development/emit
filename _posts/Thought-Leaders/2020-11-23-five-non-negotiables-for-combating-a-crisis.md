@@ -3,11 +3,11 @@ title: Five non-negotiables for combating a crisis
 subtitle: People react differently to crisis.
 layout: post
 hero:
-heroQuote:
-hero_Quote_Cite:
-hero_image: /images/Guy in Resturant.jpeg
-sprite_image: /images/sprites/sprite-Set1.webp
-sprite_selection_number: 9
+heroQuote: I am a firm believer in the people. If given the truth, they can be depended upon to meet any national crisis. The great point is to bring them the real facts.
+hero_Quote_Cite: Abraham Lincoln
+hero_image: /images/covid-in-africa-help-us.webp
+sprite_image: /images/sprites/sprite-Set3.jpg
+sprite_selection_number: 4
 team-member: Kobus Grobler
 tags:
   - Faith
@@ -21,7 +21,7 @@ category: Thought Leaders
 excerpt_separator: <!--more-->
 leaderName:
 leaderBio_html:
-image: /images/leaders/studentPlaceholder.jpg
+image:
 country:
 latitude:
 longitude:

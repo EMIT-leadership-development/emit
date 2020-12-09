@@ -7,10 +7,10 @@ heroQuote: >-
   I proudly proclaim that Emit encourages women to be well-groomed, confident,
   self-reliant, resourceful, caring and loving.
 hero_Quote_Cite: Hon P. Zhou
-hero_image:
-sprite_image: /images/sprites/sprite-Set1.webp
-sprite_selection_number: 9
-team-member: Elvis Joseph
+hero_image: /images/Projectmeeting.webp
+sprite_image: /images/sprites/sprite-Set3.jpg
+sprite_selection_number: 2
+team-member:
 tags:
   - Zimbabwe
   - Women
@@ -19,7 +19,7 @@ category: Transformation Stories
 excerpt_separator: <!--more-->
 leaderName: Hon P. Zhou
 leaderBio_html:
-leader_image: /images/leaders/Hon P. Zhou.jpg
+leader_image: /images/leaders/HonPZhou.jpg
 country: Zimbabwe
 latitude: '-17.82772'
 longitude: '31.05337'

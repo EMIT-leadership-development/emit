@@ -1,24 +1,27 @@
 ---
 title: From the heart of an alumni lady from Uganda.
-subtitle:
+subtitle: Johan! Please write a subtitle - describe this story in one sentence.
 layout: post
 hero: Sarah Kwagala Kasozi
 heroQuote: >-
   What a blessing because I knew what EMIT meant, the wholesome teachings that
   they give that are life-changing...
 hero_Quote_Cite: Sarah Kwagala Kasozi
-hero_image:
-sprite_image: /images/sprites/sprite-Set1.webp
-sprite_selection_number: 9
+hero_image: /images/AfricanChildrenLearningTogether.webp
+sprite_image: /images/sprites/sprite-Set3.jpg
+sprite_selection_number: 1
 team-member: Aaron Maingi
 tags:
+  - Uganda
+  - Women
+  - Children
 category: Transformation Stories
 excerpt_separator: <!--more-->
 leaderName: Sarah Kwagala Kasozi
 leaderBio_html: >-
   <p>Executive Director of Heart to Heart Initiative, an organization that
   serves children and families in the Ugandan communities.</p>
-leader_image: /images/leaders/Sarah Kwagala Kasozi.jpeg
+leader_image: /images/leaders/SarahKwagalaKasozi.jpg
 country: Uganda
 latitude: '0.31628'
 longitude: '32.58219'
