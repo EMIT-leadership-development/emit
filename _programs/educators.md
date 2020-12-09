@@ -10,9 +10,10 @@ objective_markdown: >-
   Paragraph describing the objective for this program. For example - when you
   have completed this program you will be able to…
 motivation: >-
-  Educators structure the foundation of knowledge in our children. They need to
-  develop leadership competencies to teach, learn and lead in the increasingly
-  complex environment of our time.
+  Educators structure the foundation of knowledge in our children. Emit invests
+  in the leadership and ethical competencies of educators to improve their
+  knowledge and the transference thereof in an effective, life changing manner
+  to the youth.
 status: planned
 entrance: Explain the entrance requirements for this program
 delivery: Describe how the program is delivered
