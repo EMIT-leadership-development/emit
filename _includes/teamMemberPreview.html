@@ -12,16 +12,15 @@
     </div>
     <h3>{{ teamMember.name }}</h3>
     <div class="memberTitle">{{ teamMember.title }}</div>
-    <ul class="links">
+    <!-- <ul class="links">
         <li><a class="facebook" href="{{teamMember.facebook_url}}">{% include social-icon.html icon="Facebook2" %}</a></li>
         <li><a class="twitter" href="{{teamMember.twitter_url}}">{% include social-icon.html icon="Twitter" %}</a></li>
         <li><a class="linkedin" href="{{teamMember.linkedin_url}}">{% include social-icon.html icon="LinkedIn" %}</a></li>
-    </ul>
+    </ul> -->
     <div id="{{teamMember.memberID}}" class="modal">
         {% assign name = teamMember.name %}
         {% assign image = teamMember.profile_image %}
-        {% assign url = teamMember.facebook_url %}
-        {% assign urlText = "See more on facebook" %}
+
         {% assign description = teamMember.bio_html %}
         <div class="modalContent">
             {% include moreInfoPopup.html %}
