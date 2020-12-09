@@ -7,8 +7,12 @@ bookCover_image: /images/programs/PastorTrainingBook.webp
 curriculumSprite_image: /images/sprites/sprite-churchLeaders.webp
 id: 2
 objective_markdown: >-
-  Paragraph describing the objective for this program. For example - when you
-  have completed this program you will be able to…
+  Participants who completed this program will have gained invaluable skills to
+  bring hope and transform the communities they serve with renewed
+  responsibility.
+
+
+  &nbsp;
 motivation: >-
   Spiritual Leaders are not only leading at their places of worship, but also in
   their communities in general. Therefor, they must be trained to serve
@@ -21,10 +25,14 @@ assessment: Describe how the program is assessed
 certification: Description of the certification for this program
 graduation: Describe the graduation event
 description_markdown: >-
-  Introductory Paragraph for this curriculum. Sapien iusto curae porttitor
-  facilisis odio quaerat felis? Cursus sagittis facilisi lorem qui voluptatibus,
-  aliquam. Felis tortor deleniti ac\! Feugiat auctor exercitation sequi, cum
-  feugiat, eiusmod, pretium.
+  Spiritual Leaders are widespread throughout Africa and have great influence in
+  their communities. Yet, they lack proper training and vision to effectively
+  transform those communities. This program gives leaders the theoretical
+  framework, but also the practical knowledge and skills to rise above their
+  circumstances and bring systematic change to the communities they serve. This
+  program is designed to address 3 main areas needed for transformation –
+  personal and character development, leadership development and professional
+  skills development.
 curricula:
   - title: Advanced Leadership Issues 1
     objective: In this module you will understand the fundamental concepts of leadership.
