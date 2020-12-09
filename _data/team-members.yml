@@ -423,6 +423,7 @@
   shortname:
   title:
   group:
+    - board
   email:
   facebook_url:
   twitter_url:
