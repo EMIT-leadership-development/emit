@@ -20,29 +20,12 @@
     contribution to address the needs of those that cannot help themselves. He
     and his wife Teresa have three children and currently reside in Springs,
     South Africa.</p>
-- name: Kobus Grobler
-  shortname: Kobus
-  title: Global CEO
-  group: board
-  email:
-  facebook_url: 'https://www.facebook.com/kobus.grobler.16'
-  twitter_url:
-  linkedin_url:
-  profile_image: /images/team/Kobus sq.jpg
-  bio_html: >-
-    <p>Kobus has been involved in the training and equipping of leaders since
-    1991. He firmly believes that the lack of trained leaders is to blame for
-    many of the problems experienced in Africa and the rest of the world.
-    Transformational Leadership will result in changed communities and
-    ultimately Nations. He is pragmatic in his approach to the problems of
-    Africa and leads many community projects in his city as part of his own
-    contribution to address the needs of those that cannot help themselves. He
-    and his wife Teresa have three children and currently reside in Springs,
-    South Africa.</p>
 - name: Borniface Shonga
   shortname: Borniface
   title: Global President
-  group: team
+  group:
+    - team
+    - board
   email:
   facebook_url:
   twitter_url:
