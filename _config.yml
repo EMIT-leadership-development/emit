@@ -122,7 +122,7 @@ _select_data:
     - planned
     - developing
   # SELECT FIELD: Team members are categorised in groups
-  groups:
+  group:
     - team
     - board
 
