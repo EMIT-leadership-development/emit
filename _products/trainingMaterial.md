@@ -1,8 +1,13 @@
 ---
 name: Training Material
 description_html: >-
-  Quisque occaecati eros rerum assumenda eveniet exercitation culpa nibh fermentum doloribus magna, praesentium, quod nibh, mollis asperiores potenti ultricies dapibus.
-
+  <p>Our programs impact leaders from grassroots level to CEO&rsquo;s and
+  high-ranking government officials. These leaders rise above their
+  circumstances; with renewed responsibility, they bring hope and skills to the
+  communities they serve.</p><p>Your donation will enable us to equip thousands
+  of leaders who impact countless individuals in impoverished and suffering
+  communities.&nbsp; This is why we exist - to transform nations. The EMIT
+  strategy is unique, and it works!</p>
 product_type: donation
 price: '150.00'
 sku: tm
