@@ -21,8 +21,8 @@ leaderName: Hon P. Zhou
 leaderBio_html:
 leader_image: /images/leaders/HonPZhou.jpg
 country: Zimbabwe
-latitude: '-17.82772'
-longitude: '31.05337'
+latitude: '-18.564313'
+longitude: '27.631983'
 description:
 ---
 
