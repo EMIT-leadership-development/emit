@@ -12,7 +12,7 @@ objective_markdown: >-
 motivation: >-
   The cry for social justice will always remain with us. This course seeks to
   provide an overview of topics, issues, and best practices related to defining
-  social justice leadership.
+  the ethical and moral leadership standards needed for a just society.
 status: planned
 entrance: Explain the entrance requirements for this program
 delivery: Describe how the program is delivered
