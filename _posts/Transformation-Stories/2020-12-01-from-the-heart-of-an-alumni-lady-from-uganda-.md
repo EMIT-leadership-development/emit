@@ -23,8 +23,8 @@ leaderBio_html: >-
   serves children and families in the Ugandan communities.</p>
 leader_image: /images/leaders/SarahKwagalaKasozi.jpg
 country: Uganda
-latitude: '0.31628'
-longitude: '32.58219'
+latitude: '0.1.718010'
+longitude: '32.171153'
 description:
 ---
 
