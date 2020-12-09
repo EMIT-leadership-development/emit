@@ -30,7 +30,10 @@ window.onload = function() {
 	// storyNav();
 	pinDonation();
 	initialSettings();
-	preloader();
+	// preloader();
+
+	// Temp hide loading animation until I can get preloader working
+	gsap.to("#loader", {duration:1, autoAlpha:0});
 
 	//--------MOTHER OF ALL TIMELINES : MAIN SCROLLING ANIMATION-------------------------------------
 	const tl_mother = gsap.timeline({
