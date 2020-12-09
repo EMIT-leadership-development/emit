@@ -140,7 +140,7 @@ window.onload = function() {
 
 		preload.fetch([
 			'/video/out.mp4',
-			'/video/EMIT-hero2.mp4'
+			// '/video/EMIT-hero2.mp4'
 			// 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4',
 			// 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
 			// 'https://images.pexels.com/photos/248797/pexels-photo-248797.jpeg'
