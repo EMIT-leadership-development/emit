@@ -25,9 +25,15 @@ assessment: Describe how the program is assessed
 certification: Description of the certification for this program
 graduation: Describe the graduation event
 description_markdown: >-
-  Participants who completed this program will have gained invaluable skills to
-  bring hope and transform the communities they serve with renewed
-  responsibility.
+  Women are placed in leadership and executive level positions at an increasing
+  rate. Yet, in Africa, most educational and development programs are focused on
+  men. Women are many times encouraged to rather pursue more traditional roles.
+  This program is focused entirely on women and their development. It gives
+  these leaders the theoretical framework, but also the practical knowledge and
+  skills to rise above their circumstances and bring systematic change to the
+  communities they serve. The program is designed to address 3 main areas needed
+  for transformation – personal and character development, leadership
+  development and professional skills development.
 
 
   &nbsp;
