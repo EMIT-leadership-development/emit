@@ -30,7 +30,7 @@ window.onload = function() {
 	// storyNav();
 	pinDonation();
 	initialSettings();
-	preloader();
+	// preloader();
 
 	//--------MOTHER OF ALL TIMELINES : MAIN SCROLLING ANIMATION-------------------------------------
 	const tl_mother = gsap.timeline({
