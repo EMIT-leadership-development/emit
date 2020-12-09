@@ -5,8 +5,12 @@ bookCover_image: /images/programs/WomenTrainingBook.webp
 curriculumSprite_image: /images/sprites/sprite-womenLeaders.webp
 id: 1
 objective_markdown: >-
-  Paragraph describing the objective for this program. For example - when you
-  have completed this program you will be able to…
+  Participants who completed this program will have gained invaluable skills to
+  bring hope and transform the communities they serve with renewed
+  responsibility.
+
+
+  &nbsp;
 motivation: >-
   Women leaders are the lifeblood of African society. EMIT strives to empower
   them to fulfill their significant role on every level of society.
