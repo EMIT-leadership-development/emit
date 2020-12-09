@@ -192,7 +192,7 @@ description:
 		{% include articleLink.html %}
 	</div>
 	<div class="containedRight sectionContent">
-		{% assign thepost = site.posts | where:"title","Purposeful Leadership" %}
+b		{% assign thepost = site.posts | where:"title","The Leader as an agent for positive change" %}
 		{% include articleLink.html %}
 	</div>
 </section>
@@ -367,7 +367,7 @@ description:
 <section class="counters">
 	<div class="container counterwrap no-padding">
 		<div class="count">
-			<span id="count1" class="number editable">
+			<span data-target="22575" class="number editable">
 				22575
 			</span>
 			<span class="description editable">
@@ -375,7 +375,7 @@ description:
 			</span>
 		</div>
 		<div class="count">
-			<span class="number editable">
+			<span data-target="17" class="number editable">
 				17
 			</span>
 			<span class="description editable">
@@ -383,7 +383,7 @@ description:
 			</span>
 		</div>
 		<div class="count">
-			<span class="number editable">
+			<span data-target="83" class="number editable">
 				83
 			</span>
 			<span class="description editable">
@@ -391,7 +391,7 @@ description:
 			</span>
 		</div>
 		<div class="count">
-			<span class="number editable">
+			<span data-target="125697" class="number editable">
 				125697
 			</span>
 			<span class="description editable">
@@ -436,59 +436,47 @@ description:
 		</div>
 </section>
 
-<!-- SUBSCRIBE MAILCHIMP -->
-<!-- TO DO: Fix the form field colors -->
-<!-- TO DO: Self hosted success page - setting on mailchimp -->
-<section class="subscribe item--contained">
+
+<!-- SUBSCRIBE CONSTANT CONTACT -->
+<!-- <section class="subscribe item--contained">
 	<div class="container">
 		<div class="sectionContent">
-			<!-- Begin Mailchimp Signup Form -->
-			<!-- <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css"> -->
-			<div id="mc_embed_signup">
-				<form action="https://global.us2.list-manage.com/subscribe/post?u=17780da15e3762d5989e69ce1&amp;id=ac79839624" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-					<div id="mc_embed_signup_scroll" class="materialForm">
-						<!-- Email -->
-						<div class="mc-field-group form-group">
-							<input type="text" value="" name="EMAIL" class="required email" id="mce-EMAIL" required="required" />
-							<label for="mce-EMAIL" class="control-label">Email Address </label><i class="bar"></i>
-						</div>
-						<!-- Name -->
-						<div class="mc-field-group form-group">
-							<input type="text" value="" name="FNAME" id="mce-FNAME" required="required" />
-							<label class="control-label" for="mce-FNAME">First Name </label><i class="bar"></i>
-						</div>
-						<!-- Surname -->
-						<div class="mc-field-group form-group">
-							<input type="text" value="" name="LNAME" id="mce-LNAME" required="required" />
-							<label class="control-label" for="mce-LNAME">Last Name </label><i class="bar"></i>
-						</div>
-						<!-- Error stuff? -->
-						<div id="mce-responses" class="clear" style="display: none;">
-							<div class="response" id="mce-error-response" style="display:none"></div>
-							<div class="response" id="mce-success-response" style="display:none"></div>
-						</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-						<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_17780da15e3762d5989e69ce1_ac79839624" tabindex="-1" value="" /></div>
-						<!-- Submit -->
-						<div class="button-container clear">
-							<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button primary" />
-						</div>
-
-					</div>
-				</form>
+			<span class="modalBtn">
+				Don't miss out - join our mailing list!
+			</span>
+			<div class="modal">
+				Begin Constant Contact Inline Form Code
+				<div class="ctct-inline-form modalContent" data-form-id="00a8e79c-f158-4507-981c-097e23391cd9"></div>
+				End Constant Contact Inline Form Code
 			</div>
-			<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-			<!--End mc_embed_signup-->
 		</div>
 	</div>
-</section>
+</section> -->
+
+
+
+
+
+
+
+
+
 <!-- ADDRESS USA -->
-<section class="item--full white contactRow">
+<section class="item--full contactRow">
 	<div class="container addressRow">
 		<div data-cms-editor-link="cloudcannon:collections/_data/contacts.yml" class="address contactBlock cms-editor-link">
 			<span class="icon"><i data-feather="map"></i></span>
 			{% assign address = site.data.contacts[1] %}
 			<div class="addresses">
 				<h5>{{ address.name }}</h5>
+				<p>{{ address.postal }}</p>
+			</div>
+		</div>
+		<div data-cms-editor-link="cloudcannon:collections/_data/contacts.yml" class="address contactBlock cms-editor-link">
+			<span class="icon"><i data-feather="map-pin"></i></span>
+			{% assign address = site.data.contacts[1] %}
+			<div class="addresses">
+				<h5>COLORADO</h5>
 				<p>{{ address.address }}</p>
 			</div>
 		</div>
@@ -509,13 +497,20 @@ description:
 	</div>
 </section>
 <!-- ADDRESS SA -->
-<section class="item--full contactRow">
+<section class="item--full white contactRow">
 	<div class="container addressRow">
 		<div data-cms-editor-link="cloudcannon:collections/_data/contacts.yml" class="address contactBlock cms-editor-link">
 			<span class="icon"><i data-feather="map"></i></span>
 			{% assign address = site.data.contacts[0] %}
 			<div class="addresses">
 				<h5>{{ address.name }}</h5>
+				<p>{{ address.postal }}</p>
+			</div>
+		</div>
+		<div data-cms-editor-link="cloudcannon:collections/_data/contacts.yml" class="address contactBlock cms-editor-link">
+			<span class="icon"><i data-feather="map-pin"></i></span>
+			<div class="addresses">
+				<h5>SPRINGS</h5>
 				<p>{{ address.address }}</p>
 			</div>
 		</div>
@@ -596,4 +591,9 @@ description:
 	}
 	google.maps.event.addDomListener(window, 'load', initializeMap);
 </script>
+
+<!-- Begin Constant Contact Active Forms -->
+<script> var _ctct_m = "bdb6a5326cc823e3f9b32170b57a3c36"; </script>
+<script id="signupScript" src="//static.ctctcdn.com/js/signup-form-widget/current/signup-form-widget.min.js" async defer></script>
+<!-- End Constant Contact Active Forms -->
 

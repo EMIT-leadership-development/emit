@@ -468,20 +468,7 @@ p.introduction {
 		padding: 30px;
 	}
 }
-// MailChimp Form
-#mc-embedded-subscribe-form {
-	width: 100%;
-	// border: 1px solid red;
-	#mc_embed_signup_scroll {
-		// border: 1px solid blue;
-		width: 100%;
-		@media #{$mid-point} {
-			display: grid;
-			grid-template-columns: 1fr 1fr 1fr auto;
-			grid-gap: 30px;
-		}
-	}
-}
+
 // Section - Little Curriculum Books
 section.curriculum {
 	background: #e0e8ea !important;
@@ -699,23 +686,23 @@ section.curriculum {
 .addressRow {
 	@media #{$mid-point} {
 		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		grid-gap: 2rem;
+		grid-template-columns: repeat(4, 1fr);
+		grid-gap: 1rem;
 	}
 	.contactBlock {
 		// border: 1px solid red;
 		display: grid;
 		grid-template-columns: auto 1fr;
 		span {
-			padding: 0.5rem 2rem;
+			padding: 0.5rem 1.5rem;
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
 			border-right: 1px solid darken($brandContrastLight, 5%);
 			svg {
-				width: 3rem;
-				height: 3rem;
+				width: 2.5rem;
+				height: 2.5rem;
 				stroke-width: 1px;
 				stroke: rgba(0,0,0,0.3);
 			}
