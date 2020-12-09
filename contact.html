@@ -10,22 +10,29 @@ description:
 <!-- ADDRESS SA -->
 <section class="item--full white contactRow">
 	<div class="container addressRow">
-		<div data-cms-editor-link="cloudcannon:collections/_data/contacts.yml" class="cms-editor-link  address contactBlock">
+		<div data-cms-editor-link="cloudcannon:collections/_data/contacts.yml" class="address contactBlock cms-editor-link">
 			<span class="icon"><i data-feather="map"></i></span>
 			{% assign address = site.data.contacts[0] %}
 			<div class="addresses">
 				<h5>{{ address.name }}</h5>
+				<p>{{ address.postal }}</p>
+			</div>
+		</div>
+		<div data-cms-editor-link="cloudcannon:collections/_data/contacts.yml" class="address contactBlock cms-editor-link">
+			<span class="icon"><i data-feather="map-pin"></i></span>
+			<div class="addresses">
+				<h5>SPRINGS</h5>
 				<p>{{ address.address }}</p>
 			</div>
 		</div>
-		<div data-cms-editor-link="cloudcannon:collections/_data/contacts.yml" class="cms-editor-link email contactBlock">
+		<div data-cms-editor-link="cloudcannon:collections/_data/contacts.yml" class="email contactBlock cms-editor-link">
 			<span class="icon"><i data-feather="mail"></i></span>
 			<div class="addresses">
 				<h5>EMAIL</h5>
 				<p>{{ address.email }}</p>
 			</div>
 		</div>
-		<div data-cms-editor-link="cloudcannon:collections/_data/contacts.yml" class="cms-editor-link phone contactBlock">
+		<div data-cms-editor-link="cloudcannon:collections/_data/contacts.yml" class="phone contactBlock cms-editor-link">
 			<span class="icon"><i data-feather="smartphone"></i></span>
 			<div class="addresses">
 				<h5>PHONE</h5>
@@ -37,22 +44,30 @@ description:
 <!-- ADDRESS USA -->
 <section class="item--full contactRow">
 	<div class="container addressRow">
-		<div data-cms-editor-link="cloudcannon:collections/_data/contacts.yml"  class="cms-editor-link  address contactBlock">
+		<div data-cms-editor-link="cloudcannon:collections/_data/contacts.yml" class="address contactBlock cms-editor-link">
 			<span class="icon"><i data-feather="map"></i></span>
 			{% assign address = site.data.contacts[1] %}
 			<div class="addresses">
 				<h5>{{ address.name }}</h5>
+				<p>{{ address.postal }}</p>
+			</div>
+		</div>
+		<div data-cms-editor-link="cloudcannon:collections/_data/contacts.yml" class="address contactBlock cms-editor-link">
+			<span class="icon"><i data-feather="map-pin"></i></span>
+			{% assign address = site.data.contacts[1] %}
+			<div class="addresses">
+				<h5>COLORADO</h5>
 				<p>{{ address.address }}</p>
 			</div>
 		</div>
-		<div data-cms-editor-link="cloudcannon:collections/_data/contacts.yml"  class="cms-editor-link email contactBlock">
+		<div data-cms-editor-link="cloudcannon:collections/_data/contacts.yml" class="email contactBlock cms-editor-link">
 			<span class="icon"><i data-feather="mail"></i></span>
 			<div class="addresses">
 				<h5>EMAIL</h5>
 				<p>{{ address.email }}</p>
 			</div>
 		</div>
-		<div data-cms-editor-link="cloudcannon:collections/_data/contacts.yml"  class="cms-editor-link phone contactBlock">
+		<div data-cms-editor-link="cloudcannon:collections/_data/contacts.yml" class="phone contactBlock cms-editor-link">
 			<span class="icon"><i data-feather="smartphone"></i></span>
 			<div class="addresses">
 				<h5>PHONE</h5>
