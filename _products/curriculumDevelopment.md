@@ -1,11 +1,13 @@
 ---
 name: Sponsor Curriculum Development
 description_html: >-
-  Inspiring Paragraph about how this donation will transform lives. Illo nascetur dolor, aliquip! Aliquet assumenda ducimus veritatis adipisicing cupidatat pellentesque nulla do corporis eligendi vehicula elit. Nonummy odio nulla.
-
-
-  Testing really long description text.  We may need this in order to motivate the impact of this gift. Adipiscing ex ultricies cillum, viverra tenetur saepe aenean itaque nihil minima doloribus, harum, fugiat? Repellendus quae sapiente, ratione? Egestas adipiscing.
-
+  <p>Our programs impact leaders from grassroots level to CEO&rsquo;s and
+  high-ranking government officials. These leaders rise above their
+  circumstances; with renewed responsibility, they bring hope and skills to the
+  communities they serve.</p><p>Your donation will enable us to develop a new
+  curriculum that will equip thousands of leaders who impact countless
+  individuals in impoverished and suffering communities. &nbsp;This is why we
+  exist - to transform nations. The EMIT strategy is unique, and it works!</p>
 product_type: donation
 price: '500.00'
 sku: cd
