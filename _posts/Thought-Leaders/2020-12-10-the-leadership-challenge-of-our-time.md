@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Transforming nations by developing leaders
-subtitle: The Leadership Challenge of our Time
+title: The Leadership Challenge of our Time
+subtitle: Transforming nations by developing leaders
 heroQuote: >-
   I am not afraid of an army of lions led by a sheep; I am afraid of an army of
   sheep led by a lion
