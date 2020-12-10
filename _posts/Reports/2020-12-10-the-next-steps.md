@@ -5,7 +5,7 @@ layout: post
 hero:
 heroQuote:
 hero_Quote_Cite:
-hero_image:
+hero_image: /images/covid-in-africa-help-us.jpg
 sprite_image: /images/sprites/sprite-Set1.webp
 sprite_selection_number: 9
 team-member: Kobus Grobler
@@ -29,7 +29,7 @@ New behaviours become permanent the longer they are in place. In many cases ther
 
 ## **A proactive approach&nbsp;****is&nbsp;****needed to survive COVID-19**&nbsp;
 
-The leadership of EMIT adopted a proactive approach early in the crisis. This helped us to become very creative in developing a&nbsp;different model of training that suited our new reality. By June of 2020 we started training our more than 370 volunteers in Africa, as facilitators. These facilitators now gather EMIT students in their areas in small groups of not more than 15 for training. &nbsp;Our manuals have been re-formatted to suite small group training events. Over the last 6 months of 2020, we had 147 small group events with more than 1200 students in attendance. The new model is working\!&nbsp;&nbsp;
+The leadership of EMIT adopted a proactive approach early in the crisis. This helped us to become very creative in developing a different model of training that suited our new reality. By June of 2020 we started training our more than 370 volunteers in Africa, as facilitators. These facilitators now gather EMIT students in their areas in small groups of not more than 15 for training. &nbsp;Our manuals have been re-formatted to suite small group training events. Over the last 6 months of 2020, we had 147 small group events with more than 1200 students in attendance. The new model is working\!&nbsp;&nbsp;
 
 EMIT will continue to study the behavioural shifts in our industry. We will adjust and modify our products and services. We are ready to act quickly to meet current and future student needs. The executive team, full time staff and volunteers are committed to continue to develop relevant training materials and to keep on serving our students with passion and excellence.&nbsp;&nbsp;
 
