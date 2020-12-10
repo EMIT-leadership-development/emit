@@ -6,15 +6,12 @@ hero_image: /images/youngLeaderThinking.webp
 bookCover_image: /images/programs/YouthTrainingBook.webp
 curriculumSprite_image: /images/sprites/sprite-Set2.webp
 id: 3
-objective_markdown: >-
+objective_markdown:
+motivation: >-
   Presently the vast majority of Africa’s population is younger than 25 years
   old. We aim to equip youth leaders while they are in school, enabling them to
   develop their leadership skills as they mature. This will ensure a next
   generation of effective leaders.
-motivation: >-
-  Presently the vast majority of Africa’s population is younger than 25 years
-  old. We aim to equip youth leaders while they are in school, enabling them to
-  develop their leadership skills as they mature.
 status: developing
 entrance: Explain the entrance requirements for this program
 delivery: Describe how the program is delivered
