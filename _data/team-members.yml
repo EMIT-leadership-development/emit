@@ -1,7 +1,7 @@
 ---
 - name: Kobus Grobler
   shortname: Kobus
-  title: Global CEO
+  title: 'Global CEO, SA, USA and Global Board Member'
   group:
     - team
     - board
@@ -22,7 +22,7 @@
     South Africa.</p>
 - name: Borniface Shonga
   shortname: Borniface
-  title: Global President
+  title: 'Global President, SA and Global Board Member'
   group:
     - team
     - board
@@ -39,7 +39,7 @@
     daughters.</p>
 - name: Johan Fourie
   shortname: Johan
-  title: Chief Operating Officer
+  title: 'Chief Operating Officer, Ex-officio USA and SA Board'
   group: team
   email:
   facebook_url:
@@ -303,7 +303,7 @@
     girl.
 - name: Randy Welsh
   shortname: Randy
-  title: USA Board Member
+  title: USA and Global Board Member
   group: board
   email:
   facebook_url:
@@ -351,7 +351,7 @@
     &amp; dog.</p>
 - name: Daniel Nell
   shortname: Daniel
-  title: Chairman SA Board
+  title: Chairman SA Board and Global Board Member
   group: board
   email:
   facebook_url:
@@ -376,7 +376,7 @@
     serving as chairman since 2013</p>
 - name: Sarel Rudolph
   shortname: Sarel
-  title: SA Board Member
+  title: SA and Global Board Member
   group: board
   email:
   facebook_url:
@@ -403,7 +403,7 @@
     currently as a &ldquo;cheerleader&rdquo; of the Emit team.</p>
 - name: Jennifer Jonas
   shortname: Jennifer
-  title: Chairlady USA Board
+  title: Chairlady USA Board and Global Board Member
   group: board
   email:
   facebook_url:
