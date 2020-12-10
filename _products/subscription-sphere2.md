@@ -6,7 +6,7 @@ description_html: >-
 product_type:
   - subscription
 product_image: /images/products/subscriptions/sphere2.webp
-price: '75.99'
+price: '74.99'
 terms: monthly
 sku: subscription2
 ---
