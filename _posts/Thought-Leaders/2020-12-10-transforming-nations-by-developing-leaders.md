@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Chris clone
+title: Transforming nations by developing leaders
 subtitle: The Leadership Challenge of our Time
 heroQuote: >-
   I am not afraid of an army of lions led by a sheep; I am afraid of an army of
