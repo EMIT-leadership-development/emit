@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Leadership
+title: Our Vision
 subtitle: The Leadership Challenge of our Time
 heroQuote: >-
   I am not afraid of an army of lions led by a sheep; I am afraid of an army of
@@ -10,7 +10,7 @@ customHeroPosition: center bottom
 hero_image: /images/happyVillageGirl.webp
 sprite_image: /images/sprites/sprite-Set1.webp
 sprite_selection_number: 14
-team-member: Chris de Wet
+team-member: Kobus Grobler
 tags: EMIT Strategy
 category: About EMIT
 excerpt_separator: <!--more-->
