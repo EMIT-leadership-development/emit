@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Our Vision
-subtitle: The Leadership Challenge of our Time
+subtitle: A strategic approach to the future
 heroQuote: >-
   I am not afraid of an army of lions led by a sheep; I am afraid of an army of
   sheep led by a lion
