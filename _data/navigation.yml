@@ -7,19 +7,22 @@
       link: /about
       new_window: false
       highlight: false
+    - name: Vision-Mission
+      new_window: false
+      highlight: false
       subPages:
-      - name: Our Vision
-        link: /our-vision
-        new_window: false
-        highlight: false
-      - name: What we do
-        link: /what-we-do
-        new_window: false
-        highlight: false
-      - name: How we do it
-        link: /how-we-do-it
-        new_window: false
-        highlight: false
+        - name: Our Vision
+          link: /our-vision
+          new_window: false
+          highlight: false
+        - name: What we do
+          link: /what-we-do
+          new_window: false
+          highlight: false
+        - name: How we do it
+          link: /how-we-do-it
+          new_window: false
+          highlight: false
     - name: History
       link: /history
       new_window: false
