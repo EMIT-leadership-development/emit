@@ -7,7 +7,7 @@ description_html: >-
   communities they serve.</p><p>Your Donation will pay all the material for one
   student to complete a 37 subject curriculum</p>
 product_type: donation
-price: '150.00'
+price: '130'
 sku: tm
 product_image: /images/products/trainingMaterial/trainingMaterial.webp
 ---
