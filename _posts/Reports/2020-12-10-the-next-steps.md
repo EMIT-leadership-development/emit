@@ -3,8 +3,8 @@ title: The Next Steps
 subtitle: "A proactive approach\_is\_needed to survive COVID-19"
 layout: post
 hero:
-heroQuote:
-hero_Quote_Cite:
+heroQuote: 'History shows that in times of great challenge, creativity thrives'
+hero_Quote_Cite: Kobus Grobler
 hero_image: /images/covid-in-africa-help-us.jpg
 sprite_image: /images/sprites/sprite-Set1.webp
 sprite_selection_number: 9
