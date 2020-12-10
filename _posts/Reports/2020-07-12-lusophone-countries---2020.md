@@ -1,18 +1,13 @@
 ---
 layout: post
 title: Lusophone Countries - 2020
-subtitle: These are some of the descriptions of the situation in the Portuguese speaking countries in Africa during 2019
-
-# Hero defaults are set in config if not in post
-# Sprite Image for listings - to make site fast
+subtitle: >-
+  These are some of the descriptions of the situation in the Portuguese speaking
+  countries in Africa during 2019
 hero_image: /images/African-Church-musician-leadership.webp
 sprite_image: /images/sprites/sprite-Set1.webp
 sprite_selection_number: 4
-
-# If the author is team member then select from datafile
-team-member: Theo Faber
-
-# Post meta : todo: select field for cc?
+team-member: Julio Da Silva
 tags: Mozambique Angola
 category: Reports
 excerpt_separator: <!--more-->
