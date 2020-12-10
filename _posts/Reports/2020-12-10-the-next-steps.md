@@ -27,7 +27,7 @@ COVID-19 has dramatically changed the world we find ourselves in. &nbsp;Business
 
 New behaviours become permanent the longer they are in place. In many cases there will be no return to previous models or the so called “normal”. Non-Profits and businesses must consider how the current crisis will also change the way we interact with one another in this new and strange world. New models of doing business must be developed to adjust to the changes in customer behaviour post COVID-19. Many new behaviours will be normalized as customers practice them repeatedly over months.&nbsp;
 
-## **A proactive approach&nbsp;****is&nbsp;****needed to survive&nbsp; &nbsp; COVID-19**&nbsp;
+## **A proactive approach&nbsp;****is&nbsp;****needed to survive&nbsp; &nbsp; &nbsp; &nbsp; COVID-19**&nbsp;
 
 The leadership of EMIT adopted a proactive approach early in the crisis. This helped us to become very creative in developing a different model of training that suited our new reality. By June of 2020 we started training our more than 370 volunteers in Africa, as facilitators. These facilitators now gather EMIT students in their areas in small groups of not more than 15 for training. &nbsp;Our manuals have been re-formatted to suite small group training events. Over the last 6 months of 2020, we had 147 small group events with more than 1200 students in attendance. The new model is working\!&nbsp;&nbsp;
 
