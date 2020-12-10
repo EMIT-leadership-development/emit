@@ -7,8 +7,10 @@ bookCover_image: /images/programs/YouthTrainingBook.webp
 curriculumSprite_image: /images/sprites/sprite-Set2.webp
 id: 3
 objective_markdown: >-
-  Paragraph describing the objective for this program. For example - when you
-  have completed this program you will be able to…
+  Presently the vast majority of Africa’s population is younger than 25 years
+  old. We aim to equip youth leaders while they are in school, enabling them to
+  develop their leadership skills as they mature. This will ensure a next
+  generation of effective leaders.
 motivation: >-
   Presently the vast majority of Africa’s population is younger than 25 years
   old. We aim to equip youth leaders while they are in school, enabling them to
