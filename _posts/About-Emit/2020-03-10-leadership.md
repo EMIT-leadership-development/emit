@@ -1,19 +1,16 @@
 ---
 layout: post
-title: Our Vision
+title: Leadership
 subtitle: The Leadership Challenge of our Time
-
-heroQuote: I am not afraid of an army of lions led by a sheep; I am afraid of an army of sheep led by a lion
+heroQuote: >-
+  I am not afraid of an army of lions led by a sheep; I am afraid of an army of
+  sheep led by a lion
 hero_Quote_Cite: Alexander the Great
-customHeroPosition: "center bottom"
-
-# IMAGES
+customHeroPosition: center bottom
 hero_image: /images/happyVillageGirl.webp
 sprite_image: /images/sprites/sprite-Set1.webp
 sprite_selection_number: 14
-
 team-member: Chris de Wet
-
 tags: EMIT Strategy
 category: About EMIT
 excerpt_separator: <!--more-->
@@ -21,36 +18,34 @@ excerpt_separator: <!--more-->
 
 ## Transforming nations by developing leaders
 
-
-
 > I am not afraid of an army of lions led by a sheep; I am afraid of an army of sheep led by a lion.
+>
 >
 > <cite>Alexander the Great</cite>
 
 ### The Leadership Challenge of our Time
 
-The twenty-first century provides unprecedented opportunities for leaders to impact their organizations positively. However, the new millennium also brings unforeseen challenges to leaders.
-<!--more-->
+The twenty-first century provides unprecedented opportunities for leaders to impact their organizations positively. However, the new millennium also brings unforeseen challenges to leaders. <!--more-->
 
 #### The unrelenting advance of technology.
 
-  Today’s technology has radically changed the dynamics of communication (for example: e-mail & smart phones).
+Today’s technology has radically changed the dynamics of communication (for example: e-mail & smart phones).
 
 #### The impact of the Information Age.
 
-  The rise of the Information Age is continuously flooding leaders with a flood of new information that must be processed as quickly as possible if they want to remain relevant.
+The rise of the Information Age is continuously flooding leaders with a flood of new information that must be processed as quickly as possible if they want to remain relevant.
 
 #### Globalization.
 
-  Globalization has truly changed a huge world into a “global village”.
+Globalization has truly changed a huge world into a “global village”.
 
 #### The challenge of post-modernism.
 
-  Post-modernism believes that we are just another level of animal that must define my own identity according to my context. It emphasizes moral relativism (no right or wrong) with tolerance the highest virtue. Stress style over substance – you must look cool. The post-modern culture is very environmentally conscious.
+Post-modernism believes that we are just another level of animal that must define my own identity according to my context. It emphasizes moral relativism (no right or wrong) with tolerance the highest virtue. Stress style over substance – you must look cool. The post-modern culture is very environmentally conscious.
 
 #### Change.
 
-  Change is affecting us all and perhaps more so in Third World countries. The rapid pace of change is increasing constantly. Everything is changing and if leaders do not understand and adjust, it we will quickly become irrelevant.
+Change is affecting us all and perhaps more so in Third World countries. The rapid pace of change is increasing constantly. Everything is changing and if leaders do not understand and adjust, it we will quickly become irrelevant.
 
 ### The Critical Need for Developed Leaders in Africa
 
@@ -74,6 +69,7 @@ Based on these components, EMIT uses this working definition of leadership:
 
 > Leadership is a process whereby an individual influences a group of individuals to achieve a common goal.
 >
+>
 > <cite>Northouse, 2013, p.5</cite>
 
 ### Trait versus Process Leadership
@@ -85,6 +81,7 @@ This view restricts leadership to those who are believed to have special charact
 In contrast, the approach that EMIT will follow is that leadership is a process that can be learned, and that it is available to everyone.
 
 > Most of the outstanding leaders I have worked with are neither tall nor especially handsome; they are often mediocre public speakers; they do not stand out in the crowd; they do not mesmerize an attending audience with their brilliance or eloquence. Rather, what distinguishes them is their clarity and persuasiveness of their ideas, the depth of their commitment, and their openness to continually learning more.
+>
 >
 > <cite>Peter Senge, 2006, p.359</cite>
 
@@ -140,7 +137,9 @@ More and more organizations, companies and scholars of Leadership are starting t
 
 > Servant leadership emphasizes that leaders should be attentive to the needs of followers, empower them, and help them to develop their full capacities.
 >
-> Servant leaders make a conscious choice to serve first &ndash; to place the good of followers over the leaders&rsquo; self-interests. They build strong relationships with others, are empathic, and lead in ways that serve the greater good of followers, the organization, the community and society at large
+>
+> Servant leaders make a conscious choice to serve first – to place the good of followers over the leaders’ self-interests. They build strong relationships with others, are empathic, and lead in ways that serve the greater good of followers, the organization, the community and society at large
+>
 >
 > <cite>Peter G. Northouse, 2013, p.21</cite>
 
