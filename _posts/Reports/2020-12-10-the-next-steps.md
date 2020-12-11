@@ -5,9 +5,9 @@ layout: post
 hero:
 heroQuote: 'History shows that in times of great challenge, creativity thrives'
 hero_Quote_Cite: Kobus Grobler
-hero_image: /images/road.webp
-sprite_image: /images/sprites/sprite-Set1.webp
-sprite_selection_number: 1
+hero_image: /images/covid-in-africa-help-us.jpg
+sprite_image: /images/sprites/sprite-Set3.jpg
+sprite_selection_number: 4
 team-member: Kobus Grobler
 tags:
 category: Reports
