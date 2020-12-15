@@ -151,4 +151,10 @@ curricula:
     days_number: 10
     projects_number: 7
     sprite_selection_number: 14
+  - title: Marriage
+    objective: This course addresses the importance of a healthy marriage.
+    credits_number:
+    days_number:
+    projects_number:
+    sprite_selection_number:
 ---
