@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 424 424" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" style="white-space: pre;">
+    <defs>
+        <linearGradient id="svg_Gradient-1" x1="-16.865" y1="-129.871" x2="182.971" y2="74.5909" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#11171c" stop-opacity="0.46"/>
+            <stop id="offsetEnd" offset="1" stop-color="#11171c" stop-opacity="0.01"/>
+        </linearGradient>
+        <clipPath id="svg_shadowClipPath">
+            <ellipse id="svg_shadowClipPathSphere" rx="300" ry="300" fill="none" stroke-linecap="round" stroke="none" stroke-width="0" transform="translate(9.994,-90.592) scale(0.7,0.7)"/>
+        </clipPath>
+    </defs>
+    <circle class="logoBorder" fill="transparent" r="210" cx="212" cy="212"/>
+    <g class="svg_YouLogo" transform="translate(275.742,256.363) translate(-197.276,-194.981)">
+        <path class="svg_shadow" d="M-121.028,-109.803C-78.1376,-104.259,-27.2355,-117.047,10.2153,-133.819L-33.0783,-176.954C-11.2132,-194.541,30.2661,-230.259,30.2661,-230.259L271.012,10.3787C269.328,16.2258,79.7434,148.752,79.7434,148.752L-8.16222,61.598L-1.33289,10.059Z" fill="url(#svg_Gradient-1)" stroke-linecap="round" stroke="none" fill-rule="evenodd" opacity="1" clip-path="url(#svg_shadowClipPath)" transform="translate(123.54,241.21)"/>
+        <g class="svg_Logo-Orig" transform="translate(103.4,150.894) scale(-1,1) translate(-85.8,-131.8)">
+            <path class="svg_body" d="M3.4,22.4C-28,67.4,-22.7,131.6,9.7,195.2C25.2,225.7,46.9,256,73.9,284C72.3,209.7,67.1,135.9,189.2,112.5C165.3,107,73,100.1,28.6,66.8C16.3,57.5,5.3,33.6,3.4,22.4Z" fill="#ffffff" stroke="none" stroke-width="0"/>
+        </g>
+        <ellipse class="svg_head" rx="41.4942" ry="41.4942" fill="#ffffff" stroke-linecap="round" stroke="none" transform="translate(107.106,22.7524) translate(18.7418,18.7418)"/>
+    </g>
+    <g class="svg_YouLogo-Flipped" display="none" transform="translate(275.742,256.363) translate(-197.276,-194.981)">
+        <path class="svg_shadow-2" d="M-49.5374,-57.936C-64.0592,-99.7023,-64.43,-144.661,10.2153,-133.819L-33.0783,-176.954C-11.2132,-194.541,30.2661,-230.259,30.2661,-230.259L412.109,162.075C410.425,167.922,284.711,315.198,284.711,315.198L17.4054,60.6655L-13.4099,10.5817Z" fill="url(#svg_Gradient-1)" stroke-linecap="round" stroke="none" fill-rule="evenodd" opacity="1" stroke-width="0" transform="translate(123.54,241.21)"/>
+        <g class="svg_LogoFlipped" transform="translate(103.4,150.894) scale(-1,1) translate(-85.8,-131.8)">
+            <path class="svg_body-2" d="M-67.2952,111.702C-29.6161,128.661,5.46882,121.631,37.8688,185.231C52.6335,232.136,48.803,254.314,48.803,282.045C145.502,206.993,155.139,60.9257,117.383,22.4C108.833,45.0121,106.994,63.3757,63.3507,83.3787C31.9823,98.8356,-34.846,111.702,-67.2952,111.702Z" fill="#ffffff" stroke="none" stroke-width="0"/>
+        </g>
+    </g>
+</svg>

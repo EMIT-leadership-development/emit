@@ -76,6 +76,11 @@ defaults:
       layout: "scrollyTelling"
   -
     scope:
+      path: "index2.html"
+    values:
+      layout: "scrollyTelling2"
+  -
+    scope:
       path: "_data"
     values:
       hero_image: "" # or any placeholder image you want
