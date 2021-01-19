@@ -98,10 +98,19 @@ curricula:
     days_number: 22
     projects_number: 9
     sprite_selection_number: 8
+  - title: Health
+    objective: >-
+      This course provides practical tools to address the health of communities:
+      Basic first aid, information about "dreaded deseases," how to maintain
+      food hygiene, and the importance of a balanced diet.
+    credits_number:
+    days_number:
+    projects_number:
+    sprite_selection_number:
   - title: Introduction to Leadership
     objective: >-
-      Paragraph describing objective of this section. Viverra cursus purus
-      delectus illo fugiat. Pariatur nostrud molestie quisque.
+      This is an introductory course to the principles of effective leadership
+      and leadership ethics.
     credits_number: 13
     days_number: 7
     projects_number: 2
@@ -152,11 +161,11 @@ curricula:
     days_number:
     projects_number:
     sprite_selection_number:
-  - title: Health
+  - title: Leadership Practice
     objective: >-
-      This course provides practical tools to address the health of communities:
-      Basic first aid, information about "dreaded deseases," how to maintain
-      food hygiene, and the importance of a balanced diet.
+      This course examines the practices of effective leaders: developing strong
+      teamwork, leading yourself, investing in yourself and your team,
+      developing good habits, and managing stress.
     credits_number:
     days_number:
     projects_number:
