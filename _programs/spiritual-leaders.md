@@ -59,6 +59,14 @@ curricula:
     days_number: 16
     projects_number: 6
     sprite_selection_number: 3
+  - title: Animism
+    objective: >-
+      We provide an understanding of how animism has impacted African indigenous
+      religion.
+    credits_number:
+    days_number:
+    projects_number:
+    sprite_selection_number:
   - title: Biblical Counselling
     objective: >-
       The course provides practical advice for numerous counseling topics, along
@@ -68,29 +76,34 @@ curricula:
     projects_number: 6
     sprite_selection_number: 4
   - title: Biblical Doctrines
-    objective: 'Ea do nihil! Reprehenderit. Mi dolor litora, habitasse. Perferendis velit.'
+    objective: A thorough examination of such essential Biblical doctrines.
     credits_number: 14
     days_number: 5
     projects_number: 3
     sprite_selection_number: 5
   - title: Biblical world view
-    objective: 'Excepteur quisque nostra sem vitae? Tempora vel varius, quos eiusmod.'
+    objective: >-
+      This course examines how animism, polytheism, and secularism all
+      contribute to societal worldviews. The course also sets forth a distinctly
+      Biblical worldview.
     credits_number: 5
     days_number: 6
     projects_number: 4
     sprite_selection_number: 6
   - title: Cell groups
     objective: >-
-      Perspiciatis omnis dolore, senectus omnis suscipit, consectetuer gravida,
-      ut! Ultrices.
+      aCell groups are vital to the growth of the church.  A distinctly African
+      context for establishing cell groups in your church is
+      presented.Perspiciatis omnis dolore, senectus omnis suscipit, consectetuer
+      gravida, ut! Ultrices.
     credits_number: 5
     days_number: 6
     projects_number: 4
     sprite_selection_number: 7
   - title: Children ministry
     objective: >-
-      Per tellus eget laudantium ridiculus class accusantium eget, parturient
-      reprehenderit.
+      The course looks at practical issues, while at the same time maintaining
+      age-appropriate strategies for children’s ministry.
     credits_number: 13
     days_number: 5
     projects_number: 10
@@ -141,10 +154,8 @@ curricula:
     days_number:
     projects_number:
     sprite_selection_number:
-  - title: Animism
-    objective: >-
-      We provide an understanding of how animism has impacted African indigenous
-      religion.
+  - title:
+    objective:
     credits_number:
     days_number:
     projects_number:
