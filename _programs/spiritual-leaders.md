@@ -130,4 +130,12 @@ curricula:
     days_number: 12
     projects_number: 2
     sprite_selection_number: 13
+  - title: Developing a Healthy Church
+    objective: >-
+      The course strives to implement thoughtful and strategic change in
+      ministry philosophy, strategies, and systems.
+    credits_number:
+    days_number:
+    projects_number:
+    sprite_selection_number:
 ---
