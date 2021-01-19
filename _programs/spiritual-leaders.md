@@ -140,8 +140,9 @@ curricula:
     sprite_selection_number: 12
   - title: Community Transformation
     objective: >-
-      Proident qui fugit nihil commodo placerat vulputate maecenas. Netus,
-      omnis.
+      The course examines practical ways in which churches can make a positive
+      and life-giving contribution into our communities and be ‘light’ in the
+      world.
     credits_number: 17
     days_number: 12
     projects_number: 2
@@ -154,8 +155,34 @@ curricula:
     days_number:
     projects_number:
     sprite_selection_number:
-  - title:
-    objective:
+  - title: Effective Preaching
+    objective: >-
+      This course covers the preparation of the messenger, development of the
+      message, and the delivery of the message.
+    credits_number:
+    days_number:
+    projects_number:
+    sprite_selection_number:
+  - title: Ethnic Reconciliation
+    objective: >-
+      We look at issues of race and ethnicity in different cultures and how to
+      eliminate racial tensions and hostilities.
+    credits_number:
+    days_number:
+    projects_number:
+    sprite_selection_number:
+  - title: HIV/AIDS
+    objective: >-
+      This course provides an overview of what causes HIV/Aids, how it is
+      spread, and how we can provide moral direction and compassionate care.
+    credits_number:
+    days_number:
+    projects_number:
+    sprite_selection_number:
+  - title: How to Interpret the Bible 1
+    objective: >-
+      We do a Biblical survey of the Scriptures and cover basic tools of
+      Biblical interpretation, “Observation, Interpretation, and Application.”
     credits_number:
     days_number:
     projects_number:
