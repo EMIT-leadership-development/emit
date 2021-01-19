@@ -270,4 +270,71 @@ curricula:
     days_number:
     projects_number:
     sprite_selection_number:
+  - title: Prayer
+    objective: >-
+      This course examines both the Biblical teachings regarding prayer and
+      Biblical examples of prayer.
+    credits_number:
+    days_number:
+    projects_number:
+    sprite_selection_number:
+  - title: Purpose Driven Church
+    objective: >-
+      This course helps us to understand the Biblical purpose of the Church.
+      (Based on book by Rick Warren)
+    credits_number:
+    days_number:
+    projects_number:
+    sprite_selection_number:
+  - title: Youth Ministry
+    objective: >-
+      The course covers many strategic and practical aspects of establishing an
+      effective church youth ministry.
+    credits_number:
+    days_number:
+    projects_number:
+    sprite_selection_number:
+  - title: Spiritual Leadership 1
+    objective: >-
+      We focus on the personal development of a leader – the preparation and
+      development of a leader’s vision and an understanding of critical
+      thinking.
+    credits_number:
+    days_number:
+    projects_number:
+    sprite_selection_number:
+  - title: Spiritual Leadership 2
+    objective: >-
+      The course looks at Biblical and practical aspects of the goals of a
+      leader, decision-making, and the pitfalls of being a Christian leader.
+    credits_number:
+    days_number:
+    projects_number:
+    sprite_selection_number:
+  - title: Spiritual Warfare
+    objective: >-
+      This course is a Biblical examination of Satan’s activity on the earth,
+      and the believer’s authority.
+    credits_number:
+    days_number:
+    projects_number:
+    sprite_selection_number:
+  - title: The Church
+    objective: >-
+      The local church is the “manifold wisdom of God,” and is described as the
+      Bride of Christ. The course examines the Old Testament and New Testament
+      understanding of the people of God.
+    credits_number:
+    days_number:
+    projects_number:
+    sprite_selection_number:
+  - title: Worship
+    objective: >-
+      This course examines a Biblical theology for worship, and also looks at
+      how the Church can be taught and encouraged by a Biblical perspective on
+      worship.
+    credits_number:
+    days_number:
+    projects_number:
+    sprite_selection_number:
 ---
