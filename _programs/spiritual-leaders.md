@@ -132,8 +132,8 @@ curricula:
     sprite_selection_number: 11
   - title: Classical Discipleship
     objective: >-
-      Integer hymenaeos varius mus nostra, laboris! Etiam? Accusantium.
-      Voluptates parturient.
+      This course provides practical topics designed to bring the new or
+      immature believer into a deeper, more fruitful relationship with Christ.
     credits_number: 10
     days_number: 6
     projects_number: 2
