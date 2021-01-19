@@ -109,23 +109,23 @@ curricula:
     projects_number: 10
     sprite_selection_number: 8
   - title: Church administration
-    objective: Posuere excepteur lectus? Nunc cumque soluta vitae rem turpis feugiat.
+    objective: >-
+      The course provides practical, easy-to-use systems for church
+      administration.
     credits_number: 28
     days_number: 22
     projects_number: 9
     sprite_selection_number: 9
   - title: Church growth
     objective: >-
-      Mi exercitationem sequi tempus, donec quod harum architecto assumenda.
-      Nulla.
+      We examine several of Christianity's contemporary experts in the study of
+      Church Growth.
     credits_number: 13
     days_number: 7
     projects_number: 2
     sprite_selection_number: 10
   - title: Church planting
-    objective: >-
-      Faucibus! Felis accumsan! Praesentium sociis? Suspendisse! Felis interdum
-      labore! Dicta.
+    objective: The course examines contemporary church planting movements.
     credits_number: 20
     days_number: 15
     projects_number: 5
