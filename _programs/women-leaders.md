@@ -90,18 +90,10 @@ curricula:
     days_number: 6
     projects_number: 4
     sprite_selection_number: 6
-  - title: Family
-    objective: >-
-      Paragraph describing objective of this section. Occaecat. Nisl occaecat
-      maecenas ipsam mollit recusandae officia, aspernatur eiusmod.
-    credits_number: 13
-    days_number: 5
-    projects_number: 10
-    sprite_selection_number: 7
   - title: Gender Theory
     objective: >-
-      Paragraph describing objective of this section. Felis lacinia nascetur
-      magnis consequatur anim fuga? Tempus. Porta officia.
+      This course is a biblical examination of gender equality and God's
+      positive view of women.
     credits_number: 28
     days_number: 22
     projects_number: 9
@@ -156,6 +148,15 @@ curricula:
     sprite_selection_number: 14
   - title: Marriage
     objective: This course addresses the importance of a healthy marriage.
+    credits_number:
+    days_number:
+    projects_number:
+    sprite_selection_number:
+  - title: Health
+    objective: >-
+      This course provides practical tools to address the health of communities:
+      Basic first aid, information about "dreaded deseases," how to maintain
+      food hygiene, and the importance of a balanced diet.
     credits_number:
     days_number:
     projects_number:
