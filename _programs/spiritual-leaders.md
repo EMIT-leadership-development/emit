@@ -228,4 +228,46 @@ curricula:
     days_number:
     projects_number:
     sprite_selection_number:
+  - title: 'Law, Grace & Righteousness'
+    objective: >-
+      A thorough theological and practical understanding of Paul’s epistle to
+      the Galatians, written in response to the “Judaizers” who were a
+      legalistic first century sect, and its contemporary implications, are
+      covered.
+    credits_number:
+    days_number:
+    projects_number:
+    sprite_selection_number:
+  - title: Leadership Ethics
+    objective: >-
+      This bold course addresses the issues of money, sex and power in the life
+      of leaders candidly and Biblically.
+    credits_number:
+    days_number:
+    projects_number:
+    sprite_selection_number:
+  - title: Marriage & Family
+    objective: >-
+      The course examines the Old and New Testament teachings regarding marriage
+      as well as sexuality, children, divorce, and remarriage.
+    credits_number:
+    days_number:
+    projects_number:
+    sprite_selection_number:
+  - title: Mentoring
+    objective: >-
+      This course examines Biblical and practical ways to establish healthy and
+      productive mentoring relationships.
+    credits_number:
+    days_number:
+    projects_number:
+    sprite_selection_number:
+  - title: Mission of the Church
+    objective: >-
+      Along with a theological understanding of ‘mission,’ the course covers
+      strategies to do cross-cultural ministry.
+    credits_number:
+    days_number:
+    projects_number:
+    sprite_selection_number:
 ---
