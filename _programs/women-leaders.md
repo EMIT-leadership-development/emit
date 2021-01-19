@@ -115,57 +115,82 @@ curricula:
     days_number: 7
     projects_number: 2
     sprite_selection_number: 9
+  - title: Leadership Practice
+    objective: >-
+      This course examines the practices of effective leaders: developing strong
+      teamwork, leading yourself, investing in yourself and your team,
+      developing good habits, and managing stress.
+    credits_number:
+    days_number:
+    projects_number:
+    sprite_selection_number:
   - title: Life skills 1
     objective: >-
-      Paragraph describing objective of this section. Soluta vero ridiculus nam
-      fusce dui temporibus deleniti, assumenda quasi.
+      The goal of this course is to help the student articulate a clear vision
+      for their life and develop a plan to attain developed goals.
     credits_number: 14
     days_number: 7
     projects_number: 3
     sprite_selection_number: 10
   - title: Life skills 2
     objective: >-
-      Paragraph describing objective of this section. Officiis atque etiam odit,
-      sagittis vitae dicta ac veritatis delectus.
+      This course will walk a student through the process of writing a CV, and
+      applying for and interviewing for a job. Communication and problem solving
+      skills are highlighted and the importance of personal, social, business,
+      and electronic etiquette is examined.
     credits_number: 20
     days_number: 15
     projects_number: 5
     sprite_selection_number: 11
-  - title: In the workplace
+  - title: Mentoring
     objective: >-
-      Paragraph describing objective of this section. Consequat pretium
-      voluptatum tellus at! Perspiciatis ducimus dignissim, pulvinar doloribus.
+      We examine Biblical and practical ways to establish healthy and productive
+      mentoring relationships.
     credits_number: 10
     days_number: 6
     projects_number: 2
     sprite_selection_number: 12
-  - title: The Kingdom of God
+  - title: Self-Management
     objective: >-
-      Paragraph describing objective of this section. Nec erat sequi risus ac
-      aliquip dolores mus aperiam pede.
+      This course provides a reproducible model for developing and fostering
+      healthy interpersonal relationships.  It also emphasizes the importance of
+      emotional intelligence, problem solving, creative thinking, and healthy
+      self image and confidence.
     credits_number: 17
     days_number: 12
     projects_number: 2
     sprite_selection_number: 13
-  - title: Women & the Law
+  - title: Time and Project Management
     objective: >-
-      Paragraph describing objective of this section. Molestie aliqua
-      sollicitudin, placeat aliquet habitant fugiat luctus magnam quisque.
+      This course addresss the importance of good time management skills and
+      examines the steps and skills needed to manage a project, big or small,
+      effectively.
     credits_number: 16
     days_number: 10
     projects_number: 7
     sprite_selection_number: 14
-  - title: Marriage
-    objective: This course addresses the importance of a healthy marriage.
+  - title: The Kingdom of God
+    objective: >-
+      This course examines the Biblical understanding of the Kingdom and how it
+      provides us with an understanding of all that we do for Christ.
     credits_number:
     days_number:
     projects_number:
     sprite_selection_number:
-  - title: Leadership Practice
+  - title: Understanding the Bible
     objective: >-
-      This course examines the practices of effective leaders: developing strong
-      teamwork, leading yourself, investing in yourself and your team,
-      developing good habits, and managing stress.
+      This course will help students understand the Bible and its context as a
+      whole: the central message, history, lay out, old & new testament and the
+      use of other resources.
+    credits_number:
+    days_number:
+    projects_number:
+    sprite_selection_number:
+  - title: Marriage
+    objective: >-
+      This course will help students understand the Bible and its context as a
+      whole: the central message, history, lay out, old & new testament and the
+      use of other resources.
     credits_number:
     days_number:
     projects_number:
