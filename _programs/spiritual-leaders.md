@@ -141,4 +141,12 @@ curricula:
     days_number:
     projects_number:
     sprite_selection_number:
+  - title: Animism
+    objective: >-
+      We provide an understanding of how animism has impacted African indigenous
+      religion.
+    credits_number:
+    days_number:
+    projects_number:
+    sprite_selection_number:
 ---
