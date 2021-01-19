@@ -187,4 +187,45 @@ curricula:
     days_number:
     projects_number:
     sprite_selection_number:
+  - title: How to Interpret the Bible 2
+    objective: >-
+      This course examines the Old Testament, looking at both chronological
+      divisions and genre distinctions such as narrative, poetry, prophetic
+      portions of Scripture.
+    credits_number:
+    days_number:
+    projects_number:
+    sprite_selection_number:
+  - title: How to Interpret the Bible 3
+    objective: >-
+      We examine the New Testament, both historically and by thematic and genre
+      divisions.  Emphasis is upon how to interpret and apply different types of
+      New Testament Scriptures.
+    credits_number:
+    days_number:
+    projects_number:
+    sprite_selection_number:
+  - title: Interpersonal Relationships/ Conflict Resolution
+    objective: >-
+      This course provides a reproducible model for developing and fostering
+      healthy interpersonal relationships.  We provide a model for resolving the
+      conflict in ways that maintains relationships.
+    credits_number:
+    days_number:
+    projects_number:
+    sprite_selection_number:
+  - title: Islam
+    objective: This course provides a thorough look at practical ways to understand Islam
+    credits_number:
+    days_number:
+    projects_number:
+    sprite_selection_number:
+  - title: Kingdom of God
+    objective: >-
+      This course examines the Biblical understanding of the Kingdom and how it
+      provides us with an understanding of all that we do for Christ
+    credits_number:
+    days_number:
+    projects_number:
+    sprite_selection_number:
 ---
