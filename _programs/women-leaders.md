@@ -188,9 +188,8 @@ curricula:
     sprite_selection_number:
   - title: Marriage
     objective: >-
-      This course will help students understand the Bible and its context as a
-      whole: the central message, history, lay out, old & new testament and the
-      use of other resources.
+      The course examines the Old and New Testament teachings regarding marriage
+      as well as sexuality, children, divorce, and remarriage.
     credits_number:
     days_number:
     projects_number:
