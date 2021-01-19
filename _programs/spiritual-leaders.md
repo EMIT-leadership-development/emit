@@ -35,31 +35,34 @@ description_markdown: >-
   skills development.
 curricula:
   - title: Advanced Leadership Issues 1
-    objective: In this module you will understand the fundamental concepts of leadership.
+    objective: >-
+      This course examines current trends in leadership today. Personal
+      leadership development is emphasized.
     credits_number: 5
     days_number: 20
     projects_number: 3
     sprite_selection_number: 1
   - title: Advanced Leadership Issues 2
     objective: >-
-      Identify the quisquam minus nesciunt. Mattis tempore laboris odio pede
-      possimus elit.
+      We focus on the leader’s relationship with those whom he is leading, into
+      developing healthy models of accountability and organizational
+      relationships.
     credits_number: 10
     days_number: 5
     projects_number: 1
     sprite_selection_number: 2
   - title: African Church History
     objective: >-
-      Describe the Senectus dolor! Id exercitation a eaque primis earum porta
-      mus.
+      This course gives an historical overview of the history and growth of the
+      Gospel on the African continent.
     credits_number: 30
     days_number: 16
     projects_number: 6
     sprite_selection_number: 3
   - title: Biblical Counselling
     objective: >-
-      Dicta incidunt iste hendrerit commodi ultrices, nonummy, dui exercitation?
-      Mauris.
+      The course provides practical advice for numerous counseling topics, along
+      with an overview of counseling practices and procedures.
     credits_number: 3
     days_number: 15
     projects_number: 6
