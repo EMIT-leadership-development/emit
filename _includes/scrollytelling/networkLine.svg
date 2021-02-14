@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Keyshape -->
+<svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" viewBox="0 0 600 600" height="600" width="600" style="white-space: pre;">
+    <style>
+@keyframes circle_t { 0% { transform: translate(300px,300px); animation-timing-function: cubic-bezier(0,0,0.58,1); } 100% { transform: translate(600px,300px); } }
+    </style>
+    <path id="line" d="M0,0L300,0" stroke="#edf5f9" fill="none" stroke-width="2" transform="translate(300,300)"/>
+    <ellipse id="circle" rx="7.18269" ry="7.18269" stroke="none" fill="#edf5f9" stroke-width="2" transform="translate(300,300)" style="animation: 2s linear infinite both circle_t;"/>
+</svg>

@@ -176,6 +176,26 @@ section {
 		padding-right: 2rem;
 		padding-left: 2rem;
 	}
+	.leftToThree {
+		grid-column: 1 / span 3;
+		padding-right: 2rem;
+		padding-left: 2rem;
+	}
+	.leftToFour {
+		grid-column: 1 / span 4;
+		padding-right: 2rem;
+		padding-left: 2rem;
+	}
+	.fourToRight {
+		grid-column: 4 / span 5;
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+	.fiveToRight {
+		grid-column: 5 / span 4;
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
 	.TwoToRight {
 		grid-column: 3 / span 6;
 		padding-left: 2rem;
@@ -185,6 +205,16 @@ section {
 		grid-column: 1 / span 6;
 		padding-left: 2rem;
 		padding-right: 2rem;
+	}
+	.FirstFive {
+		grid-column: 1 / span 5;
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+	.SixToRight {
+		grid-column: 6 / span 3;
+		padding-right: 2rem;
+		padding-left: 2rem;
 	}
 	.SevenToRight {
 		grid-column: 7 / span 2;

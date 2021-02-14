@@ -11,17 +11,163 @@ $annaInTheCenterWidth: 200px;
 $sphere1Width: 300px;
 $sphere2Width: 400px;
 $sphere3Width: 500px;
-$networkWidth: 600px;
-$planetWidth: 500px;
-$glow1Width: 600px;
-$glow2Width: 700px;
-$glow3Width: 800px;
-$textContainerWidth: 800px;
+
 
 
 #scrollyTellingWrap {
+    position: relative;
+    main {
+        position: relative;
+    }
     section {
+        background-color: lighten($brandContrastDark, 1%);
+        .sectionTitle {
+            color: rgba(255,255,255,0.8);
+        }
+        p {
+            color: rgba(255,255,255,0.7);
+            width: 100%;
+            font-size: 1.2rem;
+        }
+        z-index: 2;
         overflow: hidden;
+        position: relative;
+        height: 100vh;
+        max-height: 100vh;
+        width: 100vw;
+        &:not(#hero) {
+            padding-top: 65px;
+            box-sizing: border-box;
+        }
+
+        .sectionContent, .sectionIntro, .container {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-weight: 300;
+            box-sizing: border-box;
+            padding:0;
+            // border: 1px dashed yellow;
+            @media (max-width: 899px) {
+                text-align: center;
+            }
+        }
+    }
+    .wall {
+        @media (max-width: 899px) {
+            max-height: calc(50vh - 34px);
+            height: calc(50vh - 34px);
+            align-items: center;
+        }
+        .contentWrap {
+            width: 100%;
+            height: 100%;
+            // border: 1px solid red;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: absolute;
+            @media (max-width: 899px) {
+                align-items: center;
+            }
+            .innerWrap {
+                width: 85%;
+                height: 85%;
+                // border: 1px solid blue;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+            }
+        }
+        &:before {
+            content: "";
+            pointer-events: none;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: absolute;
+            z-index: 0;
+            @media (max-width: 899px) {
+                transform: rotate(90deg);
+                // Use height because rotated
+                width: calc(50vh - 34px);
+                // Use width because rotated
+                height: 100vw;
+            }
+        }
+        &.leftWall {
+            .contentWrap {
+                transform: perspective(500px) rotateY(10deg);
+                text-align: right;
+                align-items: flex-end;
+                @media (max-width: 899px) {
+                    text-align: center;
+                    align-items: center;
+                    transform: perspective(500px) rotateX( 342deg) rotateY( 0deg);
+                }
+            }
+            &:before {
+                background-image: url(/images/scrollyTelling/Leftwall.svg);
+                background-position: right center;
+                @media (max-width: 899px) {
+                    background-position: center top;
+                }
+            }
+        }
+        &.rightWall {
+            .contentWrap {
+                transform: perspective(500px) rotateY(-10deg);
+                align-items: flex-start;
+                @media (max-width: 899px) {
+                    align-items: center;
+                    transform: perspective(500px) rotateX( 11deg) rotateY( 0deg);
+                }
+            }
+            &:before {
+                background-image: url(/images/scrollyTelling/Rightwall.svg);
+                background-position: left center;
+                @media (max-width: 899px) {
+                    background-position: center bottom;
+                }
+            }
+        }
+
+    }
+    // Cute Cursor follower
+    .cursorFollower {
+        width: 30px;
+        height: 30px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        border: 1px solid #ffffff;
+        border-radius: 50%;
+        z-index: 900;
+        pointer-events: none;
+        opacity: 0.5;
+    }
+    .cursorFollowerInner {
+        width: 10px;
+        height: 10px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: #ffffff;
+        border-radius: 50%;
+        z-index: 900;
+        pointer-events: none;
+        opacity: 0.7;
+    }
+    .hoverAnim {
+        &:hover {
+            transform: scale(1.1);
+            transform-origin: 50% 50%;
+        }
     }
     // ----- GENERIC STYLES AND TOP NAV
     .mainNavigation {
@@ -43,6 +189,8 @@ $textContainerWidth: 800px;
     .sectionTitle {
         text-transform: unset;
         font-weight: 300;
+        font-size: clamp(1.2rem, 2vw, 28px);
+        margin-bottom: 1rem;
         .emphasis {
             font-weight: 400;
         }
@@ -50,45 +198,11 @@ $textContainerWidth: 800px;
         padding: 0;
         width: 100%;
     }
-    p {
-        width: 100%;
-    }
-    .dark, .darkest {
-        .sectionTitle {
-            color: rgba(255,255,255,0.8);
-        }
-        p {
-            color: rgba(255,255,255,0.7);
-        }
-    }
-    .sectionContent, .sectionIntro {
+    .spheresWrapResponsive {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        font-weight: 300;
-    }
-    section .container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-    .pin-spacer {
-        grid-template-columns: inherit;
-    }
-
-    // 3 SPHERES USED EVERYWHERE
-    .spheresWrap {
-        position: relative;
-        width: 500px;
-        height: 500px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        z-index: 999;
         .sphere {
             visibility: hidden;
             border-radius: 50%;
@@ -100,37 +214,137 @@ $textContainerWidth: 800px;
             align-items: center;
         }
         .sphere3 {
-            width: $sphere3Width;
-            height: $sphere3Width;
+            width: 100%;
+            height: 100%;
             background-color: $sphere3BG;
         }
-        .sphere2{
-            width: $sphere2Width;
-            height: $sphere2Width;
+        .sphere2 {
+            width: 80%;
+            height: 80%;
             background-color: $sphere2BG;
         }
         .sphere1 {
-            width: $sphere1Width;
-            height: $sphere1Width;
+            width: 60%;
+            height: 60%;
             background-color: $sphere1BG;
         }
         .animatedLogoWrap {
-            position: absolute;
+            width: 100%;
+            height: auto;
+        }
+    }
+    // All slide titles
+    .sectionHeadline {
+        pointer-events: none;
+        grid-column: 1 / span 3;
+        grid-row: 1;
+        position: absolute;
+        bottom: 2rem;
+        left: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        // padding: 2rem;
+        z-index: 50;
+        h1 {
             visibility: hidden;
-            width: $animatedLogoWidth;
-            svg {
+            position: relative;
+            margin: 0;
+            padding: 0;
+            margin-bottom: 0;
+            span {
+                display: block;
+            }
+            .title {
+                text-align: left;
+                color: #ffffff;
+                color: white;
+                font-family: "HelveticaUltraCompressed",Arial,Helvetica,sans-serif;
+                font-size: clamp(3rem, 7.5vw, 6rem);
+                text-transform: uppercase;
+                line-height: 0.6;
+                letter-spacing: 1px;
+                font-weight: normal;
+                white-space: nowrap;
+            }
+            .underline {
+                height: 5px;
                 width: 100%;
-                .logoBorder {
-                    fill: $sphere1BG;
-                    stroke: $brand-color;
-                    stroke-width: 3px;
+                background-color: #fff;
+            }
+        }
+        .subtitle {
+            @media (max-width: 700px) {
+                display: none;
+            }
+            padding-top: 0.5rem;
+            visibility: hidden;
+            text-transform: uppercase;
+            letter-spacing: .2em;
+            font-weight: 300;
+            color: #ffffff;
+            font-size: 1rem;
+        }
+    }
+    // ---------- SWIPER
+    // Swiper styling
+    .swiper-container {
+        width: 100vw;
+        height: 100vh;
+        .swiper-pagination {
+            left: 2rem;
+            width: 30px;
+            @media (max-width: 767px) {
+                display: none;
+            }
+            .swiper-pagination-bullet {
+                background-color: transparent;
+                color: white;
+                font: normal 10px/10px Arial, Helvetica, sans-serif;
+                margin: 32.5px 0 !important;
+                opacity: 1;
+                position: relative;
+                // left: 100px;
+                // opacity: 0
+                &:before {
+                    content: '';
+                    background: white;
+                    display: block;
+                    height: 1px;
+                    width: 0px;
+                    position: absolute;
+                    top: 50%;
+                    right: -10px;
+                    -webkit-transform: translate(100%, -50%);
+                    transform: translate(100%, -50%);
+                    transition: all .2s
                 }
+                &.swiper-pagination-bullet-active:before {
+                    width: 10px
+                }
+            }
+        }
+        .swiper-button-next {
+            bottom: 2rem;
+            top: unset;
+            transform-origin: "center center";
+            left: 0;
+            right: 0;
+            margin: auto;
+            transform: rotate(90deg);
+            color: #ffffff;
+            &:after {
+                content: 'next';
+                font-size: 1.5rem;
+            }
+            @media (max-width: 767px) {
+                display: none;
             }
         }
     }
 
-
-// ------------------SCROLLYTELLING SECTIONS
+    // ------------------SCROLLYTELLING SECTIONS
     // SECTION 0: HERO VIDEO
     .hero {
         box-sizing: border-box;
@@ -168,12 +382,23 @@ $textContainerWidth: 800px;
                 border: 0.5px solid rgba(255,255,255,0.3);
                 margin-bottom: 1rem;
                 margin-right: 4px;
+                @media (max-width: 320px) {
+                    display: block;
+                    .ctaTitle {
+                        text-align: center;
+                        width: 100%;
+                        padding-bottom: 0.5rem;
+                    }
+                }
                 .ctaTitle {
-                    font-size: 1.7rem;
+                    font-size: clamp(1.2rem, 2.5vw, 1.7rem);
                     color: #ffffff;
                     margin-right: 1rem;
+                    white-space: nowrap;
                 }
                 .ctaBtn {
+                    // font-size: 1.2vw;
+                    font-size: clamp(0.6rem, 2vw, 1rem);
                     margin: 0;
                     pointer-events: all;
                     background: $brand-color;
@@ -183,15 +408,18 @@ $textContainerWidth: 800px;
                     justify-content: center;
                     align-items: center;
                     padding: 0 1rem;
+                    white-space: nowrap;
                 }
             }
             .introHeadline {
                 perspective: 100px;
+                padding-bottom: 2rem;
                 h1 {
                     text-align: right;
                     color: #ffffff;
                     color: white;
-                    font: normal 6rem "HelveticaUltraCompressed",Arial,Helvetica,sans-serif;
+                    font-family: "HelveticaUltraCompressed",Arial,Helvetica,sans-serif;
+                    font-size: clamp(3rem, 7.5vw, 6rem);
                     text-transform: uppercase;
                     line-height: 1;
                     letter-spacing: 2px;
@@ -204,38 +432,739 @@ $textContainerWidth: 800px;
             }
         }
     }
+    // SLIDE 1: IMPACT
+    #impact {
+        .sectionContent {
+            z-index: 2;
+            align-items: center;
+        }
+        .sectionIntro {
+            align-items: center;
+            z-index: 1;
+            .innerWrap {
+                max-width: 400px;
+            }
+        }
+        $ballWidth: clamp(52px, 16vw, 140px);
+        $pendulumHeight: 50vh;
+        @media (max-width: 600px) {
+            .ball span {
+                display: none;
+            }
+        }
+        .pendulum{
+            top: - 15%;
+            z-index: 10;
+            @media (max-width: 899px) {
+                top: -45%;
+            }
+            .pendulum_box{
+                display: flex;
+                padding: $pendulumHeight 0 0 0;
+                flex: 1;
+            }
+            .ball{
+                position: relative;
+                height: $ballWidth;
+                width: $ballWidth;
+                border-radius: 50%;
+                position: relative;
+                transform-origin: 50% calc(#{$pendulumHeight} *-1);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: clamp(14px, 1.5vw, 1.3rem);
+                font-weight: 900;
+                color: #000000;
+                background-size: contain;
+                background-position: 50% 50%;
+                &.first {
+                    background-image: url(/images/interface/animatedLogo.svg);
+                    background-color: $brand-color;
+                    z-index: 1;
+                    .cable {
+                        background-color: $brand-color;
+                    }
+                }
+                &:nth-of-type(2) {
+                    background-color: $sphere1BG;
+                    z-index: 2;
+                    .cable {
+                        background-color: $sphere1BG;
+                    }
+                }
+                &:nth-of-type(3) {
+                    z-index: 3;
+                    background-color: $sphere2BG;
+                    .cable {
+                        background-color: $sphere2BG;
+                    }
+                }
+                &:nth-of-type(4) {
+                    z-index: 4;
+                    background-color: $sphere3BG;
+                    .cable {
+                        background-color: $sphere3BG;
+                    }
+                }
+            }
+            .ball .cable{
+                display: block;
+                width: 2px;
+                height: $pendulumHeight;
+                left: calc((#{$ballWidth} / 2) + 1px);
+                // top: calc(#{$pendulumHeight} *-1);
+                bottom: $ballWidth;
+                position: absolute;
+            }
+            .ball.first{
+                animation: firstball .9s alternate ease-in infinite;
+            }
+            @keyframes firstball{
+                0%{
+                    transform: rotate(35deg);
+                }
+                50%{
+                    transform: rotate(0deg);
+                }
+            }
+
+            .ball.last{
+                animation: lastball .9s alternate ease-out infinite;
+            }
+
+            @keyframes lastball{
+                50%{
+                    transform: rotate(0deg);
+                }
+                100%{
+                    transform: rotate(-35deg);
+                }
+            }
+        }
+    }
+    // SLIDE 2: AFRICA
+    #africa {
+        .sectionContent {
+            z-index: 2;
+        }
+        .sectionIntro {
+            .innerWrap {
+                max-width: 350px;
+            }
+        }
+        $wrap: clamp(250px, 40vw, 500px);
+        .africaStoryWrap {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: $wrap;
+            height: $wrap;
+            position: relative;
+            .annaInAfricaWrap {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img {
+                    width: 70%;
+                    height: auto;
+                }
+            }
+            .africasLeaders {
+                border: 1px solid #ffffff;
+                transform: rotate(-30deg);
+                width: $wrap;
+                height: $wrap;
+                overflow: hidden;
+                border-radius: 50%;
+                .leaderRow {
+                    box-sizing: content-box;
+                    width: $wrap;
+                    height: calc(#{$wrap} /5);
+                    display: flex;
+                    border-bottom: 1px solid #ffffff;
+                }
+                .africaLeader {
+                    overflow: hidden;
+                    box-sizing: border-box;
+                    width: 0;
+                    height: 100%;
+                    float: left;
+                    overflow: hidden;
+                    border-radius: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    background: rgba(0,0,0,0.4);
+                    svg {
+                        width: 60%;
+                    }
+                    &.transformer {
+                        width: $wrap;
+                        border-radius: 0;
+                        .symptom {
+                            position: absolute;
+                            font-weight: 900;
+                            font-size: clamp(20px, 5vw, 30px);
+                            color: #ffffff;
+                        }
+                        svg {
+                            visibility: hidden;
+                            transform: scale(0);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // SLIDE 3: ANNA
+    #anna {
+        .sectionIntro {
+            .contentWrap {
+                align-items: center;
+            }
+            .innerWrap {
+                max-width: 400px;
+            }
+        }
+        .annaWrap {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            #annasLeadersWrap {
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                z-index: 3;
+                width: clamp(250px, 40vw, 500px);
+                height: clamp(250px, 40vw, 500px);
+                svg {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    visibility: hidden;
+                    transform-origin: center center;
+                }
+                #parents {
+                    transform: rotate(-66deg);
+                }
+                #peers {
+                    transform: rotate(30deg);
+                }
+
+                #teachers {
+                    transform: rotate(-60deg);
+                }
+                #community {
+                    transform: rotate(10deg);
+                }
+
+                #polititians {
+                    transform: rotate(-60deg);
+                }
+                #religious {
+                    transform: rotate(0deg);
+                }
+            }
+            .spheresWrapResponsive {
+                width: clamp(250px, 40vw, 500px);
+                height: clamp(250px, 40vw, 500px);
+                .sphere {
+                    // visibility: visible;
+                    border: 1px solid #000000;
+                }
+                .sphere3 {
+                    background: darken($brandContrastDark, 5%);
+                }
+                .sphere2 {
+                    background: $brandContrastDark;
+                }
+                .sphere1 {
+                    background: lighten($brandContrastDark, 5%);
+                }
+                .annaInTheCenter {
+                    z-index: 2;
+                    border-radius: 50%;
+                    background-image: url(/images/scrollyTelling/Anna.jpg);
+                    background-position: 0, 50%;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .leader {
+                z-index: 4;
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: $brandContrastDarkest;
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                border: 1px solid #ffffff;
+                svg {
+                    width: 60px;
+                }
+            }
+        }
+
+    }
+    // SLIDE 4: JOSEPH
+    #joseph {
+        .sectionContent {
+            box-sizing: border-box;
+            canvas {
+                width: 100%;
+                max-width: 100%;
+                box-sizing: border-box;
+            }
+        }
+        .sectionIntro {
+            // overflow: hidden;
+            .innerWrap {
+                max-width: 450px;
+            }
+            .buttonRow {
+                width: 100%;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                .callToAction {
+                    font-weight: 300;
+                    color: #ffffff;
+                    white-space: nowrap;
+                    margin-right: 0.5rem;
+                }
+                .underline {
+                    width: 90px;
+                    height: 5px;
+                    background: #ffffff;
+                    display: block;
+                    margin-right: 0.5rem;
+                }
+                #startJoseph {
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    span.noticeMe {
+                        position: absolute;
+                        width: 300px;
+                        opacity: 0;
+                        z-index: 1;
+                        display: block;
+                        height: 300px;
+                        border-radius: 50%;
+                    };
+                    svg {
+                        fill: $brand-color;
+                        z-index: 2;
+                        width: 50px;
+                        stroke: #ffffff;
+                        stroke-width: 1px;
+                        box-shadow: rgba(0,0,0,.4), 5px 5px 2px;
+                    }
+                }
+            }
+        }
+        #infographicControls {
+            position: absolute;
+            bottom: 2rem;
+            right: 2rem;
+            z-index: 20;
+            grid-column: 8;
+            ul {
+                padding:0;
+                margin:0;
+                display: flex;
+                list-style: none;
+                li {
+                    position: relative;
+                    font-size: 10px;
+                    width: 20px;
+                    height: 30px;
+                    // border: 1px solid red;
+                    margin: 0 1px;
+                    cursor: pointer;
+                    // display: flex;
+                    // flex-direction: column;
+                    // justify-content: flex-end;
+                    // align-items: center;
+                    &:hover {
+                        transform: scale(1);
+                        .progressMarker {
+                            background: rgba(255,255,255,0.6);
+                        }
+                    }
+                    span {
+                        display: block;
+                    }
+                    .tooltip {
+                        transform: scale(0);
+                        transform-origin: center center;
+                        overflow: hidden;
+                        white-space: nowrap;
+                    }
+                    .progressIndicator {
+                        width: 0;
+                        height: 1px;
+                        background: $brand-color;
+                        position: absolute;
+                        bottom: 0;
+                    }
+                    .progressMarker {
+                        width: 100%;
+                        height: 1px;
+                        background: rgba(255,255,255,0.2);
+                        position: absolute;
+                        bottom: 0;
+                    }
+                }
+            }
+        }
+        #infographicWrapper {
+            scale:0;
+            z-index: 20;
+            box-sizing: border-box;
+            pointer-events: none;
+            position: absolute;
+            background: transparent;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            grid-column: 1 / span 8;
+            grid-row: 1;
+            padding: 0;
+            visibility: hidden;
+            height: 100%;
+            max-height: 100%;
+            width: 100%;
+            max-width: 100%;
+            canvas {
+                box-sizing: border-box;
+                position: absolute;
+                width: auto;
+                height: 100%;
+                z-index: 1;
+            }
+            .overlay {
+                visibility: hidden;
+                pointer-events: none;
+                position: absolute;
+                width: 110vw;
+                height: 110vh;
+                z-index: 3;
+            }
+            svg {
+                box-sizing: border-box;
+                position: absolute;
+                z-index: 2;
+                position: absolute;
+                height: 100%;
+                width: auto;
+                pointer-events: all;
+                #next1, #next2, #next3, #next4, #next5 {
+                    cursor: pointer;
+                }
+                // Paths and Morphs
+                #path-0, #path-1B, #path-2B, #path-3B, #path-4B, #path-5B, #path-6B, #path-7B, #path-8B, #path-9B, #path-10B {
+                    // stroke: red;
+                    visibility: hidden;
+                }
+                #blip4, #blip5, #blip6, #blip7, #blip8, #blip9, #blip10{
+                    visibility: hidden;
+                    // stroke: red;
+                }
+                #village {
+                    visibility: hidden;
+                }
+                #villageOverlay {
+                    visibility: hidden;
+                }
+                #blip1ToJospeh, #blip2ToJospeh, #blip3ToJospeh {
+                    visibility: hidden;
+                }
+                // #G1_JosephAndSpheres
+                #s3, #s2, #s1, #expandingCircle, #josephInVillageTransparent, #josephAndShadow, #TextMeetJoseph {
+                    visibility: hidden;
+                }
+                // Joseph Impact
+                #trainingBooks, #josephImpactText {
+                    visibility: hidden;
+                }
+                // Our Programs
+                #G3_OurPrograms, #trainingBlips {
+                    visibility: hidden;
+                }
+                // Mandate
+                #G4_Mandate {
+                    visibility: hidden;
+                }
+                #leaderBlips-1, #leaderBlips-2, #leaderBlips-3, #leaderBlips-4, #leaderBlips-5, #leaderBlips-6, #leaderBlips-7, #leaderBlips-8, #leaderBlips-9, #leaderBlips-10 {
+                    ellipse {
+                        visibility: hidden;
+                    }
+                }
+                #leaderSpheres-1, #leaderSpheres-2, #leaderSpheres-3, #leaderSpheres-4, #leaderSpheres-5, #leaderSpheres-6, #leaderSpheres-7, #leaderSpheres-8, #leaderSpheres-9, #leaderSpheres-10 {
+                    ellipse {
+                        visibility: hidden;
+                    }
+                }
+                #leaderButton-1, #leaderButton-2, #leaderButton-3, #leaderButton-4, #leaderButton-5, #leaderButton-6, #leaderButton-7, #leaderButton-8, #leaderButton-9, #leaderButton-10 {
+                    cursor: pointer;
+                }
+                #satelites {
+                    ellipse {
+                        visibility: hidden;
+                    }
+                }
+
+                // #womenLeaders, #spiritualLeaders, #youthLeaders, #healthLeaders, #mediaLeaders, #politicalLeaders, #sportsLeaders, #businessLeaders, #educators, #lawLeaders {
+                // }
+            }
+        }
+    }
+
+
+    // .container {
+    //     grid-row: 1;
+    //     display: flex;
+    //     flex-direction: row;
+    //     justify-content: center;
+    //     max-height: 100vh;
+    //     .sectionContent {
+    //         width: 70%;
+    //         height: 100%;
+    //         overflow: hidden;
+    //         display: flex;
+    //         justify-content: center;
+    //         align-items: center;
+    //         position: relative;
+    //         background: url(/images/scrollyTelling/Leftwall.svg);
+    //         background-position: right center;
+    //         background-size: cover;
+    //         background-repeat: no-repeat;
+    //         canvas {
+    //             transform: perspective(500px) rotateY(10deg);
+    //             max-width: 70%;
+    //             width: 70%;
+    //             height: auto;
+    //         }
+    //     }
+        // .sectionIntro {
+        //     position: relative;
+        //     width: 30%;
+        //     height: 100%;
+        //     position: relative;
+        //     // overflow: hidden;
+        //     // border: 1px solid red;
+        //     z-index: 9;
+        //     background: url(/images/scrollyTelling/Rightwall.svg);
+        //     background-position: left center;
+        //     background-size: cover;
+        //     background-repeat: no-repeat;
+        //     .textWrap {
+        //         position: absolute;
+        //         height: 100%;
+        //         width: 20vw;
+        //         min-width: 20vw;
+        //         transform: perspective(500px) rotateY(-10deg);
+        //         display: flex;
+        //         flex-direction: column;
+        //         justify-content: center;
+        //         align-items: flex-start;
+        //         .buttonRow {
+        //             display: flex;
+        //             justify-content: flex-start;
+        //             align-items: center;
+        //             .callToAction {
+        //                 font-weight: 300;
+        //                 color: #ffffff;
+        //                 white-space: nowrap;
+        //                 margin-right: 0.5rem;
+        //             }
+        //             .underline {
+        //                 width: 40%;
+        //                 height: 5px;
+        //                 background: #ffffff;
+        //                 display: block;
+        //                 margin-right: 0.5rem;
+        //             }
+        //             #startJoseph {
+        //                 cursor: pointer;
+        //                 display: flex;
+        //                 justify-content: center;
+        //                 align-items: center;
+        //                 span.noticeMe {
+        //                     position: absolute;
+        //                     width: 300px;
+        //                     opacity: 0;
+        //                     z-index: 1;
+        //                     display: block;
+        //                     height: 300px;
+        //                     border-radius: 50%;
+        //                 };
+        //                 svg {
+        //                     fill: $brand-color;
+        //                     z-index: 2;
+        //                     width: 50px;
+        //                     stroke: #ffffff;
+        //                     stroke-width: 1px;
+        //                     box-shadow: rgba(0,0,0,.4), 5px 5px 2px;
+        //                 }
+        //             }
+        //         }
+        //     }
+    //         .africanVillageWrap {
+    //             width: 100vw;
+    //             height: 100vh;
+    //             // overflow: hidden;
+    //             // border: 10px solid yellow;
+    //             box-sizing: border-box;
+    //             position: relative;
+    //             visibility: hidden;
+    //             display: flex;
+    //             flex-direction: column;
+    //             justify-content: center;
+    //             align-items: center;
+    //             img {
+    //                 // border: 10px solid blue;
+    //                 width: 110%;
+    //                 position: absolute;
+    //                 height: auto;
+    //                 visibility: hidden;
+    //                 @media (max-width: 1230px) {
+    //                     width: auto;
+    //                     max-width: unset;
+    //                     height: 110%;
+    //                 }
+    //             }
+    //             svg {
+    //                 // border: 10px dashed pink;
+    //                 position: absolute;
+    //                 width: 110%;
+    //                 height: auto;
+    //                 @media (max-width: 1230px) {
+    //                     width: auto;
+    //                     max-width: unset;
+    //                     height: 110%;
+    //                 }
+    //                 #next1, #next2, #next3, #next4, #next5 {
+    //                     cursor: pointer;
+    //                 }
+    //                 // Paths and Morphs
+    //                 #path1, #blipMorph1, #blipMorph2, #blipMorph3, #trainingBlip1Copy, #trainingBlip2Copy, #trainingBlip3Copy {
+    //                     visibility: hidden;
+    //                     // stroke: red;
+    //                 }
+    //                 // #G1_JosephAndSpheres
+    //                 #s3, #s2, #s1, #expandingCircle, #josephAndShadow, #TextMeetJoseph {
+    //                     visibility: hidden;
+    //                 }
+    //                 // Joseph Impact
+    //                 #trainingBooks, #josephImpactText {
+    //                     visibility: hidden;
+    //                 }
+    //                 // Our Programs
+    //                 #G3_OurPrograms, #trainingBlips {
+    //                     visibility: hidden;
+    //                 }
+    //                 // Mandate
+    //                 #G4_Mandate {
+    //                     visibility: hidden;
+    //                 }
+    //                 #womenLeaders, #spiritualLeaders, #youthLeaders, #healthLeaders, #mediaLeaders, #politicalLeaders, #sportsLeaders, #businessLeaders, #educators, #lawLeaders {
+    //                     visibility: hidden;
+    //                 }
+    //             }
+    //         }
+    //         .overlay {
+    //             visibility: hidden;
+    //             pointer-events: none;
+    //             position: absolute;
+    //             // background: radial-gradient(circle 0px at 50% 50%,rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 80%,rgba(0,0,0,0.7) 100%);
+    //             width: 110vw;
+    //             height: 110vh;
+    //             z-index: 5;
+    //         }
+    //     }
+    // }
+
+
+
+
+
+
+
+
+
+
+
+
     // SECTION 1: YOUR IMPACT SPHERES
     #yourImpact {
         .sectionTitle {
             border-left: #4b4e53 2px solid;
             padding: 22px 25px 24px 25px;
         }
+        .spheresWrapResponsive {
+            width: clamp(400px, 40vw, 500px);
+            height: clamp(400px, 40vw, 500px);
+        }
     }
     // SECTION 2: THE PEOPLE YOU IMPACT PENDULUM
     #yourPeopleImpact {
+        $ballWidth: clamp(55px, 12vw, 200px);
+        $pendulumHeight: 30vh;
+        @media (max-width: 800px) {
+            .ball span {
+                display: none;
+            }
+            .container p.introduction {
+                display: block;
+                width: 100%;
+                text-align: center;
+            }
+        }
         .container {
             padding-top: 0;
+            p {
+                display: none;
+            }
         }
         .pendulum{
-            width: 750px;
-            height:$sphere3Width;
+            height:auto;
             align-items: center;
             .pendulum_box{
                 display: flex;
-                padding: calc(#{$sphere3Width} - 150px) 0 0 0;
+                padding: $pendulumHeight 0 0 0;
                 flex: 1;
             }
             .ball{
-                height: 150px;
-                width: 150px;
+                height: $ballWidth;
+                width: $ballWidth;
                 border-radius: 50%;
                 background-color: $brand-color;
                 position: relative;
-                transform-origin: 50% -400%;
+                transform-origin: 50% calc(#{$pendulumHeight} *-1);
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                font-size: 18px;
+                font-size: clamp(14px, 0.8vw, 4rem);
                 font-weight: 900;
                 color: rgba(0,0,0,0.6);
                 background-size: contain;
@@ -247,10 +1176,10 @@ $textContainerWidth: 800px;
             .ball::before{
                 content: '';
                 width: 2px;
-                height: calc(#{$sphere3Width} - 150px);
+                height: $pendulumHeight;
                 background-color: $brand-color;
-                left: 73px;
-                top: calc(-#{$sphere3Width} + 150px);
+                left: calc((#{$ballWidth} / 2) + 2px);
+                top: calc(#{$pendulumHeight} *-1);
                 position: absolute;
             }
 
@@ -286,17 +1215,23 @@ $textContainerWidth: 800px;
     }
     // SECTION 3: YOUR LEGACY
     #yourLegacy {
+        $planetWidth: clamp(300px,30vw,500px);
+        $networkWidth: clamp(360px,36vw,600px);
+        $glow3Width: 120%;
+        $glow2Width: 140%;
+        $glow1Width: 160%;
+
         #planetWrap {
             .planet {
-                // position: absolute;
+                position: relative;
                 box-sizing: border-box;
                 width: $planetWidth;
                 height: $planetWidth;
-                border-radius: 50%;
                 display:flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
+                overflow: visible;
                 .planetGlow {
                     position: absolute;
                     border-radius: 50%;
@@ -344,7 +1279,6 @@ $textContainerWidth: 800px;
             #planetNetwork {
                 position: absolute;
                 width: $networkWidth;
-                height: $networkWidth;
                 z-index: 11;
                 max-width: unset
             }
@@ -352,67 +1286,69 @@ $textContainerWidth: 800px;
     }
     // SECTION 4: AFRICA'S STORY
     #africaStory {
-        height: 100vh;
+        min-height: 100vh;
+        $wrap: clamp(400px, 40vw, 500px);
         .africaStoryWrap {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            width: $wrap;
+            height: $wrap;
+            position: relative;
             .annaInAfricaWrap {
-                width: $sphere2Width;
-                height: auto;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 img {
-                    width: 100%;
+                    width: 70%;
+                    height: auto;
                 }
             }
             .africasLeaders {
-                // border: 1px solid yellow;
-                margin-top: -24px;
-                margin-left: -30px;
-                position: absolute;
-                transform: rotate(-20deg);
-                transform-origin: 50% 50%;
-                height: calc(#{$sphere3Width});
-                width: calc(#{$sphere3Width});
-                border-radius: 50%;
-                position: absolute;
+                border: 1px solid #ffffff;
+                transform: rotate(-30deg);
+                width: $wrap;
+                height: $wrap;
                 overflow: hidden;
-                display: grid;
-                grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+                border-radius: 50%;
                 .leaderRow {
-                    // border: 1px solid yellow;
-                    box-sizing: border-box;
-                    position: relative;
-                    width: $sphere3Width;
-                    height: calc(#{$sphere3Width} / 5);
-                    overflow: hidden;
+                    box-sizing: content-box;
+                    width: $wrap;
+                    height: calc(#{$wrap} /5);
                     display: flex;
-                    border-bottom: 1px solid rgba(255,255,255,0.6);
-                    .africaLeader {
-                        height: 100px;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        &.reveal {
-                            width: 0;
-                            overflow: hidden;
-                            visibility: hidden;
-                        }
-                        &.transformer {
-                            width: 500px;
-                            background: $brandContrastDarkest;
-                            opacity: 0.7;
-                            .symptom {
-                                position: absolute;
-                                font-weight: 900;
-                                font-size: 30px;
-                                color: #ffffff;
-                            }
+                    border-bottom: 1px solid #ffffff;
+                }
+                .africaLeader {
+                    overflow: hidden;
+                    box-sizing: border-box;
+                    width: 0;
+                    height: 100%;
+                    float: left;
+                    overflow: hidden;
+                    border-radius: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    background: rgba(0,0,0,0.4);
+                    svg {
+                        width: 60%;
+                    }
+                    &.transformer {
+                        width: $wrap;
+                        border-radius: 0;
+                        .symptom {
+                            position: absolute;
+                            font-weight: 900;
+                            font-size: clamp(20px, 5vw, 30px);
+                            color: #ffffff;
                         }
                         svg {
-                            position: absolute;
-                            width: 60px;
-                            transform-origin: center center;
+                            visibility: hidden;
                             transform: scale(0);
                         }
                     }
@@ -420,64 +1356,21 @@ $textContainerWidth: 800px;
             }
         }
     }
-    // SECTION 4: MEET ANNA
+    // SECTION 5: MEET ANNA
     #meetAnna {
-        height: 100vh;
+        min-height: 100vh;
         .annaWrap {
             display: flex;
             justify-content: center;
             align-items: center;
-            .annaInTheCenter {
-                z-index: 2;
-                width: $sphere3Width;
-                height: $sphere3Width;
-                border-radius: 50%;
-                background-image: url(/images/scrollyTelling/Anna.jpg);
-                background-position: "left center";
-                background-size: cover;
-                background-repeat: no-repeat;
-            }
-            .spheresWrap {
-                z-index: 1;
-                position: absolute;
-                .sphere {
-                    border: 1px solid #000000;
-                    width: 0;
-                    height: 0;
-                }
-                .sphere3 {
-                    background-color: rgba(0,0,0,0.9);
-                }
-                .sphere2 {
-                    background-color: $brandContrastDarkest;
-                }
-                .sphere1 {
-                    background-color: $brandContrastDark;
-                }
-            }
-            .leader {
-                z-index: 4;
-                position: absolute;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                background: $brandContrastDarkest;
-                width: 80px;
-                height: 80px;
-                border-radius: 50%;
-                border: 1px solid #ffffff;
-                svg {
-                    width: 60px;
-                }
-            }
             #annasLeadersWrap {
                 position: absolute;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 z-index: 3;
-                width: $sphere3Width;
-                height: $sphere3Width;
+                width: clamp(400px, 40vw, 500px);
+                height: clamp(400px, 40vw, 500px);
                 svg {
                     position: absolute;
                     width: 100%;
@@ -506,47 +1399,141 @@ $textContainerWidth: 800px;
                     transform: rotate(0deg);
                 }
             }
+            .spheresWrapResponsive {
+                width: clamp(400px, 40vw, 500px);
+                height: clamp(400px, 40vw, 500px);
+                .sphere {
+                    // visibility: visible;
+                    border: 1px solid #000000;
+                }
+                .sphere3 {
+                    background: darken($brandContrastDark, 5%);
+                }
+                .sphere2 {
+                    background: $brandContrastDark;
+                }
+                .sphere1 {
+                    background: lighten($brandContrastDark, 5%);
+                }
+                .annaInTheCenter {
+                    z-index: 2;
+                    border-radius: 50%;
+                    background-image: url(/images/scrollyTelling/Anna.jpg);
+                    background-position: 0, 50%;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .leader {
+                z-index: 4;
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: $brandContrastDarkest;
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                border: 1px solid #ffffff;
+                svg {
+                    width: 60px;
+                }
+            }
         }
 
     }
-    // SECTION 5: IMAGINE
+    // SECTION 6: MEET ANNA
     #imagine {
-        min-height: $sphere2Width;
-        .sectionTitle {
+        .sectionIntro {
+            padding: 0;
             text-align: center;
-            border-left: none;
         }
     }
-    // SECTION 6: ZOOM VILLAGE
+    // SECTION 7: ZOOM VILLAGE
     #zoomVillage {
         .container {
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-        }
-        .emitNetwork {
-            position: absolute;
-            width: 100%;
-            bottom: 0;
-            z-index: 2;
-        }
-        canvas {
-            z-index:1;
             box-sizing: border-box;
-            width: 100%;
-            // margin-top: 4rem;
-            margin-left: auto;
-            margin-right: auto;
-            max-width: 100vw;
-            max-height: 100vh;
-            // border-radius: 2px;
-            // border: 1rem solid #fff;
-            // filter: drop-shadow(.1rem .1rem .3rem rgba(20, 20, 180, .3));
-          }
+            // border: 10px solid red;
+            height: calc(100vh - 65px);
+            max-height: calc(100vh - 65px);
+            grid-column: viewport;
+            position: relative;
+            #viewWindow {
+                box-sizing: border-box;
+                // border: 10px solid blue;
+                overflow: hidden;
+                position: relative;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            #josephVillageWrap{
+                // canvas {
+                //     width: 1920px;
+		        //     height: 1088px;
+                // };
+                canvas{
+                    width: 100%;
+                    max-width: 100%;
+                    height: auto;
+                }
+                @media (max-width: 1190px) {
+                    canvas{
+                        max-height: 100%;
+                        height: 100%;
+                        width: auto;
+                        max-width: unset;
+                    }
+                }
+                #josephOnTenWrap {
+                    top: 0;
+                    left:0;
+                    position: absolute;
+                    // width: 1920px;
+		            // height: 1088px;
+                    width: 100%;
+                    height: 100%;
+                    svg {
+                        width: 100%;
+                        height: auto;
+                        // width: 1920px;
+		                // height: 1088px;
+                    }
+                    // Joseph Group
+                    #text1, #josephAndShadow {
+                        visibility: hidden;
+                    }
+                    // JosephSpheres group
+                    #s1, #s2, #s3, #trainingSphere {
+                        visibility: hidden;
+                    }
+                    // Training
+                    #trainingBooks, #text3, #text4, #trainingBlip1, #trainingBlip2, #trainingBlip3, #trainingBlipMorph1, #trainingBlipMorph2, #trainingBlipMorph3{
+                        visibility: hidden;
+                    }
+
+                }
+            }
+            @media (max-width: 1190px) {
+                .josephVillageWrap{
+                    position: absolute;
+                    max-height: 100%;
+                    height: 100%;
+                    width: auto;
+                    max-width: unset;
+                }
+            }
+        }
     }
     #theEnd {
+        // border: 10px solid yellow;
+        box-sizing: border-box;
         height: 100vh;
-        // background: yellow;
     }
 }
 
