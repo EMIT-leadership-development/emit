@@ -20,6 +20,13 @@ $sphere3Width: 500px;
         position: relative;
     }
     section {
+        &:not(.hero) {
+            display: flex;
+            flex-direction: column;
+            @media (min-width:900px) {
+                flex-direction: row;
+            }
+        }
         background-color: lighten($brandContrastDark, 1%);
         .sectionTitle {
             color: rgba(255,255,255,0.8);
@@ -28,6 +35,7 @@ $sphere3Width: 500px;
             color: rgba(255,255,255,0.7);
             width: 100%;
             font-size: 1.2rem;
+            margin:0;
         }
         z-index: 2;
         overflow: hidden;
@@ -41,10 +49,13 @@ $sphere3Width: 500px;
         }
 
         .sectionContent, .sectionIntro, .container {
+            // default flex box-sizing:
+            flex:1;
             position: relative;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            justify-items: center;
             align-items: center;
             font-weight: 300;
             box-sizing: border-box;
@@ -53,90 +64,92 @@ $sphere3Width: 500px;
             @media (max-width: 899px) {
                 text-align: center;
             }
-        }
-    }
-    .wall {
-        @media (max-width: 899px) {
-            max-height: calc(50vh - 34px);
-            height: calc(50vh - 34px);
-            align-items: center;
-        }
-        .contentWrap {
-            width: 100%;
-            height: 100%;
-            // border: 1px solid red;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            position: absolute;
-            @media (max-width: 899px) {
-                align-items: center;
-            }
-            .innerWrap {
-                width: 85%;
-                height: 85%;
-                // border: 1px solid blue;
+            .contentWrap {
+                position: relative;
+                grid-row:1;
+                grid-column: 1;
+                width: 100%;
+                height: 100%;
+                box-sizing: border-box;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                position: relative;
+                text-align: center;
+                // border: 10px solid red;
+                z-index: 2;
+                .innerWrap {
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    width: 70%;
+                    height: 100%;
+                    position: relative;
+                    // border: 10px solid blue;
+                    box-sizing: border-box;
+                }
             }
         }
-        &:before {
-            content: "";
-            pointer-events: none;
+    }
+    .wall {
+        .wallImage {
+            position: absolute;
             width: 100%;
             height: 100%;
-            background-size: cover;
-            background-repeat: no-repeat;
-            position: absolute;
-            z-index: 0;
+            box-sizing: border-box;
+            // border: 1px solid blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            svg {
+                position: absolute;
+                // border: 1px solid red;
+                box-sizing: border-box;
+                width: 100vw;
+                height: auto;
+                path, rect {
+                    visibility: hidden;
+                }
+            }
             @media (max-width: 899px) {
-                transform: rotate(90deg);
-                // Use height because rotated
-                width: calc(50vh - 34px);
-                // Use width because rotated
-                height: 100vw;
+                display: none;
             }
         }
-        &.leftWall {
+        &.leftWallWrap {
+            .wallImage {
+                svg {
+                    right: 0;
+                    path.leftWall {
+                        visibility: visible;
+                    }
+                }
+            }
             .contentWrap {
-                transform: perspective(500px) rotateY(10deg);
-                text-align: right;
-                align-items: flex-end;
-                @media (max-width: 899px) {
-                    text-align: center;
-                    align-items: center;
-                    transform: perspective(500px) rotateX( 342deg) rotateY( 0deg);
-                }
-            }
-            &:before {
-                background-image: url(/images/scrollyTelling/Leftwall.svg);
-                background-position: right center;
-                @media (max-width: 899px) {
-                    background-position: center top;
+                @media (min-width: 900px) {
+                    text-align: right;
+                    transform: perspective(500px) rotateY(10deg);
                 }
             }
         }
-        &.rightWall {
+        &.rightWallWrap {
+            .wallImage {
+                svg {
+                    left: 0;
+                    path.rightWall {
+                        visibility: visible;
+                    }
+                }
+            }
             .contentWrap {
-                transform: perspective(500px) rotateY(-10deg);
-                align-items: flex-start;
-                @media (max-width: 899px) {
-                    align-items: center;
-                    transform: perspective(500px) rotateX( 11deg) rotateY( 0deg);
-                }
-            }
-            &:before {
-                background-image: url(/images/scrollyTelling/Rightwall.svg);
-                background-position: left center;
-                @media (max-width: 899px) {
-                    background-position: center bottom;
+                justify-content: center;
+                @media (min-width: 900px) {
+                    text-align: left;
+                    transform: perspective(500px) rotateY(-10deg);
                 }
             }
         }
-
     }
     // Cute Cursor follower
     .cursorFollower {
@@ -165,8 +178,10 @@ $sphere3Width: 500px;
     }
     .hoverAnim {
         &:hover {
-            transform: scale(1.1);
-            transform-origin: 50% 50%;
+            color: #ffffff;
+            stroke: #ffffff;
+            // transform: scale(1.1);
+            // transform-origin: 50% 50%;
         }
     }
     // ----- GENERIC STYLES AND TOP NAV
@@ -189,7 +204,8 @@ $sphere3Width: 500px;
     .sectionTitle {
         text-transform: unset;
         font-weight: 300;
-        font-size: clamp(1.2rem, 2vw, 28px);
+        font-size: clamp(1.2rem, 2.5vw, 3rem);
+        // font-size: clamp(1.2rem, 2vw, 28px);
         margin-bottom: 1rem;
         .emphasis {
             font-weight: 400;
@@ -231,6 +247,49 @@ $sphere3Width: 500px;
         .animatedLogoWrap {
             width: 100%;
             height: auto;
+        }
+    }
+    .buttonRow {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        .callToAction {
+            font-weight: 300;
+            color: #ffffff;
+            white-space: nowrap;
+            margin-right: 0.5rem;
+        }
+        .underline {
+            width: 90px;
+            height: 1px;
+            background: #ffffff;
+            display: block;
+            margin-right: 0.5rem;
+        }
+        .startButton {
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            span.noticeMe {
+                position: absolute;
+                width: 300px;
+                opacity: 0;
+                z-index: 1;
+                display: block;
+                height: 300px;
+                border-radius: 50%;
+                z-index:0;
+            };
+            svg {
+                z-index: 1;
+                fill: transparent;
+                z-index: 2;
+                width: 50px;
+                stroke: #ffffff;
+                stroke-width: 1px;
+            }
         }
     }
     // All slide titles
@@ -434,111 +493,240 @@ $sphere3Width: 500px;
     }
     // SLIDE 1: IMPACT
     #impact {
+        $sphereWidth: clamp(90px, 10vw, 150px);
+        $planetWidth: clamp(180px, 40vw, 600px);
+        $networkWidth: clamp(228px, 50.68vw, 760px);
         .sectionContent {
-            z-index: 2;
-            align-items: center;
+            flex:3;
+            @media (max-width:900px) {
+                flex:1
+            }
         }
         .sectionIntro {
-            align-items: center;
+            flex:2;
             z-index: 1;
-            .innerWrap {
-                max-width: 400px;
-            }
+            overflow: hidden;
         }
-        $ballWidth: clamp(52px, 16vw, 140px);
-        $pendulumHeight: 50vh;
-        @media (max-width: 600px) {
-            .ball span {
-                display: none;
+        .questionWrap {
+            border: 1px solid blue;
+            box-sizing: border-box;
+            position: absolute;
+            visibility: hidden;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            #spheresWrap {
+                border: 1px solid red;
+                position: relative;
+                box-sizing: border-box;
+                display: grid;
+                grid-template-columns: 100%;
+                grid-template-rows: 100%;
+                justify-items: center;
+                align-items: center;
+                .ballGroup {
+                    position: absolute;
+                    grid-column: 1;
+                    grid-row: 1;
+                }
             }
-        }
-        .pendulum{
-            top: - 15%;
-            z-index: 10;
-            @media (max-width: 899px) {
-                top: -45%;
-            }
-            .pendulum_box{
+            .formContainer {
+                border: 1px solid yellow;
+                padding: 2rem;
+                box-sizing: border-box;
                 display: flex;
-                padding: $pendulumHeight 0 0 0;
-                flex: 1;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .questionIntro {
+                    text-align: left;
+                }
+                form {
+                    display: grid;
+                    grid-template-columns: 1fr 30px;
+                    width: 100%;
+                    text-align: left;
+                    .form-group {
+                        width: 100%;
+                        margin-bottom: 0;
+                        margin-top: 2rem;
+                        input {
+                            color: #ffffff !important;
+                        }
+                        .bar::before {
+                            background: $brand-color;
+                        }
+                        input:focus ~ .control-label {
+                            color: $brand-color;
+                        }
+                    }
+                    .button {
+                        color: rgba(255,255,255,0.5);
+                        background: transparent;
+                        border: none;
+                        cursor: pointer;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-end;
+                        align-items: center;
+                        width: 30px;
+                        stroke: rgba(255,255,255,0.5);
+                        padding: 0;
+                        &:hover {
+                            color: #ffffff;
+                            stroke: #ffffff;
+                        }
+                    }
+                }
             }
-            .ball{
-                position: relative;
-                height: $ballWidth;
-                width: $ballWidth;
-                border-radius: 50%;
-                position: relative;
-                transform-origin: 50% calc(#{$pendulumHeight} *-1);
+            #animateName {
+                position: absolute;
+                top:0;
+                left:0;
+                font-size: 10px;
+                color: $brand-color;
+                font-weight: bold;
+                width: 100%;
+                height: 100%;
+                text-align: right;
+                pointer-events: none;
+            }
+        }
+        .ballGroup {
+            // float:left;
+            position: relative;
+            overflow: visible;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: stretch;
+            width: $sphereWidth;
+            .cable {
+                position: absolute;
+                width:2px;
+                display: block;
+                height: 50vh;
+                bottom: 100%;
+            }
+            &.spherelogo {
+                z-index:4;
+                .cable {
+                    background-color: $brand-color;
+                    fill: $sphere1BG;
+                }
+                svg {
+                    circle {
+                        fill: $brand-color;
+                    }
+                    width: 100%;
+                    max-width: 100%;
+                }
+            }
+            &.sphere1 {
+                z-index:3;
+                .cable {
+                    background-color: $sphere1BG;
+                    fill: $sphere1BG;
+                }
+                svg {
+                    circle {
+                        fill: $sphere1BG;
+                    }
+                    width: 100%;
+                    max-width: 100%;
+                }
+            }
+            &.sphere2 {
+                z-index:2;
+                .cable {
+                    background-color: $sphere2BG;
+                    fill: $sphere1BG;
+                }
+                svg {
+                    circle {
+                        fill: $sphere2BG;
+                    }
+                    width: 100%;
+                    max-width: 100%;
+                }
+            }
+            &.sphere3 {
+                z-index:1;
+                .cable {
+                    background-color: $sphere3BG;
+                    fill: $sphere1BG;
+                }
+                svg {
+                    circle {
+                        fill: $sphere3BG;
+                    }
+                    width: 100%;
+                    max-width: 100%;
+                }
+            }
+            .sphere {
+                z-index:1;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                font-size: clamp(14px, 1.5vw, 1.3rem);
-                font-weight: 900;
-                color: #000000;
-                background-size: contain;
-                background-position: 50% 50%;
-                &.first {
-                    background-image: url(/images/interface/animatedLogo.svg);
-                    background-color: $brand-color;
-                    z-index: 1;
-                    .cable {
-                        background-color: $brand-color;
-                    }
-                }
-                &:nth-of-type(2) {
-                    background-color: $sphere1BG;
-                    z-index: 2;
-                    .cable {
-                        background-color: $sphere1BG;
-                    }
-                }
-                &:nth-of-type(3) {
-                    z-index: 3;
-                    background-color: $sphere2BG;
-                    .cable {
-                        background-color: $sphere2BG;
-                    }
-                }
-                &:nth-of-type(4) {
-                    z-index: 4;
-                    background-color: $sphere3BG;
-                    .cable {
-                        background-color: $sphere3BG;
-                    }
+                position: relative;
+                width: 100%;
+                span {
+                    display: block;
+                    position: absolute;
+                    font-size: clamp(14px, 1.5vw, 1.3rem);
+                    font-weight: 900;
+                    color: #000000;
+                    text-align: center;
                 }
             }
-            .ball .cable{
-                display: block;
-                width: 2px;
-                height: $pendulumHeight;
-                left: calc((#{$ballWidth} / 2) + 1px);
-                // top: calc(#{$pendulumHeight} *-1);
-                bottom: $ballWidth;
+        }
+        #pendulum {
+            position: relative;
+            box-sizing: border-box;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+        }
+        .planetWrap {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .planet {
+                width: $planetWidth;
+                height: $planetWidth;
                 position: absolute;
+                background: #64747b;
+                border-radius: 50%;
+                // box-shadow: inset 0 0 50px #fff, inset 20px 0 80px #39424a, inset -20px 0 80px #414750, inset 20px 0 300px #39424a, inset -20px 0 300px #06b3f7, 0 0 50px #fff, -10px 0 80px #39424a, 10px 0 80px #064388;
+                background-image: url(/images/scrollyTelling/WorldMapSingle.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: 0 50%;
             }
-            .ball.first{
-                animation: firstball .9s alternate ease-in infinite;
+            .networkAnimated {
+                width: $networkWidth;
+                height: $networkWidth;
+                z-index: 2;
             }
-            @keyframes firstball{
-                0%{
-                    transform: rotate(35deg);
-                }
-                50%{
-                    transform: rotate(0deg);
-                }
-            }
-
-            .ball.last{
-                animation: lastball .9s alternate ease-out infinite;
-            }
-
-            @keyframes lastball{
-                50%{
-                    transform: rotate(0deg);
-                }
-                100%{
-                    transform: rotate(-35deg);
+        }
+        #hitPlanet {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            pointer-events: none;
+            #spheresWrap {
+                .ballGroup {
+                    position: absolute;
                 }
             }
         }
@@ -550,7 +738,7 @@ $sphere3Width: 500px;
         }
         .sectionIntro {
             .innerWrap {
-                max-width: 350px;
+                // max-width: 350px;
             }
         }
         $wrap: clamp(250px, 40vw, 500px);
@@ -629,7 +817,7 @@ $sphere3Width: 500px;
                 align-items: center;
             }
             .innerWrap {
-                max-width: 400px;
+                // max-width: 400px;
             }
         }
         .annaWrap {
@@ -720,6 +908,7 @@ $sphere3Width: 500px;
     }
     // SLIDE 4: JOSEPH
     #joseph {
+        // SONYA: todo: tidy this up - lots of classes that are not being used because ommitted in svg animation
         .sectionContent {
             box-sizing: border-box;
             canvas {
@@ -731,49 +920,7 @@ $sphere3Width: 500px;
         .sectionIntro {
             // overflow: hidden;
             .innerWrap {
-                max-width: 450px;
-            }
-            .buttonRow {
-                width: 100%;
-                display: flex;
-                justify-content: flex-start;
-                align-items: center;
-                .callToAction {
-                    font-weight: 300;
-                    color: #ffffff;
-                    white-space: nowrap;
-                    margin-right: 0.5rem;
-                }
-                .underline {
-                    width: 90px;
-                    height: 5px;
-                    background: #ffffff;
-                    display: block;
-                    margin-right: 0.5rem;
-                }
-                #startJoseph {
-                    cursor: pointer;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    span.noticeMe {
-                        position: absolute;
-                        width: 300px;
-                        opacity: 0;
-                        z-index: 1;
-                        display: block;
-                        height: 300px;
-                        border-radius: 50%;
-                    };
-                    svg {
-                        fill: $brand-color;
-                        z-index: 2;
-                        width: 50px;
-                        stroke: #ffffff;
-                        stroke-width: 1px;
-                        box-shadow: rgba(0,0,0,.4), 5px 5px 2px;
-                    }
-                }
+                // max-width: 450px;
             }
         }
         #infographicControls {
@@ -854,12 +1001,25 @@ $sphere3Width: 500px;
             max-height: 100%;
             width: 100%;
             max-width: 100%;
+            img {
+                height: 105%;
+                width: auto;
+                visibility: hidden;
+                filter: saturate(2);
+                max-width:  unset;
+            };
             canvas {
                 box-sizing: border-box;
                 position: absolute;
                 width: auto;
                 height: 100%;
-                z-index: 1;
+            }
+            .underlay {
+                visibility: hidden;
+                pointer-events: none;
+                position: absolute;
+                width: 110vw;
+                height: 110vh;
             }
             .overlay {
                 visibility: hidden;
@@ -867,12 +1027,21 @@ $sphere3Width: 500px;
                 position: absolute;
                 width: 110vw;
                 height: 110vh;
-                z-index: 3;
+            }
+            .emitNetwork, .emitNetworkTopLayer {
+                position: absolute;
+                width: 110vw;
+                height: 110vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .emitNetwork {
+                transform: perspective(500px) rotateX(0deg) rotateY( 0deg);
             }
             svg {
                 box-sizing: border-box;
                 position: absolute;
-                z-index: 2;
                 position: absolute;
                 height: 100%;
                 width: auto;
@@ -881,13 +1050,20 @@ $sphere3Width: 500px;
                     cursor: pointer;
                 }
                 // Paths and Morphs
-                #path-0, #path-1B, #path-2B, #path-3B, #path-4B, #path-5B, #path-6B, #path-7B, #path-8B, #path-9B, #path-10B {
+                #path-0, #path-1, #path-1B, #path-2, #path-2B, #path-3, #path-3B, #path-4, #path-4B, #path-5, #path-5B, #path-6, #path-6B, #path-7, #path-7B, #path-8, #path-8B, #path-9, #path-9B, #path-10, #path-10B {
                     // stroke: red;
                     visibility: hidden;
                 }
-                #blip4, #blip5, #blip6, #blip7, #blip8, #blip9, #blip10{
-                    visibility: hidden;
-                    // stroke: red;
+                #mandatePaths {
+                    path {
+                        visibility: hidden;
+                        filter: url(#Filter-0);
+                    }
+                }
+                #GroupLights {
+                    ellipse {
+                        visibility: hidden;
+                    }
                 }
                 #village {
                     visibility: hidden;
@@ -901,18 +1077,41 @@ $sphere3Width: 500px;
                 // #G1_JosephAndSpheres
                 #s3, #s2, #s1, #expandingCircle, #josephInVillageTransparent, #josephAndShadow, #TextMeetJoseph {
                     visibility: hidden;
+                    rect {
+                        filter: url(#Filter-0)
+                    }
+                }
+                #s3 {
+                    filter: url(#Filter-0);
                 }
                 // Joseph Impact
                 #trainingBooks, #josephImpactText {
                     visibility: hidden;
                 }
                 // Our Programs
-                #G3_OurPrograms, #trainingBlips {
+                #G3_OurPrograms {
                     visibility: hidden;
+                    rect {
+                        filter: url(#Filter-0)
+                    }
+                }
+                #trainingBullets, #trainingBlips {
+                    ellipse {
+                        visibility: hidden;
+                    }
                 }
                 // Mandate
                 #G4_Mandate {
                     visibility: hidden;
+                    rect {
+                        filter: url(#Filter-0)
+                    }
+                }
+                // Tansformation
+                #transformText {
+                    rect {
+                        filter: url(#Filter-0)
+                    }
                 }
                 #leaderBlips-1, #leaderBlips-2, #leaderBlips-3, #leaderBlips-4, #leaderBlips-5, #leaderBlips-6, #leaderBlips-7, #leaderBlips-8, #leaderBlips-9, #leaderBlips-10 {
                     ellipse {
@@ -924,17 +1123,35 @@ $sphere3Width: 500px;
                         visibility: hidden;
                     }
                 }
+                #leaderSphere-1, #leaderSphere-2, #leaderSphere-3, #leaderSphere-4, #leaderSphere-5, #leaderSphere-6, #leaderSphere-7, #leaderSphere-8, #leaderSphere-9, #leaderSphere-10 {
+                    filter: url(#Filter-0);
+                    visibility: hidden;
+                }
                 #leaderButton-1, #leaderButton-2, #leaderButton-3, #leaderButton-4, #leaderButton-5, #leaderButton-6, #leaderButton-7, #leaderButton-8, #leaderButton-9, #leaderButton-10 {
                     cursor: pointer;
                 }
                 #satelites {
-                    ellipse {
+                    ellipse, path {
+                        visibility: hidden;
+                        filter: url(#Filter-0);
+                    }
+                }
+                #leaderTitle-1, #leaderTitle-2, #leaderTitle-3, #leaderTitle-4, #leaderTitle-5, #leaderTitle-6, #leaderTitle-7, #leaderTitle-8, #leaderTitle-9, #leaderTitle-10 {
+                    visibility: hidden;
+                }
+
+                #womenLeaders, #spiritualLeaders, #youthLeaders, #healthLeaders, #mediaLeaders, #politicalLeaders, #sportsLeaders, #businessLeaders, #educators, #lawLeaders {
+                    image, ellipse {
                         visibility: hidden;
                     }
                 }
-
-                // #womenLeaders, #spiritualLeaders, #youthLeaders, #healthLeaders, #mediaLeaders, #politicalLeaders, #sportsLeaders, #businessLeaders, #educators, #lawLeaders {
-                // }
+            }
+        }
+    }
+    #transformation {
+        .sectionIntro, .sectionContent{
+            .innerWrap {
+                // max-width: 350px;
             }
         }
     }

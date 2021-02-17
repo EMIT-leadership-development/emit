@@ -51,10 +51,9 @@ window.onload = function() {
 	var africaTL = NINJA_FUNCTIONS.africa();
 	var annaTL = NINJA_FUNCTIONS.anna();
 	let josephTL = NINJA_FUNCTIONS.joseph();
+	let impactTL = NINJA_FUNCTIONS.impact();
 	let noticeMeTL = NINJA_FUNCTIONS.noticeMe();
 	let titletl;
-
-	console.log(josephTL);
 
 	// SWIPER SETUP
 	const mySwiper = new Swiper('.swiper-container', {
@@ -115,14 +114,22 @@ window.onload = function() {
 		// HERO SLIDE
 		if (this.realIndex == 0) {
 			topNavTL.reverse();
+			noticeMeTL.pause();
 		}
 		// IMPACT SLIDE
 		if (this.realIndex == 1) {
-			// Nothing to do here - pendulaum animation is using css
+			impactTL.tweenFromTo("impactIntro","setStage");
+			noticeMeTL.play();
+		}
+		if (this.realIndex != 1) {
+			impactTL.pause();
+			impactTL.reverse();
+			impactTL.time(0);
 		}
 		// AFRICA SLIDE
 		if (this.realIndex == 2) {
 			africaTL.play();
+			noticeMeTL.pause();
 		}
 		if (this.realIndex != 2) {
 			africaTL.pause();
@@ -131,6 +138,7 @@ window.onload = function() {
 		// ANNA SLIDE
 		if (this.realIndex == 3) {
 			annaTL.play();
+			noticeMeTL.pause();
 		}
 		if (this.realIndex != 3) {
 			annaTL.pause();
@@ -144,32 +152,30 @@ window.onload = function() {
 		if (this.realIndex != 4) {
 			josephTL.pause();
 			josephTL.time(0);
-			noticeMeTL.pause();
+			// Put the village canvas back into the original dom element
+			// SONYA - this does not work if user changes slides too quickly. Also - css perspective does not animate back to original
 			var canvasWrapper = document.getElementById("introduceCanvas");
 			var canvas = document.getElementById("hero-lightpass");
 			if (canvas.parentNode != canvasWrapper) {
 				canvasWrapper.prepend(canvas)
 			};
 		}
+		// SUCCESS SLIDE
+		if (this.realIndex == 4) {
+			// no animation yet for this slide
+			josephTL.pause();
+		}
 	});
 
-	// Click interactions for Joseph inforgraphic
+	// Click interactions for Joseph infographic
 	document.getElementById("startJoseph").addEventListener("click", function(){josephTL.tweenFromTo('zoom','josephImpact')});
 	document.getElementById("next1").addEventListener("click", function(){josephTL.tweenFromTo('josephImpact','enterPrograms')});
 	document.getElementById("next2").addEventListener("click", function(){josephTL.tweenFromTo('enterPrograms','enterMandate')});
-	document.getElementById("next3").addEventListener("click", function(){josephTL.tweenFromTo('enterMandate','leaderAnimations')});
-	// Animate each leader sequence
-	document.getElementById("next4").addEventListener("click", function(){josephTL.tweenFromTo('womenLeaders','spiritualLeaders')});
-	document.getElementById("leaderButton-1").addEventListener("click", function(){josephTL.tweenFromTo('spiritualLeaders','youthLeaders')});
-	document.getElementById("leaderButton-2").addEventListener("click", function(){josephTL.tweenFromTo('youthLeaders','healthLeaders')});
-	document.getElementById("leaderButton-3").addEventListener("click", function(){josephTL.tweenFromTo('healthLeaders','businessLeaders')});
-	document.getElementById("leaderButton-4").addEventListener("click", function(){josephTL.tweenFromTo('businessLeaders','educators')});
-	document.getElementById("leaderButton-5").addEventListener("click", function(){josephTL.tweenFromTo('educators','politicalLeaders')});
-	document.getElementById("leaderButton-6").addEventListener("click", function(){josephTL.tweenFromTo('politicalLeaders','sportsLeaders')});
-	document.getElementById("leaderButton-7").addEventListener("click", function(){josephTL.tweenFromTo('sportsLeaders','lawLeaders')});
-	document.getElementById("leaderButton-8").addEventListener("click", function(){josephTL.tweenFromTo('lawLeaders','mediaLeaders')});
-	document.getElementById("leaderButton-9").addEventListener("click", function(){josephTL.tweenFromTo('mediaLeaders','transform')});
-	document.getElementById("leaderButton-10").addEventListener("click", function(){josephTL.tweenFromTo('transform','end')});
+	document.getElementById("next3").addEventListener("click", function(){josephTL.tweenFromTo('enterMandate','transform')});
+	document.getElementById("next4").addEventListener("click", function(){josephTL.tweenFromTo('transform','end')});
+
+	// Click interactions for Impact Pendulum and Planet
+	document.getElementById("startImpact").addEventListener("click", function(){impactTL.tweenFromTo('setStage','enterPlanet')});
 
 } //End window.load
 
@@ -289,49 +295,147 @@ var NINJA_FUNCTIONS = {
 		tl.add('end');
 		return tl;
 	},
-	//--------SLIDE: AFRICA -------------------------------------
-	africa: function() {
+
+	//--------SLIDE: IMPACT -------------------------------------
+	impact: function() {
+		const input = document.getElementById('enterName');
+		const addNameBtn = document.getElementById('addPerson');
+		const log = document.getElementById('animateName');
+		const ballGroups = gsap.utils.toArray(".ballGroup");
+		let scale = 1;
+		let countNames = 0;
+		console.log(ballGroups);
+
+		// gsap flip animation Move the spheres to questionWrap
+		function doFlip() {
+			ballGroups.forEach(sphere => {
+				const state = Flip.getState(sphere);
+				const spheresWrap = document.getElementById("spheresWrap");
+				sphere.parentNode.id != "pendulum" ? sphere.parentNode.prepend(sphere) : spheresWrap.prepend(sphere);
+				Flip.from(state, {duration: 0.5, scale:true, absolute:true, ease: "power1.inOut"});
+			});
+		};
+		// gsap flip animation Move the spheres to questionWrap
+		function doFlip2() {
+			const state = Flip.getState(spheresWrap);
+			let spheresWrap2 = document.getElementById("spheresWrap");
+			const hitPlanet = document.getElementById("hitPlanet");
+			console.log(spheresWrap2);
+			console.log(hitPlanet);
+			spheresWrap2.parentNode.className != "questionWrap" ? spheresWrap2.parentNode.prepend(spheresWrap2) : hitPlanet.prepend(spheresWrap2);
+			Flip.from(state, {duration: 0.5, scale:true, absolute:true, ease: "power1.inOut"});
+		};
+
+		// Animate the spheres with form
+		addNameBtn.addEventListener('click', updateValue);
+		function updateValue(e) {
+			// scale += 0.3;
+			scale = scale * 1.2;
+			let s2 = scale * 1.4;
+			let s3 = scale * 1.8;
+			countNames += 1;
+			log.textContent = input.value;
+			var mySplitText = new SplitText(log, {type:"words,chars"});
+    		var chars = mySplitText.chars;
+			gsap.to(chars, {duration:0.5, stagger:0.1, scale:10, x:-300, autoAlpha:0});
+			gsap.to(".spherelogo", {duration:0.5, scale:scale, ease:"elastic"});
+			gsap.to(".sphere2", {duration:0.5, scale:s2, ease:"elastic"});
+			gsap.to(".sphere3", {duration:0.5, scale:s3, ease:"elastic"});
+			if (countNames == 5) {
+				scale = 1;
+				countNames = 0;
+				tl.tweenFromTo("enterPlanet", "end");
+			}
+			document.getElementById("impactForm").reset();
+		}
+
+		// Timeline
 		let tl = gsap.timeline({
 			defaults:{duration:0.5},
 			paused: true,
 			delay:0.5,
 		});
-		tl.from(".leaderRow", {duration:0.5, stagger:0.3, x:-300, autoAlpha:0});
+		// Intro Start button
+		tl.addLabel("impactIntro", 0);
+
+		// Set stage area
+		tl.addLabel("setStage");
+		tl.to("#pendulum .cable",{height:0, autoAlpha:0},">");
+		tl.fromTo("#impact .sectionIntro", {flex:2}, {flex:0, autoAlpha:0},">");
+		tl.to("#impact .sectionIntro .innerWrap", {duration:0.3, x:300, autoAlpha:0},"<");
+		tl.fromTo("#impact .sectionContent", {flex:3}, {flex:1},"<");
+		tl.to("#impact .sectionContent .contentWrap",{rotateY:0, rotateX:0},">");
+
+		tl.to("#impact .leftWallWrap .leftWall",{morphSVG:"#impact .flatWall"},"<");
+		tl.to("#impact .leftWallWrap .flatWall",{autoAlpha:1},">");
+		tl.to("#impact .leftWallWrap .leftWall",{autoAlpha:0},"<");
+
+		// Merge Pendulum
+		tl.addLabel("mergePendulum");
+		tl.to(".questionWrap",{autoAlpha:1},">");
+		tl.to(".sphere span",{autoAlpha:0},"<");
+		tl.call(doFlip, null,"<");
+		tl.to(".svg_body", {duration:0.6, morphSVG:".svg_body-2", ease:"expo.out"}, "<");
+		tl.to(".svg_shadow", {duration:0.6, morphSVG:".svg_shadow-2", ease:"expo.out"}, "<");
+
+		// EnterPlanet
+		tl.addLabel("enterPlanet");
+		tl.to("#impact #spheresWrap",{duration:1, scale:0.1 },">");
+		tl.call(doFlip2, null,">");
+		tl.from(".planetWrap",{duration:1, scale:0.3, autoAlpha:0, y:-300, x:300},">");
+		tl.to("#impact .questionWrap",{autoAlpha:0},"<");
+		tl.from(".networkAnimated",{autoAlpha:0, rotate:-30},">0.5");
+
+
+		// End
+		tl.addLabel("end");
+
+
+
+
+		return tl;
+	},
+	//--------SLIDE: AFRICA -------------------------------------
+	africa: function() {
+		let tl = gsap.timeline({
+			defaults:{duration:0.3},
+			paused: true,
+			delay:0.5,
+		});
+		tl.from(".leaderRow", {stagger:0.3, x:-300, autoAlpha:0});
 		tl.to(".transformer",{width:"20%", borderRadius:"50%", delay:0.2});
 		tl.to(".symptom",{scale:0},"<");
 		tl.to(".transformer svg",{scale:1, transformOrigin:"50% 50%", autoAlpha:1 },"<0.5");
 		tl.to(".africaLeader.reveal", {width:"20%", transformOrigin:"50% 50%"},"<-0.5");
-		tl.totalDuration(1);
 		return tl;
 	},
 	//--------SLIDE: ANNA -------------------------------------
 	anna: function() {
 		let tl = gsap.timeline({
-			defaults:{duration:0.5},
+			defaults:{duration:0.3},
 			paused: true,
 			delay:0.5,
 		});
-		tl.from('#anna .l1',{duration:1, y:-800});
-		tl.fromTo('#anna .sphere1', {width:"150%", height:"150%"}, {duration:1, width:"100%", height:"100%", autoAlpha:1, transformOrigin:"center center"},">");
-		tl.fromTo('#anna .annaInTheCenter', {width:"100%", height:"100%"}, {duration:1, width:"80%", height:"80%", transformOrigin:"center center"},"<");
-		tl.from("#religious, #polititians",{duration:1, scale:1.5, autoAlpha:0 },"<");
-		tl.to('#anna .l1',{duration:1, scale:0},">");
+		tl.from('#anna .l1',{y:-800});
+		tl.fromTo('#anna .sphere1', {width:"150%", height:"150%"}, {width:"100%", height:"100%", autoAlpha:1, transformOrigin:"center center"},">");
+		tl.fromTo('#anna .annaInTheCenter', {width:"100%", height:"100%"}, {width:"80%", height:"80%", transformOrigin:"center center"},"<");
+		tl.from("#religious, #polititians",{scale:1.5, autoAlpha:0 },"<");
+		tl.to('#anna .l1',{scale:0},">");
 
-		tl.from('#anna .l2',{duration:1, y:-800},">0.3");
-		tl.fromTo('#anna .sphere2', {width:"150%", height:"150%"}, {duration:1, width:"100%", height:"100%", autoAlpha:1, transformOrigin:"center center"},">");
-		tl.to('#anna .sphere1', {duration:1, width:"80%", height:"80%", transformOrigin:"center center"},"<");
-		tl.to('#anna .annaInTheCenter', {duration:1, width:"60%", height:"60%", transformOrigin:"center center"},"<");
-		tl.from("#community, #teachers",{duration:1, scale:1.5, autoAlpha:0 },"<");
-		tl.to('#anna .l2',{duration:1, scale:0},">");
+		tl.from('#anna .l2',{y:-800},">0.3");
+		tl.fromTo('#anna .sphere2', {width:"150%", height:"150%"}, {width:"100%", height:"100%", autoAlpha:1, transformOrigin:"center center"},">");
+		tl.to('#anna .sphere1', {width:"80%", height:"80%", transformOrigin:"center center"},"<");
+		tl.to('#anna .annaInTheCenter', {width:"60%", height:"60%", transformOrigin:"center center"},"<");
+		tl.from("#community, #teachers",{scale:1.5, autoAlpha:0 },"<");
+		tl.to('#anna .l2',{scale:0},">");
 
-		tl.from('#anna .l3',{duration:1, y:-800},">0.3");
-		tl.fromTo('#anna .sphere3', {width:"150%", height:"150%"}, {duration:1, width:"100%", height:"100%", autoAlpha:1, transformOrigin:"center center"},">");
-		tl.to('#anna .sphere2', {duration:1, width:"80%", height:"80%", transformOrigin:"center center"},"<");
-		tl.to('#anna .sphere1', {duration:1, width:"60%", height:"60%", transformOrigin:"center center"},"<");
-		tl.to('#anna .annaInTheCenter', {duration:1, width:"40%", height:"40%", transformOrigin:"center center"},"<");
-		tl.from("#peers, #parents",{duration:1, scale:1.5, autoAlpha:0 },"<");
-		tl.to('#anna .l3',{duration:1, scale:0},">");
-		tl.totalDuration(1);
+		tl.from('#anna .l3',{y:-800},">0.3");
+		tl.fromTo('#anna .sphere3', {width:"150%", height:"150%"}, {width:"100%", height:"100%", autoAlpha:1, transformOrigin:"center center"},">");
+		tl.to('#anna .sphere2', {width:"80%", height:"80%", transformOrigin:"center center"},"<");
+		tl.to('#anna .sphere1', {width:"60%", height:"60%", transformOrigin:"center center"},"<");
+		tl.to('#anna .annaInTheCenter', {width:"40%", height:"40%", transformOrigin:"center center"},"<");
+		tl.from("#peers, #parents",{scale:1.5, autoAlpha:0 },"<");
+		tl.to('#anna .l3',{scale:0},">");
 		return tl;
 	},
 	//--------SLIDE: JOSEPH -------------------------------------
@@ -345,26 +449,24 @@ var NINJA_FUNCTIONS = {
 		const images = []
 		const airpods = {frame: 0};
 
-		const trainingBlips = gsap.utils.toArray(["#blip4, #blip5, #blip6, #blip7, #blip8, #blip9, #blip10, #blip1, #blip2, #blip3"]);
-		const endPositions = [0.18, 0.4, 0.48, 0.55, 0.61, 0.68, 0.85];
-
-		var gradientStops = gsap.utils.toArray("#Gradient-0 stop");
-		var satelitePaths = gsap.utils.toArray("#satelites g path");
-		var sateliteSpheres = gsap.utils.toArray("#satelites g ellipse");
-
-		// Create Leaders Array
-		var leaders = [
-			{label:'womenLeaders', position:'428 688 570 323', gradientfx:680, gradientfy:895, startTime:10.5},
-			{label:'spiritualLeaders', position:'97 655 570 323', gradientfx:330, gradientfy:840, startTime:13.5},
-			{label:'youthLeaders', position:'58 420 570 323', gradientfx:280, gradientfy:580, startTime:16.5},
-			{label:'healthLeaders', position:'38 207 570 323', gradientfx:255, gradientfy:350, startTime:19.5},
-			{label:'businessLeaders', position:'450 148 570 323', gradientfx:720, gradientfy:280, startTime:22.5},
-			{label:'educators', position:'760 145 570 323', gradientfx:1050, gradientfy:280, startTime:25.5},
-			{label:'politicalLeaders', position:'1355 210 570 323', gradientfx:1695, gradientfy:360, startTime:28.5},
-			{label:'sportsLeaders', position:'1200 435 570 323', gradientfx:1530, gradientfy:605, startTime:31.5},
-			{label:'lawLeaders', position:'1355 635 570 323', gradientfx:1695, gradientfy:815, startTime:34.5},
-			{label:'mediaLeaders', position:'900 740 570 323', gradientfx:1200, gradientfy:930, startTime:37.5},
+		const leaders = [
+			"#womenLeaders",
+			"#spiritualLeaders",
+			"#youthLeaders",
+			"#healthLeaders",
+			"#businessLeaders",
+			"#educators",
+			"#politicalLeaders",
+			"#sportsLeaders",
+			"#lawLeaders",
+			"#mediaLeaders",
 		]
+
+		const leaderSpheresInnerGroups = gsap.utils.toArray("#leaderSpheres g");
+		const leaderSpheresInner = gsap.utils.toArray("#leaderSpheres g ellipse");
+		const leaderSpheresOuter = gsap.utils.toArray("#leaderSpheres path");
+		const lights = gsap.utils.toArray("#GroupLights ellipse");
+		const lightPaths = gsap.utils.toArray("#mandatePaths path");
 
 		// African Village "video"
 		for (let i = 0; i < frameCount; i++) {
@@ -394,10 +496,9 @@ var NINJA_FUNCTIONS = {
 		});
 		// Intro Start button
 		tl.addLabel("enterIntro", 0);
-		tl.from(".buttonRow .underline",{width:0, ease:"expo.out", transformOrigin:"0 50%" },"<");
 
 		// Zoom Village
-		tl.addLabel("zoom",">");
+		tl.addLabel("zoom");
 		tl.to(airpods, {duration: 1, frame: frameCount - 1, snap: "frame", onUpdate: render},">");
 		tl.fromTo("#infographicWrapper",{autoAlpha:0, scale:0}, {autoAlpha:1, scale:1, transformOrigin:"center center"},"<");
 		tl.to("#joseph .sectionContent .contentWrap",{rotateY:0, rotateX:0},">");
@@ -405,117 +506,78 @@ var NINJA_FUNCTIONS = {
 		tl.call(doFlip, null,">");
 		tl.to("#infographicWrapper", {backgroundColor: $brandContrastDark},"<");
 		tl.to("#joseph #infographicWrapper .overlay", {background: "radial-gradient(circle 20vmax at 50% 50%,rgba(0,0,0,0) 0%,rgba(0,0,0,.5) 80%,rgba(0,0,0,0.75) 100%)",autoAlpha:1},">");
-		tl.to("#infographicWrapper svg", {duration:0.5, attr:{viewBox:"645 425 655 371.17"}, ease:"power3.inOut"}, "<");
-		tl.from("#joseph #infographicWrapper #josephInVillageTransparent",{scale:0, autoAlpha:0, transformOrigin:"center center"},">");
+		tl.to("#infographicWrapper svg", {duration:0.5, attr:{viewBox:"290 166 1322 748"}, ease:"power3.inOut"}, "<");
+		tl.from("#joseph #infographicWrapper #josephInVillageTransparent",{scale:0, autoAlpha:0, transformOrigin:"center center"},"<");
 		tl.from("#joseph #infographicWrapper #TextMeetJoseph",{scale:0, autoAlpha:0},">");
 
 		// Joseph Impact
-		tl.addLabel("josephImpact",">");
+		tl.addLabel("josephImpact");
 		tl.to(canvas,{autoAlpha:0},">");
-		tl.to("#next1",{autoAlpha:0, scale:0},"<");
+		tl.to("#TextMeetJoseph",{autoAlpha:0, scale:0},"<");
 		tl.from("#s3, #s2, #s1",{autoAlpha:0, scale:0, stagger:0.2, transformOrigin:"50% 50%"},"<");
-		tl.to("#infographicWrapper svg", {duration:0.5, attr:{viewBox:"870 444 570 323"}, ease:"power3.inOut"}, "<");
+		tl.to("#infographicWrapper svg", {duration:0.5, attr:{viewBox:"527 199 1322 748"}, ease:"power3.inOut"}, "<");
 		tl.from("#trainingBooks",{scale:0, autoAlpha:0, transformOrigin:"center center"},"<");
 		tl.from("#josephImpactText",{scale:0, autoAlpha:0, transformOrigin:"center" },"<");
-		tl.from("#expandingCircle",{autoAlpha:0, scale:0, stagger:0.2, transformOrigin:"50% 50%"},">");
+		tl.to("#expandingCircle",{autoAlpha:1, rx:260, ry:260, transformOrigin:"50% 50%"},">");
 		// tl.to("#joseph .overlay", {background: "radial-gradient(circle 16vmax at  50% 50%, rgba(0,0,0,0) 0%,rgba(0,0,0,.5) 80%,rgba(0,0,0,0.75) 100%)"},"<");
 
 		// Enter Programs
-		tl.addLabel("enterPrograms",">");
-		tl.to("#next2",{autoAlpha:0, scale:0},">");
-		tl.to("#expandingCircle",{rx:297, ry:297, transformOrigin:"50% 50%"},"<");
-		tl.to("#infographicWrapper svg", {duration:0.5, attr:{viewBox:"1030 451 570 323"}, ease:"power3.inOut"}, "<");
+		tl.addLabel("enterPrograms");
+		tl.to("#josephImpactText",{autoAlpha:0, scale:0},">");
+		tl.to("#expandingCircle",{rx:362, ry:362, transformOrigin:"50% 50%"},"<");
+		tl.to("#infographicWrapper svg", {duration:0.5, attr:{viewBox:"744 192 1322 748"}, ease:"power3.inOut"}, "<");
 		tl.from("#G3_OurPrograms",{scale:0, autoAlpha:0, transformOrigin:"center center" },"<");
-		tl.from("#trainingBlips",{autoAlpha:0},"<");
+		tl.from("#trainingBlips ellipse, #trainingBullets ellipse",{autoAlpha:0, stagger:0.05},">");
 
 		// Enter Mandate
-		tl.addLabel("enterMandate",">");
+		tl.addLabel("enterMandate");
 		tl.to("#G3_OurPrograms",{autoAlpha:0, scale:0, transformOrigin:"center center"},">");
-		tl.to("#infographicWrapper svg", {duration:1, attr:{viewBox:"676 452 570 323"}, ease:"power3.inOut"}, ">");
-		tl.to("#expandingCircle",{duration: 2, rx:75, ry:75, transformOrigin:"50% 50%", ease:"power1.inOut"},"<-0.5");
-		tl.to("#blip1", {duration:2, rx:7, ry:7, motionPath: {path:"#blip1ToJospeh", align:"#blip1ToJospeh", alignOrigin: [0.5, 0.5], autoRotate: true}, transformOrigin: "50% 50%", ease: "power1.inOut"},"<");
-		tl.to("#blip2", {duration:2, rx:7, ry:7, motionPath: {path:"#blip2ToJospeh", align:"#blip2ToJospeh", alignOrigin: [0.5, 0.5], autoRotate: true}, transformOrigin: "50% 50%", ease: "power1.inOut"},"<");
-		tl.to("#blip3", {duration:2, rx:7, ry:7, motionPath: {path:"#blip3ToJospeh", align:"#blip3ToJospeh", alignOrigin: [0.5, 0.5], autoRotate: true}, transformOrigin: "50% 50%", ease: "power1.inOut"},"<");
-		tl.to("#G2_josephImpact",{autoAlpha:0, scale:0, transformOrigin:"center center"},"<+1");
-		tl.to("#TextMeetJoseph",{autoAlpha:0, scale:0, transformOrigin:"center center"},">");
+		tl.to("#trainingBullets",{duration:0.01, autoAlpha:0},">");
+		tl.to("#infographicWrapper svg", {attr:{viewBox:"300 196 1322 748"}, ease:"power3.inOut"}, ">");
+		tl.to("#expandingCircle",{rx:140, ry:140, transformOrigin:"50% 50%", ease:"power1.inOut"},"<");
+		tl.to("#blip1", {motionPath: {path:"#blip1ToJospeh", align:"#blip1ToJospeh", alignOrigin: [0.5, 0.5], autoRotate: true}, transformOrigin: "50% 50%", ease: "power1.inOut"},"<");
+		tl.to("#blip2", {motionPath: {path:"#blip2ToJospeh", align:"#blip2ToJospeh", alignOrigin: [0.5, 0.5], autoRotate: true}, transformOrigin: "50% 50%", ease: "power1.inOut"},"<");
+		tl.to("#blip3", {motionPath: {path:"#blip3ToJospeh", align:"#blip3ToJospeh", alignOrigin: [0.5, 0.5], autoRotate: true}, transformOrigin: "50% 50%", ease: "power1.inOut"},"<");
+		tl.to("#G2_josephImpact",{autoAlpha:0, scale:0, transformOrigin:"center center"},"<");
 		tl.from("#G4_Mandate",{scale:0, autoAlpha:0},">");
-		tl.to("#blip1", {motionPath: {path:"#path-0", align:"#path-0", alignOrigin:[0.5, 0.5], autoRotate:true, start:0.2, end:1,}, transformOrigin: "50% 50%", ease: "power1.inOut"},"<");
-		tl.to("#blip2", {motionPath: {path:"#path-0", align:"#path-0", alignOrigin:[0.5, 0.5], autoRotate:true, start:0.1, end:0.90,}, transformOrigin: "50% 50%", ease: "power1.inOut"},"<");
-		tl.to("#blip3", {motionPath: {path:"#path-0", align:"#path-0", alignOrigin:[0.5, 0.5], autoRotate:true, start:0, end:0.80,}, transformOrigin: "50% 50%", ease: "power1.inOut"},"<");
-
-		// for (let index = 0; index < 7; index++) {
-		// 	const blip = trainingBlips[index];
-		// 	const endPos = endPositions[index];
-		// 	tl.to(blip, {autoAlpha:1, motionPath: {path:"#path1", align:"#path1", alignOrigin:[0.5, 0.5], autoRotate:true, start: (endPos - 0.2), end:endPos,}, transformOrigin: "50% 50%", ease: "power1.inOut"},"<");
-		// }
-
-		// Start Loop through leader Animations
-		tl.addLabel("leaderAnimations",">");
-		tl.to("#village, #villageOverlay",{autoAlpha:1 },10.5);
-
-		for (let index = 0; index < leaders.length; index++) {
-			var thisCount = index+1;
-			let leader = document.getElementById(leaders[index].label);
-			let leaderSphere = document.getElementById("leaderSphere-" + thisCount);
-			let leaderImage = leader.getElementsByTagName("image");
-			let leaderTitle = document.getElementById("leaderTitle-" + thisCount);
-			let leaderPath = document.getElementById("path-" + thisCount);
-			let leaderPathB = document.getElementById("path-" + thisCount +"B");
-			let leaderPrevButton;
-			if (index > 0) {
-				leaderPrevButton = document.getElementById("leaderButton-" + index);
-			} else {
-				leaderPrevButton = "#next4";
-			}
-			// // Add label
-			tl.addLabel(leaders[index].label,leaders[index].startTime);
-			// // Hide the prev button
-			tl.to(leaderPrevButton,{scale:0, autoAlpha:0}, leaders[index].startTime);
-			// // Move to leader position
-			tl.to("#infographicWrapper svg", {attr:{viewBox:leaders[index].position}, ease:"power3.inOut"}, leaders[index].startTime);
-			// // Move village gradiant focus
-			tl.to("#Gradient-0",{attr:{fy:leaders[index].gradientfy, fx:leaders[index].gradientfx}, transformOrigin:"50% 50%"}, leaders[index].startTime);
-			// // Draw path line
-			tl.fromTo(leaderPath, {drawSVG:0}, {duration:0.2, drawSVG:"100%", ease:"power1.inOut"}, leaders[index].startTime +0.1);
-			// Draw the sphere
-			tl.fromTo(leaderSphere, {drawSVG:0}, {drawSVG:"100%", ease:"power1.inOut"}, ">");
-			// Move the blips
-			tl.to("#blip1, #blip2, #blip3", {stagger:0.1, motionPath:{path:leaderPath, align:leaderPath, alignOrigin: [0.5, 0.5], autoRotate: true}, transformOrigin: "50% 50%", ease: "power1.inOut"}, "<");
-			tl.to("#blip1, #blip2, #blip3", {stagger:0.1, motionPath:{path:leaderPathB, align:leaderPathB, alignOrigin: [0.5, 0.5], autoRotate: true}, transformOrigin: "50% 50%", ease: "power1.inOut"}, ">");
-			// // Show the leader
-			tl.fromTo([leaderImage, leaderTitle], {scale:0, autoAlpha:0}, {scale:1, autoAlpha:1}, "<+0.2");
-		}
 
 		// Transform
-		tl.addLabel("transform",40.5);
-		tl.to("#infographicWrapper svg", {duration:1, attr:{viewBox:"0 0 1920 1088"}, ease:"power3.inOut"},40.5);
-		tl.to("#Gradient-0",{attr:{fy:544, fx:960}, transformOrigin:"50% 50%"},"<");
-		tl.to("#Gradient-0",{attr:{cy:544, cx:960, cr:960, fx:960, fy:544}},">+1");
-		tl.to("#joseph #infographicWrapper .overlay",{background:"radial-gradient(20vmax at 50% 50%, rgba(0, 0, 0, 0.29) 50%, rgba(0, 0, 0, 0.47) 95%, rgba(0, 0, 0, 0.48) 100%)"},"<");
-		tl.to(gradientStops[0],{attr:{"stop-opacity":0}},"<");
-		tl.to(gradientStops[1],{attr:{"stop-color":"green"}},"<");
-		tl.to(gradientStops[2],{attr:{"offset":1}},"<");
-		tl.to(gradientStops[2],{attr:{"offset":1}},"<");
-		tl.to("#leaderButton-10, #G4_Mandate",{scale:0, autoAlpha:0},"<");
-		tl.fromTo("#mandatePaths path",{drawSVG:"0"}, {drawSVG:"100%", ease:"power1.inOut", strokeWidth:2},"<+0.8");
-		tl.to("#joseph svg ellipse, #joseph svg path",{strokeWidth:2},"<");
+		tl.addLabel("transform");
+		tl.to("#infographicWrapper svg", {duration:1, attr:{viewBox:"0 0 1920 1088"}, ease:"power3.inOut"},">");
+		tl.to("#trainingBlips",{autoAlpha:0},"<");
+		tl.to("#G4_Mandate",{scale:0, autoAlpha:0},">");
 
-		for (let index = 0; index < leaders.length; index++) {
-			var thisCount = index+1;
-			var leader = document.getElementById(leaders[index].label);
-			var leaderTitles = document.getElementById("leaderTitle-" + thisCount);
-			var leaderBlips = document.getElementById("leaderBlips-" + thisCount);
-			var leaderBlips = leaderBlips.querySelectorAll("ellipse");
-			var leaderSpheresGroup = document.getElementById("leaderSpheres-" + thisCount);
-			var leaderSpheres = leaderSpheresGroup.querySelectorAll("ellipse");
+		tl.fromTo("#mandatePaths path",{drawSVG:"0", autoAlpha:0}, {drawSVG:"100%", autoAlpha:1, ease:"power1.inOut"},">");
+		tl.fromTo(leaderSpheresOuter,{drawSVG:"0", autoAlpha:0}, {drawSVG:"100%", autoAlpha:1, ease:"power1.inOut"},">");
+		tl.from(leaderSpheresInner,{autoAlpha:0, scale:0, transformOrigin:"50% 50%"},">");
 
-			tl.to(leaderBlips,{stagger:0.3, autoAlpha:1},42);
-			tl.to(leaderTitles,{stagger:0.3, autoAlpha:0},"<");
-			tl.from(leaderSpheres,{rx:0, ry:0, autoAlpha:0, transformOrigin:"50% 50%"},"<");
+		for (let index = 0; index < lights.length; index++) {
+			const light = lights[index];
+			const lightPath = lightPaths[index];
+			tl.to(light,{autoAlpha:1, motionPath:{path:lightPath, align:lightPath, alignOrigin: [0.5, 0.5], autoRotate: true}, ease:"power1.inOut"},"<");
 		}
-		tl.fromTo(satelitePaths,{drawSVG:"0"}, { drawSVG:"100%", ease:"power1.inOut"},43);
-		tl.to(sateliteSpheres,{ autoAlpha:1, ease:"power1.inOut"},"<");
+		tl.to(lights,{scale:3, autoAlpha:0, transformOrigin:"50% 50%", ease:"power1.inOut"},">");
 
+		for (let index = 0; index < leaderSpheresInnerGroups.length; index++) {
+			const sphereGroup = leaderSpheresInnerGroups[index];
+			const theseInnerSpheres = sphereGroup.querySelectorAll("ellipse");
+			if (index == 0) {
+				tl.to(theseInnerSpheres[2],{duration:0.2, yoyo:true, repeat:1, fill:"#ffffff"},">");
+				tl.to(theseInnerSpheres[1],{duration:0.2, yoyo:true, repeat:1, fill:"#ffffff"},"<0.1");
+				tl.to(theseInnerSpheres[0],{duration:0.2, yoyo:true, repeat:1, fill:"#ffffff"},"<0.1");
+			} else {
+				tl.to(theseInnerSpheres[2],{duration:0.2, yoyo:true, repeat:1, fill:"#ffffff"},"<-0.2");
+				tl.to(theseInnerSpheres[1],{duration:0.2, yoyo:true, repeat:1, fill:"#ffffff"},"<0.1");
+				tl.to(theseInnerSpheres[0],{duration:0.2, yoyo:true, repeat:1, fill:"#ffffff"},"<0.1");
+			}
+		}
+
+		tl.to("#joseph #infographicWrapper .underlay", {background: "radial-gradient(circle at 50% 50%, rgba(0,0,0,0.45) 40%, #000000 100%)", autoAlpha:1, transformOrigin:"50% 50%"},">");
+		tl.to("#joseph #infographicWrapper .overlay", {background: "radial-gradient(circle 40vmax at 50% 50%, rgba(0,0,0,0) 0%, rgba(0,0,0,.5) 90%, rgba(0,0,0,0.85) 100%)"},"<");
+		tl.to("#infographicWrapper img", {autoAlpha:1},"<");
+		tl.fromTo(".emitNetwork", {transform:"perspective(500px) rotateX(0deg) rotateY( 0deg)"}, {duration:2, transform:"perspective(500px) rotateX(18deg) rotateY( 0deg)", y:-60, transformOrigin:"50% 50%", ease:"power3.inOut"},"<");
+		tl.to(".emitNetworkTopLayer",{duration:2, y:-60, ease:"power3.inOut"},"<");
+		tl.from("#transformText",{autoAlpha:0, scale:0, transformOrigin:"center center"},"<");
 		tl.addLabel("end");
 
 		// Nested Timelines
@@ -534,29 +596,6 @@ var NINJA_FUNCTIONS = {
 
 
 
-
-
-
-
-	//--------PIN DONATION : FAKE PINS THE BUTTON TOP RIGHT OF THE SCREEN-------------------------------------
-	pinDonation: function() {
-		var tl = gsap.timeline({
-			id: "Pin Donate Btn",
-			scrollTrigger: {
-				trigger: "#introCTA",
-				scroller: ".scrollContainer",
-				start: "top 100px",
-				end: "top 7px",
-				toggleActions: "play complete none reverse",
-				scrub: true
-			}
-		});
-        tl.to('#introCTA', {duration:1, autoAlpha:0});
-		tl.from('#donateBtn', {duration:1, autoAlpha:0},"<");
-		tl.from('#loginBtn', {duration:1, background:"transparent", border:"1px solid #fff", color:"#ffffff", x:108},"<");
-		tl.to('.ctaTitle', {duration:1, autoAlpha:0},"<");
-		return tl;
-	},
 
 
 

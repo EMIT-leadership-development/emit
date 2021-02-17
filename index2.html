@@ -9,27 +9,93 @@ _unlisted: true
 
 <!-- -------------------IMPACT -->
 <section id="impact" class="item--full swiper-slide">
-    <div class="sectionContent FirstFive leftWall wall">
+    <div class="sectionContent leftWallWrap wall">
+        <div class="wallImage">
+            {% include scrollytelling/backgroundWalls.html %}
+        </div>
         <div class="contentWrap">
-            <div class="innerWrap pendulum">
-                <div data-speed="-2" class="layer pendulum_box">
-                    <div class="ball first"><span class="cable"></span></div>
-                    <div class="ball"><span class="cable"></span><span>FAMILY</span></div>
-                    <div class="ball"><span class="cable"></span><span>COMMUNITY</span></div>
-                    <div class="ball last"><span class="cable"></span><span>COUNTRY</span></div>
+            <div class="planetWrap" data-speed="-2">
+                <div class="planet"></div>
+                <img class="networkAnimated" src="/images/scrollyTelling/networkAnimated.svg" alt="">
+            </div>
+            <div id="impactContent" class="innerWrap">
+                <div id="pendulum" data-speed="2" class="layer pendulum_box">
+                    <div class="ballGroup  spherelogo">
+                        <span class="cable"></span>
+                        <div class="sphere">
+                            {% include scrollytelling/animatedLogo.html %}
+                        </div>
+                    </div>
+                    <div class="ballGroup  sphere1">
+                        <span class="cable"></span>
+                        <div class="sphere">
+                            <svg viewBox="0 0 100 100">
+                                <circle r="50" cy="50" cx="50"/>
+                            </svg>
+                            <span>FAMILY</span>
+                        </div>
+                    </div>
+                    <div class="ballGroup  sphere2">
+                        <span class="cable"></span>
+                        <div class="sphere">
+                            <svg viewBox="0 0 100 100">
+                                <circle r="50" cy="50" cx="50"/>
+                            </svg>
+                            <span>COMMUNITY</span>
+                        </div>
+                    </div>
+                    <div class="ballGroup  sphere3">
+                        <span class="cable"></span>
+                        <div class="sphere">
+                            <svg viewBox="0 0 100 100">
+                                <circle r="50" cy="50" cx="50"/>
+                            </svg>
+                            <span>COUNTRY</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="questionWrap">
+                    <div id="spheresWrap"></div>
+                    <div class="formContainer">
+                        <div class="questionIntro">
+                            <h2 class="sectionTitle priority2">Who are the people you impact?</h2>
+                            <p>Add five names to your impact spheres and see how you transform the world.</p>
+                        </div>
+                        <form id="impactForm" class="materialForm" action="">
+                            <div class="form-group">
+                                <input id="enterName" name="_addName" type="text" required="required">
+                                <label for="_addName" class="control-label">Name</label><i class="bar"></i>
+                            </div>
+                            <button class="button secondary" id="addPerson" type="submit">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                            </button>
+                        </form>
+                    </div>
+                    <div id="animateName"></div>
                 </div>
             </div>
+            <div id="hitPlanet"></div>
         </div>
     </div>
-    <div class="sectionIntro SixToRight rightWall wall">
+    <div class="sectionIntro rightWallWrap wall">
+        <div class="wallImage">
+            {% include scrollytelling/backgroundWalls.html %}
+        </div>
         <div  class="contentWrap">
             <div class="innerWrap">
                 <h2 class="sectionTitle priority2">
                     Who you are, your decisions and choices will have a lasting impact on yourself and others.
                 </h2>
                 <p>
-                    EMIT believes that relationships are the key to transformation.
+                    EMIT believes that your spheres of impact are the key to transformation.
                 </p>
+                <div class="buttonRow">
+                    <span class="callToAction">CLICK FOR IMPACT</span>
+                    <div id="startImpact" class="hoverAnim startButton">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-play-circle"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg>
+                        <span class="noticeMe"></span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -43,14 +109,20 @@ _unlisted: true
 </section>
 <!-- ----------------------AFRICA -->
 <section id="africa" class="item--full swiper-slide">
-    <div class="sectionContent leftToCenter leftWall wall">
+    <div class="sectionContent leftToCenter leftWallWrap wall">
+        <div class="wallImage">
+            {% include scrollytelling/backgroundWalls.html %}
+        </div>
         <div class="contentWrap">
             <div class="innerWrap">
                 {% include scrollytelling/africaStory.html %}
             </div>
         </div>
     </div>
-    <div class="sectionIntro centerToRight rightWall wall">
+    <div class="sectionIntro centerToRight rightWallWrap wall">
+        <div class="wallImage">
+            {% include scrollytelling/backgroundWalls.html %}
+        </div>
         <div class="contentWrap">
             <div class="innerWrap layer" data-speed="2">
                 <h2 class="sectionTitle priority2 editable">
@@ -73,7 +145,10 @@ _unlisted: true
 </section>
 <!-- ----------------------ANNA -->
 <section id="anna" class="item--full swiper-slide">
-    <div class="sectionIntro leftToThree leftWall wall">
+    <div class="sectionIntro leftToThree leftWallWrap wall">
+        <div class="wallImage">
+            {% include scrollytelling/backgroundWalls.html %}
+        </div>
         <div class="contentWrap">
             <div class="innerWrap layer" data-speed="-2">
                 <h2 class="sectionTitle priority2 editable">
@@ -87,7 +162,10 @@ _unlisted: true
             </div>
         </div>
     </div>
-    <div class="sectionContent fourToRight rightWall wall">
+    <div class="sectionContent fourToRight rightWallWrap wall">
+        <div class="wallImage">
+            {% include scrollytelling/backgroundWalls.html %}
+        </div>
         <div class="contentWrap">
             <div class="annaWrap innerWrap layer" data-speed="2">
                 <div id="annasLeadersWrap">
@@ -132,23 +210,28 @@ _unlisted: true
 </section>
 <!-- ----------------------JOSEPH -->
 <section id="joseph" class="item--full swiper-slide">
-    <div class="sectionContent leftWall wall FirstFive">
+    <div class="sectionContent leftWallWrap wall FirstFive">
+        <div class="wallImage">
+            {% include scrollytelling/backgroundWalls.html %}
+        </div>
         <div class="contentWrap">
             <div id="introduceCanvas" class="innerWrap" data-speed="-2">
                 <canvas id="hero-lightpass"></canvas>
             </div>
         </div>
     </div>
-    <div class="sectionIntro rightWall wall SixToRight">
+    <div class="sectionIntro rightWallWrap wall SixToRight">
+        <div class="wallImage">
+            {% include scrollytelling/backgroundWalls.html %}
+        </div>
         <div class="contentWrap">
             <div class="innerWrap layer" data-speed="2">
                 <h2 class="sectionTitle priority2">
                     <span class="emphasis">IMAGINE</span> if you could reach into the remotest villages in the darkest corners of Africa.
                 </h2>
                 <div class="buttonRow">
-                    <span class="underline"></span>
                     <span class="callToAction">CLICK TO EXPLORE</span>
-                    <div id="startJoseph" class="hoverAnim">
+                    <div id="startJoseph" class="hoverAnim startButton">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-play-circle"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg>
                         <span class="noticeMe"></span>
                     </div>
@@ -157,7 +240,14 @@ _unlisted: true
         </div>
     </div>
     <div id="infographicWrapper">
-        {% include scrollytelling/emitNetwork.html %}
+        <img src="/video/africanVillage/0254.jpg" class="layer" data-speed="-1">
+        <div class="underlay"></div>
+        <div class="emitNetwork">
+            {% include scrollytelling/emitNetwork.html %}
+        </div>
+        <div class="emitNetworkTopLayer" data-speed="2">
+            {% include scrollytelling/emitNetworkTopLayer.html %}
+        </div>
         <div class="overlay layer" data-speed="3"></div>
     </div>
     <div class="sectionHeadline">
@@ -173,14 +263,38 @@ _unlisted: true
             <li id="enterJoseph" class="hoverAnim" data-link="josephImpact"><span class="tooltip">Meet Joseph</span><span class="progressIndicator"></span><span class="progressMarker"></span></li>
             <li id="josephImpact" class="hoverAnim" data-link="enterPrograms"><span class="tooltip">Joseph's impact</span><span class="progressIndicator"></span><span class="progressMarker"></span></li>
             <li id="enterPrograms" class="hoverAnim" data-link="enterMandate"><span class="tooltip">EMIT training</span><span class="progressIndicator"></span><span class="progressMarker"></span></li>
-            <li id="enterMandate" class="hoverAnim" data-link="womenLeaders"><span class="tooltip">Mandate</span><span class="progressIndicator"></span><span class="progressMarker"></span></li>
-            <li id="enterSpiritual" class="hoverAnim" data-link="spiritualLeaders"><span class="tooltip">Spiritual Leaders</span><span class="progressIndicator"></span><span class="progressMarker"></span></li>
-            <li id="enterWomen" class="hoverAnim" data-link="end"><span class="tooltip">Women Leaders</span><span class="progressIndicator"></span><span class="progressMarker"></span></li>
+            <li id="enterMandate" class="hoverAnim" data-link="transform"><span class="tooltip">Mandate</span><span class="progressIndicator"></span><span class="progressMarker"></span></li>
+            <li id="transform" class="hoverAnim" data-link="end"><span class="tooltip">Transformation</span><span class="progressIndicator"></span><span class="progressMarker"></span></li>
+            <!-- <li id="enterWomen" class="hoverAnim" data-link="end"><span class="tooltip">Women Leaders</span><span class="progressIndicator"></span><span class="progressMarker"></span></li> -->
         </ul>
     </div>
 </section>
 <!-- ----------------------TRANSFORMATION -->
 <section id="transformation" class="item--full swiper-slide">
+    <div class="sectionIntro leftToCenter leftWallWrap wall">
+        <div class="wallImage">
+            {% include scrollytelling/backgroundWalls.html %}
+        </div>
+        <div class="contentWrap">
+            <div class="innerWrap layer" data-speed="-2">
+                <h2 class="sectionTitle priority2 editable">
+                    EMIT has already influenced over a <span class="emphasis">million leaders</span> in 17 countries.
+                </h2>
+            </div>
+        </div>
+    </div>
+    <div class="sectionContent centerToRight rightWallWrap wall">
+        <div class="wallImage">
+            {% include scrollytelling/backgroundWalls.html %}
+        </div>
+        <div class="contentWrap">
+            <div class="innerWrap layer" data-speed="2">
+                <p>
+                    We have a waiting list of <span class="emphasis">leaders</span> eager to be the <span class="emphasis">change that Africa needs.</span> Committed to transforming their communities - they need <span class="emphasis">your help</span> to gain the knowledge and skills.
+                </p>
+            </div>
+        </div>
+    </div>
     <div class="sectionHeadline">
         <h1>
             <span class="title">SUCCESS</span>
@@ -199,7 +313,3 @@ _unlisted: true
         <div class="subtitle">Your impact</div>
     </div>
 </section>
-
-<section id="theEnd" class="item--full swiper-slide white">
-    <h1>THE END</h1>
-</section> -->
