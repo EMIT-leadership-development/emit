@@ -15,7 +15,7 @@ $sphereWidth: clamp(80px,10vw,200px);
     main {
         position: relative;
     }
-    // --------SWIPER.JS STYLING FOR CONTAINERS AND ELEMENTS
+    // -------- SWIPER.JS STYLING FOR CONTAINERS AND ELEMENTS
     .swiper-container {
         width: 100vw;
         height: 100vh;
@@ -87,7 +87,6 @@ $sphereWidth: clamp(80px,10vw,200px);
             color: rgba(255,255,255,0.7) !important;
         }
     }
-    // Text inside section content
     .sectionTitle {
         color: rgba(255,255,255,0.7);
         text-transform: unset;
@@ -108,7 +107,7 @@ $sphereWidth: clamp(80px,10vw,200px);
         margin: 0;
         font-weight: 300;
     }
-    // Cute Cursor follower
+    // --------- CURSOR FOLLOWER
     .cursorFollower {
         width: 30px;
         height: 30px;
@@ -144,6 +143,11 @@ $sphereWidth: clamp(80px,10vw,200px);
         flex-direction: row;
         padding: 1rem;
         cursor: pointer;
+        position: absolute;
+        bottom: 0;
+        @media (min-width:$landscapeStart) {
+            right: 0;
+        }
         .button {
             color: rgba(255,255,255,0.5);
             background: transparent;
@@ -158,8 +162,13 @@ $sphereWidth: clamp(80px,10vw,200px);
             padding: 0;
         }
     }
-
-    // ----------------SECTIONS
+    // Temp dom position for stage when hero is active
+    #stageHolder {
+        .stage {
+            display: none;
+        }
+    }
+    // ------------ SECTIONS
     section {
         background-color: lighten($brandContrastDark, 1%);
         color: rgba(255,255,255,0.6);
@@ -197,6 +206,7 @@ $sphereWidth: clamp(80px,10vw,200px);
                 flex-grow: 1;
                 display: flex;
                 flex-direction: column;
+                position: relative;
                 @media (min-width:$landscapeStart) {
                     justify-content: center;
                     align-items: flex-end;
@@ -247,6 +257,7 @@ $sphereWidth: clamp(80px,10vw,200px);
                 flex-grow: 1;
                 display: flex;
                 flex-direction: column;
+                position: relative;
                 @media (min-width:$landscapeStart) {
                     justify-content: center;
                     align-items: flex-start;
@@ -388,8 +399,8 @@ $sphereWidth: clamp(80px,10vw,200px);
             }
         }
     }
-    // ------------ STAGEWRAP : STARTING STYLES
-    // this div is reparented into each section with js. It gets specific styles in each section - see below.
+    // ------------ STAGEWRAP
+    // STARTING STYLES - reparented into each active slide. specific styles in each section below.
     .stageWrap {
         $planetWidth: 25vmax;
         $networkWidth: 31vmax;
@@ -439,7 +450,7 @@ $sphereWidth: clamp(80px,10vw,200px);
                 position: relative;
                 filter: drop-shadow(16px 20px rgba(0,0,0,0.4));
                 .spherelogo {
-                    #textFamily, #textCommunity, #textCountry, #sphereAnna, #sphereFamily, #sphereCommunity, #sphereCountry {
+                    #annaLeaders, #heart, #josephInVillagePic, #africaLeader {
                         visibility: hidden;
                     }
                 }
@@ -523,8 +534,7 @@ $sphereWidth: clamp(80px,10vw,200px);
             }
         }
     }
-
-     // ------------------SCROLLYTELLING SECTIONS
+    // ----------- SCROLLYTELLING SECTIONS
     // SECTION 0: HERO VIDEO
     .hero {
         display: grid;
@@ -613,10 +623,6 @@ $sphereWidth: clamp(80px,10vw,200px);
             }
         }
     }
-    // #stageHolder {
-        .stage {
-            display: none;
-        }
     // SECTION 1: IMPACT
     #impact {
         .leftWallWrap {
@@ -684,7 +690,6 @@ $sphereWidth: clamp(80px,10vw,200px);
             }
         }
     }
-
     // SECTION 2: LEGACY
     #legacy {
         .leftWallWrap {
@@ -755,7 +760,6 @@ $sphereWidth: clamp(80px,10vw,200px);
             }
         }
     }
-
     // SECTION 2: LEADERS (AFRICA)
     #leaders {
         .leftWallWrap {
@@ -765,7 +769,7 @@ $sphereWidth: clamp(80px,10vw,200px);
             }
             .contentWrap {
                 width: 90%;
-                background-image: linear-gradient(90deg, #272c332b 0%, #1c2127 100%), url(/images/AfminTeacher.webp);
+                background-image: linear-gradient(90deg, #272c332b 0%, #1c2127 100%), url(/images/scrollyTelling/AfricaLeadersBG.jpg);
                 background-position: 35% 50%;
                 background-repeat: no-repeat;
                 background-size: cover;
@@ -819,7 +823,6 @@ $sphereWidth: clamp(80px,10vw,200px);
             }
         }
     }
-
     // SECTION 3: ANNA
     #anna {
         .leftWallWrap {
@@ -886,11 +889,101 @@ $sphereWidth: clamp(80px,10vw,200px);
             }
         }
     }
-
     // SECTION 4: JOSEPH
     #joseph {
         .leftWallWrap {
+            flex:6;
+            @media (max-width:$portraitEnd) {
+                flex:1
+            }
+            .contentWrap {
+                width: 90%;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                @media (min-width: $landscapeStart) {
+                    align-items: flex-end;
+                    justify-content: flex-end;
+                }
+                @media (max-width: $portraitEnd) {
+                    align-items: center;
+                    justify-content: flex-end;
+                }
+                .innerWrap {
+                    width: 100%;
+                    height: 100%;
+                    // border: 1px solid red;
+                    padding: 0;
+                    @media (max-width:$portraitEnd) {
+                        width: 100%;
+                    }
+                    video{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        top: 0;
+                        left: 0;
+                        display: block !important;
+                    }
+                    canvas {
+                        width: 100%;
+                        height: 100%;
+                        // visibility: hidden;
+                    }
+                    .gradientOverlay {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        top: 0;
+                        left:0;
+                        @media (min-width:$landscapeStart) {
+                            background: linear-gradient(90deg, rgba(39,44,51,0.4) 0%, rgba(16,19,23,0.65) 50%, rgba(16,19,23,0.95) 90%);
+                        }
+                        @media (max-width:$portraitEnd) {
+                            background: linear-gradient(180deg, rgba(39,44,51,0.4) 0%, rgba(16,19,23,0.65) 50%, rgba(16,19,23,0.95) 90%);
+                        }
+                    }
+                }
+            }
+        }
+        .rightWallWrap {
             flex:4;
+            @media (max-width:$portraitEnd) {
+                flex:1
+            }
+        }
+        .stage {
+            @media (min-width:$landscapeStart) {
+                width: 60%;
+            }
+            .stageWrap {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                #impactPendulum {
+                    visibility: hidden;
+                    display: flex;
+                    .spherelogo {
+                        overflow: hidden;
+                    }
+                }
+                #planetWrap {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+    // SECTION 5: ON-TEN
+    #onten {
+        .leftWallWrap {
+            flex:6;
             @media (max-width:$portraitEnd) {
                 flex:1
             }
@@ -915,35 +1008,18 @@ $sphereWidth: clamp(80px,10vw,200px);
                     @media (max-width:$portraitEnd) {
                         width: 90%;
                     }
-                    canvas {
-                        width: 100%;
-                        height: 100%;
-                    }
-                    .gradientOverlay {
-                        position: absolute;
-                        width: 100%;
-                        height: 100%;
-                        top: 0;
-                        left:0;
-                        @media (min-width:$landscapeStart) {
-                            background: linear-gradient(90deg, rgba(39,44,51,0.4) 0%, rgba(16,19,23,0.65) 50%, rgba(16,19,23,0.95) 90%);
-                        }
-                        @media (max-width:$portraitEnd) {
-                            background: linear-gradient(180deg, rgba(39,44,51,0.4) 0%, rgba(16,19,23,0.65) 50%, rgba(16,19,23,0.95) 90%);
-                        }
-                    }
                 }
             }
         }
         .rightWallWrap {
-            flex:3;
+            flex:4;
             @media (max-width:$portraitEnd) {
                 flex:1
             }
         }
         .stage {
             @media (min-width:$landscapeStart) {
-                width: 50%;
+                width: 60%;
             }
             .stageWrap {
                 width: 100%;

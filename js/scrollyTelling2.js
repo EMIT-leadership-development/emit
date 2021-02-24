@@ -1,20 +1,14 @@
 "use strict";
 // VARIABLES COPIED FROM SCSS pre.scss
-// BRAND COLORS
+
 var $brand = "#abe116",
 	$primary = "#abe116",
 	$brandDarker = "#99ca13",
-
-	// SPHERES
 	$sphere1BG = "#85b744",
 	$sphere2BG = "#37ab5d",
 	$sphere3BG = "#03956d",
-
-// $brandContrastDark: #272D32;
 	$brandContrastDark = "#272c33",
 	$brandContrastDarkest = "#1c2127",
-
-// PALE GRAYISH-BLUEISH COLORS FOR BG'S
 	$brandContrastLight = "#EDF5F9",
 	$brandContrastLight2 = "#e0e8ea",
 	$brandContrastLight3 = "#BCC4C6",
@@ -116,19 +110,22 @@ window.onload = function() {
 		}
 		// JOSEPH SLIDE
 		if (this.realIndex == 5) {
-			motherTL.tweenFromTo("joseph","end");
+			NINJA_FUNCTIONS.moveStageWrap("joseph");
+			motherTL.tweenFromTo("joseph","onTen");
 		}
-		if (this.realIndex != 5) {
+		// ON-TEN SLIDE
+		if (this.realIndex == 6) {
+			NINJA_FUNCTIONS.moveStageWrap("onten");
+			motherTL.tweenFromTo("onten","donate");
 		}
-		// SUCCESS SLIDE
-		if (this.realIndex == 4) {
+		// DONATE SLIDE
+		if (this.realIndex == 7) {
+			NINJA_FUNCTIONS.moveStageWrap("donate");
+			motherTL.tweenFromTo("donate","end");
 		}
 	});
 
 } //End window.load
-
-
-
 
 // ALL THE ANIMATION NINJA_FUNCTIONS IN A NAMESPACE
 var NINJA_FUNCTIONS = {
@@ -167,13 +164,10 @@ var NINJA_FUNCTIONS = {
 		var speed = 0.1;
 		var speed2 = 0.8;
 		var fpms = 60 / 1000;
-
 		var xSet = gsap.quickSetter(cursorFollower, "x", "px");
 		var ySet = gsap.quickSetter(cursorFollower, "y", "px");
-
 		var xSetInner = gsap.quickSetter(cursorFollowerInner, "x", "px");
 		var ySetInner = gsap.quickSetter(cursorFollowerInner, "y", "px");
-
 		window.addEventListener("mousemove", e => {
 			mouse.x = e.x;
 			mouse.y = e.y;
@@ -193,7 +187,6 @@ var NINJA_FUNCTIONS = {
 			xSetInner(pos2.x + 5);
 			ySetInner(pos2.y + 5);
 		});
-
 		const animateCursor = gsap.timeline({
 			paused:true,
 			defaults:{duration:0.5},
@@ -202,7 +195,6 @@ var NINJA_FUNCTIONS = {
 		animateCursor.to(".cursorFollower",{transformOrigin:"center center", width:100, height:100, ease: "elastic.in(1, 0.5)"},"<");
 		animateCursor.to(".cursorFollowerInner",{transformOrigin:"center center", scale:0, ease: "elastic.in(1, 0.5)"},"<");
 		animateCursor.add('end');
-
 		const hoverElements = gsap.utils.toArray(['.hoverAnim', '#next1', '#next2', '#next3', '#next4', '#leaderButton-1', '#leaderButton-2', '#leaderButton-3', '#leaderButton-4', '#leaderButton-5', '#leaderButton-6', '#leaderButton-7', '#leaderButton-8', '#leaderButton-9', '#leaderButton-10']);
 		hoverElements.forEach((element) => {
 			element.addEventListener("mouseenter", () => animateCursor.play());
@@ -278,6 +270,14 @@ var NINJA_FUNCTIONS = {
 		context.drawImage(images[airpods.frame], 0, 0);
 		}
 
+		// var villageVideo = document.getElementById("villageVideo");
+		// function playVideo() {
+		// 	villageVideo.play();
+		// }
+		// function rewindVideo() {
+		// 	villageVideo.currentTime();
+		// }
+
 		let tl = gsap.timeline({
 			defaults:{duration:0.5},
 			paused: true,
@@ -301,7 +301,7 @@ var NINJA_FUNCTIONS = {
 		tl.to("#impactGraphic .spherelogo #backgroundSphere",{autoAlpha:0},"<0.3");
 		tl.to("#impactGraphic #body", {morphSVG:"#body-2", ease:"expo.out"}, "<");
 		tl.to("#impactGraphic #shadow", {morphSVG:"#shadow-2", ease:"expo.out"}, "<");
-		tl.from("#planetWrap",{scale:0.3, autoAlpha:0, y:-300, x:300, transformOrigin:"center center"},">");
+		tl.from("#planetWrap",{scale:0.3, autoAlpha:0, y:-300, x:300, transformOrigin:"center center"},"<0.2");
 		tl.to("#impactPendulum",{scale:0.5, y:"4.5vmax", x:"-1vmax", filter:"drop-shadow(1px 1px rgba(0,0,0,0.1))"},"<");
 		tl.to(".spherelogo",{scale:1.2, transformOrigin:"center center"},"<")
 		tl.to("#planetWrap .planet",{duration:2, backgroundPosition:"-300px 50%"},"<-0.5");
@@ -317,36 +317,54 @@ var NINJA_FUNCTIONS = {
 		tl.to("#impactGraphic #shadow", {morphSVG:"#shadow", ease:"expo.out"}, "<");
 		tl.to("#impactGraphic #body", {duration:1, morphSVG:"#africaPath", ease:"expo.out"}, ">");
 		tl.to("#impactGraphic #shadow", {duration:1, autoAlpha:0, ease:"expo.out"}, "<");
-		tl.to("#impactPendulum",{duration:1, scale:4, filter:"drop-shadow(rgba(0, 0, 0, 0.1) 3px 4px)"},"<");
+		tl.to("#impactPendulum",{duration:1, scale:4, filter:"drop-shadow(rgba(0, 0, 0, 0.5) 3px 4px)"},"<");
 		tl.to(".sphere1, .sphere2, .sphere3",{duration:1, scale:0},"<");
 		tl.to("#africaLeader",{autoAlpha:1},"<0.5");
-		tl.to("#leaders .leftWallWrap .contentWrap",{backgroundImage:"linear-gradient(90deg, rgb(39 44 51) 0%, rgb(28, 33, 39) 100%)"},"<");
 
 		// ANNA
 		tl.addLabel("anna",">")
-		tl.to(".spherelogo svg",{duration:2, attr:{viewBox:"208.40 209.34 9 9"}, ease:"power3.inOut"},">");
+		tl.to("#impactPendulum",{duration:2, scale:3.5},">");
+		tl.to(".spherelogo svg",{duration:2, attr:{viewBox:"209.50 210.50 7 7"}, ease:"power3.inOut"},"<");
 		tl.to(".spherelogo",{duration:2, borderRadius:"50%", ease:"power3.inOut"},"<");
-		tl.to("#anna .leftWallWrap .contentWrap",{backgroundImage:"linear-gradient(90deg, rgb(39 44 51) 0%, rgb(28, 33, 39) 100%)"},"<1.5");
-		tl.to("#africaLeader",{autoAlpha:0},"<");
-		tl.to("#body",{fill:$brandContrastDarkest},"<");
-		tl.to(".spherelogo svg",{attr:{viewBox:"205.40 206.34 15 15"}, ease:"power3.inOut"},">0.5");
-		tl.to("#textFamily, #sphereFamily",{autoAlpha:1},"<");
-		tl.from("#sphereAnna",{autoAlpha:0},"<");
-		tl.to(".spherelogo svg",{attr:{viewBox:"203.40 204.34 19 19"}, ease:"power3.inOut"},">");
-		tl.to("#textCommunity, #sphereCommunity",{autoAlpha:1},"<");
-		tl.to(".spherelogo svg",{attr:{viewBox:"201.40 202.34 23 23"}, ease:"power3.inOut"},">");
-		tl.to("#textCountry, #sphereCountry",{autoAlpha:1},"<");
+		tl.to(".spherelogo svg",{attr:{viewBox:"203.50 204.50 19 19"}, ease:"power3.inOut"},">");
+		tl.to("#impactGraphic #body", {fill:$brandContrastDarkest, ease:"expo.out"}, "<");
+		tl.to("#annaLeaders",{autoAlpha:1},"<");
+		tl.set("#impactGraphic #body", {morphSVG:"#body", ease:"expo.out"}, ">");
+		tl.set("#africaLeader",{autoAlpha:0},"<");
 
 		// JOSEPH
 		tl.addLabel("joseph",">");
-		tl.to(airpods, {duration: 1,frame: frameCount - 1, snap: "frame", onUpdate: render,
-			onComplete: function(params) {
-				NINJA_FUNCTIONS.moveStageWrap("joseph");
-			}
-		},">0.5");
-		tl.to("#textCountry, #sphereAnna, #sphereCountry, #textCommunity, #sphereCommunity, #textFamily, #sphereFamily",{autoAlpha:0},">");
-		tl.to(".spherelogo svg",{duration:2, attr:{viewBox:"208.40 209.34 9 9"}, ease:"power3.inOut"},"<");
 
+		// 1.5
+		tl.to("#impactGraphic #body", {duration:0.01, fill:"#ffffff"}, ">");
+		tl.to(".spherelogo",{duration:1, borderRadius:0, ease:"power3.inOut"},">0.4");
+		tl.to(".spherelogo svg",{duration:1, attr:{viewBox:"0 0 424 424"}, ease:"power3.inOut"},"<");
+		tl.to("#impactPendulum",{duration:1, scale:2,},"<");
+
+		// 0.5
+		tl.to("#annaLeaders, #annaInLeader, #sphereAnna",{autoAlpha:0},">");
+		tl.fromTo("#heart",{autoAlpha:0, scale:1.1}, {autoAlpha:1, scale:0.5, transformOrigin:"50% 50%"},"<");
+
+		// 1
+		tl.to(airpods, {duration:1, frame: frameCount - 1, snap: "frame", onUpdate: render,},">");
+		// // tl.call(playVideo, null, null, "<");
+		tl.to("#impactGraphic #body", {duration:1, morphSVG:"#body-2", ease:"expo.out"}, "<");
+		tl.from("#heart",{duration:1, autoAlpha:0, scale:0},"<");
+
+		// 0.5
+		tl.to("#impactGraphic #body", {morphSVG:"#josephInVillagePath", ease:"expo.out"},">");
+
+		// 0.5
+		tl.to("#impactGraphic #body", {autoAlpha:0}, "<0.2");
+		tl.to("#josephInVillagePic", {autoAlpha:1, ease:"expo.out"}, "<");
+		tl.to("#impactPendulum",{filter:"drop-shadow(rgba(0, 0, 0, 0) 0px 0px)"},"<");
+
+
+		// ON-TEN
+		tl.addLabel("onten",">");
+
+		// DONATE
+		tl.addLabel("donate",">");
 
 		tl.addLabel("end",">")
 		return tl;
