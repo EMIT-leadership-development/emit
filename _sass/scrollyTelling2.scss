@@ -932,6 +932,10 @@ $sphereWidth: clamp(80px,10vw,200px);
                 .innerWrap {
                     width: 100%;
                     height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
                     // border: 1px solid red;
                     padding: 0;
                     @media (max-width:$portraitEnd) {
@@ -948,6 +952,11 @@ $sphereWidth: clamp(80px,10vw,200px);
                     canvas {
                         width: 100%;
                         height: 100%;
+                    }
+                    #villageWrap1 {
+                        img {
+                            max-width: unset;
+                        }
                     }
                     .gradientOverlay {
                         position: absolute;

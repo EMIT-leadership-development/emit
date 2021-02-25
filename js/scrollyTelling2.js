@@ -1,6 +1,6 @@
 "use strict";
-// VARIABLES COPIED FROM SCSS pre.scss
 
+// VARIABLES COPIED FROM SCSS pre.scss
 var $brand = "#abe116",
 	$primary = "#abe116",
 	$brandDarker = "#99ca13",
@@ -13,6 +13,56 @@ var $brand = "#abe116",
 	$brandContrastLight2 = "#e0e8ea",
 	$brandContrastLight3 = "#BCC4C6",
 	$brandContrastLight4 = "#A5ABAD";
+
+// Village spritesheets
+let data = [{
+	file: "/video/villageSprites/village-0vhalf.webp",
+	frames: [
+		{"x":1,"y":1,"w":960,"h":544},
+		{"x":963,"y":1,"w":960,"h":544},
+		{"x":1,"y":547,"w":960,"h":544},
+		{"x":963,"y":547,"w":960,"h":544},
+		{"x":1,"y":1093,"w":960,"h":544},
+		{"x":963,"y":1093,"w":960,"h":544},
+	]
+}, {
+	file: "/video/villageSprites/village-1vhalf.webp",
+	frames: [
+		{"x":1,"y":1,"w":960,"h":544},
+		{"x":963,"y":1,"w":960,"h":544},
+		{"x":1,"y":547,"w":960,"h":544},
+		{"x":963,"y":547,"w":960,"h":544},
+		{"x":1,"y":1093,"w":960,"h":544},
+		{"x":963,"y":1093,"w":960,"h":544},
+	]
+}, {
+	file: "/video/villageSprites/village-2vhalf.webp",
+	frames: [
+		{"x":1,"y":1,"w":960,"h":544},
+		{"x":963,"y":1,"w":960,"h":544},
+		{"x":1,"y":547,"w":960,"h":544},
+		{"x":963,"y":547,"w":960,"h":544},
+		{"x":1,"y":1093,"w":960,"h":544},
+		{"x":963,"y":1093,"w":960,"h":544},
+	]
+}, {
+	file: "/video/villageSprites/village-3vhalf.webp",
+	frames: [
+		{"x":1,"y":1,"w":960,"h":544},
+		{"x":963,"y":1,"w":960,"h":544},
+		{"x":1,"y":547,"w":960,"h":544},
+		{"x":963,"y":547,"w":960,"h":544},
+		{"x":1,"y":1093,"w":960,"h":544},
+		{"x":963,"y":1093,"w":960,"h":544},
+	]
+}, {
+	file: "/video/villageSprites/village-4vhalf.webp",
+	frames: [
+		{"x":1,"y":1,"w":960,"h":544},
+		{"x":1,"y":547,"w":960,"h":544},
+		{"x":1,"y":1093,"w":960,"h":544}
+	]
+}];
 
 // ---------------------ADD ALL THE ANIMATIONS TO THE MOTHER TIMELINE
 window.onload = function() {
@@ -33,13 +83,6 @@ window.onload = function() {
 	var topNavTL = NINJA_FUNCTIONS.topnav();
 	var motherTL = NINJA_FUNCTIONS.motherTimeline();
 	let titletl;
-
-	function stopVideo(vidID) {
-		var vd = document.getElementById(vidID);
-		vd.pause();
-		vd.currentTime = 0;
-		console.log(vd.currentTime);
-	}
 
 	// SWIPER SETUP
 	const mySwiper = new Swiper('.swiper-container', {
@@ -87,11 +130,6 @@ window.onload = function() {
 			motherTL.pause();
 			motherTL.time(0);
 		}
-		// ANNA SLIDE
-		if (this.realIndex == 4) {
-			stopVideo("villageVideo1");
-		}
-
 	})
 	// SWIPER ANIMATIONS - TRANSITION END
 	mySwiper.on('slideChangeTransitionEnd', function() {
@@ -266,19 +304,65 @@ var NINJA_FUNCTIONS = {
 			ease: "linear"
 		});
 	},
+	SpriteSheet: function(container, data, onLoad) {
+		container = gsap.utils.toArray(container)[0];
+		let progress = 0,
+		frames = 0,
+		lookup = [],
+		loading = [],
+		loadingQueue = e => loading.splice(loading.indexOf(e.target), 1) && !loading.length && onLoad && onLoad(),
+		curSheet, curIndex, img;
+		gsap.set(container, {overflow: "hidden", position: gsap.getProperty(container, "position") === "absolute" ? "absolute" : "relative"});
+		data.forEach((sheet, index) => {
+			img = document.createElement("img");
+			loading.push(img);
+			img.addEventListener("load", loadingQueue);
+			img.setAttribute("src", sheet.file);
+			gsap.set(img, {position: "absolute", top: 0, left: 0, visibility: index ? "hidden" : "inherit"});
+			container.appendChild(img);
+			sheet.img = img;
+			sheet.framesBefore = frames;
+			let i = sheet.frames.length;
+			frames += i;
+			while (i--) {
+				lookup.push(index);
+			}
+		});
+		frames--;
+		this.progress = function(value) {
+			if (arguments.length) {
+				let lookupIndex = ~~(value * frames + 0.5),
+				sheet, frame;
+				if (lookupIndex !== curIndex) {
+					curIndex = lookupIndex;
+					sheet = data[lookup[curIndex]];
+					frame = sheet.frames[curIndex - sheet.framesBefore];
+					if (sheet !== curSheet) {
+						curSheet && (curSheet.img.style.visibility = "hidden");
+						sheet.img.style.visibility = "inherit";
+						container.style.width = frame.w + "px";
+						container.style.height = frame.h + "px";
+						curSheet = sheet;
+					}
+					curSheet.img.style.transform = "translate(" + -frame.x + "px, " + -frame.y + "px)";
+				}
+				progress = value;
+			}
+			return progress;
+		};
+		this.frame = function(value) {
+			arguments.length && this.progress(--value / frames);
+			return ~~(progress * frames + 0.5);
+		};
+		this.progress(0);
+	},
 
 	motherTimeline: function() {
-		function playVideo(vidID) {
-			var vd = document.getElementById(vidID);
-			vd.play();
-			console.log(vd.currentTime);
-		}
-
+		let sheet = new NINJA_FUNCTIONS.SpriteSheet("#villageWrap1", data);
 		let tl = gsap.timeline({
 			defaults:{duration:0.5},
 			paused: true,
 		});
-
 		// IMPACT
 		tl.addLabel("impact",">")
 		tl.from("#impactPendulum",{autoAlpha:0, y:-200},">0.5");
@@ -339,11 +423,14 @@ var NINJA_FUNCTIONS = {
 		// 0.5
 		tl.to("#annaLeaders, #annaInLeader, #sphereAnna",{autoAlpha:0},">");
 		tl.fromTo("#heart",{autoAlpha:0, scale:1.1}, {autoAlpha:1, scale:0.5, transformOrigin:"50% 50%"},"<");
+
+
 		// 1
 		// tl.to(village, {duration:1, frame:frameCount-1, snap:"frame", onUpdate:renderJoseph},">");
-		tl.call(playVideo, ["villageVideo1"], ">");
+		tl.fromTo(sheet, {progress:1}, {progress:0, duration:1, ease:"none"},">");
+
 		// tl.to("#impactGraphic #body", {duration:1, morphSVG:"#body-2", ease:"expo.out"}, ">");
-		tl.to("#heart",{duration:1, autoAlpha:0, scale:0},">2");
+		tl.to("#heart",{autoAlpha:0, scale:0},"<0.5");
 		// 0.5
 		tl.to("#impactGraphic #body", {morphSVG:"#josephInVillagePath", ease:"expo.out"},">");
 		// 0.5
