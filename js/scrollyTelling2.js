@@ -16,6 +16,14 @@ var $brand = "#abe116",
 
 // ---------------------ADD ALL THE ANIMATIONS TO THE MOTHER TIMELINE
 window.onload = function() {
+
+	var video = document.getElementById("heroVideo");
+	video.oncanplay = function() {
+		console.log("can play");
+		video.muted = true;
+		video.play();
+	}
+
 	// Start up functions
 	NINJA_FUNCTIONS.startup();
 	NINJA_FUNCTIONS.parrallaxHover();
@@ -25,6 +33,13 @@ window.onload = function() {
 	var topNavTL = NINJA_FUNCTIONS.topnav();
 	var motherTL = NINJA_FUNCTIONS.motherTimeline();
 	let titletl;
+
+	function stopVideo(vidID) {
+		var vd = document.getElementById(vidID);
+		vd.pause();
+		vd.currentTime = 0;
+		console.log(vd.currentTime);
+	}
 
 	// SWIPER SETUP
 	const mySwiper = new Swiper('.swiper-container', {
@@ -72,6 +87,11 @@ window.onload = function() {
 			motherTL.pause();
 			motherTL.time(0);
 		}
+		// ANNA SLIDE
+		if (this.realIndex == 4) {
+			stopVideo("villageVideo1");
+		}
+
 	})
 	// SWIPER ANIMATIONS - TRANSITION END
 	mySwiper.on('slideChangeTransitionEnd', function() {
@@ -87,6 +107,10 @@ window.onload = function() {
 			var underline = document.querySelector('.swiper-slide-active .sectionHeadline .underline');
 			titletl = NINJA_FUNCTIONS.playTitle(title, subtitle, underline);
 			titletl.play();
+		}
+		// HERO SLIDE
+		if (this.realIndex == 0) {
+			topNavTL.reverse();
 		}
 		// IMPACT SLIDE
 		if (this.realIndex == 1) {
@@ -244,39 +268,11 @@ var NINJA_FUNCTIONS = {
 	},
 
 	motherTimeline: function() {
-
-		// Get ready for playing the canvas in joseph secion
-		const canvas = document.getElementById("hero-lightpass");
-		const context = canvas.getContext("2d");
-		canvas.width = 1920;
-		canvas.height = 1088;
-		const frameCount = 254;
-		const currentFrame = index => (
-		`/video/africanVillage/${(index + 1).toString().padStart(4, '0')}.jpg`
-		);
-		const images = []
-		const airpods = {
-		frame: 0
-		};
-		for (let i = 0; i < frameCount; i++) {
-		const img = new Image();
-		img.src = currentFrame(i);
-		images.push(img);
+		function playVideo(vidID) {
+			var vd = document.getElementById(vidID);
+			vd.play();
+			console.log(vd.currentTime);
 		}
-		images.reverse();
-		images[0].onload = render;
-		function render() {
-		context.clearRect(0, 0, canvas.width, canvas.height);
-		context.drawImage(images[airpods.frame], 0, 0);
-		}
-
-		// var villageVideo = document.getElementById("villageVideo");
-		// function playVideo() {
-		// 	villageVideo.play();
-		// }
-		// function rewindVideo() {
-		// 	villageVideo.currentTime();
-		// }
 
 		let tl = gsap.timeline({
 			defaults:{duration:0.5},
@@ -317,15 +313,16 @@ var NINJA_FUNCTIONS = {
 		tl.to("#impactGraphic #shadow", {morphSVG:"#shadow", ease:"expo.out"}, "<");
 		tl.to("#impactGraphic #body", {duration:1, morphSVG:"#africaPath", ease:"expo.out"}, ">");
 		tl.to("#impactGraphic #shadow", {duration:1, autoAlpha:0, ease:"expo.out"}, "<");
-		tl.to("#impactPendulum",{duration:1, scale:4, filter:"drop-shadow(rgba(0, 0, 0, 0.5) 3px 4px)"},"<");
+		tl.to("#impactPendulum",{duration:1, filter:"drop-shadow(rgba(0, 0, 0, 0.5) 3px 4px)"},"<");
+		tl.to(".spherelogo .sphere",{duration:1, scale:4},"<");
 		tl.to(".sphere1, .sphere2, .sphere3",{duration:1, scale:0},"<");
 		tl.to("#africaLeader",{autoAlpha:1},"<0.5");
 
 		// ANNA
 		tl.addLabel("anna",">")
-		tl.to("#impactPendulum",{duration:2, scale:3.5},">");
+		tl.to(".spherelogo .sphere",{duration:2, scale:3.5},">");
 		tl.to(".spherelogo svg",{duration:2, attr:{viewBox:"209.50 210.50 7 7"}, ease:"power3.inOut"},"<");
-		tl.to(".spherelogo",{duration:2, borderRadius:"50%", ease:"power3.inOut"},"<");
+		tl.to(".spherelogo .sphere",{duration:2, borderRadius:"50%", ease:"power3.inOut"},"<");
 		tl.to(".spherelogo svg",{attr:{viewBox:"203.50 204.50 19 19"}, ease:"power3.inOut"},">");
 		tl.to("#impactGraphic #body", {fill:$brandContrastDarkest, ease:"expo.out"}, "<");
 		tl.to("#annaLeaders",{autoAlpha:1},"<");
@@ -334,34 +331,29 @@ var NINJA_FUNCTIONS = {
 
 		// JOSEPH
 		tl.addLabel("joseph",">");
-
 		// 1.5
 		tl.to("#impactGraphic #body", {duration:0.01, fill:"#ffffff"}, ">");
 		tl.to(".spherelogo",{duration:1, borderRadius:0, ease:"power3.inOut"},">0.4");
 		tl.to(".spherelogo svg",{duration:1, attr:{viewBox:"0 0 424 424"}, ease:"power3.inOut"},"<");
-		tl.to("#impactPendulum",{duration:1, scale:2,},"<");
-
+		tl.to("#impactPendulum .spherelogo .sphere",{duration:1, scale:2,},"<");
 		// 0.5
 		tl.to("#annaLeaders, #annaInLeader, #sphereAnna",{autoAlpha:0},">");
 		tl.fromTo("#heart",{autoAlpha:0, scale:1.1}, {autoAlpha:1, scale:0.5, transformOrigin:"50% 50%"},"<");
-
 		// 1
-		tl.to(airpods, {duration:1, frame: frameCount - 1, snap: "frame", onUpdate: render,},">");
-		// // tl.call(playVideo, null, null, "<");
-		tl.to("#impactGraphic #body", {duration:1, morphSVG:"#body-2", ease:"expo.out"}, "<");
-		tl.from("#heart",{duration:1, autoAlpha:0, scale:0},"<");
-
+		// tl.to(village, {duration:1, frame:frameCount-1, snap:"frame", onUpdate:renderJoseph},">");
+		tl.call(playVideo, ["villageVideo1"], ">");
+		// tl.to("#impactGraphic #body", {duration:1, morphSVG:"#body-2", ease:"expo.out"}, ">");
+		tl.to("#heart",{duration:1, autoAlpha:0, scale:0},">2");
 		// 0.5
 		tl.to("#impactGraphic #body", {morphSVG:"#josephInVillagePath", ease:"expo.out"},">");
-
 		// 0.5
 		tl.to("#impactGraphic #body", {autoAlpha:0}, "<0.2");
 		tl.to("#josephInVillagePic", {autoAlpha:1, ease:"expo.out"}, "<");
 		tl.to("#impactPendulum",{filter:"drop-shadow(rgba(0, 0, 0, 0) 0px 0px)"},"<");
 
-
 		// ON-TEN
 		tl.addLabel("onten",">");
+		// tl.to(village, {duration:1, frame:frameCount-1, snap:"frame", onUpdate:renderOnten},">1");
 
 		// DONATE
 		tl.addLabel("donate",">");
