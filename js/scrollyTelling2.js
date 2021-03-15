@@ -15,54 +15,74 @@ var $brand = "#abe116",
 	$brandContrastLight4 = "#A5ABAD";
 
 // Village spritesheets
-let data = [{
+let data = [
+	{
+	// First spritesheet
 	file: "/video/villageSprites/village-0vhalf.webp",
-	frames: [
-		{"x":1,"y":1,"w":960,"h":544},
-		{"x":963,"y":1,"w":960,"h":544},
-		{"x":1,"y":547,"w":960,"h":544},
-		{"x":963,"y":547,"w":960,"h":544},
-		{"x":1,"y":1093,"w":960,"h":544},
-		{"x":963,"y":1093,"w":960,"h":544},
-	]
-}, {
-	file: "/video/villageSprites/village-1vhalf.webp",
-	frames: [
-		{"x":1,"y":1,"w":960,"h":544},
-		{"x":963,"y":1,"w":960,"h":544},
-		{"x":1,"y":547,"w":960,"h":544},
-		{"x":963,"y":547,"w":960,"h":544},
-		{"x":1,"y":1093,"w":960,"h":544},
-		{"x":963,"y":1093,"w":960,"h":544},
-	]
-}, {
-	file: "/video/villageSprites/village-2vhalf.webp",
-	frames: [
-		{"x":1,"y":1,"w":960,"h":544},
-		{"x":963,"y":1,"w":960,"h":544},
-		{"x":1,"y":547,"w":960,"h":544},
-		{"x":963,"y":547,"w":960,"h":544},
-		{"x":1,"y":1093,"w":960,"h":544},
-		{"x":963,"y":1093,"w":960,"h":544},
-	]
-}, {
-	file: "/video/villageSprites/village-3vhalf.webp",
-	frames: [
-		{"x":1,"y":1,"w":960,"h":544},
-		{"x":963,"y":1,"w":960,"h":544},
-		{"x":1,"y":547,"w":960,"h":544},
-		{"x":963,"y":547,"w":960,"h":544},
-		{"x":1,"y":1093,"w":960,"h":544},
-		{"x":963,"y":1093,"w":960,"h":544},
-	]
-}, {
-	file: "/video/villageSprites/village-4vhalf.webp",
-	frames: [
-		{"x":1,"y":1,"w":960,"h":544},
-		{"x":1,"y":547,"w":960,"h":544},
-		{"x":1,"y":1093,"w":960,"h":544}
-	]
-}];
+		frames: [
+			{"x":1,"y":1,"w":480,"h":272},
+			{"x":483,"y":1,"w":480,"h":272},
+			{"x":965,"y":1,"w":480,"h":272},
+			{"x":1447,"y":1,"w":480,"h":272},
+			{"x":1,"y":275,"w":480,"h":272},
+			{"x":483,"y":275,"w":480,"h":272},
+			{"x":965,"y":275,"w":480,"h":272},
+			{"x":1447,"y":275,"w":480,"h":272},
+			{"x":1,"y":549,"w":480,"h":272},
+			{"x":483,"y":549,"w":480,"h":272},
+			{"x":965,"y":549,"w":480,"h":272},
+			{"x":1447,"y":549,"w":480,"h":272},
+			{"x":1,"y":823,"w":480,"h":272},
+			{"x":483,"y":823,"w":480,"h":272},
+			{"x":965,"y":823,"w":480,"h":272},
+			{"x":1447,"y":823,"w":480,"h":272},
+			{"x":1,"y":1097,"w":480,"h":272},
+			{"x":483,"y":1097,"w":480,"h":272},
+			{"x":965,"y":1097,"w":480,"h":272},
+			{"x":1447,"y":1097,"w":480,"h":272},
+			{"x":1,"y":1371,"w":480,"h":272},
+			{"x":483,"y":1371,"w":480,"h":272},
+			{"x":965,"y":1371,"w":480,"h":272},
+			{"x":1447,"y":1371,"w":480,"h":272},
+			{"x":1,"y":1645,"w":480,"h":272},
+			{"x":483,"y":1645,"w":480,"h":272},
+			{"x":965,"y":1645,"w":480,"h":272},
+			{"x":1447,"y":1645,"w":480,"h":272}
+		]
+	},
+	// Second spritesheet would go here
+];
+
+const frames = [
+	{"x":1,"y":1,"w":480,"h":272},
+	{"x":483,"y":1,"w":480,"h":272},
+	{"x":965,"y":1,"w":480,"h":272},
+	{"x":1447,"y":1,"w":480,"h":272},
+	{"x":1,"y":275,"w":480,"h":272},
+	{"x":483,"y":275,"w":480,"h":272},
+	{"x":965,"y":275,"w":480,"h":272},
+	{"x":1447,"y":275,"w":480,"h":272},
+	{"x":1,"y":549,"w":480,"h":272},
+	{"x":483,"y":549,"w":480,"h":272},
+	{"x":965,"y":549,"w":480,"h":272},
+	{"x":1447,"y":549,"w":480,"h":272},
+	{"x":1,"y":823,"w":480,"h":272},
+	{"x":483,"y":823,"w":480,"h":272},
+	{"x":965,"y":823,"w":480,"h":272},
+	{"x":1447,"y":823,"w":480,"h":272},
+	{"x":1,"y":1097,"w":480,"h":272},
+	{"x":483,"y":1097,"w":480,"h":272},
+	{"x":965,"y":1097,"w":480,"h":272},
+	{"x":1447,"y":1097,"w":480,"h":272},
+	{"x":1,"y":1371,"w":480,"h":272},
+	{"x":483,"y":1371,"w":480,"h":272},
+	{"x":965,"y":1371,"w":480,"h":272},
+	{"x":1447,"y":1371,"w":480,"h":272},
+	{"x":1,"y":1645,"w":480,"h":272},
+	{"x":483,"y":1645,"w":480,"h":272},
+	{"x":965,"y":1645,"w":480,"h":272},
+	{"x":1447,"y":1645,"w":480,"h":272}
+];
 
 // ---------------------ADD ALL THE ANIMATIONS TO THE MOTHER TIMELINE
 window.onload = function() {
@@ -79,6 +99,9 @@ window.onload = function() {
 	NINJA_FUNCTIONS.parrallaxHover();
 	NINJA_FUNCTIONS.cursorFollower();
 
+	// Listen for button clicks
+	document.querySelector("#startOnTenExplore").addEventListener("click", function(){motherTL.tweenFromTo("exploreonten","donate");})
+
 	// Functions to be called in slider
 	var topNavTL = NINJA_FUNCTIONS.topnav();
 	var motherTL = NINJA_FUNCTIONS.motherTimeline();
@@ -86,6 +109,7 @@ window.onload = function() {
 
 	// SWIPER SETUP
 	const mySwiper = new Swiper('.swiper-container', {
+
 		// Optional parameters
 		direction: 'vertical',
 		loop: false,
@@ -173,12 +197,12 @@ window.onload = function() {
 		// JOSEPH SLIDE
 		if (this.realIndex == 5) {
 			NINJA_FUNCTIONS.moveStageWrap("joseph");
-			motherTL.tweenFromTo("joseph","onTen");
+			motherTL.tweenFromTo("joseph","onten");
 		}
 		// ON-TEN SLIDE
 		if (this.realIndex == 6) {
 			NINJA_FUNCTIONS.moveStageWrap("onten");
-			motherTL.tweenFromTo("onten","donate");
+			motherTL.tweenFromTo("onten","exploreonten");
 		}
 		// DONATE SLIDE
 		if (this.realIndex == 7) {
@@ -304,61 +328,48 @@ var NINJA_FUNCTIONS = {
 			ease: "linear"
 		});
 	},
-	SpriteSheet: function(container, data, onLoad) {
-		container = gsap.utils.toArray(container)[0];
-		let progress = 0,
-		frames = 0,
-		lookup = [],
-		loading = [],
-		loadingQueue = e => loading.splice(loading.indexOf(e.target), 1) && !loading.length && onLoad && onLoad(),
-		curSheet, curIndex, img;
-		gsap.set(container, {overflow: "hidden", position: gsap.getProperty(container, "position") === "absolute" ? "absolute" : "relative"});
-		data.forEach((sheet, index) => {
-			img = document.createElement("img");
-			loading.push(img);
-			img.addEventListener("load", loadingQueue);
-			img.setAttribute("src", sheet.file);
-			gsap.set(img, {position: "absolute", top: 0, left: 0, visibility: index ? "hidden" : "inherit"});
-			container.appendChild(img);
-			sheet.img = img;
-			sheet.framesBefore = frames;
-			let i = sheet.frames.length;
-			frames += i;
-			while (i--) {
-				lookup.push(index);
-			}
-		});
-		frames--;
-		this.progress = function(value) {
-			if (arguments.length) {
-				let lookupIndex = ~~(value * frames + 0.5),
-				sheet, frame;
-				if (lookupIndex !== curIndex) {
-					curIndex = lookupIndex;
-					sheet = data[lookup[curIndex]];
-					frame = sheet.frames[curIndex - sheet.framesBefore];
-					if (sheet !== curSheet) {
-						curSheet && (curSheet.img.style.visibility = "hidden");
-						sheet.img.style.visibility = "inherit";
-						container.style.width = frame.w + "px";
-						container.style.height = frame.h + "px";
-						curSheet = sheet;
-					}
-					curSheet.img.style.transform = "translate(" + -frame.x + "px, " + -frame.y + "px)";
-				}
-				progress = value;
-			}
-			return progress;
+	// Spritesheet plays village background video
+	SpriteSheet: function(container, frames) {
+		// Prep the canvas
+		var canvas = document.querySelector(container);
+		var context = canvas.getContext("2d");
+
+		// Preload the sprite image
+		var sprite = new Image();
+		sprite.onload = init;
+		sprite.src = "/video/villageSprites/village-0vhalf.webp";
+
+		// Variable that will hold the current frame
+		var currentFrame = {
+			frame: 0
 		};
-		this.frame = function(value) {
-			arguments.length && this.progress(--value / frames);
-			return ~~(progress * frames + 0.5);
-		};
-		this.progress(0);
+
+		// Draw the first frame
+		function init() {
+			context.drawImage(sprite, frames[currentFrame.frame].x, frames[currentFrame.frame].y, frames[currentFrame.frame].w, frames[currentFrame.frame].h, 0, 0, 480, 272);
+		}
+
+		// The timeline that tweens the video frames
+		let tl = gsap.timeline({onUpdate:updateFrames, paused:true});
+		tl.to(currentFrame, {duration:1, frame:frames.length-1, snap:"frame"},0);
+
+		// What to do each time the tl updates
+		function updateFrames() {
+			var frame = frames[currentFrame.frame];
+			var x = frame.x;
+			var y = frame.y;
+			var w = frame.w;
+			var h = frame.h;
+			context.save();
+			context.drawImage(sprite, x, y, w, h, 0, 0, 480, 272);
+			context.restore();
+		}
+		return tl;
 	},
 
 	motherTimeline: function() {
-		let sheet = new NINJA_FUNCTIONS.SpriteSheet("#villageWrap1", data);
+		let sheet = new NINJA_FUNCTIONS.SpriteSheet("#villageWrap1", frames);
+
 		let tl = gsap.timeline({
 			defaults:{duration:0.5},
 			paused: true,
@@ -415,32 +426,37 @@ var NINJA_FUNCTIONS = {
 
 		// JOSEPH
 		tl.addLabel("joseph",">");
-		// 1.5
 		tl.to("#impactGraphic #body", {duration:0.01, fill:"#ffffff"}, ">");
 		tl.to(".spherelogo",{duration:1, borderRadius:0, ease:"power3.inOut"},">0.4");
 		tl.to(".spherelogo svg",{duration:1, attr:{viewBox:"0 0 424 424"}, ease:"power3.inOut"},"<");
 		tl.to("#impactPendulum .spherelogo .sphere",{duration:1, scale:2,},"<");
-		// 0.5
 		tl.to("#annaLeaders, #annaInLeader, #sphereAnna",{autoAlpha:0},">");
-		tl.fromTo("#heart",{autoAlpha:0, scale:1.1}, {autoAlpha:1, scale:0.5, transformOrigin:"50% 50%"},"<");
-
-
-		// 1
-		// tl.to(village, {duration:1, frame:frameCount-1, snap:"frame", onUpdate:renderJoseph},">");
+		tl.fromTo("#heart",{autoAlpha:0, scale:1.2}, {autoAlpha:1, scale:0.5, transformOrigin:"50% 50%"},"<");
 		tl.fromTo(sheet, {progress:1}, {progress:0, duration:1, ease:"none"},">");
-
-		// tl.to("#impactGraphic #body", {duration:1, morphSVG:"#body-2", ease:"expo.out"}, ">");
 		tl.to("#heart",{autoAlpha:0, scale:0},"<0.5");
-		// 0.5
 		tl.to("#impactGraphic #body", {morphSVG:"#josephInVillagePath", ease:"expo.out"},">");
-		// 0.5
 		tl.to("#impactGraphic #body", {autoAlpha:0}, "<0.2");
 		tl.to("#josephInVillagePic", {autoAlpha:1, ease:"expo.out"}, "<");
 		tl.to("#impactPendulum",{filter:"drop-shadow(rgba(0, 0, 0, 0) 0px 0px)"},"<");
 
 		// ON-TEN
 		tl.addLabel("onten",">");
-		// tl.to(village, {duration:1, frame:frameCount-1, snap:"frame", onUpdate:renderOnten},">1");
+		// Sonya - the following tween "rewinds the village video in previous section" - do not delete.
+		tl.to(sheet, {duration:0.1, progress:1},">");
+		tl.from("#josephSpheres ellipse",{autoAlpha:0, scale:0, transformOrigin:"50% 50%"},">");
+
+		// EXPLORE ON-TEN
+		tl.addLabel("exploreonten",">");
+		tl.to("#onten .wallContainer",{autoAlpha:0},">");
+		tl.to("#emitNetworkWrap",{width:"100vw", height:"100vh"},"<");
+		tl.to("#onten .stage",{pointerEvents:"all"},"<");
+		tl.from("#expandingCircle",{scale:0, autoAlpha:0, transformOrigin:"50% 50%"},"<");
+		tl.from("#mandatePaths path",{drawSVG:0, autoAlpha:0},">");
+		tl.from("#leaderSpheres path",{drawSVG:0, autoAlpha:0},">");
+		tl.from("#leaderSpheres ellipse",{scale:0, autoAlpha:0, transformOrigin:"50% 50%"},">");
+		tl.from("#satelites path",{drawSVG:0, autoAlpha:0},">");
+		tl.from("#satelites ellipse",{scale:0, autoAlpha:0, transformOrigin:"50% 50%"},"<");
+
 
 		// DONATE
 		tl.addLabel("donate",">");
