@@ -2,8 +2,11 @@
 <!-- Todo: only insert custom position if it exists. -->
 <section id="hero" class="hero swiper-slide grid">
     <video playsinline autoplay muted loop oncanplay="this.muted=true" preload="auto" id="heroVideo" class="max-content" poster="/video/EMIT-heroPoster.jpg">
-        <source src="{{site.baseurl}}/video/EMIT-hero.mp4" type="video/mp4">
+        <source src="{{site.baseurl}}/video/EMIT-hero.mp4"  type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
      </video>
+     <!-- <video muted loop preload="auto" id="heroVideo" class="max-content" poster="/video/EMIT-heroPoster.jpg">
+        <source src="{{site.baseurl}}/video/EMIT-hero.mp4"  type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+     </video> -->
     <div class="heroOverlay"></div>
     <div class="introWrapper">
         <div id="mainCTA" class="ctaWrapper">

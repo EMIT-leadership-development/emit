@@ -142,8 +142,6 @@ _unlisted: true
         <div class="leftWallWrap wall">
             <div class="contentWrap">
                 <div class="innerWrap">
-                    <canvas id="villageWrap1" width="480" height="272" id="africanVillage2"></canvas>
-                    <div class="gradientOverlay"></div>
                 </div>
             </div>
         </div>
@@ -176,9 +174,11 @@ _unlisted: true
     <div class="wallContainer">
         <div class="leftWallWrap wall">
             <div class="contentWrap">
-                <div id="ontenVillage" class="innerWrap">
-                    <!-- <img id="villageBG" src="/video/africanVillage/0254.jpg" alt="">
-                    <div class="gradientOverlay"></div> -->
+                <div class="innerWrap">
+                    <video playsinline muted preload="auto" id="villageVideo" class="max-content" type='video/mp4;'poster="/video/africanVillage/0001.jpg">
+                        <source src="/video/africanVillage.mp4"  type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                     </video>
+                     <div class="gradientOverlay"></div>
                     <div class="buttonRow hoverAnim" id="startOnten">
                         <div id="startOnTenExplore" class="callToAction">Explore the community impact</div>
                         <button class="button secondary">
@@ -201,15 +201,12 @@ _unlisted: true
             </div>
         </div>
     </div>
-    <div class="stage">
-        <div id="emitNetworkVillageBG">
-            <img src="/video/africanVillage/0254.jpg" alt="">
-            <div class="gradientOverlay1"></div>
-        </div>
+    <div id="exploreInterface">
         <div id="emitNetworkWrap">
             {% include scrollytelling/emitNetwork.html %}
         </div>
-    </div><!-- End stage -->
+    </div>
+    <div class="stage"></div>
     <div class="sectionHeadline">
         <h1>
             <span class="title">ON-TEN</span>

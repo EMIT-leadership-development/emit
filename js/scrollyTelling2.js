@@ -14,85 +14,10 @@ var $brand = "#abe116",
 	$brandContrastLight3 = "#BCC4C6",
 	$brandContrastLight4 = "#A5ABAD";
 
-// Village spritesheets
-let data = [
-	{
-	// First spritesheet
-	file: "/video/villageSprites/village-0vhalf.webp",
-		frames: [
-			{"x":1,"y":1,"w":480,"h":272},
-			{"x":483,"y":1,"w":480,"h":272},
-			{"x":965,"y":1,"w":480,"h":272},
-			{"x":1447,"y":1,"w":480,"h":272},
-			{"x":1,"y":275,"w":480,"h":272},
-			{"x":483,"y":275,"w":480,"h":272},
-			{"x":965,"y":275,"w":480,"h":272},
-			{"x":1447,"y":275,"w":480,"h":272},
-			{"x":1,"y":549,"w":480,"h":272},
-			{"x":483,"y":549,"w":480,"h":272},
-			{"x":965,"y":549,"w":480,"h":272},
-			{"x":1447,"y":549,"w":480,"h":272},
-			{"x":1,"y":823,"w":480,"h":272},
-			{"x":483,"y":823,"w":480,"h":272},
-			{"x":965,"y":823,"w":480,"h":272},
-			{"x":1447,"y":823,"w":480,"h":272},
-			{"x":1,"y":1097,"w":480,"h":272},
-			{"x":483,"y":1097,"w":480,"h":272},
-			{"x":965,"y":1097,"w":480,"h":272},
-			{"x":1447,"y":1097,"w":480,"h":272},
-			{"x":1,"y":1371,"w":480,"h":272},
-			{"x":483,"y":1371,"w":480,"h":272},
-			{"x":965,"y":1371,"w":480,"h":272},
-			{"x":1447,"y":1371,"w":480,"h":272},
-			{"x":1,"y":1645,"w":480,"h":272},
-			{"x":483,"y":1645,"w":480,"h":272},
-			{"x":965,"y":1645,"w":480,"h":272},
-			{"x":1447,"y":1645,"w":480,"h":272}
-		]
-	},
-	// Second spritesheet would go here
-];
-
-const frames = [
-	{"x":1,"y":1,"w":480,"h":272},
-	{"x":483,"y":1,"w":480,"h":272},
-	{"x":965,"y":1,"w":480,"h":272},
-	{"x":1447,"y":1,"w":480,"h":272},
-	{"x":1,"y":275,"w":480,"h":272},
-	{"x":483,"y":275,"w":480,"h":272},
-	{"x":965,"y":275,"w":480,"h":272},
-	{"x":1447,"y":275,"w":480,"h":272},
-	{"x":1,"y":549,"w":480,"h":272},
-	{"x":483,"y":549,"w":480,"h":272},
-	{"x":965,"y":549,"w":480,"h":272},
-	{"x":1447,"y":549,"w":480,"h":272},
-	{"x":1,"y":823,"w":480,"h":272},
-	{"x":483,"y":823,"w":480,"h":272},
-	{"x":965,"y":823,"w":480,"h":272},
-	{"x":1447,"y":823,"w":480,"h":272},
-	{"x":1,"y":1097,"w":480,"h":272},
-	{"x":483,"y":1097,"w":480,"h":272},
-	{"x":965,"y":1097,"w":480,"h":272},
-	{"x":1447,"y":1097,"w":480,"h":272},
-	{"x":1,"y":1371,"w":480,"h":272},
-	{"x":483,"y":1371,"w":480,"h":272},
-	{"x":965,"y":1371,"w":480,"h":272},
-	{"x":1447,"y":1371,"w":480,"h":272},
-	{"x":1,"y":1645,"w":480,"h":272},
-	{"x":483,"y":1645,"w":480,"h":272},
-	{"x":965,"y":1645,"w":480,"h":272},
-	{"x":1447,"y":1645,"w":480,"h":272}
-];
-
 // ---------------------ADD ALL THE ANIMATIONS TO THE MOTHER TIMELINE
 window.onload = function() {
 
-	var video = document.getElementById("heroVideo");
-	video.oncanplay = function() {
-		console.log("can play");
-		video.muted = true;
-		video.play();
-	}
+	NINJA_FUNCTIONS.playVideo("heroVideo");
 
 	// Start up functions
 	NINJA_FUNCTIONS.startup();
@@ -287,6 +212,25 @@ var NINJA_FUNCTIONS = {
 			element.addEventListener("mouseleave", () => animateCursor.reverse());
 		});
 	},
+	// Play video function
+	playVideo: function(vidID) {
+		var video = document.getElementById(vidID);
+		// Show loading animation.
+		var playPromise = video.play();
+
+		if (playPromise !== undefined) {
+		  playPromise.then(_ => {
+			// Automatic playback started!
+			// Show playing UI.
+			console.log("playing video");
+		  })
+		  .catch(error => {
+			// Auto-play was prevented
+			// Show paused UI.
+			console.log("error: ", error);
+		  });
+		}
+	},
 	//Topnav animates the navigation shrinking
 	topnav: function() {
 		var tl = gsap.timeline({
@@ -328,47 +272,8 @@ var NINJA_FUNCTIONS = {
 			ease: "linear"
 		});
 	},
-	// Spritesheet plays village background video
-	SpriteSheet: function(container, frames) {
-		// Prep the canvas
-		var canvas = document.querySelector(container);
-		var context = canvas.getContext("2d");
-
-		// Preload the sprite image
-		var sprite = new Image();
-		sprite.onload = init;
-		sprite.src = "/video/villageSprites/village-0vhalf.webp";
-
-		// Variable that will hold the current frame
-		var currentFrame = {
-			frame: 0
-		};
-
-		// Draw the first frame
-		function init() {
-			context.drawImage(sprite, frames[currentFrame.frame].x, frames[currentFrame.frame].y, frames[currentFrame.frame].w, frames[currentFrame.frame].h, 0, 0, 480, 272);
-		}
-
-		// The timeline that tweens the video frames
-		let tl = gsap.timeline({onUpdate:updateFrames, paused:true});
-		tl.to(currentFrame, {duration:1, frame:frames.length-1, snap:"frame"},0);
-
-		// What to do each time the tl updates
-		function updateFrames() {
-			var frame = frames[currentFrame.frame];
-			var x = frame.x;
-			var y = frame.y;
-			var w = frame.w;
-			var h = frame.h;
-			context.save();
-			context.drawImage(sprite, x, y, w, h, 0, 0, 480, 272);
-			context.restore();
-		}
-		return tl;
-	},
 
 	motherTimeline: function() {
-		let sheet = new NINJA_FUNCTIONS.SpriteSheet("#villageWrap1", frames);
 
 		let tl = gsap.timeline({
 			defaults:{duration:0.5},
@@ -432,24 +337,34 @@ var NINJA_FUNCTIONS = {
 		tl.to("#impactPendulum .spherelogo .sphere",{duration:1, scale:2,},"<");
 		tl.to("#annaLeaders, #annaInLeader, #sphereAnna",{autoAlpha:0},">");
 		tl.fromTo("#heart",{autoAlpha:0, scale:1.2}, {autoAlpha:1, scale:0.5, transformOrigin:"50% 50%"},"<");
-		tl.fromTo(sheet, {progress:1}, {progress:0, duration:1, ease:"none"},">");
 		tl.to("#heart",{autoAlpha:0, scale:0},"<0.5");
 		tl.to("#impactGraphic #body", {morphSVG:"#josephInVillagePath", ease:"expo.out"},">");
 		tl.to("#impactGraphic #body", {autoAlpha:0}, "<0.2");
 		tl.to("#josephInVillagePic", {autoAlpha:1, ease:"expo.out"}, "<");
 		tl.to("#impactPendulum",{filter:"drop-shadow(rgba(0, 0, 0, 0) 0px 0px)"},"<");
+		tl.add( function(){var vid = document.getElementById("villageVideo");vid.pause();vid.currentTime = 0;},">");
 
 		// ON-TEN
 		tl.addLabel("onten",">");
-		// Sonya - the following tween "rewinds the village video in previous section" - do not delete.
-		tl.to(sheet, {duration:0.1, progress:1},">");
-		tl.from("#josephSpheres ellipse",{autoAlpha:0, scale:0, transformOrigin:"50% 50%"},">");
+		tl.add( function(){NINJA_FUNCTIONS.playVideo("villageVideo");},">");
+		tl.to(".sphere1",{scale:1, autoAlpha:1, yPercent:50},">0.5");
+		tl.to(".sphere2",{scale:1.2, autoAlpha:1, yPercent:50},"<");
+		tl.to(".sphere3",{scale:1.4, autoAlpha:1, yPercent:50},"<");
+		tl.to("#impactPendulum",{scale:1, y:"-4.5vmax", x:"-1vmax", filter:"drop-shadow(16px 20px rgba(0,0,0,0.4))"},"<");
 
 		// EXPLORE ON-TEN
 		tl.addLabel("exploreonten",">");
+		tl.from("#exploreInterface",{autoAlpha:0},">");
+
+		// tl.fromTo("svg #josephInVillageTransparent",{scale:1.5}, {scale:1, transformOrigin:"50% 50%"},">");
+		// tl.fromTo(sheet, {progress:1}, {progress:0, duration:1, ease:"none"},">");
+
 		tl.to("#onten .wallContainer",{autoAlpha:0},">");
-		tl.to("#emitNetworkWrap",{width:"100vw", height:"100vh"},"<");
-		tl.to("#onten .stage",{pointerEvents:"all"},"<");
+		tl.to("#onten .stage",{width:"100%", height:"100%"},"<");
+
+		// tl.to("#emitNetworkWrap",{width:"100vw", height:"100vh"},"<");
+		// tl.to("#onten .stage",{pointerEvents:"all"},"<");
+		
 		tl.from("#expandingCircle",{scale:0, autoAlpha:0, transformOrigin:"50% 50%"},"<");
 		tl.from("#mandatePaths path",{drawSVG:0, autoAlpha:0},">");
 		tl.from("#leaderSpheres path",{drawSVG:0, autoAlpha:0},">");
@@ -457,9 +372,13 @@ var NINJA_FUNCTIONS = {
 		tl.from("#satelites path",{drawSVG:0, autoAlpha:0},">");
 		tl.from("#satelites ellipse",{scale:0, autoAlpha:0, transformOrigin:"50% 50%"},"<");
 
+		// Sonya - the following tween "rewinds the village video in previous section" - do not delete.
+		// tl.to(sheet, {duration:0.1, progress:1},">");
+
 
 		// DONATE
 		tl.addLabel("donate",">");
+		tl.add( function(){var vid = document.getElementById("villageVideo");vid.pause();vid.currentTime = 0;},">");
 
 		tl.addLabel("end",">")
 		return tl;
