@@ -28,9 +28,9 @@ _unlisted: true
                 </div>
             </div>
         </div>
-    </div>
-    <div class="stage layer" data-speed="2">
-        {% include scrollytelling/stageWrap.html %}
+        <div id="impact-stage" class="stage layer" data-speed="2">
+            {% include scrollytelling/stageWrap.html %}
+        </div>
     </div>
     <div class="sectionHeadline">
         <h1>
@@ -61,8 +61,8 @@ _unlisted: true
                 </div>
             </div>
         </div>
+        <div id="legacy-stage" class="stage layer" data-speed="2"></div>
     </div>
-    <div class="stage layer" data-speed="2"></div>
     <div class="sectionHeadline">
         <h1>
             <span class="title">Legacy</span>
@@ -93,9 +93,8 @@ _unlisted: true
                 </div>
             </div>
         </div>
+        <div id="leaders-stage" class="stage layer" data-speed="2"></div><!-- End stage -->
     </div>
-    <div class="stage layer" data-speed="2">
-    </div><!-- End stage -->
     <div class="sectionHeadline">
         <h1>
             <span class="title">LEADERS</span>
@@ -125,9 +124,8 @@ _unlisted: true
                 </div>
             </div>
         </div>
+        <div id="anna-stage" class="stage layer" data-speed="2"></div><!-- End stage -->
     </div>
-    <div class="stage layer" data-speed="2">
-    </div><!-- End stage -->
     <div class="sectionHeadline">
         <h1>
             <span class="title">ANNA</span>
@@ -157,9 +155,8 @@ _unlisted: true
                 </div>
             </div>
         </div>
+        <div id="joseph-stage" class="stage layer" data-speed="2"></div><!-- End stage -->
     </div>
-    <div class="stage layer" data-speed="2">
-    </div><!-- End stage -->
     <div class="sectionHeadline">
         <h1>
             <span class="title">JOSPEH</span>
@@ -168,23 +165,16 @@ _unlisted: true
         <div class="subtitle">The EMIT student</div>
     </div>
 </section>
-
 <!-- ----------------------ON-TEN -->
 <section id="onten" class="swiper-slide">
     <div class="wallContainer">
         <div class="leftWallWrap wall">
             <div class="contentWrap">
                 <div class="innerWrap">
-                    <video playsinline muted preload="auto" id="villageVideo" class="max-content" type='video/mp4;'poster="/video/africanVillage/0001.jpg">
-                        <source src="/video/africanVillage.mp4"  type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                    <video playsinline muted preload="auto" id="villageVideo" class="max-content" type='video/mp4;'poster="/video/villageFirstFrame.jpg">
+                        <source src="/video/AfricanVillageFast.mp4"  type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
                      </video>
                      <div class="gradientOverlay"></div>
-                    <div class="buttonRow hoverAnim" id="startOnten">
-                        <div id="startOnTenExplore" class="callToAction">Explore the community impact</div>
-                        <button class="button secondary">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-play"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
-                        </button>
-                    </div>
                 </div>
             </div>
         </div>
@@ -200,13 +190,12 @@ _unlisted: true
                 </div>
             </div>
         </div>
-    </div>
-    <div id="exploreInterface">
-        <div id="emitNetworkWrap">
-            {% include scrollytelling/emitNetwork.html %}
+        <div id="onten-stage" class="stage">
+            <div id="emitNetworkWrap">
+                {% include scrollytelling/emitNetwork.html %}
+            </div>
         </div>
     </div>
-    <div class="stage"></div>
     <div class="sectionHeadline">
         <h1>
             <span class="title">ON-TEN</span>
@@ -215,7 +204,38 @@ _unlisted: true
         <div class="subtitle">The EMIT method</div>
     </div>
 </section>
-
+<!-- ----------------------TRACTION -->
+<section id="traction" class="swiper-slide">
+    <div class="wallContainer">
+        <div class="leftWallWrap wall">
+            <div class="contentWrap">
+                <div class="innerWrap">
+                </div>
+            </div>
+        </div>
+        <div class="rightWallWrap wall">
+            <div class="contentWrap">
+                <div class="innerWrap">
+                    <h2 class="sectionTitle priority2 editable">
+                        EMIT has already influenced over a <span class="emphasis">million leaders</span> in 17 countries.
+                    </h2>
+                    <p>
+                        We have a waiting list of leaders eager to be the change that Africa needs. Committed to transforming their communities - they need your help to gain the knowledge and skills.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="traction-stage" class="stage">
+        </div>
+    </div>
+    <div class="sectionHeadline">
+        <h1>
+            <span class="title">TRACTION</span>
+            <span class="underline"></span>
+        </h1>
+        <div class="subtitle">The Emit success</div>
+    </div>
+</section>
 <!-- ----------------------DONATE -->
 <section id="donate" class="swiper-slide">
     <div class="wallContainer">
@@ -237,8 +257,8 @@ _unlisted: true
                 </div>
             </div>
         </div>
+        <div id="donate-stage" class="stage layer" data-speed="2"></div>
     </div>
-    <div class="stage layer" data-speed="2">
     </div><!-- End stage -->
     <div class="sectionHeadline">
         <h1>

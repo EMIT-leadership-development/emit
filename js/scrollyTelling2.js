@@ -25,7 +25,7 @@ window.onload = function() {
 	NINJA_FUNCTIONS.cursorFollower();
 
 	// Listen for button clicks
-	document.querySelector("#startOnTenExplore").addEventListener("click", function(){motherTL.tweenFromTo("exploreonten","donate");})
+	// document.querySelector("#startOnTenExplore").addEventListener("click", function(){motherTL.tweenFromTo("exploreonten","donate");})
 
 	// Functions to be called in slider
 	var topNavTL = NINJA_FUNCTIONS.topnav();
@@ -101,37 +101,42 @@ window.onload = function() {
 		}
 		// IMPACT SLIDE
 		if (this.realIndex == 1) {
-			NINJA_FUNCTIONS.moveStageWrap("impact");
+			NINJA_FUNCTIONS.moveStageWrap("impact-stage");
 			motherTL.tweenFromTo("impact","legacy");
 		}
 		// LEGACY SLIDE
 		if (this.realIndex == 2) {
-			NINJA_FUNCTIONS.moveStageWrap("legacy");
+			NINJA_FUNCTIONS.moveStageWrap("legacy-stage");
 			motherTL.tweenFromTo("legacy","leaders")
 		}
 		// LEADERS SLIDE
 		if (this.realIndex == 3) {
-			NINJA_FUNCTIONS.moveStageWrap("leaders");
+			NINJA_FUNCTIONS.moveStageWrap("leaders-stage");
 			motherTL.tweenFromTo("leaders","anna");
 		}
 		// ANNA SLIDE
 		if (this.realIndex == 4) {
-			NINJA_FUNCTIONS.moveStageWrap("anna");
+			NINJA_FUNCTIONS.moveStageWrap("anna-stage");
 			motherTL.tweenFromTo("anna","joseph");
 		}
 		// JOSEPH SLIDE
 		if (this.realIndex == 5) {
-			NINJA_FUNCTIONS.moveStageWrap("joseph");
+			NINJA_FUNCTIONS.moveStageWrap("joseph-stage");
 			motherTL.tweenFromTo("joseph","onten");
 		}
 		// ON-TEN SLIDE
 		if (this.realIndex == 6) {
-			NINJA_FUNCTIONS.moveStageWrap("onten");
-			motherTL.tweenFromTo("onten","exploreonten");
+			NINJA_FUNCTIONS.moveStageWrap("onten-stage");
+			motherTL.tweenFromTo("onten","traction");
+		}
+		// ON-TEN SLIDE
+		if (this.realIndex == 7) {
+			NINJA_FUNCTIONS.moveStageWrap("traction-stage");
+			motherTL.tweenFromTo("traction","donate");
 		}
 		// DONATE SLIDE
-		if (this.realIndex == 7) {
-			NINJA_FUNCTIONS.moveStageWrap("donate");
+		if (this.realIndex == 8) {
+			NINJA_FUNCTIONS.moveStageWrap("donate-stage");
 			motherTL.tweenFromTo("donate","end");
 		}
 	});
@@ -214,6 +219,7 @@ var NINJA_FUNCTIONS = {
 	},
 	// Play video function
 	playVideo: function(vidID) {
+		// From google developer docs - must still test - video does not always play on chrome
 		var video = document.getElementById(vidID);
 		// Show loading animation.
 		var playPromise = video.play();
@@ -260,7 +266,8 @@ var NINJA_FUNCTIONS = {
 	moveStageWrap: function(newContainerID) {
 		let stageWrap = document.querySelector(".stageWrap");
 		let state = Flip.getState(stageWrap);
-		let newContainer = document.getElementById(newContainerID).querySelector(".stage");
+		let newContainer = document.getElementById(newContainerID);
+		console.log("stageWrap parent is: ", newContainer);
 		if (stageWrap.parentNode.id != newContainerID) {
 			newContainer.prepend(stageWrap);
 		};
@@ -306,7 +313,7 @@ var NINJA_FUNCTIONS = {
 		// LEADERS
 		tl.addLabel("leaders",">")
 		tl.to("#planetWrap", {scale:1, autoAlpha:0, x:0, y:"-4.5vmax"},">0.5");
-		tl.to("#impactPendulum",{scale:1, y:"-4.5vmax", x:"-1vmax", filter:"drop-shadow(16px 20px rgba(0,0,0,0.4))"},"<");
+		tl.to("#impactPendulum",{scale:1, x:0, y:0, filter:"drop-shadow(16px 20px rgba(0,0,0,0.4))"},"<");
 		tl.to(".sphere1, .sphere2, .sphere3",{autoAlpha:1},"<");
 		tl.to(".spherelogo ",{x:0, y:0, scale:1},"<");
 		tl.to("#impactGraphic #body", {morphSVG:"#body", ease:"expo.out"}, "<");
@@ -347,30 +354,42 @@ var NINJA_FUNCTIONS = {
 		// ON-TEN
 		tl.addLabel("onten",">");
 		tl.add( function(){NINJA_FUNCTIONS.playVideo("villageVideo");},">");
-		tl.to(".sphere1",{scale:1, autoAlpha:1, yPercent:50},">0.5");
-		tl.to(".sphere2",{scale:1.2, autoAlpha:1, yPercent:50},"<");
-		tl.to(".sphere3",{scale:1.4, autoAlpha:1, yPercent:50},"<");
-		tl.to("#impactPendulum",{scale:1, y:"-4.5vmax", x:"-1vmax", filter:"drop-shadow(16px 20px rgba(0,0,0,0.4))"},"<");
+		tl.to("#impactPendulum .spherelogo",{yPercent:-40, xPercent:140},">");
+		tl.to(".sphere1",{scale:1, autoAlpha:1, rotateX:30, transformOrigin:"50% 50%"},"<0.4");
+		tl.to(".sphere2",{scale:1.2, autoAlpha:1, rotateX:30, transformOrigin:"50% 50%"},"<");
+		tl.to(".sphere3",{scale:1.4, autoAlpha:1, rotateX:30, transformOrigin:"50% 50%"},"<");
+		tl.to("#impactPendulum",{scale:1, filter:"drop-shadow(16px 20px rgba(0,0,0,0.4))"},"<");
+		tl.from("#emitNetworkWrap",{autoAlpha:0},">");
+		tl.from("#mandatePaths path",{drawSVG:0, autoAlpha:0},"<");
+		tl.from("#influencers ellipse",{scale:0, autoAlpha:0, transformOrigin:"50% 50%"},">");
 
-		// EXPLORE ON-TEN
-		tl.addLabel("exploreonten",">");
-		tl.from("#exploreInterface",{autoAlpha:0},">");
+		// TRACTION
+		tl.addLabel("traction",">");
+		tl.add( function(){var vid = document.getElementById("villageVideo");vid.pause();vid.currentTime = 0;},">0.5");
+		// tl.from("#emitNetworkWrap",{autoAlpha:0},"<");
 
 		// tl.fromTo("svg #josephInVillageTransparent",{scale:1.5}, {scale:1, transformOrigin:"50% 50%"},">");
 		// tl.fromTo(sheet, {progress:1}, {progress:0, duration:1, ease:"none"},">");
 
-		tl.to("#onten .wallContainer",{autoAlpha:0},">");
-		tl.to("#onten .stage",{width:"100%", height:"100%"},"<");
+		// tl.to("#onten .wall",{autoAlpha:0},">");
+		// tl.to(".stageWrap",{width:"100vw", height:"100%"},"<");
+		// tl.to("#emitNetworkWrap",{top:"-62px"},"<");
 
 		// tl.to("#emitNetworkWrap",{width:"100vw", height:"100vh"},"<");
 		// tl.to("#onten .stage",{pointerEvents:"all"},"<");
-		
-		tl.from("#expandingCircle",{scale:0, autoAlpha:0, transformOrigin:"50% 50%"},"<");
-		tl.from("#mandatePaths path",{drawSVG:0, autoAlpha:0},">");
-		tl.from("#leaderSpheres path",{drawSVG:0, autoAlpha:0},">");
-		tl.from("#leaderSpheres ellipse",{scale:0, autoAlpha:0, transformOrigin:"50% 50%"},">");
-		tl.from("#satelites path",{drawSVG:0, autoAlpha:0},">");
-		tl.from("#satelites ellipse",{scale:0, autoAlpha:0, transformOrigin:"50% 50%"},"<");
+
+
+		// tl.to("#impactPendulum",{y:"0", x:"0"},"<");
+		// tl.to(".sphere1, .sphere2, .sphere3",{yPercent:0},"<");
+
+
+
+		// tl.from("#expandingCircle",{scale:0, autoAlpha:0, transformOrigin:"50% 50%"},">");
+		// tl.from("#mandatePaths path",{drawSVG:0, autoAlpha:0},">");
+		// tl.from("#leaderSpheres path",{drawSVG:0, autoAlpha:0},">");
+		// tl.from("#influencers ellipse",{scale:0, autoAlpha:0, transformOrigin:"50% 50%"},">");
+		// tl.from("#satelites path",{drawSVG:0, autoAlpha:0},">");
+		// tl.from("#satelites ellipse",{scale:0, autoAlpha:0, transformOrigin:"50% 50%"},"<");
 
 		// Sonya - the following tween "rewinds the village video in previous section" - do not delete.
 		// tl.to(sheet, {duration:0.1, progress:1},">");
@@ -378,7 +397,6 @@ var NINJA_FUNCTIONS = {
 
 		// DONATE
 		tl.addLabel("donate",">");
-		tl.add( function(){var vid = document.getElementById("villageVideo");vid.pause();vid.currentTime = 0;},">");
 
 		tl.addLabel("end",">")
 		return tl;

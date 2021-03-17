@@ -302,31 +302,6 @@ $sphereWidth: clamp(80px,10vw,200px);
                 }
             }
         }
-        .stage {
-            // border: 5px solid green;
-            position: absolute;
-            pointer-events: none;
-            box-sizing: border-box;
-            background: transparent;
-            box-sizing: border-box;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            z-index: 999;
-            @media (min-width:$landscapeStart) {
-                top: 65px;
-                left: 0;
-                width: 65%;
-                bottom: 0;
-            }
-            @media (max-width:$portraitEnd) {
-                top: 65px;
-                left: 0;
-                right: 0;
-                height: 50%;
-            }
-        }
         // All slide titles
         .sectionHeadline {
             width: 100%;
@@ -400,14 +375,39 @@ $sphereWidth: clamp(80px,10vw,200px);
             }
         }
     }
-    // ------------ STAGEWRAP
+    // ------------ STAGE AND STAGEWRAP DEFAULT STYLES
     // STARTING STYLES - reparented into each active slide. specific styles in each section below.
+    .stage {
+        // border: 5px solid green;
+        position: absolute;
+        pointer-events: none;
+        box-sizing: border-box;
+        background: transparent;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        z-index: 999;
+        top: 0;
+        left: 0;
+        right:0;
+        bottom: 0;
+        @media (max-width:$portraitEnd) {
+            bottom: 50%;
+        }
+    }
     .stageWrap {
+        // border: 2px solid red;
         $planetWidth: 25vmax;
         $networkWidth: 31vmax;
         position: relative;
         box-sizing: border-box;
-        width: 100%;
+        width: 100vw;
+        height: 100%;
+        @media (max-width:$portraitEnd) {
+            height: 50%;
+        }
         #planetWrap {
             position: absolute;
             width: 100%;
@@ -467,6 +467,7 @@ $sphereWidth: clamp(80px,10vw,200px);
                 align-items: center;
                 transform-origin: center center;
                 box-sizing: border-box;
+                transform: perspective(600px) rotateX(0);
                 span {
                     display: block;
                     position: absolute;
@@ -665,12 +666,13 @@ $sphereWidth: clamp(80px,10vw,200px);
         }
         .stage {
             .stageWrap {
-                width: 100%;
-                height: 100%;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                @media (min-width:$landscapeStart) {
+                    width: 57vw;
+                }
                 #impactPendulum {
                     visibility: hidden;
                     display: flex;
@@ -732,14 +734,14 @@ $sphereWidth: clamp(80px,10vw,200px);
             }
         }
         .stage {
-            width: 40%;
             .stageWrap {
-                width: 100%;
-                height: 100%;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                @media (min-width:$landscapeStart) {
+                    width: 40vw;
+                }
                 #impactPendulum {
                     // border: 1px solid blue;
                     visibility: visible;
@@ -803,16 +805,14 @@ $sphereWidth: clamp(80px,10vw,200px);
             }
         }
         .stage {
-            @media (min-width:$landscapeStart) {
-                width: 50%;
-            }
             .stageWrap {
-                width: 100%;
-                height: 100%;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                @media (min-width:$landscapeStart) {
+                    width: 50vw;
+                }
                 #impactPendulum {
                     visibility: hidden;
                     display: flex;
@@ -867,16 +867,14 @@ $sphereWidth: clamp(80px,10vw,200px);
             }
         }
         .stage {
-            @media (min-width:$landscapeStart) {
-                width: 50%;
-            }
             .stageWrap {
-                width: 100%;
-                height: 100%;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                @media (min-width:$landscapeStart) {
+                    width: 57vw;
+                }
                 #impactPendulum {
                     visibility: hidden;
                     display: flex;
@@ -906,7 +904,7 @@ $sphereWidth: clamp(80px,10vw,200px);
             }
             .contentWrap {
                 width: 90%;
-                background-image: linear-gradient(90deg, #272c332b 0%, #1c2127 100%), url(/video/africanVillage/0001.jpg);
+                background-image: linear-gradient(90deg, #272c332b 0%, #1c2127 100%), url(/video/villageFirstFrame.jpg);
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
@@ -917,7 +915,7 @@ $sphereWidth: clamp(80px,10vw,200px);
                 @media (max-width: $portraitEnd) {
                     align-items: center;
                     justify-content: flex-end;
-                    background-image: linear-gradient(180deg, #272c332b 0%, #1c2127 100%), url(/video/africanVillage/0001.jpg);
+                    background-image: linear-gradient(180deg, #272c332b 0%, #1c2127 100%), url(/video/villageFirstFrame.jpg);
                 }
                 .innerWrap {
                     width: 100%;
@@ -941,16 +939,14 @@ $sphereWidth: clamp(80px,10vw,200px);
             }
         }
         .stage {
-            @media (min-width:$landscapeStart) {
-                width: 60%;
-            }
             .stageWrap {
-                width: 100%;
-                height: 100%;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                @media (min-width:$landscapeStart) {
+                    width: 60vw;
+                }
                 #impactPendulum {
                     visibility: hidden;
                     display: flex;
@@ -973,16 +969,12 @@ $sphereWidth: clamp(80px,10vw,200px);
     // SECTION 5: ON-TEN
     #onten {
         .leftWallWrap {
-            flex:6;
+            flex:7;
             @media (max-width:$portraitEnd) {
                 flex:1
             }
             .contentWrap {
                 width: 90%;
-                // background-image: linear-gradient(90deg, #272c332b 0%, #1c2127 100%), url(/video/africanVillage/0001.jpg);
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
                 @media (min-width: $landscapeStart) {
                     align-items: flex-end;
                     justify-content: flex-end;
@@ -990,7 +982,6 @@ $sphereWidth: clamp(80px,10vw,200px);
                 @media (max-width: $portraitEnd) {
                     align-items: center;
                     justify-content: flex-end;
-                    // background-image: linear-gradient(180deg, #272c332b 0%, #1c2127 100%), url(/video/africanVillage/0001.jpg);
                 }
                 .innerWrap {
                     width: 100%;
@@ -1024,57 +1015,118 @@ $sphereWidth: clamp(80px,10vw,200px);
             }
         }
         .rightWallWrap {
-            flex:4;
+            flex:3;
             @media (max-width:$portraitEnd) {
                 flex:1
             }
         }
-        #exploreInterface {
-            visibility: hidden;
-            position: absolute;
-            width: 100vw;
-            height: 100vh;
-            // background-image: linear-gradient(90deg, #272c332b 0%, #1c2127 100%), url(/video/africanVillage/0254.jpg);
-            // background-position: center;
-            // background-repeat: no-repeat;
-            // background-size: cover;
+        .stage {
+            overflow: hidden;
+            .stageWrap {
+                z-index: 4;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                @media (min-width:$landscapeStart) {
+                    width: 70vw;
+                }
+                #impactPendulum {
+                    display: flex;
+                    .spherelogo {
+                        .sphere {
+                            overflow: hidden;
+                        }
+                    }
+                }
+                #planetWrap {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
             #emitNetworkWrap {
-                transform: perspective(600px) rotateX(10deg);
+                z-index: 3;
+                visibility: hidden;
                 position: absolute;
-                width: 100%;
+                width: 100vw;
                 height: 100%;
-                top: -5vh;
-                left: 0;
+                @media (min-width:$landscapeStart) {
+                    width: 70vw;
+                }
+                // border: 2px solid turquoise;
+                transform: perspective(600px) rotateX(30deg);
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 svg {
                     filter: drop-shadow(16px 20px rgba(0, 0, 0, 0.4));
-                    height: 100%;
+                    height: 100vh;
+                    position: absolute;
                     width: auto;
                     path, ellipse, rect, image {
                         visibility: hidden;
                     }
-                    // #josephInVillageTransparent {
-                    //     visibility: visible;
-                    // }
                 }
             }
         }
-        .stage {
-            z-index: 49;
-            @media (min-width:$landscapeStart) {
-                width: 60%;
+    }
+     // SECTION 6: TRACTION
+     #traction {
+        .leftWallWrap {
+            flex:7;
+            @media (max-width:$portraitEnd) {
+                flex:1
             }
+            .contentWrap {
+                width: 90%;
+                background-image: linear-gradient(90deg, #272c332b 0%, #1c2127 100%), url(/video/villageLastFrame.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                @media (min-width: $landscapeStart) {
+                    align-items: flex-end;
+                    justify-content: flex-end;
+                }
+                @media (max-width: $portraitEnd) {
+                    align-items: center;
+                    justify-content: flex-end;
+                    background-image: linear-gradient(180deg, #272c332b 0%, #1c2127 100%), url(/video/villageLastFrame.jpg);
+                }
+                .innerWrap {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    // border: 1px solid red;
+                    padding: 0;
+                    @media (max-width:$portraitEnd) {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .rightWallWrap {
+            flex:3;
+            @media (max-width:$portraitEnd) {
+                flex:1
+            }
+        }
+        .stage {
             .stageWrap {
-                z-index:3;
-                width: 100%;
-                height: 100%;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                @media (min-width:$landscapeStart) {
+                    width: 70vw;
+                }
                 #impactPendulum {
+                    visibility: hidden;
                     display: flex;
                     .spherelogo {
                         .sphere {
