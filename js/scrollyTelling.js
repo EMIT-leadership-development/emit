@@ -268,7 +268,7 @@ var NINJA_FUNCTIONS = {
 		let stageWrap = document.querySelector(".stageWrap");
 		let state = Flip.getState(stageWrap);
 		let newContainer = document.getElementById(newContainerID);
-		console.log("stageWrap parent is: ", newContainer);
+		// console.log("stageWrap parent is: ", newContainer);
 		if (stageWrap.parentNode.id != newContainerID) {
 			newContainer.prepend(stageWrap);
 		};
