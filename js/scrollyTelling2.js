@@ -30,6 +30,7 @@ window.onload = function() {
 	// Functions to be called in slider
 	var topNavTL = NINJA_FUNCTIONS.topnav();
 	var motherTL = NINJA_FUNCTIONS.motherTimeline();
+
 	let titletl;
 
 	// SWIPER SETUP
@@ -129,7 +130,7 @@ window.onload = function() {
 			NINJA_FUNCTIONS.moveStageWrap("onten-stage");
 			motherTL.tweenFromTo("onten","traction");
 		}
-		// ON-TEN SLIDE
+		// TRACTION SLIDE
 		if (this.realIndex == 7) {
 			NINJA_FUNCTIONS.moveStageWrap("traction-stage");
 			motherTL.tweenFromTo("traction","donate");
@@ -353,6 +354,7 @@ var NINJA_FUNCTIONS = {
 
 		// ON-TEN
 		tl.addLabel("onten",">");
+		tl.add( function(){var vid = document.getElementById("villageVideo");vid.pause();vid.currentTime = 0;},">0.5");
 		tl.add( function(){NINJA_FUNCTIONS.playVideo("villageVideo");},">");
 		tl.to("#impactPendulum .spherelogo",{yPercent:-40, xPercent:140},">");
 		tl.to(".sphere1",{scale:1, autoAlpha:1, rotateX:30, transformOrigin:"50% 50%"},"<0.4");
@@ -364,39 +366,27 @@ var NINJA_FUNCTIONS = {
 		tl.from("#influencers ellipse",{scale:0, autoAlpha:0, transformOrigin:"50% 50%"},">");
 
 		// TRACTION
+		let africaGroups = gsap.utils.toArray('#tractionNetwork g');
 		tl.addLabel("traction",">");
-		tl.add( function(){var vid = document.getElementById("villageVideo");vid.pause();vid.currentTime = 0;},">0.5");
-		// tl.from("#emitNetworkWrap",{autoAlpha:0},"<");
-
-		// tl.fromTo("svg #josephInVillageTransparent",{scale:1.5}, {scale:1, transformOrigin:"50% 50%"},">");
-		// tl.fromTo(sheet, {progress:1}, {progress:0, duration:1, ease:"none"},">");
-
-		// tl.to("#onten .wall",{autoAlpha:0},">");
-		// tl.to(".stageWrap",{width:"100vw", height:"100%"},"<");
-		// tl.to("#emitNetworkWrap",{top:"-62px"},"<");
-
-		// tl.to("#emitNetworkWrap",{width:"100vw", height:"100vh"},"<");
-		// tl.to("#onten .stage",{pointerEvents:"all"},"<");
-
-
-		// tl.to("#impactPendulum",{y:"0", x:"0"},"<");
-		// tl.to(".sphere1, .sphere2, .sphere3",{yPercent:0},"<");
-
-
-
-		// tl.from("#expandingCircle",{scale:0, autoAlpha:0, transformOrigin:"50% 50%"},">");
-		// tl.from("#mandatePaths path",{drawSVG:0, autoAlpha:0},">");
-		// tl.from("#leaderSpheres path",{drawSVG:0, autoAlpha:0},">");
-		// tl.from("#influencers ellipse",{scale:0, autoAlpha:0, transformOrigin:"50% 50%"},">");
-		// tl.from("#satelites path",{drawSVG:0, autoAlpha:0},">");
-		// tl.from("#satelites ellipse",{scale:0, autoAlpha:0, transformOrigin:"50% 50%"},"<");
-
-		// Sonya - the following tween "rewinds the village video in previous section" - do not delete.
-		// tl.to(sheet, {duration:0.1, progress:1},">");
+		tl.to("#emitNetworkWrap",{autoAlpha:0},">0.5");
+		tl.to("#impactPendulum",{scale:0.5},"<");
+		tl.to(".sphere1",{autoAlpha:0, rotateX:0, transformOrigin:"50% 50%"},"<");
+		tl.to(".sphere2",{autoAlpha:0, rotateX:0, transformOrigin:"50% 50%"},"<");
+		tl.to(".sphere3",{autoAlpha:0, rotateX:0, transformOrigin:"50% 50%"},"<");
+		tl.to("#impactGraphic #body", {autoAlpha:1}, ">");
+		tl.to("#josephInVillagePic", {autoAlpha:0, ease:"expo.out"}, "<");
+		tl.to("#impactGraphic .spherelogo #backgroundSphere",{autoAlpha:1, xPercent:0, yPercent:0},">");
+		tl.to("#impactGraphic #body", {morphSVG:"#body-2", ease:"expo.out"}, ">");
+		tl.to("#impactGraphic #shadow", {morphSVG:"#shadow-2", ease:"expo.out", autoAlpha:1}, "<");
+		africaGroups.forEach(group => {
+			tl.fromTo(group,{autoAlpha:0}, {duration:0.1, stagger:0.1, autoAlpha:1},">");
+		});
 
 
 		// DONATE
 		tl.addLabel("donate",">");
+		tl.to("#impactPendulum",{scale:0},">0.5");
+		tl.to("#smilingAnna",{duration:1, opacity:1},">1");
 
 		tl.addLabel("end",">")
 		return tl;

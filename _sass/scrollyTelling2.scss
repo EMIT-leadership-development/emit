@@ -969,7 +969,7 @@ $sphereWidth: clamp(80px,10vw,200px);
     // SECTION 5: ON-TEN
     #onten {
         .leftWallWrap {
-            flex:7;
+            flex:5;
             @media (max-width:$portraitEnd) {
                 flex:1
             }
@@ -1048,7 +1048,7 @@ $sphereWidth: clamp(80px,10vw,200px);
                 }
             }
             #emitNetworkWrap {
-                z-index: 3;
+                z-index: -1;
                 visibility: hidden;
                 position: absolute;
                 width: 100vw;
@@ -1076,16 +1076,17 @@ $sphereWidth: clamp(80px,10vw,200px);
      // SECTION 6: TRACTION
      #traction {
         .leftWallWrap {
-            flex:7;
+            flex:4;
             @media (max-width:$portraitEnd) {
                 flex:1
             }
             .contentWrap {
                 width: 90%;
-                background-image: linear-gradient(90deg, #272c332b 0%, #1c2127 100%), url(/video/villageLastFrame.jpg);
+                background-image: linear-gradient(90deg, #272c332b 0%, #1c2127 100%), url();
                 background-position: center;
                 background-repeat: no-repeat;
-                background-size: cover;
+                background-size: contain;
+                padding: 0;
                 @media (min-width: $landscapeStart) {
                     align-items: flex-end;
                     justify-content: flex-end;
@@ -1093,7 +1094,13 @@ $sphereWidth: clamp(80px,10vw,200px);
                 @media (max-width: $portraitEnd) {
                     align-items: center;
                     justify-content: flex-end;
-                    background-image: linear-gradient(180deg, #272c332b 0%, #1c2127 100%), url(/video/villageLastFrame.jpg);
+                    background-image: linear-gradient(180deg, #272c332b 0%, #1c2127 100%), url();
+                }
+                #tractionNetwork {
+                    height: 100%;
+                    top: 0;
+                    right: -10%;
+                    position: absolute;
                 }
                 .innerWrap {
                     width: 100%;
@@ -1123,7 +1130,88 @@ $sphereWidth: clamp(80px,10vw,200px);
                 justify-content: center;
                 align-items: center;
                 @media (min-width:$landscapeStart) {
-                    width: 70vw;
+                    width: 60vw;
+                }
+                #impactPendulum {
+                    visibility: hidden;
+                    display: flex;
+                    .spherelogo {
+                        .sphere {
+                            overflow: hidden;
+                        }
+                    }
+                }
+                #planetWrap {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+
+    // SECTION 7: DONATE
+    #donate {
+        .leftWallWrap {
+            flex:4;
+            @media (max-width:$portraitEnd) {
+                flex:1
+            }
+            .contentWrap {
+                width: 90%;
+                background-image: linear-gradient(90deg, #272c332b 0%, #1c2127 100%), url();
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                padding: 0;
+                img {
+                    height: 100%;
+                    top: 0;
+                    right: 20%;
+                    position: absolute;
+                }
+                #smilingAnna {
+                    opacity: 0;
+                }
+                @media (min-width: $landscapeStart) {
+                    align-items: flex-end;
+                    justify-content: flex-end;
+                }
+                @media (max-width: $portraitEnd) {
+                    align-items: center;
+                    justify-content: flex-end;
+                    background-image: linear-gradient(180deg, #272c332b 0%, #1c2127 100%), url();
+                }
+                .innerWrap {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 0;
+                    @media (max-width:$portraitEnd) {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .rightWallWrap {
+            flex:3;
+            @media (max-width:$portraitEnd) {
+                flex:1
+            }
+        }
+        .stage {
+            .stageWrap {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                @media (min-width:$landscapeStart) {
+                    width: 60vw;
                 }
                 #impactPendulum {
                     visibility: hidden;
