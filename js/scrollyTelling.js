@@ -336,6 +336,10 @@ var NINJA_FUNCTIONS = {
 		tl.to("#annaLeaders",{autoAlpha:1},"<");
 		tl.set("#impactGraphic #body", {morphSVG:"#body", ease:"expo.out"}, ">");
 		tl.set("#africaLeader",{autoAlpha:0},"<");
+		tl.to("#sphereCountry",{fill:$sphere3BG},"<");
+		tl.to("#sphereCommunity",{fill:$sphere2BG},"<0.2");
+		tl.to("#sphereFamily",{fill:$sphere1BG},"<0.2");
+		tl.to("#sphereAnna",{fill:$brand},"<0.2");
 
 		// JOSEPH
 		tl.addLabel("joseph",">");
