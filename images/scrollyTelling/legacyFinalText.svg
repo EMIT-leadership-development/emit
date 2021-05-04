@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Keyshape -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" style="background: rgba(20,20,21,0.01); white-space: pre;">
+    <defs>
+        <filter id="Filter-0" x="-107%" y="-107%" width="420%" height="420%" color-interpolation-filters="sRGB">
+            <feGaussianBlur stdDeviation="5"/>
+        </filter>
+        <filter id="Filter-1" color-interpolation-filters="sRGB">
+            <feGaussianBlur in="SourceAlpha" stdDeviation="11"/>
+            <feOffset dx="6" dy="6" result="offsetblur"/>
+            <feFlood flood-color="#000000" flood-opacity="0.5"/>
+            <feComposite in2="offsetblur" operator="in"/>
+            <feMerge>
+                <feMergeNode/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+        <filter id="Filter-2" x="-12%" y="-10%" width="136%" height="120%" color-interpolation-filters="sRGB">
+            <feGaussianBlur in="SourceAlpha" stdDeviation="2"/>
+            <feOffset dx="5" dy="5" result="offsetblur"/>
+            <feFlood flood-color="#000000" flood-opacity="0.5"/>
+            <feComposite in2="offsetblur" operator="in"/>
+            <feMerge>
+                <feMergeNode/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+        <filter id="Filter-3" x="-16%" y="-16%" width="158%" height="158%" color-interpolation-filters="sRGB">
+            <feGaussianBlur in="SourceAlpha" stdDeviation="2"/>
+            <feOffset dx="5" dy="5" result="offsetblur"/>
+            <feFlood flood-color="#000000" flood-opacity="0.5"/>
+            <feComposite in2="offsetblur" operator="in"/>
+            <feMerge>
+                <feMergeNode/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+    <path id="p-outer-ring-2" fill="none" stroke="#ca2727" stroke-width="9" d="M467.429,0C463.236,258.12,258.154,467.429,0,467.429C-258.154,467.429,-467.429,258.154,-467.429,0C-467.429,-258.154,-258.116,-463.009,0,-467.429C262.862,-471.93,471.688,-262.226,467.429,0Z" opacity="0.5" transform="translate(85.8924,553.175) translate(-85.9244,-53.1391)"/>
+    <text opacity="1" fill="#ffffff" font-size="50" font-family="Roboto" letter-spacing="0" word-spacing="0" stroke="none" font-weight="900" transform="translate(441.951,346.387)" style="line-height: 52px;">YOU CAN LEAVE</text>
+    <text opacity="1" fill="#ffffff" font-size="50" font-family="Roboto" letter-spacing="0" word-spacing="0" stroke="none" font-weight="900" transform="translate(470.12,426.387)" style="line-height: 52px; white-space: pre;">A LEGACY</text>
+    <text opacity="1" fill="#ffffff" font-size="50" font-family="Roboto" letter-spacing="0" word-spacing="0" stroke="none" font-weight="900" transform="translate(476.12,506.387)" style="line-height: 52px; white-space: pre;">THAT SPANS</text>
+    <text opacity="1" fill="#ffffff" font-size="50" font-family="Roboto" letter-spacing="0" word-spacing="0" stroke="none" font-weight="900" transform="translate(470.483,586.387)" style="line-height: 52px; white-space: pre;">CONTINENTS</text>
+    <text opacity="1" fill="#ffffff" font-size="50" font-family="Roboto" letter-spacing="0" word-spacing="0" stroke="none" font-weight="900" transform="translate(449.25,666.387)" style="line-height: 52px; white-space: pre;">AND</text>
+    <text opacity="1" fill="#ffffff" font-size="50" font-family="Roboto" letter-spacing="0" word-spacing="0" stroke="none" font-weight="900" transform="translate(417.612,746.387)" style="line-height: 52px; white-space: pre;">GENERATIONS</text>
+</svg>

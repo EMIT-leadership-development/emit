@@ -1,23 +1,14 @@
 "use strict";
+
 // VARIABLES COPIED FROM SCSS pre.scss
-// BRAND COLORS
 var $brand = "#abe116",
 	$primary = "#abe116",
 	$brandDarker = "#99ca13",
-// COLORS FOR FONTS
-	$brandTDark = "rgba(0,0,0,0.8)",
-	$brandTLight = "rgba(255,255,255,0.8)",
-
-	// SPHERES
 	$sphere1BG = "#85b744",
 	$sphere2BG = "#37ab5d",
 	$sphere3BG = "#03956d",
-
-// $brandContrastDark: #272D32;
 	$brandContrastDark = "#272c33",
 	$brandContrastDarkest = "#1c2127",
-
-// PALE GRAYISH-BLUEISH COLORS FOR BG'S
 	$brandContrastLight = "#EDF5F9",
 	$brandContrastLight2 = "#e0e8ea",
 	$brandContrastLight3 = "#BCC4C6",
@@ -25,690 +16,379 @@ var $brand = "#abe116",
 
 // ---------------------ADD ALL THE ANIMATIONS TO THE MOTHER TIMELINE
 window.onload = function() {
-	startup();
-	topnav();
-	// storyNav();
-	pinDonation();
-	initialSettings();
-	// preloader();
 
-	// Temp hide loading animation until I can get preloader working
-	gsap.to("#loader", {duration:1, autoAlpha:0});
+	NINJA_FUNCTIONS.playVideo("heroVideo");
 
-	//--------MOTHER OF ALL TIMELINES : MAIN SCROLLING ANIMATION-------------------------------------
-	const tl_mother = gsap.timeline({
-		paused: true,
-		onUpdate() { scrollProgress(this.progress()) }
-	});
-	tl_mother.addLabel("hero");
-	tl_mother.add(NINJA_FUNCTIONS.hero());
-	tl_mother.addPause()
-	tl_mother.addLabel("yourStoryTitle");
-	tl_mother.add(NINJA_FUNCTIONS.yourStoryTitle());
-	tl_mother.addPause()
-	tl_mother.addLabel("yourImpact");
-	tl_mother.add(NINJA_FUNCTIONS.yourImpact());
-	tl_mother.addPause()
-	tl_mother.addLabel("whoDoYouImpactEntrance");
-	tl_mother.add(NINJA_FUNCTIONS.whoDoYouImpactEntrance());
-	tl_mother.addPause()
-	tl_mother.addLabel("whoDoYouImpactExit");
-	tl_mother.add(NINJA_FUNCTIONS.whoDoYouImpactExit());
-	tl_mother.addPause()
-	tl_mother.addLabel("yourPeopleImpact");
-	tl_mother.add(NINJA_FUNCTIONS.yourPeopleImpact());
-	tl_mother.addPause()
-	tl_mother.addLabel("yourLegacy");
-	tl_mother.add(NINJA_FUNCTIONS.yourLegacy());
-	tl_mother.addPause()
-	tl_mother.addLabel("yourLegacyText");
-	tl_mother.add(NINJA_FUNCTIONS.yourLegacyText());
-	tl_mother.addPause()
-	tl_mother.addLabel("africaProblem");
-	tl_mother.add(NINJA_FUNCTIONS.africaProblem());
-	tl_mother.addPause()
-	tl_mother.addLabel("africanSymptoms");
-	tl_mother.add(NINJA_FUNCTIONS.africanSymptoms());
-	tl_mother.addPause()
-	tl_mother.addLabel("solution");
-	tl_mother.add(NINJA_FUNCTIONS.solution());
-	tl_mother.addPause()
-	tl_mother.addLabel("meetAnna");
-	tl_mother.add(NINJA_FUNCTIONS.meetAnna());
-	tl_mother.addPause()
-	tl_mother.addLabel("annasLeaders");
-	tl_mother.add(NINJA_FUNCTIONS.annasLeaders());
-	tl_mother.addPause()
-	tl_mother.addLabel("ifWeCan");
-	tl_mother.add(NINJA_FUNCTIONS.ifWeCan());
-	tl_mother.addPause()
-	tl_mother.addLabel("imagineIntro");
-	tl_mother.add(NINJA_FUNCTIONS.imagineIntro());
-	tl_mother.addPause()
-	tl_mother.addLabel("villageReveal");
-	tl_mother.add(NINJA_FUNCTIONS.villageReveal());
-	tl_mother.addPause()
-	tl_mother.addLabel("meetJoseph");
-	tl_mother.add(NINJA_FUNCTIONS.meetJoseph());
-	tl_mother.addPause()
-	tl_mother.addLabel("transformedHisLife");
-	tl_mother.add(NINJA_FUNCTIONS.transformedHisLife());
-	tl_mother.addPause()
-	tl_mother.addLabel("josephMandate");
-	tl_mother.add(NINJA_FUNCTIONS.josephMandate());
-	tl_mother.addPause()
-	tl_mother.addLabel("josephOnTen");
-	tl_mother.add(NINJA_FUNCTIONS.josephOnTen());
-	tl_mother.addPause()
-	tl_mother.addLabel("emitTrainingIntro");
-	tl_mother.add(NINJA_FUNCTIONS.emitTrainingIntro());
-	tl_mother.addPause()
-	tl_mother.addLabel("emitTrainingContent");
-	tl_mother.add(NINJA_FUNCTIONS.emitTrainingContent());
-	tl_mother.addPause()
-	tl_mother.addLabel("transformIntro");
-	tl_mother.add(NINJA_FUNCTIONS.transformIntro());
-	tl_mother.addPause()
-	tl_mother.addLabel("transformation");
-	tl_mother.add(NINJA_FUNCTIONS.transformation());
-	tl_mother.addPause()
-	tl_mother.addLabel("emitImpact");
-	tl_mother.add(NINJA_FUNCTIONS.emitImpact());
-	tl_mother.addPause()
-	tl_mother.addLabel("waitingList");
-	tl_mother.add(NINJA_FUNCTIONS.waitingList());
-	tl_mother.addPause()
-	tl_mother.addLabel("makeADifference");
-	tl_mother.add(NINJA_FUNCTIONS.makeADifference());
-	tl_mother.addPause()
-	tl_mother.addLabel("largerLife");
-	tl_mother.add(NINJA_FUNCTIONS.largerLife());
-	tl_mother.addPause()
-	tl_mother.addLabel("sadAnna");
-	tl_mother.add(NINJA_FUNCTIONS.sadAnna());
-	tl_mother.addPause()
-	tl_mother.addLabel("donate");
-	tl_mother.add(NINJA_FUNCTIONS.donate());
-	tl_mother.addPause()
+	// Start up functions
+	NINJA_FUNCTIONS.startup();
+	NINJA_FUNCTIONS.parrallaxHover();
+	NINJA_FUNCTIONS.cursorFollower();
 
-	// let scrollProgressHeight = tl_mother.duration() * 12;
-	// gsap.set('#scrollProgress',{height:scrollProgressHeight});
+	// Listen for button clicks
+	// document.querySelector("#startOnTenExplore").addEventListener("click", function(){motherTL.tweenFromTo("exploreonten","donate");})
 
+	// Functions to be called in slider
+	var topNavTL = NINJA_FUNCTIONS.topnav();
+	var motherTL = NINJA_FUNCTIONS.motherTimeline();
 
+	let titletl;
 
-	// -------PRELOADER
-	// Todo: Manage assets and create a preloading experience
-	function preloader() {
-		const preload = Preload();
+	// SWIPER SETUP
+	const mySwiper = new Swiper('.swiper-container', {
 
-		preload.fetch([
-			'/video/out.mp4',
-			// '/video/EMIT-hero2.mp4'
-			// 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4',
-			// 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
-			// 'https://images.pexels.com/photos/248797/pexels-photo-248797.jpeg'
-		]).then(items => {
-		// use either a promise or 'oncomplete'
-		// console.log(items);
-		});
-
-		preload.oncomplete = items => {
-		// console.log(items);
-		}
-
-		preload.onprogress = event => {
-		// console.log(event.progress + '%');
-		}
-
-		preload.onfetched = item => {
-		// console.log(item);
-		gsap.to("#loader", {duration:1, autoAlpha:0});
-		}
-
-		preload.onerror = item => {
-		// console.log(item);
-		}
-	}
-	//--------SCROLL "SNAPPING" -------------------------------------
-	function goToSection(i, anim, direction) {
-		// console.log("CurrentAnim", anim, direction);
-		gsap.to(window, {
-			// scrollTo: {y: i*innerHeight, autoKill: false},
-			scrollTo: {y:"#" + anim, autoKill: false},
-			duration: 1
-		});
-
-		if(anim) {
-			// console.log(anim);
-			if (direction == "forward") {
-				tl_mother.tweenTo( tl_mother.nextLabel() );
-				// tl_mother.play(anim);
-			} else {
-				tl_mother.tweenTo( tl_mother.previousLabel() );
+		// Optional parameters
+		direction: 'vertical',
+		loop: false,
+		simulateTouch: false,
+		// If we need pagination
+		pagination: {
+			el: '.swiper-pagination',
+			type: 'bullets',
+			clickable: true,
+			renderBullet: function (index, className) {
+				return '<span class="' + className + '">0' + (index + 1) + '</span>';
 			}
+		},
+		// Keyboard control
+		keyboard: {
+			enabled: true,
+			onlyInViewport: false,
+		},
+		// Scrolling control
+		mousewheel: {
+			// invert: true,
+		},
+		// Navigation arrows
+		navigation: {
+			nextEl: '.swiper-button-next',
+			// prevEl: '.swiper-button-prev',
+		},
+		// And if we need scrollbar
+		scrollbar: {
+			el: '.swiper-scrollbar',
 		}
-	  }
-	  gsap.utils.toArray(".item--full").forEach((section, i) => {
-		var anim = section.getAttribute("id");
-		ScrollTrigger.create({
-		  trigger: section,
-		  onEnter: () => goToSection(i, anim, "forward")
-		});
-		ScrollTrigger.create({
-		  trigger: section,
-		  start: "bottom bottom",
-		  onEnterBack: () => goToSection(i, anim, "backward"),
-		});
-	  });
+	});
 
-	// -------SCROLL PROGRESS INDICATOR
-	function scrollProgress(progress) {
-		// console.log(progress);
-		let progressTween = gsap.fromTo("#progressIndicator",
-			{height: 0 },
-			{height: "100%",
-			duration: 5,
-			ease: "none",
-			paused: true
-			});
-		progressTween.progress(progress);
-	}
-	//--------STORY NAV : LEFT LINKS THAT NAVIGATE THE HOME PAGE STORY -------------------------------------
-	function storyNav() {
-		// Also slipped the scrolldown link in here
-		gsap.utils.toArray(".storyNav li a span, #scrollDown").forEach(function(a) {
-			a.addEventListener("click", function(e) {
-				e.preventDefault();
-				var label = e.target.closest("a").getAttribute("data-jump");
-				// console.log("clicked: ", label);
-				if (label) {
-					const percent = tl_mother.labels[label] / tl_mother.totalDuration();
-					const scrollPos = myST.start + (myST.end - myST.start) * percent;
-					gsap.to(window, {duration: 1, scrollTo: scrollPos});
-				}else {
-					const section = document.querySelector(a.closest("a").getAttribute("href"));
-					gsap.to(window, {duration: 1, scrollTo: section});
-				}
-			});
-		});
-	}
-	//--------STARTUP: ANIMATIONS ON PAGE LOAD -------------------------------------
-	function startup() {
+	// SWIPER ANIMATIONS - TRANSITION START
+	mySwiper.on('slideChangeTransitionStart', function() {
+		if (this.realIndex == 1) {
+			topNavTL.play();
+		}
+		// HERO SLIDE
+		if (this.realIndex == 0) {
+			NINJA_FUNCTIONS.moveStageWrap("stageHolder");
+			motherTL.pause();
+			motherTL.time(0);
+		}
+	})
+	// SWIPER ANIMATIONS - TRANSITION END
+	mySwiper.on('slideChangeTransitionEnd', function() {
+		// Pause and rewind any playing title animations
+		if (titletl) {
+            titletl.pause();
+            titletl.time(0);
+        };
+		// Animate the slide titles for each slide except the hero
+		if (this.realIndex >= 1) {
+			var title = document.querySelector('.swiper-slide-active .sectionHeadline h1');
+			var subtitle = document.querySelector('.swiper-slide-active .subtitle');
+			var underline = document.querySelector('.swiper-slide-active .sectionHeadline .underline');
+			titletl = NINJA_FUNCTIONS.playTitle(title, subtitle, underline);
+			titletl.play();
+		}
+		// HERO SLIDE
+		if (this.realIndex == 0) {
+			topNavTL.reverse();
+		}
+		// IMPACT SLIDE
+		if (this.realIndex == 1) {
+			NINJA_FUNCTIONS.moveStageWrap("impact-stage");
+			motherTL.tweenFromTo("impact","legacy");
+		}
+		// LEGACY SLIDE
+		if (this.realIndex == 2) {
+			NINJA_FUNCTIONS.moveStageWrap("legacy-stage");
+			motherTL.tweenFromTo("legacy","leaders")
+		}
+		// LEADERS SLIDE
+		if (this.realIndex == 3) {
+			NINJA_FUNCTIONS.moveStageWrap("leaders-stage");
+			motherTL.tweenFromTo("leaders","anna");
+		}
+		// ANNA SLIDE
+		if (this.realIndex == 4) {
+			NINJA_FUNCTIONS.moveStageWrap("anna-stage");
+			motherTL.tweenFromTo("anna","joseph");
+		}
+		// JOSEPH SLIDE
+		if (this.realIndex == 5) {
+			NINJA_FUNCTIONS.moveStageWrap("joseph-stage");
+			motherTL.tweenFromTo("joseph","onten");
+		}
+		// ON-TEN SLIDE
+		if (this.realIndex == 6) {
+			NINJA_FUNCTIONS.moveStageWrap("onten-stage");
+			motherTL.tweenFromTo("onten","traction");
+		}
+		// TRACTION SLIDE
+		if (this.realIndex == 7) {
+			NINJA_FUNCTIONS.moveStageWrap("traction-stage");
+			motherTL.tweenFromTo("traction","donate");
+		}
+		// DONATE SLIDE
+		if (this.realIndex == 8) {
+			NINJA_FUNCTIONS.moveStageWrap("donate-stage");
+			motherTL.tweenFromTo("donate","end");
+		}
+	});
+
+} //End window.load
+
+// ALL THE ANIMATION NINJA_FUNCTIONS IN A NAMESPACE
+var NINJA_FUNCTIONS = {
+
+	//Startup functions on page load
+	startup: function() {
 		var tl = gsap.timeline({
 			id: "Landing Scene",
 			defaults:{duration:0.5},
 		});
 		tl.from('.nav-link a.topLevel', {autoAlpha:0, x:-100, stagger:0.1, ease:"linear"},"<");
 		tl.from('#headerLogo', {autoAlpha:0, x:-100, ease:"linear"}, "<");
-		tl.to('#scrollDown',{duration:1, yoyo:true, y:-10, repeat:-1},'<');
-		return tl;
-	}
-	//--------TOPNAV: ANIMATE THE TOP NAV SHRINKING -------------------------------------
-	function topnav() {
-		const links = gsap.utils.toArray(".topLevel");
-		function changeColor() {
-			links.forEach(link => link.classList.toggle("blackText") )
-		}
-		var tl = gsap.timeline({
-			id: "topNavShrink",
-			defaults:{duration:1},
-			scrollTrigger: {
-				trigger: "body",
-				start: 0,
-				end: 130,
-				toggleActions: "play complete reverse reverse",
-				onEnter: changeColor,
-				onLeaveBack: changeColor,
-				scrub: 1
-			}
-			});
-			tl.to('#headerLogo .logo', {duration:1, height:55, ease:"linear"});
-			tl.to('.mainNavigation',{
-				duration:1,
-				boxShadow: "0 1px 15px rgba(0,0,0, .15)",
-				backgroundImage:"linear-gradient(90deg, #89b412 5%, transparent 30%)",
-				backgroundColor:$brand},"<");
-			return tl;
-	}
-	//--------PIN DONATION : FAKE PINS THE BUTTON TOP RIGHT OF THE SCREEN-------------------------------------
-	function pinDonation() {
-		var tl = gsap.timeline({
-			id: "Pin Donate Btn",
-			scrollTrigger: {
-				trigger: "#introCTA",
-				start: "top 100px",
-				end: "top 7px",
-				toggleActions: "play complete none reverse",
-				scrub: true
-			}
-		});
-        tl.to('#introCTA', {duration:1, autoAlpha:0});
-		tl.from('#donateBtn', {duration:1, autoAlpha:0},"<");
-		tl.from('#loginBtn', {duration:1, background:"transparent", border:"1px solid #fff", color:"#ffffff", x:108},"<");
-		tl.to('.ctaTitle', {duration:1, autoAlpha:0},"<");
-		return tl;
-	}
-	//--------INITIAL SETTINGS -------------------------------------
-	function initialSettings() {
-		var bgVideo = document.querySelector("#vid_village");
-		bgVideo.currentTime = 20;
-		gsap.set('#clusterOfLeaders svg, #overlayCircleWrap svg', {xPercent:-50, yPercent:-50, left:"50%", top:"50%", transformOrigin:"50% 50%", scale:1});
-		gsap.set('.singleLeader',{x:1000, y:600, scale:0.5, transformOrigin:"50% 50%", autoAlpha:0});
-	}
-
-} //End window.load
-
-
-// ALL THE ANIMATION NINJA_FUNCTIONS IN A NAMESPACE
-var NINJA_FUNCTIONS = {
-	// --------YOUR STORY TITLE: WHO YOU ARE, YOUR CHOICES... -----------------------------------
-	hero: function() {
-		var tl = gsap.timeline({
-		});
 		tl.from('.introHeadline h1 span', {autoAlpha:0, x:100, stagger:0.1, ease:"linear"},"<" );
-		tl.to('.introHeadline h1', {duration:1, autoAlpha:1, rotateX:0});
-		tl.totalDuration(1);
+		// tl.to('#scrollDown',{duration:1, yoyo:true, y:-10, repeat:-1},'<');
 		return tl;
 	},
-	// --------YOUR STORY TITLE: WHO YOU ARE, YOUR CHOICES... -----------------------------------
-	yourStoryTitle: function() {
-		var tl = gsap.timeline({
+	parrallaxHover: function() {
+        document.addEventListener("mousemove", parrallax)
+        function parrallax(e) {
+            this.querySelectorAll('.layer').forEach(layer => {
+                const speed = layer.getAttribute('data-speed');
+                const x = (window.innerWidth - e.pageX*speed)/100;
+                const y = (window.innerHeight - e.pageY*speed)/100;
+                gsap.to(layer,{duration:0.3, x:x, y:y});
+            })
+        }
+	},
+	cursorFollower: function() {
+		gsap.set(".cursorFollower", {xPercent: -50, yPercent: -50});
+		gsap.set(".cursorFollowerInner", {xPercent: -50, yPercent: -50});
+		const cursorFollower = document.querySelector(".cursorFollower");
+		const cursorFollowerInner = document.querySelector(".cursorFollowerInner");
+		var pos = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
+		var pos2 = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
+		var mouse = { x: pos.x, y: pos.y };
+		var speed = 0.1;
+		var speed2 = 0.8;
+		var fpms = 60 / 1000;
+		var xSet = gsap.quickSetter(cursorFollower, "x", "px");
+		var ySet = gsap.quickSetter(cursorFollower, "y", "px");
+		var xSetInner = gsap.quickSetter(cursorFollowerInner, "x", "px");
+		var ySetInner = gsap.quickSetter(cursorFollowerInner, "y", "px");
+		window.addEventListener("mousemove", e => {
+			mouse.x = e.x;
+			mouse.y = e.y;
 		});
-		tl.to('.introHeadline h1', {duration:5, autoAlpha:0, rotateX:10});
-		tl.from('#yourStoryTitle .sectionHeading span', {duration:3, autoAlpha:0, y:"300", stagger:"0.2", ease:"Sine.easeOut"},"<+1");
-		tl.totalDuration(1);
-		return tl;
-	},
-	// --------YOUR IMPACT - ENTER THE SPHERES AND LOGO -------------------------------------
-	yourImpact: function () {
-		var tl = gsap.timeline({
-		});
-		tl.fromTo('.sphere, #animatedLogoWrap', {scale:0, autoAlpha:0, x:0, y:0}, {stagger:0.1, scale:1, autoAlpha:1, transformOrigin:"50% 50%"}).duration(5);
-		tl.totalDuration(1);
-		return tl;
-	},
-	// --------WHO ARE THE PEOPLE YOU IMPACT -------------------------------------
-	whoDoYouImpactEntrance: function () {
-		var tl = gsap.timeline({
-		});
-		tl.from('#text_yourImpact',{duration:5, scale:0, autoAlpha:0},">");
-		tl.totalDuration(1);
-		return tl;
-	},
-	// --------WHO ARE THE PEOPLE YOU IMPACT -------------------------------------
-	whoDoYouImpactExit: function () {
-		var tl = gsap.timeline({
-		});
-		tl.to('#text_yourImpact', {duration:3, delay: 2, scale:0, autoAlpha:0},">");
-		tl.totalDuration(1);
-		return tl;
-	},
-	// --------THE PEOPLE YOU IMPACT: SPOUSE, FAMILY, COMMUNITY...THE CURVED TEXT IN SPHERES -------------------------------------
-	yourPeopleImpact: function() {
-		var tl = gsap.timeline({
-		});
-		tl.from('.yourPeople',{autoAlpha:0, ease:"linear", stagger:{amount:5}, rotate:-30, transformOrigin:"50% 50%"});
-		tl.from('.impactTitle',{duration:2, autoAlpha:0, x:-20},"<");
-		tl.totalDuration(1);
-		return tl;
-	},
-	// --------YOUR LEGACY ANIMATION: SPINNING PLANET-------------------------------------
-	yourLegacy: function() {
-		var tl = gsap.timeline({
-		});
-		tl.to('#spinningPlanet', {duration:1, autoAlpha:1});
-		tl.to('.impactTitle',{duration:0.5, autoAlpha:0, x:-20},">");
-		tl.fromTo('#planetWrap',{scale:0.5, autoAlpha:0, x:200, y:-300}, {duration: 2.5, scale:1, autoAlpha:1, x:0, y:0},"<");
-		tl.to('#animatedLogoWrap', {duration:1.5, scale: 0.4, y:105, x:-20, transformOrigin:"50% 50%"},"<");
-		tl.to('#logoBorder', {duration:1.5, autoAlpha:0},"<");
-		tl.to("#svg_body", {duration: 1.5, morphSVG:"#svg_body-2", ease:"expo.out"},"<");
-		tl.to("#svg_shadow", {duration: 1.5, morphSVG:"#svg_shadow-2", ease:"expo.out"},"<");
-		tl.to('#spheresWrap, #thePeopleYouImpactWrap', {duration:2.5, y:105, x:-15, autoAlpha:0, transformOrigin:"50% 50%", scale:0.2},"<");
-		tl.to('#countries',{duration:10, xPercent:"-65", transformOrigin:"50% 50%"},">");
-		tl.totalDuration(1);
-		return tl;
-	},
-	// --------YOUR LEGACY ANIMATION: TEXT-------------------------------------
-	yourLegacyText: function() {
-		var tl = gsap.timeline({
-		});
-		tl.from('.circle2',{duration:2, autoAlpha: 0, y:-10, transformOrigin:"50% 50%"},"<4");
-		tl.from('.circleShadow',{duration:3, autoAlpha: 0, y:-20, transformOrigin:"50% 50%"},"<3");
-		tl.totalDuration(1);
-		return tl;
-	},
-	// --------AFRICA PROBLEM -------------------------------------
-	africaProblem: function () {
-		var tl = gsap.timeline({
-		});
-		tl.to('#spinningPlanet', {duration:3, autoAlpha:0});
-		tl.fromTo('#sadAnnaInAfrica', {scale:0.43, x:5, y:35, autoAlpha:0, transformOrigin: "50% 50%"}, {duration:2, scale:1, autoAlpha:1, transformOrigin: "50% 50%"},"<");
-		tl.to('#annaInAfrica', {duration:2, backgroundColor:$brandContrastLight2},"<");
-		tl.to('#animatedLogoWrap', {duration:1, autoAlpha:0},"<");
-		tl.from('#text_africaProblem',{duration:2, scale:0, autoAlpha:0},">");
-		tl.totalDuration(1);
-		return tl;
-	},
+		gsap.ticker.add((time, deltaTime) => {
+			var delta = deltaTime * fpms;
+			var dt = 1.0 - Math.pow(1.0 - speed, delta);
+			pos.x += (mouse.x - pos.x) * dt;
+			pos.y += (mouse.y - pos.y) * dt;
+			xSet(pos.x + 5);
+			ySet(pos.y + 5);
 
+			var delta2 = deltaTime * fpms;
+			var dt2 = 1.0 - Math.pow(1.0 - speed2, delta2);
+			pos2.x += (mouse.x - pos2.x) * dt2;
+			pos2.y += (mouse.y - pos2.y) * dt2;
+			xSetInner(pos2.x + 5);
+			ySetInner(pos2.y + 5);
+		});
+		const animateCursor = gsap.timeline({
+			paused:true,
+			defaults:{duration:0.5},
+		});
+		animateCursor.add('start');
+		animateCursor.to(".cursorFollower",{transformOrigin:"center center", width:100, height:100, ease: "elastic.in(1, 0.5)"},"<");
+		animateCursor.to(".cursorFollowerInner",{transformOrigin:"center center", scale:0, ease: "elastic.in(1, 0.5)"},"<");
+		animateCursor.add('end');
+		const hoverElements = gsap.utils.toArray(['.hoverAnim', '#next1', '#next2', '#next3', '#next4', '#leaderButton-1', '#leaderButton-2', '#leaderButton-3', '#leaderButton-4', '#leaderButton-5', '#leaderButton-6', '#leaderButton-7', '#leaderButton-8', '#leaderButton-9', '#leaderButton-10']);
+		hoverElements.forEach((element) => {
+			element.addEventListener("mouseenter", () => animateCursor.play());
+			element.addEventListener("mouseleave", () => animateCursor.reverse());
+		});
+	},
+	// Play video function
+	playVideo: function(vidID) {
+		// From google developer docs - must still test - video does not always play on chrome
+		var video = document.getElementById(vidID);
+		// Show loading animation.
+		var playPromise = video.play();
 
-	// -------- AFRICAN PROBLEM SYMPTOMS - DARK SPHERES COVER SCREEN -------------------------------------
-	africanSymptoms: function() {
-		var tl = gsap.timeline({
-		});
-		tl.set('#spheres .sphere3, #spheres .sphere2, #spheres .sphere1',{autoAlpha:0, scale:1.8, backgroundColor:"rgba(0,0,0,0.7)", border:"1px solid rgba(255,255,255,0.2)", immediateRender:false});
-		tl.set('#spheresWrap',{x:0, y:0, scale:1, autoAlpha:1, transformOrigin:"50% 50%", immediateRender:false});
-
-		tl.to('#text_africaProblem', {duration:0.3, scale:0, autoAlpha:0});
-		tl.to('#annaInAfrica', {duration:5, background:$brandContrastDarkest},"<");
-		tl.to('#sadAnnaInAfrica', {duration:5, autoAlpha:0},"<")
-		tl.to('.singleLeader',{duration:5, stagger:0.1, scale:10, ease:"bounce-out", autoAlpha:1, xPercent:"random(-3000, 3000)", yPercent:"random(-1500, 1500)", transformOrigin:"center"},"<");
-		tl.to('#spheres .sphere1', {duration:2, scale:1, autoAlpha:1, border:"0.5px solid rgba(255,255,255,0.3)", backgroundColor:"#1c2127"},"<");
-		tl.to('#spheres .sphere2', {duration:2, scale:1, autoAlpha:1, border:"0.5px solid rgba(255,255,255,0.3)", backgroundColor:"#1c2127"},">");
-		tl.to('#spheres .sphere3', {duration:2, scale:1, autoAlpha:1, border:"0.5px solid rgba(255,255,255,0.3)", backgroundColor:"#1c2127"},">");
-		tl.from('.symptom',{autoAlpha:0, ease:"linear", stagger:{amount:5}, rotate:-30, transformOrigin:"50% 50%"},"<");
-		tl.from('#questionAtTheCenter',{duration:1, autoAlpha:0, scale:0},'<');
-
-		tl.totalDuration(1);
-		return tl;
-	},
-
-	// --------SOLUTION: EMIT BELIEVES TEXT-------------------------------------
-	solution: function() {
-		var tl = gsap.timeline({
-		});
-		tl.from('#text_solution',{duration:1, scale:0, autoAlpha:0});
-		tl.to('.symptom',{autoAlpha:0, ease:"linear", scale:0, transformOrigin:"50% 50%"},"<");
-		tl.to('#questionAtTheCenter',{duration:1, autoAlpha:0, scale:0},'<');
-		tl.totalDuration(1);
-		return tl;
-	},
-	// --------MEET ANNA -------------------------------------
-	meetAnna: function() {
-		var tl = gsap.timeline({
-		});
-		tl.to('#text_solution',{duration:1, x:300, autoAlpha:0, delay:3});
-		tl.to('#animatedLogoWrap',{duration:1, x:0, y:0, scale:1, autoAlpha:1},"<");
-		tl.to('#spheresWrap', {duration:1, x:0, y:0, scale:0.5, autoAlpha:1},"<");
-		tl.to("#svg_body", {duration:1, morphSVG:"#svg_body", ease:"expo.out"});
-		tl.to("#svg_shadow", {duration:1, morphSVG:"#svg_shadow", ease:"expo.out"},"<");
-		tl.to('#animatedLogoWrap', {duration:1, x:-130, ease:"expo.out"},"<");
-		tl.to('#animatedLogoWrap linearGradient #offsetEnd', {duration:1, attr: {'offset': 0.6, 'stop-opacity':0.01}, ease:"expo.out"},"<");
-		tl.fromTo('#annaAtTheCenter',{scale:0, autoAlpha:0}, {duration:1.5, ease:"expo.out", scale:1.5, autoAlpha:1},'<');
-		tl.from('#text_meetAnna',{duration:3.5, scale:0, autoAlpha:0},">");
-		tl.totalDuration(1);
-		return tl;
-	},
-	// --------ANNA'S LEADERS : ANIMATED CURVED TITLES IN SPHERES-------------------------------------
-	annasLeaders: function() {
-		var tl = gsap.timeline({
-		});
-		tl.to('#text_meetAnna',{duration:3.5, x:1000, scale:0, delay:2, autoAlpha:0},">");
-		tl.set('#spheres .sphere3, #spheres .sphere2, #spheres .sphere1',{autoAlpha:0, scale:1.8, backgroundColor:"rgba(0,0,0,0.7)", border:"1px solid rgba(255,255,255,0.2)", immediateRender:false});
-		tl.set('#spheresWrap',{x:0, y:0, scale:1, autoAlpha:1, transformOrigin:"50% 50%", immediateRender:false});
-		tl.set('.annasLeaders',{scale:0.95});
-		tl.to('#annaAtTheCenter',{duration:2, scale:1},"<");
-		tl.to('#spheres .sphere1', {duration:2, scale:1, autoAlpha:1, border:"0.5px solid rgba(255,255,255,0.3)", backgroundColor:"#1c2127"},"<");
-		tl.to('#spheres .sphere2', {duration:2, scale:1, autoAlpha:1, border:"0.5px solid rgba(255,255,255,0.3)", backgroundColor:"#1c2127"},">");
-		tl.to('#spheres .sphere3', {duration:2, scale:1, autoAlpha:1, border:"0.5px solid rgba(255,255,255,0.3)", backgroundColor:"#1c2127"},">");
-		tl.from('.annasLeaders',{autoAlpha:0, ease:"linear", stagger:2, rotate:-30, transformOrigin:"50% 50%"},'<-4');
-		tl.totalDuration(1);
-		return tl;
-	},
-	// --------IF WE CAN EQUIP HER LEADERS WE CAN CHANGE HER LIFE -------------------------------------
-	ifWeCan: function() {
-		var tl = gsap.timeline({
-		});
-		tl.from('#text_ifWeCan', {duration:1, scale:0, delay:1, autoAlpha:0});
-		tl.totalDuration(1);
-		return tl;
-	},
-	// --------IMAGINE IF YOU COULD-------------------------------------
-	imagineIntro: function() {
-		var tl = gsap.timeline({
-		});
-		tl.from('#imagineIntro .sectionHeading span ', {duration:3, autoAlpha:0, y:"300", stagger:"0.5"});
-		tl.to('#villageVideoWrap', {duration:1, autoAlpha:1},"+=2.5");
-		tl.totalDuration(1);
-		return tl;
-	},
-	// --------REVEAL VILLAGE -------------------------------------
-	villageReveal: function() {
-		var tl = gsap.timeline({
-		});
-		tl.set('#annasLeadersWrap',{scale:0, autoAlpha:0});
-		tl.set("#annaAtTheCenter", {scale:0, autoAlpha:0});
-		tl.set("#spheresWrap", {scale:0.4, autoAlpha:0});
-		tl.set('#animatedLogoWrap', {x:0, autoAlpha:0});
-
-		tl.to('#text_ifWeCan', {duration:3, scale:0, autoAlpha:0, delay:1},"<");
-		tl.to('#annaInAfrica', {duration:5, background:"transparent"},"<");
-		tl.to('.singleLeader', {duration:5, scale:0, stagger:0.1, rotation:0.01, force3D:true, autoAlpha:0},"<");
-		tl.totalDuration(1);
-		return tl;
-	},
-	// --------HELPER FUNCTION: VIDEO SCRUB -------------------------------------
-	scrubVideo: function(progress, scrubDir) {
-		var bgVideo = document.querySelector("#vid_village");
-		bgVideo.currentTime = 20;
-		if (scrubDir == "reverse") {
-			var progress = 1 - progress
-		} else {
-			var progress = progress;
+		if (playPromise !== undefined) {
+		  playPromise.then(_ => {
+			// Automatic playback started!
+			// Show playing UI.
+			console.log("playing video");
+		  })
+		  .catch(error => {
+			// Auto-play was prevented
+			// Show paused UI.
+			console.log("error: ", error);
+		  });
 		}
-		let videoTween = gsap.fromTo(bgVideo,
-			{currentTime: 0 },
-			{currentTime: 20,
-			duration: 5,
-			ease: "none",
-			paused: true
+	},
+	//Topnav animates the navigation shrinking
+	topnav: function() {
+		var tl = gsap.timeline({
+			paused: true,
+			id: "topNavShrink",
+			defaults:{duration:0.3},
 			});
-		// console.log(progress);
-		videoTween.progress(progress);
+			tl.to('#headerLogo .logo', {height:55, ease:"linear"});
+			tl.to('.mainNavigation',{boxShadow: "0 1px 15px rgba(0,0,0, .15)", backgroundImage:"linear-gradient(90deg, #89b412 5%, transparent 30%)", backgroundColor:$brand},"<");
+			tl.to('.topLevel',{color:"#000000"},"<");
+			return tl;
 	},
-	// --------MEET JOSEPH (ZOOM IN TO VILLAGE)-------------------------------------
-	meetJoseph: function() {
-		var tl = gsap.timeline({
-			onUpdate: function() {
-				NINJA_FUNCTIONS.scrubVideo(this.progress(), "reverse");
-			}
-		});
-		tl.from('#text_joseph',{duration:1, delay:9, scale:0, autoAlpha:0},">");
-		tl.totalDuration(1);
+	// Slide title animation
+    playTitle: function(title, subtitle, underline) {
+        var tl = gsap.timeline({
+            paused:true,
+            defaults:{duration:2},
+        });
+        tl.add('start');
+        tl.fromTo(title, {y:30, autoAlpha:0}, {y:0, autoAlpha:1, delay:0.1, ease:"expo.out"},">");
+        tl.fromTo(subtitle, {y:30, autoAlpha:0}, {y:0, autoAlpha:1, ease:"expo.out"},"<0.1");
+        tl.fromTo(underline, {width:0}, {duration:1, width:"100%", ease:"expo.out"},"<");
+		tl.add('end');
 		return tl;
 	},
-	// --------EMIT HAS TRANSFORMED HIS LIFE -------------------------------------
-	transformedHisLife: function() {
-		var tl = gsap.timeline({
+	// Move the stageWrap using flip plugin
+	moveStageWrap: function(newContainerID) {
+		let stageWrap = document.querySelector(".stageWrap");
+		let state = Flip.getState(stageWrap);
+		let newContainer = document.getElementById(newContainerID);
+		console.log("stageWrap parent is: ", newContainer);
+		if (stageWrap.parentNode.id != newContainerID) {
+			newContainer.prepend(stageWrap);
+		};
+		Flip.from(state, {
+			duration: 0.5,
+			scale:true,
+			// absolute:true,
+			nested: true,
+			ease: "linear"
 		});
-		tl.set('#josephAtTheCenter',{scale:1, autoAlpha:1, });
-		tl.to('#text_joseph',{duration:2, scale:0, autoAlpha:0},+2);
-		tl.to('#animatedLogoWrap', {duration:2, x:-130, ease:"expo.out"},"<");
-		tl.to("#svg_body", {duration:2, morphSVG:"#svg_body", ease:"expo.out"},"<");
-		tl.to("#svg_shadow", {duration:2, morphSVG:"#svg_shadow", ease:"expo.out"},"<");
-		tl.to('#spheresWrap', {duration:1, autoAlpha:1, scale:1});
-		tl.to('#spheresWrap .sphere1', {duration:2, backgroundColor:$sphere1BG, border:"1px solid #86b744"},"<");
-		tl.to('#spheresWrap .sphere2', {duration:2, backgroundColor:$sphere2BG, border:"1px solid #86b744"},"<1");
-		tl.to('#spheresWrap .sphere3', {duration:2, backgroundColor:$sphere3BG, border:"1px solid #86b744"},"<1");
-		tl.totalDuration(1);
-		return tl;
-	},
-	// --------JOSEPH MANDATE-------------------------------------
-	josephMandate: function() {
-		var tl = gsap.timeline({
-		});
-		tl.from('#text_josephOnTenIntro',{duration:1, scale:2, autoAlpha:0});
-		tl.totalDuration(1);
-		return tl;
-	},
-	// --------JOSEPH ON TEN -------------------------------------
-	josephOnTen: function() {
-		var tl = gsap.timeline({
-		});
-		tl.to('#text_josephOnTenIntro',{duration:2, scale:0, delay:2, autoAlpha:0});
-		tl.from('#josephOnTenPeople', {duration:3, scale:0, rotate:360, autoAlpha:0},">");
-		tl.to('#josephAtTheCenter', {duration:3, filter:"drop-shadow(2px 2px 5px rgba(0,0,0,0.5)"},"<");
-		tl.to("#svg_body", {duration:2, morphSVG:"#svg_body-2", ease:"expo.out"},"<");
-		tl.to("#svg_shadow", {duration:2, morphSVG:"#svg_shadow-2", ease:"expo.out"},"<");
-		tl.totalDuration(1);
-		return tl;
-	},
-	// --------EMIT TRAINING INTRO -------------------------------------
-	emitTrainingIntro: function() {
-		var tl = gsap.timeline({
-		});
-		tl.from('#text_josephTrainingIntro',{duration:2.5, scale:0, autoAlpha:0});
-		tl.totalDuration(1);
-		return tl;
-	},
-	// --------EMIT TRAINING CONTENT-------------------------------------
-	emitTrainingContent: function() {
-		var tl = gsap.timeline({
-			defaults: {
-				transformOrigin: "50% 50%"
-			}
-		});
-		// emitTrainingText
-		tl.to('#text_josephTrainingIntro',{duration:1, scale:0, autoAlpha:0});
-		tl.to('#animatedLogoWrap, #logoBorder', {autoAlpha:1, scale:1, x:0, y:0},"<");
-
-		tl.from('#trainingText1',{duration:1, scale:0, autoAlpha:0},"<");
-		tl.to('#josephOnTenPeople', {duration:1, scale:1.1, rotate:120},"<");
-
-		tl.from('#trainingText2',{duration:1, scale:0, autoAlpha:0},">");
-		tl.to('#josephOnTenPeople', {duration:1, scale:1.2, rotate:120},"<");
-
-		tl.from('#trainingText3',{duration:1, scale:0, autoAlpha:0},">");
-		tl.to('#josephOnTenPeople', {duration:1.3, scale:1, rotate:120},"<");
-
-		tl.totalDuration(1);
-		return tl;
-	},
-	// --------TRANSFORM INTRO: WITH RENEWED VISION THEY BEGIN... -------------------------------------
-	transformIntro: function() {
-		var tl = gsap.timeline({
-			defaults: {
-				transformOrigin: "50% 50%"
-			}
-		});
-		tl.from('#text_josephTransformationIntro',{duration:1, scale:3, autoAlpha:0});
-		tl.to('#animatedLogoWrap, #logoBorder, #emitTrainingText, #josephOnTenPeople',{duration:1, scale:0, stagger:0.25, autoAlpha:0},"<");
-		tl.totalDuration(1);
-		return tl;
-	},
-	// --------TRANSFORMATION-------------------------------------
-	transformation: function() {
-		var tl = gsap.timeline({
-			onUpdate: function() {
-				NINJA_FUNCTIONS.scrubVideo(this.progress(), "forward");
-			}
-		});
-		// tl.set('#josephOnTenPeople', {scale:0, autoAlpha:0},"<");
-		tl.set('#josephAtTheCenter', {scale:0, autoAlpha:0},"<");
-		tl.set('#spheresWrap',{autoAlpha:0, scale: 0},'<');
-		tl.to('#text_josephTransformationIntro', {duration:1, scale:0, autoAlpha:0},"<");
-		tl.from('.overlayCircle',{duration:5, delay:4, scale:0, autoAlpha:0, transformOrigin:"center center"},">");
-		tl.totalDuration(1);
-		return tl;
 	},
 
-	// -------- EMIT IMPACT: Emit has already influenced
-	emitImpact: function() {
-		var tl = gsap.timeline({
-		});
-		tl.from('#emitImpact .sectionHeading span, #explorebtn', {duration:3, autoAlpha:0, y:"300", stagger:"0.2", ease:"Sine.easeOut"},"<+1");
-		tl.totalDuration(1);
-		return tl;
-	},
+	motherTimeline: function() {
 
-	// -------- WE HAVE A WAITING LIST-------------------------------------
-	waitingList: function() {
-		var tl = gsap.timeline({
+		let tl = gsap.timeline({
+			defaults:{duration:0.5},
+			paused: true,
 		});
-		tl.to('#villageVideoWrap',{duration:5, autoAlpha:0});
-		tl.set('.singleLeader',{scale:10, autoAlpha:1, transformOrigin:"center"},"<");
-		tl.set('#animatedLogoWrap', {autoAlpha:1, scale:0.7},"<");
-		tl.set("#svg_body", {morphSVG:"#svg_body", ease:"expo.out"},"<");
-		tl.set("#svg_shadow", {morphSVG:"#svg_shadow", ease:"expo.out"},"<");
-		tl.set('#spheresWrap', {scale:0.7, autoAlpha:1}, "<");
-		tl.from('#waitingList .sectionHeading span', {duration:3, autoAlpha:0, y:"300", stagger:"0.2", ease:"Sine.easeOut"},"<+1");
-		tl.totalDuration(1);
-		return tl;
-	},
-	// --------MAKE A DIFFERENCE : CHANGE TO GREEN LEADERS-------------------------------------
-	makeADifference: function() {
-		var emitLeaders = gsap.utils.toArray(".singleLeader");
-		let fillColors = ["#03956d", "#37ab5d", "#85b744", "rgba(255,255,255,0.2)"];
-		var tl = gsap.timeline({
-		});
-		tl.fromTo('#annaInAfrica', {background:$brandContrastDark}, {duration:5, background:$sphere3BG, immediateRender:false});
-		// YOU CAN
-		tl.from("#makeDif1", {duration:1, delay:2, autoAlpha:0, scale:0}, "<");
-		tl.to("#makeDif1", {duration:1, delay:3, autoAlpha:0, scale:0}, "<");
-		tl.add("textAnimate");
-		emitLeaders.forEach(leader => {
-			var leaderSpheres = leader.getElementsByTagName("circle");
-			tl.to(leaderSpheres, {
-				stagger:0.1,
-				// amount: 0.1,
-				fill: function(index, elem) { return fillColors[index] }
-			},"<+0.1");
-		}); //End forEach leader
-		// BE THE
-		tl.to("#animatedLogoWrap", {duration:0.6, x:-150, ease:"expo.out"}, "textAnimate");
-		tl.to("#svg_body", {duration:0.6, morphSVG:"#svg_body-2", ease:"expo.out"}, "textAnimate");
-		tl.to("#svg_shadow", {duration:0.6, morphSVG:"#svg_shadow-2", ease:"expo.out"}, "textAnimate");
-		tl.to('#spheresWrap', {duration:1, scale:0.8}, "textAnimate");
-		tl.from("#makeDif2", {duration:1, autoAlpha:0, scale:0}, "textAnimate");
-		tl.to("#makeDif2", {duration:1, delay:3, autoAlpha:0, scale:0}, "textAnimate");
-		tl.add("textAnimate2");
-		// CHANGE
-		tl.to("#animatedLogoWrap", {duration:0.6, x:-190, ease:"expo.out"}, ">");
-		tl.to("#svg_body", {duration:0.6, morphSVG:"#svg_body", ease:"expo.out"}, "<");
-		tl.to("#svg_shadow", {duration:0.6, morphSVG:"#svg_shadow", ease:"expo.out"}, "<");
-		tl.to('#spheresWrap', {duration:1, scale:0.9}, "<");
-		tl.from("#makeDif3", {duration:1, autoAlpha:0, scale:0}, "<");
-		tl.totalDuration(1);
-		return tl;
-	},
-	// --------LARGER LIFE-------------------------------------
-	largerLife: function() {
-		var tl = gsap.timeline({
-		});
-		tl.to('#annaInAfrica', {duration:1, delay:4, background:$brandContrastLight2});
-		tl.from('#largerLife p', {duration:3, autoAlpha:0, y:"300", stagger:"0.2", ease:"Sine.easeOut"},"<+1");
-		tl.totalDuration(1);
-		return tl;
-	},
-	// --------SAD ANNA TO SMILING ANNA -------------------------------------
-	sadAnna: function() {
-		var tl = gsap.timeline({
-		});
-		tl.set('#smilingAnnaInAfrica', {x:5, y:35, transformOrigin: "50% 50%"});
+		// IMPACT
+		tl.addLabel("impact",">")
+		tl.from("#impactPendulum",{autoAlpha:0, y:-200},">0.5");
+		tl.to(".spherelogo",{rotate:30, yoyo:true, repeat:1, ease:"expo.out", transformOrigin:"50% -50vh"},">");
+		tl.to(".sphere3",{rotate:-30, yoyo:true, repeat:1, ease:"expo.out", transformOrigin:"50% -50vh"},">");
+		tl.to(".spherelogo",{rotate:30, yoyo:true, repeat:1, ease:"expo.out", transformOrigin:"50% -50vh"},">");
+		tl.to(".sphere3",{rotate:-30, yoyo:true, repeat:1, ease:"expo.out", transformOrigin:"50% -50vh"},">");
 
-		tl.to('#animatedLogoWrap', {duration:0.1, x:-130}, 0);
-		tl.to('#sadAnnaInAfrica', {duration:0.1, autoAlpha:1, filter:"grayscale(100%)"}, 0);
-		tl.to("#makeDif3", {duration:1, autoAlpha:0, scale:0}, "textAnimate", ">");
-		tl.to('.singleLeader',{autoAlpha:0, scale:0, xPercent:"random(-3000, 3000)", yPercent:"random(-1500, 1500)", transformOrigin:"center"},"<");
-		tl.to("#animatedLogoWrap", {duration:0.6, ease:"expo.out", scale:0.6},"<");
-		tl.to("#spheresWrap", {duration:0.5, x:-130, ease:"expo.out", scale:0.30},"<");
-		tl.to("#svg_body", {duration:0.6, morphSVG:"#svg_body-2", ease:"expo.out"},"<");
-		tl.to("#svg_shadow", {duration:0.6, morphSVG:"#svg_shadow-2", ease:"expo.out"},"<");
+		// LEGACY
+		tl.addLabel("legacy",">")
+		tl.to("#impactGraphic .sphereWrap span",{autoAlpha:0},">0.5");
+		tl.to("#impactGraphic .spherelogo",{xPercent:150, scale:0.5, transformOrigin:"center center"},"<");
+		tl.to("#impactGraphic .sphere1",{xPercent:50, scale:0.5, transformOrigin:"center center"},"<");
+		tl.to("#impactGraphic .sphere2",{xPercent:-50, scale:0.7, transformOrigin:"center center"},"<");
+		tl.to("#impactGraphic .sphere3",{xPercent:-150, scale:0.9, transformOrigin:"center center"},"<");
+		tl.to("#impactGraphic .spherelogo #backgroundSphere",{autoAlpha:0},"<0.3");
+		tl.to("#impactGraphic #body", {morphSVG:"#body-2", ease:"expo.out"}, "<");
+		tl.to("#impactGraphic #shadow", {morphSVG:"#shadow-2", ease:"expo.out"}, "<");
+		tl.from("#planetWrap",{scale:0.3, autoAlpha:0, y:-300, x:300, transformOrigin:"center center"},"<0.2");
+		tl.to("#impactPendulum",{scale:0.5, y:"4.5vmax", x:"-1vmax", filter:"drop-shadow(1px 1px rgba(0,0,0,0.1))"},"<");
+		tl.to(".spherelogo",{scale:1.2, transformOrigin:"center center"},"<")
+		tl.to("#planetWrap .planet",{duration:2, backgroundPosition:"-300px 50%"},"<-0.5");
+		tl.to(".sphere1, .sphere2, .sphere3",{autoAlpha:0},">");
 
-		tl.totalDuration(1);
-		return tl;
-	},
-	// --------DONATE BUTTON-------------------------------------
-	donate: function() {
-		var tl = gsap.timeline({
+		// LEADERS
+		tl.addLabel("leaders",">")
+		tl.to("#planetWrap", {scale:1, autoAlpha:0, x:0, y:"-4.5vmax"},">0.5");
+		tl.to("#impactPendulum",{scale:1, x:0, y:0, filter:"drop-shadow(16px 20px rgba(0,0,0,0.4))"},"<");
+		tl.to(".sphere1, .sphere2, .sphere3",{autoAlpha:1},"<");
+		tl.to(".spherelogo ",{x:0, y:0, scale:1},"<");
+		tl.to("#impactGraphic #body", {morphSVG:"#body", ease:"expo.out"}, "<");
+		tl.to("#impactGraphic #shadow", {morphSVG:"#shadow", ease:"expo.out"}, "<");
+		tl.to("#impactGraphic #body", {duration:1, morphSVG:"#africaPath", ease:"expo.out"}, ">");
+		tl.to("#impactGraphic #shadow", {duration:1, autoAlpha:0, ease:"expo.out"}, "<");
+		tl.to("#impactPendulum",{duration:1, filter:"drop-shadow(rgba(0, 0, 0, 0.5) 3px 4px)"},"<");
+		tl.to(".spherelogo .sphere",{duration:1, scale:4},"<");
+		tl.to(".sphere1, .sphere2, .sphere3",{duration:1, scale:0},"<");
+		tl.to("#africaLeader",{autoAlpha:1},"<0.5");
+
+		// ANNA
+		tl.addLabel("anna",">")
+		tl.to(".spherelogo .sphere",{duration:2, scale:3.5},">");
+		tl.to(".spherelogo svg",{duration:2, attr:{viewBox:"209.50 210.50 7 7"}, ease:"power3.inOut"},"<");
+		tl.to(".spherelogo .sphere",{duration:2, borderRadius:"50%", ease:"power3.inOut"},"<");
+		tl.to(".spherelogo svg",{attr:{viewBox:"203.50 204.50 19 19"}, ease:"power3.inOut"},">");
+		tl.to("#impactGraphic #body", {fill:$brandContrastDarkest, ease:"expo.out"}, "<");
+		tl.to("#annaLeaders",{autoAlpha:1},"<");
+		tl.set("#impactGraphic #body", {morphSVG:"#body", ease:"expo.out"}, ">");
+		tl.set("#africaLeader",{autoAlpha:0},"<");
+
+		// JOSEPH
+		tl.addLabel("joseph",">");
+		tl.to("#impactGraphic #body", {duration:0.01, fill:"#ffffff"}, ">");
+		tl.to(".spherelogo",{duration:1, borderRadius:0, ease:"power3.inOut"},">0.4");
+		tl.to(".spherelogo svg",{duration:1, attr:{viewBox:"0 0 424 424"}, ease:"power3.inOut"},"<");
+		tl.to("#impactPendulum .spherelogo .sphere",{duration:1, scale:2,},"<");
+		tl.to("#annaLeaders, #annaInLeader, #sphereAnna",{autoAlpha:0},">");
+		tl.fromTo("#heart",{autoAlpha:0, scale:1.2}, {autoAlpha:1, scale:0.5, transformOrigin:"50% 50%"},"<");
+		tl.to("#heart",{autoAlpha:0, scale:0},"<0.5");
+		tl.to("#impactGraphic #body", {morphSVG:"#josephInVillagePath", ease:"expo.out"},">");
+		tl.to("#impactGraphic #body", {autoAlpha:0}, "<0.2");
+		tl.to("#josephInVillagePic", {autoAlpha:1, ease:"expo.out"}, "<");
+		tl.to("#impactPendulum",{filter:"drop-shadow(rgba(0, 0, 0, 0) 0px 0px)"},"<");
+		tl.add( function(){var vid = document.getElementById("villageVideo");vid.pause();vid.currentTime = 0;},">");
+
+		// ON-TEN
+		tl.addLabel("onten",">");
+		tl.add( function(){var vid = document.getElementById("villageVideo");vid.pause();vid.currentTime = 0;},">0.5");
+		tl.add( function(){NINJA_FUNCTIONS.playVideo("villageVideo");},">");
+		tl.to("#impactPendulum .spherelogo",{yPercent:-40, xPercent:140},">");
+		tl.to(".sphere1",{scale:1, autoAlpha:1, rotateX:30, transformOrigin:"50% 50%"},"<0.4");
+		tl.to(".sphere2",{scale:1.2, autoAlpha:1, rotateX:30, transformOrigin:"50% 50%"},"<");
+		tl.to(".sphere3",{scale:1.4, autoAlpha:1, rotateX:30, transformOrigin:"50% 50%"},"<");
+		tl.to("#impactPendulum",{scale:1, filter:"drop-shadow(16px 20px rgba(0,0,0,0.4))"},"<");
+		tl.from("#emitNetworkWrap",{autoAlpha:0},">");
+		tl.from("#mandatePaths path",{drawSVG:0, autoAlpha:0},"<");
+		tl.from("#influencers ellipse",{scale:0, autoAlpha:0, transformOrigin:"50% 50%"},">");
+
+		// TRACTION
+		let africaGroups = gsap.utils.toArray('#tractionNetwork g');
+		tl.addLabel("traction",">");
+		tl.to("#emitNetworkWrap",{autoAlpha:0},">0.5");
+		tl.to("#impactPendulum",{scale:0.5},"<");
+		tl.to(".sphere1",{autoAlpha:0, rotateX:0, transformOrigin:"50% 50%"},"<");
+		tl.to(".sphere2",{autoAlpha:0, rotateX:0, transformOrigin:"50% 50%"},"<");
+		tl.to(".sphere3",{autoAlpha:0, rotateX:0, transformOrigin:"50% 50%"},"<");
+		tl.to("#impactGraphic #body", {autoAlpha:1}, ">");
+		tl.to("#josephInVillagePic", {autoAlpha:0, ease:"expo.out"}, "<");
+		tl.to("#impactGraphic .spherelogo #backgroundSphere",{autoAlpha:1, xPercent:0, yPercent:0},">");
+		tl.to("#impactGraphic #body", {morphSVG:"#body-2", ease:"expo.out"}, ">");
+		tl.to("#impactGraphic #shadow", {morphSVG:"#shadow-2", ease:"expo.out", autoAlpha:1}, "<");
+		africaGroups.forEach(group => {
+			tl.fromTo(group,{autoAlpha:0}, {duration:0.1, stagger:0.1, autoAlpha:1},">");
 		});
-		tl.to('#spheresWrap .sphere',{duration:2, scale:5, stagger:0.1, autoAlpha:0},">");
-		tl.to('#annaInAfrica', {duration:1, delay:1, background:$brandContrastLight},"<");
-		tl.from('#smilingAnnaInAfrica', {duration:2, autoAlpha:0, ease:"linear"},"<");
-		tl.to('#animatedLogoWrap',{duration:3, ease:"circ.out", scale:1.5, top:0, right:0, autoAlpha:"0"},"<");
-		tl.to("#svg_body", {duration:3, morphSVG:"#svg_body", ease:"expo.out"},"<");
-		tl.to("#svg_shadow", {duration:3, morphSVG:"#svg_shadow", ease:"expo.out"},"<");
-		tl.to('#donateBtn', {duration:0.5, repeat:1, scale:1.2, opacity:0.7, yoyo:true},"<2.5");
-		tl.totalDuration(1);
+
+
+		// DONATE
+		tl.addLabel("donate",">");
+		tl.to("#impactPendulum",{scale:0},">0.5");
+		tl.to("#smilingAnna",{duration:1, opacity:1},">1");
+
+		tl.addLabel("end",">")
 		return tl;
 	}
 
