@@ -298,37 +298,37 @@ var NINJA_FUNCTIONS = {
 		// LEGACY
 		tl.addLabel("legacy",">")
 		tl.to("#impactGraphic .sphereWrap span",{autoAlpha:0},">0.5");
-		tl.to("#impactGraphic .spherelogo",{xPercent:150, scale:0.5, transformOrigin:"center center"},"<");
-		tl.to("#impactGraphic .sphere1",{xPercent:50, scale:0.5, transformOrigin:"center center"},"<");
-		tl.to("#impactGraphic .sphere2",{xPercent:-50, scale:0.7, transformOrigin:"center center"},"<");
-		tl.to("#impactGraphic .sphere3",{xPercent:-150, scale:0.9, transformOrigin:"center center"},"<");
+		tl.to("#impactGraphic .spherelogo",{xPercent:150, scale:0.5, force3D:false, transformOrigin:"center center"},"<");
+		tl.to("#impactGraphic .sphere1",{xPercent:50, scale:0.5, force3D:false, transformOrigin:"center center"},"<");
+		tl.to("#impactGraphic .sphere2",{xPercent:-50, scale:0.7, force3D:false, transformOrigin:"center center"},"<");
+		tl.to("#impactGraphic .sphere3",{xPercent:-150, scale:0.9, force3D:false, transformOrigin:"center center"},"<");
 		tl.to("#impactGraphic .spherelogo #backgroundSphere",{autoAlpha:0},"<0.3");
 		tl.to("#impactGraphic #body", {morphSVG:"#body-2", ease:"expo.out"}, "<");
 		tl.to("#impactGraphic #shadow", {morphSVG:"#shadow-2", ease:"expo.out"}, "<");
-		tl.from("#planetWrap",{scale:0.3, autoAlpha:0, y:-300, x:300, transformOrigin:"center center"},"<0.2");
-		tl.to("#impactPendulum",{scale:0.5, y:"4.5vmax", x:"-1vmax", filter:"drop-shadow(1px 1px rgba(0,0,0,0.1))"},"<");
-		tl.to(".spherelogo",{scale:1.2, transformOrigin:"center center"},"<")
+		tl.from("#planetWrap",{scale:0.3, force3D:false, autoAlpha:0, y:-300, x:300, transformOrigin:"center center"},"<0.2");
+		tl.to("#impactPendulum",{scale:0.5, force3D:false, y:"4.5vmax", x:"-1vmax", filter:"drop-shadow(1px 1px rgba(0,0,0,0.1))"},"<");
+		tl.to(".spherelogo",{scale:1.2, force3D:false, transformOrigin:"center center"},"<")
 		tl.to("#planetWrap .planet",{duration:2, backgroundPosition:"-300px 50%"},"<-0.5");
 		tl.to(".sphere1, .sphere2, .sphere3",{autoAlpha:0},">");
 
 		// LEADERS
 		tl.addLabel("leaders",">")
-		tl.to("#planetWrap", {scale:1, autoAlpha:0, x:0, y:"-4.5vmax"},">0.5");
-		tl.to("#impactPendulum",{scale:1, x:0, y:0, filter:"drop-shadow(16px 20px rgba(0,0,0,0.4))"},"<");
+		tl.to("#planetWrap", {scale:1, force3D:false, autoAlpha:0, x:0, y:"-4.5vmax"},">0.5");
+		tl.to("#impactPendulum",{scale:1, force3D:false, x:0, y:0, filter:"drop-shadow(16px 20px rgba(0,0,0,0.4))"},"<");
 		tl.to(".sphere1, .sphere2, .sphere3",{autoAlpha:1},"<");
-		tl.to(".spherelogo ",{x:0, y:0, scale:1},"<");
+		tl.to(".spherelogo ",{x:0, y:0, scale:1, force3D:false},"<");
 		tl.to("#impactGraphic #body", {morphSVG:"#body", ease:"expo.out"}, "<");
 		tl.to("#impactGraphic #shadow", {morphSVG:"#shadow", ease:"expo.out"}, "<");
 		tl.to("#impactGraphic #body", {duration:1, morphSVG:"#africaPath", ease:"expo.out"}, ">");
 		tl.to("#impactGraphic #shadow", {duration:1, autoAlpha:0, ease:"expo.out"}, "<");
 		tl.to("#impactPendulum",{duration:1, filter:"drop-shadow(rgba(0, 0, 0, 0.5) 3px 4px)"},"<");
-		tl.to(".spherelogo .sphere",{duration:1, scale:4},"<");
-		tl.to(".sphere1, .sphere2, .sphere3",{duration:1, scale:0},"<");
+		tl.to(".spherelogo .sphere",{duration:1, scale:4, force3D:false},"<");
+		tl.to(".sphere1, .sphere2, .sphere3",{duration:1, scale:0, force3D:false},"<");
 		tl.to("#africaLeader",{autoAlpha:1},"<0.5");
 
 		// ANNA
 		tl.addLabel("anna",">")
-		tl.to(".spherelogo .sphere",{duration:2, scale:3.5},">");
+		tl.to(".spherelogo .sphere",{duration:2, scale:3.5, force3D:false},">");
 		tl.to(".spherelogo svg",{duration:2, attr:{viewBox:"209.50 210.50 7 7"}, ease:"power3.inOut"},"<");
 		tl.to(".spherelogo .sphere",{duration:2, borderRadius:"50%", ease:"power3.inOut"},"<");
 		tl.to(".spherelogo svg",{attr:{viewBox:"203.50 204.50 19 19"}, ease:"power3.inOut"},">");
@@ -342,10 +342,10 @@ var NINJA_FUNCTIONS = {
 		tl.to("#impactGraphic #body", {duration:0.01, fill:"#ffffff"}, ">");
 		tl.to(".spherelogo",{duration:1, borderRadius:0, ease:"power3.inOut"},">0.4");
 		tl.to(".spherelogo svg",{duration:1, attr:{viewBox:"0 0 424 424"}, ease:"power3.inOut"},"<");
-		tl.to("#impactPendulum .spherelogo .sphere",{duration:1, scale:2,},"<");
+		tl.to("#impactPendulum .spherelogo .sphere",{duration:1, scale:2, force3D:false},"<");
 		tl.to("#annaLeaders, #annaInLeader, #sphereAnna",{autoAlpha:0},">");
-		tl.fromTo("#heart",{autoAlpha:0, scale:1.2}, {autoAlpha:1, scale:0.5, transformOrigin:"50% 50%"},"<");
-		tl.to("#heart",{autoAlpha:0, scale:0},"<0.5");
+		tl.fromTo("#heart",{autoAlpha:0, scale:1.2}, {autoAlpha:1, scale:0.5, force3D:false, transformOrigin:"50% 50%"},"<");
+		tl.to("#heart",{autoAlpha:0, scale:0, force3D:false},"<0.5");
 		tl.to("#impactGraphic #body", {morphSVG:"#josephInVillagePath", ease:"expo.out"},">");
 		tl.to("#impactGraphic #body", {autoAlpha:0}, "<0.2");
 		tl.to("#josephInVillagePic", {autoAlpha:1, ease:"expo.out"}, "<");
@@ -357,19 +357,19 @@ var NINJA_FUNCTIONS = {
 		tl.add( function(){var vid = document.getElementById("villageVideo");vid.pause();vid.currentTime = 0;},">0.5");
 		tl.add( function(){NINJA_FUNCTIONS.playVideo("villageVideo");},">");
 		tl.to("#impactPendulum .spherelogo",{yPercent:-40, xPercent:140},">");
-		tl.to(".sphere1",{scale:1, autoAlpha:1, rotateX:30, transformOrigin:"50% 50%"},"<0.4");
-		tl.to(".sphere2",{scale:1.2, autoAlpha:1, rotateX:30, transformOrigin:"50% 50%"},"<");
-		tl.to(".sphere3",{scale:1.4, autoAlpha:1, rotateX:30, transformOrigin:"50% 50%"},"<");
-		tl.to("#impactPendulum",{scale:1, filter:"drop-shadow(16px 20px rgba(0,0,0,0.4))"},"<");
+		tl.to(".sphere1",{scale:1, force3D:false, autoAlpha:1, rotateX:30, transformOrigin:"50% 50%"},"<0.4");
+		tl.to(".sphere2",{scale:1.2, force3D:false, autoAlpha:1, rotateX:30, transformOrigin:"50% 50%"},"<");
+		tl.to(".sphere3",{scale:1.4,force3D:false, autoAlpha:1, rotateX:30, transformOrigin:"50% 50%"},"<");
+		tl.to("#impactPendulum",{scale:1, force3D:false, filter:"drop-shadow(16px 20px rgba(0,0,0,0.4))"},"<");
 		tl.from("#emitNetworkWrap",{autoAlpha:0},">");
 		tl.from("#mandatePaths path",{drawSVG:0, autoAlpha:0},"<");
-		tl.from("#influencers ellipse",{scale:0, autoAlpha:0, transformOrigin:"50% 50%"},">");
+		tl.from("#influencers ellipse",{scale:0, force3D:false, autoAlpha:0, transformOrigin:"50% 50%"},">");
 
 		// TRACTION
 		let africaGroups = gsap.utils.toArray('#tractionNetwork g');
 		tl.addLabel("traction",">");
 		tl.to("#emitNetworkWrap",{autoAlpha:0},">0.5");
-		tl.to("#impactPendulum",{scale:0.5},"<");
+		tl.to("#impactPendulum",{scale:0.5, force3D:false},"<");
 		tl.to(".sphere1",{autoAlpha:0, rotateX:0, transformOrigin:"50% 50%"},"<");
 		tl.to(".sphere2",{autoAlpha:0, rotateX:0, transformOrigin:"50% 50%"},"<");
 		tl.to(".sphere3",{autoAlpha:0, rotateX:0, transformOrigin:"50% 50%"},"<");
@@ -385,7 +385,7 @@ var NINJA_FUNCTIONS = {
 
 		// DONATE
 		tl.addLabel("donate",">");
-		tl.to("#impactPendulum",{scale:0},">0.5");
+		tl.to("#impactPendulum",{scale:0, force3D:false},">0.5");
 		tl.to("#smilingAnna",{duration:1, opacity:1},">1");
 
 		tl.addLabel("end",">")
