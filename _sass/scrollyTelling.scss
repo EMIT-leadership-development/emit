@@ -303,75 +303,138 @@ $sphereWidth: clamp(80px,10vw,200px);
             }
         }
         // All slide titles
+        // .sectionHeadline {
+        //     width: 100%;
+        //     box-sizing: border-box;
+        //     height: 0;
+        //     overflow: visible;
+        //     padding: 0;
+        //     pointer-events: none;
+        //     display: flex;
+        //     flex-direction: column;
+        //     justify-content: flex-end;
+        //     align-items: flex-start;
+        //     z-index: 50;
+        //     @media (max-width:$portraitEnd) {
+        //         height: auto;
+        //         background-color: $brandContrastDarkest;
+        //         flex-direction: row;
+        //         justify-content: space-between;
+        //         align-items: flex-end;
+        //     }
+        //     h1 {
+        //         visibility: hidden;
+        //         position: relative;
+        //         margin: 0;
+        //         padding: 0;
+        //         margin-bottom: 0;
+        //         @media (min-width:$landscapeStart) {
+        //             padding: 2rem 0 0 2rem;
+        //         }
+        //         @media (max-width:$portraitEnd) {
+        //             padding: 2rem;
+        //         }
+        //         span {
+        //             display: block;
+        //         }
+        //         .title {
+        //             text-align: left;
+        //             color: #ffffff;
+        //             color: white;
+        //             font-family: "HelveticaUltraCompressed",Arial,Helvetica,sans-serif;
+        //             font-size: clamp(3rem, 7.5vw, 6rem);
+        //             text-transform: uppercase;
+        //             // line-height: 1;
+        //             letter-spacing: 1px;
+        //             font-weight: normal;
+        //             white-space: nowrap;
+        //             margin-bottom: -10%;
+        //         }
+        //         .underline {
+        //             height: 5px;
+        //             width: 100%;
+        //             background-color: #fff;
+        //         }
+        //     }
+        //     .subtitle {
+        //         padding-top: 0.5rem;
+        //         visibility: hidden;
+        //         text-transform: uppercase;
+        //         letter-spacing: .2em;
+        //         font-weight: 300;
+        //         color: #ffffff;
+        //         font-size: 1rem;
+        //         @media (min-width:$landscapeStart) {
+        //             padding: 1rem 0 2rem 2rem;
+        //         }
+        //         @media (max-width:$portraitEnd) {
+        //             font-size: 0.6rem;
+        //             padding: 2rem 2rem 2rem 0;
+        //             text-align: right;
+        //         }
+        //     }
+        // }
         .sectionHeadline {
             width: 100%;
             box-sizing: border-box;
-            height: 0;
-            overflow: visible;
-            padding: 0;
             pointer-events: none;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            align-items: flex-start;
             z-index: 50;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding: 0 0 2rem 2rem;
             @media (max-width:$portraitEnd) {
-                height: auto;
                 background-color: $brandContrastDarkest;
-                flex-direction: row;
-                justify-content: space-between;
-                align-items: flex-end;
+                position: relative;
+                grid-template-columns: auto auto;
+                grid-template-rows: 1fr;
+                .subtitle {
+                    text-align: right;
+                    padding-right: 2rem;
+                    padding-top: 0;
+                    // border: 1px solid red;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    align-items: flex-end;
+                }
             }
             h1 {
                 visibility: hidden;
-                position: relative;
-                margin: 0;
-                padding: 0;
+                line-height: 1;
                 margin-bottom: 0;
-                @media (min-width:$landscapeStart) {
-                    padding: 2rem 0 0 2rem;
-                }
-                @media (max-width:$portraitEnd) {
-                    padding: 2rem;
-                }
-                span {
-                    display: block;
-                }
+                display: grid;
+                grid-template-rows: auto 5px;
+                justify-content: flex-start;
+                align-content: flex-start;
                 .title {
                     text-align: left;
                     color: #ffffff;
-                    color: white;
                     font-family: "HelveticaUltraCompressed",Arial,Helvetica,sans-serif;
                     font-size: clamp(3rem, 7.5vw, 6rem);
                     text-transform: uppercase;
-                    line-height: 1;
+                    line-height: 0.8;
                     letter-spacing: 1px;
                     font-weight: normal;
                     white-space: nowrap;
-                    margin-bottom: -10%;
-                }
-                .underline {
-                    height: 5px;
-                    width: 100%;
-                    background-color: #fff;
                 }
             }
+            .underline {
+                background-color: #fff;
+                height: 5px;
+                display: block;
+            }
             .subtitle {
-                padding-top: 0.5rem;
                 visibility: hidden;
                 text-transform: uppercase;
                 letter-spacing: .2em;
                 font-weight: 300;
                 color: #ffffff;
                 font-size: 1rem;
-                @media (min-width:$landscapeStart) {
-                    padding: 1rem 0 2rem 2rem;
-                }
-                @media (max-width:$portraitEnd) {
-                    font-size: 0.6rem;
-                    padding: 2rem 2rem 2rem 0;
-                    text-align: right;
-                }
+                padding-top: 0.5rem;
             }
         }
     }
