@@ -5,11 +5,12 @@
   group:
     - team
     - board
+    - contributor
   email:
   facebook_url: 'https://www.facebook.com/kobus.grobler.16'
   twitter_url:
   linkedin_url:
-  profile_image: /images/team/Kobus sq.jpg
+  profile_image: /images/team/KobusGrobler.jpg
   bio_html: >-
     <p>Kobus has been involved in the training and equipping of leaders since
     1991. He firmly believes that the lack of trained leaders is to blame for
@@ -40,7 +41,9 @@
 - name: Johan Fourie
   shortname: Johan
   title: 'Chief Operating Officer, Ex-officio USA and SA Board'
-  group: team
+  group:
+    - team
+    - board
   email:
   facebook_url:
   twitter_url:
@@ -253,7 +256,7 @@
 - name: Lydia Brown
   shortname: Lydia
   title: Special Projects – Women
-  group: team
+  group: contributor
   email:
   facebook_url:
   twitter_url:

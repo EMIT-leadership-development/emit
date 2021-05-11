@@ -151,3 +151,12 @@
   postal: 'PO BOX 123, SUBURB, COUNTRY, 1234'
   latitude: -22.5594
   longitude: 17.0832
+- name: 'Project Leader, Lesotho'
+  country: Lesotho
+  team-member: Jones Singini
+  email: admin@emit.global
+  phone: +00 000 0000
+  address: '10 Street, Suburb, City, 1234'
+  postal: 'PO BOX 123, SUBURB, COUNTRY, 1234'
+  latitude: -29.686177640763955
+  longitude: 28.140700227946905

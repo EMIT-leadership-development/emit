@@ -40,7 +40,6 @@ curricula:
       leadership development is emphasized.
     credits_number: 5
     days_number: 20
-    projects_number: 3
     sprite_selection_number: 1
   - title: Advanced Leadership Issues 2
     objective: >-
@@ -49,7 +48,6 @@ curricula:
       relationships.
     credits_number: 10
     days_number: 5
-    projects_number: 1
     sprite_selection_number: 2
   - title: African Church History
     objective: >-
@@ -57,7 +55,6 @@ curricula:
       Gospel on the African continent.
     credits_number: 30
     days_number: 16
-    projects_number: 6
     sprite_selection_number: 3
   - title: Animism
     objective: >-
@@ -65,7 +62,6 @@ curricula:
       religion.
     credits_number:
     days_number:
-    projects_number:
     sprite_selection_number:
   - title: Biblical Counselling
     objective: >-
@@ -73,13 +69,11 @@ curricula:
       with an overview of counseling practices and procedures.
     credits_number: 3
     days_number: 15
-    projects_number: 6
     sprite_selection_number: 4
   - title: Biblical Doctrines
     objective: A thorough examination of such essential Biblical doctrines.
     credits_number: 14
     days_number: 5
-    projects_number: 3
     sprite_selection_number: 5
   - title: Biblical world view
     objective: >-
@@ -88,7 +82,6 @@ curricula:
       Biblical worldview.
     credits_number: 5
     days_number: 6
-    projects_number: 4
     sprite_selection_number: 6
   - title: Cell groups
     objective: >-
@@ -98,7 +91,6 @@ curricula:
       gravida, ut! Ultrices.
     credits_number: 5
     days_number: 6
-    projects_number: 4
     sprite_selection_number: 7
   - title: Children ministry
     objective: >-
@@ -106,7 +98,6 @@ curricula:
       age-appropriate strategies for children’s ministry.
     credits_number: 13
     days_number: 5
-    projects_number: 10
     sprite_selection_number: 8
   - title: Church administration
     objective: >-
@@ -114,7 +105,6 @@ curricula:
       administration.
     credits_number: 28
     days_number: 22
-    projects_number: 9
     sprite_selection_number: 9
   - title: Church growth
     objective: >-
@@ -122,13 +112,11 @@ curricula:
       Church Growth.
     credits_number: 13
     days_number: 7
-    projects_number: 2
     sprite_selection_number: 10
   - title: Church planting
     objective: The course examines contemporary church planting movements.
     credits_number: 20
     days_number: 15
-    projects_number: 5
     sprite_selection_number: 11
   - title: Classical Discipleship
     objective: >-
@@ -136,7 +124,6 @@ curricula:
       immature believer into a deeper, more fruitful relationship with Christ.
     credits_number: 10
     days_number: 6
-    projects_number: 2
     sprite_selection_number: 12
   - title: Community Transformation
     objective: >-
@@ -145,7 +132,6 @@ curricula:
       world.
     credits_number: 17
     days_number: 12
-    projects_number: 2
     sprite_selection_number: 13
   - title: Developing a Healthy Church
     objective: >-
@@ -153,7 +139,6 @@ curricula:
       ministry philosophy, strategies, and systems.
     credits_number:
     days_number:
-    projects_number:
     sprite_selection_number:
   - title: Effective Preaching
     objective: >-
@@ -161,7 +146,6 @@ curricula:
       message, and the delivery of the message.
     credits_number:
     days_number:
-    projects_number:
     sprite_selection_number:
   - title: Ethnic Reconciliation
     objective: >-
@@ -169,7 +153,6 @@ curricula:
       eliminate racial tensions and hostilities.
     credits_number:
     days_number:
-    projects_number:
     sprite_selection_number:
   - title: HIV/AIDS
     objective: >-
@@ -177,7 +160,6 @@ curricula:
       spread, and how we can provide moral direction and compassionate care.
     credits_number:
     days_number:
-    projects_number:
     sprite_selection_number:
   - title: How to Interpret the Bible 1
     objective: >-
@@ -185,7 +167,6 @@ curricula:
       Biblical interpretation, “Observation, Interpretation, and Application.”
     credits_number:
     days_number:
-    projects_number:
     sprite_selection_number:
   - title: How to Interpret the Bible 2
     objective: >-
@@ -194,7 +175,6 @@ curricula:
       portions of Scripture.
     credits_number:
     days_number:
-    projects_number:
     sprite_selection_number:
   - title: How to Interpret the Bible 3
     objective: >-
@@ -203,7 +183,6 @@ curricula:
       New Testament Scriptures.
     credits_number:
     days_number:
-    projects_number:
     sprite_selection_number:
   - title: Interpersonal Relationships/ Conflict Resolution
     objective: >-
@@ -212,13 +191,11 @@ curricula:
       conflict in ways that maintains relationships.
     credits_number:
     days_number:
-    projects_number:
     sprite_selection_number:
   - title: Islam
     objective: This course provides a thorough look at practical ways to understand Islam
     credits_number:
     days_number:
-    projects_number:
     sprite_selection_number:
   - title: Kingdom of God
     objective: >-
@@ -226,7 +203,6 @@ curricula:
       provides us with an understanding of all that we do for Christ
     credits_number:
     days_number:
-    projects_number:
     sprite_selection_number:
   - title: 'Law, Grace & Righteousness'
     objective: >-
@@ -236,7 +212,6 @@ curricula:
       covered.
     credits_number:
     days_number:
-    projects_number:
     sprite_selection_number:
   - title: Leadership Ethics
     objective: >-
@@ -244,7 +219,6 @@ curricula:
       of leaders candidly and Biblically.
     credits_number:
     days_number:
-    projects_number:
     sprite_selection_number:
   - title: Marriage & Family
     objective: >-
@@ -252,7 +226,6 @@ curricula:
       as well as sexuality, children, divorce, and remarriage.
     credits_number:
     days_number:
-    projects_number:
     sprite_selection_number:
   - title: Mentoring
     objective: >-
@@ -260,7 +233,6 @@ curricula:
       productive mentoring relationships.
     credits_number:
     days_number:
-    projects_number:
     sprite_selection_number:
   - title: Mission of the Church
     objective: >-
@@ -268,7 +240,6 @@ curricula:
       strategies to do cross-cultural ministry.
     credits_number:
     days_number:
-    projects_number:
     sprite_selection_number:
   - title: Prayer
     objective: >-
@@ -276,7 +247,6 @@ curricula:
       Biblical examples of prayer.
     credits_number:
     days_number:
-    projects_number:
     sprite_selection_number:
   - title: Purpose Driven Church
     objective: >-
@@ -284,7 +254,6 @@ curricula:
       (Based on book by Rick Warren)
     credits_number:
     days_number:
-    projects_number:
     sprite_selection_number:
   - title: Youth Ministry
     objective: >-
@@ -292,7 +261,6 @@ curricula:
       effective church youth ministry.
     credits_number:
     days_number:
-    projects_number:
     sprite_selection_number:
   - title: Spiritual Leadership 1
     objective: >-
@@ -301,7 +269,6 @@ curricula:
       thinking.
     credits_number:
     days_number:
-    projects_number:
     sprite_selection_number:
   - title: Spiritual Leadership 2
     objective: >-
@@ -309,7 +276,6 @@ curricula:
       leader, decision-making, and the pitfalls of being a Christian leader.
     credits_number:
     days_number:
-    projects_number:
     sprite_selection_number:
   - title: Spiritual Warfare
     objective: >-
@@ -317,7 +283,6 @@ curricula:
       and the believer’s authority.
     credits_number:
     days_number:
-    projects_number:
     sprite_selection_number:
   - title: The Church
     objective: >-
@@ -326,7 +291,6 @@ curricula:
       understanding of the people of God.
     credits_number:
     days_number:
-    projects_number:
     sprite_selection_number:
   - title: Worship
     objective: >-
@@ -335,6 +299,5 @@ curricula:
       worship.
     credits_number:
     days_number:
-    projects_number:
     sprite_selection_number:
 ---

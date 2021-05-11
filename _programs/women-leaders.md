@@ -40,35 +40,27 @@ description_markdown: >-
 curricula:
   - title: Basic Computer skills
     objective: This course provides practical computer knowledge and computer skills.
-    credits_number: 5
     days_number: 20
-    projects_number: 3
     sprite_selection_number: 1
   - title: Biblical Worldview
     objective: >-
       This course examines how animism, polytheism, and secularism all
       contribute to societal worldviews. The course also sets forth a distinctly
       Biblical worldview.
-    credits_number: 10
     days_number: 5
-    projects_number: 1
     sprite_selection_number: 2
   - title: Business skills 1
     objective: >-
       This course focuses on how to lead a business meeting, financial planning
       for business and personal budgeting.
-    credits_number: 30
     days_number: 16
-    projects_number: 6
     sprite_selection_number: 3
   - title: Business skills 2
     objective: >-
       This course builds on the knowledge gained in Business skills 1 and
       continues by examining principles of entrepreneurship, small business
       ideas and models and negotiation skills.
-    credits_number: 3
     days_number: 15
-    projects_number: 6
     sprite_selection_number: 4
   - title: Emotional Wellness
     objective: >-
@@ -76,9 +68,7 @@ curricula:
       considerations for children, how to respond to the trauma victim, when to
       refer someone to other resources, the biblical call to advocate for the
       voiceless and the critical importance of self-care.
-    credits_number: 14
     days_number: 5
-    projects_number: 3
     sprite_selection_number: 5
   - title: Family
     objective: >-
@@ -86,51 +76,39 @@ curricula:
       addresses the importance of a healthy marriage, sexuality and family
       planning, how to raise a balanced child, and our responsibility towards
       seniors, widows and the disabled.
-    credits_number: 5
     days_number: 6
-    projects_number: 4
     sprite_selection_number: 6
   - title: Gender Theory
     objective: >-
       This course is a biblical examination of gender equality and God's
       positive view of women.
-    credits_number: 28
     days_number: 22
-    projects_number: 9
     sprite_selection_number: 8
   - title: Health
     objective: >-
       This course provides practical tools to address the health of communities:
       Basic first aid, information about "dreaded deseases," how to maintain
       food hygiene, and the importance of a balanced diet.
-    credits_number:
     days_number:
-    projects_number:
     sprite_selection_number:
   - title: Introduction to Leadership
     objective: >-
       This is an introductory course to the principles of effective leadership
       and leadership ethics.
-    credits_number: 13
     days_number: 7
-    projects_number: 2
     sprite_selection_number: 9
   - title: Leadership Practice
     objective: >-
       This course examines the practices of effective leaders: developing strong
       teamwork, leading yourself, investing in yourself and your team,
       developing good habits, and managing stress.
-    credits_number:
     days_number:
-    projects_number:
     sprite_selection_number:
   - title: Life skills 1
     objective: >-
       The goal of this course is to help the student articulate a clear vision
       for their life and develop a plan to attain developed goals.
-    credits_number: 14
     days_number: 7
-    projects_number: 3
     sprite_selection_number: 10
   - title: Life skills 2
     objective: >-
@@ -138,17 +116,13 @@ curricula:
       applying for and interviewing for a job. Communication and problem solving
       skills are highlighted and the importance of personal, social, business,
       and electronic etiquette is examined.
-    credits_number: 20
     days_number: 15
-    projects_number: 5
     sprite_selection_number: 11
   - title: Mentoring
     objective: >-
       We examine Biblical and practical ways to establish healthy and productive
       mentoring relationships.
-    credits_number: 10
     days_number: 6
-    projects_number: 2
     sprite_selection_number: 12
   - title: Self-Management
     objective: >-
@@ -156,42 +130,32 @@ curricula:
       healthy interpersonal relationships.  It also emphasizes the importance of
       emotional intelligence, problem solving, creative thinking, and healthy
       self image and confidence.
-    credits_number: 17
     days_number: 12
-    projects_number: 2
     sprite_selection_number: 13
   - title: Time and Project Management
     objective: >-
       This course addresss the importance of good time management skills and
       examines the steps and skills needed to manage a project, big or small,
       effectively.
-    credits_number: 16
     days_number: 10
-    projects_number: 7
     sprite_selection_number: 14
   - title: The Kingdom of God
     objective: >-
       This course examines the Biblical understanding of the Kingdom and how it
       provides us with an understanding of all that we do for Christ.
-    credits_number:
     days_number:
-    projects_number:
     sprite_selection_number:
   - title: Understanding the Bible
     objective: >-
       This course will help students understand the Bible and its context as a
       whole: the central message, history, lay out, old & new testament and the
       use of other resources.
-    credits_number:
     days_number:
-    projects_number:
     sprite_selection_number:
   - title: Marriage
     objective: >-
       The course examines the Old and New Testament teachings regarding marriage
       as well as sexuality, children, divorce, and remarriage.
-    credits_number:
     days_number:
-    projects_number:
     sprite_selection_number:
 ---

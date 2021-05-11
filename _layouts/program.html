@@ -7,12 +7,12 @@ layout: default
     <div class="sectionIntro containedLeft">
         <h2 class="sectionTitle priority2">{{ page.title }}</h2>
         <p data-cms-editor-link="cloudcannon:collections/{{ page.relative_path }}" class="cms-editor-link introduction">{{ page.objective_markdown }}</p>
-        <!-- If current then show register button -->
+        <!-- If current then show enquire button -->
         <!-- If planned then show sponsor this program -->
         {% if page.status == "current"%}
             <div class="callToAction">
                 <a href="{{site.baseurl}}/donate" class="button editable">Sponsor a student</a>
-                <a href="{{site.baseurl}}/contact" class="button primary editable">REGISTER</a>
+                <a href="{{site.baseurl}}/contact" class="button primary editable">ENQUIRE</a>
             </div>
         {% else %}
             <div class="callToAction">
@@ -109,13 +109,13 @@ layout: default
                             <div class="charts">
                                 {% if curricula.credits_number %}
                                 <div class="bar credits">
-                                    <span class="label">{{curricula.credits_number}} Credits</span>
+                                    <span class="label">{{curricula.credits_number}} CPD Points</span>
                                     <span style="width: {{curricula.credits_number | times: 100 | divided_by: maxCredits}}%" class="data"></span>
                                 </div>
                                 {% endif %}
                                 {% if curricula.days_number %}
                                 <div class=" bar days">
-                                    <span class="label">{{curricula.days_number}} Days</span>
+                                    <span class="label">{{curricula.days_number}} Hours</span>
                                     <span style="width: {{curricula.days_number | times: 100 | divided_by: maxDays}}%" class="data"></span>
                                 </div>
                                 {% endif %}
