@@ -98,23 +98,27 @@ description:
 		<p class="introduction editable">Determine the extent of your influence - make a custom contribution.</p>
 	</div>
 	<div class="sectionContent contained-LastFour">
-		<form class="materialForm" action="">
+		<form action="https://www.sagepayments.net/eftcart/forms/donate.asp?M_id=828287687931" class="materialForm" method="get">
 			<div class="formheader">
 				<h3>CONTRIBUTE</h3>
 			</div>
 			<div class="form-group">
-				<input type="text" required="required"/>
-				<label for="input" class="control-label">Full Name</label><i class="bar"></i>
+				<input type="text" name="C_fname" required="required"/>
+				<label for="input" class="control-label">First Name</label><i class="bar"></i>
 			</div>
 			<div class="form-group">
-				<input type="text" required="required"/>
+				<input type="text" name="C_lname" required="required"/>
+				<label for="input" class="control-label">Last Name</label><i class="bar"></i>
+			</div>
+			<div class="form-group">
+				<input type="email" name="C_email" required="required"/>
 				<label for="input" class="control-label">Email</label><i class="bar"></i>
 			</div>
 			<div class="form-group">
-				<input type="text" required="required"/>
+				<input type="text" name="T_amt" required="required"/>
 				<label for="input" class="control-label">Amount</label><i class="bar"></i>
 			</div>
-			<a href="#" class="button primary">GIVE!</a>
+			<button type="submit" class="button primary">GIVE!</button>
 		</form>
 	</div>
 </section>
