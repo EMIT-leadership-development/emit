@@ -18,12 +18,12 @@ motivation: >-
   their communities in general. Therefor, they must be trained to serve
   effectively as agents of change.
 status: current
-entrance: Explain the entrance requirements for this program
-delivery: Describe how the program is delivered
-duration: How long will it take to complete the program
-assessment: Describe how the program is assessed
-certification: Description of the certification for this program
-graduation: Describe the graduation event
+entrance: No academic qualification is required. Applicants must be recognized as leaders within their spiritual community. Applicants must be able to attend all classes, pay their tuition and train 10 other leaders.
+delivery: Courses are presented face-to-face through a facilitation process in a small group format.
+duration: This course consists of 37 subjects and will likely take 4 years to complete.
+assessment: Assessment of learning is incorporated within the course material and therefore is done regularly and throughout the program. An examination for each course is required of Advanced Diploma students.
+certification: The curriculum is designed to address wholistic leadership development to ensure community impact and transformation. It is therefore not an academic qualification. Advanced Diploma and Diploma levels are offered.
+graduation: Students graduate after they have attended all classes, successfully completed all examinations, trained 10 other leaders and paid their tuition in full. Graduations take place at each local venue.
 description_markdown: >-
   Spiritual Leaders are widespread throughout Africa and have great influence in
   their communities. Yet, they lack proper training and vision to effectively

@@ -18,12 +18,12 @@ motivation: >-
   Women leaders are the lifeblood of African society. EMIT strives to empower
   them to fulfill their significant role on every level of society.
 status: current
-entrance: Explain the entrance requirements for this program
-delivery: Describe how the program is delivered
-duration: How long will it take to complete the program
-assessment: Describe how the program is assessed
-certification: Description of the certification for this program
-graduation: Describe the graduation event
+entrance: No academic qualification is required. Applicants must be recognized as leaders either in their spiritual community, business or politics. Applicants from the grass-roots level to high-impact leaders are accepted. Applicants must be able to attend all classes, pay their tuition and train 10 other leaders.
+delivery: Courses are presented face-to-face through a facilitation process in a small group format.
+duration: This course consists of 19 subjects and will likely take 3 years to complete.
+assessment: Assessment of learning is incorporated within the course material and therefore is done regularly and throughout the program.
+certification: The curriculum is designed to address wholistic leadership development to ensure community impact and transformation. It is therefore not an academic qualification. A “Certificate of Completion” is issued at the completion of the program.
+graduation: Students graduate after they have attended all classes, trained 10 other leaders and paid their tuition in full. Graduations take place at each local venue.
 description_markdown: >-
   Women are placed in leadership and executive level positions at an increasing
   rate. Yet, in Africa, most educational and development programs are focused on

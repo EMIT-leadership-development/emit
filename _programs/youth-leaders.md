@@ -13,12 +13,12 @@ motivation: >-
   develop their leadership skills as they mature. This will ensure a next
   generation of effective leaders.
 status: developing
-entrance: Explain the entrance requirements for this program
-delivery: Describe how the program is delivered
-duration: How long will it take to complete the program
-assessment: Describe how the program is assessed
-certification: Description of the certification for this program
-graduation: Describe the graduation event
+entrance: Applicants must be recognized as leaders in their respective schools and preferably serve on the student leadership.
+delivery: Courses will be presented face-to-face through a facilitation process in a small group format.
+duration: This course is still in the development phase. Therefore, the number of subjects and duration are not yet finalized.
+assessment: Assessment of learning is incorporated within the course material and therefore is done regularly and throughout the program.
+certification: The curriculum wil be designed to address wholistic leadership development to ensure community impact and transformation. It is therefore not an academic qualification. A “Certificate of Completion” is issued at the completion of the program.
+graduation: Students graduate after they have attended all classes, trained 10 other leaders and paid their tuition in full. Graduations take place at each local venue.
 description_markdown: >-
   Introductory Paragraph for this curriculum. Sapien iusto curae porttitor
   facilisis odio quaerat felis? Cursus sagittis facilisi lorem qui voluptatibus,

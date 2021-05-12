@@ -30,10 +30,10 @@ layout: default
 
 <!-- PROGRAM INFO LIST -->
 <section class="programInfoList item--full">
-    <div class="container containedLeft">
+    <div class="container leftToThree">
         <img src="{{site.baseurl}}{{page.bookCover_image}}" alt="">
     </div>
-    <div class="container containedRight">
+    <div class="container contained-LastFour">
         <ul data-cms-editor-link="cloudcannon:collections/{{ page.relative_path }}" class="cms-editor-link infoPoints">
             <li class="point">
                 <span class="icon"><i data-feather="log-in"></i></span>
@@ -41,14 +41,9 @@ layout: default
                 <p class="pointContent">{{ page.entrance }}</p>
             </li>
             <li class="point">
-                <span class="icon"><i data-feather="users"></i></span>
-                <h3 class="pointTitle">Delivery</h3>
-                <p class="pointContent">{{ page.delivery }}</p>
-            </li>
-            <li class="point">
-                <span class="icon"><i data-feather="calendar"></i></span>
-                <h3 class="pointTitle">Duration</h3>
-                <p class="pointContent">{{page.duration}}</p>
+                <span class="icon"><i data-feather="award"></i></span>
+                <h3 class="pointTitle">Certification</h3>
+                <p class="pointContent">{{ page.certification }}</p>
             </li>
             <li class="point">
                 <span class="icon"><i data-feather="check-circle"></i></span>
@@ -56,14 +51,19 @@ layout: default
                 <p class="pointContent">{{ page.assessment }}</p>
             </li>
             <li class="point">
-                <span class="icon"><i data-feather="award"></i></span>
-                <h3 class="pointTitle">Certification</h3>
-                <p class="pointContent">{{ page.certification }}</p>
-            </li>
-            <li class="point">
                 <span class="icon"><i data-feather="smile"></i></span>
                 <h3 class="pointTitle">Graduation</h3>
                 <p class="pointContent">{{ page.graduation }}</p>
+            </li>
+            <li class="point">
+                <span class="icon"><i data-feather="calendar"></i></span>
+                <h3 class="pointTitle">Duration</h3>
+                <p class="pointContent">{{page.duration}}</p>
+            </li>
+            <li class="point">
+                <span class="icon"><i data-feather="users"></i></span>
+                <h3 class="pointTitle">Delivery</h3>
+                <p class="pointContent">{{ page.delivery }}</p>
             </li>
         </ul>
     </div>
