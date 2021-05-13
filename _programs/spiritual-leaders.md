@@ -236,6 +236,7 @@ curricula:
     credits_number:
     days_number:
     sprite_selection_number:
+    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/f_auto,q_auto/v1620890800/emit/images/spiritual/ElderLearning_ujs6wf.jpg
   - title: Leadership Ethics
     objective: >-
       This bold course addresses the issues of money, sex and power in the life
