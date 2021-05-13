@@ -162,6 +162,7 @@ curricula:
     credits_number:
     days_number:
     sprite_selection_number:
+    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/f_auto,q_auto/v1620905598/emit/images/spiritual/preacher-EMIT-leadership-course_u3sq4k.jpg
   - title: Ethnic Reconciliation
     objective: >-
       We look at issues of race and ethnicity in different cultures and how to
