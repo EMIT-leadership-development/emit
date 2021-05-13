@@ -34,14 +34,13 @@ description_markdown: >-
   communities they serve. The program is designed to address 3 main areas needed
   for transformation – personal and character development, leadership
   development and professional skills development.
-
-
   &nbsp;
 curricula:
   - title: Basic Computer skills
     objective: This course provides practical computer knowledge and computer skills.
     days_number: 20
     sprite_selection_number: 1
+    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/c_crop,f_auto,g_custom,q_auto/v1620879371/emit/images/women/wman-leader-training-workplace_phra3v.jpg
   - title: Biblical Worldview
     objective: >-
       This course examines how animism, polytheism, and secularism all
@@ -49,12 +48,14 @@ curricula:
       Biblical worldview.
     days_number: 5
     sprite_selection_number: 2
+    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/f_auto,q_auto/v1620879366/emit/images/women/african-women-leaders-biblical-world-view_awgdfb.jpg
   - title: Business skills 1
     objective: >-
       This course focuses on how to lead a business meeting, financial planning
       for business and personal budgeting.
     days_number: 16
     sprite_selection_number: 3
+    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/c_crop,f_auto,g_custom,q_auto/v1620879363/emit/images/women/Africa-Woman-Leader_hwehtx.jpg
   - title: Business skills 2
     objective: >-
       This course builds on the knowledge gained in Business skills 1 and
@@ -62,6 +63,7 @@ curricula:
       ideas and models and negotiation skills.
     days_number: 15
     sprite_selection_number: 4
+    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/c_crop,f_auto,g_custom,q_auto/v1620879372/emit/images/women/woman-farmer_fhxctp.jpg
   - title: Emotional Wellness
     objective: >-
       This course examines the nature of emotional trauma including special
@@ -70,6 +72,7 @@ curricula:
       voiceless and the critical importance of self-care.
     days_number: 5
     sprite_selection_number: 5
+    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/c_crop,f_auto,g_custom,q_auto/v1620879372/emit/images/women/African-women-leaders-hugging_wsyncy.jpg
   - title: Family
     objective: >-
       This course focuses on the wholistic health of the family.  This course
@@ -78,38 +81,44 @@ curricula:
       seniors, widows and the disabled.
     days_number: 6
     sprite_selection_number: 6
+    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/c_crop,f_auto,g_custom,q_auto/v1620879363/emit/images/women/african-family-bible-study_dw9jm4.jpg
   - title: Gender Theory
     objective: >-
       This course is a biblical examination of gender equality and God's
       positive view of women.
     days_number: 22
     sprite_selection_number: 8
+    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/c_crop,f_auto,g_custom,q_auto/v1620879370/emit/images/women/African-girsl-and-boys_rbaqle.png
   - title: Health
     objective: >-
       This course provides practical tools to address the health of communities:
       Basic first aid, information about "dreaded deseases," how to maintain
       food hygiene, and the importance of a balanced diet.
-    days_number:
+    days_number: 10
     sprite_selection_number:
+    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/c_crop,f_auto,g_custom,q_auto/v1620882211/emit/images/health/EMIT-heroPoster_pmgek5.jpg
   - title: Introduction to Leadership
     objective: >-
       This is an introductory course to the principles of effective leadership
       and leadership ethics.
     days_number: 7
     sprite_selection_number: 9
+    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/c_crop,f_auto,g_custom,q_auto/v1620888009/emit/images/community/EMIT-leaders-community_rxr3k7.jpg
   - title: Leadership Practice
     objective: >-
       This course examines the practices of effective leaders: developing strong
       teamwork, leading yourself, investing in yourself and your team,
       developing good habits, and managing stress.
-    days_number:
+    days_number: 10
     sprite_selection_number:
+    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/c_crop,f_auto,g_custom,q_auto/v1620887837/emit/images/business/africa-leaders-entrepreneurs_ons81d.jpg
   - title: Life skills 1
     objective: >-
       The goal of this course is to help the student articulate a clear vision
       for their life and develop a plan to attain developed goals.
     days_number: 7
     sprite_selection_number: 10
+    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/c_crop,f_auto,g_custom,q_auto/v1620879371/emit/images/women/happy-woman-leader-emit-training_c8nywa.jpg
   - title: Life skills 2
     objective: >-
       This course will walk a student through the process of writing a CV, and
@@ -118,12 +127,14 @@ curricula:
       and electronic etiquette is examined.
     days_number: 15
     sprite_selection_number: 11
+    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/c_crop,f_auto,g_custom,q_auto/v1620879369/emit/images/women/africa-2654370_rpaaxc.jpg
   - title: Mentoring
     objective: >-
       We examine Biblical and practical ways to establish healthy and productive
       mentoring relationships.
     days_number: 6
     sprite_selection_number: 12
+    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/c_crop,f_auto,g_custom,q_auto/v1620879363/emit/images/women/African-Business-Women_ohqyds.jpg
   - title: Self-Management
     objective: >-
       This course provides a reproducible model for developing and fostering
@@ -132,6 +143,7 @@ curricula:
       self image and confidence.
     days_number: 12
     sprite_selection_number: 13
+    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/f_auto,q_auto/v1620887794/emit/images/family/africa-leadership-relationship_ju9gna.jpg
   - title: Time and Project Management
     objective: >-
       This course addresss the importance of good time management skills and
@@ -139,23 +151,27 @@ curricula:
       effectively.
     days_number: 10
     sprite_selection_number: 14
+    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/c_crop,f_auto,g_custom,q_auto/v1620879370/emit/images/women/woman-writing-life-plan_sr55zd.jpg
   - title: The Kingdom of God
     objective: >-
       This course examines the Biblical understanding of the Kingdom and how it
       provides us with an understanding of all that we do for Christ.
-    days_number:
+    days_number: 10
     sprite_selection_number:
+    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/f_auto,q_auto/v1620887799/emit/images/family/EMIT-leaders-rural-africa_inzgvm.jpg
   - title: Understanding the Bible
     objective: >-
       This course will help students understand the Bible and its context as a
       whole: the central message, history, lay out, old & new testament and the
       use of other resources.
-    days_number:
+    days_number: 10
     sprite_selection_number:
+    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/c_crop,f_auto,g_custom,q_auto/v1620879372/emit/images/women/woman-leader-bible_j0glfi.jpg
   - title: Marriage
     objective: >-
       The course examines the Old and New Testament teachings regarding marriage
       as well as sexuality, children, divorce, and remarriage.
-    days_number:
+    days_number: 10
     sprite_selection_number:
+    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/c_crop,f_auto,g_custom,q_auto/v1620879369/emit/images/women/happy-couple-leadership_kdb12q.jpg
 ---
