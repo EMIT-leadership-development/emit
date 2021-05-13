@@ -154,7 +154,7 @@ curricula:
     credits_number:
     days_number:
     sprite_selection_number:
-    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/c_thumb,w_300,h_300,f_auto,g_custom,q_auto/v1620893811/emit/images/business/Guy_in_Resturant_j69eln.jpg
+    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/c_thumb,f_auto,h_300,q_auto,w_300/v1620912335/emit/images/spiritual/EMIT-church-choir_jp3guh.jpg
   - title: Effective Preaching
     objective: >-
       This course covers the preparation of the messenger, development of the
@@ -227,6 +227,7 @@ curricula:
     credits_number:
     days_number:
     sprite_selection_number:
+    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/c_thumb,f_auto,q_auto,w_300/v1620915665/emit/images/family/EMIT-kingdom-of-heaven_yl5ww9.jpg
   - title: 'Law, Grace & Righteousness'
     objective: >-
       A thorough theological and practical understanding of Paul’s epistle to
@@ -244,6 +245,7 @@ curricula:
     credits_number:
     days_number:
     sprite_selection_number:
+    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/c_thumb,f_auto,h_300,q_auto,w_300/v1620914062/emit/images/spiritual/EMIT-leadership-ethics_xrmxtc.jpg
   - title: Marriage & Family
     objective: >-
       The course examines the Old and New Testament teachings regarding marriage
@@ -267,6 +269,7 @@ curricula:
     credits_number:
     days_number:
     sprite_selection_number:
+    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/c_thumb,f_auto,h_300,q_auto,w_300/v1620913360/emit/images/spiritual/EMIT-pastoral-leadership_ngz5n2.jpg
   - title: Prayer
     objective: >-
       This course examines both the Biblical teachings regarding prayer and
@@ -289,6 +292,7 @@ curricula:
     credits_number:
     days_number:
     sprite_selection_number:
+    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/c_thumb,f_auto,h_300,q_auto,w_300/v1620909538/emit/images/youth/trainingMaterial_xpo2ee.jpg
   - title: Spiritual Leadership 1
     objective: >-
       We focus on the personal development of a leader – the preparation and
@@ -297,6 +301,7 @@ curricula:
     credits_number:
     days_number:
     sprite_selection_number:
+    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/c_thumb,w_300,h_300,f_auto,g_custom,q_auto/v1620893811/emit/images/business/Guy_in_Resturant_j69eln.jpg
   - title: Spiritual Leadership 2
     objective: >-
       The course looks at Biblical and practical aspects of the goals of a
@@ -311,6 +316,7 @@ curricula:
     credits_number:
     days_number:
     sprite_selection_number:
+    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/c_thumb,f_auto,h_300,q_auto,w_300/v1620914543/emit/images/spiritual/EMIT-spiritual-warfare_umugai.jpg
   - title: The Church
     objective: >-
       The local church is the “manifold wisdom of God,” and is described as the
