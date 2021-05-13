@@ -41,7 +41,7 @@ curricula:
     credits_number: 5
     days_number: 20
     sprite_selection_number: 1
-    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/c_crop,g_custom,f_auto,q_auto/v1620890798/emit/images/spiritual/africanLeaderPlanning_pyuspz.jpg
+    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/c_thumb,w_300,h_300,g_custom,f_auto,q_auto/v1620890798/emit/images/spiritual/africanLeaderPlanning_pyuspz.jpg
   - title: Advanced Leadership Issues 2
     objective: >-
       We focus on the leader’s relationship with those whom he is leading, into
@@ -50,7 +50,7 @@ curricula:
     credits_number: 10
     days_number: 5
     sprite_selection_number: 2
-    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/f_auto,q_auto/v1620901304/emit/images/spiritual/leadership-training_qalucr.webp
+    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/c_thumb,w_300,h_300,f_auto,q_auto/v1620901304/emit/images/spiritual/leadership-training_qalucr.webp
   - title: African Church History
     objective: >-
       This course gives an historical overview of the history and growth of the
@@ -58,7 +58,7 @@ curricula:
     credits_number: 30
     days_number: 16
     sprite_selection_number: 3
-    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/f_auto,q_auto/v1620891088/emit/images/spiritual/handsInAir_euwyss.jpg
+    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/c_thumb,w_300,h_300,f_auto,q_auto/v1620891088/emit/images/spiritual/handsInAir_euwyss.jpg
   - title: Animism
     objective: >-
       We provide an understanding of how animism has impacted African indigenous
@@ -66,7 +66,7 @@ curricula:
     credits_number:
     days_number:
     sprite_selection_number:
-    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/f_auto,q_auto/v1620896470/emit/images/spiritual/EMIT-animism-in-Africa_tsbgxu.jpg
+    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/c_thumb,w_300,h_300,f_auto,q_auto/v1620896470/emit/images/spiritual/EMIT-animism-in-Africa_tsbgxu.jpg
   - title: Biblical Counselling
     objective: >-
       The course provides practical advice for numerous counseling topics, along
@@ -74,13 +74,13 @@ curricula:
     credits_number: 3
     days_number: 15
     sprite_selection_number: 4
-    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/f_auto,q_auto/v1620891428/emit/images/spiritual/pastorCounsellingWithBible_fu00bg.jpg
+    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/c_thumb,w_300,h_300,f_auto,q_auto/v1620891428/emit/images/spiritual/pastorCounsellingWithBible_fu00bg.jpg
   - title: Biblical Doctrines
     objective: A thorough examination of such essential Biblical doctrines.
     credits_number: 14
     days_number: 5
     sprite_selection_number: 5
-    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/c_crop,g_custom,f_auto,q_auto/v1620891434/emit/images/spiritual/PastorLeaderTeachingOnWhiteboard_y6c5oe.jpg
+    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/c_thumb,w_300,h_300,g_custom,f_auto,q_auto/v1620891434/emit/images/spiritual/PastorLeaderTeachingOnWhiteboard_y6c5oe.jpg
   - title: Biblical world view
     objective: >-
       This course examines how animism, polytheism, and secularism all
@@ -89,7 +89,7 @@ curricula:
     credits_number: 5
     days_number: 6
     sprite_selection_number: 6
-    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/f_auto,q_auto/v1620890799/emit/images/spiritual/littleBoyWithBible_gjd51c.jpg
+    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/c_thumb,w_300,h_300,f_auto,q_auto/v1620890799/emit/images/spiritual/littleBoyWithBible_gjd51c.jpg
   - title: Cell groups
     objective: >-
       aCell groups are vital to the growth of the church.  A distinctly African
@@ -99,7 +99,7 @@ curricula:
     credits_number: 5
     days_number: 6
     sprite_selection_number: 7
-    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/f_auto,q_auto/v1620891394/emit/images/spiritual/bibleGroup_idraw3.jpg
+    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/c_thumb,w_300,h_300,f_auto,q_auto/v1620891394/emit/images/spiritual/bibleGroup_idraw3.jpg
   - title: Children ministry
     objective: >-
       The course looks at practical issues, while at the same time maintaining
@@ -107,7 +107,7 @@ curricula:
     credits_number: 13
     days_number: 5
     sprite_selection_number: 8
-    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/f_auto,q_auto/v1620890756/emit/images/community/curiousChildren_mh4s4c.jpg
+    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/c_thumb,w_300,h_300,f_auto,q_auto/v1620890756/emit/images/community/curiousChildren_mh4s4c.jpg
   - title: Church administration
     objective: >-
       The course provides practical, easy-to-use systems for church
@@ -115,7 +115,7 @@ curricula:
     credits_number: 28
     days_number: 22
     sprite_selection_number: 9
-    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/c_crop,f_auto,g_custom,q_auto/v1620891937/emit/images/business/EMIT-business-leadership_apsxal.jpg
+    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/c_thumb,w_300,h_300,f_auto,g_custom,q_auto/v1620891937/emit/images/business/EMIT-business-leadership_apsxal.jpg
   - title: Church growth
     objective: >-
       We examine several of Christianity's contemporary experts in the study of
@@ -123,13 +123,13 @@ curricula:
     credits_number: 13
     days_number: 7
     sprite_selection_number: 10
-    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/c_crop,f_auto,g_custom,q_auto/v1620891406/emit/images/spiritual/cell-Groups_awsjxl.jpg
+    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/c_thumb,w_300,h_300,f_auto,g_custom,q_auto/v1620891406/emit/images/spiritual/cell-Groups_awsjxl.jpg
   - title: Church planting
     objective: The course examines contemporary church planting movements.
     credits_number: 20
     days_number: 15
     sprite_selection_number: 11
-    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/c_crop,f_auto,g_custom,q_auto/v1620892136/emit/images/spiritual/EMIT-rural-church_fbtenl.jpg
+    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/c_thumb,w_300,h_300,f_auto,g_custom,q_auto/v1620892136/emit/images/spiritual/EMIT-rural-church_fbtenl.jpg
   - title: Classical Discipleship
     objective: >-
       This course provides practical topics designed to bring the new or
@@ -137,7 +137,7 @@ curricula:
     credits_number: 10
     days_number: 6
     sprite_selection_number: 12
-    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/f_auto,q_auto/v1620897125/emit/images/community/EMIT-Africa-community-relationships_hcx4fx.jpg
+    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/c_thumb,w_300,h_300,f_auto,q_auto/v1620897125/emit/images/community/EMIT-Africa-community-relationships_hcx4fx.jpg
   - title: Community Transformation
     objective: >-
       The course examines practical ways in which churches can make a positive
@@ -146,7 +146,7 @@ curricula:
     credits_number: 17
     days_number: 12
     sprite_selection_number: 13
-    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/f_auto,q_auto/v1620890753/emit/images/community/happyVillageGirl_xcmuns.jpg
+    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/c_thumb,w_300,h_300,f_auto,q_auto/v1620890753/emit/images/community/happyVillageGirl_xcmuns.jpg
   - title: Developing a Healthy Church
     objective: >-
       The course strives to implement thoughtful and strategic change in
@@ -154,7 +154,7 @@ curricula:
     credits_number:
     days_number:
     sprite_selection_number:
-    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/c_crop,f_auto,g_custom,q_auto/v1620893811/emit/images/business/Guy_in_Resturant_j69eln.jpg
+    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/c_thumb,w_300,h_300,f_auto,g_custom,q_auto/v1620893811/emit/images/business/Guy_in_Resturant_j69eln.jpg
   - title: Effective Preaching
     objective: >-
       This course covers the preparation of the messenger, development of the
@@ -162,7 +162,7 @@ curricula:
     credits_number:
     days_number:
     sprite_selection_number:
-    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/f_auto,q_auto/v1620905598/emit/images/spiritual/preacher-EMIT-leadership-course_u3sq4k.jpg
+    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/c_thumb,w_300,h_300,f_auto,q_auto/v1620905598/emit/images/spiritual/preacher-EMIT-leadership-course_u3sq4k.jpg
   - title: Ethnic Reconciliation
     objective: >-
       We look at issues of race and ethnicity in different cultures and how to
@@ -170,7 +170,7 @@ curricula:
     credits_number:
     days_number:
     sprite_selection_number:
-    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/f_auto,q_auto/v1620894752/emit/images/community/handshake-EMIT-reconciliation-leadership_a4knkz.jpg
+    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/c_thumb,w_300,h_300,f_auto,q_auto/v1620894752/emit/images/community/handshake-EMIT-reconciliation-leadership_a4knkz.jpg
   - title: HIV/AIDS
     objective: >-
       This course provides an overview of what causes HIV/Aids, how it is
@@ -178,7 +178,7 @@ curricula:
     credits_number:
     days_number:
     sprite_selection_number:
-    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/c_crop,f_auto,g_custom,q_auto/v1620882046/emit/images/health/doctorLady_mxar0z.webp
+    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/c_thumb,w_300,h_300,f_auto,g_custom,q_auto/v1620882046/emit/images/health/doctorLady_mxar0z.webp
   - title: How to Interpret the Bible 1
     objective: >-
       We do a Biblical survey of the Scriptures and cover basic tools of
@@ -186,7 +186,7 @@ curricula:
     credits_number:
     days_number:
     sprite_selection_number:
-    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/f_auto,q_auto/v1620891414/emit/images/spiritual/church-group-reading-bibles_it8gxo.jpg
+    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/c_thumb,w_300,h_300,f_auto,q_auto/v1620891414/emit/images/spiritual/church-group-reading-bibles_it8gxo.jpg
   - title: How to Interpret the Bible 2
     objective: >-
       This course examines the Old Testament, looking at both chronological
@@ -195,7 +195,7 @@ curricula:
     credits_number:
     days_number:
     sprite_selection_number:
-    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/f_auto,q_auto/v1620891422/emit/images/spiritual/leader-emit-student-learning_bjk6hm.jpg
+    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/c_thumb,w_300,h_300,f_auto,q_auto/v1620891422/emit/images/spiritual/leader-emit-student-learning_bjk6hm.jpg
   - title: How to Interpret the Bible 3
     objective: >-
       We examine the New Testament, both historically and by thematic and genre
@@ -204,7 +204,7 @@ curricula:
     credits_number:
     days_number:
     sprite_selection_number:
-    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/c_crop,f_auto,g_custom,q_auto/v1620890799/emit/images/spiritual/manReading_iwqwce.jpg
+    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/c_thumb,w_300,h_300,f_auto,g_custom,q_auto/v1620890799/emit/images/spiritual/manReading_iwqwce.jpg
   - title: Interpersonal Relationships/ Conflict Resolution
     objective: >-
       This course provides a reproducible model for developing and fostering
@@ -213,13 +213,13 @@ curricula:
     credits_number:
     days_number:
     sprite_selection_number:
-    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/f_auto,q_auto/v1620896764/emit/images/spiritual/EMIT-leadership-teaching_polekc.jpg
+    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/c_thumb,w_300,h_300,f_auto,q_auto/v1620896764/emit/images/spiritual/EMIT-leadership-teaching_polekc.jpg
   - title: Islam
     objective: This course provides a thorough look at practical ways to understand Islam
     credits_number:
     days_number:
     sprite_selection_number:
-    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/f_auto,q_auto/v1620895841/emit/images/spiritual/EMIT-spiritual-leadership_wyn66m.jpg
+    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/c_thumb,w_300,h_300,f_auto,q_auto/v1620895841/emit/images/spiritual/EMIT-spiritual-leadership_wyn66m.jpg
   - title: Kingdom of God
     objective: >-
       This course examines the Biblical understanding of the Kingdom and how it
@@ -236,7 +236,7 @@ curricula:
     credits_number:
     days_number:
     sprite_selection_number:
-    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/f_auto,q_auto/v1620890800/emit/images/spiritual/ElderLearning_ujs6wf.jpg
+    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/c_thumb,w_300,h_300,f_auto,q_auto/v1620890800/emit/images/spiritual/ElderLearning_ujs6wf.jpg
   - title: Leadership Ethics
     objective: >-
       This bold course addresses the issues of money, sex and power in the life
@@ -251,7 +251,7 @@ curricula:
     credits_number:
     days_number:
     sprite_selection_number:
-    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/c_crop,f_auto,g_custom,q_auto/v1620892873/emit/images/spiritual/EMIT-pastoral-leadership-family_c49fno.jpg
+    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/c_thumb,w_300,h_300,f_auto,g_custom,q_auto/v1620892873/emit/images/spiritual/EMIT-pastoral-leadership-family_c49fno.jpg
   - title: Mentoring
     objective: >-
       This course examines Biblical and practical ways to establish healthy and
@@ -259,7 +259,7 @@ curricula:
     credits_number:
     days_number:
     sprite_selection_number:
-    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/f_auto,q_auto/v1620901798/emit/images/spiritual/Youth-Ministry-EMIT_ifw08t.jpg
+    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/c_thumb,w_300,h_300,f_auto,q_auto/v1620901798/emit/images/spiritual/Youth-Ministry-EMIT_ifw08t.jpg
   - title: Mission of the Church
     objective: >-
       Along with a theological understanding of ‘mission,’ the course covers
@@ -274,7 +274,7 @@ curricula:
     credits_number:
     days_number:
     sprite_selection_number:
-    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/f_auto,q_auto/v1620899399/emit/images/spiritual/EMIT-leader-praying_k4xwtn.jpg
+    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/c_thumb,w_300,h_300,f_auto,q_auto/v1620899399/emit/images/spiritual/EMIT-leader-praying_k4xwtn.jpg
   - title: Purpose Driven Church
     objective: >-
       This course helps us to understand the Biblical purpose of the Church.
@@ -327,5 +327,5 @@ curricula:
     credits_number:
     days_number:
     sprite_selection_number:
-    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/f_auto,q_auto/v1620891439/emit/images/spiritual/worship-435108_1920_yh3r6v.jpg
+    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/c_thumb,w_300,h_300,f_auto,q_auto/v1620891439/emit/images/spiritual/worship-435108_1920_yh3r6v.jpg
 ---
