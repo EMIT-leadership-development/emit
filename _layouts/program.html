@@ -95,10 +95,12 @@ layout: default
             {% assign position = distance | times: curricula.sprite_selection_number %}
 
             <li data-cms-editor-link="cloudcannon:collections/{{ page.relative_path }}" class="curriculaCard cms-editor-link">
+                <!-- https://res.cloudinary.com/demo/image/upload/c_fill,g_face,h_200,w_200/butterfly.jpg -->
+                
                 <div class="curiculaWrap">
                     <!-- IMAGE -->
                     <div class="imageWrap">
-                        <div class="curriculaImage" style="background-image:url({{site.baseurl}}{{page.curriculumSprite_image}}); background-position: 0 {{position}}%;">
+                        <div class="curriculaImage" style="background-image:url({{curricula.image_url}})">
                         </div>
                     </div>
                     <div class="curriculDescription">
