@@ -20,7 +20,7 @@ motivation: >-
 status: current
 entrance: No academic qualification is required. Applicants must be recognized as leaders either in their spiritual community, business or politics. Applicants from the grass-roots level to high-impact leaders are accepted. Applicants must be able to attend all classes, pay their tuition and train 10 other leaders.
 delivery: Courses are presented face-to-face through a facilitation process in a small group format.
-duration: This course consists of 19 subjects and will likely take 3 years to complete.
+duration: This course consists of 19 subjects and will take 3 years to complete.
 assessment: Assessment of learning is incorporated within the course material and therefore is done regularly and throughout the program.
 certification: The curriculum is designed to address wholistic leadership development to ensure community impact and transformation. It is therefore not an academic qualification. A “Certificate of Completion” is issued at the completion of the program.
 graduation: Students graduate after they have attended all classes, trained 10 other leaders and paid their tuition in full. Graduations take place at each local venue.
