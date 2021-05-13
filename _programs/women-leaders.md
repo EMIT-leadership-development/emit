@@ -81,7 +81,7 @@ curricula:
       seniors, widows and the disabled.
     days_number: 6
     sprite_selection_number: 6
-    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/c_crop,f_auto,g_custom,q_auto/v1620879363/emit/images/women/african-family-bible-study_dw9jm4.jpg
+    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/f_auto,q_auto/v1620889599/emit/images/family/African-leadership-mothers_vzn8rl.jpg
   - title: Gender Theory
     objective: >-
       This course is a biblical examination of gender equality and God's
