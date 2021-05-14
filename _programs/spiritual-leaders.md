@@ -327,7 +327,7 @@ curricula:
     credits_number: 20
     days_number: 55
     sprite_selection_number:
-    image_url: https://image.shutterstock.com/image-photo/groom-put-on-wedding-ring-600w-715461988.jpg
+    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/c_thumb,f_auto,h_300,q_auto,w_300/v1620997508/emit/images/spiritual/EMIT-leadership-development-Church_mvescn.jpg
   - title: Worship
     objective: >-
       This course examines a Biblical theology for worship, and also looks at
