@@ -285,6 +285,7 @@ curricula:
     credits_number: 10
     days_number: 50
     sprite_selection_number:
+    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/c_thumb,f_auto,h_300,q_auto,w_300/v1620981617/emit/images/spiritual/EMIT-purposeful-church_alozxi.jpg
   - title: Youth Ministry
     objective: >-
       The course covers many strategic and practical aspects of establishing an
@@ -309,6 +310,7 @@ curricula:
     credits_number: 32
     days_number: 70
     sprite_selection_number:
+    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/c_thumb,f_auto,g_east,h_300,q_auto,w_300/v1620983539/emit/images/spiritual/EMIT-leadership-program-spiritual_uwlwnk.jpg
   - title: Spiritual Warfare
     objective: >-
       This course is a Biblical examination of Satan’s activity on the earth,
@@ -325,6 +327,7 @@ curricula:
     credits_number: 20
     days_number: 55
     sprite_selection_number:
+    image_url: https://image.shutterstock.com/image-photo/groom-put-on-wedding-ring-600w-715461988.jpg
   - title: Worship
     objective: >-
       This course examines a Biblical theology for worship, and also looks at
