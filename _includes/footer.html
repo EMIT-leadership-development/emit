@@ -12,7 +12,6 @@
         <div class="footer-nav">
             <h4>NAVIGATION</h4>
             <ul>
-                <li><a href="/">Home</a></li>
                 {% for link in site.data.navigation %}
                 <li><a href="{% include relative-src.html src=link.link %}">{{ link.name }}</a></li>
                 {% endfor %}
@@ -22,8 +21,8 @@
             <h4>STUDENTS</h4>
             <ul>
                 <li><a href="/login/">Student Portal</a></li>
-                <li><a href="/articles/annoucements/">Annoucements</a></li>
-                <li><a href="/articles/register/">Register</a></li>
+                <li><a href="/results?q=Announcements&k=category">Annoucements</a></li>
+                <li><a href="/contact/">Register</a></li>
                 <li><a href="/contact/">Help Desk</a></li>
             </ul>
         </div>
