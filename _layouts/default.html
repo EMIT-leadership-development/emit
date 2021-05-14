@@ -70,7 +70,6 @@
 		<!-- Animating the top nav height by changing logo height -->
 		<script>
 			window.onload = function() {
-				console.log("Hello!");
 				var scrollDownIcon = document.getElementById("scrollDown");
 				var links = gsap.utils.toArray(".topLevel");
 				var isTransparent = document.querySelector(".transparentNav");
@@ -110,31 +109,6 @@
 					}
 					return tl;
 			}
-		</script>
-		<script>
-			function animateCards() {
-				const cards = document.querySelectorAll('.postPreview');
-
-				cards.forEach(card => {
-					// const letters = card.querySelectorAll('a span');
-					const author = card.querySelector('.authorImage');
-					const overlay = card.querySelector('.overlay');
-					const button = card.querySelector('.button');
-					const postImage = card.querySelector('.postImage');
-					// Timeline
-					const tl = gsap.timeline({paused: true});
-					tl.to(author, {duration:0.2, scale:1.3}, "<");
-					tl.to(button, {duration:0.2, scale:1.2, transformOrigin:"100% 50%"},"<");
-					// Hover
-					card.addEventListener("mouseenter", function(){
-						tl.play();
-					});
-					card.addEventListener("mouseleave", function(){
-						tl.reverse();
-					});
-				});
-			}
-			animateCards();
 		</script>
 
 		<script>
