@@ -70,11 +70,11 @@
   highlight: false
   subPages:
     - name: Donation
-      link: /donate/
+      link: /donate
       new_window: false
       highlight: false
     - name: Get involved
-      link: /get-involved/
+      link: /get-involved
       new_window: false
       highlight: false
 - name: Contact
