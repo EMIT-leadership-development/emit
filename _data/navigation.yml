@@ -68,6 +68,15 @@
   link: /donate
   new_window: false
   highlight: false
+  subPages:
+    - name: Donation
+      link: /donate/
+      new_window: false
+      highlight: false
+    - name: Get involved
+      link: /get-involved/
+      new_window: false
+      highlight: false
 - name: Contact
   link: /contact
   new_window: false

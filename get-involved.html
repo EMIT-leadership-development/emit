@@ -1,13 +1,70 @@
 ---
 title: Get Involved
-heroQuote: If you are planning for a year, sow rice; if you are planning for a decade, plant trees; if you are planning for a lifetime, educate people.
-hero_Quote_Cite: Chinese Proverb
+heroQuote: Whoever wants to be a leader among you must be your servant.
+hero_Quote_Cite: Jesus of Nazareth
 hero_image: /images/doctorLady.webp
 description:
 ---
 
-<section>
-    <div class="container">
-        WORKING ON THIS PAGE
+
+<!-- GET INVOLVED INTRO -->
+<section class="item--full white donationIntro">
+	<div class="sectionIntro contained-FirstTwo">
+		<h2 class="sectionTitle priority2 editable">Get Involved</h2>
+		<p class="editable introduction">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae animi quibusdam voluptatibus, vel a minus earum quo maiores reiciendis magni ducimus aliquam corporis illum laborum odio velit, omnis, modi excepturi?</p>
+	</div>
+	<div class="sectionContent contained-LastFour getInvovedIntro">
+		<ul class="infoPoints">
+			<li class="point">
+				<span class="icon"><i data-feather="check-circle"></i></span>
+				<h3 class="pointTitle editable">Some way you can help</h3>
+				<p class="pointContent editable">Description of how they can get involved. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum at est aspernatur soluta porro exercitationem asperiores rem odio perspiciatis magnam. Natus alias minus quod similique rerum doloribus blanditiis voluptatibus ad.</p>
+			</li>
+			<li class="point">
+				<span class="icon"><i data-feather="check-circle"></i></span>
+				<h3 class="pointTitle editable">Some way you can help</h3>
+				<p class="pointContent editable">Description of how they can get involved. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, non? Velit quam corporis dicta beatae minima itaque voluptatum, maxime tempore delectus laudantium quasi eligendi incidunt dolor quis qui odio in!</p>
+			</li>
+			<li class="point">
+				<span class="icon"><i data-feather="check-circle"></i></span>
+				<h3 class="pointTitle editable">Some way you can help</h3>
+				<p class="pointContent editable">Description of how they can get involved. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor est tenetur assumenda, nostrum necessitatibus architecto repudiandae omnis consectetur perspiciatis quae! Ad nobis accusantium esse dolorum aspernatur laudantium natus magni consectetur.</p>
+			</li>
+			<li class="point">
+				<span class="icon"><i data-feather="check-circle"></i></span>
+				<h3 class="pointTitle editable">Some way you can help</h3>
+				<p class="pointContent editable">Description of how they can get involved. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam nam, dolore assumenda quas voluptas eius maiores a voluptatibus, necessitatibus doloribus perferendis eligendi. Voluptate neque perspiciatis consectetur molestias delectus, nulla quia.</p>
+			</li>
+		</ul>
+	</div>
+</section>
+
+<!-- CONTACT US -->
+<section id="subscription" class="item--full">
+	<div class="sectionIntro contained-FirstTwo">
+		<h2 class="sectionTitle priority2 editable">Start making a difference<br><span class="emphasis">TODAY</span></h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates atque, excepturi dolor illo asperiores temporibus ducimus at eveniet, perferendis ipsum quaerat eius voluptate praesentium? Debitis quidem consequatur illo voluptas? Cumque?</p>
     </div>
+	<div class="sectionContent contained-LastFour">
+		<div id="contactFormWrapper" class="containedRight sectionContent">
+            <h3>Send us a message</h3>
+                <form id="contact-form" class="materialForm" action="{{ site.baseurl }}/contact-success" method="post">
+                    <div class="form-group">
+                        <input name="name" type="text" required="required"/>
+                        <label for="name" class="control-label">Name</label><i class="bar"></i>
+                    </div>
+                    <div class="form-group">
+                        <input name="_replyto" type="email" required="required"/>
+                        <label for="_replyto" class="control-label">Email</label><i class="bar"></i>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" required="required"></textarea>
+                        <label for="message" class="control-label">Your Message</label><i class="bar"></i>
+                    </div>
+                    <input type="hidden" name="_to" value="{{ page.contact_form_email }}">
+                    <input type="text" name="_gotcha" style="display: none;">
+                    <input class="button" type="submit" value="Send Message">
+                </form>
+        </div>
+	</div>
 </section>
