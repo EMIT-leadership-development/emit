@@ -19,7 +19,9 @@ excerpt_separator: <!--more-->
 
 The prosperity and wellbeing of Francophone Countries in Africa are continuously under threat by political unrest, disease, corruption, and severe poverty. These countries are some of the richest in natural resources, yet they are also some of the poorest on the continent. Despite all these challenges, there are many encouraging signs of progress.
 
-After the genocide in Rwanda, trust became one of the major obstacles in getting church leaders together for training. &nbsp;Gradually it became clear to the leaders that EMIT was there to serve them and their communities. EMIT responsibly addressed their concerns and fears and challenged the leaders to forgive each other.&nbsp;<br>These leaders became instrumental in bringing about reconciliation, healing, and peace in their nation. The mistrust eventually subsided and over the last 20 years we trained more than 2120 church leaders face to face in Rwanda and more than 21000 church leaders were trained in our On-10 program.
+After the genocide in Rwanda, trust became one of the major obstacles in getting church leaders together for training. &nbsp;Gradually it became clear to the leaders that EMIT was there to serve them and their communities. EMIT responsibly addressed their concerns and fears and challenged the leaders to forgive each other.&nbsp;
+
+These leaders became instrumental in bringing about reconciliation, healing, and peace in their nation. The mistrust eventually subsided and over the last 20 years we trained more than 2120 church leaders face to face in Rwanda and more than 21000 church leaders were trained in our On-10 program.
 
 The thousands of Rwandan and Congolese leaders we have since trained, continue to uplift, transform, and invest in their communities - a testimony that radiates throughout Francophone Africa. EMIT reconciles leaders and communities\!
 
