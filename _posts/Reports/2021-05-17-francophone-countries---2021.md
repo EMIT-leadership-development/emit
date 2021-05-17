@@ -7,7 +7,7 @@ subtitle: >-
 hero_image: /images/littleBoyWithBible.webp
 sprite_image: /images/sprites/sprite-Set1.webp
 sprite_selection_number: 17
-team-member: Johan Fourie
+team-member: Constantin Gasore
 tags:
   - Rwanda
   - DR-Congo
