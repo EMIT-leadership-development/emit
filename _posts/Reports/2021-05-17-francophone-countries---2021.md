@@ -8,7 +8,10 @@ hero_image: /images/littleBoyWithBible.webp
 sprite_image: /images/sprites/sprite-Set1.webp
 sprite_selection_number: 17
 team-member: Johan Fourie
-tags: Rwanda DR-Congo
+tags:
+  - Rwanda
+  - DR-Congo
+  - Burundi
 category: Reports
 excerpt_separator: <!--more-->
 ---
