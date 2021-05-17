@@ -10,7 +10,7 @@ tags: EMIT Strategy
 category: About EMIT
 excerpt_separator: <!--more-->
 ---
-## 28 Years ago, two visionaries dreamed of an Africa that is prosperous and self-sufficient.
+## A few decades ago, two visionaries dreamed of an Africa that is prosperous and self-sufficient.
 
 Chris de Wet and Karel Sanders knew that this was an ambitious vision. Their plan was simple but very strategic: do not waste time, energy and resources on treating symptoms - fix what is broken. Address the reason for the problems - weak, immature, corrupt and untrained leaders. <!--more-->
 
