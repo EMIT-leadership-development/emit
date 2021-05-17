@@ -8,7 +8,7 @@ hero_image: images/ClusterOfAfricaChildrenWaitingForLeadership.webp
 customHeroPosition: center bottom
 sprite_image: /images/sprites/sprite-Set1.webp
 sprite_selection_number: 5
-team-member: Johan Fourie
+team-member: Theo Faber
 tags: Student-Portal
 category: News
 excerpt_separator: <!--more-->
