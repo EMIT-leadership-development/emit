@@ -19,7 +19,7 @@ excerpt_separator: <!--more-->
 ---
 ## EMIT Report 2021 - English Speaking Countries
 
-nglophone countries faced huge challenges with nationwide COVID-19 lockdowns. &nbsp;The impact of the disease has resulted in millions of Africans suﬀering from signiﬁcant social, political, spiritual, and economic hardships. The cost of living skyrocketed over the last 12 months. &nbsp;Increasing poverty levels and the lack of social interaction resulted in huge social problems. &nbsp;
+Anglophone countries faced huge challenges with nationwide COVID-19 lockdowns. The impact of the disease has resulted in millions of Africans suﬀering from signiﬁcant social, political, spiritual, and economic hardships. The cost of living skyrocketed over the last 12 months. &nbsp;Increasing poverty levels and the lack of social interaction resulted in huge social problems. &nbsp;
 
 EMIT responded to these challenges by acting early and developing a training model that could continue even in these harsh circumstances. Our committees were trained to act as facilitators and our programs changed to small group training events early in the second half of 2020. &nbsp;
 
