@@ -15,7 +15,7 @@ team-member: Theo Faber
 tags:
   - transformation
   - leadersdhip
-category:
+category: News
 excerpt_separator: <!--more-->
 leaderName:
 leaderBio_html:
