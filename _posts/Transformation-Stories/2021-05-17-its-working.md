@@ -19,7 +19,7 @@ category: Transformation Stories
 excerpt_separator: <!--more-->
 leaderName:
 leaderBio_html:
-leader_image: /images/leaders/studentPlaceholder.jpg
+leader_image: /images/team/Mervis.jpg
 country: Zambia
 latitude: '-13.133897'
 longitude: '27.849333'
