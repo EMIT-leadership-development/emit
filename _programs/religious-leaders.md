@@ -1,5 +1,5 @@
 ---
-title: Spiritual Leaders
+title: Religious Leaders
 heroQuote: Education is the most powerful weapon which you can use to change the world.
 hero_Quote_Cite: Nelson Mandela
 hero_image: /images/couple.webp
@@ -14,8 +14,8 @@ objective_markdown: >-
 
   &nbsp;
 motivation: >-
-  Spiritual Leaders are not only leading at their places of worship, but also in
-  their communities in general. Therefor, they must be trained to serve
+  Religious Leaders are not only leading at their places of worship, but also in
+  their communities in general. Therefore, they must be trained to serve
   effectively as agents of change.
 status: current
 entrance: No academic qualification is required. Applicants must be recognized as leaders within their spiritual community. Applicants must be able to attend all classes, pay their tuition and train 10 other leaders.
@@ -25,7 +25,7 @@ assessment: Assessment of learning is incorporated within the course material an
 certification: The curriculum is designed to address wholistic leadership development to ensure community impact and transformation. It is therefore not an academic qualification. Advanced Diploma and Diploma levels are offered.
 graduation: Students graduate after they have attended all classes, successfully completed all examinations, trained 10 other leaders and paid their tuition in full. Graduations take place at each local venue.
 description_markdown: >-
-  Spiritual Leaders are widespread throughout Africa and have great influence in
+  Religious Leaders are widespread throughout Africa and have great influence in
   their communities. Yet, they lack proper training and vision to effectively
   transform those communities. This program gives leaders the theoretical
   framework, but also the practical knowledge and skills to rise above their
