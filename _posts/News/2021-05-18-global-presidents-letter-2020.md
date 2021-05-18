@@ -24,7 +24,7 @@ leaderBio_html: >-
   time associate of EMIT. He served as Senior Pastor of Kabwe Chapel for a
   number of years. He is considered a mentor, role model and a credible voice to
   many in Zambia and beyond. He is married to Ethel and have four daughters.</p>
-leader_image: /images/leaders/studentPlaceholder.jpg
+leader_image: /images/team/Borniface.jpg
 country:
 latitude:
 longitude:
