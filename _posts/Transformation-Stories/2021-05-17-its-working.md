@@ -15,9 +15,9 @@ excerpt_separator: <!--more-->
 leaderName:
 leaderBio_html:
 leader_image: /images/leaders/studentPlaceholder.jpg
-country:
-latitude:
-longitude:
+country: Zambia
+latitude: '-13.133897'
+longitude: '27.849333'
 description:
 ---
 # It’s Working\!
