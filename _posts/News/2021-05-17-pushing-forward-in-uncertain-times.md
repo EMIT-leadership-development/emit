@@ -13,7 +13,7 @@ tags:
   - Perseverance
   - Leadership
   - Change
-category: News
+category: Thought Leaders
 excerpt_separator: <!--more-->
 leaderName:
 leaderBio_html:
