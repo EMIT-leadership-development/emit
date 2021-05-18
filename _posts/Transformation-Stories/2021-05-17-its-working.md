@@ -17,8 +17,16 @@ tags:
   - Leaders
 category: Transformation Stories
 excerpt_separator: <!--more-->
-leaderName:
-leaderBio_html:
+leaderName: Mervis Malambo
+leaderBio_html: >-
+  <p>Trained for Youth Ministry with Teen Missions where she worked both in
+  Zambia and USA. She is currently serving as the Personal Assistant to Bishop
+  Shonga. Mervis also serves as National Secretary of EMIT Zambia. Mervis, a
+  former student of EMIT has also finished her Bachelor in Theology. Mervis is a
+  strong advocate of the young generation and believes the young people are
+  leaders of today rather than tomorrow. Mervis does not yet have a family of
+  her own but has strong extended family ties and has always looked after one or
+  two siblings children.</p>
 leader_image: /images/team/Mervis.jpg
 country: Zambia
 latitude: '-13.133897'
