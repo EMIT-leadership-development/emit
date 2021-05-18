@@ -1,5 +1,5 @@
 ---
-name: Support a Project Leader
+name: Support a Project Leader/ Staff Member
 description_html: >-
   <p>EMIT values the team members who make what we do successful. We have
   project leaders all over the world that took up the call of raising
