@@ -27,8 +27,11 @@ latitude: '1.718010'
 longitude: '32.171153'
 description:
 ---
+# **From the Heart of an Alumni Lady from Uganda**
 
-We were excited to have an opportunity to minister in the first ever AFMIN/ EMIT Pastors Conference, it was at the UMA Show Grounds in Lugogo, Kampala. Being in my early 20s, I was full of joy because I was one of the youths in the worship team which also served as the Mass Choir. We danced and sang with all our strength and worshiped with all our hearts and that was all that mattered to us. We actually thought that the message was for pastors not ours. I was also privileged to serve as one of the interpreters then but we were shocked when we heard the messages from men of God like Bishop Shonga. The messages were for all of us, they taught us about leadership, they emphasized integrity and then they awakened the gift of leadership in me, I was encouraged not to give up no matter the challenges that come my way.
+## **The benefits EMIT brings to thousands of women in Africa**
+
+We were excited to have an opportunity to minister in the first ever EMIT Pastors Conference, it was at the UMA Show Grounds in Lugogo, Kampala. Being in my early 20s, I was full of joy because I was one of the youths in the worship team which also served as the Mass Choir. We danced and sang with all our strength and worshiped with all our hearts and that was all that mattered to us. We actually thought that the message was for pastors not ours. I was also privileged to serve as one of the interpreters then but we were shocked when we heard the messages from men of God like Bishop Shonga. The messages were for all of us, they taught us about leadership, they emphasized integrity and then they awakened the gift of leadership in me, I was encouraged not to give up no matter the challenges that come my way.
 
 With time, I got so busy with my day to day schedules not until the Women’s School was opened up. I was so happy to be one of the first ladies to benefit from it. What a blessing because I knew what Emit meant, the wholesome teachings that they give that are life-changing and based on Biblical principles. This time round, we were empowered with very special teachings that all women can relate to. Teachings about Trauma, emotional intelligence and on World View gave me a new perspective about how to deal with the people that I lead or relate to. They sharpened my interpersonal skills and helped me to understand myself as a woman leader and to understand people under my leadership better.
 
