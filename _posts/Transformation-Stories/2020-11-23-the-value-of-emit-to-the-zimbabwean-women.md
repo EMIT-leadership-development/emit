@@ -33,21 +33,21 @@ They will negatively affect your family and business relations because with such
 
 So EMIT came amid thick darkness with the help that many Zimbabwean women are crying and screaming for in their hearts. Fighting for survival is what the women are doing and EMIT came and offered the needed assistance to women regardless of their academic qualifications, political-religious affiliation, and cultural background and irrespective of all divides.
 
-Emit picks up women from whichever rut they are in.
+EMIT picks up women from whichever rut they are in.
 
 The courses are designed to build and strengthen women emotionally, socially, physically and psychologically. In the sessions one is taught to wipe off their tears; reminisce and see at what point one slipped so that they do not slip back in future; pick themselves up with courage and tenacity and move on ahead in the right direction with confidence.
 
-Emit guides one in redefining and repositioning oneself in her spheres of influence.&nbsp; It moulds one to be as strong, valuable and inert as stainless steel. It teaches that we cannot influence everything out there but whatever is out there must not take away the good in us.
+EMIT guides one in redefining and repositioning oneself in her spheres of influence.&nbsp; It moulds one to be as strong, valuable and inert as stainless steel. It teaches that we cannot influence everything out there but whatever is out there must not take away the good in us.
 
-Emit not only instils one with good values but equips one to be at par with the current trends. Most women born before the 80s are not computer savvy but they are very good businesswomen, loving grandmothers with families abroad.
+EMIT not only instils one with good values but equips one to be at par with the current trends. Most women born before the 80s are not computer savvy but they are very good businesswomen, loving grandmothers with families abroad.
 
-Emit has taught women how to use computers, how to communicate with others for business or social purposes on social media platforms.
+EMIT has taught women how to use computers, how to communicate with others for business or social purposes on social media platforms.
 
-Financially, Emit has taught us that you have to make lemonade from your lemons. To be content with what one has and growing it gradually and honestly. To save some of the income and to give honour to whom it is due financially.&nbsp; This comes with great discipline and commitment.&nbsp; These lessons teach one to glide through turbulent times.
+Financially, EMIT has taught us that you have to make lemonade from your lemons. To be content with what one has and growing it gradually and honestly. To save some of the income and to give honour to whom it is due financially.&nbsp; This comes with great discipline and commitment.&nbsp; These lessons teach one to glide through turbulent times.
 
-Socially, Emit taught the women that they live with other families apart from theirs with different political, religious, financial, cultural and racial backgrounds. so it teaches one to respect, appreciate and live with others and to be respected and appreciated in return.
+Socially, EMIT taught the women that they live with other families apart from theirs with different political, religious, financial, cultural and racial backgrounds. so it teaches one to respect, appreciate and live with others and to be respected and appreciated in return.
 
-With all this transfer of knowledge and love; Emit says share all you have learnt with at least ten more.&nbsp; Emit teaches one to share. It is an important lesson because sharing for some dies not come naturally.
+With all this transfer of knowledge and love; EMIT says share all you have learnt with at least ten more.&nbsp; EMIT teaches one to share. It is an important lesson because sharing for some dies not come naturally.
 
 In the midst of it, came COVID 19 a pandemic which changed everything. The lockdown forced everyone to think differently and we are happy that EMIT also brought in a new model of learning which I find to be a well thought out strategy.
 
@@ -55,8 +55,8 @@ This visionary approach to learning brings in easy of learning without the hustl
 
 We hope to expand EMIT in our surrounding geographical area including women from all walks of life.
 
-I conclude by proudly proclaim that Emit encourages women to be well-groomed, confident, self-reliant, resourceful, caring and loving.
+I conclude by proudly proclaim that EMIT encourages women to be well-groomed, confident, self-reliant, resourceful, caring and loving.
 
 It teaches all forms of etiquette. This moulds one into an adorable; dependable; empathetic; a credible strong dynamic woman in society. These qualities make one influential and making it easier to light up other women who are in various divides.
 
-In a nutshell, Emit in Zimbabwe makes women Super\!
+In a nutshell, EMIT in Zimbabwe makes women Super\!
