@@ -35,7 +35,7 @@ EMIT responds to the unprecedented awakening and growth in Africa.&nbsp; Serving
 
 To see this vision fulfilled, EMIT is committed to train and equip leaders to become the change agents this continent so desperately needs. Considering the massive population growth, technical advancements, and the changing economic and political landscape in most African nations, the need for transformational leadership has become an even bigger drive for EMIT. We want to see strong, trained leaders that will reproduce strong and vibrant communities.&nbsp;
 
-## **The Values Behind the Vision.&nbsp;**&nbsp;
+## **The Values Behind the Vision**&nbsp;
 
 * EMIT believes every nation already has leaders. Thus, our primary vision is to develop and train existing leaders into transformational leaders with our wholistic model.&nbsp;
 * EMIT is committed to wholistic Leadership Development. On individual level, EMIT develops spiritual, leadership and professional skills. On societal level, EMIT targets all significant pillars of the community.&nbsp;
