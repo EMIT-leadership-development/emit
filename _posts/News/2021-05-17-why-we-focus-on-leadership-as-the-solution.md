@@ -25,7 +25,7 @@ latitude:
 longitude:
 description:
 ---
-# Why we focus on leadership as the solution.
+# Why&nbsp; We Focus on Leadership as the Solution
 
 ## The heart of our mission is community transformation. We believe that equipping Africa's leadership is the most eﬀective way to achieve the lasting regeneration that has been elusive for generations.
 
