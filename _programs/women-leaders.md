@@ -207,4 +207,9 @@ curricula:
     sprite_selection_number:
     image_url: >-
       https://res.cloudinary.com/sonya-ninja/image/upload/h_300,w_300,c_thumb,f_auto,g_custom,q_auto/v1620879369/emit/images/women/happy-couple-leadership_kdb12q.jpg
+  - title: Basic First Aid
+    objective:
+    days_number:
+    sprite_selection_number:
+    image_url:
 ---
