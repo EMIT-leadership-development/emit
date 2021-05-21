@@ -113,10 +113,8 @@ curricula:
       https://res.cloudinary.com/sonya-ninja/image/upload/c_thumb,w_300,h_300,f_auto,q_auto/v1620890799/emit/images/spiritual/littleBoyWithBible_gjd51c.jpg
   - title: Cell Groups
     objective: >-
-      Cell groups are vital to the growth of the church.  A distinctly African
-      context for establishing cell groups in your church is
-      presented.Perspiciatis omnis dolore, senectus omnis suscipit, consectetuer
-      gravida, ut! Ultrices.
+      Cell groups are vital to the growth of the church. A distinctly African
+      context for establishing cell groups in your church is presented.
     credits_number: 5
     days_number: 55
     sprite_selection_number: 7
