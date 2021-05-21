@@ -12,7 +12,7 @@ objective_markdown: >-
 motivation: >-
   Core leadership competencies are crucial in their sphere of influence and must
   be taught to Health Care leaders. Emit invests in the leadership and ethical
-  competencies of Health Care leaders..
+  competencies of Health Care leaders.
 status: planned
 entrance: Explain the entrance requirements for this program
 delivery: Describe how the program is delivered
