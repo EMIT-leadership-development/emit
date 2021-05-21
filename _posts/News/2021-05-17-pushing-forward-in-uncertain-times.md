@@ -23,7 +23,7 @@ latitude:
 longitude:
 description:
 ---
-# Pushing forward in uncertain times
+# Pushing Forward in Uncertain times
 
 ## The challenge of providing&nbsp;<br>leadership in a changing&nbsp;<br>world
 
