@@ -74,7 +74,7 @@ curricula:
     sprite_selection_number: 3
     image_url: >-
       https://res.cloudinary.com/sonya-ninja/image/upload/h_300,w_300,c_thumb,f_auto,g_custom,q_auto/v1620879363/emit/images/women/Africa-Woman-Leader_hwehtx.jpg
-  - title: Business skills 2
+  - title: Business Skills 2
     objective: >-
       This course builds on the knowledge gained in Business skills 1 and
       continues by examining principles of entrepreneurship, small business
