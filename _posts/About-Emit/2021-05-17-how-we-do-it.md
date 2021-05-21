@@ -10,7 +10,7 @@ tags: EMIT Strategy
 category: About EMIT
 excerpt_separator: <!--more-->
 ---
-## A few decades ago, two visionaries dreamed of an Africa that is prosperous and self-sufficient.
+# A few decades ago, two visionaries dreamed of an Africa that is prosperous and self-sufficient.
 
 Chris de Wet and Karel Sanders knew that this was an ambitious vision. Their plan was simple but very strategic: do not waste time, energy and resources on treating symptoms - fix what is broken. Address the reason for the problems - weak, immature, corrupt and untrained leaders. <!--more-->
 
@@ -20,7 +20,7 @@ EMIT believes that Africa must be the creator of her future. Leaders must take r
 
 The impetus for Africa to rise must come from within. The African leader is at the center of this revival. Africa desperately needs equipped leaders who understand the responsibility of serving her people.
 
-### The EMIT strategy is unique, and IT WORKS\!
+## The EMIT strategy is unique, and IT WORKS\!
 
 We developed an indigenous curriculum for leaders in different spheres of influence. Our material encompasses three main areas:
 
