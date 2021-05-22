@@ -208,8 +208,8 @@ curricula:
     image_url: >-
       https://res.cloudinary.com/sonya-ninja/image/upload/h_300,w_300,c_thumb,f_auto,g_custom,q_auto/v1620879369/emit/images/women/happy-couple-leadership_kdb12q.jpg
   - title: Basic First Aid
-    objective:
-    days_number:
+    objective: Theo/Johan please add objective and hours for this item. Use the 'days' field to input your hours - the label will be hours on the front end.
+    days_number: 30
     sprite_selection_number:
-    image_url:
+    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/c_thumb,f_auto,g_custom,h_300,q_auto,w_300/v1620882046/emit/images/health/doctorLady_mxar0z.webp
 ---
