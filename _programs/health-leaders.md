@@ -11,7 +11,8 @@ objective_markdown: >-
   have completed this program you will be able to…
 motivation: >-
   Core leadership competencies are crucial in their sphere of influence and must
-  be taught to Health Care leaders.
+  be taught to health care leaders. EMIT invests in the leadership and ethical
+  competencies of health care leaders.
 status: planned
 entrance: Explain the entrance requirements for this program
 delivery: Describe how the program is delivered

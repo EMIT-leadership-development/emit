@@ -7,7 +7,7 @@
   postal: 'PO BOX 3710, SPRINGS 1560, SOUTH AFRICA'
   latitude: -26.27303
   longitude: 28.440429
-- name: USA Head Office
+- name: USA  Office
   country: USA
   team-member: Lisa LaRochelle
   email: info@emit.global
@@ -25,9 +25,9 @@
   postal: 'PO BOX 123, SUBURB, COUNTRY, 1234'
   latitude: -17.82772
   longitude: 31.05337
-- name: 'Country Coordinator, Tanzania'
+- name: 'Project Leader, Tanzania'
   country: Tanzania
-  team-member: Leonard Daffa
+  team-member: Aaron Maingi
   email: admin@emit.global
   phone: +00 000 0000
   address: '10 Street, Suburb, City, 1234'

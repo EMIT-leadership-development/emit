@@ -10,7 +10,7 @@ objective_markdown: >-
   Paragraph describing the objective for this program. For example - when you
   have completed this program you will be able to…
 motivation: >-
-  Very few change agents influence society more than the Media. Therefore,
+  Very few change agents influence society more than the media. Therefore,
   leaders must be developed in this sector that has leadership skills to
   communicate with integrity and act authentically.
 status: planned
