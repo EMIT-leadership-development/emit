@@ -19,8 +19,6 @@ $sphereWidth: clamp(80px,10vw,200px);
     .swiper-container {
         width: 100vw;
         height: 100vh;
-        height: -webkit-fill-available;
-        min-height: -webkit-fill-available;
         .swiper-pagination {
             left: 2rem;
             width: 30px;
