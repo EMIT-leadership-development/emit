@@ -25,4 +25,4 @@ Incompetence in leadership in African countries is not only the problem of peopl
 
 Africa needs leadership development systems, and it is incumbent on development partners and global leaders to understand how cultural differences affect these. The success of one’s country to a great extent depends on the quality of leadership one has. Africa needs leaders that are committed to the improvement of the welfare of their citizens.
 
-EMIT is a Community Transformation Organisation that was born in Africa for Africans. We understand African culture and its challenges. EMIT develops servant leaders that are effective agents of change in all spheres of society. Our students are vibrant, dynamic and committed leaders with a passion for influencing and transforming their communities.
+EMIT is a Community Transformation Organization that was born in Africa for Africans. We understand African culture and its challenges. EMIT develops servant leaders that are effective agents of change in all spheres of society. Our students are vibrant, dynamic and committed leaders with a passion for influencing and transforming their communities.
