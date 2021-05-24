@@ -113,9 +113,10 @@ curricula:
       https://res.cloudinary.com/sonya-ninja/image/upload/h_300,w_300,c_thumb,f_auto,g_custom,q_auto/v1620879370/emit/images/women/African-girsl-and-boys_rbaqle.png
   - title: Health
     objective: >-
-      This course provides practical tools to address the health of communities:
-      Basic first aid, information about "dreaded deseases," how to maintain
-      food hygiene, and the importance of a balanced diet.
+      This course provides key information to address the main health issues
+      affecting African communities. A balanced diet, active lifestyle and food
+      safety are discussed. Dreaded diseases are explained with a focus on the
+      causes, symptoms, treatment and prevention of each.
     days_number: 80
     sprite_selection_number:
     image_url: >-
@@ -208,8 +209,11 @@ curricula:
     image_url: >-
       https://res.cloudinary.com/sonya-ninja/image/upload/h_300,w_300,c_thumb,f_auto,g_custom,q_auto/v1620879369/emit/images/women/happy-couple-leadership_kdb12q.jpg
   - title: Basic First Aid
-    objective: Theo/Johan please add objective and hours for this item. Use the 'days' field to input your hours - the label will be hours on the front end.
+    objective: >-
+      Theo/Johan please add objective and hours for this item. Use the 'days'
+      field to input your hours - the label will be hours on the front end.
     days_number: 30
     sprite_selection_number:
-    image_url: https://res.cloudinary.com/sonya-ninja/image/upload/c_thumb,f_auto,g_custom,h_300,q_auto,w_300/v1620882046/emit/images/health/doctorLady_mxar0z.webp
+    image_url: >-
+      https://res.cloudinary.com/sonya-ninja/image/upload/c_thumb,f_auto,g_custom,h_300,q_auto,w_300/v1620882046/emit/images/health/doctorLady_mxar0z.webp
 ---
