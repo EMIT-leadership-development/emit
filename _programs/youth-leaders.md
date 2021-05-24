@@ -35,10 +35,15 @@ graduation: >-
   leaders and paid their tuition in full. Graduations take place at each local
   venue.
 description_markdown: >-
-  Introductory Paragraph for this curriculum. Sapien iusto curae porttitor
-  facilisis odio quaerat felis? Cursus sagittis facilisi lorem qui voluptatibus,
-  aliquam. Felis tortor deleniti ac\! Feugiat auctor exercitation sequi, cum
-  feugiat, eiusmod, pretium.
+  Youth Leaders are identified from a very early age. They are expected to set
+  an example to their friends and play an important role in the development of
+  society. Yet, they are never equipped to deal with the power, pressures and
+  responsibilities this brings. This program gives youth leaders the theoretical
+  framework, but also the practical knowledge and skills to equip them to deal
+  with these issues and bring systematic change to the communities they live in.
+  The program is designed to address 3 main areas needed for transformation –
+  personal and character development, leadership development and professional
+  skills development. &nbsp;
 curricula:
   - title: Title of the curricula
     objective: 'Lacus! Veritatis mus aliquip atque molestie! Justo class tempora, posuere.'
