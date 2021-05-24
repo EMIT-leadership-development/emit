@@ -210,8 +210,10 @@ curricula:
       https://res.cloudinary.com/sonya-ninja/image/upload/h_300,w_300,c_thumb,f_auto,g_custom,q_auto/v1620879369/emit/images/women/happy-couple-leadership_kdb12q.jpg
   - title: Basic First Aid
     objective: >-
-      Theo/Johan please add objective and hours for this item. Use the 'days'
-      field to input your hours - the label will be hours on the front end.
+      This course provides an overview of the basic knowledge necessary in First
+      Aid. This manual serves as a resource in addressing basic life-saving
+      interventions. Practical skills for performing CPR and dealing with
+      various primary and secondary injuries are provided.
     days_number: 30
     sprite_selection_number:
     image_url: >-
