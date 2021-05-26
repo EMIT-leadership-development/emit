@@ -158,7 +158,7 @@ header.mainNavigation {
         color: #fff;
     }
 
-    .dropdown-link:not(:nth-last-child(2)){
+    .dropdown-link {
         border-bottom: 1px solid #efefef;
     }
 

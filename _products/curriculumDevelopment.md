@@ -12,4 +12,5 @@ product_type: donation
 price: '500.00'
 sku: cd
 product_image: /images/products/curriculumDevelopment/curriculumDevelopment.webp
+paymentLink: 'https://buy.stripe.com/7sIbIN5ti8OF2XKdQT'
 ---

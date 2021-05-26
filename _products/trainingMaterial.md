@@ -10,4 +10,5 @@ product_type: donation
 price: '150.00'
 sku: tm
 product_image: /images/products/trainingMaterial/trainingMaterial.webp
+paymentLink: https://buy.stripe.com/8wM4gl9Jy9SJ9m8aEL
 ---

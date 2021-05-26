@@ -5,16 +5,14 @@ layout: post
 hero:
 heroQuote:
 hero_Quote_Cite:
-hero_image:
-sprite_image: /images/sprites/sprite-Set1.webp
-sprite_selection_number: 9
+hero_image: /images/PastorLeaderTeachingOnWhiteboard.webp
+sprite_image: images/sprites/sprite-Set2.jpg
+sprite_selection_number: 8
 team-member: Borniface Shonga
 tags:
   - Change
   - Leaders
   - leadership
-  - Leadership
-  - Impact
   - Change Agent
 category: News
 excerpt_separator: <!--more-->

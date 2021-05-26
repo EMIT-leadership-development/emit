@@ -10,4 +10,5 @@ product_type: donation
 price: '250.00'
 sku: te
 product_image: /images/products/trainingEvent/training-event.webp
+paymentLink: https://buy.stripe.com/cN2bIN8Fud4VdCo6ou
 ---

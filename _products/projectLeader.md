@@ -10,4 +10,5 @@ product_type: donation
 product_image: /images/products/projectLeader/ProjectLeader.webp
 price: 99.00 or  Own Amount
 sku: pl
+paymentLink: https://buy.stripe.com/aEU4gl08Ye8ZgOA4gl
 ---

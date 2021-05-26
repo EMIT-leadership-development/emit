@@ -5,9 +5,9 @@ layout: post
 hero:
 heroQuote:
 hero_Quote_Cite:
-hero_image: /images/team/Mervis Malambo.jpg
-sprite_image: /images/sprites/sprite-Set1.webp
-sprite_selection_number: 9
+hero_image: /images/WellDressedHappyAfricanSchoolKids.webp
+sprite_image: /images/sprites/sprite-Set2.webp
+sprite_selection_number: 5
 team-member: Mervis Malambo
 tags:
   - Communities

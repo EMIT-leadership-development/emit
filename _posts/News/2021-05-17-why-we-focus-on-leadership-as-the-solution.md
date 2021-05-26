@@ -1,8 +1,7 @@
 ---
 title: Why we focus on leadership as the solution.
 subtitle: >-
-  The heart of our mission is community transformation. We believe that
-  equipping Africa's leadership is the most eﬀective way to achieve the lasting
+  We believe that equipping Africa's leadership is the most eﬀective way to achieve the lasting
   regeneration that has been elusive for generations.
 layout: post
 hero:

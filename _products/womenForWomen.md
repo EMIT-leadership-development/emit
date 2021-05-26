@@ -12,4 +12,5 @@ product_type: donation
 price: '19.00'
 sku: w4w
 product_image: /images/products/womenForWomen/women-for-women.webp
+paymentLink: https://buy.stripe.com/5kA5kpbRG4ypbugaEM
 ---

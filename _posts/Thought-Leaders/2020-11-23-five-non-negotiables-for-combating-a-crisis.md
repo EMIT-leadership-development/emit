@@ -14,7 +14,6 @@ tags:
   - Calling
   - vision
   - Creativity
-  - Strong leadership
   - Crisis
   - Opportunity
 category: Thought Leaders

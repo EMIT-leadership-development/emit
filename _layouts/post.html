@@ -39,7 +39,9 @@ layout: default
 						<p>{{page.subtitle}}</p>
 						<div> by {{ authorName }}</div>
 						<div>Category | {{ page.category }}</div>
+						{% if page.category != "About EMIT" %}
 						<div>Date | {{ page.date | date: "%d %b %Y" }}</div>
+						{% endif %}
 					</div>
 					<div class="bio">{{ authorbio }}</div>
 				</div>

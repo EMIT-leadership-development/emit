@@ -7,9 +7,9 @@ layout: post
 hero:
 heroQuote:
 hero_Quote_Cite:
-hero_image:
-sprite_image: /images/sprites/sprite-Set1.webp
-sprite_selection_number: 9
+hero_image: images/covid-in-africa-help-us.webp
+sprite_image: /images/sprites/sprite-Set3.jpg
+sprite_selection_number: 4
 team-member: Borniface Shonga
 tags:
   - Strong leadership

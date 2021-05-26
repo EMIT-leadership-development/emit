@@ -10,4 +10,5 @@ product_type: donation
 price: '150.00'
 sku: tr1
 product_image: /images/products/training/leadership-training.webp
+paymentLink: https://buy.stripe.com/9AQ1492h6c0R0PC004
 ---

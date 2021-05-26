@@ -6,7 +6,6 @@ url: "http://adored-pea.cloudvent.net"
 baseurl:
 google_analytics_key:
 google_maps_javascript_api_key: AIzaSyCopZOMs4afUxxRSYN36lBdL5dzANTsvFA
-snipcart_key: "NWFiMDUzOWItMDg2Yi00MDhjLWE1YmItODQ0M2EwYTI5YWI1NjM3MzU3Nzg2ODIyNjc0NDAz"
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /siteicon.png

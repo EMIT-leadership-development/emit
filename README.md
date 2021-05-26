@@ -22,7 +22,6 @@ Find more templates, themes and Jekyll tutorials at [CloudCannon Academy](https:
 ## Features
 
 * List product with multiple colours and sizes
-* Take payment online using SnipCart
 * Contact form
 * Optimised for editing in [CloudCannon](http://cloudcannon.com/)
 * RSS/Atom feed
@@ -32,7 +31,7 @@ Find more templates, themes and Jekyll tutorials at [CloudCannon Academy](https:
 ## Setup
 
 1. Add your site and author details in `_config.yml`.
-2. Add your Google Analytics, Google Maps API key and [SnipCart key](https://snipcart.com/) to `_config.yml`.
+2. Add your Google Analytics, Google Maps API key to `_config.yml`.
 3. Get a workflow going to see your site's output (with [CloudCannon](https://app.cloudcannon.com/) or Jekyll locally).
 
 ## Develop

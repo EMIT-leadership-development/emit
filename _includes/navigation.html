@@ -49,9 +49,7 @@
 		<a id="loginBtn" href="#" class="button secondary">Sign in</a>
 
 
-		{% if page.title == "Donate" or page.url contains "products" %}
-		<a href="#" class="cart snipcart-checkout"><span class="icon"><i data-feather="shopping-cart"></i></span></a>
-		{% else %}
+		{% if page.title != "Donate" or page.url contains "products" %}
 		<a id="donateBtn" href="{{ site.baseurl }}/donate" class="button primary hideToStart">Donate</a>
 		{% endif %}
 

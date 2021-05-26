@@ -95,26 +95,6 @@ a.productImage {
 	.product-description p {
 		font-size: 1.1rem;
 	}
-
-	.snipcart-add-item {
-		-webkit-appearance: none;
-		color: #222;
-		text-decoration: none;
-		border: 0;
-		background: none;
-		font-weight: bold;
-		font-size: 1.2em;
-		padding: 10px 15px 15px;
-		float: right;
-		cursor: pointer;
-		line-height: 1;
-		margin-top: 10px;
-
-		&:hover {
-			background: #f5f5f5;
-			color: #000;
-		}
-	}
 }
 
 .donationIntro {
@@ -137,7 +117,7 @@ a.productImage {
 	}
 }
 
-// Subscriptions - not yet linked to snipcart
+// Subscriptions
 .subscriptionWrap {
 	display: grid;
 	grid-gap: 2rem;

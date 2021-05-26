@@ -69,7 +69,7 @@ description:
 	<div class="sectionContent contained-LastFour">
 		<p class="introduction editable">
 			EMIT leaders are making a difference across Africa. They feed the hungry, advise politicians, educate, heal brokenness, improve quality of life - bring light in darkness. Who are the people you impact? You can leave a legacy that spans continents and generations. Join the EMIT family of leaders by supporting these heros.
-		</p>	
+		</p>
 	</div>
 </section>
 
@@ -107,7 +107,7 @@ description:
 						{{product.description_html}}
 					</div>
 					<div class=" price-button-container">
-						<button role="link" class="button" id="checkout-button-price_1It775EAdIt4XXnAYgcJL83L">SIGN UP</button>
+						<a role="link" href="{{product.paymentLink}}">SIGN UP</a>
 					</div>
 				</div>
 			</div>
@@ -213,45 +213,3 @@ description:
 		{% include faqsDonate.html %}
 	</div>
 </section>
-
-<!-- Load Stripe.js on your website. -->
-<script src="https://js.stripe.com/v3"></script>
-
-<div id="error-message"></div>
-
-<script>
-(function() {
-  var stripe = Stripe('pk_live_51Ir2xqEAdIt4XXnAP1mL8AF0oHmWTq8NQ8E4Z1WXcBFOezW1DwxYIOrXpuhI4vOEiokJjknJvIpGMfmrMWKsNhvu00YsJhKAkN');
-
-  var checkoutButton = document.getElementById('checkout-button-price_1It775EAdIt4XXnAYgcJL83L');
-  checkoutButton.addEventListener('click', function () {
-    /*
-     * When the customer clicks on the button, redirect
-     * them to Checkout.
-     */
-    stripe.redirectToCheckout({
-      lineItems: [{price: 'price_1It775EAdIt4XXnAYgcJL83L', quantity: 1}],
-      mode: 'subscription',
-      /*
-       * Do not rely on the redirect to the successUrl for fulfilling
-       * purchases, customers may not always reach the success_url after
-       * a successful payment.
-       * Instead use one of the strategies described in
-       * https://stripe.com/docs/payments/checkout/fulfill-orders
-       */
-      successUrl: 'http://127.0.0.1:4000/success',
-      cancelUrl: 'http://127.0.0.1:4000/cancel',
-    })
-    .then(function (result) {
-      if (result.error) {
-        /*
-         * If `redirectToCheckout` fails due to a browser or network
-         * error, display the localized error message to your customer.
-         */
-        var displayError = document.getElementById('error-message');
-        displayError.textContent = result.error.message;
-      }
-    });
-  });
-})();
-</script>
