@@ -33,7 +33,7 @@ assessment: >-
 certification: >-
   The curriculum is designed to address wholistic leadership development to
   ensure community impact and transformation. It is therefore not an academic
-  qualification. Advanced Diploma and Diploma levels are offered.
+  qualification. Advanced Certificate and Certificate levels are offered.
 graduation: >-
   Students graduate after they have attended all classes, successfully completed
   all examinations, trained 10 other leaders and paid their tuition in full.
@@ -387,3 +387,5 @@ curricula:
     image_url: >-
       https://res.cloudinary.com/sonya-ninja/image/upload/c_thumb,w_300,h_300,f_auto,q_auto/v1620891439/emit/images/spiritual/worship-435108_1920_yh3r6v.jpg
 ---
+
+
