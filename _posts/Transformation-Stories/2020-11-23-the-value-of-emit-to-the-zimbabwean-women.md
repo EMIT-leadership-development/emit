@@ -25,6 +25,8 @@ latitude: '-18.564313'
 longitude: '27.631983'
 description:
 ---
+# The Value of EMIT To The Zimbabwean Women
+
 EMIT to Zimbabwean Women is indeed God's answer and solution to negative situations and circumstances that one faces in life.&nbsp; It brought tools to use in gliding through challenges as a woman and a leader from the household to corridors of power.
 
 As a Zimbabwean Woman; one finds herself in various pits. Pits of poverty, abuse, low self-esteem,&nbsp; ignorance, depression just to name a few. Without help, one continues to sink deeper and deeper in the darkness and depths of those pits.
