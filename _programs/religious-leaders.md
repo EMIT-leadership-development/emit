@@ -29,7 +29,7 @@ duration: This course consists of 37 subjects and will take 4 years to complete.
 assessment: >-
   Assessment of learning is incorporated within the course material and
   therefore is done regularly and throughout the program. An examination for
-  each course is required for Advanced Diploma students.
+  each course is required for Advanced Certificate students.
 certification: >-
   The curriculum is designed to address wholistic leadership development to
   ensure community impact and transformation. It is therefore not an academic
