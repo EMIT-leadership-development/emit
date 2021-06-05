@@ -8,6 +8,6 @@ product_type: subscription
 product_image: /images/products/subscriptions/sphere3.webp
 price: '99.99'
 terms: monthly
-sku: sphere3
+sku: donation-sphere3
 paymentLink: https://buy.stripe.com/5kA9AF7Bq8OFcykdQS
 ---
