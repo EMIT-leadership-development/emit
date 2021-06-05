@@ -1,0 +1,13 @@
+<button class="snipcart-add-item button primary"
+	data-item-name="{{ include.product.name }}"
+	data-item-id="{{ include.product.sku }}"
+	data-item-image="{{ include.product.product_image }}"
+	data-item-description="{{ include.product.description_html | strip_html }}"
+	data-item-url="{{ include.product.url }}"
+	data-item-price="{
+		{% for currency in site.data.currencies %}
+			&quot;{{ currency.code }}&quot;:{{ include.product.price_usd | times: currency.rateToUSD | round: 0 }} {% if forloop.last %}{% else %},{% endif %}
+		{% endfor %}
+	}">
+	Add to cart
+</button>

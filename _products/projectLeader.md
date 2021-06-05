@@ -8,7 +8,7 @@ description_html: >-
   and be more successful in executing their calling.</p>
 product_type: donation
 product_image: /images/products/projectLeader/ProjectLeader.webp
-price: 99.00 or  Own Amount
-sku: pl
-paymentLink: https://buy.stripe.com/aEU4gl08Ye8ZgOA4gl
+price_usd: 99.00
+# Other currency prices are calculated based on rateToUSD field in currency.yml
+sku: personal-support
 ---
