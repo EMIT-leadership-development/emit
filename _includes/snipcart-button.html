@@ -4,6 +4,9 @@
 	data-item-image="{{ include.product.product_image }}"
 	data-item-description="{{ include.product.description_html | strip_html }}"
 	data-item-url="{{ include.product.url }}"
+	data-item-custom1-name="Message"
+	data-item-custom1-type="textarea"
+	data-item-custom1-value=""
 	data-item-price="{
 		{% for currency in site.data.currencies %}
 			&quot;{{ currency.code }}&quot;:{{ include.product.price_usd | times: currency.rateToUSD | round: 0 }} {% if forloop.last %}{% else %},{% endif %}
