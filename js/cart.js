@@ -1,4 +1,43 @@
+// CUSTOM DONATION PARAMS
+// Parse the URL parameter
+function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+// Give the parameter a variable name
+let customContribution = getParameterByName('cc');
+console.log('customContribution is ', customContribution);
+if (customContribution != null) {
+    const button = document.querySelector('#submitCustomDonation');
+    button.setAttribute('data-item-price', customContribution)
+}
 
+// CUSTOM DONATION FORM
+function updateCustomDonation() {
+    const button = document.querySelector('#submitCustomDonation');
+    const transactionAmount = document.querySelector('#transaction-amt');
+    transactionAmount.addEventListener('change', () => {
+        // Sets the default amount when adding the item
+        button.setAttribute('data-item-price', transactionAmount.value);
+        button.setAttribute('data-item-url', '/donate/?cc=' + transactionAmount.value);
+    })
+    const message = document.querySelector('#message')
+    message.addEventListener('change', () => {
+        // Sets the message when adding the item
+        button.setAttribute("data-item-custom1-value", message.value);
+    })
+
+}
+updateCustomDonation();
+
+
+
+// SNIPCART FUNCTIONS
 document.addEventListener('snipcart.ready', () => {
     Snipcart.DEBUG = true;
     // 1. Listen for Currency Selection Action and change currency in snipcart and on page
