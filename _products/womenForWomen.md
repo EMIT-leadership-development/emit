@@ -9,8 +9,8 @@ description_html: >-
   preparing and motivating them.</p><p>Our Women for Women project allows you to
   invest in the lives of women in other parts of the world.</p>
 product_type: donation
-price: '19.00'
-sku: w4w
+price_usd: '19.00'
+# Other currency prices are calculated based on rateToUSD field in currency.yml
+sku: women-4-women
 product_image: /images/products/womenForWomen/women-for-women.webp
-paymentLink: https://buy.stripe.com/5kA5kpbRG4ypbugaEM
 ---

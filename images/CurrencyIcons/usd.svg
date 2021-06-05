@@ -1,0 +1,949 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Keyshape -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1235 650">
+    <rect width="1235" height="650" fill="#FFF" transform="translate(617.5,325) translate(-617.5,-325)"/>
+    <rect id="stripe" width="1235" height="50" fill="#B22234" transform="translate(617.5,25) translate(-617.5,-25)"/>
+    <g transform="translate(617.5,125) translate(-617.5,-25)">
+        <rect id="stripe-2" width="1235" height="50" fill="#B22234" transform="translate(617.5,25) translate(-617.5,-25)"/>
+    </g>
+    <g transform="translate(617.5,225) translate(-617.5,-25)">
+        <rect id="stripe-3" width="1235" height="50" fill="#B22234" transform="translate(617.5,25) translate(-617.5,-25)"/>
+    </g>
+    <g transform="translate(617.5,325) translate(-617.5,-25)">
+        <rect id="stripe-4" width="1235" height="50" fill="#B22234" transform="translate(617.5,25) translate(-617.5,-25)"/>
+    </g>
+    <g transform="translate(617.5,425) translate(-617.5,-25)">
+        <rect id="stripe-5" width="1235" height="50" fill="#B22234" transform="translate(617.5,25) translate(-617.5,-25)"/>
+    </g>
+    <g transform="translate(617.5,525) translate(-617.5,-25)">
+        <rect id="stripe-6" width="1235" height="50" fill="#B22234" transform="translate(617.5,25) translate(-617.5,-25)"/>
+    </g>
+    <g transform="translate(617.5,625) translate(-617.5,-25)">
+        <rect id="stripe-7" width="1235" height="50" fill="#B22234" transform="translate(617.5,25) translate(-617.5,-25)"/>
+    </g>
+    <rect width="494" height="350" fill="#3C3B6E" transform="translate(247,175) translate(-247,-175)"/>
+    <g transform="translate(247,173.088) scale(650,650) translate(0,0.00294114)">
+        <g id="u-2" transform="translate(0,-0.00294114) translate(0,0.00294114)">
+            <g transform="translate(0,-0.137941) translate(0,-0.0780589)">
+                <g id="x4-3" transform="translate(0,0.0780589) translate(0,-0.0780589)">
+                    <g id="s6-6" transform="translate(0,-0.00294114) translate(0,0.00294114)">
+                        <g transform="translate(-0.063,-0.00294114) translate(0,0.00294114)">
+                            <g id="s5-11" transform="translate(0,-0.00294114) translate(0,0.00294114)">
+                                <g transform="translate(-0.252,-0.00294114) translate(0,0.00294114)">
+                                    <g id="star-56" transform="translate(0,-0.00294114) translate(0,0.00294114)">
+                                        <g transform="translate(-0.00905189,0.0124589) rotate(-144) translate(0,0.0154)">
+                                            <path id="pt-276" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                        </g>
+                                        <g transform="translate(-0.0146463,-0.00475886) rotate(-72) translate(0,0.0154)">
+                                            <path id="pt-277" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                        </g>
+                                        <path id="pt-278" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                        <g transform="translate(0.0146463,-0.00475886) rotate(72) translate(0,0.0154)">
+                                            <path id="pt-279" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                        </g>
+                                        <g transform="translate(0.00905189,0.0124589) rotate(144) translate(0,0.0154)">
+                                            <path id="pt-280" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                        </g>
+                                    </g>
+                                </g>
+                                <g transform="translate(-0.126,-0.00294114) translate(0,0.00294114)">
+                                    <g id="star-57" transform="translate(0,-0.00294114) translate(0,0.00294114)">
+                                        <g transform="translate(-0.00905189,0.0124589) rotate(-144) translate(0,0.0154)">
+                                            <path id="pt-281" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                        </g>
+                                        <g transform="translate(-0.0146463,-0.00475886) rotate(-72) translate(0,0.0154)">
+                                            <path id="pt-282" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                        </g>
+                                        <path id="pt-283" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                        <g transform="translate(0.0146463,-0.00475886) rotate(72) translate(0,0.0154)">
+                                            <path id="pt-284" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                        </g>
+                                        <g transform="translate(0.00905189,0.0124589) rotate(144) translate(0,0.0154)">
+                                            <path id="pt-285" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                        </g>
+                                    </g>
+                                </g>
+                                <g id="star-58" transform="translate(0,-0.00294114) translate(0,0.00294114)">
+                                    <g transform="translate(-0.00905189,0.0124589) rotate(-144) translate(0,0.0154)">
+                                        <path id="pt-286" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    </g>
+                                    <g transform="translate(-0.0146463,-0.00475886) rotate(-72) translate(0,0.0154)">
+                                        <path id="pt-287" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    </g>
+                                    <path id="pt-288" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    <g transform="translate(0.0146463,-0.00475886) rotate(72) translate(0,0.0154)">
+                                        <path id="pt-289" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    </g>
+                                    <g transform="translate(0.00905189,0.0124589) rotate(144) translate(0,0.0154)">
+                                        <path id="pt-290" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    </g>
+                                </g>
+                                <g transform="translate(0.126,-0.00294114) translate(0,0.00294114)">
+                                    <g id="star-59" transform="translate(0,-0.00294114) translate(0,0.00294114)">
+                                        <g transform="translate(-0.00905189,0.0124589) rotate(-144) translate(0,0.0154)">
+                                            <path id="pt-291" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                        </g>
+                                        <g transform="translate(-0.0146463,-0.00475886) rotate(-72) translate(0,0.0154)">
+                                            <path id="pt-292" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                        </g>
+                                        <path id="pt-293" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                        <g transform="translate(0.0146463,-0.00475886) rotate(72) translate(0,0.0154)">
+                                            <path id="pt-294" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                        </g>
+                                        <g transform="translate(0.00905189,0.0124589) rotate(144) translate(0,0.0154)">
+                                            <path id="pt-295" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                        </g>
+                                    </g>
+                                </g>
+                                <g transform="translate(0.252,-0.00294114) translate(0,0.00294114)">
+                                    <g id="star-60" transform="translate(0,-0.00294114) translate(0,0.00294114)">
+                                        <g transform="translate(-0.00905189,0.0124589) rotate(-144) translate(0,0.0154)">
+                                            <path id="pt-296" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                        </g>
+                                        <g transform="translate(-0.0146463,-0.00475886) rotate(-72) translate(0,0.0154)">
+                                            <path id="pt-297" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                        </g>
+                                        <path id="pt-298" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                        <g transform="translate(0.0146463,-0.00475886) rotate(72) translate(0,0.0154)">
+                                            <path id="pt-299" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                        </g>
+                                        <g transform="translate(0.00905189,0.0124589) rotate(144) translate(0,0.0154)">
+                                            <path id="pt-300" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                        <g transform="translate(0.315,-0.00294114) translate(0,0.00294114)">
+                            <g id="star-61" transform="translate(0,-0.00294114) translate(0,0.00294114)">
+                                <g transform="translate(-0.00905189,0.0124589) rotate(-144) translate(0,0.0154)">
+                                    <path id="pt-301" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                </g>
+                                <g transform="translate(-0.0146463,-0.00475886) rotate(-72) translate(0,0.0154)">
+                                    <path id="pt-302" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                </g>
+                                <path id="pt-303" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                <g transform="translate(0.0146463,-0.00475886) rotate(72) translate(0,0.0154)">
+                                    <path id="pt-304" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                </g>
+                                <g transform="translate(0.00905189,0.0124589) rotate(144) translate(0,0.0154)">
+                                    <path id="pt-305" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                    <g transform="translate(0,0.0510589) translate(0,0.00294114)">
+                        <g id="s5-12" transform="translate(0,-0.00294114) translate(0,0.00294114)">
+                            <g transform="translate(-0.252,-0.00294114) translate(0,0.00294114)">
+                                <g id="star-62" transform="translate(0,-0.00294114) translate(0,0.00294114)">
+                                    <g transform="translate(-0.00905189,0.0124589) rotate(-144) translate(0,0.0154)">
+                                        <path id="pt-306" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    </g>
+                                    <g transform="translate(-0.0146463,-0.00475886) rotate(-72) translate(0,0.0154)">
+                                        <path id="pt-307" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    </g>
+                                    <path id="pt-308" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    <g transform="translate(0.0146463,-0.00475886) rotate(72) translate(0,0.0154)">
+                                        <path id="pt-309" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    </g>
+                                    <g transform="translate(0.00905189,0.0124589) rotate(144) translate(0,0.0154)">
+                                        <path id="pt-310" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    </g>
+                                </g>
+                            </g>
+                            <g transform="translate(-0.126,-0.00294114) translate(0,0.00294114)">
+                                <g id="star-63" transform="translate(0,-0.00294114) translate(0,0.00294114)">
+                                    <g transform="translate(-0.00905189,0.0124589) rotate(-144) translate(0,0.0154)">
+                                        <path id="pt-311" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    </g>
+                                    <g transform="translate(-0.0146463,-0.00475886) rotate(-72) translate(0,0.0154)">
+                                        <path id="pt-312" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    </g>
+                                    <path id="pt-313" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    <g transform="translate(0.0146463,-0.00475886) rotate(72) translate(0,0.0154)">
+                                        <path id="pt-314" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    </g>
+                                    <g transform="translate(0.00905189,0.0124589) rotate(144) translate(0,0.0154)">
+                                        <path id="pt-315" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    </g>
+                                </g>
+                            </g>
+                            <g id="star-64" transform="translate(0,-0.00294114) translate(0,0.00294114)">
+                                <g transform="translate(-0.00905189,0.0124589) rotate(-144) translate(0,0.0154)">
+                                    <path id="pt-316" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                </g>
+                                <g transform="translate(-0.0146463,-0.00475886) rotate(-72) translate(0,0.0154)">
+                                    <path id="pt-317" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                </g>
+                                <path id="pt-318" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                <g transform="translate(0.0146463,-0.00475886) rotate(72) translate(0,0.0154)">
+                                    <path id="pt-319" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                </g>
+                                <g transform="translate(0.00905189,0.0124589) rotate(144) translate(0,0.0154)">
+                                    <path id="pt-320" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                </g>
+                            </g>
+                            <g transform="translate(0.126,-0.00294114) translate(0,0.00294114)">
+                                <g id="star-65" transform="translate(0,-0.00294114) translate(0,0.00294114)">
+                                    <g transform="translate(-0.00905189,0.0124589) rotate(-144) translate(0,0.0154)">
+                                        <path id="pt-321" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    </g>
+                                    <g transform="translate(-0.0146463,-0.00475886) rotate(-72) translate(0,0.0154)">
+                                        <path id="pt-322" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    </g>
+                                    <path id="pt-323" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    <g transform="translate(0.0146463,-0.00475886) rotate(72) translate(0,0.0154)">
+                                        <path id="pt-324" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    </g>
+                                    <g transform="translate(0.00905189,0.0124589) rotate(144) translate(0,0.0154)">
+                                        <path id="pt-325" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    </g>
+                                </g>
+                            </g>
+                            <g transform="translate(0.252,-0.00294114) translate(0,0.00294114)">
+                                <g id="star-66" transform="translate(0,-0.00294114) translate(0,0.00294114)">
+                                    <g transform="translate(-0.00905189,0.0124589) rotate(-144) translate(0,0.0154)">
+                                        <path id="pt-326" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    </g>
+                                    <g transform="translate(-0.0146463,-0.00475886) rotate(-72) translate(0,0.0154)">
+                                        <path id="pt-327" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    </g>
+                                    <path id="pt-328" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    <g transform="translate(0.0146463,-0.00475886) rotate(72) translate(0,0.0154)">
+                                        <path id="pt-329" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    </g>
+                                    <g transform="translate(0.00905189,0.0124589) rotate(144) translate(0,0.0154)">
+                                        <path id="pt-330" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                    <g transform="translate(0,0.105059) translate(0,0.00294114)">
+                        <g id="s6-7" transform="translate(0,-0.00294114) translate(0,0.00294114)">
+                            <g transform="translate(-0.063,-0.00294114) translate(0,0.00294114)">
+                                <g id="s5-13" transform="translate(0,-0.00294114) translate(0,0.00294114)">
+                                    <g transform="translate(-0.252,-0.00294114) translate(0,0.00294114)">
+                                        <g id="star-67" transform="translate(0,-0.00294114) translate(0,0.00294114)">
+                                            <g transform="translate(-0.00905189,0.0124589) rotate(-144) translate(0,0.0154)">
+                                                <path id="pt-331" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                            </g>
+                                            <g transform="translate(-0.0146463,-0.00475886) rotate(-72) translate(0,0.0154)">
+                                                <path id="pt-332" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                            </g>
+                                            <path id="pt-333" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                            <g transform="translate(0.0146463,-0.00475886) rotate(72) translate(0,0.0154)">
+                                                <path id="pt-334" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                            </g>
+                                            <g transform="translate(0.00905189,0.0124589) rotate(144) translate(0,0.0154)">
+                                                <path id="pt-335" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                    <g transform="translate(-0.126,-0.00294114) translate(0,0.00294114)">
+                                        <g id="star-68" transform="translate(0,-0.00294114) translate(0,0.00294114)">
+                                            <g transform="translate(-0.00905189,0.0124589) rotate(-144) translate(0,0.0154)">
+                                                <path id="pt-336" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                            </g>
+                                            <g transform="translate(-0.0146463,-0.00475886) rotate(-72) translate(0,0.0154)">
+                                                <path id="pt-337" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                            </g>
+                                            <path id="pt-338" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                            <g transform="translate(0.0146463,-0.00475886) rotate(72) translate(0,0.0154)">
+                                                <path id="pt-339" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                            </g>
+                                            <g transform="translate(0.00905189,0.0124589) rotate(144) translate(0,0.0154)">
+                                                <path id="pt-340" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                    <g id="star-69" transform="translate(0,-0.00294114) translate(0,0.00294114)">
+                                        <g transform="translate(-0.00905189,0.0124589) rotate(-144) translate(0,0.0154)">
+                                            <path id="pt-341" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                        </g>
+                                        <g transform="translate(-0.0146463,-0.00475886) rotate(-72) translate(0,0.0154)">
+                                            <path id="pt-342" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                        </g>
+                                        <path id="pt-343" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                        <g transform="translate(0.0146463,-0.00475886) rotate(72) translate(0,0.0154)">
+                                            <path id="pt-344" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                        </g>
+                                        <g transform="translate(0.00905189,0.0124589) rotate(144) translate(0,0.0154)">
+                                            <path id="pt-345" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                        </g>
+                                    </g>
+                                    <g transform="translate(0.126,-0.00294114) translate(0,0.00294114)">
+                                        <g id="star-70" transform="translate(0,-0.00294114) translate(0,0.00294114)">
+                                            <g transform="translate(-0.00905189,0.0124589) rotate(-144) translate(0,0.0154)">
+                                                <path id="pt-346" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                            </g>
+                                            <g transform="translate(-0.0146463,-0.00475886) rotate(-72) translate(0,0.0154)">
+                                                <path id="pt-347" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                            </g>
+                                            <path id="pt-348" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                            <g transform="translate(0.0146463,-0.00475886) rotate(72) translate(0,0.0154)">
+                                                <path id="pt-349" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                            </g>
+                                            <g transform="translate(0.00905189,0.0124589) rotate(144) translate(0,0.0154)">
+                                                <path id="pt-350" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                    <g transform="translate(0.252,-0.00294114) translate(0,0.00294114)">
+                                        <g id="star-71" transform="translate(0,-0.00294114) translate(0,0.00294114)">
+                                            <g transform="translate(-0.00905189,0.0124589) rotate(-144) translate(0,0.0154)">
+                                                <path id="pt-351" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                            </g>
+                                            <g transform="translate(-0.0146463,-0.00475886) rotate(-72) translate(0,0.0154)">
+                                                <path id="pt-352" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                            </g>
+                                            <path id="pt-353" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                            <g transform="translate(0.0146463,-0.00475886) rotate(72) translate(0,0.0154)">
+                                                <path id="pt-354" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                            </g>
+                                            <g transform="translate(0.00905189,0.0124589) rotate(144) translate(0,0.0154)">
+                                                <path id="pt-355" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                            <g transform="translate(0.315,-0.00294114) translate(0,0.00294114)">
+                                <g id="star-72" transform="translate(0,-0.00294114) translate(0,0.00294114)">
+                                    <g transform="translate(-0.00905189,0.0124589) rotate(-144) translate(0,0.0154)">
+                                        <path id="pt-356" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    </g>
+                                    <g transform="translate(-0.0146463,-0.00475886) rotate(-72) translate(0,0.0154)">
+                                        <path id="pt-357" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    </g>
+                                    <path id="pt-358" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    <g transform="translate(0.0146463,-0.00475886) rotate(72) translate(0,0.0154)">
+                                        <path id="pt-359" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    </g>
+                                    <g transform="translate(0.00905189,0.0124589) rotate(144) translate(0,0.0154)">
+                                        <path id="pt-360" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                    <g transform="translate(0,0.159059) translate(0,0.00294114)">
+                        <g id="s5-14" transform="translate(0,-0.00294114) translate(0,0.00294114)">
+                            <g transform="translate(-0.252,-0.00294114) translate(0,0.00294114)">
+                                <g id="star-73" transform="translate(0,-0.00294114) translate(0,0.00294114)">
+                                    <g transform="translate(-0.00905189,0.0124589) rotate(-144) translate(0,0.0154)">
+                                        <path id="pt-361" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    </g>
+                                    <g transform="translate(-0.0146463,-0.00475886) rotate(-72) translate(0,0.0154)">
+                                        <path id="pt-362" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    </g>
+                                    <path id="pt-363" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    <g transform="translate(0.0146463,-0.00475886) rotate(72) translate(0,0.0154)">
+                                        <path id="pt-364" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    </g>
+                                    <g transform="translate(0.00905189,0.0124589) rotate(144) translate(0,0.0154)">
+                                        <path id="pt-365" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    </g>
+                                </g>
+                            </g>
+                            <g transform="translate(-0.126,-0.00294114) translate(0,0.00294114)">
+                                <g id="star-74" transform="translate(0,-0.00294114) translate(0,0.00294114)">
+                                    <g transform="translate(-0.00905189,0.0124589) rotate(-144) translate(0,0.0154)">
+                                        <path id="pt-366" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    </g>
+                                    <g transform="translate(-0.0146463,-0.00475886) rotate(-72) translate(0,0.0154)">
+                                        <path id="pt-367" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    </g>
+                                    <path id="pt-368" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    <g transform="translate(0.0146463,-0.00475886) rotate(72) translate(0,0.0154)">
+                                        <path id="pt-369" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    </g>
+                                    <g transform="translate(0.00905189,0.0124589) rotate(144) translate(0,0.0154)">
+                                        <path id="pt-370" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    </g>
+                                </g>
+                            </g>
+                            <g id="star-75" transform="translate(0,-0.00294114) translate(0,0.00294114)">
+                                <g transform="translate(-0.00905189,0.0124589) rotate(-144) translate(0,0.0154)">
+                                    <path id="pt-371" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                </g>
+                                <g transform="translate(-0.0146463,-0.00475886) rotate(-72) translate(0,0.0154)">
+                                    <path id="pt-372" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                </g>
+                                <path id="pt-373" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                <g transform="translate(0.0146463,-0.00475886) rotate(72) translate(0,0.0154)">
+                                    <path id="pt-374" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                </g>
+                                <g transform="translate(0.00905189,0.0124589) rotate(144) translate(0,0.0154)">
+                                    <path id="pt-375" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                </g>
+                            </g>
+                            <g transform="translate(0.126,-0.00294114) translate(0,0.00294114)">
+                                <g id="star-76" transform="translate(0,-0.00294114) translate(0,0.00294114)">
+                                    <g transform="translate(-0.00905189,0.0124589) rotate(-144) translate(0,0.0154)">
+                                        <path id="pt-376" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    </g>
+                                    <g transform="translate(-0.0146463,-0.00475886) rotate(-72) translate(0,0.0154)">
+                                        <path id="pt-377" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    </g>
+                                    <path id="pt-378" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    <g transform="translate(0.0146463,-0.00475886) rotate(72) translate(0,0.0154)">
+                                        <path id="pt-379" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    </g>
+                                    <g transform="translate(0.00905189,0.0124589) rotate(144) translate(0,0.0154)">
+                                        <path id="pt-380" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    </g>
+                                </g>
+                            </g>
+                            <g transform="translate(0.252,-0.00294114) translate(0,0.00294114)">
+                                <g id="star-77" transform="translate(0,-0.00294114) translate(0,0.00294114)">
+                                    <g transform="translate(-0.00905189,0.0124589) rotate(-144) translate(0,0.0154)">
+                                        <path id="pt-381" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    </g>
+                                    <g transform="translate(-0.0146463,-0.00475886) rotate(-72) translate(0,0.0154)">
+                                        <path id="pt-382" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    </g>
+                                    <path id="pt-383" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    <g transform="translate(0.0146463,-0.00475886) rotate(72) translate(0,0.0154)">
+                                        <path id="pt-384" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    </g>
+                                    <g transform="translate(0.00905189,0.0124589) rotate(144) translate(0,0.0154)">
+                                        <path id="pt-385" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <g id="x4-4" transform="translate(0,0.0780589) translate(0,-0.0780589)">
+                <g id="s6-8" transform="translate(0,-0.00294114) translate(0,0.00294114)">
+                    <g transform="translate(-0.063,-0.00294114) translate(0,0.00294114)">
+                        <g id="s5-15" transform="translate(0,-0.00294114) translate(0,0.00294114)">
+                            <g transform="translate(-0.252,-0.00294114) translate(0,0.00294114)">
+                                <g id="star-78" transform="translate(0,-0.00294114) translate(0,0.00294114)">
+                                    <g transform="translate(-0.00905189,0.0124589) rotate(-144) translate(0,0.0154)">
+                                        <path id="pt-386" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    </g>
+                                    <g transform="translate(-0.0146463,-0.00475886) rotate(-72) translate(0,0.0154)">
+                                        <path id="pt-387" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    </g>
+                                    <path id="pt-388" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    <g transform="translate(0.0146463,-0.00475886) rotate(72) translate(0,0.0154)">
+                                        <path id="pt-389" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    </g>
+                                    <g transform="translate(0.00905189,0.0124589) rotate(144) translate(0,0.0154)">
+                                        <path id="pt-390" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    </g>
+                                </g>
+                            </g>
+                            <g transform="translate(-0.126,-0.00294114) translate(0,0.00294114)">
+                                <g id="star-79" transform="translate(0,-0.00294114) translate(0,0.00294114)">
+                                    <g transform="translate(-0.00905189,0.0124589) rotate(-144) translate(0,0.0154)">
+                                        <path id="pt-391" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    </g>
+                                    <g transform="translate(-0.0146463,-0.00475886) rotate(-72) translate(0,0.0154)">
+                                        <path id="pt-392" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    </g>
+                                    <path id="pt-393" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    <g transform="translate(0.0146463,-0.00475886) rotate(72) translate(0,0.0154)">
+                                        <path id="pt-394" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    </g>
+                                    <g transform="translate(0.00905189,0.0124589) rotate(144) translate(0,0.0154)">
+                                        <path id="pt-395" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    </g>
+                                </g>
+                            </g>
+                            <g id="star-80" transform="translate(0,-0.00294114) translate(0,0.00294114)">
+                                <g transform="translate(-0.00905189,0.0124589) rotate(-144) translate(0,0.0154)">
+                                    <path id="pt-396" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                </g>
+                                <g transform="translate(-0.0146463,-0.00475886) rotate(-72) translate(0,0.0154)">
+                                    <path id="pt-397" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                </g>
+                                <path id="pt-398" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                <g transform="translate(0.0146463,-0.00475886) rotate(72) translate(0,0.0154)">
+                                    <path id="pt-399" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                </g>
+                                <g transform="translate(0.00905189,0.0124589) rotate(144) translate(0,0.0154)">
+                                    <path id="pt-400" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                </g>
+                            </g>
+                            <g transform="translate(0.126,-0.00294114) translate(0,0.00294114)">
+                                <g id="star-81" transform="translate(0,-0.00294114) translate(0,0.00294114)">
+                                    <g transform="translate(-0.00905189,0.0124589) rotate(-144) translate(0,0.0154)">
+                                        <path id="pt-401" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    </g>
+                                    <g transform="translate(-0.0146463,-0.00475886) rotate(-72) translate(0,0.0154)">
+                                        <path id="pt-402" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    </g>
+                                    <path id="pt-403" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    <g transform="translate(0.0146463,-0.00475886) rotate(72) translate(0,0.0154)">
+                                        <path id="pt-404" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    </g>
+                                    <g transform="translate(0.00905189,0.0124589) rotate(144) translate(0,0.0154)">
+                                        <path id="pt-405" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    </g>
+                                </g>
+                            </g>
+                            <g transform="translate(0.252,-0.00294114) translate(0,0.00294114)">
+                                <g id="star-82" transform="translate(0,-0.00294114) translate(0,0.00294114)">
+                                    <g transform="translate(-0.00905189,0.0124589) rotate(-144) translate(0,0.0154)">
+                                        <path id="pt-406" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    </g>
+                                    <g transform="translate(-0.0146463,-0.00475886) rotate(-72) translate(0,0.0154)">
+                                        <path id="pt-407" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    </g>
+                                    <path id="pt-408" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    <g transform="translate(0.0146463,-0.00475886) rotate(72) translate(0,0.0154)">
+                                        <path id="pt-409" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    </g>
+                                    <g transform="translate(0.00905189,0.0124589) rotate(144) translate(0,0.0154)">
+                                        <path id="pt-410" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                    <g transform="translate(0.315,-0.00294114) translate(0,0.00294114)">
+                        <g id="star-83" transform="translate(0,-0.00294114) translate(0,0.00294114)">
+                            <g transform="translate(-0.00905189,0.0124589) rotate(-144) translate(0,0.0154)">
+                                <path id="pt-411" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                            </g>
+                            <g transform="translate(-0.0146463,-0.00475886) rotate(-72) translate(0,0.0154)">
+                                <path id="pt-412" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                            </g>
+                            <path id="pt-413" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                            <g transform="translate(0.0146463,-0.00475886) rotate(72) translate(0,0.0154)">
+                                <path id="pt-414" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                            </g>
+                            <g transform="translate(0.00905189,0.0124589) rotate(144) translate(0,0.0154)">
+                                <path id="pt-415" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g transform="translate(0,0.0510589) translate(0,0.00294114)">
+                    <g id="s5-16" transform="translate(0,-0.00294114) translate(0,0.00294114)">
+                        <g transform="translate(-0.252,-0.00294114) translate(0,0.00294114)">
+                            <g id="star-84" transform="translate(0,-0.00294114) translate(0,0.00294114)">
+                                <g transform="translate(-0.00905189,0.0124589) rotate(-144) translate(0,0.0154)">
+                                    <path id="pt-416" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                </g>
+                                <g transform="translate(-0.0146463,-0.00475886) rotate(-72) translate(0,0.0154)">
+                                    <path id="pt-417" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                </g>
+                                <path id="pt-418" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                <g transform="translate(0.0146463,-0.00475886) rotate(72) translate(0,0.0154)">
+                                    <path id="pt-419" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                </g>
+                                <g transform="translate(0.00905189,0.0124589) rotate(144) translate(0,0.0154)">
+                                    <path id="pt-420" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                </g>
+                            </g>
+                        </g>
+                        <g transform="translate(-0.126,-0.00294114) translate(0,0.00294114)">
+                            <g id="star-85" transform="translate(0,-0.00294114) translate(0,0.00294114)">
+                                <g transform="translate(-0.00905189,0.0124589) rotate(-144) translate(0,0.0154)">
+                                    <path id="pt-421" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                </g>
+                                <g transform="translate(-0.0146463,-0.00475886) rotate(-72) translate(0,0.0154)">
+                                    <path id="pt-422" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                </g>
+                                <path id="pt-423" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                <g transform="translate(0.0146463,-0.00475886) rotate(72) translate(0,0.0154)">
+                                    <path id="pt-424" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                </g>
+                                <g transform="translate(0.00905189,0.0124589) rotate(144) translate(0,0.0154)">
+                                    <path id="pt-425" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                </g>
+                            </g>
+                        </g>
+                        <g id="star-86" transform="translate(0,-0.00294114) translate(0,0.00294114)">
+                            <g transform="translate(-0.00905189,0.0124589) rotate(-144) translate(0,0.0154)">
+                                <path id="pt-426" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                            </g>
+                            <g transform="translate(-0.0146463,-0.00475886) rotate(-72) translate(0,0.0154)">
+                                <path id="pt-427" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                            </g>
+                            <path id="pt-428" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                            <g transform="translate(0.0146463,-0.00475886) rotate(72) translate(0,0.0154)">
+                                <path id="pt-429" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                            </g>
+                            <g transform="translate(0.00905189,0.0124589) rotate(144) translate(0,0.0154)">
+                                <path id="pt-430" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                            </g>
+                        </g>
+                        <g transform="translate(0.126,-0.00294114) translate(0,0.00294114)">
+                            <g id="star-87" transform="translate(0,-0.00294114) translate(0,0.00294114)">
+                                <g transform="translate(-0.00905189,0.0124589) rotate(-144) translate(0,0.0154)">
+                                    <path id="pt-431" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                </g>
+                                <g transform="translate(-0.0146463,-0.00475886) rotate(-72) translate(0,0.0154)">
+                                    <path id="pt-432" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                </g>
+                                <path id="pt-433" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                <g transform="translate(0.0146463,-0.00475886) rotate(72) translate(0,0.0154)">
+                                    <path id="pt-434" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                </g>
+                                <g transform="translate(0.00905189,0.0124589) rotate(144) translate(0,0.0154)">
+                                    <path id="pt-435" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                </g>
+                            </g>
+                        </g>
+                        <g transform="translate(0.252,-0.00294114) translate(0,0.00294114)">
+                            <g id="star-88" transform="translate(0,-0.00294114) translate(0,0.00294114)">
+                                <g transform="translate(-0.00905189,0.0124589) rotate(-144) translate(0,0.0154)">
+                                    <path id="pt-436" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                </g>
+                                <g transform="translate(-0.0146463,-0.00475886) rotate(-72) translate(0,0.0154)">
+                                    <path id="pt-437" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                </g>
+                                <path id="pt-438" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                <g transform="translate(0.0146463,-0.00475886) rotate(72) translate(0,0.0154)">
+                                    <path id="pt-439" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                </g>
+                                <g transform="translate(0.00905189,0.0124589) rotate(144) translate(0,0.0154)">
+                                    <path id="pt-440" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g transform="translate(0,0.105059) translate(0,0.00294114)">
+                    <g id="s6-9" transform="translate(0,-0.00294114) translate(0,0.00294114)">
+                        <g transform="translate(-0.063,-0.00294114) translate(0,0.00294114)">
+                            <g id="s5-17" transform="translate(0,-0.00294114) translate(0,0.00294114)">
+                                <g transform="translate(-0.252,-0.00294114) translate(0,0.00294114)">
+                                    <g id="star-89" transform="translate(0,-0.00294114) translate(0,0.00294114)">
+                                        <g transform="translate(-0.00905189,0.0124589) rotate(-144) translate(0,0.0154)">
+                                            <path id="pt-441" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                        </g>
+                                        <g transform="translate(-0.0146463,-0.00475886) rotate(-72) translate(0,0.0154)">
+                                            <path id="pt-442" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                        </g>
+                                        <path id="pt-443" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                        <g transform="translate(0.0146463,-0.00475886) rotate(72) translate(0,0.0154)">
+                                            <path id="pt-444" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                        </g>
+                                        <g transform="translate(0.00905189,0.0124589) rotate(144) translate(0,0.0154)">
+                                            <path id="pt-445" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                        </g>
+                                    </g>
+                                </g>
+                                <g transform="translate(-0.126,-0.00294114) translate(0,0.00294114)">
+                                    <g id="star-90" transform="translate(0,-0.00294114) translate(0,0.00294114)">
+                                        <g transform="translate(-0.00905189,0.0124589) rotate(-144) translate(0,0.0154)">
+                                            <path id="pt-446" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                        </g>
+                                        <g transform="translate(-0.0146463,-0.00475886) rotate(-72) translate(0,0.0154)">
+                                            <path id="pt-447" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                        </g>
+                                        <path id="pt-448" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                        <g transform="translate(0.0146463,-0.00475886) rotate(72) translate(0,0.0154)">
+                                            <path id="pt-449" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                        </g>
+                                        <g transform="translate(0.00905189,0.0124589) rotate(144) translate(0,0.0154)">
+                                            <path id="pt-450" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                        </g>
+                                    </g>
+                                </g>
+                                <g id="star-91" transform="translate(0,-0.00294114) translate(0,0.00294114)">
+                                    <g transform="translate(-0.00905189,0.0124589) rotate(-144) translate(0,0.0154)">
+                                        <path id="pt-451" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    </g>
+                                    <g transform="translate(-0.0146463,-0.00475886) rotate(-72) translate(0,0.0154)">
+                                        <path id="pt-452" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    </g>
+                                    <path id="pt-453" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    <g transform="translate(0.0146463,-0.00475886) rotate(72) translate(0,0.0154)">
+                                        <path id="pt-454" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    </g>
+                                    <g transform="translate(0.00905189,0.0124589) rotate(144) translate(0,0.0154)">
+                                        <path id="pt-455" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    </g>
+                                </g>
+                                <g transform="translate(0.126,-0.00294114) translate(0,0.00294114)">
+                                    <g id="star-92" transform="translate(0,-0.00294114) translate(0,0.00294114)">
+                                        <g transform="translate(-0.00905189,0.0124589) rotate(-144) translate(0,0.0154)">
+                                            <path id="pt-456" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                        </g>
+                                        <g transform="translate(-0.0146463,-0.00475886) rotate(-72) translate(0,0.0154)">
+                                            <path id="pt-457" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                        </g>
+                                        <path id="pt-458" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                        <g transform="translate(0.0146463,-0.00475886) rotate(72) translate(0,0.0154)">
+                                            <path id="pt-459" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                        </g>
+                                        <g transform="translate(0.00905189,0.0124589) rotate(144) translate(0,0.0154)">
+                                            <path id="pt-460" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                        </g>
+                                    </g>
+                                </g>
+                                <g transform="translate(0.252,-0.00294114) translate(0,0.00294114)">
+                                    <g id="star-93" transform="translate(0,-0.00294114) translate(0,0.00294114)">
+                                        <g transform="translate(-0.00905189,0.0124589) rotate(-144) translate(0,0.0154)">
+                                            <path id="pt-461" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                        </g>
+                                        <g transform="translate(-0.0146463,-0.00475886) rotate(-72) translate(0,0.0154)">
+                                            <path id="pt-462" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                        </g>
+                                        <path id="pt-463" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                        <g transform="translate(0.0146463,-0.00475886) rotate(72) translate(0,0.0154)">
+                                            <path id="pt-464" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                        </g>
+                                        <g transform="translate(0.00905189,0.0124589) rotate(144) translate(0,0.0154)">
+                                            <path id="pt-465" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                        <g transform="translate(0.315,-0.00294114) translate(0,0.00294114)">
+                            <g id="star-94" transform="translate(0,-0.00294114) translate(0,0.00294114)">
+                                <g transform="translate(-0.00905189,0.0124589) rotate(-144) translate(0,0.0154)">
+                                    <path id="pt-466" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                </g>
+                                <g transform="translate(-0.0146463,-0.00475886) rotate(-72) translate(0,0.0154)">
+                                    <path id="pt-467" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                </g>
+                                <path id="pt-468" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                <g transform="translate(0.0146463,-0.00475886) rotate(72) translate(0,0.0154)">
+                                    <path id="pt-469" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                </g>
+                                <g transform="translate(0.00905189,0.0124589) rotate(144) translate(0,0.0154)">
+                                    <path id="pt-470" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g transform="translate(0,0.159059) translate(0,0.00294114)">
+                    <g id="s5-18" transform="translate(0,-0.00294114) translate(0,0.00294114)">
+                        <g transform="translate(-0.252,-0.00294114) translate(0,0.00294114)">
+                            <g id="star-95" transform="translate(0,-0.00294114) translate(0,0.00294114)">
+                                <g transform="translate(-0.00905189,0.0124589) rotate(-144) translate(0,0.0154)">
+                                    <path id="pt-471" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                </g>
+                                <g transform="translate(-0.0146463,-0.00475886) rotate(-72) translate(0,0.0154)">
+                                    <path id="pt-472" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                </g>
+                                <path id="pt-473" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                <g transform="translate(0.0146463,-0.00475886) rotate(72) translate(0,0.0154)">
+                                    <path id="pt-474" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                </g>
+                                <g transform="translate(0.00905189,0.0124589) rotate(144) translate(0,0.0154)">
+                                    <path id="pt-475" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                </g>
+                            </g>
+                        </g>
+                        <g transform="translate(-0.126,-0.00294114) translate(0,0.00294114)">
+                            <g id="star-96" transform="translate(0,-0.00294114) translate(0,0.00294114)">
+                                <g transform="translate(-0.00905189,0.0124589) rotate(-144) translate(0,0.0154)">
+                                    <path id="pt-476" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                </g>
+                                <g transform="translate(-0.0146463,-0.00475886) rotate(-72) translate(0,0.0154)">
+                                    <path id="pt-477" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                </g>
+                                <path id="pt-478" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                <g transform="translate(0.0146463,-0.00475886) rotate(72) translate(0,0.0154)">
+                                    <path id="pt-479" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                </g>
+                                <g transform="translate(0.00905189,0.0124589) rotate(144) translate(0,0.0154)">
+                                    <path id="pt-480" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                </g>
+                            </g>
+                        </g>
+                        <g id="star-97" transform="translate(0,-0.00294114) translate(0,0.00294114)">
+                            <g transform="translate(-0.00905189,0.0124589) rotate(-144) translate(0,0.0154)">
+                                <path id="pt-481" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                            </g>
+                            <g transform="translate(-0.0146463,-0.00475886) rotate(-72) translate(0,0.0154)">
+                                <path id="pt-482" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                            </g>
+                            <path id="pt-483" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                            <g transform="translate(0.0146463,-0.00475886) rotate(72) translate(0,0.0154)">
+                                <path id="pt-484" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                            </g>
+                            <g transform="translate(0.00905189,0.0124589) rotate(144) translate(0,0.0154)">
+                                <path id="pt-485" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                            </g>
+                        </g>
+                        <g transform="translate(0.126,-0.00294114) translate(0,0.00294114)">
+                            <g id="star-98" transform="translate(0,-0.00294114) translate(0,0.00294114)">
+                                <g transform="translate(-0.00905189,0.0124589) rotate(-144) translate(0,0.0154)">
+                                    <path id="pt-486" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                </g>
+                                <g transform="translate(-0.0146463,-0.00475886) rotate(-72) translate(0,0.0154)">
+                                    <path id="pt-487" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                </g>
+                                <path id="pt-488" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                <g transform="translate(0.0146463,-0.00475886) rotate(72) translate(0,0.0154)">
+                                    <path id="pt-489" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                </g>
+                                <g transform="translate(0.00905189,0.0124589) rotate(144) translate(0,0.0154)">
+                                    <path id="pt-490" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                </g>
+                            </g>
+                        </g>
+                        <g transform="translate(0.252,-0.00294114) translate(0,0.00294114)">
+                            <g id="star-99" transform="translate(0,-0.00294114) translate(0,0.00294114)">
+                                <g transform="translate(-0.00905189,0.0124589) rotate(-144) translate(0,0.0154)">
+                                    <path id="pt-491" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                </g>
+                                <g transform="translate(-0.0146463,-0.00475886) rotate(-72) translate(0,0.0154)">
+                                    <path id="pt-492" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                </g>
+                                <path id="pt-493" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                <g transform="translate(0.0146463,-0.00475886) rotate(72) translate(0,0.0154)">
+                                    <path id="pt-494" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                </g>
+                                <g transform="translate(0.00905189,0.0124589) rotate(144) translate(0,0.0154)">
+                                    <path id="pt-495" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <g transform="translate(0,0.213059) translate(0,0.00294114)">
+                <g id="s6-10" transform="translate(0,-0.00294114) translate(0,0.00294114)">
+                    <g transform="translate(-0.063,-0.00294114) translate(0,0.00294114)">
+                        <g id="s5-19" transform="translate(0,-0.00294114) translate(0,0.00294114)">
+                            <g transform="translate(-0.252,-0.00294114) translate(0,0.00294114)">
+                                <g id="star-100" transform="translate(0,-0.00294114) translate(0,0.00294114)">
+                                    <g transform="translate(-0.00905189,0.0124589) rotate(-144) translate(0,0.0154)">
+                                        <path id="pt-496" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    </g>
+                                    <g transform="translate(-0.0146463,-0.00475886) rotate(-72) translate(0,0.0154)">
+                                        <path id="pt-497" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    </g>
+                                    <path id="pt-498" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    <g transform="translate(0.0146463,-0.00475886) rotate(72) translate(0,0.0154)">
+                                        <path id="pt-499" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    </g>
+                                    <g transform="translate(0.00905189,0.0124589) rotate(144) translate(0,0.0154)">
+                                        <path id="pt-500" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    </g>
+                                </g>
+                            </g>
+                            <g transform="translate(-0.126,-0.00294114) translate(0,0.00294114)">
+                                <g id="star-101" transform="translate(0,-0.00294114) translate(0,0.00294114)">
+                                    <g transform="translate(-0.00905189,0.0124589) rotate(-144) translate(0,0.0154)">
+                                        <path id="pt-501" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    </g>
+                                    <g transform="translate(-0.0146463,-0.00475886) rotate(-72) translate(0,0.0154)">
+                                        <path id="pt-502" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    </g>
+                                    <path id="pt-503" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    <g transform="translate(0.0146463,-0.00475886) rotate(72) translate(0,0.0154)">
+                                        <path id="pt-504" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    </g>
+                                    <g transform="translate(0.00905189,0.0124589) rotate(144) translate(0,0.0154)">
+                                        <path id="pt-505" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    </g>
+                                </g>
+                            </g>
+                            <g id="star-102" transform="translate(0,-0.00294114) translate(0,0.00294114)">
+                                <g transform="translate(-0.00905189,0.0124589) rotate(-144) translate(0,0.0154)">
+                                    <path id="pt-506" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                </g>
+                                <g transform="translate(-0.0146463,-0.00475886) rotate(-72) translate(0,0.0154)">
+                                    <path id="pt-507" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                </g>
+                                <path id="pt-508" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                <g transform="translate(0.0146463,-0.00475886) rotate(72) translate(0,0.0154)">
+                                    <path id="pt-509" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                </g>
+                                <g transform="translate(0.00905189,0.0124589) rotate(144) translate(0,0.0154)">
+                                    <path id="pt-510" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                </g>
+                            </g>
+                            <g transform="translate(0.126,-0.00294114) translate(0,0.00294114)">
+                                <g id="star-103" transform="translate(0,-0.00294114) translate(0,0.00294114)">
+                                    <g transform="translate(-0.00905189,0.0124589) rotate(-144) translate(0,0.0154)">
+                                        <path id="pt-511" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    </g>
+                                    <g transform="translate(-0.0146463,-0.00475886) rotate(-72) translate(0,0.0154)">
+                                        <path id="pt-512" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    </g>
+                                    <path id="pt-513" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    <g transform="translate(0.0146463,-0.00475886) rotate(72) translate(0,0.0154)">
+                                        <path id="pt-514" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    </g>
+                                    <g transform="translate(0.00905189,0.0124589) rotate(144) translate(0,0.0154)">
+                                        <path id="pt-515" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    </g>
+                                </g>
+                            </g>
+                            <g transform="translate(0.252,-0.00294114) translate(0,0.00294114)">
+                                <g id="star-104" transform="translate(0,-0.00294114) translate(0,0.00294114)">
+                                    <g transform="translate(-0.00905189,0.0124589) rotate(-144) translate(0,0.0154)">
+                                        <path id="pt-516" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    </g>
+                                    <g transform="translate(-0.0146463,-0.00475886) rotate(-72) translate(0,0.0154)">
+                                        <path id="pt-517" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    </g>
+                                    <path id="pt-518" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    <g transform="translate(0.0146463,-0.00475886) rotate(72) translate(0,0.0154)">
+                                        <path id="pt-519" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    </g>
+                                    <g transform="translate(0.00905189,0.0124589) rotate(144) translate(0,0.0154)">
+                                        <path id="pt-520" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                    <g transform="translate(0.315,-0.00294114) translate(0,0.00294114)">
+                        <g id="star-105" transform="translate(0,-0.00294114) translate(0,0.00294114)">
+                            <g transform="translate(-0.00905189,0.0124589) rotate(-144) translate(0,0.0154)">
+                                <path id="pt-521" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                            </g>
+                            <g transform="translate(-0.0146463,-0.00475886) rotate(-72) translate(0,0.0154)">
+                                <path id="pt-522" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                            </g>
+                            <path id="pt-523" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                            <g transform="translate(0.0146463,-0.00475886) rotate(72) translate(0,0.0154)">
+                                <path id="pt-524" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                            </g>
+                            <g transform="translate(0.00905189,0.0124589) rotate(144) translate(0,0.0154)">
+                                <path id="pt-525" fill="#FFF" d="M-0.16246,0L0,-0.5L0.16246,0Z" transform="translate(0,-0.0154) scale(0.0616,0.0616) translate(0,0.25)"/>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+    <script><![CDATA[/*
+ KeyshapeJS v1.1.1 (c) 2018-2021 Pixofield Ltd | pixofield.com/keyshapejs/mit-license */
+window.KeyshapeJS=function(){function t(a){return"undefined"!==typeof a}function x(a,b){return a&&0==a.indexOf(b)}function R(a){var b={},c;for(c in a)b[c]=a[c];return b}function H(a){if(!isFinite(a))throw Error("Non-finite value");}function S(a){if(14>=a)return 16;var b=T[a];b||(b=t(da[a])?0|(a.toLowerCase().indexOf("color")==a.length-5?48:0):1);return b}function K(a){return 0<=a?Math.pow(a,1/3):-Math.pow(-a,1/3)}function ea(a,b,c,d){if(0==a)return 0==b?b=-d/c:(a=Math.sqrt(c*c-4*b*d),d=(-c+a)/(2*
+b),0<=d&&1>=d?b=d:(d=(-c-a)/(2*b),b=0<=d&&1>=d?d:0)),b;var e=c/a-b*b/(a*a)/3;c=b*b*b/(a*a*a)/13.5-b*c/(a*a)/3+d/a;var n=c*c/4+e*e*e/27;b=-b/(3*a);if(0>=n){if(0==e&&0==c)return-K(d/a);a=Math.sqrt(c*c/4-n);d=Math.acos(-c/2/a);c=Math.cos(d/3);d=Math.sqrt(3)*Math.sin(d/3);a=K(a);e=2*a*c+b;if(0<=e&&1>=e)return e;e=-a*(c+d)+b;if(0<=e&&1>=e)return e;e=a*(d-c)+b;if(0<=e&&1>=e)return e}else{a=K(-c/2+Math.sqrt(n));c=K(-c/2-Math.sqrt(n));d=a+c+b;if(0<=d&&1>=d)return d;d=-(a+c)/2+b;if(0<=d&&1>=d)return d}return 0}
+function fa(a,b){if(48==a&&"number"===typeof b)return"rgba("+(b>>>24)+","+(b>>>16&255)+","+(b>>>8&255)+","+(b&255)/255+")";if(64==a)return b=b.map(function(a){return a+"px"}),b.join(",");if(96==a){a="";for(var c=b.length,d=0;d<c;d+=2)a+=b[d],a+=b[d+1].join(",");return a}if(80==a){if(0==b[0])return"none";a="";c=b.length;for(d=0;d<c;)a+=U[b[d]],1==b[d]?a+="("+b[d+1]+") ":5==b[d]?(a+="("+b[d+1]+"px "+b[d+2]+"px "+b[d+3]+"px rgba("+(b[d+4]>>>24)+","+(b[d+4]>>16&255)+","+(b[d+4]>>8&255)+","+(b[d+4]&255)/
+255+")) ",d+=3):a=2==b[d]?a+("("+b[d+1]+"px) "):7==b[d]?a+("("+b[d+1]+"deg) "):a+("("+(0>b[d+1]?0:b[d+1])+") "),d+=2;return a}return 32==a?b+"px":b}function y(a){return 0>=a?0:255<=a?255:a}function ha(a,b,c,d){if(16==a||32==a)return(c-b)*d+b;if(0==a)return.5>d?b:c;if(48==a){if("number"===typeof b&&"number"===typeof c){var e=1-d;return(y(e*(b>>>24)+d*(c>>>24))<<24|y(e*(b>>>16&255)+d*(c>>>16&255))<<16|y(e*(b>>>8&255)+d*(c>>>8&255))<<8|y(e*(b&255)+d*(c&255)))>>>0}return.5>d?b:c}if(64==a){0==b.length&&
+(b=[0]);0==c.length&&(c=[0]);var n=b.length;b.length!=c.length&&(n=b.length*c.length);var q=[];for(a=0;a<n;++a){var h=b[a%b.length];var g=(c[a%c.length]-h)*d+h;0>g&&(g=0);q.push(g)}return q}if(96==a){if(b.length!=c.length)return.5>d?b:c;n=b.length;q=[];for(a=0;a<n;a+=2){if(b[a]!==c[a])return.5>d?b:c;q[a]=b[a];q[a+1]=[];for(h=0;h<b[a+1].length;++h)q[a+1].push((c[a+1][h]-b[a+1][h])*d+b[a+1][h])}return q}if(80==a){n=b.length;if(n!=c.length)return.5>d?b:c;q=[];for(a=0;a<n;){if(b[a]!=c[a]||1==b[a])return.5>
+d?b:c;q[a]=b[a];q[a+1]=(c[a+1]-b[a+1])*d+b[a+1];if(5==b[a]){q[a+2]=(c[a+2]-b[a+2])*d+b[a+2];q[a+3]=(c[a+3]-b[a+3])*d+b[a+3];e=1-d;var f=b[a+4],l=c[a+4];g=e*(f>>>24)+d*(l>>>24);var m=e*(f>>16&255)+d*(l>>16&255);h=e*(f>>8&255)+d*(l>>8&255);e=e*(f&255)+d*(l&255);q[a+4]=(y(m)<<16|y(h)<<8|y(e))+16777216*(y(g)|0);a+=3}a+=2}return q}return 0}function V(a,b){a:{var c=a+b[2];var d=b[4].length;for(var e=0;e<d;++e)if(c<b[4][e]){c=e;break a}c=d-1}d=b[2];e=b[4][c-1]-d;a=(a-e)/(b[4][c]-d-e);if(b[6]&&b[6].length>
+c-1)if(d=b[6][c-1],1==d[0])if(0>=a)a=0;else if(1<=a)a=1;else{e=d[1];var n=d[3];a=ea(3*e-3*n+1,-6*e+3*n,3*e,-a);a=3*a*(1-a)*(1-a)*d[2]+3*a*a*(1-a)*d[4]+a*a*a}else 2==d[0]?(d=d[1],a=Math.ceil(a*d)/d):3==d[0]&&(d=d[1],a=Math.floor(a*d)/d);return ha(b[1]&240,b[5][c-1],b[5][c],a)}function L(){u||(v=(new Date).getTime()+W)}function O(a){if(a||!E){for(var b=!1,c=0;c<w.length;++c)w[c].J(a)&&(b=!0);if(a)for(;0<I.length;)if(a=I.shift(),c=a[0],1==a[1])c.onfinish&&(c.onfinish(),b=!0),c.I();else if(2==a[1]&&c.onloop)c.onloop();
+return b}}function X(){L();O(!0)&&!u?(E=!0,M(X)):E=!1}function N(){E||(E=!0,M(X))}function Y(a,b){var c=[];a.split(b).forEach(function(a){c.push(parseFloat(a))});return c}function A(a){-1==a.indexOf(",")&&(a=a.replace(" ",","));return Y(a,",")}function Z(a){a._ks||(a._ks={});if(!a._ks.transform){for(var b=a._ks.transform=[],c=0;14>=c;++c)b[c]=0;b[10]=1;b[11]=1;if(a=a.getAttribute("transform")){a=a.trim().split(") ");for(c=a.length-2;0<=c;--c)if(x(a[c],"translate(")){for(var d=0;d<c;d++)a.shift();
+break}c=a.shift();x(c,"translate(")&&(c=A(c.substring(10)),b[1]=c[0],b[2]=t(c[1])?c[1]:0,c=a.shift());x(c,"rotate(")&&(c=A(c.substring(7)),b[6]=c[0],c=a.shift());x(c,"skewX(")&&(c=A(c.substring(6)),b[7]=c[0],c=a.shift());x(c,"skewY(")&&(c=A(c.substring(6)),b[8]=c[0],c=a.shift());x(c,"scale(")&&(c=A(c.substring(6)),b[10]=c[0],b[11]=t(c[1])?c[1]:c[0],c=a.shift());x(c,"translate(")&&(c=A(c.substring(10)),b[13]=c[0],b[14]=t(c[1])?c[1]:0)}}}function aa(a){this.h=a;this.A=[];this.C=[];this.v=0;this.s=this.a=
+this.c=null;this.i=this.f=this.g=0;this.b=1;this.j=this.F=this.o=!1}function J(a,b,c){b=a[b];void 0===b&&(b=a[c]);return b}function ia(a){return Array.isArray(a)?a:x(a,"cubic-bezier(")?(a=a.substring(13,a.length-1).split(","),[1,parseFloat(a[0]),parseFloat(a[1]),parseFloat(a[2]),parseFloat(a[3])]):x(a,"steps(")?(a=a.substring(6,a.length-1).split(","),[a[1]&&"start"==a[1].trim()?2:3,parseFloat(a[0])]):[0]}function ja(a){a=a.trim();return x(a,"#")?(parseInt(a.substring(1),16)<<8)+255:x(a,"rgba(")?(a=
+a.substring(5,a.length-1),a=a.split(","),(parseInt(a[0],10)<<24)+(parseInt(a[1],10)<<16)+(parseInt(a[2],10)<<8)+255*parseFloat(a[3])<<0):a}function ba(a){!1===a.j&&(w.push(a),a.j=!0,!1!==a.h.autoplay&&a.play());return this}function P(a){if(!0===a.j){a._cancel();var b=w.indexOf(a);-1<b&&w.splice(b,1);b=I.indexOf(a);-1<b&&I.splice(b,1);a.j=!1}return this}var Q=Error("Not in timeline list"),ca="mpath posX posY    rotate skewX skewY  scaleX scaleY  anchorX anchorY".split(" "),ka=" translate translate    rotate skewX skewY  scale scale  translate translate".split(" "),
+U="none url blur brightness contrast drop-shadow grayscale hue-rotate invert opacity saturate sepia".split(" "),M=window.requestAnimationFrame||window.webkitRequestAnimationFrame||window.mozRequestAnimationFrame||window.oRequestAnimationFrame||window.msRequestAnimationFrame||null;M||(M=function(a){window.setTimeout(a,16)});var la=navigator.vendor.match(/apple/i),T={d:97,fill:48,fillOpacity:16,filter:80,height:33,opacity:16,offsetDistance:33,stroke:48,strokeDasharray:64,strokeDashoffset:32,strokeOpacity:16,
+strokeWidth:32,transform:1,width:33},da=window.getComputedStyle(document.documentElement),E=!1,v=(new Date).getTime(),u,W=0,w=[],I=[];aa.prototype={B:function(a){var b=0;if(null!==this.c){var c=this.l();0<this.b&&null!==c&&c>=this.f?this.i?(this.c=v-this.g/this.b,this.i--,b=2):(b=1,a?this.a=c:this.a=this.s?Math.max(this.s,this.f):this.f):0>this.b&&null!==c&&c<=this.g?this.i&&Infinity!=this.f?(this.c=v-this.f/this.b,this.i--,b=2):(this.i=0,b=1,a?this.a=c:this.a=this.s?Math.min(this.s,this.g):this.g):
+null!==c&&0!=this.b&&(a&&null!==this.a&&(this.c=v-this.a/this.b),this.a=null)}this.s=this.l();return b},J:function(a){a&&(this.o&&(this.o=!1,null===this.c&&(0!=this.b&&null!==this.a?(this.c=v-this.a/this.b,this.a=null):this.c=v)),null===this.a&&null!==this.c&&(a=this.B(!1),0!=a&&I.push([this,a])));a=this.l();if(null===a)return!1;for(var b=this.A,c=this.C,d=0;d<b.length;++d){for(var e=b[d],n=!1,q=0;q<c[d].length;++q){var h=c[d][q],g=h[0];if(null!==g){var f=h[2];var l=h[4].length,m=h[4][l-1]-f;f=0==
+m?h[5][l-1]:a<=f?h[5][0]:a>=f+h[3]?0==h[3]%m?h[5][l-1]:V(h[3]%m,h):V((a-f)%m,h);0==g?(e._ks.mpath=h[8],e._ks.transform[g]=f,n=!0):14>=g?(e._ks.transform[g]=f,n=!0):(f=fa(h[1]&240,f),h[1]&1?e.setAttribute(g,f):e.style[g]=f)}}if(n){n=e;Z(n);q=n._ks.transform;h="";if(g=n._ks.mpath)l=q[0],0>l&&(l=0),100<l&&(l=100),l=l*g[2]/100,f=g[1].getPointAtLength(l),h="translate("+f.x+","+f.y+") ",g[0]&&(.5>l?(l=f,f=g[1].getPointAtLength(.5)):l=g[1].getPointAtLength(l-.5),h+="rotate("+180*Math.atan2(f.y-l.y,f.x-l.x)/
+Math.PI+") ");for(g=1;g<q.length;++g)f=q[g],f!=(10==g||11==g?1:0)&&(h+=" "+ka[g]+"(",h=2>=g?h+(1==g?f+",0":"0,"+f):13<=g?h+(13==g?f+",0":"0,"+f):10<=g?h+(10==g?f+",1":"1,"+f):h+f,h+=")");n.setAttribute("transform",h)}la&&e.setAttribute("opacity",e.getAttribute("opacity"))}return"running"==this.m()},I:function(){!1!==this.h.autoremove&&"finished"==this.m()&&P(this)},D:function(){if(!this.F){this.F=!0;for(var a=this.A,b=this.C,c=0;c<a.length;++c)for(var d=a[c],e=0;e<b[c].length;++e)14>=b[c][e][0]&&
+Z(d)}},u:function(a){if("number"==typeof a)return a;if(!t(this.h.markers)||!t(this.h.markers[a]))throw Error("Invalid marker: "+a);return+this.h.markers[a]},play:function(a){t(a)&&null!==a&&(a=this.u(a),H(a),0>this.b&&a<this.g&&(a=this.g),0<this.b&&a>this.f&&(a=this.f),this.w(a,!0));if(!this.j)throw Q;a=this.l();if(0<this.b&&(null===a||a>=this.f))this.a=this.g;else if(0>this.b&&(null===a||a<=this.g)){if(Infinity==this.f)throw Error("Cannot seek to Infinity");this.a=this.f}else 0==this.b&&null===a&&
+(this.a=this.g);if(null===this.a)return this;this.c=null;this.o=!0;this.D();N();return this},pause:function(a){if(!this.j)throw Q;t(a)&&(a=this.u(a),H(a));if("paused"!=this.m()){L();var b=this.l();if(null===b)if(0<=this.b)this.a=this.g;else{if(Infinity==this.f)throw Error("Cannot seek to Infinity");this.a=this.f}null!==this.c&&null===this.a&&(this.a=b);this.c=null;this.o=!1;this.B(!1);this.D();N()}t(a)&&this.w(a,!0);return this},range:function(a,b){if(0==arguments.length)return{"in":this.g,out:this.f};
+var c=this.u(a),d=this.v;t(b)&&(d=this.u(b));H(c);if(0>c||0>d||c>=d||isNaN(d))throw Error("Invalid range");var e=this.m();this.g=c;this.f=d;"finished"==e&&"running"==this.m()&&this.play();return this},loop:function(a){if(!t(a))return{count:this.i};this.i=!0===a?Infinity:Math.floor(a);if(0>this.i||isNaN(this.i))this.i=0;return this},l:function(){return null!==this.a?this.a:null===this.c?null:(v-this.c)*this.b},w:function(a,b){b&&L();null!==a&&(this.D(),null!==this.a||null===this.c||0==this.b?(this.a=
+a,O(!1)):this.c=v-a/this.b,this.j||(this.c=null),this.s=null,this.B(!0),N())},G:function(){return this.l()},time:function(a){if(t(a)){if(!this.j)throw Q;a=this.u(a);H(a);this.w(a,!0);return this}return this.G()},m:function(){var a=this.l();return this.o?"running":null===a?"idle":null===this.c?"paused":0<this.b&&a>=this.f||0>this.b&&a<=this.g?"finished":"running"},state:function(){return this.m()},duration:function(){return this.v},H:function(a){H(a);L();var b=this.l();this.b=a;null!==b&&this.w(b,
+!1)},rate:function(a){return t(a)?(this.H(a),this):this.b},markers:function(a){return t(a)?(this.h.markers=R(a),this):t(this.h.markers)?this.h.markers:{}},marker:function(a){return t(this.h.markers)?this.h.markers[a]:void 0},_cancel:function(){if(!this.j||"idle"==this.m())return this;this.c=this.a=null;this.o=!1;return this}};return{version:"1.1.1",animate:function(){var a={};1==arguments.length%2&&(a=R(arguments[arguments.length-1]));a=new aa(a);for(var b=arguments,c=0,d=0;d<b.length-1;d+=2){var e=
+b[d];var n=e instanceof Element?e:document.getElementById(e.substring(1));if(!n)throw Error("Invalid target: "+e);e=n;n=b[d+1];e._ks||(e._ks={});for(var q=[],h=0;h<n.length;++h){var g=n[h],f=J(g,"p","property");if("string"!=typeof f||-1!=f.indexOf("-")||""===f||!(0<T[f]||0<=ca.indexOf(f)))throw Error("Invalid property: "+f);var l=ca.indexOf(f);""!==f&&0<=l&&(f=l);l=S(f);var m=J(g,"t","times");if(!m||2>m.length)throw Error("Not enough times");m=m.slice();if(!isFinite(m[0])||0>m[0])throw Error("Invalid time: "+
+m[0]);for(var B=1;B<m.length;++B)if(!isFinite(m[B])||0>m[B]||m[B]<m[B-1])throw Error("Invalid time: "+m[B]);B=m[0];var v=m[m.length-1]-B,y=g.iterations||0;1>y&&(y=1);v*=y;c<v+B&&(c=v+B);var u=J(g,"v","values");if(!u||u.length!=m.length)throw Error("Values do not match times");u=u.slice();for(var C=f,k=u,w=S(C)&240,p=0;p<k.length;++p)if(96==w){for(var G=k[p].substring(6,k[p].length-2).match(/[A-DF-Za-df-z][-+0-9eE., ]*/ig),A=[],r=0;r<G.length;++r){A.push(G[r][0]);for(var z=1<G[r].trim().length?G[r].substring(1).split(","):
+[],F=0;F<z.length;++F)z[F]=parseFloat(z[F]);A.push(z)}k[p]=A}else if(48==w)x(k[p],"#")?(G=9==k[p].length,k[p]=parseInt(k[p].substring(1),16),G||(k[p]=256*k[p]|255)):x(k[p],"url(")||"none"==k[p]||(console.warn("unsupported color: "+k[p]),k[p]=0);else if(80==w){G=k;A=p;r=k[p];if("none"==r)r=[0];else{z=[];for(var D=r.indexOf("(");0<D;)if(F=U.indexOf(r.substring(0,D)),0<=F){z.push(F);var E=r.indexOf(") ");0>E&&(E=r.length-1);D=r.substring(D+1,E).split(" ");5==F?(z.push(parseFloat(D[0])),z.push(parseFloat(D[1])),
+z.push(parseFloat(D[2])),z.push(ja(D[3]))):1==F?z.push(D[0]):z.push(parseFloat(D[0]));r=r.substring(E+1).trim();D=r.indexOf("(")}else break;r=z}G[A]=r}else 64==w?"none"!=k[p]?/^[0-9 .]*$/.test(k[p])?k[p]=Y(k[p]," "):(console.warn("unsupported value: "+k[p]),k[p]=[0]):k[p]=[0]:32==w?(H(k[p]),k[p]=parseFloat(k[p])):0===C&&(k[p]=parseFloat(k[p]));C=J(g,"e","easing");k=m.length;for(C||(C=[]);C.length<k;)C.push([1,0,0,.58,1]);for(k=0;k<C.length;++k)C[k]=ia(C[k]);l=[f,l,B,v,m,u,C,y];m=J(g,"mp","motionPath");
+t(m)&&0===f&&(l[8]=[],l[8][0]=g.motionRotate,g=document.createElementNS("http://www.w3.org/2000/svg","path"),m||(m="M0,0"),g.setAttribute("d",m),l[8][1]=g,l[8][2]=g.getTotalLength());q.push(l)}0<q.length&&(a.A.push(e),a.C.push(q))}a.v=c;a.g=0;a.f=a.v;ba(a);return a},add:ba,remove:P,removeAll:function(){for(var a=w.length-1;0<=a;--a)P(w[a]);return this},timelines:function(){return w.slice()},globalPlay:function(){u&&(W=u-(new Date).getTime(),u=void 0,N());return this},globalPause:function(){u||(u=
+v,O(!1));return this},globalState:function(){return u?"paused":"running"}}}();
+]]></script>
+</svg>

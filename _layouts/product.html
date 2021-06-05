@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<section class="item--full product-container">
+<section id="{{page.sku}}" class="item--full product-container product">
 		<div class="sectionIntro contained-FirstTwo">
 			<div class="imageWrap">
 				<a class="productImage" href="{{ product.url }}">
@@ -26,10 +26,19 @@ layout: default
 		</div>
 		<div class="product-details sectionContent contained-LastFour" id="add">
 			<h3>{{ page.name }}</h3>
+			<div class="inCartNotification">
+				<span class="icon"><i data-feather="check"></i></span>In Cart
+			</div>
 			{{ page.description_html | markdownify }}
-			<h4>${{ page.price }}</h4>
-			<div>
-				<a class="button primary" href="{{page.paymentLink}}">DONATE</a>
+			<div class="priceWrap">
+				{% for currency in site.data.currencies %}
+					<div class="productCurrency {{ currency.code }} {% if currency.default == true %} activePrice {% endif %} "><span>{{ currency.symbol }}</span>{{ page.price_usd | times: currency.rateToUSD | round: 0 }}</div>
+				{% endfor %}
+			</div>
+			<div class="actionRow">
+				<a class="button" href="/donate">BACK</a>
+				{% include snipcart-button.html product=page %}
+				<button class="button primary snipcart-checkout"><span class="icon"><i data-feather="shopping-cart"></i></span>Open Cart</button>
 			</div>
 		</div>
 </section>

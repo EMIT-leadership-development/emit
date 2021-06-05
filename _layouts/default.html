@@ -25,6 +25,11 @@
 
 		<!-- MAIN CSS -->
 		<link rel="stylesheet" href="{{ site.baseurl }}/css/screen.css">
+
+		<!-- SNIPCART AND STRIPE -->
+		<link rel="preconnect" href="https://app.snipcart.com">
+		<link rel="preconnect" href="https://cdn.snipcart.com">
+		<link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.2.0/default/snipcart.css" />
 	</head>
 	<body>
 		<header class="mainNavigation{% if page.title == 'Stories' %} transparentNav{%endif%}">
@@ -114,5 +119,11 @@
 		</script>
 		<!-- The modal popup is in application.js -->
 		<script src="{{ site.baseurl }}/js/application.js" type="text/javascript"></script>
+		<!-- SNIPCART WITH STRIPE -->
+		<script async src="https://cdn.snipcart.com/themes/v3.2.0/default/snipcart.js"></script>
+		<div id="snipcart" data-config-modal-style="side" data-api-key="NWFiMDUzOWItMDg2Yi00MDhjLWE1YmItODQ0M2EwYTI5YWI1NjM3MzU3Nzg2ODIyNjc0NDAz" hidden></div>
+		{% if page.title == "Donate" or page.url contains "products" %}
+			<script src="/js/cart.js"></script>
+		{% endif %}
 	</body>
 </html>

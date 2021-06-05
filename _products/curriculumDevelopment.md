@@ -9,8 +9,8 @@ description_html: >-
   individuals in impoverished and suffering communities. &nbsp;This is why we
   exist - to transform nations. The EMIT strategy is unique, and it works!</p>
 product_type: donation
-price: '500.00'
-sku: cd
+price_usd: '500.00'
+# Other currency prices are calculated based on rateToUSD field in currency.yml
+sku: curriculum-dev
 product_image: /images/products/curriculumDevelopment/curriculumDevelopment.webp
-paymentLink: 'https://buy.stripe.com/7sIbIN5ti8OF2XKdQT'
 ---

@@ -7,8 +7,8 @@ description_html: >-
   communities they serve.</p><p>Your donation will cover the full material cost
   for one student to complete a 37 subject curriculum.</p>
 product_type: donation
-price: '150.00'
-sku: tm
+price_usd: '150.00'
+# Other currency prices are calculated based on rateToUSD field in currency.yml
+sku: training-material
 product_image: /images/products/trainingMaterial/trainingMaterial.webp
-paymentLink: https://buy.stripe.com/8wM4gl9Jy9SJ9m8aEL
 ---

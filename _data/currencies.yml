@@ -1,0 +1,24 @@
+- name: US Dollar
+  icon: "/images/CurrencyIcons/usd.svg"
+  code: usd
+  symbol: $
+  rateToUSD: 1
+  default: true
+- name: British Pound
+  icon: "/images/CurrencyIcons/gbp.svg"
+  code: gbp
+  symbol: £
+  rateToUSD: 0.71
+  default: false
+- name: Euro
+  icon: "/images/CurrencyIcons/euro.svg"
+  code: eur
+  symbol: €
+  rateToUSD: 0.82
+  default: false
+- name: South African Rand
+  icon: "/images/CurrencyIcons/zar.svg"
+  code: zar
+  symbol: R
+  rateToUSD: 13.50
+  default: false

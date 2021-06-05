@@ -42,14 +42,35 @@
 			</li>
 			{% endfor %}
 		</ul>
-		<!-- <a class="editor-link btn" href="cloudcannon:collections/_data/navigation.yml" class="btn" title="Edit navigation"><strong>&#9998;</strong></a> -->
 	</div>
 
 	<div class="log-sign" style="--i: 1.8s">
 		<a id="loginBtn" href="#" class="button secondary">Sign in</a>
 
 
-		{% if page.title != "Donate" or page.url contains "products" %}
+		{% if page.title == "Donate" or page.url contains "products" %}
+		<a href="#" class="cart snipcart-checkout"><span class="icon"><i data-feather="shopping-cart"></i></span></a>
+		<!-- <span class="snipcart-total-price"></span> -->
+		<span class="snipcart-items-count">0</span>
+		<button class="modalBtn currencyButton">
+			{% for currency in site.data.currencies %}
+			<img class="currencyBtn {{ currency.code }} {% if currency.default == true %} activePrice {% endif %}" src="{{ currency.icon }}" alt="{{ currency.name }}">
+			{% endfor %}
+		</button>
+		<div class="header_actions-currency modal">
+			<div class="modalContent">
+				<div id="currencies">
+					{% for currency in site.data.currencies %}
+					<label class="radio-img">
+						<input type="radio" {% if currency.default == true %} selected checked="checked" {% endif %} name="currency" value="{{ currency.code }}" />
+						<img class="image" src="{{ currency.icon }}" alt="US Dollar">
+						<div class="title">{{ currency.name }}</div>
+					</label>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+		{% else %}
 		<a id="donateBtn" href="{{ site.baseurl }}/donate" class="button primary hideToStart">Donate</a>
 		{% endif %}
 

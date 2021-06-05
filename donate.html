@@ -43,7 +43,7 @@ description:
 					Gift
 				</h3>
 				<p class="pointContent editable">
-					Power-up your impact by giving a <a href="#gift">once-off gift</a> towards a specific need.
+					Power-up your impact by giving a <a href="#gift">targeted gift</a> towards a specific need.
 				</p>
 			</li>
 			<li class="point">
@@ -78,7 +78,7 @@ description:
 	<div class="subscriptionWrap container">
 		{% assign subscriptions = site.products | where:'product_type', 'subscription' %}
 		{% for product in subscriptions %}
-			<div class="{{product.sku}} cms-editor-link subscriptionProduct" data-cms-editor-link="cloudcannon:collections/{{ product.path }}">
+			<div id="{{product.sku}}" class="cms-editor-link subscriptionProduct" data-cms-editor-link="cloudcannon:collections/{{ product.path }}">
 				<div class="subscriptionImage">
 					<div class="authorImageWrap">
 						<div class="authorImage">
@@ -116,7 +116,7 @@ description:
 </section>
 
 <!-- CONTRIBUTIONS -->
-<section id="contribution" class="item--full">
+<section id="custom-contribution" class="item--full">
 	<div class="sectionIntro contained-FirstTwo">
 		<h2 class="sectionTitle priority2 editable">
 			Determine your<br /><span class="emphasis">own impact</span>
@@ -126,27 +126,66 @@ description:
 		</p>
 	</div>
 	<div class="sectionContent contained-LastFour">
-		<form action="https://www.sagepayments.net/eftcart/forms/donate.asp?M_id=828287687931" class="materialForm" method="post">
-			<div class="formheader">
-				<h3>CONTRIBUTE</h3>
+		<form id="customDonationForm" onsubmit="return validateForm('customDonationForm')" class="materialForm">
+			<div class="image"></div>
+			<div id="customDonationFields" class="formWrap hideWhenInCart">
+				<div class="formheader">
+					<h3>Dear EMIT,</h3>
+				</div>
+				<div class="formFields">
+					<div class="form-group message">
+						<textarea id="message" rows="4" name="message"></textarea>
+						<label for="message" class="control-label">Include a message with your gift.</label><i class="bar"></i>
+					</div>
+					<div class="amountWrap">
+						<div class="priceWrap">
+							{% for currency in site.data.currencies %}
+							<div class="productCurrency {{ currency.code }} {% if currency.default == true %} activePrice {% endif %} "><span>{{ currency.symbol }}</span></div>
+							{% endfor %}
+						</div>
+						<div class="form-group">
+							<input type="text" id="transaction-amt" name="T_amt" required="required" />
+							<label for="input" class="control-label">Contribution Amount</label><i class="bar"></i>
+						</div>
+					</div>
+				</div>
+				<button
+				id="submitCustomDonation"
+				type="submit"
+				class="button snipcart-add-item primary"
+				data-item-id = "custom-contribution"
+				data-item-max-quantity = 1
+				data-item-categories="donation"
+				data-item-name = "CONTRIBUTION (Determine my own impact)"
+				data-item-price = ""
+				data-item-url = ""
+				data-item-quantity = 1
+				data-item-image = "/images/products/custom-contribution/EMIT-custom-contribution.jpg",
+				data-item-description = "This custom contribution will enable EMIT to develop ethical, influencial and skilled leaders in areas of Africa where other organisations do not reach. Thank you!"
+				data-item-custom1-name="Message"
+  				data-item-custom1-type="textarea"
+				data-item-custom1-value="">
+					GIVE!
+				</button>
 			</div>
-			<div class="form-group">
-				<input type="text" name="C_fname" required="required" />
-				<label for="input" class="control-label">First Name</label><i class="bar"></i>
+			<div class="showWhenInCart">
+				<div class="notification">Thank you, this gift is in your shopping-cart.</div>
+				<div class="formheader">
+					<h3>Dear EMIT,</h3>
+				</div>
+				<div class="feedbackMessage"></div>
+				<div class="amountWrap">
+					<div class="priceWrap">
+						{% for currency in site.data.currencies %}
+							<div class="productCurrency {{ currency.code }} {% if currency.default == true %} activePrice {% endif %} "><span>{{ currency.symbol }}</span></div>
+						{% endfor %}
+					</div>
+					<div class="feedbackAmount"></div>
+				</div>
+				<div class="buttonRow">
+					<button class="button primary snipcart-checkout">Open Cart</button>
+				</div>
 			</div>
-			<div class="form-group">
-				<input type="text" name="C_lname" required="required" />
-				<label for="input" class="control-label">Last Name</label><i class="bar"></i>
-			</div>
-			<div class="form-group">
-				<input type="email" name="C_email" required="required" />
-				<label for="input" class="control-label">Email</label><i class="bar"></i>
-			</div>
-			<div class="form-group">
-				<input type="text" name="T_amt" required="required" />
-				<label for="input" class="control-label">Amount</label><i class="bar"></i>
-			</div>
-			<button type="submit" class="button primary">GIVE!</button>
 		</form>
 	</div>
 </section>
@@ -160,8 +199,9 @@ description:
 	</div>
 	<div class="sectionContent contained-LastFour">
 		<p class="introduction editable">
-			Give the gift of transformation. These once-off donations could impact the future of someone you have never met.
+			Give the gift of transformation. These targeted donations will impact the lives of leaders and communities in Africa.
 		</p>
+		<p>Feel free to give a once-off donation or a monthly contribution.</p>
 	</div>
 </section>
 
@@ -173,10 +213,15 @@ description:
 			<ul class="product-list">
 				{% assign donations = site.products | where:'product_type', 'donation' %}
 				{% for product in donations %}
-				<li class="cms-editor-link" data-cms-editor-link="cloudcannon:collections/{{ product.path }}">
+				<li id="{{ product.sku }}" class="cms-editor-link productPreview product" data-cms-editor-link="cloudcannon:collections/{{ product.path }}">
 					<div class="imageWrap">
 						<a class="productImage" href="{{ product.url }}">
 							<img src="{{ site.baseurl }}{{ product.product_image }}" />
+							<div class="priceWrap">
+								{% for currency in site.data.currencies %}
+								<div class="productCurrency {{ currency.code }} {% if currency.default == true %} activePrice {% endif %} "><span>{{ currency.symbol }}</span>{{ product.price_usd | times: currency.rateToUSD | round: 0 }}</div>
+								{% endfor %}
+							</div>
 						</a>
 						{% assign share_url = product.url | absolute_url | cgi_escape %}
 						{% assign page_name = product.name %}
@@ -185,20 +230,25 @@ description:
 								<span class="icon"><i data-feather="share-2"></i></span>
 							</a>
 						</div>
+						<div class="inCartNotification">
+							<span class="icon"><i data-feather="check"></i></span>In Cart
+						</div>
 						<script>
 							var a2a_config = a2a_config || {};
 							a2a_config.onclick = 1;
 							a2a_config.icon_color = "transparent";
-							</script>
-							<script async src="https://static.addtoany.com/menu/page.js"></script>
-							<!-- AddToAny END -->
-					</div>
-					<div class="product-details">
-						<h4><a href="{{ product.url }}">{{ product.name }}</a></h4>
-						<div class="product-description">
-							{{ product.description_html | truncate: 45 | markdownify }}
+						</script>
+						<script async src="https://static.addtoany.com/menu/page.js"></script>
+						<!-- AddToAny END -->
+
+						<div class="product-details">
+							<h4><a href="{{ product.url }}">{{ product.name }}</a></h4>
 						</div>
-						<p class="productPrice">${{ product.price }}</p>
+						<div class="actionRow">
+							<a class="button" href="{{ product.url }}">READ MORE</a>
+							{% include snipcart-button.html product=product %}
+							<button class="button primary snipcart-checkout"><span class="icon"><i data-feather="shopping-cart"></i></span>Open Cart</button>
+						</div>
 					</div>
 				</li>
 			{% endfor %}

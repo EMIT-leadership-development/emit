@@ -7,8 +7,8 @@ description_html: >-
   communities they serve.</p><p>Your donation will contibute to the subsidized
   tuition for one student for one year of study.</p>
 product_type: donation
-price: '150.00'
-sku: tr1
+price_usd: '150.00'
+# Other currency prices are calculated based on rateToUSD field in currency.yml
+sku: tuition-student
 product_image: /images/products/training/leadership-training.webp
-paymentLink: https://buy.stripe.com/9AQ1492h6c0R0PC004
 ---
