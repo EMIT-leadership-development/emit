@@ -55,7 +55,7 @@
 	.subscriptionProduct {
 		filter: drop-shadow(0.1rem 0.1rem 0.3rem rgba(20, 20, 180, 0.3));
 	}
-	.subscription2 {
+	#donation-sphere2 {
 		.price-container {
 			background: $brandContrastDark;
 			color: #ffffff;
@@ -67,6 +67,9 @@
 			 a {
 				background: $brandContrastDark;
 				color: #ffffff;
+				&:hover {
+					background: $brand-color;
+				}
 			 }
 		}
 		.sphere3 {
@@ -74,7 +77,7 @@
 			border-color: #C9C9C9 !important;
 		}
 	}
-	.subscription1 {
+	#donation-sphere1 {
 		.sphere2 {
 			background: #949494 !important;
 			border-color: #C9C9C9 !important;
@@ -166,7 +169,6 @@
 		}
 	}
 	.authorImageWrap {
-		// border: 1px solid red;
 		background: $brand-color;
 		overflow: hidden;
 		padding-bottom: 100%;
