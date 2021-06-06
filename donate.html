@@ -112,9 +112,9 @@ description:
 						{{product.description_html}}
 					</div>
 					<div class=" price-button-container">
-						<!-- <a role="link" href="{{product.paymentLink}}">SIGN UP</a> -->
 						<button class="snipcart-add-item button"
 							data-item-id="{{product.sku}}"
+							data-item-categories="donation"
 							data-item-name="{{product.name}}"
 							data-item-price="{
 								{% for currency in site.data.currencies %}
