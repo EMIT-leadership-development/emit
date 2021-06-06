@@ -118,7 +118,7 @@ description:
 							data-item-name="{{product.name}}"
 							data-item-price="{
 								{% for currency in site.data.currencies %}
-									&quot;{{ currency.code }}&quot;: {{ product.price_usd | times: currency.rateToUSD | round: 0 }} {% if forloop.last %}{% else %},{% endif %}
+									&quot;{{ currency.code }}&quot;: {{ product.price_usd | times: currency.rateToUSD | round: 2 }} {% if forloop.last %}{% else %},{% endif %}
 								{% endfor %}
 							}"
 							data-item-url="/donate"
@@ -135,7 +135,7 @@ description:
 							data-plan1-interval="1"
 							data-item-plan1-price="{
 								{% for currency in site.data.currencies %}
-									&quot;{{ currency.code }}&quot;: {{ product.price_usd | times: currency.rateToUSD | round: 0 }} {% if forloop.last %}{% else %},{% endif %}
+									&quot;{{ currency.code }}&quot;: {{ product.price_usd | times: currency.rateToUSD | round: 2 }} {% if forloop.last %}{% else %},{% endif %}
 								{% endfor %}
 							}">
 							Add to cart
