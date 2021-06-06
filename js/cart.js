@@ -5,7 +5,7 @@ function updateCustomDonation() {
     transactionAmount.addEventListener('change', () => {
         // Sets the default amount when adding the item
         button.setAttribute('data-item-price', transactionAmount.value);
-        button.setAttribute('data-item-url', '/donate/?cc=' + transactionAmount.value);
+        // button.setAttribute('data-item-url', '/donate/?cc=' + transactionAmount.value);
     })
     const message = document.querySelector('#message')
     message.addEventListener('change', () => {
