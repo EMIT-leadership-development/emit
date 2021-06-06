@@ -5,7 +5,7 @@ description_html: >-
   Events</li><li>10 Manuals</li></ul>
 product_type: subscription
 product_image: /images/products/subscriptions/sphere1.webp
-price: '29.99'
+price_usd: '29.99'
 terms: monthly
 sku: donation-sphere1
 paymentLink: https://buy.stripe.com/fZe8wBf3S2qhfKw144

@@ -6,7 +6,7 @@ description_html: >-
   Development</li></ul>
 product_type: subscription
 product_image: /images/products/subscriptions/sphere3.webp
-price: '99.99'
+price_usd: '99.99'
 terms: monthly
 sku: donation-sphere3
 paymentLink: https://buy.stripe.com/5kA9AF7Bq8OFcykdQS

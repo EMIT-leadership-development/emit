@@ -6,7 +6,7 @@ description_html: >-
 product_type:
   - subscription
 product_image: /images/products/subscriptions/sphere2.webp
-price: '74.99'
+price_usd: '74.99'
 terms: monthly
 sku: donation-sphere2
 paymentLink: https://buy.stripe.com/3cs149dZO0i9dCoeUV

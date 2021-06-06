@@ -5,6 +5,9 @@
 .productCurrency.activePrice, .currencyBtn.activePrice {
 	display: block;
 }
+// .subscriptionWrap .productCurrency.activePrice {
+// 	display: inline-block;
+// }
 
 // ----DONATION INTRO
 .donationIntro {
@@ -100,7 +103,6 @@
 	}
 	.currency {
 		font-weight: normal;
-		display: inline-block;
 		color: #fff;
 		font-size: 30px;
 	}

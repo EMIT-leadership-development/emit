@@ -94,15 +94,20 @@ description:
 				</div>
 				<div class="infoWrap">
 					<h3>{{product.name}}</h3>
-					<div class="price-container">
-						{% assign priceParts = product.price | split: "." %}
-						<span class="currency">$</span>
-						<span class="price">{{ priceParts[0] }}</span>
-						<span class="cents-cont">
-							<span class="cents">{{ priceParts[1] }}</span>
-							<span class="place2">{{ product.terms }}</span>
-						</span>
-					</div>
+					
+						{% for currency in site.data.currencies %}
+							<div class="price-container productCurrency {{ currency.code }} {% if currency.default == true %} activePrice {% endif %}">
+								{% assign calcPrice = product.price_usd | times: currency.rateToUSD | round: 2 %}
+								{% assign priceParts = calcPrice | split: "." %}
+								<span class="currency">{{ currency.symbol }}</span>
+								<span class="price">{{ priceParts[0] }}</span>
+								<span class="cents-cont">
+									<span class="cents">{{ priceParts[1] }}</span>
+									<span class="place2">{{ product.terms }}</span>
+								</span>
+							</div>
+						{% endfor %}
+					
 					<div>
 						{{product.description_html}}
 					</div>
