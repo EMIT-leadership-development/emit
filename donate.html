@@ -132,12 +132,7 @@ description:
 							data-plan1-id="monthly-plan"
 							data-plan1-name="Monthly Donation"
 							data-plan1-frequency="Monthly"
-							data-plan1-interval="1"
-							data-item-plan1-price="{
-								{% for currency in site.data.currencies %}
-									&quot;{{ currency.code }}&quot;:{{ product.price_usd | times: currency.rateToUSD | round: 2 }} {% if forloop.last %}{% else %},{% endif %}
-								{% endfor %}
-							}">
+							data-plan1-interval="1">
 							Add to cart
 						</button>
 
