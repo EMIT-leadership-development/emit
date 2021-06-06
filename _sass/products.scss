@@ -64,7 +64,8 @@
 			color: #000000;
 		}
 		.price-button-container {
-			 a {
+			 button {
+				border: none;
 				background: $brandContrastDark;
 				color: #ffffff;
 				&:hover {
@@ -147,9 +148,10 @@
 	}
 	.price-button-container {
 		height: 75px;
-		a {
+		button {
 			text-decoration: none;
 			border-radius: 2px;
+			border: none;
 			transition: all .3s ease 0s;
 			position: relative;
 			color: #fff;

@@ -112,7 +112,35 @@ description:
 						{{product.description_html}}
 					</div>
 					<div class=" price-button-container">
-						<a role="link" href="{{product.paymentLink}}">SIGN UP</a>
+						<!-- <a role="link" href="{{product.paymentLink}}">SIGN UP</a> -->
+						<button class="snipcart-add-item button"
+							data-item-id="{{product.sku}}"
+							data-item-name="{{product.name}}"
+							data-item-price="{
+								{% for currency in site.data.currencies %}
+									&quot;{{ currency.code }}&quot;:{{ product.price_usd | times: currency.rateToUSD | round: 0 }} {% if forloop.last %}{% else %},{% endif %}
+								{% endfor %}
+							}"
+							data-item-url="{{ product.url }}"
+							data-item-description="{{ product.description_html | strip_html}}"
+							data-item-selected-plan="monthly-plan"
+
+							data-item-custom1-name="Include a personal message"
+							data-item-custom1-type="textarea"
+							data-item-custom1-value=""
+
+							data-plan1-id="monthly-plan"
+							data-plan1-name="Monthly Donation"
+							data-plan1-frequency="Monthly"
+							data-plan1-interval="1"
+							data-item-plan1-price="{
+								{% for currency in site.data.currencies %}
+									&quot;{{ currency.code }}&quot;:{{ product.price_usd | times: currency.rateToUSD | round: 0 }} {% if forloop.last %}{% else %},{% endif %}
+								{% endfor %}
+							}">
+							Add to cart
+						</button>
+
 					</div>
 				</div>
 			</div>
