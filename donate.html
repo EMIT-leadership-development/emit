@@ -94,7 +94,7 @@ description:
 				</div>
 				<div class="infoWrap">
 					<h3>{{product.name}}</h3>
-					
+
 						{% for currency in site.data.currencies %}
 							<div class="price-container productCurrency {{ currency.code }} {% if currency.default == true %} activePrice {% endif %}">
 								{% assign calcPrice = product.price_usd | times: currency.rateToUSD | round: 2 %}
@@ -107,7 +107,7 @@ description:
 								</span>
 							</div>
 						{% endfor %}
-					
+
 					<div>
 						{{product.description_html}}
 					</div>
@@ -121,7 +121,7 @@ description:
 									&quot;{{ currency.code }}&quot;:{{ product.price_usd | times: currency.rateToUSD | round: 0 }} {% if forloop.last %}{% else %},{% endif %}
 								{% endfor %}
 							}"
-							data-item-url="{{ product.url }}"
+							data-item-url="/donate"
 							data-item-description="{{ product.description_html | strip_html}}"
 							data-item-selected-plan="monthly-plan"
 
