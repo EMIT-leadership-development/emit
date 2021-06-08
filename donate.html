@@ -76,7 +76,7 @@ description:
 <!-- SUBSCRIPTIONS -->
 <section class="item--full contrastLight2">
 	<div class="subscriptionWrap container">
-		{% assign subscriptions = site.products | where:'product_type', 'subscription' %}
+		{% assign subscriptions = site.products | where:'product_category', 'subscription' %}
 		{% for product in subscriptions %}
 			<div id="{{product.sku}}" class="cms-editor-link subscriptionProduct" data-cms-editor-link="cloudcannon:collections/{{ product.path }}">
 				<div class="subscriptionImage">
@@ -114,7 +114,7 @@ description:
 					<div class=" price-button-container">
 						<button class="snipcart-add-item button"
 							data-item-id="{{product.sku}}"
-							data-item-categories="donation"
+							data-item-categories="{{product.product_category}}"
 							data-item-name="{{product.name}}"
 							data-item-price="{
 								{% for currency in site.data.currencies %}
@@ -154,7 +154,7 @@ description:
 		</p>
 	</div>
 	<div class="sectionContent contained-LastFour">
-		<form id="customDonationForm" onsubmit="return validateForm('customDonationForm')" class="materialForm">
+		<form id="customDonationForm" class="materialForm">
 			<div class="image"></div>
 			<div id="customDonationFields" class="formWrap hideWhenInCart">
 				<div class="formheader">
@@ -239,17 +239,22 @@ description:
 	<div id="donationsWrap" class="container">
 		<div id="gift" class="donationOption">
 			<ul class="product-list">
-				{% assign donations = site.products | where:'product_type', 'donation' %}
+				{% assign donations = site.products | where:'product_category', 'donation' %}
 				{% for product in donations %}
 				<li id="{{ product.sku }}" class="cms-editor-link productPreview product" data-cms-editor-link="cloudcannon:collections/{{ product.path }}">
 					<div class="imageWrap">
 						<a class="productImage" href="{{ product.url }}">
 							<img src="{{ site.baseurl }}{{ product.product_image }}" />
-							<div class="priceWrap">
-								{% for currency in site.data.currencies %}
-								<div class="productCurrency {{ currency.code }} {% if currency.default == true %} activePrice {% endif %} "><span>{{ currency.symbol }}</span>{{ product.price_usd | times: currency.rateToUSD | round: 0 }}</div>
-								{% endfor %}
-							</div>
+
+							{% unless product.sku == "personal-support" %}
+								<div class="priceWrap">
+									{% for currency in site.data.currencies %}
+									<div class="productCurrency {{ currency.code }} {% if currency.default == true %} activePrice {% endif %} "><span>{{ currency.symbol }}</span>{{ product.price_usd | times: currency.rateToUSD | round: 0 }}</div>
+									{% endfor %}
+								</div>
+							{% endunless %}
+
+
 						</a>
 						{% assign share_url = product.url | absolute_url | cgi_escape %}
 						{% assign page_name = product.name %}
@@ -273,8 +278,18 @@ description:
 							<h4><a href="{{ product.url }}">{{ product.name }}</a></h4>
 						</div>
 						<div class="actionRow">
-							<a class="button" href="{{ product.url }}">READ MORE</a>
-							{% include snipcart-button.html product=product %}
+							{% unless product.sku == "personal-support" %}
+								<a class="button" href="{{ product.url }}">
+									Read More
+								</a>
+							{% endunless %}
+							{% if product.sku == "personal-support" %}
+								<a class="button primary" href="{{ product.url }}">
+									Select a team-member
+								</a>
+							{% else %}
+								{% include snipcart-button.html product=product %}
+							{% endif %}
 							<button class="button primary snipcart-checkout"><span class="icon"><i data-feather="shopping-cart"></i></span>Open Cart</button>
 						</div>
 					</div>
