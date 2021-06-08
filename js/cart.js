@@ -2,21 +2,21 @@
 function updateCustomDonation() {
     const button = document.querySelector('#submitCustomDonation');
     const transactionAmount = document.querySelector('#transaction-amt');
-    transactionAmount.addEventListener('change', () => {
-        // Sets the default amount when adding the item
-        button.setAttribute('data-item-price', transactionAmount.value);
-        button.setAttribute('data-item-url', 'https://emit-portal.netlify.app/donate/custom-contribution/' + transactionAmount.value);
-    })
-    const message = document.querySelector('#message')
-    message.addEventListener('change', () => {
-        // Sets the message when adding the item
-        button.setAttribute("data-item-custom1-value", message.value);
-    })
+    if (button) {
+        transactionAmount.addEventListener('change', () => {
+            // Sets the default amount when adding the item
+            button.setAttribute('data-item-price', transactionAmount.value);
+            button.setAttribute('data-item-url', 'https://emit-portal.netlify.app/donate/custom-contribution/' + transactionAmount.value);
+        })
+        const message = document.querySelector('#message')
+        message.addEventListener('change', () => {
+            // Sets the message when adding the item
+            button.setAttribute("data-item-custom1-value", message.value);
+        })
+    }
 
 }
 updateCustomDonation();
-
-
 
 // SNIPCART FUNCTIONS
 document.addEventListener('snipcart.ready', () => {
@@ -25,7 +25,6 @@ document.addEventListener('snipcart.ready', () => {
     changeCartCurrency();
     // 2. Check for items in cart and give feedback on page about what's in cart
     displayCartFeedback();
-    // 3. When Item is removed from cart
 });
 
 // ---1. LISTEN FOR SELECT CURRENCY OPTION IN MODAL
@@ -40,7 +39,7 @@ function changeCartCurrency() {
     });
     Snipcart.store.subscribe(updateCurrencyDisplay);
 }
-// --2. LISTEN FOR CHANGES TO CART
+// --2. LISTEN FOR CHANGES TO CART AND DISPLAY FEEDBACK
 function displayCartFeedback() {
     Snipcart.store.subscribe(() => {
         // In-cart Feedback for products
@@ -50,11 +49,11 @@ function displayCartFeedback() {
         cartItems.forEach(cartItem => {
             cartItemsIDs += cartItem.id;
         });
-        // If there are any items in cart
+        // If there are any items in cart show feedback on page
         if (count >= 1) {
             addRemoveInCartClass(cartItemsIDs);
         } else {
-        // No items in cart remove all product feedback from cart
+        // No items in cart remove all product feedback on page
             resetProducts();
         }
     });

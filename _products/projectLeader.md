@@ -8,7 +8,7 @@ description_html: >-
   and be more successful in executing their calling.</p>
 product_category: donation
 product_image: /images/products/projectLeader/ProjectLeader.webp
-price_usd: 99.00
+price_usd: "99.00"
 # Other currency prices are calculated based on rateToUSD field in currency.yml
 sku: personal-support
 members_shortname:

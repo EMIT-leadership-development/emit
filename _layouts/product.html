@@ -2,84 +2,127 @@
 layout: default
 ---
 
-<section class="item--full product-container product">
-	{% if page.sku != "personal-support" %}
-		<div class="sectionIntro contained-FirstTwo">
-			<div class="imageWrap">
-				<a class="productImage" href="{{ product.url }}">
-					<img src="{{ site.baseurl }}{{ page.product_image }}">
+{% if page.sku != "personal-support" %}
+<section id="{{page.sku}}" class="item--full product-container product">
+	<div class="sectionIntro contained-FirstTwo">
+		<div class="imageWrap">
+			<a class="productImage" href="{{ product.url }}">
+				<img src="{{ site.baseurl }}{{ page.product_image }}">
+			</a>
+			{% assign share_url = page.url | absolute_url | cgi_escape %}
+			{% assign page_name = page.name %}
+			<div class="links a2a_kit a2a_kit_size_32 a2a_default_style" data-a2a-url="{{share_url}}" data-a2a-title="{{page_name}}">
+				<a class="a2a_dd" href="https://www.addtoany.com/share">
+					<span class="icon"><i data-feather="share-2"></i></span>
 				</a>
-				{% assign share_url = page.url | absolute_url | cgi_escape %}
-				{% assign page_name = page.name %}
-				<div class="links a2a_kit a2a_kit_size_32 a2a_default_style" data-a2a-url="{{share_url}}" data-a2a-title="{{page_name}}">
-					<a class="a2a_dd" href="https://www.addtoany.com/share">
-						<span class="icon"><i data-feather="share-2"></i></span>
-					</a>
-				</div>
-				<script>
-                    var a2a_config = a2a_config || {};
-                    a2a_config.onclick = 1;
-                    a2a_config.icon_color = "transparent";
-                    </script>
-                    <script async src="https://static.addtoany.com/menu/page.js"></script>
-                    <!-- AddToAny END -->
 			</div>
+			<script>
+				var a2a_config = a2a_config || {};
+				a2a_config.onclick = 1;
+				a2a_config.icon_color = "transparent";
+			</script>
+			<script async src="https://static.addtoany.com/menu/page.js"></script>
+			<!-- AddToAny END -->
 		</div>
-	{% endif %}
-		<div class="product-details sectionContent {% if page.sku != "personal-support" %} contained-LastFour {% endif %}" id="add">
-			<h3>{{ page.name }}</h3>
-			<div class="inCartNotification">
-				<span class="icon"><i data-feather="check"></i></span>In Cart
-			</div>
-			{{ page.description_html | markdownify }}
-			{% if page.sku != "personal-support" %}
-				<div class="priceWrap">
-					{% for currency in site.data.currencies %}
-						<div class="productCurrency {{ currency.code }} {% if currency.default == true %} activePrice {% endif %} "><span>{{ currency.symbol }}</span>{{ page.price_usd | times: currency.rateToUSD | round: 0 }}</div>
-					{% endfor %}
-				</div>
-				<!-- SONYA: TODO - USE JS TO CHECK IF THIS IS ALREADY IN CART -->
-				<div class="actionRow">
-					<a class="button" href="/donate">BACK</a>
-					{% include snipcart-button.html product=page %}
-					<button class="button primary snipcart-checkout"><span class="icon"><i data-feather="shopping-cart"></i></span>Open Cart</button>
-				</div>
-			{% endif %}
-
-			{% if page.sku == "personal-support" %}
-				<h4>Sponsor Team-Members</h4>
-				<ul class="memberList">
-					{% for member in page.members_shortname %}
-					{% assign thisMember = site.data.team-members | where:"shortname", member %}
-						<li id="{{page.sku}}">
-							<form class="materialForm">
-								<div class="memberPic" style="background-image: url({{thisMember[0].profile_image}});"></div>
-								<div class="memberName">
-									<h4>{{thisMember[0].name}}</h4>
-								</div>
-								<div class="amountWrap">
-									<div class="priceWrap">
-										{% for currency in site.data.currencies %}
-										<div class="productCurrency {{ currency.code }} {% if currency.default == true %} activePrice {% endif %} "><span>{{ currency.symbol }}</span></div>
-										{% endfor %}
-									</div>
-									<div class="form-group">
-										<input type="text" id="transaction-amt" name="T_amt" required="required" />
-										<label for="input" class="control-label">Amount</label><i class="bar"></i>
-									</div>
-								</div>
-								<div class="actions">
-									<div class="checkbox">
-										<label>
-										  <input type="checkbox"/><i class="helper"></i>Monthly
-										</label>
-									</div>
-									<button class="button primary">Add to Cart</button>
-								</div>
-							</form>
-						</li>
-					{% endfor %}
-				</ul>
-			{% endif %}
+	</div>
+	<div class="product-details sectionContent contained-LastFour">
+		<h3>{{ page.name }}</h3>
+		<div class="inCartNotification">
+			<span class="icon"><i data-feather="check"></i></span>In Cart
 		</div>
+		{{ page.description_html | markdownify }}
+		<div class="priceWrap">
+			{% for currency in site.data.currencies %}
+			<div class="productCurrency {{ currency.code }} {% if currency.default == true %} activePrice {% endif %} "><span>{{ currency.symbol }}</span>{{ page.price_usd | times: currency.rateToUSD | round: 0 }}</div>
+			{% endfor %}
+		</div>
+		<div class="actionRow">
+			<a class="button" href="/donate">BACK</a>
+			{% include snipcart-button.html product=page %}
+			<button class="button primary snipcart-checkout"><span class="icon"><i data-feather="shopping-cart"></i></span>Open Cart</button>
+		</div>
+	</div>
 </section>
+{% endif %}
+
+<!-- Different layout for Team-Member support product -->
+{% if page.sku == "personal-support" %}
+<section class="item--full product-container">
+	<div class="product-details sectionContent {% if page.sku != "personal-support" %} contained-LastFour {% endif %}" id="{{page.sku}}">
+		<h3>{{ page.name }}</h3>
+		{{ page.description_html | markdownify }}
+		<h4>Sponsor Team-Members</h4>
+		<ul class="memberList">
+			{% for member in page.members_shortname %}
+			{% assign thisMember = site.data.team-members | where:"shortname", member %}
+			<li id="personalsupport-{{thisMember[0].shortname}}" class="product">
+				<form class="materialForm">
+					
+					<!-- PICTURE -->
+					<div class="memberPic" style="background-image: url({{thisMember[0].profile_image}});"></div>
+
+
+					<!-- MESSAGE -->
+					<div class="message">
+						<h4 class="memberName">Dear {{thisMember[0].name}},</h4>
+						<div class="form-group">
+							<textarea id="message" rows="2" name="message"></textarea>
+							<label for="message" class="control-label">Include a message with your gift.</label><i class="bar"></i>
+						</div>
+					</div>
+
+					<!-- AMOUNT AND CURRENCY FIELD -->
+					<div class="actionsWrap">
+						<!-- Amount -->
+						<div class="amountWrap">
+							<div class="priceWrap">
+								{% for currency in site.data.currencies %}
+								<div class="productCurrency {{ currency.code }} {% if currency.default == true %} activePrice {% endif %} "><span>{{ currency.symbol }}</span></div>
+								{% endfor %}
+							</div>
+							<div class="form-group">
+								<input type="text" id="transaction-amt" name="T_amt" required="required" />
+								<label for="input" class="control-label">Amount</label><i class="bar"></i>
+							</div>
+						</div>
+						<!-- Checkbox -->
+						<div class="checkbox">
+							<label>
+								<input type="checkbox"/><i class="helper"></i>Monthly
+							</label>
+						</div>
+						<!-- buttons -->
+						<div class="actions">
+							<!-- Button when item is NOT in cart -->
+							<button
+							id="submitCustomDonation"
+							type="submit"
+							class="button snipcart-add-item primary"
+							data-item-id = "personalsupport-{{thisMember[0].shortname}}"
+							data-item-max-quantity = 1
+							data-item-categories="donation"
+							data-item-name = "Personal Support for {{thisMember[0].shortname}}"
+							data-item-price = "99.00"
+							data-item-url = "https://emit-portal.netlify.app/donate/validate/personalsupport-{{thisMember[0].shortname}}?amount=99.99&subscription=false"
+							data-item-quantity = 1
+							data-item-image = "{{thisMember[0].profile_image}}",
+							data-item-description = "Your support for {{thisMember[0].shortname}} enables EMIT to continue transforming lives across Africa.  Thank you!"
+							data-item-custom1-name="Message"
+							data-item-custom1-type="textarea"
+							data-item-custom1-value="Include Personal Message">
+								Add to Cart
+							</button>
+							<!-- Button when item is in cart -->
+							<button class="button primary snipcart-checkout"><span class="icon"><i data-feather="shopping-cart"></i></span>Open Cart</button>
+						</div>
+					</div>
+
+
+				</form>
+			</li>
+			{% endfor %}
+		</ul>
+	</div>
+</section>
+{% endif %}
+

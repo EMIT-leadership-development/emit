@@ -471,66 +471,66 @@
 	grid-template-columns: 1fr 1fr;
 	grid-gap: 1rem;
 	li {
-		padding: 1rem;
-		background: #ffffff;
-		box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-		transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-		display: block;
 		list-style-type: none;
+		display: flex;
+		box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 		&:hover {
 			box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 		}
 		form {
 			border: none;
-			padding: 0;
+			background-color: #ffffff;
 			display: grid;
-			grid-template-columns: 80px auto auto auto;
-			grid-gap: 12px;
-		}
-		.memberPic {
-			background-size: cover;
-			background-position: center;
-			height: 80px;
-		}
-		.memberName {
-			// border: 1px solid red;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: flex-start;
-			h4 {
-				margin: 0;
-				padding: 0;
-				font-size: 1.1rem;
+			grid-template-columns: 100px auto 160px;
+			grid-template-areas: "pic msg actions";
+			grid-gap: 1rem;
+			.memberPic {
+				grid-area: pic;
+				background-size: cover;
+				background-position: center;
 			}
-		}
-		.amountWrap {
-			// border: 1px solid red;
-			display: flex;
-			flex-direction: revert;
-			justify-content: center;
-			align-items: center;
-			.form-group {
-				margin: 0;
-			}
-		}
-		.actions {
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-    		align-content: center;
-			.checkbox {
-				margin: 0;
-				label {
-					margin-bottom: 8px;
+			.message {
+				grid-area: msg;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				.memberName {
+					margin-bottom: 0;
 				}
-				input {
+				.form-group {
+					margin-bottom: 0;
+				}
+			}
+			.actionsWrap {
+				grid-area: actions;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				.amountWrap {
+					display: flex;
+					.form-group {
+						margin: 0;
+						margin-top: 10px;
+					}
+				}
+				.checkbox {
 					margin: 0;
+					label {
+						margin-bottom: 0;
+					}
 				}
-			}
-			button {
-				margin: 0;
-				padding: 8px 16px;
+				.actions {
+					button {
+						margin: 0;
+						width: 100%;
+						padding: 6px 8px;
+					}
+					// Initially hide the Open Cart button
+					.snipcart-checkout {
+						display: none;
+					}
+				}
 			}
 		}
 	}
