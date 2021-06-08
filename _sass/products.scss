@@ -469,7 +469,7 @@
 .memberList {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-gap: 1rem;
+	grid-gap: 2rem;
 	li {
 		list-style-type: none;
 		display: flex;
@@ -483,15 +483,12 @@
 			background-color: #ffffff;
 			display: grid;
 			grid-template-columns: 100px auto 160px;
-			grid-template-areas: "pic msg actions";
 			grid-gap: 1rem;
 			.memberPic {
-				grid-area: pic;
 				background-size: cover;
 				background-position: center;
 			}
-			.message {
-				grid-area: msg;
+			.messageWrap {
 				display: flex;
 				flex-direction: column;
 				justify-content: space-between;
@@ -503,7 +500,6 @@
 				}
 			}
 			.actionsWrap {
-				grid-area: actions;
 				display: flex;
 				flex-direction: column;
 				justify-content: space-between;

@@ -1,20 +1,57 @@
 // CUSTOM DONATION FORM
+// function updateCustomDonation() {
+//     const button = document.querySelector('#submitCustomDonation');
+//     const transactionAmount = document.querySelector('#transaction-amt');
+//     if (button) {
+//         transactionAmount.addEventListener('change', () => {
+//             // Sets the default amount when adding the item
+//             button.setAttribute('data-item-price', transactionAmount.value);
+//             button.setAttribute('data-item-url', 'https://emit-portal.netlify.app/donate/custom-contribution/' + transactionAmount.value);
+//         })
+//         const message = document.querySelector('#message')
+//         message.addEventListener('change', () => {
+//             // Sets the message when adding the item
+//             button.setAttribute("data-item-custom1-value", message.value);
+//         })
+//     }
+
+// }
 function updateCustomDonation() {
-    const button = document.querySelector('#submitCustomDonation');
-    const transactionAmount = document.querySelector('#transaction-amt');
-    if (button) {
+    const customValidationItems = document.querySelectorAll('.customValidation');
+    customValidationItems.forEach(item => {
+        const button = item.querySelector('.submitCustomDonation');
+        const productID = item.id;
+        const transactionAmount = item.querySelector('.transaction-amt');
+        const subscription = item.querySelector('.subscriptionCheckbox');
+        const message = item.querySelector('.message')
         transactionAmount.addEventListener('change', () => {
             // Sets the default amount when adding the item
             button.setAttribute('data-item-price', transactionAmount.value);
-            button.setAttribute('data-item-url', 'https://emit-portal.netlify.app/donate/custom-contribution/' + transactionAmount.value);
+            button.setAttribute(
+                'data-item-url', 'https://emit-portal.netlify.app/donate/validate/' + productID
+                + '?amount=' + transactionAmount.value
+                + '&subscription=' + subscription.checked);
         })
-        const message = document.querySelector('#message')
+        subscription.addEventListener('change', () => {
+            // Sets the default amount when adding the item
+            button.setAttribute('data-item-price', transactionAmount.value);
+            button.setAttribute(
+                'data-item-url', 'https://emit-portal.netlify.app/donate/validate/' + productID
+                + '?amount=' + transactionAmount.value
+                + '&subscription=' + subscription.checked);
+            if (subscription.checked == true) {
+                button.setAttribute('data-plan1-id', 'monthly-plan');
+                button.setAttribute('data-plan1-name', 'Monthly Donation');
+                button.setAttribute('data-plan1-frequency', 'Monthly');
+                button.setAttribute('data-plan1-interval', '1');
+                button.setAttribute('data-item-selected-plan', 'monthly-plan');
+            }
+        })
         message.addEventListener('change', () => {
             // Sets the message when adding the item
             button.setAttribute("data-item-custom1-value", message.value);
         })
-    }
-
+    });
 }
 updateCustomDonation();
 

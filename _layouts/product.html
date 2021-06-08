@@ -55,18 +55,17 @@ layout: default
 		<ul class="memberList">
 			{% for member in page.members_shortname %}
 			{% assign thisMember = site.data.team-members | where:"shortname", member %}
-			<li id="personalsupport-{{thisMember[0].shortname}}" class="product">
+			<li id="personalsupport-{{thisMember[0].shortname}}" class="product customValidation">
 				<form class="materialForm">
-					
 					<!-- PICTURE -->
 					<div class="memberPic" style="background-image: url({{thisMember[0].profile_image}});"></div>
 
 
 					<!-- MESSAGE -->
-					<div class="message">
+					<div class="messageWrap">
 						<h4 class="memberName">Dear {{thisMember[0].name}},</h4>
 						<div class="form-group">
-							<textarea id="message" rows="2" name="message"></textarea>
+							<textarea class="message" rows="2" name="message"></textarea>
 							<label for="message" class="control-label">Include a message with your gift.</label><i class="bar"></i>
 						</div>
 					</div>
@@ -81,29 +80,28 @@ layout: default
 								{% endfor %}
 							</div>
 							<div class="form-group">
-								<input type="text" id="transaction-amt" name="T_amt" required="required" />
+								<input type="text" class="transaction-amt" name="T_amt" required="required" />
 								<label for="input" class="control-label">Amount</label><i class="bar"></i>
 							</div>
 						</div>
 						<!-- Checkbox -->
 						<div class="checkbox">
 							<label>
-								<input type="checkbox"/><i class="helper"></i>Monthly
+								<input class="subscriptionCheckbox" type="checkbox"/><i class="helper"></i>Monthly
 							</label>
 						</div>
 						<!-- buttons -->
 						<div class="actions">
 							<!-- Button when item is NOT in cart -->
 							<button
-							id="submitCustomDonation"
 							type="submit"
-							class="button snipcart-add-item primary"
+							class="button snipcart-add-item primary submitCustomDonation"
 							data-item-id = "personalsupport-{{thisMember[0].shortname}}"
 							data-item-max-quantity = 1
 							data-item-categories="donation"
 							data-item-name = "Personal Support for {{thisMember[0].shortname}}"
-							data-item-price = "99.00"
-							data-item-url = "https://emit-portal.netlify.app/donate/validate/personalsupport-{{thisMember[0].shortname}}?amount=99.99&subscription=false"
+							data-item-price = ""
+							data-item-url = ""
 							data-item-quantity = 1
 							data-item-image = "{{thisMember[0].profile_image}}",
 							data-item-description = "Your support for {{thisMember[0].shortname}} enables EMIT to continue transforming lives across Africa.  Thank you!"
