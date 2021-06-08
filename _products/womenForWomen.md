@@ -8,7 +8,7 @@ description_html: >-
   entrepreneurs in society (91%). And yet for these vital positions, few are
   preparing and motivating them.</p><p>Our Women for Women project allows you to
   invest in the lives of women in other parts of the world.</p>
-product_type: donation
+product_category: donation
 price_usd: '19.00'
 # Other currency prices are calculated based on rateToUSD field in currency.yml
 sku: women-4-women

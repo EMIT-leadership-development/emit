@@ -6,7 +6,7 @@ description_html: >-
   circumstances; with renewed responsibility, they bring hope and skills to the
   communities they serve.</p><p>Your donation will cover the full material cost
   for one student to complete a 37 subject curriculum.</p>
-product_type: donation
+product_category: donation
 price_usd: '150.00'
 # Other currency prices are calculated based on rateToUSD field in currency.yml
 sku: training-material

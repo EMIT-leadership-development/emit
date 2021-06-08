@@ -6,7 +6,7 @@ description_html: >-
   circumstances; with renewed responsibility, they bring hope and skills to the
   communities they serve.</p><p>Your donation will contribute to the total
   program cost&nbsp; of one event.</p>
-product_type: donation
+product_category: donation
 price_usd: '250.00'
 # Other currency prices are calculated based on rateToUSD field in currency.yml
 sku: training-event

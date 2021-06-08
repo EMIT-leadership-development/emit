@@ -8,7 +8,7 @@ description_html: >-
   curriculum that will equip thousands of leaders who impact countless
   individuals in impoverished and suffering communities. &nbsp;This is why we
   exist - to transform nations. The EMIT strategy is unique, and it works!</p>
-product_type: donation
+product_category: donation
 price_usd: '500.00'
 # Other currency prices are calculated based on rateToUSD field in currency.yml
 sku: curriculum-dev

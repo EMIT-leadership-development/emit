@@ -1,7 +1,7 @@
 ---
 name:
 description_html:
-product_type:
+product_category:
 price:
 sku:
 product_image:
