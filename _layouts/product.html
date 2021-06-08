@@ -2,7 +2,8 @@
 layout: default
 ---
 
-<section id="{{page.sku}}" class="item--full product-container product">
+<section class="item--full product-container product">
+	{% if page.sku != "personal-support" %}
 		<div class="sectionIntro contained-FirstTwo">
 			<div class="imageWrap">
 				<a class="productImage" href="{{ product.url }}">
@@ -24,21 +25,61 @@ layout: default
                     <!-- AddToAny END -->
 			</div>
 		</div>
-		<div class="product-details sectionContent contained-LastFour" id="add">
+	{% endif %}
+		<div class="product-details sectionContent {% if page.sku != "personal-support" %} contained-LastFour {% endif %}" id="add">
 			<h3>{{ page.name }}</h3>
 			<div class="inCartNotification">
 				<span class="icon"><i data-feather="check"></i></span>In Cart
 			</div>
 			{{ page.description_html | markdownify }}
-			<div class="priceWrap">
-				{% for currency in site.data.currencies %}
-					<div class="productCurrency {{ currency.code }} {% if currency.default == true %} activePrice {% endif %} "><span>{{ currency.symbol }}</span>{{ page.price_usd | times: currency.rateToUSD | round: 0 }}</div>
-				{% endfor %}
-			</div>
-			<div class="actionRow">
-				<a class="button" href="/donate">BACK</a>
-				{% include snipcart-button.html product=page %}
-				<button class="button primary snipcart-checkout"><span class="icon"><i data-feather="shopping-cart"></i></span>Open Cart</button>
-			</div>
+			{% if page.sku != "personal-support" %}
+				<div class="priceWrap">
+					{% for currency in site.data.currencies %}
+						<div class="productCurrency {{ currency.code }} {% if currency.default == true %} activePrice {% endif %} "><span>{{ currency.symbol }}</span>{{ page.price_usd | times: currency.rateToUSD | round: 0 }}</div>
+					{% endfor %}
+				</div>
+				<!-- SONYA: TODO - USE JS TO CHECK IF THIS IS ALREADY IN CART -->
+				<div class="actionRow">
+					<a class="button" href="/donate">BACK</a>
+					{% include snipcart-button.html product=page %}
+					<button class="button primary snipcart-checkout"><span class="icon"><i data-feather="shopping-cart"></i></span>Open Cart</button>
+				</div>
+			{% endif %}
+
+			{% if page.sku == "personal-support" %}
+				<h4>Sponsor Team-Members</h4>
+				<ul class="memberList">
+					{% for member in page.members_shortname %}
+					{% assign thisMember = site.data.team-members | where:"shortname", member %}
+						<li id="{{page.sku}}">
+							<form class="materialForm">
+								<div class="memberPic" style="background-image: url({{thisMember[0].profile_image}});"></div>
+								<div class="memberName">
+									<h4>{{thisMember[0].name}}</h4>
+								</div>
+								<div class="amountWrap">
+									<div class="priceWrap">
+										{% for currency in site.data.currencies %}
+										<div class="productCurrency {{ currency.code }} {% if currency.default == true %} activePrice {% endif %} "><span>{{ currency.symbol }}</span></div>
+										{% endfor %}
+									</div>
+									<div class="form-group">
+										<input type="text" id="transaction-amt" name="T_amt" required="required" />
+										<label for="input" class="control-label">Amount</label><i class="bar"></i>
+									</div>
+								</div>
+								<div class="actions">
+									<div class="checkbox">
+										<label>
+										  <input type="checkbox"/><i class="helper"></i>Monthly
+										</label>
+									</div>
+									<button class="button primary">Add to Cart</button>
+								</div>
+							</form>
+						</li>
+					{% endfor %}
+				</ul>
+			{% endif %}
 		</div>
 </section>

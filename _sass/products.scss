@@ -465,6 +465,76 @@
 		font-size: 1.1rem;
 	}
 }
+// TEAM MEMBER SELECTION LIST
+.memberList {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 1rem;
+	li {
+		padding: 1rem;
+		background: #ffffff;
+		box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+		transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+		display: block;
+		list-style-type: none;
+		&:hover {
+			box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+		}
+		form {
+			border: none;
+			padding: 0;
+			display: grid;
+			grid-template-columns: 80px auto auto auto;
+			grid-gap: 12px;
+		}
+		.memberPic {
+			background-size: cover;
+			background-position: center;
+			height: 80px;
+		}
+		.memberName {
+			// border: 1px solid red;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: flex-start;
+			h4 {
+				margin: 0;
+				padding: 0;
+				font-size: 1.1rem;
+			}
+		}
+		.amountWrap {
+			// border: 1px solid red;
+			display: flex;
+			flex-direction: revert;
+			justify-content: center;
+			align-items: center;
+			.form-group {
+				margin: 0;
+			}
+		}
+		.actions {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+    		align-content: center;
+			.checkbox {
+				margin: 0;
+				label {
+					margin-bottom: 8px;
+				}
+				input {
+					margin: 0;
+				}
+			}
+			button {
+				margin: 0;
+				padding: 8px 16px;
+			}
+		}
+	}
+}
 // ----IN-CART FEEDBACK FOR PRODUCTS
 .inCart {
 	.inCartNotification {
@@ -494,7 +564,7 @@
 }
 // ----SNIPCART THEME
 #snipcart {
-    /* ----------------- 
+    /* -----------------
         Colors
     ----------------- */
     --color-default: hsl(0, 0%, 90%);
@@ -552,7 +622,7 @@
     --color-badge-active: #000000;
     --color-badge-disabled: var(--color-alt);
 
-    /* ----------------- 
+    /* -----------------
         Border colors
     ----------------- */
     --borderColor-default: hsla(0, 0%, 100%, 10%);
@@ -588,7 +658,7 @@
     --borderColor-badge-active: transparent;
     --borderColor-badge-disabled: transparent;
 
-    /* ----------------- 
+    /* -----------------
         Background colors
     ----------------- */
     --bgColor-default: #1c2127;
@@ -641,7 +711,7 @@
     --bgColor-badge-active: #85b744;
     --bgColor-badge-disabled: hsl(210, 10%, 11%);
 
-    /* ----------------- 
+    /* -----------------
         Shadows
     ----------------- */
 
