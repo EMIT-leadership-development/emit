@@ -10,5 +10,5 @@ product_category: donate-Targeted
 price_usd: '150.00'
 # Other currency prices are calculated based on rateToUSD field in currency.yml
 sku: training-material
-product_image: /images/products/trainingMaterial/trainingMaterial.webp
+product_image: https://res.cloudinary.com/sonya-ninja/image/upload/c_fill,f_auto,g_custom,h_600,q_auto,w_600/v1620891422/emit/images/spiritual/leader-emit-student-learning_bjk6hm.jpg
 ---

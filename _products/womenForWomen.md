@@ -12,5 +12,5 @@ product_category: donate-Targeted
 price_usd: '19.00'
 # Other currency prices are calculated based on rateToUSD field in currency.yml
 sku: women-4-women
-product_image: /images/products/womenForWomen/women-for-women.webp
+product_image: https://res.cloudinary.com/sonya-ninja/image/upload/c_fill,f_auto,g_custom,h_600,q_auto,w_600/v1620879363/emit/images/women/African-Business-Women_ohqyds.jpg
 ---
