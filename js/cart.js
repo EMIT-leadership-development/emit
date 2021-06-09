@@ -1,60 +1,3 @@
-// CUSTOM DONATION FORM
-// function updateCustomDonation() {
-//     const button = document.querySelector('#submitCustomDonation');
-//     const transactionAmount = document.querySelector('#transaction-amt');
-//     if (button) {
-//         transactionAmount.addEventListener('change', () => {
-//             // Sets the default amount when adding the item
-//             button.setAttribute('data-item-price', transactionAmount.value);
-//             button.setAttribute('data-item-url', 'https://emit-portal.netlify.app/donate/custom-contribution/' + transactionAmount.value);
-//         })
-//         const message = document.querySelector('#message')
-//         message.addEventListener('change', () => {
-//             // Sets the message when adding the item
-//             button.setAttribute("data-item-custom1-value", message.value);
-//         })
-//     }
-
-// }
-function updateCustomDonation() {
-    const customValidationItems = document.querySelectorAll('.customValidation');
-    customValidationItems.forEach(item => {
-        const button = item.querySelector('.submitCustomDonation');
-        const productID = item.id;
-        const transactionAmount = item.querySelector('.transaction-amt');
-        const subscription = item.querySelector('.subscriptionCheckbox');
-        const message = item.querySelector('.message')
-        transactionAmount.addEventListener('change', () => {
-            // Sets the default amount when adding the item
-            button.setAttribute('data-item-price', transactionAmount.value);
-            button.setAttribute(
-                'data-item-url', 'https://emit-portal.netlify.app/donate/validate/' + productID
-                + '?amount=' + transactionAmount.value
-                + '&subscription=' + subscription.checked);
-        })
-        subscription.addEventListener('change', () => {
-            // Sets the default amount when adding the item
-            button.setAttribute('data-item-price', transactionAmount.value);
-            button.setAttribute(
-                'data-item-url', 'https://emit-portal.netlify.app/donate/validate/' + productID
-                + '?amount=' + transactionAmount.value
-                + '&subscription=' + subscription.checked);
-            if (subscription.checked == true) {
-                button.setAttribute('data-plan1-id', 'monthly-plan');
-                button.setAttribute('data-plan1-name', 'Monthly Donation');
-                button.setAttribute('data-plan1-frequency', 'Monthly');
-                button.setAttribute('data-plan1-interval', '1');
-                button.setAttribute('data-item-selected-plan', 'monthly-plan');
-            }
-        })
-        message.addEventListener('change', () => {
-            // Sets the message when adding the item
-            button.setAttribute("data-item-custom1-value", message.value);
-        })
-    });
-}
-updateCustomDonation();
-
 // SNIPCART FUNCTIONS
 document.addEventListener('snipcart.ready', () => {
     Snipcart.DEBUG = true;
@@ -62,6 +5,8 @@ document.addEventListener('snipcart.ready', () => {
     changeCartCurrency();
     // 2. Check for items in cart and give feedback on page about what's in cart
     displayCartFeedback();
+    // 3. When payment is processed clear all forms
+    resetForms();
 });
 
 // ---1. LISTEN FOR SELECT CURRENCY OPTION IN MODAL
@@ -95,7 +40,67 @@ function displayCartFeedback() {
         }
     });
 }
+// --3. RESET FORMS WHEN SNIPCART IS RESET (PAYMENT PROCESSED?)
+function resetForms() {
+    Snipcart.events.on('cart.confirmed', (cartConfirmResponse) => {
+        var forms = document.getElementsByClassName("materialForm");
+        console.log(forms);
+        forms.forEach(form => {
+            form.reset();
+        });
+    });
+}
+
 // ------------------------------------------------------------------
+// CUSTOM CONTRIBUTION BUTTON WITH SPECIAL VALIDATION URL
+function updateCustomDonation() {
+    const customValidationItems = document.querySelectorAll('.customValidation');
+    customValidationItems.forEach(item => {
+        const button = item.querySelector('.submitCustomDonation');
+        const productID = item.id;
+        const transactionAmount = item.querySelector('.transaction-amt');
+        const subscription = item.querySelector('.subscriptionCheckbox');
+        const message = item.querySelector('.message')
+        transactionAmount.addEventListener('change', () => {
+            // Sets the default amount when adding the item
+            button.setAttribute('data-item-price', transactionAmount.value);
+            button.setAttribute(
+                'data-item-url', 'https://emit-portal.netlify.app/donate/validate/' + productID
+                + '?amount=' + transactionAmount.value
+                + '&subscription=' + subscription.checked);
+        })
+        subscription.addEventListener('change', () => {
+            // Sets the default amount when adding the item
+            button.setAttribute('data-item-price', transactionAmount.value);
+            button.setAttribute(
+                'data-item-url', 'https://emit-portal.netlify.app/donate/validate/' + productID
+                + '?amount=' + transactionAmount.value
+                + '&subscription=' + subscription.checked);
+            if (subscription.checked == true) {
+                button.setAttribute('data-plan1-id', 'monthly-' + productID );
+                button.setAttribute('data-plan1-name', 'Monthly ' + productID);
+                button.setAttribute('data-plan1-frequency', 'Monthly');
+                button.setAttribute('data-plan1-interval', '1');
+                button.setAttribute('data-item-selected-plan', 'monthly-' + productID);
+            } else {
+                button.removeAttribute('data-foo')
+                button.removeAttribute('data-plan1-id');
+                button.removeAttribute('data-plan1-name');
+                button.removeAttribute('data-plan1-frequency');
+                button.removeAttribute('data-plan1-interval');
+                button.removeAttribute('data-item-selected-plan');
+            }
+        })
+        message.addEventListener('change', () => {
+            // Sets the message when adding the item
+            button.setAttribute("data-item-custom1-value", message.value);
+        })
+    });
+}
+updateCustomDonation();
+
+
+
 // ---Change on-page currency display (products and top-nav icon)
 function updateCurrencyDisplay() {
     const state = Snipcart.store.getState();

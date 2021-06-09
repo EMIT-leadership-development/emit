@@ -76,7 +76,7 @@ description:
 <!-- SUBSCRIPTIONS -->
 <section class="item--full contrastLight2">
 	<div class="subscriptionWrap container">
-		{% assign subscriptions = site.products | where:'product_category', 'subscription' %}
+		{% assign subscriptions = site.products | where:'product_category', 'donate-StandardSubscriptions' %}
 		{% for product in subscriptions %}
 			<div id="{{product.sku}}" class="cms-editor-link subscriptionProduct" data-cms-editor-link="cloudcannon:collections/{{ product.path }}">
 				<div class="subscriptionImage">
@@ -123,14 +123,14 @@ description:
 							}"
 							data-item-url="/donate"
 							data-item-description="{{ product.description_html | strip_html}}"
-							data-item-selected-plan="monthly-plan"
+							data-item-selected-plan="monthly-{{product.sku}}"
 
 							data-item-custom1-name="Include a personal message"
 							data-item-custom1-type="textarea"
 							data-item-custom1-value=""
 
-							data-plan1-id="monthly-plan"
-							data-plan1-name="Monthly Donation"
+							data-plan1-id="monthly-{{product.sku}}"
+							data-plan1-name="Monthly {{product.sku}}"
 							data-plan1-frequency="Monthly"
 							data-plan1-interval="1">
 							Add to cart
@@ -144,7 +144,7 @@ description:
 </section>
 
 <!-- CONTRIBUTIONS -->
-<section id="custom-contribution" class="item--full">
+<section id="custom-contribution" class="item--full customValidation">
 	<div class="sectionIntro contained-FirstTwo">
 		<h2 class="sectionTitle priority2 editable">
 			Determine your<br /><span class="emphasis">own impact</span>
@@ -161,8 +161,8 @@ description:
 					<h3>Dear EMIT,</h3>
 				</div>
 				<div class="formFields">
-					<div class="form-group message">
-						<textarea id="message" rows="4" name="message"></textarea>
+					<div class="form-group messageWrap">
+						<textarea class="message" rows="4" name="message"></textarea>
 						<label for="message" class="control-label">Include a message with your gift.</label><i class="bar"></i>
 					</div>
 					<div class="amountWrap">
@@ -172,18 +172,23 @@ description:
 							{% endfor %}
 						</div>
 						<div class="form-group">
-							<input type="text" id="transaction-amt" name="T_amt" required="required" />
+							<input type="text" class="transaction-amt" name="T_amt" required="required" />
 							<label for="input" class="control-label">Contribution Amount</label><i class="bar"></i>
+						</div>
+						<!-- Checkbox -->
+						<div class="checkbox">
+							<label>
+								<input class="subscriptionCheckbox" type="checkbox"/><i class="helper"></i>Monthly
+							</label>
 						</div>
 					</div>
 				</div>
 				<button
-				id="submitCustomDonation"
 				type="submit"
-				class="button snipcart-add-item primary"
+				class="button snipcart-add-item primary submitCustomDonation"
 				data-item-id = "custom-contribution"
 				data-item-max-quantity = 1
-				data-item-categories="donation"
+				data-item-categories="donation-customcontribution"
 				data-item-name = "CONTRIBUTION (Determine my own impact)"
 				data-item-price = ""
 				data-item-url = "https://emit-portal.netlify.app/donate/custom-contribution"
@@ -239,7 +244,7 @@ description:
 	<div id="donationsWrap" class="container">
 		<div id="gift" class="donationOption">
 			<ul class="product-list">
-				{% assign donations = site.products | where:'product_category', 'donation' %}
+				{% assign donations = site.products | where:'product_category', 'donate-Targeted' %}
 				{% for product in donations %}
 				<li id="{{ product.sku }}" class="cms-editor-link productPreview product" data-cms-editor-link="cloudcannon:collections/{{ product.path }}">
 					<div class="imageWrap">
