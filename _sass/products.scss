@@ -228,7 +228,7 @@
 			textarea {
 				resize: vertical;
 			}
-			.message {
+			.messageWrap {
 				.control-label {
 					font-size: 1rem;
 					top: -3rem;
@@ -237,7 +237,7 @@
 			.amountWrap {
 				display: grid;
 				grid-gap: 0.5rem;
-				grid-template-columns: auto 1fr;
+				grid-template-columns: auto 1fr auto;
 				align-items: center;
 				.priceWrap {
 					height: 100%;
@@ -251,6 +251,11 @@
 						color: black;
 						margin-top: 1rem;
 					}
+				}
+				.checkbox {
+					margin-bottom: 0;
+					margin-left: 2rem;
+					margin-right: 1rem;
 				}
 				.feedbackAmount {
 					font-weight: 900;
@@ -563,7 +568,7 @@
     /* -----------------
         Colors
     ----------------- */
-    --color-default: hsl(0, 0%, 90%);
+    --color-default: rgba(255,255,255,0.7);
     --color-alt: #96a7bf;
     --color-icon: #abe116;
     --color-success: hsl(144, 50%, 55%);
@@ -574,7 +579,7 @@
     --color-link-active: var(--color-link);
     --color-link-focus: var(--color-link);
 
-    --color-input: var(--color-default);
+    --color-input: #ffffff;
     --color-input-hover: var(--color-input);
     --color-input-focus: var(--color-input);
     --color-input-checked: var(--color-input);
