@@ -7,7 +7,7 @@ description_html: >-
   volunteers and would appreciate all the support they can get to be sustained
   and be more successful in executing their calling.</p>
 product_category: donate-Targeted
-product_image: /images/products/projectLeader/ProjectLeader.webp
+product_image: https://res.cloudinary.com/sonya-ninja/image/upload/c_thumb,f_auto,g_auto,h_600,q_auto,w_600/v1620891937/emit/images/business/EMIT-business-leadership_apsxal.jpg
 price_usd: "99.00"
 # Other currency prices are calculated based on rateToUSD field in currency.yml
 sku: personal-support

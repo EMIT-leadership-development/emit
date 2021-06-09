@@ -12,5 +12,5 @@ product_category: donate-Targeted
 price_usd: '500.00'
 # Other currency prices are calculated based on rateToUSD field in currency.yml
 sku: curriculum-dev
-product_image: /images/products/curriculumDevelopment/curriculumDevelopment.webp
+product_image: https://res.cloudinary.com/sonya-ninja/image/upload/c_thumb,f_auto,g_auto,h_600,q_auto,w_600/v1620879371/emit/images/women/wman-leader-training-workplace_phra3v.jpg
 ---
