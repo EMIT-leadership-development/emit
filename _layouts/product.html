@@ -48,7 +48,7 @@ layout: default
 <!-- Different layout for Team-Member support product -->
 {% if page.sku == "personal-support" %}
 <section class="item--full product-container">
-	<div class="product-details sectionContent {% if page.sku != "personal-support" %} contained-LastFour {% endif %}" id="{{page.sku}}">
+	<div class="product-details sectionContent" id="{{page.sku}}">
 		<h3>{{ page.name }}</h3>
 		{{ page.description_html | markdownify }}
 		<h4>Sponsor Team-Members</h4>
@@ -98,7 +98,7 @@ layout: default
 							class="button snipcart-add-item primary submitCustomDonation"
 							data-item-id = "personalsupport-{{thisMember[0].shortname}}"
 							data-item-max-quantity = 1
-							data-item-categories="donation"
+							data-item-categories="donate-personalSupport"
 							data-item-name = "Personal Support for {{thisMember[0].shortname}}"
 							data-item-price = ""
 							data-item-url = ""
