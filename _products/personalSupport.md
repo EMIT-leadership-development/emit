@@ -26,4 +26,5 @@ members_shortname:
   - Jones
   - Gert
   - Joseph
+  - Lydia
 ---
