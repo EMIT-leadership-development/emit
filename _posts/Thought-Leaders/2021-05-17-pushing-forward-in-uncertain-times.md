@@ -6,8 +6,8 @@ hero:
 heroQuote:
 hero_Quote_Cite:
 hero_image:
-sprite_image: /images/sprites/sprite-Set1.webp
-sprite_selection_number: 9
+sprite_image: /images/sprites/sprite-Set2.webp
+sprite_selection_number: 3
 team-member: Borniface Shonga
 tags:
   - Perseverance
