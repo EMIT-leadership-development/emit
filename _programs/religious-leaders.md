@@ -33,7 +33,8 @@ assessment: >-
 certification: >-
   The curriculum is designed to address wholistic leadership development to
   ensure community impact and transformation. It is therefore not an academic
-  qualification. Advanced Certificate and Certificate levels are offered.
+  qualification. CPD Certificate in Advanced Leadership and PCD Certificate in
+  Leadership levels are offered.
 graduation: >-
   Students graduate after they have attended all classes, successfully completed
   all examinations, trained 10 other leaders and paid their tuition in full.
@@ -264,7 +265,7 @@ curricula:
     sprite_selection_number:
     image_url: >-
       https://res.cloudinary.com/sonya-ninja/image/upload/c_thumb,f_auto,q_auto,w_300/v1620915665/emit/images/family/EMIT-kingdom-of-heaven_yl5ww9.jpg
-  - title: 'Law, Grace & Righteousness'
+  - title: Law, Grace & Righteousness
     objective: >-
       A thorough theological and practical understanding of Paul’s epistle to
       the Galatians, written in response to the “Judaizers” who were a
