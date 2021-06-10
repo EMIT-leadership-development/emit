@@ -33,7 +33,7 @@ assessment: >-
 certification: >-
   The curriculum is designed to address wholistic leadership development to
   ensure community impact and transformation. It is therefore not an academic
-  qualification. CPD Certificate in Advanced Leadership and PCD Certificate in
+  qualification. CPD Certificate in Advanced Leadership and CPD Certificate in
   Leadership levels are offered.
 graduation: >-
   Students graduate after they have attended all classes, successfully completed
