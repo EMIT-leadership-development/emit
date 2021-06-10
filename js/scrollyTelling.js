@@ -389,8 +389,8 @@ var NINJA_FUNCTIONS = {
 
 		// DONATE
 		tl.addLabel("donate",">");
-		tl.to("#impactPendulum",{scale:0, force3D:false},">0.5");
-		tl.to("#smilingAnna",{duration:1, opacity:1},">1");
+		tl.to("#impactPendulum",{scale:5, opacity:0, force3D:false},">0.5");
+		tl.to("#smilingAnna",{duration:1, opacity:1},"<");
 
 		tl.addLabel("end",">")
 		return tl;

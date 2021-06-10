@@ -302,78 +302,6 @@ $sphereWidth: clamp(80px,10vw,200px);
                 }
             }
         }
-        // All slide titles
-        // .sectionHeadline {
-        //     width: 100%;
-        //     box-sizing: border-box;
-        //     height: 0;
-        //     overflow: visible;
-        //     padding: 0;
-        //     pointer-events: none;
-        //     display: flex;
-        //     flex-direction: column;
-        //     justify-content: flex-end;
-        //     align-items: flex-start;
-        //     z-index: 50;
-        //     @media (max-width:$portraitEnd) {
-        //         height: auto;
-        //         background-color: $brandContrastDarkest;
-        //         flex-direction: row;
-        //         justify-content: space-between;
-        //         align-items: flex-end;
-        //     }
-        //     h1 {
-        //         visibility: hidden;
-        //         position: relative;
-        //         margin: 0;
-        //         padding: 0;
-        //         margin-bottom: 0;
-        //         @media (min-width:$landscapeStart) {
-        //             padding: 2rem 0 0 2rem;
-        //         }
-        //         @media (max-width:$portraitEnd) {
-        //             padding: 2rem;
-        //         }
-        //         span {
-        //             display: block;
-        //         }
-        //         .title {
-        //             text-align: left;
-        //             color: #ffffff;
-        //             color: white;
-        //             font-family: "HelveticaUltraCompressed",Arial,Helvetica,sans-serif;
-        //             font-size: clamp(3rem, 7.5vw, 6rem);
-        //             text-transform: uppercase;
-        //             // line-height: 1;
-        //             letter-spacing: 1px;
-        //             font-weight: normal;
-        //             white-space: nowrap;
-        //             margin-bottom: -10%;
-        //         }
-        //         .underline {
-        //             height: 5px;
-        //             width: 100%;
-        //             background-color: #fff;
-        //         }
-        //     }
-        //     .subtitle {
-        //         padding-top: 0.5rem;
-        //         visibility: hidden;
-        //         text-transform: uppercase;
-        //         letter-spacing: .2em;
-        //         font-weight: 300;
-        //         color: #ffffff;
-        //         font-size: 1rem;
-        //         @media (min-width:$landscapeStart) {
-        //             padding: 1rem 0 2rem 2rem;
-        //         }
-        //         @media (max-width:$portraitEnd) {
-        //             font-size: 0.6rem;
-        //             padding: 2rem 2rem 2rem 0;
-        //             text-align: right;
-        //         }
-        //     }
-        // }
         .sectionHeadline {
             width: 100%;
             box-sizing: border-box;
@@ -1145,10 +1073,10 @@ $sphereWidth: clamp(80px,10vw,200px);
             }
             .contentWrap {
                 width: 90%;
-                background-image: linear-gradient(90deg, #272c332b 0%, #1c2127 100%), url();
+                background-image: linear-gradient(90deg, #272c332b 0%, #1c2127 100%), url(https://res.cloudinary.com/sonya-ninja/image/upload/f_auto,q_auto/v1623303759/emit/images/homePage/africaFaces_jimygy.jpg);
                 background-position: center;
                 background-repeat: no-repeat;
-                background-size: contain;
+                background-size: cover;
                 padding: 0;
                 @media (min-width: $landscapeStart) {
                     align-items: flex-end;
