@@ -6,7 +6,7 @@ url: "https://emit.global"
 baseurl:
 google_analytics_key: G-9JD05XKYBQ
 google_maps_javascript_api_key: AIzaSyCopZOMs4afUxxRSYN36lBdL5dzANTsvFA
-snipcart_key: "YjE5MjEwZDMtMTUxNS00ZGQwLTllNTAtYThkZDVkOThmOGU5NjM3MzU3Nzg2ODIyNjc0NDAz"
+snipcart_key: "NWFiMDUzOWItMDg2Yi00MDhjLWE1YmItODQ0M2EwYTI5YWI1NjM3MzU3Nzg2ODIyNjc0NDAz"
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /siteicon.png
