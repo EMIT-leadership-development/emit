@@ -7,6 +7,8 @@ document.addEventListener('snipcart.ready', () => {
     displayCartFeedback();
     // 3. When payment is processed clear all forms
     resetForms();
+    // 4. Change payment form style
+    paymentFormStyle();
 });
 
 // ---1. LISTEN FOR SELECT CURRENCY OPTION IN MODAL
@@ -48,6 +50,20 @@ function resetForms() {
         forms.forEach(form => {
             form.reset();
         });
+    });
+}
+// --4. PAYMENT FORM STYLING
+function paymentFormStyle() {
+    Snipcart.api.theme.customization.registerPaymentFormCustomization({
+        input: {
+            color: '#ffffff',
+            placeholder: {
+                color: '#ffffff',
+            },
+        },
+        label: {
+            color: '#fff'
+        }
     });
 }
 
