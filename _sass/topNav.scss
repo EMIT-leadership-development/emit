@@ -1,0 +1,424 @@
+.mainNavigation {
+    position: fixed;
+    z-index: 900;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+
+/**
+* Initial state, hidden off screen
+*/
+.clicky-menu ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    visibility: hidden; /*[1]*/
+}
+
+/**
+* No JS fallback
+*
+* Triggers menus on hover rather than click. Supports keyboard navigation in modern browsers.
+*/
+.clicky-menu.no-js li:hover > ul {
+    visibility: visible;
+}
+.clicky-menu.no-js li:focus-within > ul { /*[2]*/
+    visibility: visible;
+}
+
+/**
+* Open/Close Menu Behavior with JS
+*/
+.clicky-menu ul[aria-hidden="false"] {
+    visibility: visible;
+    @media (min-width: 540px) {
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
+}
+
+/* Prevent offscreen-submenus */
+.clicky-menu .sub-menu--right {
+    left: auto !important;
+    right: 0 !important;
+}
+
+/**
+* Footnotes
+*
+* [1] Using visibility instead of display allows for easier transitions and animation of submenus
+* [2] Must be a separate ruleset so that hover works in non-modern browsers
+*/
+
+/* Hidden SVG used for down arrows */
+svg[hidden] {
+    display: none;
+    position: absolute;
+}
+
+.site-navigation {
+    width: 100%;
+    background-color: $brand-color;
+    @media (min-width: 540px) {
+        display: flex;
+        justify-content: space-between
+    }
+    .mobileNav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px;
+        #headerLogo {
+            svg {
+                height: 80px;
+            }
+        }
+        .navButton {
+            @media (min-width: 540px) {
+                display: none;
+            }
+        }
+    }
+    .actionsWrap {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 8px;
+        .button {
+            padding: 8px 16px;
+        }
+    }
+}
+
+.clicky-menu {
+    flex:1;
+    justify-content: stretch;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+@media (min-width: 540px) {
+    .clicky-menu {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* General Link & Button Styles */
+.clicky-menu a,
+.clicky-menu button {
+    margin: .25em;
+    padding: 1em;
+    background: transparent;
+    color: rgba(0,0,0,0.7);
+    // font-weight: bold;
+    text-decoration: none;
+    font-family: inherit;
+    border-radius: 3px;
+}
+
+.clicky-menu a:hover,
+.clicky-menu button:hover {
+    color: #000000;
+    @media (min-width: 540px) {
+        transform-origin: center;
+        transform: scale(1.05);
+        transition: all 0.3s ease-in;
+    }
+}
+
+.clicky-menu a:focus,
+.clicky-menu button:focus {
+    outline: .125em dotted purple;
+    outline-offset: -.125em;
+}
+
+/* Top Level Items */
+.clicky-menu > li {
+    position: relative;
+    // flex: 1 1 auto;
+    display: flex;
+    justify-content: stretch;
+    flex-wrap: wrap;
+}
+
+.clicky-menu > li > a,
+.clicky-menu > li > button {
+    flex: 1 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border: 0;
+    font-size: inherit;
+    line-height: 1.5;
+    cursor: pointer;
+}
+@media (min-width: 540px) {
+    .clicky-menu > li > a,
+    .clicky-menu > li > button {
+        justify-content: center;
+    }
+}
+
+/* Icon */
+.clicky-menu svg {
+    width: 1em;
+    height: 1em;
+    margin-left: .5em;
+}
+
+.clicky-menu [aria-expanded="true"] svg {
+    transform: scaleY(-1);
+}
+
+/* Submenu Styles */
+.clicky-menu ul {
+    min-width: 100%;
+    width: 12em;
+    margin-top: .25em;
+    padding: 0;
+    list-style: none;
+    background-color: #eee;
+    li {
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+}
+@media (min-width: 540px) {
+    .clicky-menu {
+    }
+}
+
+/* Responsive Submenu Behavior */
+.clicky-menu ul[aria-hidden="false"] {
+    position: static;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+@media (min-width: 540px) {
+    .clicky-menu ul[aria-hidden="false"] {
+        position: absolute;
+        width: auto;
+    }
+}
+
+/* Submenu Links */
+.clicky-menu ul a {
+    display: block;
+    padding-top: .375em;
+    padding-bottom: .375em;
+}
+@media (min-width: 540px) {
+    .clicky-menu ul a {
+        padding: .375em 1em;
+        white-space: nowrap;
+    }
+}
+
+// SONYA: added show-hide mobile nav function
+// NB: ToDo: this has no no-js fallback!
+body {
+    #site-navigation {
+        @media (max-width: 539px) {
+            height: 71px;
+            overflow: hidden;
+            transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+            #headerLogo {
+                svg {
+                    height: 55px;
+                }
+            }
+            .clicky-menu {
+                background-color: darken($brand-color, 10%);
+            }
+        }
+    }
+    &.showNav {
+        // Prevent Scrolling the page while menu is open
+        overflow: hidden;
+        #site-navigation {
+            @media (max-width: 539px) {
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+
+
+
+// THE HERO HEADING SECTION
+section.hero{
+    min-height: 460px;
+    height: 460px;
+    // padding-bottom: 3em;
+    position: relative;
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 0 0 2rem 0;
+    #scrollDown {
+        position: absolute;
+        bottom: 0;
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        svg {
+            width: 40px;
+            height: 40px;
+            stroke: #ffffff;
+        }
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        padding: 0;
+    }
+    // Flex row on larger screens
+    @media #{$mid-point} {
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+    }
+    .heroTitle {
+        margin-left: 2rem;
+        margin-top: 2rem;
+        position: relative;
+        z-index: 10;
+        @media #{$mid-point} {
+            text-align: right;
+        }
+        h1 {
+            margin: 0;
+            text-transform: uppercase;
+            font-size: 1.4rem;
+            color: rgba(255,255,255,0.7);
+            letter-spacing: 3px;
+        }
+        .breadcrumbs {
+            color: #ffffff;
+            text-transform: uppercase;
+            font-size: 0.65rem;
+            letter-spacing: 3px;
+            padding-top: 0.5rem;
+            a {
+                color: rgba(255,255,255,0.6);
+                text-decoration: none;
+                &:hover {
+                    text-decoration: none;
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+    .heroQuote {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        position: relative;
+        z-index: 10;
+        max-width: 400px;
+        margin: 0;
+        font-weight: 500;
+        backdrop-filter: blur(2px);
+        p {
+            display: block;
+            padding: 1rem 0 0 2rem;
+            border-left: 6px solid $brand-color;
+            margin: 0;
+            color: #ffffff;
+            font-size: 2rem;
+            line-height: 1.2;
+            cite {
+                margin-left: 1rem;
+                color: rgba(255,255,255,0.6);
+                font-size: 0.9rem;
+                white-space: nowrap;
+            }
+        }
+    }
+    .overlay, .heroOverlay{
+        grid-column: unset;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(0,0,0,0.6);
+        z-index: 1;
+    }
+}
+// CURRENCY SELECTION BUTTON AND MODAL
+.currencyButton {
+    width: 40px;
+    margin-left: 0.9rem !important;
+    border: 0;
+    border-radius: 0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    &:hover {
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+.header_actions-currency.modal {
+    .modalContent {
+        width: 100%;
+        height: 100%;
+        overflow-y: scroll;
+        margin: 1rem;
+        &::before {
+            display: none;
+        }
+        #currencies {
+            display: flex;
+            .image {
+                opacity: 0.8;
+                width: 200px;
+                height: auto;
+                margin: 10px;
+                &:hover {
+                    opacity: 1;
+                }
+            }
+            .title {
+                width: 100%;
+                color: #ffffff;
+                text-align: center;
+            }
+
+            .radio-img {
+                > input {
+                    display:none;
+                }
+                > .image{
+                    cursor:pointer;
+                    border: 2px solid #ffffff;
+
+                }
+                > input:checked + .image{
+                    box-shadow: #abe116 1px 1px 20px;
+                    opacity: 1;
+                }
+
+            }
+        }
+    }
+}

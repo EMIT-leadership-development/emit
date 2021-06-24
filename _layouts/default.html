@@ -45,19 +45,7 @@
 	</head>
 	<body>
 		<header class="mainNavigation{% if page.title == 'Stories' %} transparentNav{%endif%}">
-			<nav class="container">
-				<input type="checkbox" name="" id="check">
-				<a id="headerLogo" class="logo-container" href="{{ site.url }}">
-					<!-- <h3 class="logo">Brand<span>Name</span></h3> -->
-					{% include logo.html %}
-				</a>
-				{% include navigation.html %}
-				<div class="hamburger-menu-container">
-					<div class="hamburger-menu">
-						<div></div>
-					</div>
-				</div>
-			</nav>
+			{% include topNav.html %}
 		</header>
 		<main class="content grid">
 			<!-- Hero -->
@@ -125,6 +113,7 @@
 					return tl;
 			}
 		</script>
+		<script src="/js/topNav.js"></script>
 		<!-- Feather icons -->
 		<script>
 			feather.replace()
