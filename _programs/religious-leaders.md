@@ -53,7 +53,7 @@ curricula:
     objective: >-
       This course examines current trends in leadership today. Personal
       leadership development is emphasized.
-    credits_number: 5
+    credits_number: 10
     days_number: 55
     sprite_selection_number: 1
     image_url: >-
@@ -72,7 +72,7 @@ curricula:
     objective: >-
       This course gives an historical overview of the history and growth of the
       Gospel on the African continent.
-    credits_number: 30
+    credits_number: 8
     days_number: 40
     sprite_selection_number: 3
     image_url: >-
@@ -81,7 +81,7 @@ curricula:
     objective: >-
       We provide an understanding of how animism has impacted African indigenous
       religion.
-    credits_number: 12
+    credits_number: 8
     days_number: 40
     sprite_selection_number:
     image_url: >-
@@ -90,14 +90,14 @@ curricula:
     objective: >-
       The course provides practical advice for numerous counseling topics, along
       with an overview of counseling practices and procedures.
-    credits_number: 3
+    credits_number: 12
     days_number: 70
     sprite_selection_number: 4
     image_url: >-
       https://res.cloudinary.com/sonya-ninja/image/upload/c_thumb,w_300,h_300,f_auto,q_auto/v1620891428/emit/images/spiritual/pastorCounsellingWithBible_fu00bg.jpg
   - title: Biblical Doctrines
     objective: A thorough examination of such essential Biblical doctrines.
-    credits_number: 14
+    credits_number: 10
     days_number: 61
     sprite_selection_number: 5
     image_url: >-
