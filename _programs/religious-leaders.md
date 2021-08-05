@@ -316,7 +316,7 @@ curricula:
     objective: >-
       This course examines both the Biblical teachings regarding prayer and
       Biblical examples of prayer.
-    credits_number: 16
+    credits_number: 10
     days_number: 50
     sprite_selection_number:
     image_url: >-
@@ -334,7 +334,7 @@ curricula:
     objective: >-
       The course covers many strategic and practical aspects of establishing an
       effective church youth ministry.
-    credits_number: 14
+    credits_number: 10
     days_number: 55
     sprite_selection_number:
     image_url: >-
@@ -344,7 +344,7 @@ curricula:
       We focus on the personal development of a leader – the preparation and
       development of a leader’s vision and an understanding of critical
       thinking.
-    credits_number: 12
+    credits_number: 10
     days_number: 55
     sprite_selection_number:
     image_url: >-
@@ -353,7 +353,7 @@ curricula:
     objective: >-
       The course looks at Biblical and practical aspects of the goals of a
       leader, decision-making, and the pitfalls of being a Christian leader.
-    credits_number: 32
+    credits_number: 12
     days_number: 70
     sprite_selection_number:
     image_url: >-
@@ -362,7 +362,7 @@ curricula:
     objective: >-
       This course is a Biblical examination of Satan’s activity on the earth,
       and the believer’s authority.
-    credits_number: 23
+    credits_number: 10
     days_number: 55
     sprite_selection_number:
     image_url: >-
@@ -372,7 +372,7 @@ curricula:
       The local church is the “manifold wisdom of God,” and is described as the
       Bride of Christ. The course examines the Old Testament and New Testament
       understanding of the people of God.
-    credits_number: 20
+    credits_number: 10
     days_number: 55
     sprite_selection_number:
     image_url: >-
@@ -382,7 +382,7 @@ curricula:
       This course examines a Biblical theology for worship, and also looks at
       how the Church can be taught and encouraged by a Biblical perspective on
       worship.
-    credits_number: 14
+    credits_number: 8
     days_number: 40
     sprite_selection_number:
     image_url: >-
