@@ -244,14 +244,14 @@ curricula:
       This course provides a reproducible model for developing and fostering
       healthy interpersonal relationships.  We provide a model for resolving the
       conflict in ways that maintains relationships.
-    credits_number: 16
+    credits_number: 10
     days_number: 55
     sprite_selection_number:
     image_url: >-
       https://res.cloudinary.com/sonya-ninja/image/upload/c_thumb,w_300,h_300,f_auto,q_auto/v1620896764/emit/images/spiritual/EMIT-leadership-teaching_polekc.jpg
   - title: Islam
     objective: This course provides a thorough look at practical ways to understand Islam
-    credits_number: 8
+    credits_number: 10
     days_number: 50
     sprite_selection_number:
     image_url: >-
@@ -260,7 +260,7 @@ curricula:
     objective: >-
       This course examines the Biblical understanding of the Kingdom and how it
       provides us with an understanding of all that we do for Christ
-    credits_number: 4
+    credits_number: 8
     days_number: 40
     sprite_selection_number:
     image_url: >-
@@ -280,7 +280,7 @@ curricula:
     objective: >-
       This bold course addresses the issues of money, sex and power in the life
       of leaders candidly and Biblically.
-    credits_number: 12
+    credits_number: 10
     days_number: 50
     sprite_selection_number:
     image_url: >-
@@ -289,7 +289,7 @@ curricula:
     objective: >-
       The course examines the Old and New Testament teachings regarding marriage
       as well as sexuality, children, divorce, and remarriage.
-    credits_number: 24
+    credits_number: 12
     days_number: 70
     sprite_selection_number:
     image_url: >-
@@ -298,7 +298,7 @@ curricula:
     objective: >-
       This course examines Biblical and practical ways to establish healthy and
       productive mentoring relationships.
-    credits_number: 14
+    credits_number: 10
     days_number: 55
     sprite_selection_number:
     image_url: >-
@@ -307,7 +307,7 @@ curricula:
     objective: >-
       Along with a theological understanding of ‘mission,’ the course covers
       strategies to do cross-cultural ministry.
-    credits_number: 18
+    credits_number: 8
     days_number: 40
     sprite_selection_number:
     image_url: >-
