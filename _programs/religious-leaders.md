@@ -107,7 +107,7 @@ curricula:
       This course examines how animism, polytheism, and secularism all
       contribute to societal worldviews. The course also sets forth a distinctly
       Biblical worldview.
-    credits_number: 5
+    credits_number: 8
     days_number: 40
     sprite_selection_number: 6
     image_url: >-
@@ -116,7 +116,7 @@ curricula:
     objective: >-
       Cell groups are vital to the growth of the church. A distinctly African
       context for establishing cell groups in your church is presented.
-    credits_number: 5
+    credits_number: 10
     days_number: 55
     sprite_selection_number: 7
     image_url: >-
@@ -125,7 +125,7 @@ curricula:
     objective: >-
       The course looks at practical issues, while at the same time maintaining
       age-appropriate strategies for children’s ministry.
-    credits_number: 13
+    credits_number: 8
     days_number: 44
     sprite_selection_number: 8
     image_url: >-
@@ -134,7 +134,7 @@ curricula:
     objective: >-
       The course provides practical, easy-to-use systems for church
       administration.
-    credits_number: 28
+    credits_number: 10
     days_number: 60
     sprite_selection_number: 9
     image_url: >-
@@ -143,14 +143,14 @@ curricula:
     objective: >-
       We examine several of Christianity's contemporary experts in the study of
       Church Growth.
-    credits_number: 13
+    credits_number: 10
     days_number: 60
     sprite_selection_number: 10
     image_url: >-
       https://res.cloudinary.com/sonya-ninja/image/upload/c_thumb,w_300,h_300,f_auto,g_custom,q_auto/v1620891406/emit/images/spiritual/cell-Groups_awsjxl.jpg
   - title: Church planting
     objective: The course examines contemporary church planting movements.
-    credits_number: 20
+    credits_number: 10
     days_number: 55
     sprite_selection_number: 11
     image_url: >-
@@ -187,7 +187,7 @@ curricula:
     objective: >-
       This course covers the preparation of the messenger, development of the
       message, and the delivery of the message.
-    credits_number: 8
+    credits_number: 10
     days_number: 55
     sprite_selection_number:
     image_url: >-
@@ -196,7 +196,7 @@ curricula:
     objective: >-
       We look at issues of race and ethnicity in different cultures and how to
       eliminate racial tensions and hostilities.
-    credits_number: 6
+    credits_number: 10
     days_number: 55
     sprite_selection_number:
     image_url: >-
@@ -205,7 +205,7 @@ curricula:
     objective: >-
       This course provides an overview of what causes HIV/Aids, how it is
       spread, and how we can provide moral direction and compassionate care.
-    credits_number: 4
+    credits_number: 6
     days_number: 35
     sprite_selection_number:
     image_url: >-
@@ -214,7 +214,7 @@ curricula:
     objective: >-
       We do a Biblical survey of the Scriptures and cover basic tools of
       Biblical interpretation, “Observation, Interpretation, and Application.”
-    credits_number: 9
+    credits_number: 10
     days_number: 60
     sprite_selection_number:
     image_url: >-
@@ -224,7 +224,7 @@ curricula:
       This course examines the Old Testament, looking at both chronological
       divisions and genre distinctions such as narrative, poetry, prophetic
       portions of Scripture.
-    credits_number: 31
+    credits_number: 12
     days_number: 70
     sprite_selection_number:
     image_url: >-
@@ -234,7 +234,7 @@ curricula:
       We examine the New Testament, both historically and by thematic and genre
       divisions.  Emphasis is upon how to interpret and apply different types of
       New Testament Scriptures.
-    credits_number: 25
+    credits_number: 12
     days_number: 75
     sprite_selection_number:
     image_url: >-
