@@ -53,7 +53,7 @@ curricula:
     objective: >-
       This course examines current trends in leadership today. Personal
       leadership development is emphasized.
-    credits_number: 5
+    credits_number: 10
     days_number: 55
     sprite_selection_number: 1
     image_url: >-
@@ -72,7 +72,7 @@ curricula:
     objective: >-
       This course gives an historical overview of the history and growth of the
       Gospel on the African continent.
-    credits_number: 30
+    credits_number: 8
     days_number: 40
     sprite_selection_number: 3
     image_url: >-
@@ -81,7 +81,7 @@ curricula:
     objective: >-
       We provide an understanding of how animism has impacted African indigenous
       religion.
-    credits_number: 12
+    credits_number: 8
     days_number: 40
     sprite_selection_number:
     image_url: >-
@@ -90,14 +90,14 @@ curricula:
     objective: >-
       The course provides practical advice for numerous counseling topics, along
       with an overview of counseling practices and procedures.
-    credits_number: 3
+    credits_number: 12
     days_number: 70
     sprite_selection_number: 4
     image_url: >-
       https://res.cloudinary.com/sonya-ninja/image/upload/c_thumb,w_300,h_300,f_auto,q_auto/v1620891428/emit/images/spiritual/pastorCounsellingWithBible_fu00bg.jpg
   - title: Biblical Doctrines
     objective: A thorough examination of such essential Biblical doctrines.
-    credits_number: 14
+    credits_number: 10
     days_number: 61
     sprite_selection_number: 5
     image_url: >-
@@ -107,7 +107,7 @@ curricula:
       This course examines how animism, polytheism, and secularism all
       contribute to societal worldviews. The course also sets forth a distinctly
       Biblical worldview.
-    credits_number: 5
+    credits_number: 8
     days_number: 40
     sprite_selection_number: 6
     image_url: >-
@@ -116,7 +116,7 @@ curricula:
     objective: >-
       Cell groups are vital to the growth of the church. A distinctly African
       context for establishing cell groups in your church is presented.
-    credits_number: 5
+    credits_number: 10
     days_number: 55
     sprite_selection_number: 7
     image_url: >-
@@ -125,7 +125,7 @@ curricula:
     objective: >-
       The course looks at practical issues, while at the same time maintaining
       age-appropriate strategies for children’s ministry.
-    credits_number: 13
+    credits_number: 8
     days_number: 44
     sprite_selection_number: 8
     image_url: >-
@@ -134,7 +134,7 @@ curricula:
     objective: >-
       The course provides practical, easy-to-use systems for church
       administration.
-    credits_number: 28
+    credits_number: 10
     days_number: 60
     sprite_selection_number: 9
     image_url: >-
@@ -143,14 +143,14 @@ curricula:
     objective: >-
       We examine several of Christianity's contemporary experts in the study of
       Church Growth.
-    credits_number: 13
+    credits_number: 10
     days_number: 60
     sprite_selection_number: 10
     image_url: >-
       https://res.cloudinary.com/sonya-ninja/image/upload/c_thumb,w_300,h_300,f_auto,g_custom,q_auto/v1620891406/emit/images/spiritual/cell-Groups_awsjxl.jpg
   - title: Church planting
     objective: The course examines contemporary church planting movements.
-    credits_number: 20
+    credits_number: 10
     days_number: 55
     sprite_selection_number: 11
     image_url: >-
@@ -187,7 +187,7 @@ curricula:
     objective: >-
       This course covers the preparation of the messenger, development of the
       message, and the delivery of the message.
-    credits_number: 8
+    credits_number: 10
     days_number: 55
     sprite_selection_number:
     image_url: >-
@@ -196,7 +196,7 @@ curricula:
     objective: >-
       We look at issues of race and ethnicity in different cultures and how to
       eliminate racial tensions and hostilities.
-    credits_number: 6
+    credits_number: 10
     days_number: 55
     sprite_selection_number:
     image_url: >-
@@ -205,7 +205,7 @@ curricula:
     objective: >-
       This course provides an overview of what causes HIV/Aids, how it is
       spread, and how we can provide moral direction and compassionate care.
-    credits_number: 4
+    credits_number: 6
     days_number: 35
     sprite_selection_number:
     image_url: >-
@@ -214,7 +214,7 @@ curricula:
     objective: >-
       We do a Biblical survey of the Scriptures and cover basic tools of
       Biblical interpretation, “Observation, Interpretation, and Application.”
-    credits_number: 9
+    credits_number: 10
     days_number: 60
     sprite_selection_number:
     image_url: >-
@@ -224,7 +224,7 @@ curricula:
       This course examines the Old Testament, looking at both chronological
       divisions and genre distinctions such as narrative, poetry, prophetic
       portions of Scripture.
-    credits_number: 31
+    credits_number: 12
     days_number: 70
     sprite_selection_number:
     image_url: >-
@@ -234,7 +234,7 @@ curricula:
       We examine the New Testament, both historically and by thematic and genre
       divisions.  Emphasis is upon how to interpret and apply different types of
       New Testament Scriptures.
-    credits_number: 25
+    credits_number: 12
     days_number: 75
     sprite_selection_number:
     image_url: >-
@@ -244,14 +244,14 @@ curricula:
       This course provides a reproducible model for developing and fostering
       healthy interpersonal relationships.  We provide a model for resolving the
       conflict in ways that maintains relationships.
-    credits_number: 16
+    credits_number: 10
     days_number: 55
     sprite_selection_number:
     image_url: >-
       https://res.cloudinary.com/sonya-ninja/image/upload/c_thumb,w_300,h_300,f_auto,q_auto/v1620896764/emit/images/spiritual/EMIT-leadership-teaching_polekc.jpg
   - title: Islam
     objective: This course provides a thorough look at practical ways to understand Islam
-    credits_number: 8
+    credits_number: 10
     days_number: 50
     sprite_selection_number:
     image_url: >-
@@ -260,7 +260,7 @@ curricula:
     objective: >-
       This course examines the Biblical understanding of the Kingdom and how it
       provides us with an understanding of all that we do for Christ
-    credits_number: 4
+    credits_number: 8
     days_number: 40
     sprite_selection_number:
     image_url: >-
@@ -280,7 +280,7 @@ curricula:
     objective: >-
       This bold course addresses the issues of money, sex and power in the life
       of leaders candidly and Biblically.
-    credits_number: 12
+    credits_number: 10
     days_number: 50
     sprite_selection_number:
     image_url: >-
@@ -289,7 +289,7 @@ curricula:
     objective: >-
       The course examines the Old and New Testament teachings regarding marriage
       as well as sexuality, children, divorce, and remarriage.
-    credits_number: 24
+    credits_number: 12
     days_number: 70
     sprite_selection_number:
     image_url: >-
@@ -298,7 +298,7 @@ curricula:
     objective: >-
       This course examines Biblical and practical ways to establish healthy and
       productive mentoring relationships.
-    credits_number: 14
+    credits_number: 10
     days_number: 55
     sprite_selection_number:
     image_url: >-
@@ -307,7 +307,7 @@ curricula:
     objective: >-
       Along with a theological understanding of ‘mission,’ the course covers
       strategies to do cross-cultural ministry.
-    credits_number: 18
+    credits_number: 8
     days_number: 40
     sprite_selection_number:
     image_url: >-
@@ -316,7 +316,7 @@ curricula:
     objective: >-
       This course examines both the Biblical teachings regarding prayer and
       Biblical examples of prayer.
-    credits_number: 16
+    credits_number: 10
     days_number: 50
     sprite_selection_number:
     image_url: >-
@@ -334,7 +334,7 @@ curricula:
     objective: >-
       The course covers many strategic and practical aspects of establishing an
       effective church youth ministry.
-    credits_number: 14
+    credits_number: 10
     days_number: 55
     sprite_selection_number:
     image_url: >-
@@ -344,7 +344,7 @@ curricula:
       We focus on the personal development of a leader – the preparation and
       development of a leader’s vision and an understanding of critical
       thinking.
-    credits_number: 12
+    credits_number: 10
     days_number: 55
     sprite_selection_number:
     image_url: >-
@@ -353,7 +353,7 @@ curricula:
     objective: >-
       The course looks at Biblical and practical aspects of the goals of a
       leader, decision-making, and the pitfalls of being a Christian leader.
-    credits_number: 32
+    credits_number: 12
     days_number: 70
     sprite_selection_number:
     image_url: >-
@@ -362,7 +362,7 @@ curricula:
     objective: >-
       This course is a Biblical examination of Satan’s activity on the earth,
       and the believer’s authority.
-    credits_number: 23
+    credits_number: 10
     days_number: 55
     sprite_selection_number:
     image_url: >-
@@ -372,7 +372,7 @@ curricula:
       The local church is the “manifold wisdom of God,” and is described as the
       Bride of Christ. The course examines the Old Testament and New Testament
       understanding of the people of God.
-    credits_number: 20
+    credits_number: 10
     days_number: 55
     sprite_selection_number:
     image_url: >-
@@ -382,7 +382,7 @@ curricula:
       This course examines a Biblical theology for worship, and also looks at
       how the Church can be taught and encouraged by a Biblical perspective on
       worship.
-    credits_number: 14
+    credits_number: 8
     days_number: 40
     sprite_selection_number:
     image_url: >-
