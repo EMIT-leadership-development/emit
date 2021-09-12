@@ -1,15 +1,8 @@
-/**
- * Object for creating click-triggered navigation submenus
- *
- * Latest version, Issues, etc: https://github.com/mrwweb/clicky-menus
- *
- * Thanks for the inspiration:
- * 		- https://www.lottejackson.com/learning/a-reusable-javascript-toggle-pattern
- * 		- https://codepen.io/lottejackson/pen/yObQRM
- */
+// Thanks to: https://github.com/mrwweb/clicky-menus for original clicky-menu
 
  (function() {
 	'use strict';
+    // 1. THE CLICKY MENU SUBMENUS - THANKS TO mrwweb
 	const ClickyMenus = function( menu ) {
 		// DOM element(s)
 		let	container = menu.parentElement,
@@ -20,9 +13,7 @@
 			menuSetup();
 			document.addEventListener( 'click', closeOpenMenu );
 		}
-		/*===================================================
-		=            Menu Open / Close Functions            =
-		===================================================*/
+		// ------Menu Open / Close Functions
 		function toggleOnMenuClick( e ) {
 			const button = e.currentTarget;
 			// close open menu if there is one
@@ -74,9 +65,7 @@
 				toggleSubmenu( currentMenuItem );
 			}
 		};
-		/*===========================================================
-		=            Modify Menu Markup & Bind Listeners            =
-		=============================================================*/
+		// Modify Menu Markup & Bind Listeners
 		function menuSetup() {
 			menu.classList.remove('no-js');
 			menu.querySelectorAll('ul').forEach( ( submenu ) => {
@@ -90,9 +79,7 @@
 				}
 			});
 		};
-		/**
-		 * Why do this? See https://justmarkup.com/articles/2019-01-21-the-link-to-button-enhancement/
-		 */
+		// Why do this? See https://justmarkup.com/articles/2019-01-21-the-link-to-button-enhancement/
 		function convertLinkToButton( menuItem ) {
 			const 	link = menuItem.getElementsByTagName( 'a' )[0],
 					linkHTML = link.innerHTML,
@@ -127,25 +114,61 @@
 			submenu.setAttribute( 'aria-hidden', true );
 		}
 	}
-    // SONYA: added show-hide mobile nav function
-    // NB: ToDo: this has no no-js fallback!
+    // 2. SHOW HIDE THE MOBILE MENU
     function mobileNav() {
         const body = document.body;
         body.classList.toggle("showNav");
         console.log('clicked navButton');
     }
-	/* Create a ClickMenus object and initiate menu for any menu with .clicky-menu class */
+    // 3. GSAP TIMELINE FOR SCROLL ANIMATION (NAV HEIGHT, SHADOW, AND BACKGROUND COLOR)
+    function scrollAnimation() {
+        var links = gsap.utils.toArray(".topLevel");
+		var isTransparent = document.querySelector(".transparentNav");
+        const siteNav = document.getElementById('site-navigation');
+        const logo = document.getElementById('headerLogo').getElementsByTagName('svg')[0];
+
+        // Change links color for transparent nav
+        function changeColor() {
+            links.forEach(link => link.classList.toggle("blackText") )
+        }
+
+        var tl = gsap.timeline({defaults:{duration:1}, scrollTrigger: {trigger: "body", start: 0, end: 130, onEnter: changeColor, onLeaveBack: changeColor, toggleActions: "play complete reverse reverse", scrub: 1 } });
+        // If the screen is larger call scroll animation else size the nav for mobile
+        function screenSize(x) {
+            if (x.matches) { // If media query matches
+                tl.fromTo('#headerLogo .logo',{height:80}, {duration:1, height:55, ease:"linear"},'<');
+                tl.to('.mainNavigation',{duration:1, boxShadow: "0 1px 15px rgba(0,0,0, .15)"},'<');
+                if (isTransparent) {
+                    tl.to('.mainNavigation',{duration:1,backgroundImage:"linear-gradient(90deg, #89b412 5%, transparent 30%)", backgroundColor:"#abe116"},"<");
+                }
+                // return tl;
+            } else {
+                // tl.to(logo,{height:55},0);
+                tl.pause();
+                logo.style.height = '55px';
+            }
+        }
+        var x = window.matchMedia("(min-width: 540px)")
+        screenSize(x) // Call listener function at run time
+        x.addListener(screenSize) // Attach listener function on state changes
+    }
+
 	document.addEventListener('DOMContentLoaded', function(){
+        // Vars
 		const menus = document.querySelectorAll( '.clicky-menu' );
-        // Sonya: added mobile hamburger nav button
-        // NB: ToDo: this has no no-js fallback!
         const navButton = document.querySelector(".navButton");
+
+        // Create a ClickMenus object and initiate menu for any menu with .clicky-menu class */
 		menus.forEach( menu => {
 			let clickyMenu = new ClickyMenus(menu);
 			clickyMenu.init();
 		});
+        // Sonya: added mobile hamburger nav button - NB: ToDo: this has no no-js fallback!
         navButton.addEventListener("click", function() {
             mobileNav();
         });
+        // scroll animation
+        scrollAnimation();
+
 	});
 }());
