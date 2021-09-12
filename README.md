@@ -3,6 +3,8 @@
 Website by Sonya.Nina
 Starter theme imported from Fur by CloudCannn.
 
+Hosted on Cloudcannon with syncing
+
 
 ## Develop
 
