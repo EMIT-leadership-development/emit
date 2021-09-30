@@ -1,6 +1,6 @@
 ---
 title: ORGANIZATIONAL FLUIDITY IN TIMES OF CRISIS
-subtitle: The importance of organizational fluidity
+subtitle: The importance of organizational fluidity.
 layout: post
 hero:
 heroQuote:
@@ -22,6 +22,8 @@ latitude:
 longitude:
 description:
 ---
+# ORGANIZATIONAL FLUIDITY IN TIMES OF CRISIS
+
 Worldwide, more than 40% of small businesses had to close down permanently. Millions lost their income. Advances that were made in the eradication of poverty over the last 50 years, were wiped out in less than 12 months. From the biggest corporations to the smallest non-profit had to adjust or close down.
 
 The rapid pace of change together with organizations’ inability to adapt to this constantly evolving world has led to the demise of many established organizations.
