@@ -1,5 +1,5 @@
 ---
-title: HOW COVID CHANGED THE WAY WE DO TRAINING
+title: How Covid changed the way we do training.
 subtitle:
 layout: post
 hero:
