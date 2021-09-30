@@ -22,7 +22,7 @@ latitude:
 longitude:
 description:
 ---
-# HOW COVID CHANGED THE WAY WE DO TRAINING
+# How Covid changed the way we do training.
 
 To say that the COVID-19 pandemic has changed the world would be an understatement. It has upended day-to-day lives across the globe. The pandemic has changed how we work, learn and interact as social distancing guidelines have led to amore virtual existence, both personally and professionally.
 
