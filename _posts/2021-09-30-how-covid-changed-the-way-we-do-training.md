@@ -12,7 +12,7 @@ team-member: Theo Faber
 tags:
   - COVID
   - COVID-19
-category: About EMIT
+category: Reports
 excerpt_separator: <!--more-->
 leaderName:
 leaderBio_html:
