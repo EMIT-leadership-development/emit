@@ -1,0 +1,61 @@
+---
+title: Downloads
+hero: Downloads
+heroQuote: Vision is the art of seeing what is invisible to others.
+hero_Quote_Cite: Jonathan Swift
+hero_image: /images/TwoGirls.webp
+description:
+---
+
+<!-- PAGE INTRO -->
+<section id="intro" class="item--full white">
+	<div class="sectionIntro contained-FirstTwo">
+		<h2 class="sectionTitle priority2 editable">
+			Downloadable<br /><span class="emphasis">documents and reports</span>
+		</h2>
+	</div>
+	<div class="sectionContent contained-LastFour">
+		<p class="introduction editable">
+			This is where we make available various documents and reports for download. Feel free to contact us if you need a document that's not here.
+		</p>
+	</div>
+</section>
+
+<!-- LIST OF FILES -->
+<section class="item--full">
+	<!-- Content -->
+	<div id="downloadsWrap" class="container">
+		<ul class="downloads-list">
+			{% for item in site.data.downloads %}
+			<li class="downloadItem">
+				<div class="previewImage">
+					<img src="{{item.preview_image}}" alt="">
+				</div>
+				<div class="content">
+					<div class="description">
+						<h4>{{item.name}}</h4>
+						<h5>{{item.date}}</h5>
+						<p>{{item.description}}</p>
+					</div>
+
+					<div class="printDetails tagify">
+						<span>{{item.format}} Format</span>
+						<span>{{item.pages}} Pages</span>
+						<span>{{item.pageSize}} Page-size</span>
+						<span>{{item.fileSize}} File-size</span>
+					</div>
+
+					<div class="actionRow">
+						<a class="button" href="{{ item.flipBook_url }}">
+							Flip Book
+						</a>
+						<a class="button primary" href="{{ item.file_link }}">
+							Download
+						</a>
+					</div>
+				</div>
+			</li>
+		{% endfor %}
+		</ul>
+	</div>
+</section>

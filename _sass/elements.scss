@@ -736,6 +736,77 @@ section.curriculum {
 	}
 
 }
+// DOWNLOADS PAGE
+.downloads-list {
+	display: grid;
+	grid-gap: 3rem;
+	margin: 2rem -20px;
+	list-style-type: none;
+	padding: 0;
+	@media (min-width: 600px) {
+		grid-template-columns: 1fr 1fr;
+	}
+	li.downloadItem {
+		// border: 1px solid red;
+		background-color: #ffffff;
+		filter: drop-shadow(0.1rem 0.1rem 0.3rem rgba(20, 20, 180, 0.3));
+		@media (min-width: 900px) {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			// grid-gap: 1rem;
+		}
+		@media (max-width: 600px) {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			// grid-gap: 1rem;
+		}
+		.previewImage {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 1rem;
+			img {
+				object-fit: cover;
+				width: 100%;
+				height: 100%;
+			}
+		}
+		.content {
+			padding: 1rem;
+			display: flex;
+			justify-content: space-between;
+			flex-direction: column;
+			.description {
+				h4 {
+					margin: 0 0 0 0;
+					color: #000000;
+					font-weight: bold;
+				}
+				h5 {
+					color: $brandContrastDark;
+					font-weight: 400;
+					margin: 0 0 1rem 0;
+					font-size: 1.1rem;
+				}
+				p {
+					margin-bottom: 0.5rem;
+				}
+			}
+			.printDetails {
+				margin-bottom: 0.5rem;
+			}
+			.actionRow {
+				display: flex;
+				justify-content: space-between;
+				.button {
+					margin: 0 !important;
+					padding: 5px 10px !important;
+				}
+			}
+		}
+	}
+}
+
 // History Page Timeline
 .timelineWrap {
 	.timelineCard {
