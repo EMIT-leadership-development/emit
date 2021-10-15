@@ -33,22 +33,25 @@ description:
 				</div>
 				<div class="content">
 					<div class="description">
+						<p class="subtitle">{{item.category}}</p>
 						<h4>{{item.name}}</h4>
 						<h5>{{item.date}}</h5>
 						<p>{{item.description}}</p>
 					</div>
 
 					<div class="printDetails tagify">
-						<span>{{item.format}} Format</span>
+						<span>{{item.format}}</span>
 						<span>{{item.pages}} Pages</span>
-						<span>{{item.pageSize}} Page-size</span>
-						<span>{{item.fileSize}} File-size</span>
+						<span>{{item.pageSize}} Paper</span>
+						<span>{{item.fileSize}} File</span>
 					</div>
 
 					<div class="actionRow">
+						{% if item.flipBook_url != "" %}
 						<a class="button" href="{{ item.flipBook_url }}">
 							Flip Book
 						</a>
+						{% endif %}
 						<a class="button primary" href="{{ item.file_link }}">
 							Download
 						</a>
