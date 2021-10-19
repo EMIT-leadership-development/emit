@@ -21,53 +21,9 @@ description:
 	</div>
 </section>
 
-<!-- FORM 990 -->
-<section class="item--full">
-	<!-- Content -->
-	<div id="downloadsWrap" class="container">
-		<h3 class="sectionTitle priority3">Form 990</h3>
-		<ul class="downloads-list">
-			{% assign forms = site.data.downloads | where:"category", 'Form-990' %}
-			{% for item in forms %}
-			<li class="downloadItem">
-				<div class="previewImage">
-					<img src="{{item.preview_image}}" alt="">
-				</div>
-				<div class="content">
-					<div class="description">
-						<p class="subtitle">{{item.category}}</p>
-						<h4>{{item.name}}</h4>
-						<h5>{{item.date}}</h5>
-						<p>{{item.description}}</p>
-					</div>
-
-					<div class="printDetails tagify">
-						<span>{{item.format}}</span>
-						<span>{{item.pages}} Pages</span>
-						<span>{{item.pageSize}} Paper</span>
-						<span>{{item.fileSize}} File</span>
-					</div>
-
-					<div class="actionRow">
-						{% if item.flipBook_url != "" %}
-						<a class="button" href="{{ item.flipBook_url }}">
-							Flip Book
-						</a>
-						{% endif %}
-						<a class="button primary" href="{{ item.file_link }}">
-							Download
-						</a>
-					</div>
-				</div>
-			</li>
-		{% endfor %}
-		</ul>
-	</div>
-</section>
-
 
 <!-- REPORTS -->
-<section class="item--full white">
+<section class="item--full">
 	<!-- Content -->
 	<div id="downloadsWrap" class="container">
 		<h3 class="sectionTitle priority3">Reports</h3>
@@ -96,7 +52,7 @@ description:
 					<div class="actionRow">
 						{% if item.flipBook_url != "" %}
 						<a class="button" href="{{ item.flipBook_url }}">
-							Flip Book
+							Preview Flip-Book
 						</a>
 						{% endif %}
 						<a class="button primary" href="{{ item.file_link }}">
@@ -110,7 +66,51 @@ description:
 	</div>
 </section>
 
-<!-- REPORTS -->
+<!-- FORM 990 -->
+<section class="item--full white">
+	<!-- Content -->
+	<div id="downloadsWrap" class="container">
+		<h3 class="sectionTitle priority3">Form 990</h3>
+		<ul class="downloads-list">
+			{% assign forms = site.data.downloads | where:"category", 'Form-990' %}
+			{% for item in forms %}
+			<li class="downloadItem">
+				<div class="previewImage">
+					<img src="{{item.preview_image}}" alt="">
+				</div>
+				<div class="content">
+					<div class="description">
+						<p class="subtitle">{{item.category}}</p>
+						<h4>{{item.name}}</h4>
+						<h5>{{item.date}}</h5>
+						<p>{{item.description}}</p>
+					</div>
+
+					<div class="printDetails tagify">
+						<span>{{item.format}}</span>
+						<span>{{item.pages}} Pages</span>
+						<span>{{item.pageSize}} Paper</span>
+						<span>{{item.fileSize}} File</span>
+					</div>
+
+					<div class="actionRow">
+						{% if item.flipBook_url != "" %}
+						<a class="button" href="{{ item.flipBook_url }}">
+							Preview Flip-Book
+						</a>
+						{% endif %}
+						<a class="button primary" href="{{ item.file_link }}">
+							Download
+						</a>
+					</div>
+				</div>
+			</li>
+		{% endfor %}
+		</ul>
+	</div>
+</section>
+
+<!-- LEGAL -->
 <section class="item--full">
 	<!-- Content -->
 	<div id="downloadsWrap" class="container">
@@ -140,7 +140,7 @@ description:
 					<div class="actionRow">
 						{% if item.flipBook_url != "" %}
 						<a class="button" href="{{ item.flipBook_url }}">
-							Flip Book
+							Preview Flip-Book
 						</a>
 						{% endif %}
 						<a class="button primary" href="{{ item.file_link }}">

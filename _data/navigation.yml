@@ -43,10 +43,6 @@
       link: /financials-reports
       new_window: false
       highlight: false
-    - name: Theory of Change
-      link: /theory-of-change
-      new_window: false
-      highlight: false
 - name: Training
   link: /programs
   new_window: false
