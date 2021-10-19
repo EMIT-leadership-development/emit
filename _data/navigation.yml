@@ -39,8 +39,8 @@
       link: /board
       new_window: false
       highlight: false
-    - name: Financials & Reports
-      link: /financials-reports
+    - name: Reports & 990
+      link: /reports-990
       new_window: false
       highlight: false
 - name: Training
