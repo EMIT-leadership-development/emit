@@ -1,0 +1,155 @@
+---
+title: financials-reports
+hero: Financials & Reports
+heroQuote: We cannot lead anyone farther than we have been ourselves.
+hero_Quote_Cite: John C Maxwell
+hero_image: https://res.cloudinary.com/sonya-ninja/image/upload/f_auto,q_auto/v1620891937/emit/images/business/EMIT-business-leadership_apsxal.jpg
+description:
+---
+
+<!-- PAGE INTRO -->
+<section id="intro" class="item--full white">
+	<div class="sectionIntro contained-FirstTwo">
+		<h2 class="sectionTitle priority2 editable">
+			Downloadable<br /><span class="emphasis">financials & reports</span>
+		</h2>
+	</div>
+	<div class="sectionContent contained-LastFour">
+		<p class="introduction editable">
+			We are committed to transparent accountability and these reports are our way of sharing the EMIT journey with you. Feel free to download the documents you need. You're welcome to contact us if you need a report that's not here.
+		</p>
+	</div>
+</section>
+
+<!-- FORM 990 -->
+<section class="item--full">
+	<!-- Content -->
+	<div id="downloadsWrap" class="container">
+		<h3 class="sectionTitle priority3">Form 990</h3>
+		<ul class="downloads-list">
+			{% assign forms = site.data.downloads | where:"category", 'Form-990' %}
+			{% for item in forms %}
+			<li class="downloadItem">
+				<div class="previewImage">
+					<img src="{{item.preview_image}}" alt="">
+				</div>
+				<div class="content">
+					<div class="description">
+						<p class="subtitle">{{item.category}}</p>
+						<h4>{{item.name}}</h4>
+						<h5>{{item.date}}</h5>
+						<p>{{item.description}}</p>
+					</div>
+
+					<div class="printDetails tagify">
+						<span>{{item.format}}</span>
+						<span>{{item.pages}} Pages</span>
+						<span>{{item.pageSize}} Paper</span>
+						<span>{{item.fileSize}} File</span>
+					</div>
+
+					<div class="actionRow">
+						{% if item.flipBook_url != "" %}
+						<a class="button" href="{{ item.flipBook_url }}">
+							Flip Book
+						</a>
+						{% endif %}
+						<a class="button primary" href="{{ item.file_link }}">
+							Download
+						</a>
+					</div>
+				</div>
+			</li>
+		{% endfor %}
+		</ul>
+	</div>
+</section>
+
+
+<!-- REPORTS -->
+<section class="item--full white">
+	<!-- Content -->
+	<div id="downloadsWrap" class="container">
+		<h3 class="sectionTitle priority3">Reports</h3>
+		<ul class="downloads-list">
+			{% assign reports = site.data.downloads | where:"category", 'Reports' %}
+			{% for item in reports %}
+			<li class="downloadItem">
+				<div class="previewImage">
+					<img src="{{item.preview_image}}" alt="">
+				</div>
+				<div class="content">
+					<div class="description">
+						<p class="subtitle">{{item.category}}</p>
+						<h4>{{item.name}}</h4>
+						<h5>{{item.date}}</h5>
+						<p>{{item.description}}</p>
+					</div>
+
+					<div class="printDetails tagify">
+						<span>{{item.format}}</span>
+						<span>{{item.pages}} Pages</span>
+						<span>{{item.pageSize}} Paper</span>
+						<span>{{item.fileSize}} File</span>
+					</div>
+
+					<div class="actionRow">
+						{% if item.flipBook_url != "" %}
+						<a class="button" href="{{ item.flipBook_url }}">
+							Flip Book
+						</a>
+						{% endif %}
+						<a class="button primary" href="{{ item.file_link }}">
+							Download
+						</a>
+					</div>
+				</div>
+			</li>
+		{% endfor %}
+		</ul>
+	</div>
+</section>
+
+<!-- REPORTS -->
+<section class="item--full">
+	<!-- Content -->
+	<div id="downloadsWrap" class="container">
+		<h3 class="sectionTitle priority3">Legal Documents</h3>
+		<ul class="downloads-list">
+			{% assign legals = site.data.downloads | where:"category", 'Legal' %}
+			{% for item in legals %}
+			<li class="downloadItem">
+				<div class="previewImage">
+					<img src="{{item.preview_image}}" alt="">
+				</div>
+				<div class="content">
+					<div class="description">
+						<p class="subtitle">{{item.category}}</p>
+						<h4>{{item.name}}</h4>
+						<h5>{{item.date}}</h5>
+						<p>{{item.description}}</p>
+					</div>
+
+					<div class="printDetails tagify">
+						<span>{{item.format}}</span>
+						<span>{{item.pages}} Pages</span>
+						<span>{{item.pageSize}} Paper</span>
+						<span>{{item.fileSize}} File</span>
+					</div>
+
+					<div class="actionRow">
+						{% if item.flipBook_url != "" %}
+						<a class="button" href="{{ item.flipBook_url }}">
+							Flip Book
+						</a>
+						{% endif %}
+						<a class="button primary" href="{{ item.file_link }}">
+							Download
+						</a>
+					</div>
+				</div>
+			</li>
+		{% endfor %}
+		</ul>
+	</div>
+</section>
