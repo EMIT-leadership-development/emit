@@ -9,6 +9,7 @@ function initNavClick() {
     submenuItems.forEach((item, index) => {
         let button = item.querySelector(".subnavBtn");
         let closeBtn = item.querySelector(".closeSubMenu");
+        let activeIndicator = item.querySelector(".activeIndicator");
         let subMenu = item.querySelector(".subMenu");
 
         // timeline setup
@@ -16,10 +17,12 @@ function initNavClick() {
             paused: true,
             defaults: {
                 duration: .3,
-                ease: "power2.out"
+                ease: "expo.inOut"
             },
         })
-        tl.to(subMenu, {autoAlpha:1, scale:1, transformOrigin:"center top"})
+        tl.set(activeIndicator,{position:"fixed" });
+        tl.to(activeIndicator,{duration:1, left:0, right:0, transformOrigin:"center center"},">");
+        tl.to(subMenu, {autoAlpha:1, scaleY:1, position:"fixed", left:0, transformOrigin:"center top"},">")
 
         button.addEventListener("click", openUp);
         function openUp(e) {
