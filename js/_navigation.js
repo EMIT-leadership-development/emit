@@ -19,7 +19,7 @@ function initNavClick() {
                 ease: "power2.out"
             },
         })
-        tl.to(subMenu, {autoAlpha:1, scale:1})
+        tl.to(subMenu, {autoAlpha:1, scale:1, transformOrigin:"center top"})
 
         button.addEventListener("click", openUp);
         function openUp(e) {
