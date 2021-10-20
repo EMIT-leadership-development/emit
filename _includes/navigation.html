@@ -50,6 +50,9 @@
 							</div>
 						</div>
 					{% endif %}
+					{% if link.link == page.url %}
+						<span class="activeIndicator"></span>
+					{% endif %}
 				</li>
 			{% endfor %}
 		</ul>
@@ -59,7 +62,7 @@
 					{% include logo.html %}
 				</a>
 			</li>
-			<li id="actionContact">
+			<li id="actionContact" class="actionButton{% if page.url == "/contact" %} active{% endif %}">
 				<a href="/contact">
 					<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
 						<use xlink:href="#at-sign"></use>
@@ -67,7 +70,7 @@
 					<span class="linkTitle">Contact</span>
 				</a>
 			</li>
-			<li id="actionDonate">
+			<li id="actionDonate" class="actionButton{% if page.url == "/donate" %} active{% endif %}">
 				<a href="/donate">
 					<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
 						<use xlink:href="#gift"></use>
@@ -75,7 +78,7 @@
 					<span class="linkTitle">Donate</span>
 				</a>
 			</li>
-			<li id="actionSignIn">
+			<li id="actionSignIn" class="actionButton{% if page.url == "/sign-in" %} active{% endif %}">
 				<a href="/sign-in">
 					<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
 						<use xlink:href="#user"></use>

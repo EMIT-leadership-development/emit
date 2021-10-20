@@ -25,6 +25,8 @@ header.defaultheader {
                 margin: 0;
                 padding: 0;
                 display: block;
+                position: relative;
+                overflow: visible;
                 // On smaller screens hide some of the items
                 &#contact {
                     display: none;
@@ -103,6 +105,14 @@ header.defaultheader {
                             }
                         }
                     }
+                }
+                .activeIndicator {
+                    width: 100%;
+                    background: white;
+                    display: block;
+                    position: absolute;
+                    height: 6px;
+                    z-index: 10;
                 }
             }
         }
