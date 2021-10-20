@@ -115,11 +115,9 @@ header.defaultheader {
     // When the screen width is less than 700, then the topnav starts squishing.
     @media (min-width: 700px) {
         .logoWrap {
-            border: 1px solid blue;
             padding: 8px;
             display: flex;
             svg {
-                border: 1px solid green;
                 height: 80px;
                 width: auto;
             }
@@ -129,6 +127,11 @@ header.defaultheader {
             ul.topLevel {
                 width: auto;
                 justify-content: flex-end;
+                li {
+                    &#contact {
+                        display: block;
+                    }
+                }
             }
             ul.actions {
                 position: unset;
