@@ -1,0 +1,161 @@
+header.defaultheader {
+    box-sizing: border-box;
+    width: 100vw;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: $brand-color;
+    * {
+        box-sizing: border-box;
+    }
+    display: flex;
+    justify-content: space-between;
+    // Logo hidden on small screens
+    .logoWrap {
+        display: none;
+    }
+    nav {
+        ul.topLevel {
+            margin: 0;
+            list-style-type: none;
+            display: flex;
+            justify-content: space-between;
+            width: 100vw;
+            li {
+                margin: 0;
+                padding: 0;
+                display: block;
+                // On smaller screens hide some of the items
+                &#contact {
+                    display: none;
+                }
+                a, button {
+                    padding: 8px;
+                    margin: 0;
+                    background: none;
+                    border: none;
+                    color: rgba(0,0,0,0.8);
+                    font-size: 1rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    line-height: 1;
+                    height: 100%;
+                    text-decoration: none;
+                    cursor: pointer;
+                    svg {
+                        height: 1rem;
+                        width: auto;
+                    }
+                    &:hover {
+                        color: #ffffff;
+                        background: $brandContrastDark;
+                    }
+                }
+                .subMenu {
+                    background: #000000;
+                    color: #ffffff;
+                    display: none;
+                }
+            }
+        }
+
+        // On small screens this is the bottom tab-bar
+        ul.actions {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            margin: 0;
+            width: 100vw;
+            background: $brand-color;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            li {
+                margin: 0;
+                padding: 0;
+                display: block;
+                a, button {
+                    padding: 8px;
+                    margin: 0;
+                    background: none;
+                    border: none;
+                    color: rgba(0,0,0,0.8);
+                    font-size: 1rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    line-height: 1;
+                    height: 100%;
+                    width: 66px;
+                    text-decoration: none;
+                    cursor: pointer;
+                    svg {
+                        height: 20px;
+                        width: auto;
+                    }
+                    &:hover {
+                        color: #ffffff;
+                        background: $brandContrastDark;
+                    }
+                }
+                &#actionLogo {
+                    a {
+                        svg {
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // ******* BREAK POINT ******
+    // When the screen width is less than 700, then the topnav starts squishing.
+    @media (min-width: 700px) {
+        .logoWrap {
+            border: 1px solid blue;
+            padding: 8px;
+            display: flex;
+            svg {
+                border: 1px solid green;
+                height: 80px;
+                width: auto;
+            }
+        }
+        nav {
+            display: flex;
+            ul.topLevel {
+                width: auto;
+                justify-content: flex-end;
+            }
+            ul.actions {
+                position: unset;
+                width: auto;
+                justify-content: flex-end;
+                li {
+                    padding: 8px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    // Hide some items on larger screens
+                    &#actionContact, &#actionLogo {
+                        display: none;
+                    }
+                    a,button {
+                        height: auto;
+                        width: auto;
+                        border: 1px solid rgba(255,255,255,0.8);
+                        border-radius: 5px;
+                        justify-content: center;
+                        svg {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
