@@ -5,6 +5,8 @@
   subPages:
     - name: About Us
       link: /about
+    - name: Theory of Change
+      link: /theory-of-change
     - name: Vision-Mission
       subPages:
         - name: Our Vision
