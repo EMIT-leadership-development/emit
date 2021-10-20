@@ -1,12 +1,41 @@
-window.onload = function() {
-    console.log("hello nav!");
-    // var links = gsap.utils.toArray(".topLevel li");
-    // var isTransparent = document.querySelector(".transparentNav");
+window.addEventListener('load',function(){
+    initNavAnimation();
+    initNavClick();
+})
 
-    // function changeColor() {
-    //     links.forEach(link => link.classList.toggle("blackText") )
-    // }
-    var tl = gsap.timeline({
+function initNavClick() {
+    const submenuItems = document.querySelectorAll(".hasSubMenu");
+
+    submenuItems.forEach((item, index) => {
+        let button = item.querySelector(".subnavBtn");
+        let closeBtn = item.querySelector(".closeSubMenu");
+        let subMenu = item.querySelector(".subMenu");
+
+        // timeline setup
+        let tl = gsap.timeline({
+            paused: true,
+            defaults: {
+                duration: .3,
+                ease: "power2.out"
+            },
+        })
+        tl.to(subMenu, {autoAlpha:1, scale:1})
+
+        button.addEventListener("click", openUp);
+        function openUp(e) {
+            tl.play()
+            closeBtn.addEventListener("click", closeAgain);
+        }
+
+        function closeAgain(e) {
+            tl.reverse()
+            closeBtn.removeEventListener("click", closeAgain);
+        }
+    });
+}
+
+function initNavAnimation() {
+    var scrolltl = gsap.timeline({
         defaults:{duration:1},
         scrollTrigger: {
             trigger: "body",
@@ -18,14 +47,10 @@ window.onload = function() {
             scrub: 1
         }
     });
-    tl.to('.logoWrap .logo', {duration:1, height:55, ease:"linear"},'<');
-    tl.to('.defaultheader',{
+    scrolltl.to('.logoWrap .logo', {duration:1, height:55, ease:"linear"},'<');
+    scrolltl.to('.defaultheader',{
         duration:1,
         boxShadow: "0 1px 15px rgba(0,0,0, .15)"
     },'<');
-
-    // if (isTransparent) {
-    //     tl.to('.mainNavigation',{duration:1,backgroundImage:"linear-gradient(90deg, #89b412 5%, transparent 30%)", backgroundColor:"#abe116"},"<");
-    // }
-    return tl;
+    return scrolltl;
 }

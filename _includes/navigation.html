@@ -11,10 +11,10 @@
 		<!-- LOOP THROUGH NAV DATA -->
 		<ul class="topLevel">
 			{% for link in site.data.navigation %}
-				<li id="{{ link.name | downcase }}">
+				<li id="{{ link.name | downcase }}"{% if link.subPages %} class="hasSubMenu" {% endif %}>
 					<!-- If has submenu then button, else link -->
 					{% if link.subPages %}
-						<button>
+						<button class="subnavBtn">
 							<span class="linkTitle">{{ link.name }}</span>
 							<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
 								<use xlink:href="#chevron-down"></use>
@@ -28,7 +28,12 @@
 					<!-- if sub menu then loop through items -->
 					{% if link.subPages %}
 						<div class="subMenu">
-							{{ link.name }} item has a sub menu.
+							<div class="subMenuHeader">
+								<h3></span>{{ link.name }}</h3>
+								<svg class="closeSubMenu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+									<use xlink:href="#close"></use>
+								</svg>
+							</div>
 						</div>
 					{% endif %}
 				</li>

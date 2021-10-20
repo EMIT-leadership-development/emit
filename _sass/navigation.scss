@@ -55,7 +55,40 @@ header.defaultheader {
                 .subMenu {
                     background: #000000;
                     color: #ffffff;
-                    display: none;
+                    position: fixed;
+                    visibility: hidden;
+                    transform: scale(0);
+                    top: 0;
+                    left: 0;
+                    z-index: 999;
+                    width: 100vw;
+                    height: 100vh;
+                    overflow: hidden;
+                    display: flex;
+                    flex-direction: column;
+                    .subMenuHeader {
+                        background: $brand-color;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        color: #000000;
+                        height: 40px;
+                        h3 {
+                            height: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            border: 1px solid red;
+                            margin: 0;
+                            padding: 0;
+                            color: #000000;
+                        }
+                        svg {
+                            height: 100%;
+                            width: auto;
+                            cursor: pointer;
+                        }
+                    }
                 }
             }
         }
@@ -68,7 +101,7 @@ header.defaultheader {
             margin: 0;
             width: 100vw;
             background: $brand-color;
-            z-index: 1000;
+            z-index: 998;
             display: flex;
             justify-content: space-between;
             li {
