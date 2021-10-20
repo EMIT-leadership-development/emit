@@ -48,8 +48,7 @@ header.defaultheader {
                         width: auto;
                     }
                     &:hover {
-                        color: #ffffff;
-                        background: $brandContrastDark;
+                        color: rgba(0,0,0,1);
                     }
                 }
                 .subMenu {
@@ -144,8 +143,7 @@ header.defaultheader {
                         width: auto;
                     }
                     &:hover {
-                        color: #ffffff;
-                        background: $brandContrastDark;
+                        color: rgba(0,0,0,1);
                     }
                 }
                 &#actionLogo {

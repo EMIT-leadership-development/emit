@@ -11,7 +11,7 @@
 		<!-- LOOP THROUGH NAV DATA -->
 		<ul class="topLevel">
 			{% for link in site.data.navigation %}
-				<li id="{{ link.name | downcase }}"{% if link.subPages %} class="hasSubMenu" {% endif %}>
+				<li class="level1{% if link.subPages %} hasSubMenu{% endif %}{% if link.link == page.url %} active{% endif %}" id="{{ link.name | downcase }}">
 					<!-- If has submenu then button, else link -->
 					{% if link.subPages %}
 						<button class="subnavBtn">
