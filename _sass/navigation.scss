@@ -221,6 +221,7 @@ header.defaultheader {
                     .activeIndicator {
                         position: absolute;
                         bottom: 0;
+                        top: unset;
                         height: 6px;
                         background-color: #ffffff;
                         width: 100%;
