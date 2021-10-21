@@ -12,13 +12,7 @@ header.defaultheader {
     justify-content: space-between;
     // Hide Logo on small screens
     .logoWrap {
-        svg.logo {
-            display: none;
-        }
-        // Todo: create a small version of logo for mobile devices
-        svg.logoIcon {
-            height: 24px;
-        }
+        display: none;
     }
     nav {
         ul.topLevel {
@@ -26,7 +20,7 @@ header.defaultheader {
             list-style-type: none;
             display: flex;
             justify-content: space-between;
-            flex: 1;
+            width: 100vw;
             height: 40px;
             li {
                 margin: 0;
