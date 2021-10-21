@@ -40,22 +40,25 @@ function initNavClick() {
 // Moving the indicator when you hover over a menu item
 function initHoverActive() {
     const navItems = document.querySelectorAll(".level1, .actionButton");
+    // let navParent = document.getElementById("mainHeader");
+    let topNav = document.querySelector('.topLevel');
+    let actionsNav = document.querySelector('.actions');
 
     navItems.forEach(item => {
         item.addEventListener('mouseenter', e => {
             doFlip(e.target);
         });
-        item.addEventListener('mouseleave', e => {
-            revertFlip(e.target);
+        topNav.addEventListener('mouseleave', e => {
+            revertFlip();
+        });
+        actionsNav.addEventListener('mouseleave', e => {
+            revertFlip();
         });
 
         function doFlip(hoveredItem) {
             let activeIndicator = document.querySelector('.activeIndicator');
             let activeContainer = activeIndicator.parentElement;
             let newContainer = hoveredItem;
-
-            // console.log(activeContainer);
-            // console.log(hoveredItem);
 
             const state = Flip.getState(activeIndicator);
             if (activeContainer != newContainer) {
