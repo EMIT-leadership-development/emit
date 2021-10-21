@@ -8,9 +8,10 @@
 		{% include logo.html %}
 	</div>
 	<nav>
-		<!-- LOOP THROUGH NAV DATA -->
+		<!-- LOOP THROUGH TOP-LEVEL NAV DATA -->
+		{% assign links = site.data.navigation | where:'list', 'topLevel' %}
 		<ul class="topLevel">
-			{% for link in site.data.navigation %}
+			{% for link in links %}
 				<li class="level1{% if link.subPages %} hasSubMenu{% endif %}{% if link.link == page.url %} active{% endif %}" id="{{ link.name | downcase }}">
 					<!-- If has submenu then button, else link -->
 					{% if link.subPages %}
@@ -24,16 +25,15 @@
 						<a href="{% include relative-src.html src=link.link %}" class="{{ class }} hideToStart">{{ link.name }}</a>
 					{% endif %}
 
-
 					<!-- if sub menu then loop through items -->
 					{% if link.subPages %}
 						<div class="subMenu">
-							<div class="subMenuHeader">
+							<!-- <div class="subMenuHeader">
 								<h3></span>{{ link.name }}</h3>
 								<svg class="closeSubMenu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
 									<use xlink:href="#close"></use>
 								</svg>
-							</div>
+							</div> -->
 							<div class="content">
 								{% for link in link.subPages %}
 									<div class="level2">
@@ -50,42 +50,35 @@
 							</div>
 						</div>
 					{% endif %}
+
 					{% if link.link == page.url %}
 						<span class="activeIndicator"></span>
 					{% endif %}
 				</li>
 			{% endfor %}
 		</ul>
+		<!-- LOOP THROUGH ACTION NAV DATA -->
+		{% assign actions = site.data.navigation | where:'list', 'actions' %}
 		<ul class="actions">
-			<li id="actionLogo">
+			<!-- <li id="actionLogo">
 				<a href="/">
 					{% include logo.html %}
 				</a>
-			</li>
-			<li id="actionContact" class="actionButton{% if page.url == "/contact" %} active{% endif %}">
-				<a href="/contact">
-					<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-						<use xlink:href="#at-sign"></use>
-					</svg>
-					<span class="linkTitle">Contact</span>
-				</a>
-			</li>
-			<li id="actionDonate" class="actionButton{% if page.url == "/donate" %} active{% endif %}">
-				<a href="/donate">
-					<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-						<use xlink:href="#gift"></use>
-					</svg>
-					<span class="linkTitle">Donate</span>
-				</a>
-			</li>
-			<li id="actionSignIn" class="actionButton{% if page.url == "/sign-in" %} active{% endif %}">
-				<a href="/sign-in">
-					<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-						<use xlink:href="#user"></use>
-					</svg>
-					<span class="linkTitle">Sign-in</span>
-				</a>
-			</li>
+			</li> -->
+
+			{% for action in actions %}
+				<li id="{{ action.name | downcase }}" class="actionButton{% if action.link == page.url %} active{% endif %}">
+					<a href="{{ action.link }}">
+						<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+							<use xlink:href="#user"></use>
+						</svg>
+						<span class="linkTitle">{{ action.name }}</span>
+						{% if action.link == page.url %}
+							<span class="activeIndicator"></span>
+						{% endif %}
+					</a>
+				</li>
+			{% endfor %}
 		</ul>
 	</nav>
 </header>
