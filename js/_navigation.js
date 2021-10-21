@@ -1,6 +1,7 @@
 window.addEventListener('load',function(){
     initNavAnimation();
     initNavClick();
+    initHoverActive();
 })
 
 function initNavClick() {
@@ -20,22 +21,63 @@ function initNavClick() {
                 ease: "expo.inOut"
             },
         })
-        tl.set(activeIndicator,{position:"fixed" });
-        tl.to(activeIndicator,{duration:1, left:0, right:0, transformOrigin:"center center"},">");
+        // tl.to(activeIndicator,{width:"100vw", transformOrigin:"center center"},">");
         tl.to(subMenu, {autoAlpha:1, scaleY:1, position:"fixed", left:0, transformOrigin:"center top"},">")
 
         button.addEventListener("click", openUp);
         function openUp(e) {
             tl.play()
-            closeBtn.addEventListener("click", closeAgain);
+            button.addEventListener("click", closeAgain);
         }
 
         function closeAgain(e) {
             tl.reverse()
-            closeBtn.removeEventListener("click", closeAgain);
+            button.removeEventListener("click", closeAgain);
         }
     });
 }
+
+// Moving the indicator when you hover over a menu item
+function initHoverActive() {
+    const navItems = document.querySelectorAll(".level1, .actionButton");
+
+    navItems.forEach(item => {
+        item.addEventListener('mouseenter', e => {
+            doFlip(e.target);
+        });
+        item.addEventListener('mouseleave', e => {
+            revertFlip(e.target);
+        });
+
+        function doFlip(hoveredItem) {
+            let activeIndicator = document.querySelector('.activeIndicator');
+            let activeContainer = activeIndicator.parentElement;
+            let newContainer = hoveredItem;
+
+            // console.log(activeContainer);
+            // console.log(hoveredItem);
+
+            const state = Flip.getState(activeIndicator);
+            if (activeContainer != newContainer) {
+                newContainer.append(activeIndicator);
+            };
+            Flip.from(state, {duration: 0.3, ease: "power1.inOut"});
+        }
+
+        function revertFlip() {
+            let activeIndicator = document.querySelector('.activeIndicator');
+            let activeContainer = activeIndicator.parentElement;
+            let activeMenuItem = document.querySelector('nav').querySelector('li.active');
+
+            const state = Flip.getState(activeIndicator);
+            if (activeContainer != activeMenuItem) {
+                activeMenuItem.append(activeIndicator);
+            };
+            Flip.from(state, {duration: 0.3, ease: "power1.inOut"});
+        }
+
+    });
+};
 
 function initNavAnimation() {
     var scrolltl = gsap.timeline({
@@ -44,8 +86,6 @@ function initNavAnimation() {
             trigger: "body",
             start: 0,
             end: 130,
-            // onEnter: changeColor,
-            // onLeaveBack: changeColor,
             toggleActions: "play complete reverse reverse",
             scrub: 1
         }

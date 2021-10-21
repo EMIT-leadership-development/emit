@@ -10,9 +10,15 @@ header.defaultheader {
     }
     display: flex;
     justify-content: space-between;
-    // Logo hidden on small screens
+    // Hide Logo on small screens
     .logoWrap {
-        display: none;
+        svg.logo {
+            display: none;
+        }
+        // Todo: create a small version of logo for mobile devices
+        svg.logoIcon {
+            height: 24px;
+        }
     }
     nav {
         ul.topLevel {
@@ -20,7 +26,8 @@ header.defaultheader {
             list-style-type: none;
             display: flex;
             justify-content: space-between;
-            width: 100vw;
+            flex: 1;
+            height: 40px;
             li {
                 margin: 0;
                 padding: 0;
@@ -51,6 +58,15 @@ header.defaultheader {
                     &:hover {
                         color: rgba(0,0,0,1);
                     }
+                }
+                .activeIndicator {
+                    width: 100%;
+                    background: #ffffff;
+                    display: block;
+                    position: absolute;
+                    bottom: 0;
+                    height: 6px;
+                    z-index: 997;
                 }
                 .subMenu {
                     background: $brandContrastDark;
@@ -101,15 +117,6 @@ header.defaultheader {
                         }
                     }
                 }
-                .activeIndicator {
-                    left:0;
-                    right:0;
-                    background: #9dce15;
-                    display: block;
-                    position: absolute;
-                    height: 6px;
-                    z-index: 997;
-                }
             }
         }
 
@@ -128,6 +135,7 @@ header.defaultheader {
                 margin: 0;
                 padding: 0;
                 display: block;
+                position: relative;
                 a, button {
                     padding: 8px;
                     margin: 0;
@@ -152,12 +160,12 @@ header.defaultheader {
                         color: rgba(0,0,0,1);
                     }
                 }
-                &#actionLogo {
-                    a {
-                        svg {
-                            height: 100%;
-                        }
-                    }
+                .activeIndicator {
+                    position: absolute;
+                    top: 0;
+                    height: 6px;
+                    background-color: #ffffff;
+                    width: 100%;
                 }
             }
         }
@@ -179,6 +187,7 @@ header.defaultheader {
             ul.topLevel {
                 width: auto;
                 justify-content: flex-end;
+                height: auto;
                 li {
                     &#contact {
                         display: block;
@@ -194,9 +203,10 @@ header.defaultheader {
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    // Hide some items on larger screens
-                    &#actionContact, &#actionLogo {
-                        display: none;
+                    // We don't want #contact styled like a button on larger screens
+                    &#contact a {
+                        border: 0;
+                        padding: 0;
                     }
                     a,button {
                         height: auto;
@@ -207,6 +217,13 @@ header.defaultheader {
                         svg {
                             display: none;
                         }
+                    }
+                    .activeIndicator {
+                        position: absolute;
+                        bottom: 0;
+                        height: 6px;
+                        background-color: #ffffff;
+                        width: 100%;
                     }
                 }
             }
