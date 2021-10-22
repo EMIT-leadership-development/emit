@@ -1,9 +1,10 @@
 window.addEventListener('load',function(){
     initNavAnimation();
     initNavClick();
-    initHoverActive();
+    // initHoverActive();
 })
 
+// Click to show the subnav
 function initNavClick() {
     const submenuItems = document.querySelectorAll(".hasSubMenu");
 
@@ -82,6 +83,7 @@ function initHoverActive() {
     });
 };
 
+// Nav height on scroll
 function initNavAnimation() {
     var scrolltl = gsap.timeline({
         defaults:{duration:1},

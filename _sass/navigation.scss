@@ -53,15 +53,6 @@ header#mainHeader {
                         color: rgba(0,0,0,1);
                     }
                 }
-                .activeIndicator {
-                    width: 100%;
-                    background: #ffffff;
-                    display: block;
-                    position: absolute;
-                    bottom: 0;
-                    height: 6px;
-                    z-index: 997;
-                }
                 .subMenu {
                     background: $brandContrastDark;
                     position: absolute;
@@ -111,6 +102,19 @@ header#mainHeader {
                         }
                     }
                 }
+                .activeIndicator {
+                    // position: absolute;
+                    top: 100%;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    flex-direction: column;
+                    margin: 0 auto;
+                    svg {
+                        width: 24px;
+                        height: auto;
+                    }
+                }
             }
         }
 
@@ -121,17 +125,23 @@ header#mainHeader {
             left: 0;
             margin: 0;
             width: 100vw;
-            background: $brand-color;
             z-index: 998;
             display: flex;
-            justify-content: space-between;
+            justify-content: stretch;
             li {
                 margin: 0;
                 padding: 0;
                 display: block;
                 position: relative;
+                background-color: $brand-color;
+                flex: 1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 40px;
                 a, button {
-                    padding: 8px;
+                    position: absolute;
+                    padding: 4px 0 2px 0;
                     margin: 0;
                     background: none;
                     border: none;
@@ -146,6 +156,7 @@ header#mainHeader {
                     width: 66px;
                     text-decoration: none;
                     cursor: pointer;
+                    transition: all 1s linear;
                     svg {
                         height: 20px;
                         width: auto;
@@ -153,13 +164,30 @@ header#mainHeader {
                     &:hover {
                         color: rgba(0,0,0,1);
                     }
+                    span.linkTitle {
+                        white-space: nowrap;
+                        font-size: 11px;
+                    }
                 }
-                .activeIndicator {
-                    position: absolute;
-                    top: 0;
-                    height: 6px;
-                    background-color: #ffffff;
-                    width: 100%;
+                &.active {
+                    background-color: transparent;
+                    background-image: url(/images/interface/tab-bar-active.svg);
+                    background-size: cover;
+                    background-position: center;
+                    a {
+                        svg {
+                            width: 38px;
+                            height: 38px;
+                            margin-top: -22px;
+                            background-color: $brand-color;
+                            // border: 6px solid $brand-color;
+                            padding: 6px;
+                            border-radius: 50%;
+                        }
+                    }
+                    .activeIndicator {
+                        display: none;
+                    }
                 }
             }
         }
@@ -197,6 +225,8 @@ header#mainHeader {
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    background-color: transparent;
+                    height: 100%;
                     // We don't want #contact styled like a button on larger screens
                     &#contact a {
                         border: 0;
@@ -208,17 +238,30 @@ header#mainHeader {
                         border: 1px solid rgba(255,255,255,0.8);
                         border-radius: 5px;
                         justify-content: center;
+                        position: relative;
+                        padding: 8px;
                         svg {
                             display: none;
                         }
+                        span.linkTitle {
+                            font-size: 1rem;
+                        }
                     }
-                    .activeIndicator {
-                        position: absolute;
-                        bottom: 0;
-                        top: unset;
-                        height: 6px;
-                        background-color: #ffffff;
-                        width: 100%;
+                    &.active {
+                        background-image: none;
+                        .activeIndicator {
+                            position: absolute;
+                            top: 100%;
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+                            flex-direction: column;
+                            margin: 0 auto;
+                            svg {
+                                width: 24px;
+                                height: auto;
+                            }
+                        }
                     }
                 }
             }

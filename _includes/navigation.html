@@ -52,7 +52,9 @@
 					{% endif %}
 
 					{% if link.link == page.url %}
-						<span class="activeIndicator"></span>
+						<span class="activeIndicator">
+							{% include topLevel-active.html %}
+						</span>
 					{% endif %}
 				</li>
 			{% endfor %}
@@ -60,23 +62,19 @@
 		<!-- LOOP THROUGH ACTION NAV DATA -->
 		{% assign actions = site.data.navigation | where:'list', 'actions' %}
 		<ul class="actions">
-			<!-- <li id="actionLogo">
-				<a href="/">
-					{% include logo.html %}
-				</a>
-			</li> -->
-
 			{% for action in actions %}
 				<li id="{{ action.name | downcase }}" class="actionButton{% if action.link == page.url %} active{% endif %}">
 					<a href="{{ action.link }}">
 						<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-							<use xlink:href="#user"></use>
+							<use xlink:href="#{{ action.svg }}"></use>
 						</svg>
 						<span class="linkTitle">{{ action.name }}</span>
-						{% if action.link == page.url %}
-							<span class="activeIndicator"></span>
-						{% endif %}
 					</a>
+					{% if action.link == page.url %}
+						<span class="activeIndicator">
+							{% include topLevel-active.html %}
+						</span>
+					{% endif %}
 				</li>
 			{% endfor %}
 		</ul>

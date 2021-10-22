@@ -43,9 +43,12 @@
 - name: Contact
   link: /contact
   list: actions
+  svg: at-sign
 - name: Sign-in
   link: /sign-in
   list: actions
+  svg: user
 - name: Donate
   link: /donate
   list: actions
+  svg: dollar-sign
