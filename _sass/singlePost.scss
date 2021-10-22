@@ -35,19 +35,24 @@
 			padding: 0;
 			background: $brandContrastDark;
 			.postHeader {
+				display: grid;
+    			grid-template-rows: 150px auto auto;
+
 				.authorImageWrap {
-					// border: 1px solid red;
-					background: $brand-color;
+					background: #abe116;
 					overflow: hidden;
-					padding-bottom: 100%;
-					width: 100%;
 					position: relative;
 					.authorImage {
 						display: block;
 						position: absolute !important;
-						width: 180%;
-						top: -35%;
-						left: -60%;
+						height: 100%;
+						overflow: hidden;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						img {
+							height: 150px;
+						}
 						.sphere {
 							padding: 2.8rem;
 						}
@@ -62,6 +67,43 @@
 						}
 					}
 				}
+
+				// Larger Screens
+				@media (min-width:800px) {
+					display: block;
+					.authorImageWrap {
+						// border: 1px solid red;
+						background: $brand-color;
+						overflow: hidden;
+						padding-bottom: 100%;
+						width: 100%;
+						position: relative;
+						.authorImage {
+							display: block;
+							position: absolute !important;
+							width: 180%;
+							top: -35%;
+							left: -60%;
+							overflow: visible;
+							img {
+								height: auto;
+							}
+							.sphere {
+								padding: 2.8rem;
+							}
+							.sphere1 {
+								background-color: $sphere1BG;
+							}
+							.sphere2{
+								background-color: $sphere2BG;
+							}
+							.sphere3 {
+								background-color: $sphere3BG;
+							}
+						}
+					}
+				}
+
 				.pageMeta {
 					padding: 2rem;
 					margin-bottom: 2rem;
@@ -121,8 +163,13 @@
 			}
 		}
 		.postContent {
+			// Mobile first padding
+			padding: 2rem;
+			// Larger screens
+			@media (min-width:800px) {
+				padding: 3rem 4rem 4rem 4rem;
+			}
 			background-color: #ffffff;
-			padding: 3rem 4rem 4rem 4rem;
 			footer {
 				background: transparent;
 			}
