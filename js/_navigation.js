@@ -50,7 +50,7 @@ function initNavAnimation() {
             scrub: 1
         }
     });
-    scrolltl.to('.logoWrap .logo', {duration:1, height:55, ease:"linear"},'<');
+    scrolltl.fromTo('.logoWrap .logo',{height:"80px"}, {duration:1, height:55, ease:"linear"},'<');
     scrolltl.to('.defaultheader',{
         duration:1,
         boxShadow: "0 1px 15px rgba(0,0,0, .15)"

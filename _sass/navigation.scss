@@ -240,7 +240,7 @@ header#mainHeader {
     // When the screen width is less than 700, then the topnav starts squishing.
     @media (min-width: 700px) {
         .logoWrap {
-            padding: 8px;
+            padding: 5px;
             display: flex;
             svg {
                 height: 80px;
