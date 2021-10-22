@@ -7,7 +7,6 @@ window.addEventListener('load',function(){
 // Click to show the subnav
 function initNavClick() {
     const submenuItems = document.querySelectorAll(".hasSubMenu");
-
     submenuItems.forEach((item, index) => {
         let button = item.querySelector(".subnavBtn");
         let closeBtn = item.querySelector(".closeSubMenu");
@@ -16,19 +15,14 @@ function initNavClick() {
         let subMenu = item.querySelector(".subMenu");
 
         // timeline setup
-        let tl = gsap.timeline({
-            paused: true,
-            defaults: {
-                duration: .3,
-                ease: "expo.inOut"
-            },
-        })
-        // tl.to(activeIndicator,{width:"100vw", transformOrigin:"center center"},">");
+        let tl = gsap.timeline({paused: true, defaults: {duration: .3, ease: "expo.inOut"},})
         tl.to(subMenu, {autoAlpha:1, scaleY:1, position:"fixed", left:0, transformOrigin:"center top"},">");
         tl.to(chevron,{rotate:180, transformOrigin:"center center" },"<");
 
         button.addEventListener("click", openUp);
         function openUp(e) {
+            // First close any open subnavs
+            item.classList.add('subnavOpen');
             tl.play()
             button.addEventListener("click", closeAgain);
         }
@@ -40,7 +34,28 @@ function initNavClick() {
     });
 }
 
+// Nav height on scroll
+function initNavAnimation() {
+    var scrolltl = gsap.timeline({
+        defaults:{duration:1},
+        scrollTrigger: {
+            trigger: "body",
+            start: 0,
+            end: 130,
+            toggleActions: "play complete reverse reverse",
+            scrub: 1
+        }
+    });
+    scrolltl.to('.logoWrap .logo', {duration:1, height:55, ease:"linear"},'<');
+    scrolltl.to('.defaultheader',{
+        duration:1,
+        boxShadow: "0 1px 15px rgba(0,0,0, .15)"
+    },'<');
+    return scrolltl;
+}
+
 // Moving the indicator when you hover over a menu item
+// Development on hold! See Trello
 function initHoverActive() {
     const navItems = document.querySelectorAll(".level1, .actionButton");
     // let navParent = document.getElementById("mainHeader");
@@ -84,23 +99,3 @@ function initHoverActive() {
 
     });
 };
-
-// Nav height on scroll
-function initNavAnimation() {
-    var scrolltl = gsap.timeline({
-        defaults:{duration:1},
-        scrollTrigger: {
-            trigger: "body",
-            start: 0,
-            end: 130,
-            toggleActions: "play complete reverse reverse",
-            scrub: 1
-        }
-    });
-    scrolltl.to('.logoWrap .logo', {duration:1, height:55, ease:"linear"},'<');
-    scrolltl.to('.defaultheader',{
-        duration:1,
-        boxShadow: "0 1px 15px rgba(0,0,0, .15)"
-    },'<');
-    return scrolltl;
-}
