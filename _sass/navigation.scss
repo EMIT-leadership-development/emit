@@ -1,3 +1,6 @@
+body.noscroll {
+    overflow-y: hidden;
+}
 header#mainHeader {
     box-sizing: border-box;
     width: 100vw;
@@ -31,7 +34,7 @@ header#mainHeader {
                 &#contact {
                     display: none;
                 }
-                a, button {
+                a.topLevelLinks, button {
                     padding: 8px;
                     margin: 0;
                     background: none;
@@ -54,50 +57,75 @@ header#mainHeader {
                     }
                 }
                 .subMenu {
-                    background: $brandContrastDark;
+                    background: rgba(39,44,51,0.5);
                     position: absolute;
                     visibility: hidden;
                     transform: scaleY(0);
                     z-index: 998;
                     width: 100vw;
                     height: 100vh;
-                    display: flex;
-                    flex-direction: column;
-                    .subMenuHeader {
-                        background: #9dce15;
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        color: #000000;
-                        height: 40px;
-                        padding: 8px;
-                        h3 {
-                            height: 100%;
+                    overflow-y: scroll;
+                    padding: 2rem 2rem 80px 2rem;
+                    backdrop-filter: blur(10px);
+                    .subMenuWrap {
+                        display: block;
+                        background-color: $brandContrastDark;
+                        padding: 1rem;
+                        .subMenuHeader {
+                            padding: 8px;
                             display: flex;
-                            justify-content: center;
+                            justify-content: space-between;
                             align-items: center;
-                            margin: 0;
-                            padding: 0;
-                            color: #000000;
-                            font-size: 1.5rem;
-                        }
-                        svg {
-                            height: 100%;
-                            width: auto;
-                            cursor: pointer;
-                        }
-                    }
-                    .content {
-                        display: flex;
-                        flex-direction: column;
-                        max-width: 900px;
-                        margin: 2rem auto;
-                        .level2 {
-                            border: 1px solid rgba(255,255,255,0.7);
                             margin-bottom: 2rem;
-                            .level3 {
-                                display: flex;
-                                flex-direction: column;
+                            h3 {
+                                color: #ffffff;
+                                margin: 0;
+                            }
+                            svg.closeSubMenu {
+                                height: 30px;
+                                width: auto;
+                                color: #ffffff;
+                                cursor: pointer;
+                                transition: all 0.3s linear;
+                                &:hover {
+                                    transform-origin: center;
+                                    transform: rotate(90deg);
+                                }
+                            }
+                        }
+                        .content {
+                            .level2 {
+                                margin-bottom: 2rem;
+                                &:hover {
+                                    background-color: rgba(255,255,255,0.1);
+                                }
+                                a.level2Wrap {
+                                    text-decoration: none;
+                                    color: rgba(255,255,255,0.7);
+                                    display: grid;
+                                    grid-gap: 1rem;
+                                    grid-template-columns: 1fr 3fr;
+                                    .imageWrap {
+                                        img {
+                                            width: 100%;
+                                            height: 100%;
+                                            object-fit: cover;
+                                        }
+                                    }
+                                    .level2Content {
+                                        padding: 8px;
+                                        h4 {
+                                            margin: 0 0 8px 0;
+                                            color: #ffffff;
+                                        }
+                                        p {
+                                            margin: 0;
+                                            a {
+                                                display: inline-block;
+                                            }
+                                        }
+                                    }
+                                }
                             }
                         }
                     }
@@ -215,9 +243,11 @@ header#mainHeader {
                     &#contact {
                         display: block;
                     }
-                    .subMenu {
-                        z-index: 999;
-                    }
+                    // .subMenu {
+                    //     z-index: 999;
+                    //     .subMenuWrap {
+                    //     }
+                    // }
                 }
             }
             ul.actions {
