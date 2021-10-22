@@ -58,10 +58,12 @@ header#mainHeader {
                 }
                 .subMenu {
                     background: rgba(39,44,51,0.5);
-                    position: absolute;
+                    position: fixed;
+                    top: 0;
+                    left: 0;
                     visibility: hidden;
                     transform: scaleY(0);
-                    z-index: 998;
+                    z-index: 1010;
                     width: 100vw;
                     height: 100vh;
                     overflow-y: scroll;
@@ -77,19 +79,29 @@ header#mainHeader {
                             justify-content: space-between;
                             align-items: center;
                             margin-bottom: 2rem;
+                            position: relative;
                             h3 {
                                 color: #ffffff;
                                 margin: 0;
                             }
-                            svg.closeSubMenu {
-                                height: 30px;
-                                width: auto;
-                                color: #ffffff;
+
+                            .closeSubMenu {
                                 cursor: pointer;
-                                transition: all 0.3s linear;
-                                &:hover {
+                                height: fit-content;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                svg {
+                                    height: 30px;
+                                    width: auto;
+                                    color: #ffffff;
+                                    transition: all 0.3s linear;
                                     transform-origin: center;
-                                    transform: rotate(90deg);
+                                }
+                                &:hover {
+                                    svg {
+                                        transform: rotate(90deg);
+                                    }
                                 }
                             }
                         }
@@ -243,11 +255,6 @@ header#mainHeader {
                     &#contact {
                         display: block;
                     }
-                    // .subMenu {
-                    //     z-index: 999;
-                    //     .subMenuWrap {
-                    //     }
-                    // }
                 }
             }
             ul.actions {

@@ -16,7 +16,7 @@ function initNavClick() {
 
         // timeline setup
         let tl = gsap.timeline({paused: true, defaults: {duration: .3, ease: "expo.inOut"},})
-        tl.to(subMenu, {autoAlpha:1, scaleY:1, position:"fixed", left:0, transformOrigin:"center top"},">");
+        tl.to(subMenu, {autoAlpha:1, scaleY:1, transformOrigin:"center top"},">");
         tl.to(chevron,{rotate:180, transformOrigin:"center center" },"<");
 
         button.addEventListener("click", openUp);

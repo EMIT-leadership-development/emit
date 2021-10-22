@@ -31,9 +31,11 @@
 							<div class="subMenuWrap">
 								<div class="subMenuHeader">
 									<h3>{{link.name}}</h3>
-									<svg class="closeSubMenu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-										<use xlink:href="#close"></use>
-									</svg>
+									<div class="closeSubMenu">
+										<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+											<use xlink:href="#close"></use>
+										</svg>
+									</div>
 								</div>
 								<div class="content">
 									{% for link in link.subPages %}
