@@ -8,14 +8,19 @@
     - name: About Us
       link: /about
       description: An overview of EMIT.
+      thumb_image: >-
+        https://res.cloudinary.com/sonya-ninja/image/upload/ar_1:1,c_thumb,f_auto,g_auto,q_auto/v1634922682/emit/images/family/pastoral-couple_weiyq6.webp
     - name: Theory of Change
       link: /theory-of-change
       description: Our Theory of Change examines our ideas and assumptions of how we work to make an impact.
+      thumb_image: >-
+        https://res.cloudinary.com/sonya-ninja/image/upload/ar_1:1,c_thumb,f_auto,g_auto,q_auto/v1622523249/emit/images/africa/EMIT-custom-contribution_fj0zyg.jpg
     - name: Vision-Mission
       link: /our-vision
       description: >-
         Read more about our purposes, goals and values in these articles. Our Vision, What we do, How we do it
-
+      thumb_image: >-
+        https://res.cloudinary.com/sonya-ninja/image/upload/ar_1:1,c_thumb,f_auto,g_auto,q_auto/v1620890753/emit/images/community/happyVillageGirl_xcmuns.jpg
       # subPages:
       #   - name: Our Vision
       #     link: /our-vision
@@ -26,27 +31,47 @@
     - name: History
       link: /history
       description: Scroll through a timeline of EMIT's history
+      thumb_image: >-
+        https://res.cloudinary.com/sonya-ninja/image/upload/ar_1:1,c_thumb,f_auto,g_auto,q_auto/v1634925026/emit/images/africa/road_qofawc.webp
     - name: Team
       link: /team
       description: We are proud of our team - read about each person's contribution
+      thumb_image: >-
+        https://res.cloudinary.com/sonya-ninja/image/upload/ar_1:1,c_thumb,f_auto,g_auto,q_auto/v1634925364/emit/images/africa/lightAFire_fttwvj.webp
     - name: Board
       link: /board
       description: The EMIT board and governance
+      thumb_image: >-
+        https://res.cloudinary.com/sonya-ninja/image/upload/ar_1:1,c_thumb,f_auto,g_auto,q_auto/v1634926057/emit/images/family/girl-leader-helps-brother-learn_rrenqk.jpg
     - name: Reports & 990
       link: /reports-990
       description: Downloadable annual reports and 990 forms
+      thumb_image: >-
+        https://res.cloudinary.com/sonya-ninja/image/upload/ar_1:1,c_thumb,f_auto,g_auto,q_auto/v1620891937/emit/images/business/EMIT-business-leadership_apsxal.jpg
 - name: Training
   link: /programs
   list: topLevel
   subPages:
     - name: EMIT Training
       link: /programs
+      thumb_image: >-
+        https://res.cloudinary.com/sonya-ninja/image/upload/ar_1:1,c_thumb,f_auto,g_auto,q_auto/v1620891937/emit/images/business/EMIT-business-leadership_apsxal.jpg
+      description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur vero cum quam omnis qui similique.
     - name: Women Leaders
       link: /programs/women-leaders
+      thumb_image: >-
+        https://res.cloudinary.com/sonya-ninja/image/upload/ar_1:1,c_thumb,f_auto,g_auto,q_auto/v1634927616/emit/images/women/womenTrainingGroupEMIT_aypqo0.webp
+      description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur vero cum quam omnis qui similique.
     - name: Religious Leaders
       link: /programs/religious-leaders
+      thumb_image: >-
+        https://res.cloudinary.com/sonya-ninja/image/upload/ar_1:1,c_thumb,f_auto,g_auto,q_auto/v1634922682/emit/images/family/pastoral-couple_weiyq6.webp
+      description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur vero cum quam omnis qui similique.    
     - name: Youth Leaders
       link: /programs/youth-leaders
+      thumb_image: >-
+        https://res.cloudinary.com/sonya-ninja/image/upload/ar_1:1,c_thumb,f_auto,g_auto,q_auto/v1634927847/emit/images/youth/youngLeaderThinking_xhttbt.webp
+      description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur vero cum quam omnis qui similique.
 - name: Stories
   link: /articles
   list: topLevel
