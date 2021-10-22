@@ -116,11 +116,11 @@ header#mainHeader {
                                     color: rgba(255,255,255,0.7);
                                     display: grid;
                                     grid-gap: 1rem;
-                                    grid-template-columns: 1fr 3fr;
+                                    grid-template-columns: 80px 1fr;
                                     .imageWrap {
                                         img {
-                                            width: 100%;
-                                            height: 100%;
+                                            width: 80px;
+                                            height: 80px;
                                             object-fit: cover;
                                         }
                                     }
