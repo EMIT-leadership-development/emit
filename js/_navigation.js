@@ -21,13 +21,17 @@ function initNavClick() {
 
         button.addEventListener("click", openUp);
         function openUp(e) {
-            // First close any open subnavs
+            // Add noscroll to body
+            document.body.classList.add('noscroll');
+            // TODO: close any subnavs that are open
             item.classList.add('subnavOpen');
             tl.play()
             button.addEventListener("click", closeAgain);
+            closeBtn.addEventListener("click", closeAgain);
         }
 
         function closeAgain(e) {
+            document.body.classList.remove('noscroll');
             tl.reverse()
             button.removeEventListener("click", closeAgain);
         }
