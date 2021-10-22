@@ -313,9 +313,19 @@ section {
 // -----SINGLE POST PAGE
 
 .singlePost {
+
 	.postWrap {
-		display: grid;
-		grid-template-columns: 2fr 5fr;
+
+		display: flex;
+		flex-direction: column-reverse;
+
+		// At 800px display sidebar to left of post
+		@media (min-width:800px) {
+			
+				display: grid;
+				grid-template-columns: 2fr 5fr;
+			
+		}
 	}
 }
 
