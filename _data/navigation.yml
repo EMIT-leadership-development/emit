@@ -7,24 +7,34 @@
   subPages:
     - name: About Us
       link: /about
+      description: An overview of EMIT.
     - name: Theory of Change
       link: /theory-of-change
+      description: Our Theory of Change examines our ideas and assumptions of how we work to make an impact.
     - name: Vision-Mission
-      subPages:
-        - name: Our Vision
-          link: /our-vision
-        - name: What we do
-          link: /what-we-do
-        - name: How we do it
-          link: /how-we-do-it
+      link: /our-vision
+      description: >-
+        Read more about our purposes, goals and values in these articles. Our Vision, What we do, How we do it
+
+      # subPages:
+      #   - name: Our Vision
+      #     link: /our-vision
+      #   - name: What we do
+      #     link: /what-we-do
+      #   - name: How we do it
+      #     link: /how-we-do-it
     - name: History
       link: /history
+      description: Scroll through a timeline of EMIT's history
     - name: Team
       link: /team
+      description: We are proud of our team - read about each person's contribution
     - name: Board
       link: /board
+      description: The EMIT board and governance
     - name: Reports & 990
       link: /reports-990
+      description: Downloadable annual reports and 990 forms
 - name: Training
   link: /programs
   list: topLevel
