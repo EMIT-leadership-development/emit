@@ -22,31 +22,34 @@
 							</svg>
 						</button>
 					{% else %}
-						<a href="{% include relative-src.html src=link.link %}" class="{{ class }} hideToStart">{{ link.name }}</a>
+						<a class="topLevelLinks" href="{% include relative-src.html src=link.link %}" class="{{ class }} hideToStart">{{ link.name }}</a>
 					{% endif %}
 
 					<!-- if sub menu then loop through items -->
 					{% if link.subPages %}
 						<div class="subMenu">
-							<!-- <div class="subMenuHeader">
-								<h3></span>{{ link.name }}</h3>
-								<svg class="closeSubMenu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-									<use xlink:href="#close"></use>
-								</svg>
-							</div> -->
-							<div class="content">
-								{% for link in link.subPages %}
-									<div class="level2">
-										<a href="link.link">{{link.name}}</a>
-										{% if link.subPages %}
-											<div class="level3">
-												{% for link in link.subPages %}
-													{{ link.name }}
-												{% endfor %}
-											</div>
-										{% endif %}
-									</div>
-								{% endfor %}
+							<div class="subMenuWrap">
+								<div class="subMenuHeader">
+									<h3>{{link.name}}</h3>
+									<svg class="closeSubMenu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+										<use xlink:href="#close"></use>
+									</svg>
+								</div>
+								<div class="content">
+									{% for link in link.subPages %}
+										<div class="level2" id="{{ link.name | downcase }}">
+											<a href="{{link.link}}" class="level2Wrap">
+												<div class="imageWrap">
+													<img src="https://picsum.photos/200" alt="">
+												</div>
+												<div class="level2Content">
+													<h4>{{link.name}}</h4>
+													<p>{{link.description}}</p>
+												</div>
+											</a>
+										</div>
+									{% endfor %}
+								</div>
 							</div>
 						</div>
 					{% endif %}
