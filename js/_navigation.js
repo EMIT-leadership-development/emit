@@ -12,6 +12,7 @@ function initNavClick() {
         let button = item.querySelector(".subnavBtn");
         let closeBtn = item.querySelector(".closeSubMenu");
         let activeIndicator = item.querySelector(".activeIndicator");
+        let chevron = item.querySelector(".subnavBtn").getElementsByTagName("svg");
         let subMenu = item.querySelector(".subMenu");
 
         // timeline setup
@@ -23,7 +24,8 @@ function initNavClick() {
             },
         })
         // tl.to(activeIndicator,{width:"100vw", transformOrigin:"center center"},">");
-        tl.to(subMenu, {autoAlpha:1, scaleY:1, position:"fixed", left:0, transformOrigin:"center top"},">")
+        tl.to(subMenu, {autoAlpha:1, scaleY:1, position:"fixed", left:0, transformOrigin:"center top"},">");
+        tl.to(chevron,{rotate:180, transformOrigin:"center center" },"<");
 
         button.addEventListener("click", openUp);
         function openUp(e) {
