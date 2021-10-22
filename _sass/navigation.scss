@@ -73,6 +73,8 @@ header#mainHeader {
                         display: block;
                         background-color: $brandContrastDark;
                         padding: 1rem;
+                        max-width: 900px;
+                        margin: 0 auto;
                         .subMenuHeader {
                             padding: 8px;
                             display: flex;
