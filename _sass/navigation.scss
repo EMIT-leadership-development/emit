@@ -1,6 +1,12 @@
 body.noscroll {
     overflow-y: hidden;
 }
+// Special styles for home page (scrollytelling)
+body#scrollyTellingWrap {
+    header#mainHeader {
+        position: fixed;
+    }
+}
 header#mainHeader {
     box-sizing: border-box;
     width: 100vw;
