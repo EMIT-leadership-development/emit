@@ -4,13 +4,11 @@ window.onload = function() {
 
     introSection();
     eachSection();
-    // theorySection();
-    // activitiesSection();
 
     function introSection() {
         let tl = gsap.timeline({
             scrollTrigger: {
-                trigger: "#planetWrap",
+                trigger: "#intro .planetWrap",
                 pin: '#intro',
                 start: "center center",
                 end: "bottom top",
@@ -21,7 +19,7 @@ window.onload = function() {
     }
 
     function eachSection() {
-        let tocSections = gsap.utils.toArray('section');
+        let tocSections = gsap.utils.toArray('.flow');
         tocSections.forEach(section => {
             let trig = section;
             let endtrig = section.nextElementSibling;
