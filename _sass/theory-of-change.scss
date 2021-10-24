@@ -1,43 +1,118 @@
 body#theoryOfChange {
-    background-color: $brandContrastDarkest;
+    // position: relative;
+    background-color: $brandContrastLight;
+    padding-bottom: 6rem;
     * {
         box-sizing: border-box;
     }
     section {
         width: 100vw;
+        padding: 0;
+        display: grid;
+        align-items: center;
+        overflow: hidden;
+        grid-template-columns: 60px 1fr;
+        grid-template-areas: "flowchart title" "flowchart img";
+        background-color: $brandContrastLight;
+        &:nth-child(odd) {
+            background-color: #ffffff;
+        }
+        .flowChart {
+            grid-area: flowchart;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            // border: 1px solid red;
+            height: 100%;
+            svg {
+                height: 100%;
+                stroke-width: 4px;
+                stroke: $brand-color;
+                position: absolute;
+            }
+            .number {
+                position: absolute;
+                top: 22px;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background-color: $brand-color;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 26px;
+                font-weight: 900;
+            }
+        }
+        .titleWrap {
+            grid-area: title;
+            padding-right: 2rem;
+            .sectionTitle.priority2 {
+                border: none;
+                padding-left: 0;
+                margin: 0;
+            }
+            ul {
+				list-style-type: none;
+				list-style-position: outside;
+				padding: 0;
+			}
+			li {
+				margin-bottom: 1rem;
+				position: relative;
+				padding-left: 2rem;
+				line-height: 1.5;
+				&:before {
+					content: "";
+					width: 15px;
+					height: 7px;
+					background: $brand-color;
+					display: block;
+					position: absolute;
+					top: 9px;
+					left: 0;
+				}
+			}
+        }
+        .imageWrap {
+            padding: 0 2rem 2rem 0;
+            grid-area: img;
+            display: flex;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    #intro, #end {
+        min-height: 100vh;
+        background-color: transparent;
         padding: 2rem;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
-        overflow: hidden;
-        @media (min-width:900px) {
-            padding: 6rem;
-        }
-    }
-    #intro {
-        min-height: 100vh;
-        // background-color: $brandContrastDark;
-        .titleWrap {
-            max-width: 400px;
-            text-align: center;
-            h2,p {
-                color: rgba(255,255,255,0.7);
-            }
-        }
         @media (min-width:900px) {
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-gap: 4rem;
             justify-content: center;
             align-items: center;
+            padding: 6rem;
             .titleWrap {
                 text-align: left;
             }
         }
+        .titleWrap {
+            max-width: 400px;
+            text-align: center;
+        }
         #planetWrap {
             position: relative;
-            width: 100vw;
+            width: 100%;
             max-width: 400px;
             display: flex;
             flex-direction: column;
@@ -61,10 +136,12 @@ body#theoryOfChange {
                 width: 125%;
                 z-index: 2;
             }
+            .line {
+                position: absolute;
+                height: 40%;
+                bottom: 0;
+            }
         }
     }
 
-    #impact {
-        background-color: #ffffff;
-    }
 }

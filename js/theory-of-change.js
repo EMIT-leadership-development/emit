@@ -3,6 +3,9 @@
 window.onload = function() {
 
     introSection();
+    eachSection();
+    // theorySection();
+    // activitiesSection();
 
     function introSection() {
         let tl = gsap.timeline({
@@ -15,7 +18,31 @@ window.onload = function() {
             }
         });
         tl.to(".planet", {backgroundPosition:"80% 85%" });
-        tl.to("body#theoryOfChange",{backgroundColor:"#EDF5F9"},"<");
-        tl.to("#intro p, #intro h2",{color:"rgba(0,0,0,0.8)"},"<");
     }
+
+    function eachSection() {
+        let tocSections = gsap.utils.toArray('section');
+        tocSections.forEach(section => {
+            let trig = section;
+            let endtrig = section.nextElementSibling;
+            let line = section.querySelector('.line line');
+            let number = section.querySelector('.number');
+            drawLine(trig, endtrig, line, number);
+        });
+    }
+
+    function drawLine(trig, endtrig, line, number) {
+        let tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: trig,
+                start: "top center",
+                endTrigger: endtrig,
+                end: "top center",
+                scrub: 1
+            }
+        });
+        tl.from(line, {duration:2, drawSVG: 0});
+        tl.from(number,{duration:0.5, autoAlpha:0, scale:0, transformOrigin:"center center", ease:"expo.out"},"<");
+    }
+
 }
