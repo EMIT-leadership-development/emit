@@ -1,0 +1,52 @@
+body#theoryOfChange {
+    * {
+        box-sizing: border-box;
+    }
+    section {
+        width: 100vw;
+        min-height: 100vh;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        &#toc-intro {
+            background-color: $brandContrastDark;
+        }
+    }
+    #planetWrap {
+        position: relative;
+        width: 100vw;
+        max-width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        // visibility: hidden;
+        .planet {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            position: absolute;
+            background: #8ab5c8;
+            border-radius: 50%;
+            box-shadow: inset 0 0 50px #fff, inset 20px 0 80px #39424a, inset -20px 0 80px #414750, inset 20px 0 300px #39424a, inset -20px 0 300px #06b3f7, 0 0 50px #fff, -10px 0 80px #39424a, 10px 0 80px #064388;
+            background-image: url(https://res.cloudinary.com/sonya-ninja/image/upload/f_auto,q_auto:eco/v1635047047/emit/images/theory-of-change/worldMapAnnaTransformation_spabbj.png);
+            background-size: auto 200%;
+            background-repeat: no-repeat;
+            background-position: 20% 85%;
+        }
+        .networkAnimated {
+            max-width: unset;
+            width: 125%;
+            z-index: 2;
+        }
+    }
+    #intro {
+        background: #bfdce6;
+        .titleWrap {
+            max-width: 400px;
+            text-align: center;
+        }
+    }
+}
