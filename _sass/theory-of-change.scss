@@ -4,117 +4,140 @@ body#theoryOfChange {
     * {
         box-sizing: border-box;
     }
+
     section {
         width: 100vw;
         padding: 0;
-        display: grid;
-        align-items: center;
-        overflow: hidden;
-        grid-template-columns: 60px 1fr;
-        grid-template-areas: "flowchart title" "flowchart img";
-        &:nth-child(even) {
+        &:nth-child(odd) {
             background-color: #ffffff;
         }
-        .flowChart {
-            grid-area: flowchart;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
             align-items: center;
-            // border: 1px solid red;
-            height: 100%;
-            svg {
-                height: 100%;
-                stroke-width: 4px;
-                stroke: $brand-color;
-                position: absolute;
-            }
-            .number {
-                position: absolute;
-                top: 22px;
-                width: 40px;
-                height: 40px;
-                border-radius: 50%;
-                background-color: $brand-color;
+            overflow: hidden;
+            grid-template-columns: 60px 1fr;
+            grid-template-areas: "flowchart title" "flowchart img";
+            padding: 0;
+            .flowChart {
+                grid-area: flowchart;
                 display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                // border: 1px solid red;
+                height: 100%;
+                svg {
+                    height: 100%;
+                    stroke-width: 4px;
+                    stroke: $brand-color;
+                    position: absolute;
+                }
+                .number {
+                    position: absolute;
+                    top: 22px;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    background-color: $brand-color;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 26px;
+                    font-weight: 900;
+                }
+            }
+            .titleWrap {
+                grid-area: title;
+                padding-right: 2rem;
+                .sectionTitle.priority2 {
+                    border: none;
+                    padding-left: 0;
+                    margin: 0;
+                }
+                ul {
+                    list-style-type: none;
+                    list-style-position: outside;
+                    padding: 0;
+                }
+                li {
+                    margin-bottom: 1rem;
+                    position: relative;
+                    padding-left: 2rem;
+                    line-height: 1.5;
+                    &:before {
+                        content: "";
+                        width: 15px;
+                        height: 7px;
+                        background: $brand-color;
+                        display: block;
+                        position: absolute;
+                        top: 9px;
+                        left: 0;
+                    }
+                }
+            }
+            .imageWrap {
+                padding: 0 2rem 2rem 0;
+                grid-area: img;
+                display: flex;
+                flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                font-size: 26px;
-                font-weight: 900;
-            }
-        }
-        .titleWrap {
-            grid-area: title;
-            padding-right: 2rem;
-            .sectionTitle.priority2 {
-                border: none;
-                padding-left: 0;
-                margin: 0;
-            }
-            ul {
-				list-style-type: none;
-				list-style-position: outside;
-				padding: 0;
-			}
-			li {
-				margin-bottom: 1rem;
-				position: relative;
-				padding-left: 2rem;
-				line-height: 1.5;
-				&:before {
-					content: "";
-					width: 15px;
-					height: 7px;
-					background: $brand-color;
-					display: block;
-					position: absolute;
-					top: 9px;
-					left: 0;
-				}
-			}
-        }
-        .imageWrap {
-            padding: 0 2rem 2rem 0;
-            grid-area: img;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
             }
         }
     }
 
-    // LARGER SCREENS SECTION LAYOUTS
+    // MED > SCREENS SECTION LAYOUTS
     @media (min-width:700px) {
         section {
-            grid-template-columns: 1fr 60px 1fr;
-            grid-template-areas: "left flowchart right";
-            .titleWrap {
-                grid-area: left;
-                padding: 3rem 0 3rem 3rem;
-            }
-            .imageWrap {
-                grid-area: right;
-                padding: 0;
-                padding: 3rem 3rem 3rem 0;
+            .container {
+                grid-template-columns: 1fr 60px 1fr;
+                grid-template-areas: "left flowchart right";
+                .titleWrap {
+                    grid-area: left;
+                    padding: 3rem 0 3rem 3rem;
+                }
+                .imageWrap {
+                    grid-area: right;
+                    padding: 0;
+                    padding: 3rem 3rem 3rem 0;
+                }
             }
         }
     }
 
     #intro, #end {
-        display: block;
-        text-align: center;
-        .titleWrap {
-            padding: 2rem;
-            max-width: 700px;
-            margin: 0 auto;
-        }
-        .imageWrap {
-            padding: 0;
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: transparent;
+            min-height: 100vh;
+            .titleWrap {
+                padding: 2rem;
+                max-width: 700px;
+                margin: 0 auto;
+            }
+            .imageWrap {
+                padding: 0;
+            }
+            @media (max-width:700px) {
+                flex-direction: column-reverse;
+                .titleWrap {
+                    .sectionTitle.priority1 {
+                        font-size: 1.8rem;
+                    }
+                }
+            }
         }
     }
 

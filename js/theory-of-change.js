@@ -8,10 +8,10 @@ window.onload = function() {
     function introSection() {
         let tl = gsap.timeline({
             scrollTrigger: {
-                trigger: "#intro .planetWrap",
+                trigger: "#intro",
                 pin: '#intro',
-                start: "center center",
-                end: "bottom top",
+                start: "top top",
+                end: "+=500px",
                 scrub: 1,
             }
         });
