@@ -4,7 +4,7 @@ html, body {
 	font-size: 16px;
 	background-color: $brandContrastLight;
 }
-@media (max-width: 300px) { html, body{font-size:14px;} }
+@media (max-width: 300px) { html, body{font-size:12px;} }
 body {
 	font-family: "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 	-webkit-font-smoothing: antialiased;
@@ -26,6 +26,7 @@ a:hover {
 img {
 	max-width: 100%;
 }
+
 h1 {
 	font-weight: 400;
 	font-size: 2.3rem;
@@ -70,6 +71,10 @@ h1, h2, h3, h4 {
 	a {
 		color: #000;
 	}
+}
+
+@media (max-width:350px) {
+	
 }
 
 // -------------------THEME ELEMENT STYLES FROM HERE----------------------
