@@ -56,8 +56,8 @@ window.onload = function() {
             }
         });
         tl.fromTo('#clouds', {rotate:-5, scale:1.3}, {rotate:10, scale:4, transformOrigin:"center center"});
-        tl.fromTo("#backgroundVillage",{scale: 1}, {scale:1.1, transformOrigin:"center center"},"<");
-        tl.fromTo("#joseph",{scale: 0.5, rotate:0}, {scale:1, rotate:2, transformOrigin:"center center"},"<");
+        // tl.fromTo("#backgroundVillage",{scale: 1}, {scale:1.5, transformOrigin:"center center"},"<");
+        // tl.fromTo("#joseph",{scale: 0.5, rotate:0}, {scale:1, rotate:2, transformOrigin:"center center"},"<");
     }
 
 }

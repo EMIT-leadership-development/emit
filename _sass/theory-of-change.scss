@@ -141,6 +141,10 @@ body#theoryOfChange {
                 padding: 2rem;
                 max-width: 700px;
                 margin: 0 auto;
+                .button {
+                    width: fit-content;
+                    margin: 0 auto;
+                }
             }
             .imageWrap {
                 width: 100%;
