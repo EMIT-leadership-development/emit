@@ -133,6 +133,7 @@ header#mainHeader {
                                         }
                                     }
                                     .level2Content {
+                                        display: block;
                                         padding: 8px;
                                         h4 {
                                             margin: 0 0 8px 0;
@@ -140,11 +141,17 @@ header#mainHeader {
                                         }
                                         p {
                                             margin: 0;
-                                            a {
+                                            display: inline-block;
+                                            a.level3links {
                                                 display: inline-block;
+                                                padding: 0 8px;
                                             }
                                         }
                                     }
+                                }
+                                .level3links {
+                                    margin-left: calc(1rem + 88px);
+
                                 }
                             }
                         }

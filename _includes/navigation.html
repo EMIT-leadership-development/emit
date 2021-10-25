@@ -48,6 +48,13 @@
 													<h4>{{link.name}}</h4>
 													<p>{{link.description}}</p>
 												</div>
+												{% if link.subPages %}
+													<div class="level3links">
+														{% for link in link.subPages %}
+														<a class="level3Links" href="{{link.link}}">{{link.name}}</a>
+														{% endfor %}
+													</div>
+												{% endif %}
 											</a>
 										</div>
 									{% endfor %}

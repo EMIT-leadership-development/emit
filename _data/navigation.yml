@@ -21,13 +21,13 @@
         Read more about our purposes, goals and values in these articles. Our Vision, What we do, How we do it
       thumb_image: >-
         https://res.cloudinary.com/sonya-ninja/image/upload/ar_1:1,c_thumb,w_80,h_80,f_auto,g_auto,q_auto/v1620890753/emit/images/community/happyVillageGirl_xcmuns.jpg
-      # subPages:
-      #   - name: Our Vision
-      #     link: /our-vision
-      #   - name: What we do
-      #     link: /what-we-do
-      #   - name: How we do it
-      #     link: /how-we-do-it
+      subPages:
+        - name: Our Vision
+          link: /our-vision
+        - name: What we do
+          link: /what-we-do
+        - name: How we do it
+          link: /how-we-do-it
     - name: History
       link: /history
       description: Scroll through a timeline of EMIT's history
