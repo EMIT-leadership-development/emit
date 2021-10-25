@@ -15,7 +15,7 @@ window.onload = function() {
                 scrub: 1,
             }
         });
-        tl.to(".planet", {backgroundPosition:"80% 85%" });
+        tl.to(".map", {backgroundPosition:"80% 80%"});
     }
 
     function eachSection() {
