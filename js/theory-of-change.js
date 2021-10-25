@@ -11,7 +11,7 @@ window.onload = function() {
             scrollTrigger: {
                 trigger: "#intro",
                 pin: '#intro',
-                start: "top top",
+                start: "top 90px",
                 end: "+=500px",
                 scrub: 1,
             }

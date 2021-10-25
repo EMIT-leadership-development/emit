@@ -8,7 +8,7 @@ body#theoryOfChange {
     section {
         width: 100vw;
         padding: 0;
-        &:nth-child(odd) {
+        &:nth-child(even) {
             background-color: #ffffff;
         }
         .container {
@@ -108,7 +108,7 @@ body#theoryOfChange {
         }
     }
 
-
+    // EMIT and Joseph in Village network illustration
     section#emit-network {
         position: relative;
         overflow: hidden;
@@ -127,8 +127,9 @@ body#theoryOfChange {
         }
     }
 
+    // First and Last sections with planets
     #intro, #end {
-        background-color: #bbd5e0;
+        // background-color: #bbd5e0;
         .container {
             display: flex;
             flex-direction: column;
@@ -136,14 +137,17 @@ body#theoryOfChange {
             align-items: center;
             text-align: center;
             background-color: transparent;
-            min-height: 100vh;
+            min-height: calc(100vh - 90px);
             .titleWrap {
                 padding: 2rem;
                 max-width: 700px;
                 margin: 0 auto;
+                p {
+                    margin-bottom:0;
+                }
                 .button {
                     width: fit-content;
-                    margin: 0 auto;
+                    margin: 1rem auto 0 auto;
                 }
             }
             .imageWrap {
