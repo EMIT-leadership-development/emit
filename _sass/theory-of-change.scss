@@ -1,0 +1,199 @@
+body#theoryOfChange {
+    // position: relative;
+    background-color: $brandContrastLight;
+    * {
+        box-sizing: border-box;
+    }
+
+    section {
+        width: 100vw;
+        padding: 0;
+        &:nth-child(odd) {
+            background-color: #ffffff;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            align-items: center;
+            overflow: hidden;
+            grid-template-columns: 60px 1fr;
+            grid-template-areas: "flowchart title" "flowchart img";
+            padding: 0;
+            .flowChart {
+                grid-area: flowchart;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                // border: 1px solid red;
+                height: 100%;
+                svg {
+                    height: 100%;
+                    stroke-width: 4px;
+                    stroke: $brand-color;
+                    position: absolute;
+                }
+                .number {
+                    position: absolute;
+                    top: 22px;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    background-color: $brand-color;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 26px;
+                    font-weight: 900;
+                }
+            }
+            .titleWrap {
+                grid-area: title;
+                padding-right: 2rem;
+                .sectionTitle.priority2 {
+                    border: none;
+                    padding-left: 0;
+                    margin: 0;
+                }
+                ul {
+                    list-style-type: none;
+                    list-style-position: outside;
+                    padding: 0;
+                }
+                li {
+                    margin-bottom: 1rem;
+                    position: relative;
+                    padding-left: 2rem;
+                    line-height: 1.5;
+                    &:before {
+                        content: "";
+                        width: 15px;
+                        height: 7px;
+                        background: $brand-color;
+                        display: block;
+                        position: absolute;
+                        top: 9px;
+                        left: 0;
+                    }
+                }
+            }
+            .imageWrap {
+                padding: 0 2rem 2rem 0;
+                grid-area: img;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+
+    // MED > SCREENS SECTION LAYOUTS
+    @media (min-width:700px) {
+        section {
+            .container {
+                grid-template-columns: 1fr 60px 1fr;
+                grid-template-areas: "left flowchart right";
+                .titleWrap {
+                    grid-area: left;
+                    padding: 3rem 0 3rem 3rem;
+                }
+                .imageWrap {
+                    grid-area: right;
+                    padding: 0;
+                    padding: 3rem 3rem 3rem 0;
+                }
+            }
+        }
+    }
+
+
+    section#emit-network {
+        position: relative;
+        overflow: hidden;
+        width: 100vw;
+        height: 100vh;
+        .background {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                position: absolute;
+            }
+        }
+    }
+
+    #intro, #end {
+        background-color: #bbd5e0;
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: transparent;
+            min-height: 100vh;
+            .titleWrap {
+                padding: 2rem;
+                max-width: 700px;
+                margin: 0 auto;
+                .button {
+                    width: fit-content;
+                    margin: 0 auto;
+                }
+            }
+            .imageWrap {
+                width: 100%;
+                padding: 0;
+                .planetWrap {
+                    position: relative;
+                    width: 80vw;
+                    max-width: 400px;
+                    height: 80vw;
+                    max-height: 400px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    .planet, .map, .shadeLeft, .highlight {
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 50%;
+                        position: absolute;
+                    }
+                    .planet {
+                        background-color: $brandContrastDark;
+                        z-index: 1;
+                        background-image: radial-gradient(#CDD8DE, #A4CAD8, #4E7182, #97BCCA);
+                        filter: drop-shadow(0 0 5vh white);
+                    }
+                    .map {
+                        background-image: url(https://res.cloudinary.com/sonya-ninja/image/upload/f_auto,q_auto/v1635164385/emit/images/theory-of-change/worldMapAnnaTransformation_fjwyz9.png);
+                        position: absolute;
+                        background-size: auto 200%;
+                        background-position: 20% 80%;
+                        z-index: 4;
+                        box-shadow: inset 2vh 1vh 3vh white;
+                    }
+                    .network {
+                        display: none;
+                        z-index: 3;
+                    }
+                }
+            }
+            @media (max-width:700px) {
+                flex-direction: column-reverse;
+                .titleWrap {
+                    .sectionTitle.priority1 {
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+        }
+    }
+
+}
