@@ -153,10 +153,9 @@ var NINJA_FUNCTIONS = {
 			id: "Landing Scene",
 			defaults:{duration:0.5},
 		});
-		tl.from('.nav-link a.topLevel', {autoAlpha:0, x:-100, stagger:0.1, ease:"linear"},"<");
-		tl.from('#headerLogo', {autoAlpha:0, x:-100, ease:"linear"}, "<");
+		tl.from('#mainHeader nav li', {autoAlpha:0, x:-100, stagger:0.1, ease:"linear"},"<");
+		tl.from('#mainHeader .logoWrap .logo', {autoAlpha:0, x:-100, ease:"linear"}, "<");
 		tl.from('.introHeadline h1 span', {autoAlpha:0, x:100, stagger:0.1, ease:"linear"},"<" );
-		// tl.to('#scrollDown',{duration:1, yoyo:true, y:-10, repeat:-1},'<');
 		return tl;
 	},
 	parrallaxHover: function() {
@@ -245,9 +244,9 @@ var NINJA_FUNCTIONS = {
 			id: "topNavShrink",
 			defaults:{duration:0.3},
 			});
-			tl.to('#headerLogo .logo', {height:55, ease:"linear"});
-			tl.to('.mainNavigation',{boxShadow: "0 1px 15px rgba(0,0,0, .15)", backgroundImage:"linear-gradient(90deg, #89b412 5%, transparent 30%)", backgroundColor:$brand},"<");
-			tl.to('.topLevel',{color:"#000000"},"<");
+			tl.fromTo('#mainHeader.transparent .logoWrap .logo',{height:"80px"}, {duration:1, height:55, ease:"linear"},'<');
+			tl.to('#mainHeader.transparent',{boxShadow: "0 1px 7px rgba(0,0,0,0.5)", backdropFilter:"blur(8px)"},"<");
+			// tl.to('.topLevel',{color:"#000000"},"<");
 			return tl;
 	},
 	// Slide title animation
