@@ -45,7 +45,7 @@
         https://res.cloudinary.com/sonya-ninja/image/upload/ar_1:1,c_thumb,w_80,h_80,f_auto,g_auto,q_auto/v1634926057/emit/images/family/girl-leader-helps-brother-learn_rrenqk.jpg
     - name: Reports & Form 990
       link: /reports-990
-      description: Annual reports and form 990's
+      description: Annual reports and form 990s
       thumb_image: >-
         https://res.cloudinary.com/sonya-ninja/image/upload/ar_1:1,c_thumb,w_80,h_80,f_auto,g_auto,q_auto/v1620891937/emit/images/business/EMIT-business-leadership_apsxal.jpg
 - name: Training
@@ -71,7 +71,7 @@
       link: /programs/youth-leaders
       thumb_image: >-
         https://res.cloudinary.com/sonya-ninja/image/upload/ar_1:1,c_thumb,w_80,h_80,f_auto,g_auto,q_auto/v1634927847/emit/images/youth/youngLeaderThinking_xhttbt.webp
-      description: Youth Leaders are identified from a very early age. They are expected to set an example to their friends and play an important role in the development of society
+      description: Youth Leaders are identified from a very early age. They are expected to set an example to their friends and play an important role in the development of society.
 - name: Stories
   link: /articles
   list: topLevel
