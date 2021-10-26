@@ -305,9 +305,13 @@ header#mainHeader {
                         position: relative;
                         padding: 8px 16px;
                         &.primary {
-                            background-color: rgba(0,0,0,0.1);
+                            background-color: #c1fe18;
                             color: #000000;
                             text-transform: uppercase;
+                        }
+                        &:hover {
+                            background-color: $brandContrastDark;
+                            color: #ffffff;
                         }
                         svg {
                             display: none;
