@@ -1,79 +1,47 @@
 <!-- For migration to svelte: -->
 <!-- navigation.scss -->
 <!-- _navigation.js -->
+
 <header id="mainHeader" class="{% if page.header %} {{page.header}} {%else%}  defaultheader {%endif%}}">
 	<!-- Icon paths for use with buttons -->
 	{% include Icons_combined.html %}
-	<div class="logoWrap">
+
+	<!-- logo -->
+	<div id="logoWrap" class="logoWrap">
 		<a href="/">
 			{% include logo.html %}
 		</a>
 	</div>
-	<nav>
+
+	<!-- info links -->
+	<nav id="topLevel" aria-label='primary navigation'>
 		<!-- LOOP THROUGH TOP-LEVEL NAV DATA -->
 		{% assign links = site.data.navigation | where:'list', 'topLevel' %}
-		<ul class="topLevel">
+		<ul>
 			{% for link in links %}
-				<li class="level1{% if link.subPages %} hasSubMenu{% endif %}{% if link.link == page.url %} active{% endif %}" id="{{ link.name | downcase }}">
-					<!-- If has submenu then button, else link -->
-					{% if link.subPages %}
-						<button class="subnavBtn">
-							<span class="linkTitle">{{ link.name }}</span>
-							<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-								<use xlink:href="#chevron-down"></use>
-							</svg>
-						</button>
-					{% else %}
-						<a class="topLevelLinks" href="{% include relative-src.html src=link.link %}" class="{{ class }} hideToStart">{{ link.name }}</a>
-					{% endif %}
-
-					<!-- if sub menu then loop through items -->
-					{% if link.subPages %}
-						<div class="subMenu">
-							<div class="subMenuWrap">
-								<div class="subMenuHeader">
-									<h3>{{link.name}}</h3>
-									<div class="closeSubMenu">
-										<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-											<use xlink:href="#close"></use>
-										</svg>
-									</div>
-								</div>
-								<div class="content">
-									{% for link in link.subPages %}
-										<div class="level2" id="{{ link.name | downcase }}">
-											<a href="{{link.link}}" class="level2Wrap">
-												<div class="imageWrap">
-													<img src="{{link.thumb_image}}" alt="">
-												</div>
-												<div class="level2Content">
-													<h4>{{link.name}}</h4>
-													<p>{{link.description}}</p>
-												</div>
-											</a>
-											{% if link.subPages %}
-												<div class="level3links">
-													{% for link in link.subPages %}
-													<a href="{{link.link}}">{{link.name}}</a>
-													{% endfor %}
-												</div>
-											{% endif %}
-										</div>
-									{% endfor %}
-								</div>
-							</div>
-						</div>
-					{% endif %}
-
-					{% if link.link == page.url %}
-						<span class="activeIndicator">
-							{% include topLevel-active.html %}
-						</span>
-					{% endif %}
-				</li>
+			<li>
+				<!-- If has submenu then button, else link -->
+				{% if link.subPages %}
+				<button class="subnavBtn">
+					<span class="linkTitle">{{ link.name }}</span>
+					<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+						<use xlink:href="#chevron-down"></use>
+					</svg>
+				</button>
+				{% else %}
+				<a class="topLevelLinks" href="{% include relative-src.html src=link.link %}" class="{{ class }} hideToStart">{{ link.name }}</a>
+				{% endif %}
+			</li>
 			{% endfor %}
 		</ul>
-		<!-- LOOP THROUGH ACTION NAV DATA -->
+	</nav>
+
+	<div class="spacer">
+		SPACER
+	</div>
+
+	<!-- actions -->
+	<nav id="actions" aria-label='action links'>
 		{% assign actions = site.data.navigation | where:'list', 'actions' %}
 		<ul class="actions">
 			{% for action in actions %}
@@ -84,13 +52,19 @@
 						</svg>
 						<span class="linkTitle">{{ action.name }}</span>
 					</a>
-					{% if action.link == page.url %}
-						<span class="activeIndicator">
-							{% include topLevel-active.html %}
-						</span>
-					{% endif %}
 				</li>
 			{% endfor %}
 		</ul>
 	</nav>
+
+	<!-- Subnavigation Overlays -->
+	<nav id="about-subnav" class="subnav" aria-label='sub-navigation for About-Us'>
+		<div class="subnavContainer">
+
+		</div>
+	</nav>
+	<nav id="training-subnav" class="subnav" aria-label='sub-navigation for Training'>
+		Training Navigation
+	</nav>
+
 </header>

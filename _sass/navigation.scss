@@ -1,363 +1,156 @@
-body.noscroll {
-    overflow-y: hidden;
-}
-
-
-header#mainHeader {
-    box-sizing: border-box;
-    width: 100vw;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    background: $brand-color;
+// MOBILE SCREENS - DEFAULT STYLES
+#mainHeader {
     * {
         box-sizing: border-box;
     }
-    display: flex;
-    justify-content: space-between;
-    // Hide Logo on small screens
-    .logoWrap {
+    box-sizing: border-box;
+    height: 100px;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 40px 1fr 40px;
+    grid-template-areas:
+    "links links links"
+    "space space space"
+    "actions actions actions";
+    pointer-events: none;
+    color: rgba(0,0,0,0.7);
+
+    #logoWrap {
         display: none;
+        padding: 8px;
+        background-color: $brand-color;
     }
-    nav {
-        ul.topLevel {
-            margin: 0;
+    #topLevel {
+        background-color: $brand-color;
+        grid-area: links;
+        pointer-events: all;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
             list-style-type: none;
+            margin: 0;
+            padding: 0;
+            button, a {
+                border: none;
+                text-decoration: none;
+                background: transparent;
+                color: inherit;
+                font-size: 1rem;
+                display: flex;
+                padding: 16px;
+                svg {
+                    width: 20px;
+                }
+            }
+        }
+    }
+    #actions {
+        grid-area: actions;
+        pointer-events: all;
+        padding: 0 8px;
+        background-color: $brand-color;
+        ul{
+            width: 100%;
             display: flex;
             justify-content: space-between;
-            width: 100vw;
-            height: 40px;
-            li {
-                margin: 0;
-                padding: 0;
-                overflow: visible;
-                position: relative;
-                // On smaller screens hide some of the items
-                &#contact {
-                    display: none;
-                }
-                a.topLevelLinks, button {
-                    padding: 8px;
-                    margin: 0;
-                    background: none;
-                    border: none;
-                    color: rgba(0,0,0,0.8);
-                    font-size: 1rem;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    line-height: 1;
-                    height: 100%;
-                    text-decoration: none;
-                    cursor: pointer;
-                    svg {
-                        height: 1rem;
-                        width: auto;
-                    }
-                    &:hover {
-                        color: rgba(0,0,0,1);
-                    }
-                }
-                .subMenu {
-                    background: rgba(39,44,51,0.5);
-                    position: fixed;
-                    top: 0;
-                    left: 0;
-                    visibility: hidden;
-                    transform: scaleY(0);
-                    z-index: 1010;
-                    width: 100vw;
-                    height: 100vh;
-                    overflow-y: scroll;
-                    padding: 2rem 2rem 80px 2rem;
-                    backdrop-filter: blur(10px);
-                    .subMenuWrap {
-                        display: block;
-                        background-color: $brandContrastDark;
-                        padding: 1rem;
-                        max-width: 900px;
-                        margin: 0 auto;
-                        .subMenuHeader {
-                            padding: 8px;
-                            display: flex;
-                            justify-content: space-between;
-                            align-items: center;
-                            margin-bottom: 2rem;
-                            position: relative;
-                            h3 {
-                                color: #ffffff;
-                                margin: 0;
-                            }
-
-                            .closeSubMenu {
-                                cursor: pointer;
-                                height: fit-content;
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-                                svg {
-                                    height: 30px;
-                                    width: auto;
-                                    color: #ffffff;
-                                    transition: all 0.3s linear;
-                                    transform-origin: center;
-                                }
-                                &:hover {
-                                    svg {
-                                        transform: rotate(90deg);
-                                    }
-                                }
-                            }
-                        }
-                        .content {
-                            .level2 {
-                                margin-bottom: 2rem;
-                                &:hover {
-                                    background-color: rgba(255,255,255,0.1);
-                                }
-                                a.level2Wrap {
-                                    text-decoration: none;
-                                    color: rgba(255,255,255,0.7);
-                                    display: grid;
-                                    grid-gap: 1rem;
-                                    grid-template-columns: 80px 1fr;
-                                    .imageWrap {
-                                        img {
-                                            width: 80px;
-                                            height: 80px;
-                                            object-fit: cover;
-                                        }
-                                    }
-                                    .level2Content {
-                                        display: block;
-                                        padding: 8px;
-                                        h4 {
-                                            margin: 0 0 8px 0;
-                                            color: #ffffff;
-                                        }
-                                        p {
-                                            margin: 0;
-                                            display: inline-block;
-                                            a.level3links {
-                                                display: inline-block;
-                                                padding: 0 8px;
-                                            }
-                                        }
-                                    }
-                                }
-                                .level3links {
-                                    margin-left: calc(1rem + 88px);
-                                     a{
-                                        padding: 0 8px 0 0;
-                                        text-transform: uppercase;
-                                        border-right: 1px solid rgba(255,255,255,0.4);
-                                        &:last-of-type {
-                                            border-right: none;
-                                        }
-                                     }
-                                }
-                            }
-                        }
-                    }
-                }
-                .activeIndicator {
-                    // position: absolute;
-                    top: 100%;
-                    display: flex;
-                    justify-content: flex-start;
-                    align-items: center;
-                    flex-direction: column;
-                    margin: 0 auto;
-                    svg {
-                        width: 24px;
-                        height: auto;
-                    }
-                }
-            }
-        }
-
-        // the bottom tab-bar (mobile first default)
-        ul.actions {
-            position: fixed;
-            bottom: 0;
-            left: 0;
+            align-items: center;
+            list-style-type: none;
             margin: 0;
-            width: 100vw;
-            z-index: 998;
-            display: flex;
-            justify-content: stretch;
-            filter: drop-shadow(0 -1px 2px rgba(0,0,0,0.3));
-            li {
-                margin: 0;
-                padding: 0;
-                display: block;
-                position: relative;
-                background-color: $brand-color;
-                flex: 1;
+            padding: 0;
+            a {
                 display: flex;
-                align-items: center;
+                flex-direction: column;
                 justify-content: center;
+                align-items: center;
+                border: 1px solid white;
+                text-decoration: none;
+                background: transparent;
+                color: inherit;
+                font-size: 11px;
                 height: 40px;
-                a, button {
-                    position: absolute;
-                    padding: 4px 0 2px 0;
-                    margin: 0;
-                    background: none;
-                    border: none;
-                    color: rgba(0,0,0,0.8);
-                    font-size: 1rem;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
-                    align-items: center;
-                    line-height: 1;
-                    height: 100%;
-                    width: 66px;
-                    text-decoration: none;
-                    cursor: pointer;
-                    transition: all 1s linear;
-                    svg {
-                        height: 20px;
-                        width: auto;
-                    }
-                    &:hover {
-                        color: rgba(0,0,0,1);
-                    }
-                    span.linkTitle {
-                        white-space: nowrap;
-                        font-size: 11px;
-                    }
+                &.primary {
+                    background-color: $brand-color;
+                    color: #000000;
                 }
-                &.active {
-                    background-color: transparent;
-                    background-image: url(/images/interface/tab-bar-active.svg);
-                    background-size: cover;
-                    background-position: center;
-                    a {
-                        svg {
-                            width: 38px;
-                            height: 38px;
-                            margin-top: -22px;
-                            background-color: $brand-color;
-                            // border: 6px solid $brand-color;
-                            padding: 6px;
-                            border-radius: 50%;
-                        }
-                    }
-                    .activeIndicator {
-                        display: none;
-                    }
+                svg {
+                    width: 20px;
                 }
             }
         }
     }
+    .spacer {
+        background: rgba(255,255,255,0.5);
+        grid-area: space;
+        pointer-events: none;
+        display: none;
+    }
 
-    // ******* BREAK POINT ******
-    // Screens larger than 700 (this breakpoint determined by the content response and not a device size).
-    @media (min-width: 700px) {
-        .logoWrap {
-            padding: 5px;
-            display: flex;
-            svg {
-                height: 80px;
-                width: auto;
+    .subnav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1001;
+        overflow-y: scroll;
+        padding: 2rem;
+        transform-origin: center top;
+        transform: scaleY(0);
+        .subnavContainer {
+            height: 200vh;
+        }
+    }
+}
+
+// LARGE SCREENS
+#mainHeader {
+    @media (min-width:700px) {
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-rows: 100%;
+        grid-template-areas: "logo links actions";
+        height: fit-content;
+        #logoWrap {
+            pointer-events: all;
+            grid-area: logo;
+            display: block;
+            height: 100px;
+            .logo {
+                height: 100%;
             }
         }
-        nav {
+        #topLevel{
+        }
+
+        #actions {
             display: flex;
-            ul.topLevel {
-                width: auto;
+            ul{
                 justify-content: flex-end;
-                height: auto;
                 li {
-                    &#contact {
-                        display: block;
-                    }
-                }
-            }
-            ul.actions {
-                position: unset;
-                width: auto;
-                justify-content: flex-end;
-                filter: none;
-                li {
-                    padding: 8px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    background-color: transparent;
-                    height: 100%;
-                    // We don't want #contact styled like a button on larger screens
-                    &#contact a {
-                        border: 0;
-                        padding: 0;
-                    }
-                    a,button {
+                    margin-left: 8px;
+                    a {
+                        font-size: 1rem;
                         height: auto;
-                        width: auto;
-                        border: 1px solid rgba(255,255,255,0.8);
-                        border-radius: 0;
-                        justify-content: center;
-                        position: relative;
                         padding: 8px 16px;
-                        &.primary {
-                            background-color: #c1fe18;
-                            color: #000000;
-                            text-transform: uppercase;
-                        }
-                        &:hover {
-                            background-color: $brandContrastDark;
-                            color: #ffffff;
-                        }
                         svg {
                             display: none;
                         }
-                        span.linkTitle {
-                            font-size: 1rem;
-                        }
-                    }
-                    &.active {
-                        background-image: none;
-                        .activeIndicator {
-                            position: absolute;
-                            top: 100%;
-                            display: flex;
-                            justify-content: flex-start;
-                            align-items: center;
-                            flex-direction: column;
-                            margin: 0 auto;
-                            svg {
-                                width: 24px;
-                                height: auto;
-                            }
-                        }
                     }
                 }
             }
         }
-    }
-
-}
-
-// Special styles for home page (scrollytelling)
-header#mainHeader.transparent {
-    position: fixed;
-    background: transparent;
-    nav {
-        ul.topLevel {
-            li {
-                a.topLevelLinks, button {
-                    color: rgba(255,255,255,0.8);
-                }
-                .activeIndicator {
-                    display: none;
-                }
-            }
-        }
-        ul.actions {
-            a, button {
-                color: rgba(255,255,255,0.8);
-            }
+        .spacer {
+            display: none;
         }
     }
 }

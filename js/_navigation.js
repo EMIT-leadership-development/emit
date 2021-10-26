@@ -1,6 +1,6 @@
 window.addEventListener('load',function(){
     initNavAnimation();
-    initNavClick();
+    // initNavClick();
     // initHoverActive();
 })
 
@@ -50,11 +50,9 @@ function initNavAnimation() {
             scrub: 1
         }
     });
-    scrolltl.fromTo('.defaultheader .logoWrap .logo',{height:"80px"}, {duration:1, height:55, ease:"linear"},'<');
-    scrolltl.to('.defaultheader',{
-        duration:1,
-        boxShadow: "0 1px 15px rgba(0,0,0, .15)"
-    },'<');
+    scrolltl.fromTo('.defaultheader #logoWrap',{height:100}, {duration:1, height:60, ease:"linear"},'<');
+    scrolltl.to('.defaultheader', {duration:1, boxShadow:"0 2px 9px rgba(0,0,0,0.7)"},'<');
+    // scrolltl.to('.defaultheader #topLevel, .defaultheader #logoWrap, .defaultheader #actions', {duration:1, color:"rgba(0,0,0,0.8)", backgroundColor:"#abe116"},'<');
     return scrolltl;
 }
 
