@@ -246,7 +246,6 @@ var NINJA_FUNCTIONS = {
 			});
 			tl.fromTo('#mainHeader.transparent .logoWrap .logo',{height:"80px"}, {duration:1, height:55, ease:"linear"},'<');
 			tl.to('#mainHeader.transparent',{boxShadow: "0 1px 7px rgba(0,0,0,0.5)", backdropFilter:"blur(8px)"},"<");
-			// tl.to('.topLevel',{color:"#000000"},"<");
 			return tl;
 	},
 	// Slide title animation
