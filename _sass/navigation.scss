@@ -1,12 +1,8 @@
 body.noscroll {
     overflow-y: hidden;
 }
-// Special styles for home page (scrollytelling)
-body#scrollyTellingWrap {
-    header#mainHeader {
-        position: fixed;
-    }
-}
+
+
 header#mainHeader {
     box-sizing: border-box;
     width: 100vw;
@@ -180,7 +176,7 @@ header#mainHeader {
             }
         }
 
-        // On small screens this is the bottom tab-bar
+        // the bottom tab-bar (mobile first default)
         ul.actions {
             position: fixed;
             bottom: 0;
@@ -341,4 +337,27 @@ header#mainHeader {
         }
     }
 
+}
+
+// Special styles for home page (scrollytelling)
+header#mainHeader.transparent {
+    position: fixed;
+    background: transparent;
+    nav {
+        ul.topLevel {
+            li {
+                a.topLevelLinks, button {
+                    color: rgba(255,255,255,0.8);
+                }
+                .activeIndicator {
+                    display: none;
+                }
+            }
+        }
+        ul.actions {
+            a, button {
+                color: rgba(255,255,255,0.8);
+            }
+        }
+    }
 }
