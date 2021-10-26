@@ -257,7 +257,7 @@ header#mainHeader {
     }
 
     // ******* BREAK POINT ******
-    // When the screen width is less than 700, then the topnav starts squishing.
+    // Screens larger than 700 (this breakpoint determined by the content response and not a device size).
     @media (min-width: 700px) {
         .logoWrap {
             padding: 5px;
@@ -300,10 +300,15 @@ header#mainHeader {
                         height: auto;
                         width: auto;
                         border: 1px solid rgba(255,255,255,0.8);
-                        border-radius: 5px;
+                        border-radius: 0;
                         justify-content: center;
                         position: relative;
-                        padding: 8px;
+                        padding: 8px 16px;
+                        &.primary {
+                            background-color: rgba(0,0,0,0.1);
+                            color: #000000;
+                            text-transform: uppercase;
+                        }
                         svg {
                             display: none;
                         }

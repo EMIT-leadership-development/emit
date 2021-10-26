@@ -79,11 +79,12 @@
   link: /contact
   list: actions
   svg: at-sign
-- name: Sign-in
-  link: /sign-in
-  list: actions
-  svg: user
+# - name: Sign-in
+#   link: /sign-in
+#   list: actions
+#   svg: user
 - name: Donate
   link: /donate
+  class: primary
   list: actions
   svg: dollar-sign
