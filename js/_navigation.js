@@ -13,12 +13,9 @@ function initNavClick() {
         let subMenu = document.getElementById(subMenuID);
         let closeBtn = subMenu.querySelector(".closeSubMenu");
 
-        // console.log('button:',button, ' subMenu:',subMenu, 'chevron:',chevron);
-
         // timeline setup
         let tl = gsap.timeline({paused: true, defaults: {duration: .3, ease: "expo.inOut"},})
         tl.fromTo(subMenu, {autoAlpha:0, scaleY:0}, {autoAlpha:1, scaleY:1, transformOrigin:"center top"},">");
-        // tl.to(chevron,{rotate:180, transformOrigin:"center center" },"<");
 
         button.addEventListener("click", openUp);
 

@@ -55,10 +55,21 @@ body.noscroll {
                 color: inherit;
                 font-size: 1rem;
                 display: flex;
-                padding: 16px;
+                padding: 8px;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
                 svg {
                     width: 20px;
+                    transform-origin: center center;
+                    transition: all 0.3s linear;
                 }
+                &:hover {
+                    svg {
+                        transform: rotate(180deg);
+                    }
+                }
+
             }
         }
     }
@@ -74,24 +85,29 @@ body.noscroll {
             align-items: center;
             list-style-type: none;
             margin: 0;
-            padding: 0;
-            a {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                border: 1px solid white;
-                text-decoration: none;
-                background: transparent;
-                color: inherit;
-                font-size: 11px;
-                height: 40px;
-                &.primary {
-                    background-color: $brand-color;
-                    color: #000000;
-                }
-                svg {
-                    width: 20px;
+            padding: 4px;
+            li {
+                width: 40%;
+                a {
+                    display: flex;
+                    // flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    border: 1px solid white;
+                    padding: 4px;
+                    text-decoration: none;
+                    background: transparent;
+                    color: inherit;
+                    font-size: 11px;
+                    // height: 40px;
+                    &.primary {
+                        background-color: $brand-color;
+                        color: #000000;
+                    }
+                    svg {
+                        width: 20px;
+                        margin-right: 4px;
+                    }
                 }
             }
         }
@@ -102,7 +118,6 @@ body.noscroll {
         pointer-events: none;
         display: none;
     }
-
     .subnav {
         position: fixed;
         top: 0;
@@ -141,7 +156,7 @@ body.noscroll {
 
         .subnavContainer {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             grid-auto-rows: min-content;
             grid-gap: 2rem;
             .navItem {
@@ -196,7 +211,7 @@ body.noscroll {
     }
 }
 
-// LARGE SCREENS
+// MED-LARGE SCREENS
 #mainHeader {
     @media (min-width:700px) {
         grid-template-columns: 1fr 3fr 1fr;
@@ -213,6 +228,13 @@ body.noscroll {
             }
         }
         #topLevel{
+            ul {
+                li {
+                    button,a {
+                        padding: 16px;
+                    }
+                }
+            }
         }
 
         #actions {
@@ -225,8 +247,13 @@ body.noscroll {
                         font-size: 1rem;
                         height: auto;
                         padding: 8px 16px;
+                        transition: all 0.3s linear;
                         svg {
                             display: none;
+                        }
+                        &:hover {
+                            background-color: $brandContrastDark;
+                            color: #ffffff;
                         }
                     }
                 }
@@ -237,3 +264,5 @@ body.noscroll {
         }
     }
 }
+
+// TODO: LARGE - EXTRA LARGE SCREENS
