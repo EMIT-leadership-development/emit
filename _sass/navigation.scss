@@ -265,4 +265,22 @@ body.noscroll {
     }
 }
 
+// TRANSPARENT HEADER - HOME PAGE AND MAPS
+#mainHeader.transparent {
+    @media (min-width:700px) {
+        #logoWrap {
+            background-color: transparent;
+        }
+        #topLevel{
+            background-color: transparent;
+            color: rgba(255,255,255,0.7);
+        }
+        #actions {
+            background-color: transparent;
+            color: rgba(255,255,255,0.7);
+        }
+    }
+}
+
+
 // TODO: LARGE - EXTRA LARGE SCREENS

@@ -5,8 +5,8 @@
     font-style: normal;
     src: url(../fonts/HelveticaLTStd-UltraComp.otf);
 }
-$landscapeStart: 900px;
-$portraitEnd: 899px;
+$landscapeStart: 899px;
+$portraitEnd: 700px;
 $sphereWidth: clamp(80px,10vw,200px);
 
 
@@ -70,23 +70,6 @@ $sphereWidth: clamp(80px,10vw,200px);
             }
         }
     }
-    // -------- COMMON STYLES AND HOME PAGE ELEMENTS
-    // .mainNavigation {
-    //     position: fixed;
-    //     top: 0;
-    //     left: 0;
-    //     background-color: transparent;
-    //     background-image: none;
-    //     .topLevel {
-    //         color: #ffffff;
-    //     }
-    //     .topLevel.blackText {
-    //         color: #000000;
-    //     }
-    //     .topLevel.active {
-    //         color: rgba(255,255,255,0.7) !important;
-    //     }
-    // }
     .sectionTitle {
         color: rgba(255,255,255,0.7);
         text-transform: unset;
@@ -194,7 +177,7 @@ $sphereWidth: clamp(80px,10vw,200px);
             // Small devices
             @media (max-width:$portraitEnd) {
                 flex-direction: column;
-                padding-bottom: 60px;
+                // padding-bottom: 60px;
             }
             // Large devices
             @media (min-width:$landscapeStart) {

@@ -244,8 +244,9 @@ var NINJA_FUNCTIONS = {
 			id: "topNavShrink",
 			defaults:{duration:0.3},
 			});
-			tl.fromTo('#mainHeader.transparent .logoWrap .logo',{height:"80px"}, {duration:1, height:55, ease:"linear"},'<');
-			tl.to('#mainHeader.transparent',{boxShadow: "0 1px 7px rgba(0,0,0,0.5)", backdropFilter:"blur(8px)"},"<");
+			tl.fromTo('#mainHeader.transparent #logoWrap',{height:100}, {duration:1, height:60, ease:"linear"},'<');
+    		tl.to('#mainHeader.transparent', {duration:1, boxShadow:"0 2px 9px rgba(0,0,0,0.7)"},'<');
+			tl.to('#mainHeader.transparent #logoWrap, #mainHeader.transparent #topLevel, #mainHeader.transparent #actions',{backdropFilter:"blur(8px)"},"<");
 			return tl;
 	},
 	// Slide title animation
