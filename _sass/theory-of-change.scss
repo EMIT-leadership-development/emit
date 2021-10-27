@@ -186,13 +186,18 @@ body#theoryOfChange {
                         background-image: url(https://res.cloudinary.com/sonya-ninja/image/upload/c_crop,f_auto,h_800,q_auto/v1635333334/emit/images/theory-of-change/worldMapAnnaTransformation_fjwyz9.png);
                         position: absolute;
                         background-size: cover;
-                        background-position: 22% center;
+                        background-position: 21% center;
                         z-index: 4;
                         box-shadow: inset 2vh 1vh 3vh white;
                     }
                     .network {
-                        display: none;
-                        z-index: 3;
+                        // display: none;
+                        width: 125%;
+                        height: 125%;
+                        z-index: 5;
+                        svg {
+                            stroke: revert;
+                        }
                     }
                 }
             }

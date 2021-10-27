@@ -17,7 +17,7 @@ window.onload = function() {
                 pinnedContainer: '#intro .container'
             }
         });
-        tl.fromTo(".map", {backgroundPosition:"22% center"}, {backgroundPosition:"80% center"});
+        tl.fromTo(".map", {backgroundPosition:"21% center"}, {backgroundPosition:"80% center"});
     }
 
     function eachSection() {
