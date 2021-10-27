@@ -686,10 +686,14 @@ section.curriculum {
 		color: #4b4e53;
 		outline: none !important;
 		transition: all .3s ease 0s;
+			&:hover {
+				color: #ffffff !important;
+				background: $brandContrastDark;
+			}
 		}
 	a {
 		&:hover {
-			color: #ffffff;
+			color: #ffffff !important;
 			background: $brandContrastDark;
 		}
 	}
