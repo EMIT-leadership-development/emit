@@ -1,33 +1,40 @@
 window.addEventListener('load',function(){
     initNavAnimation();
-    // initNavClick();
+    initNavClick();
     // initHoverActive();
 })
 
 // Click to show the subnav
 function initNavClick() {
-    const submenuItems = document.querySelectorAll(".hasSubMenu");
-    submenuItems.forEach((item, index) => {
-        let button = item.querySelector(".subnavBtn");
-        let closeBtn = item.querySelector(".closeSubMenu");
-        let activeIndicator = item.querySelector(".activeIndicator");
-        let chevron = item.querySelector(".subnavBtn").getElementsByTagName("svg");
-        let subMenu = item.querySelector(".subMenu");
+    const submenuItems = document.querySelectorAll(".subnavBtn");
+    submenuItems.forEach((button, index) => {
+        // let chevron = button.getElementsByTagName("svg");
+        let subMenuID = button.getAttribute('data-subnavID');
+        let subMenu = document.getElementById(subMenuID);
+        let closeBtn = subMenu.querySelector(".closeSubMenu");
+
+        // console.log('button:',button, ' subMenu:',subMenu, 'chevron:',chevron);
 
         // timeline setup
         let tl = gsap.timeline({paused: true, defaults: {duration: .3, ease: "expo.inOut"},})
-        tl.to(subMenu, {autoAlpha:1, scaleY:1, transformOrigin:"center top"},">");
-        tl.to(chevron,{rotate:180, transformOrigin:"center center" },"<");
+        tl.fromTo(subMenu, {autoAlpha:0, scaleY:0}, {autoAlpha:1, scaleY:1, transformOrigin:"center top"},">");
+        // tl.to(chevron,{rotate:180, transformOrigin:"center center" },"<");
 
         button.addEventListener("click", openUp);
+
         function openUp(e) {
             // Add noscroll to body
             document.body.classList.add('noscroll');
             // TODO: close any subnavs that are open
-            item.classList.add('subnavOpen');
+            button.classList.add('subnavOpen');
             tl.play()
             button.addEventListener("click", closeAgain);
             closeBtn.addEventListener("click", closeAgain);
+            document.addEventListener('keydown', function(event){
+                if(event.key === "Escape"){
+                    closeAgain();
+                }
+            });
         }
 
         function closeAgain(e) {

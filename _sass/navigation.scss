@@ -1,3 +1,9 @@
+// Prevent scrolling when subnav open
+body.noscroll {
+    height:100vh;
+    overflow: hidden;
+}
+
 // MOBILE SCREENS - DEFAULT STYLES
 #mainHeader {
     * {
@@ -42,6 +48,7 @@
             margin: 0;
             padding: 0;
             button, a {
+                cursor: pointer;
                 border: none;
                 text-decoration: none;
                 background: transparent;
@@ -103,13 +110,89 @@
         right: 0;
         bottom: 0;
         z-index: 1001;
+        pointer-events: all;
         overflow-y: scroll;
         padding: 2rem;
         transform-origin: center top;
         transform: scaleY(0);
-        .subnavContainer {
-            height: 200vh;
+        background-color: #0000005d;
+        color: #ffffff;
+        backdrop-filter: blur(10px);
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 2rem;
+            h2 {
+                margin: 0;
+                color: #ffffff;
+            }
+            .closeSubMenu {
+                width: 40px;
+                height: 40px;
+                transform-origin: center;
+                cursor: pointer;
+                transition: all 0.3s linear;
+                &:hover {
+                   transform: rotate(90deg);
+                }
+            }
         }
+
+        .subnavContainer {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-auto-rows: min-content;
+            grid-gap: 2rem;
+            .navItem {
+                background-color: rgba(255,255,255,0.9);
+                padding: 1rem;
+                &:hover {
+                    background-color: #ffffff;
+                }
+                .pic {
+                    width: 100%;
+                    height: 200px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+                }
+                .description {
+                    padding-top: 1rem;
+                    h3 {
+                        font-size: 1.3rem;
+                        margin-bottom: 8px;
+                        color: #000000;
+                    }
+                    a {
+                        color: rgba(0,0,0,0.7);
+                        text-decoration: none;
+                    }
+                    p {
+                        color: rgba(0,0,0,0.7);
+                        font-weight: 400;
+                    }
+                }
+                @media (max-width:495px) {
+                    padding: 1rem;
+                    display: grid;
+                    grid-template-columns: 100px 1fr;
+                    grid-gap: 1rem;
+                    .pic {
+                        height: 100%;
+                    }
+                    .description {
+                        padding: 0;
+                    }
+                }
+            }
+        }
+        // &#about-subnav {
+        //     transform: scaleY(1);
+        // }
     }
 }
 

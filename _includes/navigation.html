@@ -13,7 +13,7 @@
 		</a>
 	</div>
 
-	<!-- info links -->
+	<!-- top-level info links -->
 	<nav id="topLevel" aria-label='primary navigation'>
 		<!-- LOOP THROUGH TOP-LEVEL NAV DATA -->
 		{% assign links = site.data.navigation | where:'list', 'topLevel' %}
@@ -22,7 +22,7 @@
 			<li>
 				<!-- If has submenu then button, else link -->
 				{% if link.subPages %}
-				<button class="subnavBtn">
+				<button class="subnavBtn" data-subnavID="{{link.name | downcase}}-subnav">
 					<span class="linkTitle">{{ link.name }}</span>
 					<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
 						<use xlink:href="#chevron-down"></use>
@@ -59,12 +59,60 @@
 
 	<!-- Subnavigation Overlays -->
 	<nav id="about-subnav" class="subnav" aria-label='sub-navigation for About-Us'>
+		{% assign about = site.data.navigation | where:'name', 'About' %}
+		{% for link in about %}
+		<header>
+			<h2>{{ link.name }}</h2>
+			<div class="closeSubMenu">
+				<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+					<use xlink:href="#close"></use>
+				</svg>
+			</div>
+		</header>
 		<div class="subnavContainer">
-
+			{% for link in link.subPages %}
+				<div class="navItem">
+					<div class="pic">
+						<img src="{{ link.thumb_image }}" alt="">
+					</div>
+					<div class="description">
+						<a href="{{ link.link }}">
+							<h3>{{ link.name }}</h3>
+							<p>{{ link.description }}</p>
+						</a>
+					</div>
+				</div>
+			{% endfor %}
 		</div>
+		{% endfor %}
 	</nav>
 	<nav id="training-subnav" class="subnav" aria-label='sub-navigation for Training'>
-		Training Navigation
+		{% assign about = site.data.navigation | where:'name', 'Training' %}
+		{% for link in about %}
+		<header>
+			<h2>{{ link.name }}</h2>
+			<div class="closeSubMenu">
+				<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+					<use xlink:href="#close"></use>
+				</svg>
+			</div>
+		</header>
+		<div class="subnavContainer">
+			{% for link in link.subPages %}
+				<div class="navItem">
+					<div class="pic">
+						<img src="{{ link.thumb_image }}" alt="">
+					</div>
+					<div class="description">
+						<a href="{{ link.link }}">
+							<h3>{{ link.name }}</h3>
+							<p>{{ link.description }}</p>
+						</a>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+		{% endfor %}
 	</nav>
 
 </header>
