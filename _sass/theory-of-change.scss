@@ -87,6 +87,16 @@ body#theoryOfChange {
                 align-items: center;
             }
         }
+        &#activities, &#shortTerm, &#mediumTerm, &#longTerm {
+            .imageWrap {
+                svg {
+                    path {
+                        stroke: $brand-color;
+                        stroke-width: 10px;
+                    }
+                }
+            }
+        }
     }
 
     // MED > SCREENS SECTION LAYOUTS
@@ -103,6 +113,23 @@ body#theoryOfChange {
                     grid-area: right;
                     padding: 0;
                     padding: 3rem 3rem 3rem 0;
+                }
+            }
+            // Alternate image and text on larger screens
+            &:nth-of-type(odd) {
+                .titleWrap {
+                    grid-area: right;
+                }
+                .imageWrap {
+                    grid-area: left;
+                }
+            }
+            &#theory {
+                .titleWrap {
+                    grid-area: left;
+                }
+                .imageWrap {
+                    grid-area: right;
                 }
             }
         }
@@ -209,6 +236,12 @@ body#theoryOfChange {
                     }
                 }
             }
+        }
+    }
+    #end {
+        .container {
+            top: 2rem;
+            padding-bottom: 2rem;
         }
     }
 

@@ -26,12 +26,13 @@ window.onload = function() {
             let trig = section;
             let endtrig = section.nextElementSibling;
             let line = section.querySelector('.line line');
+            let imagePath = section.querySelector('.imageWrap svg path');
             let number = section.querySelector('.number');
-            drawLine(trig, endtrig, line, number);
+            drawLine(trig, endtrig, line, imagePath, number);
         });
     }
 
-    function drawLine(trig, endtrig, line, number) {
+    function drawLine(trig, endtrig, line, imagePath, number) {
         let tl = gsap.timeline({
             scrollTrigger: {
                 trigger: trig,
@@ -42,6 +43,7 @@ window.onload = function() {
             }
         });
         tl.from(line, {duration:2, drawSVG: 0});
+        tl.from(imagePath, {duration:2, drawSVG: 0},"<");
         if (number) {
             tl.from(number,{duration:0.5, autoAlpha:0, scale:0, transformOrigin:"center center", ease:"expo.out"},"<");
         }
