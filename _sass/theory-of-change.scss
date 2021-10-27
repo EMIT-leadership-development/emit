@@ -129,15 +129,22 @@ body#theoryOfChange {
 
     // First and Last sections with planets
     #intro, #end {
-        // background-color: #bbd5e0;
+        background-color: #bbd5e0;
+        position: relative;
+        height: 100vh;
         .container {
+            position: absolute;
+            top: 100px;
+            bottom: 0;
+            left: 0;
+            right: 0;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: center;
             background-color: transparent;
-            min-height: calc(100vh - 90px);
+            height: auto;
             .titleWrap {
                 padding: 2rem;
                 max-width: 700px;
@@ -176,10 +183,10 @@ body#theoryOfChange {
                         filter: drop-shadow(0 0 5vh white);
                     }
                     .map {
-                        background-image: url(https://res.cloudinary.com/sonya-ninja/image/upload/f_auto,q_auto/v1635164385/emit/images/theory-of-change/worldMapAnnaTransformation_fjwyz9.png);
+                        background-image: url(https://res.cloudinary.com/sonya-ninja/image/upload/c_crop,f_auto,h_800,q_auto/v1635333334/emit/images/theory-of-change/worldMapAnnaTransformation_fjwyz9.png);
                         position: absolute;
-                        background-size: auto 200%;
-                        background-position: 20% 80%;
+                        background-size: cover;
+                        background-position: 22% center;
                         z-index: 4;
                         box-shadow: inset 2vh 1vh 3vh white;
                     }

@@ -11,12 +11,13 @@ window.onload = function() {
             scrollTrigger: {
                 trigger: "#intro",
                 pin: '#intro',
-                start: "top 90px",
+                start: "top top",
                 end: "+=500px",
                 scrub: 1,
+                pinnedContainer: '#intro .container'
             }
         });
-        tl.to(".map", {backgroundPosition:"80% 80%"});
+        tl.fromTo(".map", {backgroundPosition:"22% center"}, {backgroundPosition:"80% center"});
     }
 
     function eachSection() {
