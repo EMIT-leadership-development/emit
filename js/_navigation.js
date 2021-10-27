@@ -27,6 +27,7 @@ function initNavClick() {
             tl.play()
             button.addEventListener("click", closeAgain);
             closeBtn.addEventListener("click", closeAgain);
+            subMenu.addEventListener("click", closeAgain);
             document.addEventListener('keydown', function(event){
                 if(event.key === "Escape"){
                     closeAgain();
