@@ -4,7 +4,7 @@ body.noscroll {
     overflow: hidden;
 }
 
-// MOBILE SCREENS - DEFAULT STYLES
+// MOBILE SCREENS - AND DEFAULT STYLES
 #mainHeader {
     * {
         box-sizing: border-box;
@@ -175,7 +175,7 @@ body.noscroll {
                         object-position: center;
                     }
                 }
-                .description {
+                .description, .level3 {
                     padding-top: 1rem;
                     h3 {
                         font-size: 1.3rem;
@@ -189,7 +189,12 @@ body.noscroll {
                     p {
                         color: rgba(0,0,0,0.7);
                         font-weight: 400;
+                        margin-bottom: 8px;
                     }
+                }
+                .level3 {
+                    padding-top: 0;
+                    grid-column: 1 / span 2;
                 }
                 @media (max-width:495px) {
                     padding: 1rem;
@@ -265,7 +270,7 @@ body.noscroll {
     }
 }
 
-// TRANSPARENT HEADER - HOME PAGE AND MAPS
+// TRANSPARENT HEADER - HOME PAGE
 #mainHeader.transparent {
     @media (min-width:700px) {
         #logoWrap {
