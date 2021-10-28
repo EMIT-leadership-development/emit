@@ -309,7 +309,7 @@ section {
 		.postWrap {
 			grid-template-columns: 1fr;
 		}
-		@media (min-width:500px) {
+		@media (min-width:900px) {
 			grid-template-columns: 1fr 1fr;
 			.postWrap {
 				grid-template-columns: 1fr 1fr;
@@ -328,10 +328,8 @@ section {
 
 		// At 800px display sidebar to left of post
 		@media (min-width:800px) {
-			
 				display: grid;
 				grid-template-columns: 2fr 5fr;
-			
 		}
 	}
 }
