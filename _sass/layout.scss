@@ -304,9 +304,16 @@ section {
 .transformationStories {
 	.storiesList {
 		display: grid;
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 1fr;
+		grid-gap: 1rem;
 		.postWrap {
+			grid-template-columns: 1fr;
+		}
+		@media (min-width:500px) {
 			grid-template-columns: 1fr 1fr;
+			.postWrap {
+				grid-template-columns: 1fr 1fr;
+			}
 		}
 	}
 }
