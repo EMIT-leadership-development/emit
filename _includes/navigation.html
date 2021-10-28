@@ -54,6 +54,40 @@
 					</a>
 				</li>
 			{% endfor %}
+
+			<!-- Shopping cart - hiding on home because it's not working there for some reason -->
+			{% if page.title != "Home" %}
+			<li class="shopping">
+				<a href="#" class="cart snipcart-checkout">
+					<span class="icon"><i data-feather="shopping-cart"></i></span>
+					<span class="snipcart-items-count">0</span>
+				</a>
+			</li>
+			{% endif %}
+
+			<!-- Currency selector - only on donation pages -->
+			{% if page.title == "Donate" or page.url contains "products" %}
+			<li class="currencySelection">
+				<button class="modalBtn currencyButton">
+					{% for currency in site.data.currencies %}
+					<img class="currencyBtn {{ currency.code }} {% if currency.default == true %} activePrice {% endif %}" src="{{ currency.icon }}" alt="{{ currency.name }}">
+					{% endfor %}
+				</button>
+				<div class="header_actions-currency modal">
+					<div class="modalContent">
+						<div id="currencies">
+							{% for currency in site.data.currencies %}
+							<label class="radio-img">
+								<input type="radio" {% if currency.default == true %} selected checked="checked" {% endif %} name="currency" value="{{ currency.code }}" />
+								<img class="image" src="{{ currency.icon }}" alt="US Dollar">
+								<div class="title">{{ currency.name }}</div>
+							</label>
+							{% endfor %}
+						</div>
+					</div>
+				</div>
+			</li>
+			{% endif %}
 		</ul>
 	</nav>
 

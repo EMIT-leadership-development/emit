@@ -80,6 +80,7 @@ body.noscroll {
         background-color: $brand-color;
         ul{
             width: 100%;
+            height: 100%;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -87,19 +88,15 @@ body.noscroll {
             margin: 0;
             padding: 4px;
             li {
-                width: 40%;
                 a {
                     display: flex;
-                    // flex-direction: column;
                     justify-content: center;
                     align-items: center;
-                    border: 1px solid white;
-                    padding: 4px;
+                    // padding: 4px 16px;
                     text-decoration: none;
                     background: transparent;
                     color: inherit;
                     font-size: 11px;
-                    // height: 40px;
                     &.primary {
                         background-color: $brand-color;
                         color: #000000;
@@ -107,6 +104,83 @@ body.noscroll {
                     svg {
                         width: 20px;
                         margin-right: 4px;
+                    }
+                }
+            }
+            li.shopping {
+                .cart {
+                    border: none;
+                    position: relative;
+                    display: flex;
+                    svg {
+                        stroke: #000000;
+                        display: block;
+                    }
+                    &:hover {
+                        background: transparent;
+                        svg {
+                            stroke: #ffffff;
+                        }
+                    }
+                    span.snipcart-items-count {
+                        font-size: 12px;
+                        background-color: black;
+                        width: 14px;
+                        height: 14px;
+                        border-radius: 50%;
+                        color: #ffffff;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+            }
+            li.currencySelection {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                // CURRENCY SELECTION BUTTON AND MODAL
+                .currencyButton {
+                    width: 40px;
+                    // margin-left: 0.9rem !important;
+                    padding: 0;
+                    border: 0;
+                    border-radius: 0;
+                    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+                    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+                    &:hover {
+                        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+                    }
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+                .header_actions-currency.modal {
+                    background: rgba(0, 0, 0, 0.5);
+                    backdrop-filter: blur(10px);
+                    padding: 0;
+                    .modalContent {
+                        &::before {
+                        }
+                        #currencies {
+                            padding-top: 1rem;
+                            .image {
+                            }
+                            .title {
+                                color: #ffffff;
+                                padding-bottom: 1rem;
+                            }
+                            .radio-img {
+                                > input {
+                                    display:none;
+                                }
+                                > .image{
+                                }
+                                > input:checked + .image{
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -266,7 +340,9 @@ body.noscroll {
                 justify-content: flex-end;
                 li {
                     margin-left: 8px;
+                    width: fit-content;
                     a {
+                        border: 1px solid white;
                         font-size: 1rem;
                         height: auto;
                         padding: 8px 16px;
@@ -278,6 +354,11 @@ body.noscroll {
                             background-color: $brandContrastDark;
                             color: #ffffff;
                         }
+                    }
+                }
+                li.shopping {
+                    .cart {
+                        padding: 0;
                     }
                 }
             }
