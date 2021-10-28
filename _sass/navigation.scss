@@ -161,8 +161,8 @@ body.noscroll {
                     backdrop-filter: blur(10px);
                     padding: 0;
                     .modalContent {
-                        &::before {
-                        }
+                        // &::before {
+                        // }
                         #currencies {
                             padding-top: 1rem;
                             label {
@@ -181,15 +181,15 @@ body.noscroll {
                                 color: #ffffff;
                                 padding-bottom: 1rem;
                             }
-                            .radio-img {
-                                > input {
-                                    display:none;
-                                }
-                                > .image{
-                                }
-                                > input:checked + .image{
-                                }
-                            }
+                            // .radio-img {
+                            //     > input {
+                            //         display:none;
+                            //     }
+                            //     > .image{
+                            //     }
+                            //     > input:checked + .image{
+                            //     }
+                            // }
                         }
                     }
                 }
