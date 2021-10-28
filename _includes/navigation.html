@@ -19,7 +19,7 @@
 		{% assign links = site.data.navigation | where:'list', 'topLevel' %}
 		<ul>
 			{% for link in links %}
-			<li>
+			<li class="topLevelLink {% if link.link == page.url %} active{% endif %}">
 				<!-- If has submenu then button, else link -->
 				{% if link.subPages %}
 				<button class="subnavBtn" data-subnavID="{{link.name | downcase}}-subnav">

@@ -71,6 +71,9 @@ body.noscroll {
                 }
 
             }
+            li.topLevelLink.active {
+                color: #ffffff;
+            }
         }
     }
     #actions {
@@ -104,6 +107,11 @@ body.noscroll {
                     svg {
                         width: 20px;
                         margin-right: 4px;
+                    }
+                }
+                &.active {
+                    a {
+                        color: #ffffff;
                     }
                 }
             }
@@ -181,15 +189,15 @@ body.noscroll {
                                 color: #ffffff;
                                 padding-bottom: 1rem;
                             }
-                            // .radio-img {
-                            //     > input {
-                            //         display:none;
-                            //     }
-                            //     > .image{
-                            //     }
-                            //     > input:checked + .image{
-                            //     }
-                            // }
+                            .radio-img {
+                                > input {
+                                    display:none;
+                                }
+                                // > .image{
+                                // }
+                                // > input:checked + .image{
+                                // }
+                            }
                         }
                     }
                 }
@@ -363,6 +371,11 @@ body.noscroll {
                         &:hover {
                             background-color: $brandContrastDark;
                             color: #ffffff;
+                        }
+                    }
+                    &.active {
+                        a {
+                            background-color: $brandContrastDark;
                         }
                     }
                 }
