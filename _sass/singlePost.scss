@@ -4,6 +4,10 @@
 		height: 100%;
 		background-color: $brandContrastLight;
 		box-shadow: 1px 3px 7px 1px rgba(8, 8, 8, 0.28), -17px -7px 20px 20px rgba(255, 255, 255, 0.13);
+		// On small devices take up full width
+		@media (max-width:500px) {
+			grid-column: viewport;
+		}
 		h4, h5 {
 			line-height: 1.5;
 		}
