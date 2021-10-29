@@ -176,20 +176,20 @@
     University (where he also serves as Dean of the Undergraduate programs).
     Steven, and his wife, Linda, live in Colorado Springs, CO and have three
     grown children and ten grandchildren.
-- name: Leonard Daffa
-  shortname: Leonard
-  title: 'Special Projects, East Africa'
-  group: team
-  email:
-  facebook_url:
-  twitter_url:
-  linkedin_url:
-  profile_image: >-
-    https://res.cloudinary.com/sonya-ninja/image/upload/h_300,w_300,c_thumb,q_auto,f_auto/v1620972115/emit/images/team/Leonard_fespl9.jpg
-  bio_html: >-
-    Bishop Leonard Daffa, a native of Tanzania, is the country coordinator for
-    Tanzania under the leadership of Pastor Maingi. He is a Bishop of several
-    churches in Tanzania and is married to Lilly Daffa.
+# - name: Leonard Daffa
+#   shortname: Leonard
+#   title: 'Special Projects, East Africa'
+#   group: team
+#   email:
+#   facebook_url:
+#   twitter_url:
+#   linkedin_url:
+#   profile_image: >-
+#     https://res.cloudinary.com/sonya-ninja/image/upload/h_300,w_300,c_thumb,q_auto,f_auto/v1620972115/emit/images/team/Leonard_fespl9.jpg
+#   bio_html: >-
+#     Bishop Leonard Daffa, a native of Tanzania, is the country coordinator for
+#     Tanzania under the leadership of Pastor Maingi. He is a Bishop of several
+#     churches in Tanzania and is married to Lilly Daffa.
 - name: Jones Singini
   shortname: Jones
   title: Project Leader

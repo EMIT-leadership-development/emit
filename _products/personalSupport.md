@@ -22,7 +22,6 @@ members_shortname:
   - JohanC
   - Julio
   - Steven
-  - Leonard
   - Jones
   - Gert
   - Joseph
