@@ -333,6 +333,8 @@ body.noscroll {
         grid-template-rows: 100%;
         grid-template-areas: "logo links actions";
         height: fit-content;
+        height: max-content;
+        height: auto;
         #logoWrap {
             pointer-events: all;
             grid-area: logo;
