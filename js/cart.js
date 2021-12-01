@@ -81,7 +81,7 @@ function updateCustomDonation() {
             // Sets the default amount when adding the item
             button.setAttribute('data-item-price', transactionAmount.value);
             button.setAttribute(
-                'data-item-url', 'https://emit-portal.netlify.app/donate/validate/' + productID
+                'data-item-url', 'https://emit-validate.netlify.app/donate/validate/' + productID
                 + '?amount=' + transactionAmount.value
                 + '&subscription=' + subscription.checked);
         })
@@ -89,7 +89,7 @@ function updateCustomDonation() {
             // Sets the default amount when adding the item
             button.setAttribute('data-item-price', transactionAmount.value);
             button.setAttribute(
-                'data-item-url', 'https://emit-portal.netlify.app/donate/validate/' + productID
+                'data-item-url', 'https://emit-validate.netlify.app/donate/validate/' + productID
                 + '?amount=' + transactionAmount.value
                 + '&subscription=' + subscription.checked);
             if (subscription.checked == true) {
