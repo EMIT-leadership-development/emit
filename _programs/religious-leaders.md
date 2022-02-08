@@ -120,7 +120,7 @@ curricula:
     days_number: 55
     sprite_selection_number: 7
     image_url: >-
-      https://res.cloudinary.com/sonya-ninja/image/upload/c_thumb,w_300,h_300,f_auto,q_auto/v1620891394/emit/images/spiritual/bibleGroup_idraw3.jpg
+      https://res.cloudinary.com/sonya-ninja/image/upload/c_scale,f_auto,q_auto,w_400/v1644305642/emit/images/spiritual/cell-groups_EMIT_djgzdd.jpg
   - title: Children ministry
     objective: >-
       The course looks at practical issues, while at the same time maintaining
@@ -329,7 +329,7 @@ curricula:
     days_number: 50
     sprite_selection_number:
     image_url: >-
-      https://res.cloudinary.com/sonya-ninja/image/upload/c_thumb,f_auto,h_300,q_auto,w_300/v1620981617/emit/images/spiritual/EMIT-purposeful-church_alozxi.jpg
+      https://res.cloudinary.com/sonya-ninja/image/upload/c_scale,f_auto,q_auto,w_400/v1644305106/emit/images/spiritual/visionary-EMIT_wjsqgn.webp
   - title: Youth Ministry
     objective: >-
       The course covers many strategic and practical aspects of establishing an
