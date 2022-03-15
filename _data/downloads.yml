@@ -1,3 +1,15 @@
+- name: "Annual Report 2021-22"
+  file_link: "/downloadFiles/annualReport2021-2022/AnnualReport2021-2022-Digital.pdf"
+  preview_image: "/downloadFiles/annualReport2021-2022/EmitAnnualReport2022-Preview.webp"
+  description: "This is our official annual report for 2021-2022."
+  flipBook_url: "https://online.fliphtml5.com/fecwl/twvc/#p=1"
+  date: "2022 Feb"
+  pages: "12"
+  format: "PDF"
+  pageSize: "A4 Landscape"
+  fileSize: "4.7 MB"
+  category: "Reports"
+
 - name: "Annual Report 2020-21"
   file_link: "/downloadFiles/annualReport2020-21/EMITAnnualReport2020-21.pdf"
   preview_image: "/downloadFiles/annualReport2020-21/report-2020-21-preview.jpg"
@@ -69,6 +81,8 @@
   pageSize: "Letter"
   fileSize: "507 KB"
   category: "Legal"
+
+
 
   # - name: "Newsletter 2021"
 #   file_link: "/downloadFiles/newsletter2021/newsletter2021.pdf"
