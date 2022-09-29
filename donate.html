@@ -6,7 +6,6 @@ hero_Quote_Cite: Jonathan Swift
 hero_image: /images/TwoGirls.webp
 description:
 ---
-
 <!-- DONATION INTRO -->
 <section class="item--full white donationIntro">
 	<div class="sectionIntro contained-FirstTwo">
@@ -14,7 +13,7 @@ description:
 			Thank you!
 		</h2>
 		<p class="editable introduction">
-			Your support will help EMIT leaders to transform their communities in every sphere of society across Africa. We would like to make it simple for you to extend your own impact. Here are a few ways you can support us.
+			Your support will help EMIT leaders to transform their communities in every sphere of society across Africa. We would like to make it simple for you to extend your own impact. Here are a few ways you can support us.<br /><br />Taxpayer Identification Number 84&mdash;1271745
 		</p>
 	</div>
 	<div class="sectionContent contained-LastFour supportOptions">
@@ -112,27 +111,11 @@ description:
 						{{product.description_html}}
 					</div>
 					<div class=" price-button-container">
-						<button class="snipcart-add-item button"
-							data-item-id="{{product.sku}}"
-							data-item-categories="{{product.product_category}}"
-							data-item-name="{{product.name}}"
-							data-item-price="{
+						<button class="snipcart-add-item button" data-item-id="{{product.sku}}" data-item-categories="{{product.product_category}}" data-item-name="{{product.name}}" data-item-price="{
 								{% for currency in site.data.currencies %}
 									&quot;{{ currency.code }}&quot;:{{ product.price_usd | times: currency.rateToUSD | round: 2 }} {% if forloop.last %}{% else %},{% endif %}
 								{% endfor %}
-							}"
-							data-item-url="/donate"
-							data-item-description="{{ product.description_html | strip_html}}"
-							data-item-selected-plan="monthly-{{product.sku}}"
-
-							data-item-custom1-name="Include a personal message"
-							data-item-custom1-type="textarea"
-							data-item-custom1-value=""
-
-							data-plan1-id="monthly-{{product.sku}}"
-							data-plan1-name="Monthly {{product.sku}}"
-							data-plan1-frequency="Monthly"
-							data-plan1-interval="1">
+							}" data-item-url="/donate" data-item-description="{{ product.description_html | strip_html}}" data-item-selected-plan="monthly-{{product.sku}}" data-item-custom1-name="Include a personal message" data-item-custom1-type="textarea" data-item-custom1-value="" data-plan1-id="monthly-{{product.sku}}" data-plan1-name="Monthly {{product.sku}}" data-plan1-frequency="Monthly" data-plan1-interval="1">
 							Add to cart
 						</button>
 
@@ -178,26 +161,12 @@ description:
 						<!-- Checkbox -->
 						<div class="checkbox">
 							<label>
-								<input class="subscriptionCheckbox" type="checkbox"/><i class="helper"></i>Monthly
+								<input class="subscriptionCheckbox" type="checkbox" /><i class="helper"></i>Monthly
 							</label>
 						</div>
 					</div>
 				</div>
-				<button
-				type="submit"
-				class="button snipcart-add-item primary submitCustomDonation"
-				data-item-id = "custom-contribution"
-				data-item-max-quantity = 1
-				data-item-categories="donation-customcontribution"
-				data-item-name = "CONTRIBUTION (Determine my own impact)"
-				data-item-price = ""
-				data-item-url = "https://emit-validate.netlify.app/donate/custom-contribution"
-				data-item-quantity = 1
-				data-item-image = "/images/products/custom-contribution/EMIT-custom-contribution.jpg",
-				data-item-description = "This custom contribution will enable EMIT to develop ethical, influencial and skilled leaders in areas of Africa where other organisations do not reach. Thank you!"
-				data-item-custom1-name="Message"
-  				data-item-custom1-type="textarea"
-				data-item-custom1-value="">
+				<button type="submit" class="button snipcart-add-item primary submitCustomDonation" data-item-id="custom-contribution" data-item-max-quantity=1 data-item-categories="donation-customcontribution" data-item-name="CONTRIBUTION (Determine my own impact)" data-item-price="" data-item-url="https://emit-validate.netlify.app/donate/custom-contribution" data-item-quantity=1 data-item-image="/images/products/custom-contribution/EMIT-custom-contribution.jpg" , data-item-description="This custom contribution will enable EMIT to develop ethical, influencial and skilled leaders in areas of Africa where other organisations do not reach. Thank you!" data-item-custom1-name="Message" data-item-custom1-type="textarea" data-item-custom1-value="">
 					GIVE!
 				</button>
 			</div>
