@@ -1,0 +1,19 @@
+.dialog {
+    border: none;
+    max-width: 600px;
+    padding: 0;
+    &::backdrop {
+        background-color: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(6px);
+    }
+}
+
+.dialog-container {
+    width: 100%;
+    background-color: white;
+    .header {
+        padding: 1rem;
+        display: flex;
+        justify-content: flex-end;
+    }
+}

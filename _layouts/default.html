@@ -57,6 +57,19 @@
 			{% include footer.html %}
 		</footer>
 
+		<!-- Subscribe -->
+		<dialog id="subscribeModal" class="dialog">
+			<div class="dialog-container materialForm no-padding">
+				<div class="header">
+					<button class="button" id="closeSubscribe">Close</button>
+				</div>
+		
+				<!-- Begin Constant Contact Inline Form Code -->
+				<div class="ctct-inline-form" data-form-id="00a8e79c-f158-4507-981c-097e23391cd9"></div>
+				<!-- End Constant Contact Inline Form Code -->
+			</div>
+		</dialog>
+
 		<!-- TODO -->
 		<!-- Make Map script a function that can be called with parameters from each page that uses a map -->
 		<!-- Move some of these scripts to application.js -->
@@ -80,5 +93,25 @@
 		{% if page.title == "Donate" or page.url contains "products" %}
 			<script src="/js/cart.js"></script>
 		{% endif %}
+
+		<!-- Begin Constant Contact Active Forms -->
+		<script> var _ctct_m = "bdb6a5326cc823e3f9b32170b57a3c36"; </script>
+		<script id="signupScript" src="//static.ctctcdn.com/js/signup-form-widget/current/signup-form-widget.min.js" async
+			defer></script>
+		<!-- End Constant Contact Active Forms -->
+
+		<!-- Open and close the subscribe modal -->
+		<script>
+			const modal = document.querySelector('#subscribeModal');
+			const openModal = document.querySelector('#openSubscribe');
+			const closeModal = document.querySelector('#closeSubscribe');
+			openModal.addEventListener('click', () => {
+				modal.showModal();
+			})
+			closeModal.addEventListener('click', () => {
+				modal.close();
+			})
+
+		</script>
 	</body>
 </html>
