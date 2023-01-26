@@ -512,13 +512,13 @@
   profile_image: >-
     https://res.cloudinary.com/sonya-ninja/image/upload/h_300,w_300,c_thumb,q_auto,f_auto/v1620974848/emit/images/team/Barrack_au8bpv.jpg
   bio_html: >-
-    <p>Rev. Okal graduated with Bachelor&rsquo;s degree in Physics (Electronics)
-    and then Master in Electrical Engineering and Masters in Computer
-    Engineering and about to walk to officially be granted a Doctorate in
-    Photonics in Engineering Physics. Rev. Okal joined Compassion International
-    in 1998 working as a Computer Engineer in Kenya, and later Joined the USA IT
-    team in 2005 and worked until early 2017 when he left Compassion and by
-    faith stepped out into Ministry full time and have since founded Life-Giving
+    <p>Rev. Okal graduated with Bachelor’s degree in Physics (Electronics) and
+    then Master in Electrical Engineering and Masters in Computer Engineering
+    and about to walk to officially be granted a Doctorate in Photonics in
+    Engineering Physics. Rev. Okal joined Compassion International in 1998
+    working as a Computer Engineer in Kenya, and later Joined the USA IT team in
+    2005 and worked until early 2017 when he left Compassion and by faith
+    stepped out into Ministry full time and have since founded Life-Giving
     Miniseries International, a Ministry of Prayer, Deliverance, Restoration,
     Healing, and Counseling. He also began a tent-making small business Little
     German Automotive of Colorado Springs, a used social impact car dealership
@@ -526,6 +526,16 @@
     and training of young people in the community and car enthusiast,
     rehabilitation of young people at risk, and their integration back into a
     productive life. Rev. Okal is also an adjunct professor of Mathematics and
-    Engineering. He is married to Ruth Okal for the last 17 years and is blessed
-    with three Miracle Children, Jovahn Neis 13, Yeriel Judd 12, and Gianelle
-    Bannah 10 years.</p>
+    Engineering. He is married to Ruth Okal and is blessed with three Children,
+    Jovahn Neis, Yeriel Judd, and Gianelle Bannah years.</p>
+- name: Walt Landers
+  shortname:
+  title: USA Board Member
+  group:
+    - board
+  email:
+  facebook_url:
+  twitter_url:
+  linkedin_url:
+  profile_image: /images/team/usa-board-member/walt-landers.jpg
+  bio_html: "<p>Walt Landers, was born and raised in West Texas. He began gaining work experience in his family’s onstruction company. He then worked in commercial construction for ten years. After surrendering his life to Jesus Christ he found his ultimate calling in ministry and education. After pastoring several years in central Texas, he returned to San Angelo in 1997 to accept the Senior Pastorate of Tree of Life Church, now known as, The Life Church. Under his leadership, The Life Church continues to grow in membership, ministries continue cities.</p><p>In 2009 Walt became the Founder/CEO of San Angelo’s only charter school, Texas Leadership Charter Academy. In year one, TLCA kicked off with 83 staff members and 600 students. It has now grownwith over 500 staff members and over 3,700 students, spread across four cities in Texas. This charter school gives parents another choice in education. Texas Leadership Public Schools povides a private school atmosphere but publicly funded free-tuition education.</p><p>Walt’s ultimate desire is to improve lives by shaping and molding tomorrow’s leaders through truth and grace. He is married to JoAnn Landers, has a son, three daughters and three grandchildren.</p><p>\_</p>"
