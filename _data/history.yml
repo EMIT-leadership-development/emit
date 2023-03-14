@@ -1,4 +1,3 @@
----
 - name: A meeting of visionaries
   year: 1991
   iconName: calendar
@@ -35,7 +34,7 @@
     <ul><li>Four-year Pastoral Leadership curriculum is developed and
     implemented.</li><li>Students from six countries enrol as
     students.</li></ul>
-- name: 'AFMIN has now trained over 200,000 pastors'
+- name: AFMIN has now trained over 200,000 pastors
   year: '2000'
   iconName: calendar
   description_html: >-
@@ -64,7 +63,7 @@
   description_html: >-
     <ul><li>Co-Founder Karel Sanders retires.</li><li>Kobus Grobler assumes
     leadership of Central, Eastern and Southern Africa projects.</li></ul>
-- name: 'Record breaking 14,633 graduates'
+- name: Record breaking 14,633 graduates
   year: '2010'
   iconName: calendar
   description_html: >-
@@ -109,23 +108,7 @@
 - name: The year of COVID-19
   year: '2020'
   iconName: calendar
-  description_html: >-
-    <ul><li>A global pandemic that halted the whole world. EMIT was not excluded
-    from the devastating effect of COVID-19 on our operations on the
-    continent.</li><li>All operations had to be stopped in the first half of the
-    year.</li><li>EMIT leadership responds positively to the new challenges and
-    develop a model that would allow EMIT to continue to serve the students in
-    small group training events.</li><li>New materials are developed to allow
-    facilitators to have small group training events.</li><li>The new model
-    proves to be much more affordable than the previous model.</li><li>Reports
-    from the field indicate that there are many benefits to the new model.
-    Students are now served in their geographic locations (big savings for our
-    students).&nbsp; This also leads to EMIT now adding bigger visibility in
-    other areas of countries.&nbsp; There is bigger accountability, engagement,
-    and participation from the students.</li><li>Although EMIT lost more than
-    70% of our normal income during 2020, we still managed to have 21 programs
-    in the second half of 2020.&nbsp;</li><li>Our financial prospects changed
-    from uncertain to stable because of the new model.</li></ul><p>&nbsp;</p>
+  description_html: "<ul><li>A global pandemic that halted the whole world. EMIT was not excluded from the devastating effect of COVID-19 on our operations on the continent.</li><li>All operations had to be stopped in the first half of the year.</li><li>EMIT leadership responds positively to the new challenges and develop a model that would allow EMIT to continue to serve the students in small group training events.</li><li>New materials are developed to allow facilitators to have small group training events.</li><li>The new model proves to be much more affordable than the previous model.</li><li>Reports from the field indicate that there are many benefits to the new model. Students are now served in their geographic locations (big savings for our students).&nbsp; This also leads to EMIT now adding bigger visibility in other areas of countries.&nbsp; There is bigger accountability, engagement, and participation from the students.</li><li>Although EMIT lost more than 70% of our normal income during 2020, we still managed to have 21 programs in the second half of 2020.&nbsp;</li><li>Our financial prospects changed from uncertain to stable because of the new model.</li></ul><p>\_</p>"
 - name: The next Steps
   year: '2021'
   iconName: calendar
@@ -147,4 +130,9 @@
     committed to continue to develop relevant training materials and to keep on
     serving our students with passion and excellence.&nbsp;&nbsp;</p><p><a
     href="/the-next-steps.html">Link to Full Article</a></p>
----
+- name: EMIT CELEBRATES!
+  year: '2023'
+  iconName: calendar
+  description_html: >-
+    <p>EMIT (previously know as AFMIN)&nbsp; celebrates 30 years of leadership
+    development.</p>
