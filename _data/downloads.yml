@@ -75,6 +75,18 @@
   pageSize: Letter
   fileSize: 352 KB
   category: Form-990
+- name: Annual Report 2022
+  file_link: /uploads/EMIT-ANNUAL-REPORT-2022-c.pdf
+  preview_image: /uploads/front-cover-2023.jpg
+  description: This is our official annual report for 2023
+  flipBook_url: https://online.fliphtml5.com/fecwl/nysk/
+  date: 2023-03-15 02:00:00 +0200
+  pages:
+    - reports-990
+  format: PDF
+  pageSize: A4
+  fileSize: 20.039MB
+  category: Reports
 - name: 501C3 Status Letter
   file_link: /downloadFiles/Form990/501C3Statusletter.pdf
   preview_image: /downloadFiles/Form990/501C3Statusletter-preview.jpg
@@ -88,15 +100,3 @@
   pageSize: Letter
   fileSize: 507 KB
   category: Legal
-- name: Annual Report 2023
-  file_link: /uploads/EMIT-ANNUAL-REPORT-2023-c.pdf
-  preview_image: /uploads/front-cover-2023.jpg
-  description: This is our official annual report for 2023
-  flipBook_url: https://online.fliphtml5.com/fecwl/nysk/
-  date: 2023-03-15 02:00:00 +0200
-  pages:
-    - reports-990
-  format: PDF
-  pageSize: A4
-  fileSize: 20.039MB
-  category: Reports
