@@ -3,7 +3,7 @@
   preview_image: /downloadFiles/annualReport2021-2022/EmitAnnualReport2022-Preview.webp
   description: This is our official annual report for 2021-2022.
   flipBook_url: https://online.fliphtml5.com/fecwl/twvc/#p=1
-  date: 2022 Feb
+  date: 2022-02-01 02:00:00 +0200
   pages: '12'
   format: PDF
   pageSize: A4 Landscape
@@ -88,3 +88,15 @@
   pageSize: Letter
   fileSize: 507 KB
   category: Legal
+- name: Annual Report 2023
+  file_link: /uploads/EMIT-ANNUAL-REPORT-2023-c.pdf
+  preview_image: /uploads/front-cover-2023.jpg
+  description: This is our official annual report for 2023
+  flipBook_url: https://online.fliphtml5.com/fecwl/nysk/
+  date: 2023-03-15 02:00:00 +0200
+  pages:
+    - reports-990
+  format: PDF
+  pageSize: A4
+  fileSize: 20.039MB
+  category: Reports
