@@ -10,6 +10,7 @@ sprite_image: /images/sprites/sprite-Set1.webp
 sprite_selection_number: 9
 team-member: Global CEO, SA, USA and Global Board Member
 tags:
+  - anti-fragility
 category: News
 excerpt_separator: <!--more-->
 leaderName: Kobus Grobler
