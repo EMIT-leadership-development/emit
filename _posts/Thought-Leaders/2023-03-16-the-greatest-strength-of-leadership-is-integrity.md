@@ -15,7 +15,7 @@ tags:
   - integrity
 category: Thought Leaders
 excerpt_separator: <!--more-->
-leaderName:
+leaderName: Kobus Grobler
 leaderBio_html: ''
 leader_image: /images/team/Kobus.jpg
 country: South Africa
