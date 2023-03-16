@@ -7,7 +7,7 @@ layout: post
 hero:
 heroQuote:
 hero_Quote_Cite:
-hero_image: /images/team/Kobus.jpg
+hero_image: ''
 sprite_image: /images/sprites/sprite-Set1.webp
 sprite_selection_number: 9
 team-member: Global CEO, SA, USA and Global Board Member
@@ -17,7 +17,7 @@ category: Thought Leaders
 excerpt_separator: <!--more-->
 leaderName: Kobus Grobler
 leaderBio_html: ''
-leader_image: /images/team/Kobus.jpg
+leader_image: ''
 country: South Africa
 latitude:
 longitude:
