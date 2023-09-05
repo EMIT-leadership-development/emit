@@ -167,14 +167,14 @@
   profile_image: >-
     https://res.cloudinary.com/sonya-ninja/image/upload/h_300,w_300,c_thumb,q_auto,f_auto/v1620971896/emit/images/team/Todd_xucagq.jpg
   bio_html: >-
-    Dr. Steven is currently Project Leader for our Liberia, West Africa project.
-    Dr. Steven has been with EMIT since 1999. He was a pastor for many years and
-    has advanced degrees in Theology and Missiology. Dr. Steven served EMIT by
-    directing a Refugee Camp project for 11 years in western Tanzania. He also
-    teaches as an adjunct professor for The Kings University and Shiloh
+    <p>Dr. Steven is currently Project Leader for our Liberia, West Africa
+    project. Dr. Steven has been with EMIT since 1999. He was a pastor for many
+    years and has advanced degrees in Theology and Missiology. Dr. Steven served
+    EMIT by directing a Refugee Camp project for 11 years in western Tanzania.
+    He also teaches as an adjunct professor for The Kings University and Shiloh
     University (where he also serves as Dean of the Undergraduate programs).
     Steven, and his wife, Linda, live in Colorado Springs, CO and have three
-    grown children and ten grandchildren.
+    grown children and ten grandchildren.</p>
 - name: Jones Singini
   shortname: Jones
   title: Project Leader
@@ -521,3 +521,42 @@
   linkedin_url:
   profile_image: /images/team/usa-board-member/walt-landers-1.jpg
   bio_html: "<p>Walt Landers was born and raised in West Texas. He began gaining work experience in his family’s construction company. He then worked in commercial construction for ten years. After surrendering to Jesus Christ, he found his ultimate calling in ministry and education. After pastoring for several years in central Texas, he returned to San Angelo in 1997 to accept the Senior Pastorate of Tree of Life Church, now known as, The Life Church.</p><p>In 2009 Walt became the Founder/CEO of San Angelo’s only charter school, Texas Leadership Charter Academy. In year one, TLCA kicked off with 83 staff members and 600 students. It has now grown with over 500 staff members and over 3,700 students, spread across four cities in Texas.</p><p>He is married to JoAnn Landers and has a son, three daughters, and three grandchildren.</p><p>\_</p>"
+- name: Mariette Kroukamp
+  shortname: MarietteK
+  title: Fund Development Cultivator
+  group:
+    - team
+  email: marriette.emit.global
+  facebook_url:
+  twitter_url:
+  linkedin_url:
+  profile_image: /images/team/mariette.jpg
+  bio_html: >-
+    <p>Mariëtte has recently joined the EMIT Team in South Africa. She and her
+    husband, Rudi, are fortunate to have two lovely daughters, and they
+    currently reside in Pretoria, South Africa. Mariëtte's primary role within
+    EMIT is to utilize her talents to enhance and sustain a strong connection
+    between the organization and its donors. With her deep affection for
+    counseling and encouragement and her extensive knowledge of fundraising,
+    Mariëtte aims to bring added value to these relationships.</p><p>In her new
+    position, Mariëtte will be instrumental in fostering a sense of trust and
+    loyalty between EMIT and its generous supporters. Her genuine love for
+    counseling and her passion for uplifting others will undoubtedly contribute
+    to the success of the organization's fundraising efforts. Mariëtte's
+    expertise in this field will enable her to effectively communicate the
+    impact of donors' contributions, ensuring that they feel valued and
+    appreciated.</p><p>Furthermore, Mariëtte's dedication to her role extends
+    beyond her professional responsibilities. She is committed to continuously
+    expanding her knowledge and staying up-to-date with fundraising strategies
+    and techniques. By doing so, she can provide donors with the most relevant
+    and effective guidance, ultimately maximizing their contributions and their
+    positive impact on EMIT's mission.</p><p>Mariëtte's presence on the EMIT
+    Team is a valuable asset, as she brings a unique blend of skills and
+    experiences to the organization. Her ability to connect with people on a
+    personal level, combined with her expertise in fundraising, makes her an
+    ideal candidate for strengthening and maintaining the bond between EMIT and
+    its donors.</p><p>In conclusion, Mariëtte's passion for counseling,
+    dedication to fundraising, and commitment to building strong relationships
+    make her an invaluable member of the EMIT Team. With her talents and
+    expertise, she is poised to significantly impact the organization's mission
+    and ensure its continued success.</p>
