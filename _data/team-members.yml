@@ -49,17 +49,16 @@
   facebook_url:
   twitter_url:
   linkedin_url:
-  profile_image: >-
-    https://res.cloudinary.com/sonya-ninja/image/upload/h_300,w_300,c_thumb,f_auto,q_auto/v1620970331/emit/images/team/Johan_poq2z3.jpg
+  profile_image: /images/team/johan-profile.jpg
   bio_html: >-
     <p>Johan Fourie is a true servant leader who knows and understands Africa.
-    He has been in full&ndash;time ministry since 1995 and is a gifted teacher
-    who is also well qualified in Information Technology (IT). As Chief of
-    Operations he plans, directs, and oversees EMIT&rsquo;s operational
-    policies, rules, initiatives, and goals. He helps the organization execute
-    long-term and short-term plans and directives by implementing judgment,
-    vision, management, and leadership. He is married to Marietjie, they have
-    one child and lives in Springs, South Africa.</p>
+    He has been in full–time ministry since 1995 and is a gifted teacher who is
+    also well qualified in Information Technology (IT). As Chief of Operations
+    he plans, directs, and oversees EMIT’s operational policies, rules,
+    initiatives, and goals. He helps the organization execute long-term and
+    short-term plans and directives by implementing judgment, vision,
+    management, and leadership. He is married to Marietjie, they have one child
+    and lives in Springs, South Africa.</p>
 - name: Theo Faber
   shortname: Theo
   title: Executive Director - Development
