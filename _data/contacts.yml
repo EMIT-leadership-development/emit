@@ -1,10 +1,10 @@
-- name: International Head Office
+- name: South African Office
   country: South Africa
   team-member: Christa Greyvenstein
   email: admin@emit.global
   phone: +27 11 362 6655
-  address: '10 Sinclair Road, Selection Park, Springs, 1560, South Africa'
-  postal: 'PO BOX 3710, SPRINGS 1560, SOUTH AFRICA'
+  address: 10 Sinclair Road, Selection Park, Springs, 1560, South Africa
+  postal: PO BOX 3710, SPRINGS 1560, SOUTH AFRICA
   latitude: -26.27303
   longitude: 28.440429
 - name: USA  Office
@@ -13,150 +13,150 @@
   email: info@emit.global
   phone: +1 719 648 0674
   address: '4615 Northpark Dr. #201 Colorado Springs, CO 80918'
-  postal: 'PO BOX 26369 COLORADO SPRINGS, CO 80936'
+  postal: PO BOX 26369 COLORADO SPRINGS, CO 80936
   latitude: 38.867236
   longitude: -104.76284
-- name: 'Project Leader, Zimbabwe'
+- name: Project Leader, Zimbabwe
   country: Zimbabwe
   team-member: Elvis Joseph
   email: admin@emit.global
   phone: +00 000 0000
-  address: '10 Street, Suburb, City, 1234'
-  postal: 'PO BOX 123, SUBURB, COUNTRY, 1234'
+  address: 10 Street, Suburb, City, 1234
+  postal: PO BOX 123, SUBURB, COUNTRY, 1234
   latitude: -17.82772
   longitude: 31.05337
-- name: 'Project Leader, Tanzania'
+- name: Project Leader, Tanzania
   country: Tanzania
   team-member: Aaron Maingi
   email: admin@emit.global
   phone: +00 000 0000
-  address: '10 Street, Suburb, City, 1234'
-  postal: 'PO BOX 123, SUBURB, COUNTRY, 1234'
+  address: 10 Street, Suburb, City, 1234
+  postal: PO BOX 123, SUBURB, COUNTRY, 1234
   latitude: -3.3667
   longitude: 36.6833
-- name: 'Project Leader, Rwanda'
+- name: Project Leader, Rwanda
   country: Rwanda
   team-member: Constantin Gasore
   email: admin@emit.global
   phone: +00 000 0000
-  address: '10 Street, Suburb, City, 1234'
-  postal: 'PO BOX 123, SUBURB, COUNTRY, 1234'
+  address: 10 Street, Suburb, City, 1234
+  postal: PO BOX 123, SUBURB, COUNTRY, 1234
   latitude: -1.94995
   longitude: 30.05885
-- name: 'Project Leader, Burundi'
+- name: Project Leader, Burundi
   country: Burundi
   team-member: Constantin Gasore
   email: admin@emit.global
   phone: +00 000 0000
-  address: '10 Street, Suburb, City, 1234'
-  postal: 'PO BOX 123, SUBURB, COUNTRY, 1234'
+  address: 10 Street, Suburb, City, 1234
+  postal: PO BOX 123, SUBURB, COUNTRY, 1234
   latitude: '-3.361260'
   longitude: 29.347916
-- name: 'Project Leader, Angola'
+- name: Project Leader, Angola
   country: Angola
   team-member: Julio Da Silva
   email: admin@emit.global
   phone: +00 000 0000
-  address: '10 Street, Suburb, City, 1234'
-  postal: 'PO BOX 123, SUBURB, COUNTRY, 1234'
+  address: 10 Street, Suburb, City, 1234
+  postal: PO BOX 123, SUBURB, COUNTRY, 1234
   latitude: -8.838333
   longitude: 13.234444
-- name: 'Project Leader, Mozambique'
+- name: Project Leader, Mozambique
   country: Mozambique
   team-member: Julio Da Silva
   email: admin@emit.global
   phone: +00 000 0000
-  address: '10 Street, Suburb, City, 1234'
-  postal: 'PO BOX 123, SUBURB, COUNTRY, 1234'
+  address: 10 Street, Suburb, City, 1234
+  postal: PO BOX 123, SUBURB, COUNTRY, 1234
   latitude: -25.953724
   longitude: 32.588711
-- name: 'Country Coordinator, Zambia'
+- name: Country Coordinator, Zambia
   country: Zambia
   team-member: Mervis Malambo
   email: admin@emit.global
   phone: +00 000 0000
-  address: '10 Street, Suburb, City, 1234'
-  postal: 'PO BOX 123, SUBURB, COUNTRY, 1234'
+  address: 10 Street, Suburb, City, 1234
+  postal: PO BOX 123, SUBURB, COUNTRY, 1234
   latitude: -15.416667
   longitude: 28.283333
-- name: 'Project Leader, DR Congo'
+- name: Project Leader, DR Congo
   country: DR Congo
   team-member: Constantin Gasore
   email: admin@emit.global
   phone: +00 000 0000
-  address: '10 Street, Suburb, City, 1234'
-  postal: 'PO BOX 123, SUBURB, COUNTRY, 1234'
+  address: 10 Street, Suburb, City, 1234
+  postal: PO BOX 123, SUBURB, COUNTRY, 1234
   latitude: -4.322447
   longitude: 15.307045
-- name: 'Project Leader, Kenya'
+- name: Project Leader, Kenya
   country: Kenya
   team-member: Aaron Maingi
   email: admin@emit.global
   phone: +00 000 0000
-  address: '10 Street, Suburb, City, 1234'
-  postal: 'PO BOX 123, SUBURB, COUNTRY, 1234'
+  address: 10 Street, Suburb, City, 1234
+  postal: PO BOX 123, SUBURB, COUNTRY, 1234
   latitude: -1.286389
   longitude: 36.817223
-- name: 'Project Leader, Uganda'
+- name: Project Leader, Uganda
   country: Uganda
   team-member: Aaron Maingi
   email: admin@emit.global
   phone: +00 000 0000
-  address: '10 Street, Suburb, City, 1234'
-  postal: 'PO BOX 123, SUBURB, COUNTRY, 1234'
+  address: 10 Street, Suburb, City, 1234
+  postal: PO BOX 123, SUBURB, COUNTRY, 1234
   latitude: 0.31628
   longitude: 32.58219
-- name: 'Project Leader, South Africa'
+- name: Project Leader, South Africa
   country: South Africa
   team-member: Jones Singini
   email: admin@emit.global
   phone: +00 000 0000
-  address: '10 Street, Suburb, City, 1234'
-  postal: 'PO BOX 123, SUBURB, COUNTRY, 1234'
+  address: 10 Street, Suburb, City, 1234
+  postal: PO BOX 123, SUBURB, COUNTRY, 1234
   latitude: -26.195246
   longitude: 28.034088
-- name: 'Project Leader, Madagascar'
+- name: Project Leader, Madagascar
   country: South Africa
   team-member: Johan Fourie
   email: admin@emit.global
   phone: +00 000 0000
-  address: '10 Street, Suburb, City, 1234'
-  postal: 'PO BOX 123, SUBURB, COUNTRY, 1234'
+  address: 10 Street, Suburb, City, 1234
+  postal: PO BOX 123, SUBURB, COUNTRY, 1234
   latitude: -18.91368
   longitude: 47.53613
-- name: 'Project Leader, Malawi'
+- name: Project Leader, Malawi
   country: South Africa
   team-member: Theo Faber
   email: admin@emit.global
   phone: +00 000 0000
-  address: '10 Street, Suburb, City, 1234'
-  postal: 'PO BOX 123, SUBURB, COUNTRY, 1234'
+  address: 10 Street, Suburb, City, 1234
+  postal: PO BOX 123, SUBURB, COUNTRY, 1234
   latitude: -15.78499
   longitude: 35.00854
-- name: 'Project Leader, Liberia'
+- name: Project Leader, Liberia
   country: Liberia
   team-member: Steven Todd
   email: admin@emit.global
   phone: +00 000 0000
-  address: '10 Street, Suburb, City, 1234'
-  postal: 'PO BOX 123, SUBURB, COUNTRY, 1234'
+  address: 10 Street, Suburb, City, 1234
+  postal: PO BOX 123, SUBURB, COUNTRY, 1234
   latitude: 6.30054
   longitude: -10.7969
-- name: 'Project Leader, Namibia'
+- name: Project Leader, Namibia
   country: Namibia
   team-member: Johan Cronje
   email: admin@emit.global
   phone: +00 000 0000
-  address: '10 Street, Suburb, City, 1234'
-  postal: 'PO BOX 123, SUBURB, COUNTRY, 1234'
+  address: 10 Street, Suburb, City, 1234
+  postal: PO BOX 123, SUBURB, COUNTRY, 1234
   latitude: -22.5594
   longitude: 17.0832
-- name: 'Project Leader, Lesotho'
+- name: Project Leader, Lesotho
   country: Lesotho
   team-member: Jones Singini
   email: admin@emit.global
   phone: +00 000 0000
-  address: '10 Street, Suburb, City, 1234'
-  postal: 'PO BOX 123, SUBURB, COUNTRY, 1234'
+  address: 10 Street, Suburb, City, 1234
+  postal: PO BOX 123, SUBURB, COUNTRY, 1234
   latitude: -29.686177640763955
   longitude: 28.140700227946905
