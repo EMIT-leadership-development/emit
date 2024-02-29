@@ -1,3 +1,15 @@
+- name: Annual Report 2023
+  file_link: /uploads/EMIT-2023-ANNUAL-REPORT.pdf
+  preview_image: /uploads/emit-2023-annual-report-front.jpg
+  description: This is our official annual report for 2022
+  flipBook_url: https://online.fliphtml5.com/fecwl/bkqr/index.html
+  date: 2023-03-15 02:00:00 +0200
+  pages:
+    - reports-990
+  format: PDF
+  pageSize: A4
+  fileSize: 20.039MB
+  category: Reports
 - name: Annual Report 2022
   file_link: /uploads/EMIT-ANNUAL-REPORT-2022-c.pdf
   preview_image: /uploads/front-cover-2023.jpg
