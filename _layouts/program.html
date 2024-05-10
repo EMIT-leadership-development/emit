@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-
 <!-- Program Intro -->
 <section class="programIntro white item--full">
     <div class="sectionIntro containedLeft">
@@ -17,9 +16,13 @@ layout: default
         {% else %}
             <div class="callToAction">
                 <h4 class="editable">Help us get this program to the people that need it.</h4>
-                <p class="editable">We are actively developing this curriculum. It's an expensive process that includes a research team, accreditation bodies, field experts, educational professionals, curriculum writers, graphic-designers and blended-learning technologists.</p>
+                <p class="editable">
+                	We are actively developing this curriculum. The first phase of development is complete, and we are running pilot programs in various schools across the continent. From these pilot programs, we receive valuable feedback to adapt and enhance wherever necessary. It's an expensive process that includes a research team, field experts, educational professionals, curriculum writers, graphic designers, and blended-learning technologists.
+                </p>
                 <p>Show your commitment to developing {{page.title}} by making a contribution. By donating towards this program's development you are transforming lives.</p>
-                <a href="{{site.baseurl}}/products/curriculumDevelopment" class="button primary editable">Sponsor this program</a>
+                <a href="{{site.baseurl}}/products/curriculumDevelopment" class="button primary editable">
+                	Sponsor this program
+                </a>
             </div>
         {% endif %}
     </div>
@@ -32,7 +35,7 @@ layout: default
 <!-- PROGRAM INFO LIST -->
 <section class="programInfoList item--full">
     <div class="container leftToThree">
-        <img src="{{site.baseurl}}{{page.bookCover_image}}" alt="">
+        <img src="{{site.baseurl}}{{page.bookCover_image}}" alt="" />
     </div>
     <div class="container contained-LastFour">
         <ul data-cms-editor-link="cloudcannon:collections/{{ page.relative_path }}" class="cms-editor-link infoPoints">
@@ -133,8 +136,8 @@ layout: default
                         </div>
                         <!-- CONTENT -->
                         <div class="curriculaObjective">
-                            <h4>{{curricula.objective}}</h3>
-                        </div>
+                            <h4>{{curricula.objective}}
+                        </h4></div>
                     </div>
                 </div>
             </li>

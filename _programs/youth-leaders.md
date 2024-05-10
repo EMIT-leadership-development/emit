@@ -1,12 +1,14 @@
 ---
 title: Youth Leaders
-heroQuote: Education is the most powerful weapon which you can use to change the world.
-hero_Quote_Cite: Nelson Mandela
+heroQuote: >-
+  “We cannot always build the future for our youth, but we can build our youth
+  for the future.”  
+hero_Quote_Cite: Franklin D. Roosevelt
 hero_image: /images/youngLeaderThinking.webp
 bookCover_image: /images/programs/YouthTrainingBook.webp
 curriculumSprite_image: /images/sprites/sprite-Set2.webp
 id: 3
-objective_markdown:
+objective_markdown: ''
 motivation: >-
   Presently the vast majority of Africa’s population is younger than 25 years
   old. We aim to equip youth leaders while they are in school, enabling them to
@@ -35,54 +37,64 @@ graduation: >-
   leaders and paid their tuition in full. Graduations take place at each local
   venue.
 description_markdown: >-
-  Youth Leaders are identified from a very early age. They are expected to set
-  an example to their friends and play an important role in the development of
-  society. Yet, they are never equipped to deal with the power, pressures and
-  responsibilities this brings. This program gives youth leaders the theoretical
-  framework, but also the practical knowledge and skills to equip them to deal
-  with these issues and bring systematic change to the communities they live in.
-  The program is designed to address 3 main areas needed for transformation –
-  personal and character development, leadership development and professional
-  skills development. &nbsp;
+  Africa has the largest youth population in the world with 60% of its
+  population under 25. Unfortunately, decades of poor examples have given youth
+  a skewed picture of what leadership is supposed to be. Due to the prevailing
+  mindset among today's youth, leadership is often associated with misuse of
+  authority, bribery, and corruption. This program aims to rectify this negative
+  perception of leadership. By presenting a compelling and inspiring depiction
+  of leadership, we provide students with a set of values that they can readily
+  embrace and incorporate into their own lives.
+
+
+  This program is developed specifically for final-year high school learners who
+  were chosen as leaders (prefects) and addresses the lack of youth leadership
+  training. This training highlights the much-needed soft skills that Gen-Z
+  leaders need and strengthens other skills that will prepare them for their
+  future. The curriculum includes 30 one-hour topics that empower these leaders
+  to apply foundational leadership knowledge, skills, and abilities. Small group
+  facilitation is used in this training, which is both simple and highly
+  effective. Small groups facilitate two-way communication within an empowering
+  environment. Instead of being taught, values are explored.
 curricula:
   - title: Title of the curricula
-    objective: 'Lacus! Veritatis mus aliquip atque molestie! Justo class tempora, posuere.'
+    objective: Lacus! Veritatis mus aliquip atque molestie! Justo class tempora, posuere.
     credits_number: 5
     days_number: 10
     projects_number: 3
     sprite_selection_number: 1
   - title: Title of the curricula
-    objective: 'Lacus! Veritatis mus aliquip atque molestie! Justo class tempora, posuere.'
+    objective: Lacus! Veritatis mus aliquip atque molestie! Justo class tempora, posuere.
     credits_number: 5
     days_number: 10
     projects_number: 3
     sprite_selection_number: 2
   - title: Title of the curricula
-    objective: 'Lacus! Veritatis mus aliquip atque molestie! Justo class tempora, posuere.'
+    objective: Lacus! Veritatis mus aliquip atque molestie! Justo class tempora, posuere.
     credits_number: 5
     days_number: 10
     projects_number: 3
     sprite_selection_number: 3
   - title: Title of the curricula
-    objective: 'Lacus! Veritatis mus aliquip atque molestie! Justo class tempora, posuere.'
+    objective: Lacus! Veritatis mus aliquip atque molestie! Justo class tempora, posuere.
     credits_number: 5
     days_number: 10
     projects_number: 3
     sprite_selection_number: 4
   - title: Title of the curricula
-    objective: 'Lacus! Veritatis mus aliquip atque molestie! Justo class tempora, posuere.'
+    objective: Lacus! Veritatis mus aliquip atque molestie! Justo class tempora, posuere.
     credits_number: 5
     days_number: 10
     projects_number: 3
     sprite_selection_number: 5
   - title: Title of the curricula
-    objective: 'Lacus! Veritatis mus aliquip atque molestie! Justo class tempora, posuere.'
+    objective: Lacus! Veritatis mus aliquip atque molestie! Justo class tempora, posuere.
     credits_number: 5
     days_number: 10
     projects_number: 3
     sprite_selection_number: 6
   - title: Title of the curricula
-    objective: 'Lacus! Veritatis mus aliquip atque molestie! Justo class tempora, posuere.'
+    objective: Lacus! Veritatis mus aliquip atque molestie! Justo class tempora, posuere.
     credits_number: 5
     days_number: 10
     projects_number: 3
