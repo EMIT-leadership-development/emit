@@ -1,20 +1,47 @@
-
 <!-- Todo: only insert custom position if it exists. -->
 <section id="hero" class="hero swiper-slide grid">
-    <video playsinline autoplay muted loop oncanplay="this.muted=true" preload="auto" id="heroVideo" class="max-content" poster="/video/EMIT-heroPoster.jpg">
-        <source src="{{site.baseurl}}/video/EMIT-hero.mp4"  type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-     </video>
-     <!-- <video muted loop preload="auto" id="heroVideo" class="max-content" poster="/video/EMIT-heroPoster.jpg">
+  <video
+    playsinline
+    autoplay
+    muted
+    loop
+    oncanplay="this.muted=true"
+    preload="auto"
+    id="heroVideo"
+    class="max-content"
+    poster="/video/EMIT-heroPoster.jpg"
+  >
+    <source
+      src="{{site.baseurl}}/video/EMIT-hero.mp4"
+      type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'
+    />
+  </video>
+  <!-- <video muted loop preload="auto" id="heroVideo" class="max-content" poster="/video/EMIT-heroPoster.jpg">
         <source src="{{site.baseurl}}/video/EMIT-hero.mp4"  type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
      </video> -->
-    <div class="heroOverlay"></div>
-    <div class="introWrapper">
-        <div id="mainCTA" class="ctaWrapper">
-            <div class="ctaTitle">Become the change</div>
-            <a id="introCTA" class="button ctaBtn" href="/donate">DONATE NOW</a>
-        </div>
-        <div class="introHeadline">
-            <h1><span>Transforming </span><span>nations</span> <span>by developing </span><span>leaders</span></h1>
-        </div>
+  <div class="heroOverlay"></div>
+  <div class="introWrapper">
+    <!-- Affiliate Link -->
+    <a
+      class="affiliateLink"
+      href="https://www.bible.com/organizations/6306e0a8-635a-4990-a97e-310777a1f762"
+    >
+      <img
+        src="/images/youversion_emit.webp"
+        alt="Link to EMIT on You Version"
+      />
+      <span> Follow us on YouVersion </span>
+    </a>
+
+    <div id="mainCTA" class="ctaWrapper">
+      <div class="ctaTitle">Become the change</div>
+      <a id="introCTA" class="button ctaBtn" href="/donate">DONATE NOW</a>
     </div>
+    <div class="introHeadline">
+      <h1>
+        <span>Transforming </span><span>nations</span>
+        <span>by developing </span><span>leaders</span>
+      </h1>
+    </div>
+  </div>
 </section>

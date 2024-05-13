@@ -2,16 +2,16 @@
 $brand-color: #abe116;
 // The sphere colors
 $sphere1BG: #85b744;
-$sphere2BG : #37ab5d;
-$sphere3BG : #03956d;
-$green2: #46B36B; //From LINC gradient
+$sphere2BG: #37ab5d;
+$sphere3BG: #03956d;
+$green2: #46b36b; //From LINC gradient
 
 // ---Colors for Backgrounds
 // Dark Brown backgrounds
 $brandContrastDark: #272c33;
 $brandContrastDarkest: #1c2127;
 // Pale grayish-blueish backgrounds
-$brandContrastLight: #EDF5F9;
+$brandContrastLight: #edf5f9;
 $brandContrastLight2: #e0e8ea;
 
 // Breakpoints
@@ -20,33 +20,49 @@ $above-tablet: "(min-width: 550px)";
 $desktop: "(min-width: 768px)";
 $mid-point: "(min-width: 850px)";
 $below-mid-point: "(max-width: 849px)";
+$below-desktop: "(max-width: 700px)";
 
 $info: #e2f9fb;
-
 
 // Sonya found these breakpoints here: https://codepen.io/davidgilbertson/pen/aBpJzO
 // May remove these when finished with new layout grid
 @mixin for-phone-only {
-    @media (max-width: 599px) { @content; }
+  @media (max-width: 599px) {
+    @content;
+  }
 }
 @mixin for-tablet-portrait-up {
-    @media (min-width: 600px) { @content; }
+  @media (min-width: 600px) {
+    @content;
+  }
 }
 @mixin for-tablet-portait-only {
-    @media (min-width: 600px) and (max-width: 899px) { @content; }
+  @media (min-width: 600px) and (max-width: 899px) {
+    @content;
+  }
 }
 @mixin for-tablet-landscape-up {
-    @media (min-width: 900px) { @content; }
+  @media (min-width: 900px) {
+    @content;
+  }
 }
 @mixin for-tablet-landscape-only {
-    @media (min-width: 900px) and (max-width: 1199px) { @content; }
+  @media (min-width: 900px) and (max-width: 1199px) {
+    @content;
+  }
 }
 @mixin for-desktop-up {
-    @media (min-width: 1200px) { @content; }
+  @media (min-width: 1200px) {
+    @content;
+  }
 }
 @mixin for-desktop-only {
-    @media (min-width: 1200px) and (max-width: 1799px) { @content; }
+  @media (min-width: 1200px) and (max-width: 1799px) {
+    @content;
+  }
 }
 @mixin for-big-desktop-up {
-    @media (min-width: 1800px) { @content; }
+  @media (min-width: 1800px) {
+    @content;
+  }
 }

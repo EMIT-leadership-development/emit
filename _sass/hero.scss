@@ -1,111 +1,149 @@
 // THE HERO HEADING SECTION
-section.hero{
-    min-height: 460px;
-    height: 460px;
-    // padding-bottom: 3em;
-    position: relative;
+section.hero {
+  min-height: 460px;
+  height: 460px;
+  // padding-bottom: 3em;
+  position: relative;
+  width: 100%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 0 0 2rem 0;
+  #scrollDown {
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    padding: 0 0 2rem 0;
-    #scrollDown {
-        position: absolute;
-        bottom: 0;
-        z-index: 10;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        svg {
-            width: 40px;
-            height: 40px;
-            stroke: #ffffff;
-        }
+    svg {
+      width: 40px;
+      height: 40px;
+      stroke: #ffffff;
     }
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 0;
+  }
+
+  .introWrapper {
+    .affiliateLink {
+      display: grid;
+      gap: 8px;
+      grid-template-columns: auto auto;
+      padding: 1rem;
+      border: 1px solid rgba(255, 255, 255, 0.309);
+      margin-bottom: 1rem;
+      text-decoration: none;
+      color: white;
+      border-radius: 1rem;
+      filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.5));
+      font-size: 1.2rem;
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.2);
+      }
+
+      img {
+        width: 150px;
+        height: auto !important;
+      }
+    }
+  }
+  // Flex row on larger screens
+  @media #{$mid-point} {
     .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: flex-start;
-        padding: 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-end;
     }
-    // Flex row on larger screens
-    @media #{$mid-point} {
-        .container {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: flex-end;
-        }
-    }
-    .heroTitle {
-        margin-left: 2rem;
-        margin-top: 2rem;
-        position: relative;
-        z-index: 10;
-        @media #{$mid-point} {
-            text-align: right;
-        }
-        h1 {
-            margin: 0;
-            text-transform: uppercase;
-            font-size: 1.4rem;
-            color: rgba(255,255,255,0.7);
-            letter-spacing: 3px;
-        }
-        .breadcrumbs {
-            color: #ffffff;
-            text-transform: uppercase;
-            font-size: 0.65rem;
-            letter-spacing: 3px;
-            padding-top: 0.5rem;
-            a {
-                color: rgba(255,255,255,0.6);
-                text-decoration: none;
-                &:hover {
-                    text-decoration: none;
-                    color: #ffffff;
-                }
-            }
-        }
-    }
-    .heroQuote {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: center;
-        position: relative;
-        z-index: 10;
-        max-width: 400px;
-        margin: 0;
-        font-weight: 500;
-        backdrop-filter: blur(2px);
-        p {
-            display: block;
-            padding: 1rem 0 0 2rem;
-            border-left: 6px solid $brand-color;
-            margin: 0;
-            color: #ffffff;
-            font-size: 2rem;
-            line-height: 1.2;
-            cite {
-                margin-left: 1rem;
-                color: rgba(255,255,255,0.6);
-                font-size: 0.9rem;
-                white-space: nowrap;
-            }
-        }
-    }
-    .overlay, .heroOverlay{
-        grid-column: unset;
+  }
+
+  @media #{$below-desktop} {
+    .introWrapper {
+      .affiliateLink {
         position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        background-color: rgba(0,0,0,0.6);
-        z-index: 1;
+        bottom: 40px;
+        right: 10px;
+        left: 10px;
+      }
     }
+  }
+
+  .heroTitle {
+    margin-left: 2rem;
+    margin-top: 2rem;
+    position: relative;
+    z-index: 10;
+
+    @media #{$mid-point} {
+      text-align: right;
+    }
+    h1 {
+      margin: 0;
+      text-transform: uppercase;
+      font-size: 1.4rem;
+      color: rgba(255, 255, 255, 0.7);
+      letter-spacing: 3px;
+    }
+    .breadcrumbs {
+      color: #ffffff;
+      text-transform: uppercase;
+      font-size: 0.65rem;
+      letter-spacing: 3px;
+      padding-top: 0.5rem;
+      a {
+        color: rgba(255, 255, 255, 0.6);
+        text-decoration: none;
+        &:hover {
+          text-decoration: none;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+  .heroQuote {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+    max-width: 400px;
+    margin: 0;
+    font-weight: 500;
+    backdrop-filter: blur(2px);
+    p {
+      display: block;
+      padding: 1rem 0 0 2rem;
+      border-left: 6px solid $brand-color;
+      margin: 0;
+      color: #ffffff;
+      font-size: 2rem;
+      line-height: 1.2;
+      cite {
+        margin-left: 1rem;
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 0.9rem;
+        white-space: nowrap;
+      }
+    }
+  }
+  .overlay,
+  .heroOverlay {
+    grid-column: unset;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+  }
 }
