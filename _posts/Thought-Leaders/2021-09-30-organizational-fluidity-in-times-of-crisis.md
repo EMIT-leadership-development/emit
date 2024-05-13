@@ -6,8 +6,8 @@ hero:
 heroQuote:
 hero_Quote_Cite:
 hero_image:
-sprite_image: /images/sprites/sprite-Set1.webp
-sprite_selection_number: 9
+sprite_image: /images/sprites/sprite-Set2.webp
+sprite_selection_number: 8
 team-member: Kobus Grobler
 tags:
   - Organizational Fluidity
@@ -22,6 +22,7 @@ latitude:
 longitude:
 description:
 ---
+
 # ORGANIZATIONAL FLUIDITY IN TIMES OF CRISIS
 
 Worldwide, more than 40% of small businesses had to close down permanently. Millions lost their income. Advances that were made in the eradication of poverty over the last 50 years, were wiped out in less than 12 months. From the biggest corporations to the smallest non-profit had to adjust or close down.

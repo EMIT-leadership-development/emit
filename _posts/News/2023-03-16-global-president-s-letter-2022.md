@@ -5,10 +5,10 @@ layout: post
 hero:
 heroQuote:
 hero_Quote_Cite:
-hero_image: /images/team/Borniface.jpg
+hero_image: /images/Projectmeeting.webp
 sprite_image: /images/sprites/sprite-Set1.webp
-sprite_selection_number: 9
-team-member: Global President, SA and Global Board Member
+sprite_selection_number: 10
+team-member: Borniface Shonga
 tags:
   - Transformational leadership
   - strong communities
@@ -26,6 +26,7 @@ latitude:
 longitude:
 description:
 ---
+
 # **Transformational leadership builds strong communities.**
 
 For decades, Africa has been at the top of the list of territories receiving international aid to mitigate various man-made and natural disasters. Despite a sustained aid effort by the international community, Africa has yet to show that it can deal with its recurring calamities. This scenario exists because it lacks one primary ingredient, transformational leaders. There can only be a sustainable developmental agenda with visionary leadership! It is here that the story of EMIT becomes relevant.

@@ -5,10 +5,10 @@ layout: post
 hero:
 heroQuote:
 hero_Quote_Cite:
-hero_image: /images/team/Borniface.jpg
-sprite_image: /images/sprites/sprite-Set1.webp
-sprite_selection_number: 9
-team-member: Global President, SA and Global Board Member
+hero_image:
+sprite_image: /images/sprites/sprite-Set3.jpg
+sprite_selection_number: 1
+team-member: Borniface Shonga
 tags:
   - strong communities
   - Innovation
@@ -27,6 +27,7 @@ latitude:
 longitude:
 description:
 ---
+
 # **The Role of Leadership in Nurturing a Culture of Innovation.**
 
 The advent of the COVID-19 pandemic brought about an unprecedented disruption to all spheres of human endeavors. It resulted in broken down structures and systems that could no longer deliver desired outcomes. Yet, despite all these adverse impacts, this period witnessed many innovative solutions that have propelled commerce and industry to productivity levels they never attained before the pandemic. New ways of service delivery via the online platform have resulted in doorstep deliveries of many products. The crisis created a platform for innovation.
