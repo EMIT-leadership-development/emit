@@ -4,7 +4,8 @@ heroQuote: >-
   “We cannot always build the future for our youth, but we can build our youth
   for the future.”  
 hero_Quote_Cite: Franklin D. Roosevelt
-hero_image: /images/youngLeaderThinking.webp
+hero_image: >-
+  https://res.cloudinary.com/sonya-ninja/image/upload/v1715578674/emit/images/youth/boy-rising-hand-class_h4flid.jpg
 bookCover_image: /images/programs/YouthTrainingBook.webp
 curriculumSprite_image: /images/sprites/sprite-Set2.webp
 id: 3
