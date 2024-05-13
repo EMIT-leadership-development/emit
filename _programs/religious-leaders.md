@@ -396,6 +396,5 @@ curricula:
     credits_number: 10
     days_number: 55
     sprite_selection_number:
-    image_url: >-
-      https://res.cloudinary.com/sonya-ninja/image/upload/c_thumb,w_300,h_300,f_auto,q_auto/v1620891439/emit/images/spiritual/worship-435108_1920_yh3r6v.jpg
+    image_url: /images/african-leadership-mother-EMIT.webp
 ---
