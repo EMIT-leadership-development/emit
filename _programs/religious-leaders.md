@@ -387,6 +387,15 @@ curricula:
     sprite_selection_number:
     image_url: >-
       https://res.cloudinary.com/sonya-ninja/image/upload/c_thumb,w_300,h_300,f_auto,q_auto/v1620891439/emit/images/spiritual/worship-435108_1920_yh3r6v.jpg
+  - title: Generosity
+    objective: >-
+      This course examines God’s generous nature through his perfect creation
+      and the Lord Jesus Christ. When we, as His disciples, live generous lives,
+      we experience joy and bring Him honour. We also explore the importance for
+      leaders to set an example of generous living.
+    credits_number: 10
+    days_number: 55
+    sprite_selection_number:
+    image_url: >-
+      https://res.cloudinary.com/sonya-ninja/image/upload/c_thumb,w_300,h_300,f_auto,q_auto/v1620891439/emit/images/spiritual/worship-435108_1920_yh3r6v.jpg
 ---
-
-
