@@ -5,7 +5,7 @@ heroQuote: >-
   the potential to change the world.”  
 hero_Quote_Cite: Shabani, Tanzania
 hero_image: >-
-  https://res.cloudinary.com/sonya-ninja/image/upload/v1715578674/emit/images/youth/boy-rising-hand-class_h4flid.jpg
+  https://res.cloudinary.com/sonya-ninja/image/upload/v1715580435/emit/images/youth/students-studying-together_23-2148913226_baj2za.jpg
 bookCover_image: /images/programs/YouthTrainingBook.webp
 curriculumSprite_image: /images/sprites/sprite-Set2.webp
 id: 3
@@ -17,24 +17,50 @@ motivation: >-
   generation of effective leaders.
 status: developing
 entrance: >-
-  Applicants should be acknowledged as leaders within their schools and ideally hold positions within student leadership.
+  Applicants should be acknowledged as leaders within their schools and ideally
+  hold positions within student leadership.
 delivery: >-
-  The courses will be delivered in person through a facilitation process in a small group setting.
+  The courses will be delivered in person through a facilitation process in a
+  small group setting.
 duration: >-
-  This course comprises 30 one-hour lessons and is designed to align with the school calendar year.
+  This course comprises 30 one-hour lessons and is designed to align with the
+  school calendar year.
 assessment: >-
-  Assessment of learning is integrated into the course material and is conducted consistently throughout the program.
+  Assessment of learning is integrated into the course material and is conducted
+  consistently throughout the program.
 certification: >-
-  The curriculum focuses on holistic leadership development to enhance leadership effectiveness, with a primary goal of fostering personal and community transformation. As such, it is not solely an academic qualification. Upon successfully completing the program, participants will receive a "Certificate of Completion."
+  The curriculum focuses on holistic leadership development to enhance
+  leadership effectiveness, with a primary goal of fostering personal and
+  community transformation. As such, it is not solely an academic qualification.
+  Upon successfully completing the program, participants will receive a
+  "Certificate of Completion."
 graduation: >-
   Students graduate after they have attended all classes, trained 10 other
   leaders and paid their tuition in full. Graduations take place at each local
   venue.
 description_markdown: >-
-  Africa boasts the largest youth population globally, with a staggering 60% of its inhabitants under the age of 25. Regrettably, past generations have set a poor precedent, leading the youth to develop a distorted view of what true leadership entails. Presently, many young individuals associate leadership with abuse of power, bribery, and corruption. Our program seeks to challenge and correct this negative perception of leadership. Through offering a compelling and inspiring portrayal of effective leadership, we aim to instill in students a set of values that they can adopt and integrate into their own lives.
+  Africa boasts the largest youth population globally, with a staggering 60% of
+  its inhabitants under the age of 25. Regrettably, past generations have set a
+  poor precedent, leading the youth to develop a distorted view of what true
+  leadership entails. Presently, many young individuals associate leadership
+  with abuse of power, bribery, and corruption. Our program seeks to challenge
+  and correct this negative perception of leadership. Through offering a
+  compelling and inspiring portrayal of effective leadership, we aim to instill
+  in students a set of values that they can adopt and integrate into their own
+  lives.
 
 
-  This program is designed for senior high school students who have been selected as leaders (prefects) and aims to fill the gap in youth leadership training. The training focuses on essential soft skills that are crucial for Gen-Z leaders, while also enhancing other skills necessary for their future success. The curriculum consists of 30 one-hour sessions that empower these leaders to apply fundamental leadership knowledge, skills, and abilities. The training utilizes small group facilitation, which is both straightforward and highly impactful. Small groups foster open communication in an empowering setting, allowing values to be explored rather than simply taught. This approach encourages active participation and collaboration among the leaders, enhancing their overall learning experience.
+  This program is designed for senior high school students who have been
+  selected as leaders (prefects) and aims to fill the gap in youth leadership
+  training. The training focuses on essential soft skills that are crucial for
+  Gen-Z leaders, while also enhancing other skills necessary for their future
+  success. The curriculum consists of 30 one-hour sessions that empower these
+  leaders to apply fundamental leadership knowledge, skills, and abilities. The
+  training utilizes small group facilitation, which is both straightforward and
+  highly impactful. Small groups foster open communication in an empowering
+  setting, allowing values to be explored rather than simply taught. This
+  approach encourages active participation and collaboration among the leaders,
+  enhancing their overall learning experience.
 curricula:
   - title: Title of the curricula
     objective: Lacus! Veritatis mus aliquip atque molestie! Justo class tempora, posuere.
