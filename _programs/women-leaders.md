@@ -49,7 +49,7 @@ description_markdown: >-
   skills to rise above their circumstances and bring systematic change to the
   communities they serve. The program is designed to address 3 main areas needed
   for transformation – personal and character development, leadership
-  development and professional skills development. &nbsp;
+  development and professional skills development.
 curricula:
   - title: Basic Computer Skills
     objective: This course provides practical computer knowledge and computer skills.
@@ -103,7 +103,7 @@ curricula:
     sprite_selection_number: 6
     image_url: >-
       https://res.cloudinary.com/sonya-ninja/image/upload/h_300,w_300,c_thumb,f_auto,q_auto/v1620889599/emit/images/family/African-leadership-mothers_vzn8rl.jpg
-  - title: Gender Theory
+  - title: A Biblical Perspective on Women
     objective: >-
       This course is a biblical examination of gender equality and God's
       positive view of women.
