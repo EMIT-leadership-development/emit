@@ -2,14 +2,14 @@
 title: Youth Leaders
 heroQuote: >-
   “For every young person in Africa, there is a voice inside him or her that has
-  the potential to change the world.”  
+  the potential to change the world.”
 hero_Quote_Cite: Shabani, Tanzania
 hero_image: >-
-  https://res.cloudinary.com/sonya-ninja/image/upload/v1715580435/emit/images/youth/students-studying-together_23-2148913226_baj2za.jpg
+  /images/EMIT-leadership-Youth-program.webp
 bookCover_image: /images/programs/YouthTrainingBook.webp
 curriculumSprite_image: /images/sprites/sprite-Set2.webp
 id: 3
-objective_markdown: ''
+objective_markdown: ""
 motivation: >-
   Presently the vast majority of Africa’s population is younger than 25 years
   old. We aim to equip youth leaders while they are in school, enabling them to

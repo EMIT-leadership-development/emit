@@ -336,6 +336,8 @@ body.noscroll {
 // MED-LARGE SCREENS
 #mainHeader {
   @media (min-width: 700px) {
+    position: sticky;
+
     grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows: 100%;
     grid-template-areas: "logo links actions";
@@ -405,6 +407,7 @@ body.noscroll {
 
 // TRANSPARENT HEADER - HOME PAGE
 #mainHeader.transparent {
+  position: fixed;
   @media (min-width: 700px) {
     #logoWrap {
       background-color: transparent;
