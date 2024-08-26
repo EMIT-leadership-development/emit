@@ -174,6 +174,16 @@ curricula:
     sprite_selection_number: 13
     image_url: >-
       https://res.cloudinary.com/sonya-ninja/image/upload/h_300,w_300,c_thumb,f_auto,q_auto/v1620887794/emit/images/family/africa-leadership-relationship_ju9gna.jpg
+  - title: Generosity
+    objective: >-
+      This course examines God’s generous nature through his perfect creation
+      and the Lord Jesus Christ. When we, as His disciples, live generous lives,
+      we experience joy and bring Him honour. We also explore the importance for
+      leaders to set an example of generous living.
+    days_number: 50
+    sprite_selection_number: 13
+    image_url: >-
+      https://res.cloudinary.com/sonya-ninja/image/upload/h_300,w_300,c_thumb,f_auto,q_auto/v1620887794/emit/images/family/africa-leadership-relationship_ju9gna.jpg
   - title: Time and Project Management
     objective: >-
       This course addresss the importance of good time management skills and
