@@ -182,8 +182,7 @@ curricula:
       leaders to set an example of generous living.
     days_number: 50
     sprite_selection_number: 13
-    image_url: >-
-      https://res.cloudinary.com/sonya-ninja/image/upload/h_300,w_300,c_thumb,f_auto,q_auto/v1620887794/emit/images/family/africa-leadership-relationship_ju9gna.jpg
+    image_url: /images/african-leadership-mother-EMIT.webp
   - title: Time and Project Management
     objective: >-
       This course addresss the importance of good time management skills and
