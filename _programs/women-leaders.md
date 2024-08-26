@@ -121,7 +121,7 @@ curricula:
     sprite_selection_number:
     image_url: >-
       https://res.cloudinary.com/sonya-ninja/image/upload/h_300,w_300,c_thumb,f_auto,g_custom,q_auto/v1620882211/emit/images/health/EMIT-heroPoster_pmgek5.jpg
-  - title: Introduction to Leadership
+  - title: Leadership
     objective: >-
       This is an introductory course to the principles of effective leadership
       and leadership ethics.
