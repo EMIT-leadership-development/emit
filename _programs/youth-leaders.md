@@ -29,10 +29,9 @@ assessment: >-
   consistently throughout the program.
 certification: >-
   The curriculum focuses on holistic leadership development to enhance
-  leadership effectiveness, with a primary goal of fostering personal and
-  community transformation. As such, it is not solely an academic qualification.
-  Upon successfully completing the program, participants will receive a
-  "Certificate of Completion."
+  leadership effectiveness, with a primary goal of fostering personal
+  transformation. Upon successfully completing the program, participants will
+  receive a "Certificate of Completion."
 graduation: >-
   Students graduate after they have attended all classes, trained 10 other
   leaders and paid their tuition in full. Graduations take place at each local
