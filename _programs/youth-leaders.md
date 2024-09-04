@@ -65,8 +65,15 @@ description_markdown: >-
   encourages active participation and collaboration among the leaders, enhancing
   their overall learning experience.
 curricula:
-  - title: Title of the curricula
-    objective: Lacus! Veritatis mus aliquip atque molestie! Justo class tempora, posuere.
+  - title: 'Leading Yourself '
+    objective: >-
+      In this module, you will learn about yourself and what makes you unique.
+      You will explore personality traits and your self-esteem. You will also
+      learn about the importance your choices have on your life, being
+      teachable, and why forgiveness is crucial in life. By the end of this
+      course, students will have a deeper understanding of themselves and be
+      equipped to lead from a place of self-mastery. tis mus aliquip atque
+      molestie! Justo class tempora, posuere.
     credits_number: 5
     days_number: 10
     projects_number: 3
