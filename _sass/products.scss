@@ -1,739 +1,786 @@
 // SHOW HIDE THE CURRENCIES AS PER SELECTION FOR SNIPCART
-.productCurrency, .currencyBtn {
-	display: none;
+.productCurrency,
+.currencyBtn {
+  display: none;
 }
-.productCurrency.activePrice, .currencyBtn.activePrice {
-	display: block;
+.productCurrency.activePrice,
+.currencyBtn.activePrice {
+  display: block;
 }
 
 // ----DONATION INTRO
 .donationIntro {
-	.supportOptions {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	}
+  .supportOptions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 // ----SUBSCRIPTIONS
 .subscriptionWrap {
-	display: grid;
-	grid-gap: 2rem;
-	grid-template-columns: 1fr 1fr 1fr;
-	@media (min-width: 570px) and (max-width: 900px) {
-		grid-template-columns: 1fr;
-		.subscriptionProduct {
-			display: grid;
-			grid-template-columns: 1fr 1fr;
-			.subscriptionImage {
-				display: block;
-				.authorImageWrap {
-					background: $brandContrastLight2;
-					width: 100%;
-					height: 100%;
-					position: relative;
-					box-sizing: border-box;
-					padding: 0;
-					.authorImage {
-						width: 220%;
-						display: block;
-						position: absolute !important;
-						left: -70%;
-						top: unset;
-						bottom: -10%;
-					}
-				}
-			}
-		}
-	}
-	@media (max-width: 569px) {
-		grid-template-columns: 1fr;
-		.subscriptionProduct {
-			display: block;
-		}
-	}
-	.subscriptionProduct {
-		filter: drop-shadow(0.1rem 0.1rem 0.3rem rgba(20, 20, 180, 0.3));
-	}
-	#donation-sphere2 {
-		.price-container {
-			background: $brandContrastDark;
-			color: #ffffff;
-		}
-		h3 {
-			color: #000000;
-		}
-		.price-button-container {
-			 button {
-				border: none;
-				background: $brandContrastDark;
-				color: #ffffff;
-				&:hover {
-					background: $brand-color;
-				}
-			 }
-		}
-		.sphere3 {
-			background: #7F7F7F !important;
-			border-color: #C9C9C9 !important;
-		}
-	}
-	#donation-sphere1 {
-		.sphere2 {
-			background: #949494 !important;
-			border-color: #C9C9C9 !important;
-		}
-		.sphere3 {
-			background: #7F7F7F !important;
-			border-color: #C9C9C9 !important;
-		}
-	}
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  @media (min-width: 570px) and (max-width: 900px) {
+    grid-template-columns: 1fr;
+    .subscriptionProduct {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      .subscriptionImage {
+        display: block;
+        .authorImageWrap {
+          background: $brandContrastLight2;
+          width: 100%;
+          height: 100%;
+          position: relative;
+          box-sizing: border-box;
+          padding: 0;
+          .authorImage {
+            width: 220%;
+            display: block;
+            position: absolute !important;
+            left: -70%;
+            top: unset;
+            bottom: -10%;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 569px) {
+    grid-template-columns: 1fr;
+    .subscriptionProduct {
+      display: block;
+    }
+  }
+  .subscriptionProduct {
+    filter: drop-shadow(0.1rem 0.1rem 0.3rem rgba(20, 20, 180, 0.3));
+  }
+  #donation-sphere2 {
+    .price-container {
+      background: $brandContrastDark;
+      color: #ffffff;
+    }
+    h3 {
+      color: #000000;
+    }
+    .price-button-container {
+      button {
+        border: none;
+        background: $brandContrastDark;
+        color: #ffffff;
+        &:hover {
+          background: $brand-color;
+        }
+      }
+    }
+    .sphere3 {
+      background: #7f7f7f !important;
+      border-color: #c9c9c9 !important;
+    }
+  }
+  #donation-sphere1 {
+    .sphere2 {
+      background: #949494 !important;
+      border-color: #c9c9c9 !important;
+    }
+    .sphere3 {
+      background: #7f7f7f !important;
+      border-color: #c9c9c9 !important;
+    }
+  }
 
-	.price-container {
-		font-weight: normal;
-		font-size: 16px;
-		margin: 0;
-		border: 0;
-		background-color: lighten($brandContrastDark, 20%);
-		padding: 20px 20px 15px 20px;
-		position: relative;
-		text-align: center;
-	}
-	.currency {
-		font-weight: normal;
-		color: #fff;
-		font-size: 30px;
-	}
-	.price {
-		display: inline-block;
-		color: #fff;
-		font-size: 60px;
-		line-height: 50px;
-	}
-	.cents-cont {
-		width: 5px;
-		font-size: 20px;
-		.cents {
-			line-height: 25px;
-			display: inline-block;
-			color: #fff;
-			font-size: 30px;
-			position: absolute;
-			top: 19px;
-		}
-		.place2 {
-			line-height: 25px;
-			display: inline-block;
-			height: 13px;
-			width: 35px;
-			font-size: 14px;
-			color: #bcbcbc;
-		}
-	}
-	ul {
-		margin: 0;
-		padding: 0;
-		list-style: none;
-		background-color: #fff;
-		li {
-			background: #fff;
-			margin: 0;
-			padding: 0;
-			display: block;
-			color: #6b6b6b;
-			line-height: 50px;
-			border-bottom: 1px solid #efefef;
-			margin-left: 20px;
-		}
-	}
-	.price-button-container {
-		height: 75px;
-		button {
-			text-decoration: none;
-			border-radius: 2px;
-			border: none;
-			transition: all .3s ease 0s;
-			position: relative;
-			color: #fff;
-			background-color: lighten($brandContrastDark, 20%);
-			display: inline-block;
-			height: 100%;
-			line-height: 72px;
-			padding: 0;
-			width: 100%;
-			font-size: 18px;
-			cursor: pointer;
-			text-align: center;
-			&:hover {
-				background-color: $brandContrastDark;
-			}
-		}
-	}
-	.authorImageWrap {
-		background: $brand-color;
-		overflow: hidden;
-		padding-bottom: 100%;
-		width: 100%;
-		position: relative;
-		.authorImage {
-			display: block;
-			position: absolute !important;
-			width: 180%;
-			top: -35%;
-			left: -60%;
-			.sphere {
-				padding: 2.8rem;
-			}
-			.sphere1 {
-				background-color: $sphere1BG;
-			}
-			.sphere2{
-				background-color: $sphere2BG;
-			}
-			.sphere3 {
-				background-color: $sphere3BG;
-			}
-		}
-	}
-	h3 {
-		background: $brandContrastLight2;
-		margin-bottom: 0;
-		padding: 1rem;
-		text-align: center;
-	}
+  .price-container {
+    font-weight: normal;
+    font-size: 16px;
+    margin: 0;
+    border: 0;
+    background-color: lighten($brandContrastDark, 20%);
+    padding: 20px 20px 15px 20px;
+    position: relative;
+    text-align: center;
+  }
+  .currency {
+    font-weight: normal;
+    color: #fff;
+    font-size: 30px;
+  }
+  .price {
+    display: inline-block;
+    color: #fff;
+    font-size: 60px;
+    line-height: 50px;
+  }
+  .cents-cont {
+    width: 5px;
+    font-size: 20px;
+    .cents {
+      line-height: 25px;
+      display: inline-block;
+      color: #fff;
+      font-size: 30px;
+      position: absolute;
+      top: 19px;
+    }
+    .place2 {
+      line-height: 25px;
+      display: inline-block;
+      height: 13px;
+      width: 35px;
+      font-size: 14px;
+      color: #bcbcbc;
+    }
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: #fff;
+    li {
+      background: #fff;
+      margin: 0;
+      padding: 0;
+      display: block;
+      color: #6b6b6b;
+      line-height: 50px;
+      border-bottom: 1px solid #efefef;
+      margin-left: 20px;
+    }
+  }
+  .price-button-container {
+    height: 75px;
+    button {
+      text-decoration: none;
+      border-radius: 2px;
+      border: none;
+      transition: all 0.3s ease 0s;
+      position: relative;
+      color: #fff;
+      background-color: lighten($brandContrastDark, 20%);
+      display: inline-block;
+      height: 100%;
+      line-height: 72px;
+      padding: 0;
+      width: 100%;
+      font-size: 18px;
+      cursor: pointer;
+      text-align: center;
+      &:hover {
+        background-color: $brandContrastDark;
+      }
+    }
+  }
+  .authorImageWrap {
+    background: $brand-color;
+    overflow: hidden;
+    padding-bottom: 100%;
+    width: 100%;
+    position: relative;
+    .authorImage {
+      display: block;
+      position: absolute !important;
+      width: 180%;
+      top: -35%;
+      left: -60%;
+      .sphere {
+        padding: 2.8rem;
+      }
+      .sphere1 {
+        background-color: $sphere1BG;
+      }
+      .sphere2 {
+        background-color: $sphere2BG;
+      }
+      .sphere3 {
+        background-color: $sphere3BG;
+      }
+    }
+  }
+  h3 {
+    background: $brandContrastLight2;
+    margin-bottom: 0;
+    padding: 1rem;
+    text-align: center;
+  }
 }
 // ----CONTRIBUTIONS
 #custom-contribution {
-	form {
-		padding: 1rem;
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		justify-items: stretch;
-		grid-gap: 1rem;
-		background: #ffffff;
-		filter: drop-shadow(0.1rem 0.1rem 0.3rem rgba(20, 20, 180, 0.3));
-		.image {
-			background-image: url(https://res.cloudinary.com/sonya-ninja/image/upload/c_thumb,f_auto,h_600,q_auto,w_600/v1622523249/emit/images/africa/EMIT-custom-contribution_fj0zyg.jpg);
-			background-position: center;
-			background-repeat: no-repeat;
-			background-size: cover;
-		}
-		.hideWhenInCart, .showWhenInCart {
-			display: flex;
-			flex-direction: column;
-			justify-content: space-between;
-			button {
-				margin-top: 2rem;
-			}
-			textarea {
-				resize: vertical;
-			}
-			.messageWrap {
-				.control-label {
-					font-size: 1rem;
-					top: -3rem;
-				}
-			}
-			.amountWrap {
-				display: grid;
-				grid-gap: 0.5rem;
-				grid-template-columns: auto 1fr auto;
-				align-items: center;
-				.priceWrap {
-					height: 100%;
-					display: flex;
-					flex-direction: column;
-					justify-content: center;
-					align-items: center;
-					.productCurrency {
-						font-weight: 900;
-						font-size: 2.5rem;
-						color: black;
-						margin-top: 1rem;
-					}
-				}
-				.checkbox {
-					margin-bottom: 0;
-					margin-left: 2rem;
-					margin-right: 1rem;
-				}
-				.feedbackAmount {
-					font-weight: 900;
-					font-size: 2.5rem;
-					color: black;
-					margin-top: 1rem;
-				}
-			}
-		}
-		// Inital hide of cart feedback
-		.showWhenInCart {
-			display: none;
-			.notification {
-				font-size: 1rem;
-				margin-bottom: 1rem;
-				padding: 1rem;
-				background-color: $info;
-				border: 1px solid darken($info, 10%);
-			}
-			.buttonRow {
-				margin-top: 2rem;
-				display: grid;
-				grid-template-rows: auto auto;
-				button {
-					margin: 0;
-				}
-			}
-		}
-	}
+  form {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: stretch;
+    grid-gap: 1rem;
+    background: #ffffff;
+    filter: drop-shadow(0.1rem 0.1rem 0.3rem rgba(20, 20, 180, 0.3));
+    .image {
+      background-image: url(https://res.cloudinary.com/sonya-ninja/image/upload/c_thumb,f_auto,h_600,q_auto,w_600/v1622523249/emit/images/africa/EMIT-custom-contribution_fj0zyg.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .hideWhenInCart,
+    .showWhenInCart {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      button {
+        margin-top: 2rem;
+      }
+      textarea {
+        resize: vertical;
+      }
+      .messageWrap {
+        .control-label {
+          font-size: 1rem;
+          top: -3rem;
+        }
+      }
+      .amountWrap {
+        display: grid;
+        grid-gap: 0.5rem;
+        grid-template-columns: auto 1fr auto;
+        align-items: center;
+        .priceWrap {
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          .productCurrency {
+            font-weight: 900;
+            font-size: 2.5rem;
+            color: black;
+            margin-top: 1rem;
+          }
+        }
+        .checkbox {
+          margin-bottom: 0;
+          margin-left: 2rem;
+          margin-right: 1rem;
+        }
+        .feedbackAmount {
+          font-weight: 900;
+          font-size: 2.5rem;
+          color: black;
+          margin-top: 1rem;
+        }
+      }
+    }
+    // Inital hide of cart feedback
+    .showWhenInCart {
+      display: none;
+      .notification {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        padding: 1rem;
+        background-color: $info;
+        border: 1px solid darken($info, 10%);
+      }
+      .buttonRow {
+        margin-top: 2rem;
+        display: grid;
+        grid-template-rows: auto auto;
+        button {
+          margin: 0;
+        }
+      }
+    }
+
+    // CUSTOM DONATION FORM
+    @media (max-width: 1200px) {
+      grid-template-columns: 1fr;
+
+      .image {
+        grid-row: 1;
+        height: 100px;
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .amountWrap {
+        grid-template-columns: auto 1fr !important;
+        justify-content: flex-start !important;
+        .priceWrap {
+          width: fit-content !important;
+          grid-column: 1;
+          grid-row: 1;
+        }
+        .form-group {
+          width: 100%;
+          grid-column: 2;
+          grid-row: 1;
+        }
+        .checkbox {
+          grid-row: 2 !important;
+          grid-column: 1 / span 2;
+          margin: 0 !important;
+          label {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
 }
 // ----GIFTS AND SINGLE PRODUCT PAGE
 .productPreview {
-	filter: drop-shadow(0.1rem 0.1rem 0.3rem rgba(20, 20, 180, 0.3));
-	border: 1rem solid #ffffff;
-	background-color: #ffffff;
-	a.productImage {
-		box-sizing: border-box;
-		position: relative;
-		display: block;
-		margin: 0;
-		padding: 0;
-		&:before {
-			content: "";
-			position: absolute;
-			left: 0;
-			right: 0;
-			bottom: 0;
-			top: 0;
-			background-image: linear-gradient(319deg, rgba(0,0,0,0.3), rgba(0,0,0,0.1));
-			z-index: 2;
-		}
-		img {
-			position: relative;
-			display: flex;
-			width: 100%;
-		}
-	}
+  filter: drop-shadow(0.1rem 0.1rem 0.3rem rgba(20, 20, 180, 0.3));
+  border: 1rem solid #ffffff;
+  background-color: #ffffff;
+  a.productImage {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 0;
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      background-image: linear-gradient(
+        319deg,
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.1)
+      );
+      z-index: 2;
+    }
+    img {
+      position: relative;
+      display: flex;
+      width: 100%;
+    }
+  }
 }
 #donationsWrap .links,
-.product-container .links{
-	position: absolute !important;
-	left: 1.5rem;
-	top: 1.5rem;
-	z-index: 10;
-	margin: 0;
-	padding: 0;
-	svg {
-		stroke: #ffffff;
-	}
+.product-container .links {
+  position: absolute !important;
+  left: 1.5rem;
+  top: 1.5rem;
+  z-index: 10;
+  margin: 0;
+  padding: 0;
+  svg {
+    stroke: #ffffff;
+  }
 }
 .inCartNotification {
-	position: absolute;
-	right: 1rem;
-	top: 1rem;
-	z-index: 10;
-	margin: 0;
-	padding: 0;
-	display: flex;
-	visibility: hidden;
-	justify-content: center;
-	align-items: center;
-	background-color: $sphere1BG;
-	border-radius: 4px;
-	padding: 2px 8px;
-	color: #ffffff;
-	.icon {
-		margin-right: 10px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-direction: column;
-	}
-	svg {
-		stroke: #ffffff;
-	}
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  z-index: 10;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  visibility: hidden;
+  justify-content: center;
+  align-items: center;
+  background-color: $sphere1BG;
+  border-radius: 4px;
+  padding: 2px 8px;
+  color: #ffffff;
+  .icon {
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  svg {
+    stroke: #ffffff;
+  }
 }
 .product-container {
-	position: relative;
-	.imageWrap {
-		position: relative;
-	}
-	.inCartNotification {
-		position: relative;
-		top: 0;
-		left: 0;
-		width: 150px;
-		margin-top: -1.5rem;
-		margin-bottom: 1rem;
-	}
-	.product-details {
-		flex: 2 1 500px;
-		text-align: left;
-		margin-left: 40px;
-		.priceWrap {
-			display: flex;
-			justify-content: flex-end;
-			padding-right: 10px;
-			.productCurrency {
-				color: #000000;
-				font-weight: 600;
-				font-size: 2rem;
-			}
-		}
-		.actionRow {
-			display: flex;
-			width: auto;
-			justify-content: flex-end;
-			button, a {
-				font-size: 0.7rem;
-			}
-			// Initially hide the Open Cart button
-			.snipcart-checkout {
-				display: none;
-			}
-		}
-	}
-	form {
-		border: 1px solid #444;
-		padding: 20px;
-		border-radius: 2px;
+  position: relative;
+  .imageWrap {
+    position: relative;
+  }
+  .inCartNotification {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 150px;
+    margin-top: -1.5rem;
+    margin-bottom: 1rem;
+  }
+  .product-details {
+    flex: 2 1 500px;
+    text-align: left;
+    margin-left: 40px;
+    .priceWrap {
+      display: flex;
+      justify-content: flex-end;
+      padding-right: 10px;
+      .productCurrency {
+        color: #000000;
+        font-weight: 600;
+        font-size: 2rem;
+      }
+    }
+    .actionRow {
+      display: flex;
+      width: auto;
+      justify-content: flex-end;
+      button,
+      a {
+        font-size: 0.7rem;
+      }
+      // Initially hide the Open Cart button
+      .snipcart-checkout {
+        display: none;
+      }
+    }
+  }
+  form {
+    border: 1px solid #444;
+    padding: 20px;
+    border-radius: 2px;
 
-		label:first-child {
-			margin-top: 0;
-		}
-	}
+    label:first-child {
+      margin-top: 0;
+    }
+  }
 }
 .product-list {
-	display: flex;
-	flex-flow: wrap;
-	margin: 2rem -20px;
-	.imageWrap {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		height: 100%;
-		.priceWrap {
-			position: absolute;
-			bottom: 1rem;
-    		right: 1rem;
-			z-index: 5;
-			.productCurrency {
-				color: #ffffff;
-				width: 100%;
-				font-size: 1.5rem;
-				line-height: 1;
-			}
-		}
-	}
-	.product-details {
-		padding: 1rem 0;
-		height: 100%;
-		flex: 1;
-	}
-	.actionRow {
-		display: flex;
-		justify-content: space-between;
-		button, a {
-			font-size: 0.7rem;
-		}
-		// Initially hide the Open Cart button
-		.snipcart-checkout {
-			display: none;
-		}
-	}
+  display: flex;
+  flex-flow: wrap;
+  margin: 2rem -20px;
+  .imageWrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    .priceWrap {
+      position: absolute;
+      bottom: 1rem;
+      right: 1rem;
+      z-index: 5;
+      .productCurrency {
+        color: #ffffff;
+        width: 100%;
+        font-size: 1.5rem;
+        line-height: 1;
+      }
+    }
+  }
+  .product-details {
+    padding: 1rem 0;
+    height: 100%;
+    flex: 1;
+  }
+  .actionRow {
+    display: flex;
+    justify-content: space-between;
+    button,
+    a {
+      font-size: 0.7rem;
+    }
+    // Initially hide the Open Cart button
+    .snipcart-checkout {
+      display: none;
+    }
+  }
 
-	&, > li {
-		position: relative;
-		list-style: none;
-		padding: 0;
-	}
+  &,
+  > li {
+    position: relative;
+    list-style: none;
+    padding: 0;
+  }
 
-	> li {
-		flex: 1 1 300px;
-		position: relative;
-		&:not(:empty) {
-			margin: 20px;
-		}
-	}
+  > li {
+    flex: 1 1 300px;
+    position: relative;
+    &:not(:empty) {
+      margin: 20px;
+    }
+  }
 
-	h4 {
-		margin: 10px 0 0 0;
-		font-size: 1.1rem;
-		font-weight: 600;
-	}
+  h4 {
+    margin: 10px 0 0 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
 
-	p {
-		line-height: 1;
-		margin: 10px 0 0 0;
-	}
+  p {
+    line-height: 1;
+    margin: 10px 0 0 0;
+  }
 
-	.product-description p {
-		font-size: 1.1rem;
-	}
+  .product-description p {
+    font-size: 1.1rem;
+  }
 }
 // TEAM MEMBER SELECTION LIST
 .memberList {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-gap: 2rem;
-	li {
-		list-style-type: none;
-		display: flex;
-		box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-		&:hover {
-			box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-		}
-		form {
-			border: none;
-			background-color: #ffffff;
-			display: grid;
-			grid-template-columns: 100px auto 160px;
-			grid-gap: 1rem;
-			.memberPic {
-				background-size: cover;
-				background-position: center;
-			}
-			.messageWrap {
-				display: flex;
-				flex-direction: column;
-				justify-content: space-between;
-				.memberName {
-					margin-bottom: 0;
-				}
-				.form-group {
-					margin-bottom: 0;
-				}
-			}
-			.actionsWrap {
-				display: flex;
-				flex-direction: column;
-				justify-content: space-between;
-				.amountWrap {
-					display: flex;
-					.form-group {
-						margin: 0;
-						margin-top: 10px;
-					}
-				}
-				.checkbox {
-					margin: 0;
-					label {
-						margin-bottom: 0;
-					}
-				}
-				.actions {
-					button {
-						margin: 0;
-						width: 100%;
-						padding: 6px 8px;
-					}
-					// Initially hide the Open Cart button
-					.snipcart-checkout {
-						display: none;
-					}
-				}
-			}
-		}
-	}
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+  li {
+    list-style-type: none;
+    display: flex;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    &:hover {
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+        0 10px 10px rgba(0, 0, 0, 0.22);
+    }
+    form {
+      border: none;
+      background-color: #ffffff;
+      display: grid;
+      grid-template-columns: 100px auto 160px;
+      grid-gap: 1rem;
+      .memberPic {
+        background-size: cover;
+        background-position: center;
+      }
+      .messageWrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .memberName {
+          margin-bottom: 0;
+        }
+        .form-group {
+          margin-bottom: 0;
+        }
+      }
+      .actionsWrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .amountWrap {
+          display: flex;
+          .form-group {
+            margin: 0;
+            margin-top: 10px;
+          }
+        }
+        .checkbox {
+          margin: 0;
+          label {
+            margin-bottom: 0;
+          }
+        }
+        .actions {
+          button {
+            margin: 0;
+            width: 100%;
+            padding: 6px 8px;
+          }
+          // Initially hide the Open Cart button
+          .snipcart-checkout {
+            display: none;
+          }
+        }
+      }
+    }
+  }
 }
 // ----IN-CART FEEDBACK FOR PRODUCTS
 .inCart {
-	.inCartNotification {
-		visibility: visible;
-	}
-	.snipcart-checkout {
-		display: grid !important;
-		grid-template-columns: auto auto;
-		justify-items: center;
-		align-items: center;
-		grid-gap: 10px;
-		background: $brandContrastDark !important;
-		border: 1px solid #000000 !important;
-		color: #ffffff !important;
-		svg {
-			width: 20px;
-    		height: 20px;
-		}
-		&:hover {
-			background: $brand-color !important;
-			color: #000000 !important;
-		}
-	}
-	.snipcart-add-item {
-		display: none;
-	}
+  .inCartNotification {
+    visibility: visible;
+  }
+  .snipcart-checkout {
+    display: grid !important;
+    grid-template-columns: auto auto;
+    justify-items: center;
+    align-items: center;
+    grid-gap: 10px;
+    background: $brandContrastDark !important;
+    border: 1px solid #000000 !important;
+    color: #ffffff !important;
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+    &:hover {
+      background: $brand-color !important;
+      color: #000000 !important;
+    }
+  }
+  .snipcart-add-item {
+    display: none;
+  }
 }
 // ----SNIPCART THEME
 #snipcart {
-    /* -----------------
+  /* -----------------
         Colors
     ----------------- */
-    --color-default: rgba(255,255,255,0.7);
-    --color-alt: #96a7bf;
-    --color-icon: #abe116;
-    --color-success: hsl(144, 50%, 55%);
-    --color-error: hsl(6, 55%, 60%);
+  --color-default: rgba(255, 255, 255, 0.7);
+  --color-alt: #96a7bf;
+  --color-icon: #abe116;
+  --color-success: hsl(144, 50%, 55%);
+  --color-error: hsl(6, 55%, 60%);
 
-    --color-link: #85b744;
-    --color-link-hover: #abe116;
-    --color-link-active: var(--color-link);
-    --color-link-focus: var(--color-link);
+  --color-link: #85b744;
+  --color-link-hover: #abe116;
+  --color-link-active: var(--color-link);
+  --color-link-focus: var(--color-link);
 
-    --color-input: #ffffff;
-    --color-input-hover: var(--color-input);
-    --color-input-focus: var(--color-input);
-    --color-input-checked: var(--color-input);
-    --color-input-disabled: var(--color-alt);
-    --color-input-error: var(--color-error);
-    --color-inputLabel: #ffffff;
-    --color-inputLabel-hover: var(--color-inputLabel);
-    --color-inputLabel-focus: var(--color-inputLabel);
-    --color-inputIcon: var(--color-alt);
-    --color-inputIcon-hover: var(--color-default);
-    --color-inputIcon-focus: var(--color-inputIcon);
-    --color-inputIcon-checked: var(--color-default);
-    --color-inputIcon-error: var(--color-error);
-    --color-inputPlaceholder: var(--color-alt);
+  --color-input: #ffffff;
+  --color-input-hover: var(--color-input);
+  --color-input-focus: var(--color-input);
+  --color-input-checked: var(--color-input);
+  --color-input-disabled: var(--color-alt);
+  --color-input-error: var(--color-error);
+  --color-inputLabel: #ffffff;
+  --color-inputLabel-hover: var(--color-inputLabel);
+  --color-inputLabel-focus: var(--color-inputLabel);
+  --color-inputIcon: var(--color-alt);
+  --color-inputIcon-hover: var(--color-default);
+  --color-inputIcon-focus: var(--color-inputIcon);
+  --color-inputIcon-checked: var(--color-default);
+  --color-inputIcon-error: var(--color-error);
+  --color-inputPlaceholder: var(--color-alt);
 
-    --color-buttonPrimary: rgba(0,0,0,0.8);
-    --color-buttonPrimary-hover: rgba(0,0,0,1);
-    --color-buttonPrimary-active: var(--color-buttonPrimary);
-    --color-buttonPrimary-focus: var(--color-buttonPrimary);
-    --color-buttonPrimary-disabled: var(--color-alt);
-    --color-buttonPrimary-success: var(--color-buttonPrimary);
-    --color-buttonPrimary-error: var(--color-buttonPrimary);
+  --color-buttonPrimary: rgba(0, 0, 0, 0.8);
+  --color-buttonPrimary-hover: rgba(0, 0, 0, 1);
+  --color-buttonPrimary-active: var(--color-buttonPrimary);
+  --color-buttonPrimary-focus: var(--color-buttonPrimary);
+  --color-buttonPrimary-disabled: var(--color-alt);
+  --color-buttonPrimary-success: var(--color-buttonPrimary);
+  --color-buttonPrimary-error: var(--color-buttonPrimary);
 
-    --color-buttonSecondary: var(--color-icon);
-    --color-buttonSecondary-hover: #ffffff;
-    --color-buttonSecondary-active: var(--color-buttonSecondary);
-    --color-buttonSecondary-focus: var(--color-buttonSecondary);
-    --color-buttonSecondary-disabled: hsl(210, 10%, 25%);
-    --color-buttonSecondary-success: var(--color-success);
-    --color-buttonSecondary-error: var(--color-error);
+  --color-buttonSecondary: var(--color-icon);
+  --color-buttonSecondary-hover: #ffffff;
+  --color-buttonSecondary-active: var(--color-buttonSecondary);
+  --color-buttonSecondary-focus: var(--color-buttonSecondary);
+  --color-buttonSecondary-disabled: hsl(210, 10%, 25%);
+  --color-buttonSecondary-success: var(--color-success);
+  --color-buttonSecondary-error: var(--color-error);
 
-    --color-buttonDanger: var(--color-error);
-    --color-buttonDanger-hover: hsl(6, 55%, 70%);
-    --color-buttonDanger-active: var(--color-buttonDanger);
-    --color-buttonDanger-focus: var(--color-buttonDanger);
-    --color-buttonDanger-disabled: hsl(210, 10%, 25%);
-    --color-buttonDanger-success: var(--color-default);
-    --color-buttonDanger-error: var(--color-default);
+  --color-buttonDanger: var(--color-error);
+  --color-buttonDanger-hover: hsl(6, 55%, 70%);
+  --color-buttonDanger-active: var(--color-buttonDanger);
+  --color-buttonDanger-focus: var(--color-buttonDanger);
+  --color-buttonDanger-disabled: hsl(210, 10%, 25%);
+  --color-buttonDanger-success: var(--color-default);
+  --color-buttonDanger-error: var(--color-default);
 
-    --color-badge: var(--color-link);
-    --color-badge-active: #000000;
-    --color-badge-disabled: var(--color-alt);
+  --color-badge: var(--color-link);
+  --color-badge-active: #000000;
+  --color-badge-disabled: var(--color-alt);
 
-    /* -----------------
+  /* -----------------
         Border colors
     ----------------- */
-    --borderColor-default: hsla(0, 0%, 100%, 10%);
-    --borderColor-error: hsl(6, 55%, 30%);
+  --borderColor-default: hsla(0, 0%, 100%, 10%);
+  --borderColor-error: hsl(6, 55%, 30%);
 
-    --borderColor-link: currentColor;
-    --borderColor-link-hover: currentColor;
-    --borderColor-link-active: currentColor;
-    --borderColor-link-focus: currentColor;
+  --borderColor-link: currentColor;
+  --borderColor-link-hover: currentColor;
+  --borderColor-link-active: currentColor;
+  --borderColor-link-focus: currentColor;
 
-    --borderColor-input: hsla(0, 0%, 100%, 10%);
-    --borderColor-input-hover: #85b744;
-    --borderColor-input-focus: var(--borderColor-input-hover);
-    --borderColor-input-checked: var(--borderColor-input-hover);
-    --borderColor-input-disabled: hsl(210, 10%, 20%);
-    --borderColor-input-error: var(--borderColor-error);
+  --borderColor-input: hsla(0, 0%, 100%, 10%);
+  --borderColor-input-hover: #85b744;
+  --borderColor-input-focus: var(--borderColor-input-hover);
+  --borderColor-input-checked: var(--borderColor-input-hover);
+  --borderColor-input-disabled: hsl(210, 10%, 20%);
+  --borderColor-input-error: var(--borderColor-error);
 
-    --borderColor-buttonPrimary: transparent;
-    --borderColor-buttonPrimary-hover: transparent;
-    --borderColor-buttonPrimary-focus: transparent;
-    --borderColor-buttonPrimary-disabled: transparent;
-    --borderColor-buttonPrimary-success: transparent;
-    --borderColor-buttonPrimary-error: transparent;
+  --borderColor-buttonPrimary: transparent;
+  --borderColor-buttonPrimary-hover: transparent;
+  --borderColor-buttonPrimary-focus: transparent;
+  --borderColor-buttonPrimary-disabled: transparent;
+  --borderColor-buttonPrimary-success: transparent;
+  --borderColor-buttonPrimary-error: transparent;
 
-    --borderColor-buttonSecondary: transparent;
-    --borderColor-buttonSecondary-hover: transparent;
-    --borderColor-buttonSecondary-focus: transparent;
-    --borderColor-buttonSecondary-disabled: transparent;
-    --borderColor-buttonSecondary-success: transparent;
-    --borderColor-buttonSecondary-error: transparent;
+  --borderColor-buttonSecondary: transparent;
+  --borderColor-buttonSecondary-hover: transparent;
+  --borderColor-buttonSecondary-focus: transparent;
+  --borderColor-buttonSecondary-disabled: transparent;
+  --borderColor-buttonSecondary-success: transparent;
+  --borderColor-buttonSecondary-error: transparent;
 
-    --borderColor-badge: transparent;
-    --borderColor-badge-active: transparent;
-    --borderColor-badge-disabled: transparent;
+  --borderColor-badge: transparent;
+  --borderColor-badge-active: transparent;
+  --borderColor-badge-disabled: transparent;
 
-    /* -----------------
+  /* -----------------
         Background colors
     ----------------- */
-    --bgColor-default: #1c2127;
-    --bgColor-alt: #21272e;
-    --bgColor-success: hsl(144, 70%, 15%);
-    --bgColor-error: hsl(6, 50%, 15%);
-    --bgColor-info: #25272b;
+  --bgColor-default: #1c2127;
+  --bgColor-alt: #21272e;
+  --bgColor-success: hsl(144, 70%, 15%);
+  --bgColor-error: hsl(6, 50%, 15%);
+  --bgColor-info: #25272b;
 
-    --bgColor-modal: hsl(210, 10%, 7%);
-    --bgColor-modalVeil: hsla(210, 10%, 7%, .75);
+  --bgColor-modal: hsl(210, 10%, 7%);
+  --bgColor-modalVeil: hsla(210, 10%, 7%, 0.75);
 
-    --bgColor-link: none;
-    --bgColor-link-hover: none;
-    --bgColor-link-active: none;
-    --bgColor-link-focus: hsl(210, 55%, 10%);
+  --bgColor-link: none;
+  --bgColor-link-hover: none;
+  --bgColor-link-active: none;
+  --bgColor-link-focus: hsl(210, 55%, 10%);
 
-    --bgColor-input: hsl(210, 10%, 10%);
-    --bgColor-input-hover: var(--bgColor-input);
-    --bgColor-input-focus: var(--bgColor-input);
-    --bgColor-input-checked: var(--borderColor-input-hover);
-    --bgColor-input-disabled: hsl(210, 10%, 14%);
-    --bgColor-input-error: var(--bgColor-input);
-    --bgColor-input-autofill: hsl(210, 60%, 15%);
+  --bgColor-input: hsl(210, 10%, 10%);
+  --bgColor-input-hover: var(--bgColor-input);
+  --bgColor-input-focus: var(--bgColor-input);
+  --bgColor-input-checked: var(--borderColor-input-hover);
+  --bgColor-input-disabled: hsl(210, 10%, 14%);
+  --bgColor-input-error: var(--bgColor-input);
+  --bgColor-input-autofill: hsl(210, 60%, 15%);
 
-    --bgColor-buttonPrimary: #85b744;
-    --bgColor-buttonPrimary-hover: #abe116;
-    --bgColor-buttonPrimary-active: var(--bgColor-buttonPrimary);
-    --bgColor-buttonPrimary-focus: var(--bgColor-buttonPrimary);
-    --bgColor-buttonPrimary-disabled: hsl(210, 10%, 25%);
-    --bgColor-buttonPrimary-success: hsl(144, 66%, 30%);
-    --bgColor-buttonPrimary-error: hsl(6, 60%, 35%);
+  --bgColor-buttonPrimary: #85b744;
+  --bgColor-buttonPrimary-hover: #abe116;
+  --bgColor-buttonPrimary-active: var(--bgColor-buttonPrimary);
+  --bgColor-buttonPrimary-focus: var(--bgColor-buttonPrimary);
+  --bgColor-buttonPrimary-disabled: hsl(210, 10%, 25%);
+  --bgColor-buttonPrimary-success: hsl(144, 66%, 30%);
+  --bgColor-buttonPrimary-error: hsl(6, 60%, 35%);
 
-    --bgColor-buttonSecondary: var(--bgColor-info);
-    --bgColor-buttonSecondary-hover: #2b2d32;
-    --bgColor-buttonSecondary-active: var(--bgColor-buttonSecondary);
-    --bgColor-buttonSecondary-focus: var(--bgColor-buttonSecondary);
-    --bgColor-buttonSecondary-disabled: hsl(210, 10%, 9%);
-    --bgColor-buttonSecondary-success: var(--bgColor-success);
-    --bgColor-buttonSecondary-error: var(--bgColor-error);
+  --bgColor-buttonSecondary: var(--bgColor-info);
+  --bgColor-buttonSecondary-hover: #2b2d32;
+  --bgColor-buttonSecondary-active: var(--bgColor-buttonSecondary);
+  --bgColor-buttonSecondary-focus: var(--bgColor-buttonSecondary);
+  --bgColor-buttonSecondary-disabled: hsl(210, 10%, 9%);
+  --bgColor-buttonSecondary-success: var(--bgColor-success);
+  --bgColor-buttonSecondary-error: var(--bgColor-error);
 
-    --bgColor-buttonDanger: var(--bgColor-error);
-    --bgColor-buttonDanger-hover: hsl(6, 50%, 18%);
-    --bgColor-buttonDanger-active: var(--bgColor-buttonDanger);
-    --bgColor-buttonDanger-focus: var(--bgColor-buttonDanger);
-    --bgColor-buttonDanger-disabled: hsl(210, 10%, 9%);
-    --bgColor-buttonDanger-success: hsl(144, 66%, 30%);
-    --bgColor-buttonDanger-error: hsl(6, 60%, 35%);
+  --bgColor-buttonDanger: var(--bgColor-error);
+  --bgColor-buttonDanger-hover: hsl(6, 50%, 18%);
+  --bgColor-buttonDanger-active: var(--bgColor-buttonDanger);
+  --bgColor-buttonDanger-focus: var(--bgColor-buttonDanger);
+  --bgColor-buttonDanger-disabled: hsl(210, 10%, 9%);
+  --bgColor-buttonDanger-success: hsl(144, 66%, 30%);
+  --bgColor-buttonDanger-error: hsl(6, 60%, 35%);
 
-    --bgColor-badge: hsl(210, 55%, 10%);
-    --bgColor-badge-active: #85b744;
-    --bgColor-badge-disabled: hsl(210, 10%, 11%);
+  --bgColor-badge: hsl(210, 55%, 10%);
+  --bgColor-badge-active: #85b744;
+  --bgColor-badge-disabled: hsl(210, 10%, 11%);
 
-    /* -----------------
+  /* -----------------
         Shadows
     ----------------- */
 
-    --shadow-default: 0px 20px 24px -20px hsla(0, 0%, 0%, .5);
-    --shadow-tooltip: 0px 8px 16px hsla(220, 70%, 22%, .5);
+  --shadow-default: 0px 20px 24px -20px hsla(0, 0%, 0%, 0.5);
+  --shadow-tooltip: 0px 8px 16px hsla(220, 70%, 22%, 0.5);
 
-    --shadow-link-focus: 0px 6px 4px -3px hsla(200, 90%, 40%, .5);
+  --shadow-link-focus: 0px 6px 4px -3px hsla(200, 90%, 40%, 0.5);
 
-    --shadow-input-hover: none;
-    --shadow-input-focus: 0px 5px 10px -3px hsla(200, 90%, 40%, .3);
-    --shadow-input-checked: none;
+  --shadow-input-hover: none;
+  --shadow-input-focus: 0px 5px 10px -3px hsla(200, 90%, 40%, 0.3);
+  --shadow-input-checked: none;
 
-    --shadow-buttonPrimary-hover: 0px 10px 4px -8px hsla(0, 0%, 0%, .5);
-    --shadow-buttonPrimary-active: none;
-    --shadow-buttonPrimary-focus: 0px 0px 6px 2px hsl(200, 90%, 40%);
+  --shadow-buttonPrimary-hover: 0px 10px 4px -8px hsla(0, 0%, 0%, 0.5);
+  --shadow-buttonPrimary-active: none;
+  --shadow-buttonPrimary-focus: 0px 0px 6px 2px hsl(200, 90%, 40%);
 
-    --shadow-buttonSecondary-hover: 0px 10px 4px -8px hsla(0, 0%, 0%, .2);
-    --shadow-buttonSecondary-active: none;
-    --shadow-buttonSecondary-focus: 0px 0px 6px 2px hsla(200, 90%, 40%, .8);
+  --shadow-buttonSecondary-hover: 0px 10px 4px -8px hsla(0, 0%, 0%, 0.2);
+  --shadow-buttonSecondary-active: none;
+  --shadow-buttonSecondary-focus: 0px 0px 6px 2px hsla(200, 90%, 40%, 0.8);
 
-    --shadow-buttonDanger-hover: 0px 10px 4px -8px hsla(0, 0%, 0%, .25);
-    --shadow-buttonDanger-active: none;
-    --shadow-buttonDanger-focus: 0px 0px 6px 2px hsla(6, 55%, 60%);
+  --shadow-buttonDanger-hover: 0px 10px 4px -8px hsla(0, 0%, 0%, 0.25);
+  --shadow-buttonDanger-active: none;
+  --shadow-buttonDanger-focus: 0px 0px 6px 2px hsla(6, 55%, 60%);
 }
