@@ -48,10 +48,11 @@
   partner_image: /images/partners/EMITPartner-Silveus.jpg
   partnerID: 6
   description: >-
-    A short description of this partner. The reason we're giving them a
-    description of the partner is becuase we don't really want people clicking
-    away from our site. We want to keep them here as long as possible. We do
-    provide a link to the partner but it's not the first action.
+    Silveus Insurance Group is a leading provider of agricultural risk
+    management and crop insurance services in the United States. Established in
+    1940 and based in Warsaw, Indiana, the company has built a reputation for
+    its deep expertise and innovative solutions tailored to the needs of farmers
+    and agribusinesses.
 - name: WordAndLife
   websiteUrl: https://woordenlewe.com/
   partner_image: /images/partners/EMITPartner-WordAndLife.jpg
