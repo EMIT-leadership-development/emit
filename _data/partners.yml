@@ -56,11 +56,13 @@
   websiteUrl: https://woordenlewe.com/
   partner_image: /images/partners/EMITPartner-WordAndLife.jpg
   partnerID: 7
-  description: >-
-    A short description of this partner. The reason we're giving them a
-    description of the partner is becuase we don't really want people clicking
-    away from our site. We want to keep them here as long as possible. We do
-    provide a link to the partner but it's not the first action.
+  description: >+
+    Woord en Lewe Church, located in Boksburg, Gauteng, is a vibrant, Spirit-led
+    community dedicated to glorifying Jesus Christ and empowering individuals to
+    live out their God-given destinies. Under the leadership of Pastor Renaldo
+    Barnard, the church is committed to creating an atmosphere where people can
+    encounter God, experience His love, and grow in their relationship with Him.
+
 - name: Re-Forma
   websiteUrl: https://www.re-forma.global/
   partner_image: /images/partners/EMITPartner-reForma.jpg
