@@ -90,3 +90,12 @@
     confidence in charitable giving. Charity Navigator’s mission is to guide
     intelligent giving by evaluating the financial health, accountability, and
     transparency of thousands of charities.
+- name: YouVersion
+  websiteUrl: https://www.bible.com/organizations/6306e0a8-635a-4990-a97e-310777a1f762
+  partner_image: /images/partners/youversion.jpg
+  partnerID: 1
+  description: >-
+    YouVersion is a globally recognized organization dedicated to helping people
+    engage with the Bible. Launched in 2008 by Life.Church, YouVersion offers
+    the Bible App, a free mobile application that provides access to a vast
+    library of Bible translations and reading plans in multiple languages.
