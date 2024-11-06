@@ -50,7 +50,7 @@
   phone: +00 000 0000
   address: 10 Street, Suburb, City, 1234
   postal: PO BOX 123, SUBURB, COUNTRY, 1234
-  latitude: '-3.361260'
+  latitude: "-3.361260"
   longitude: 29.347916
 - name: Project Leader, Angola
   country: Angola
@@ -70,7 +70,7 @@
   postal: PO BOX 123, SUBURB, COUNTRY, 1234
   latitude: -25.953724
   longitude: 32.588711
-- name: Country Coordinator and Woman Project Director, Zambia
+- name: Project Leader Zambia, Global Director WLI
   country: Zambia
   team-member: Mervis Malambo
   email: admin@emit.global
@@ -126,7 +126,7 @@
   longitude: 47.53613
 - name: Project Leader, Malawi
   country: South Africa
-  team-member: Theo Faber
+  team-member: Elvis Joseph
   email: admin@emit.global
   phone: +00 000 0000
   address: 10 Street, Suburb, City, 1234

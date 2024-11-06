@@ -7,215 +7,264 @@ hero_image: /images/handWorld.webp
 contact_form_email: admin@emit.global
 description:
 ---
+
 <!-- ADDRESS SA -->
 <section class="item--full white contactRow">
-	<div class="container addressRow">
-		<div data-cms-editor-link="cloudcannon:collections/_data/contacts.yml" class="address contactBlock cms-editor-link">
-			<span class="icon"><i data-feather="map"></i></span>
-			{% assign address = site.data.contacts[0] %}
-			<div class="addresses">
-				<h5>{{ address.name }}</h5>
-				<p>{{ address.postal }}</p>
-			</div>
-		</div>
-		<div data-cms-editor-link="cloudcannon:collections/_data/contacts.yml" class="address contactBlock cms-editor-link">
-			<span class="icon"><i data-feather="map-pin"></i></span>
-			<div class="addresses">
-				<h5>SPRINGS</h5>
-				<p>{{ address.address }}</p>
-			</div>
-		</div>
-		<div data-cms-editor-link="cloudcannon:collections/_data/contacts.yml" class="email contactBlock cms-editor-link">
-			<span class="icon"><i data-feather="mail"></i></span>
-			<div class="addresses">
-				<h5>EMAIL</h5>
-				<p>{{ address.email }}</p>
-			</div>
-		</div>
-		<div data-cms-editor-link="cloudcannon:collections/_data/contacts.yml" class="phone contactBlock cms-editor-link">
-			<span class="icon"><i data-feather="smartphone"></i></span>
-			<div class="addresses">
-				<h5>PHONE</h5>
-				<p>{{ address.phone }}</p>
-			</div>
-		</div>
-	</div>
+  <div class="container addressRow">
+    <div
+      data-cms-editor-link="cloudcannon:collections/_data/contacts.yml"
+      class="address contactBlock cms-editor-link"
+    >
+      <span class="icon"><i data-feather="map"></i></span>
+      {% assign address = site.data.contacts[0] %}
+      <div class="addresses">
+        <h5>{{ address.name }}</h5>
+        <p>{{ address.postal }}</p>
+      </div>
+    </div>
+    <div
+      data-cms-editor-link="cloudcannon:collections/_data/contacts.yml"
+      class="address contactBlock cms-editor-link"
+    >
+      <span class="icon"><i data-feather="map-pin"></i></span>
+      <div class="addresses">
+        <h5>SPRINGS</h5>
+        <p>{{ address.address }}</p>
+      </div>
+    </div>
+    <div
+      data-cms-editor-link="cloudcannon:collections/_data/contacts.yml"
+      class="email contactBlock cms-editor-link"
+    >
+      <span class="icon"><i data-feather="mail"></i></span>
+      <div class="addresses">
+        <h5>EMAIL</h5>
+        <p>{{ address.email }}</p>
+      </div>
+    </div>
+    <div
+      data-cms-editor-link="cloudcannon:collections/_data/contacts.yml"
+      class="phone contactBlock cms-editor-link"
+    >
+      <span class="icon"><i data-feather="smartphone"></i></span>
+      <div class="addresses">
+        <h5>PHONE</h5>
+        <p>{{ address.phone }}</p>
+      </div>
+    </div>
+  </div>
 </section>
 <!-- ADDRESS USA -->
 <section class="item--full contactRow">
-	<div class="container addressRow">
-		<div data-cms-editor-link="cloudcannon:collections/_data/contacts.yml" class="address contactBlock cms-editor-link">
-			<span class="icon"><i data-feather="map"></i></span>
-			{% assign address = site.data.contacts[1] %}
-			<div class="addresses">
-				<h5>{{ address.name }}</h5>
-				<p>{{ address.postal }}</p>
-			</div>
-		</div>
-		<div data-cms-editor-link="cloudcannon:collections/_data/contacts.yml" class="address contactBlock cms-editor-link">
-			<span class="icon"><i data-feather="map-pin"></i></span>
-			{% assign address = site.data.contacts[1] %}
-			<div class="addresses">
-				<h5>COLORADO</h5>
-				<p>{{ address.address }}</p>
-			</div>
-		</div>
-		<div data-cms-editor-link="cloudcannon:collections/_data/contacts.yml" class="email contactBlock cms-editor-link">
-			<span class="icon"><i data-feather="mail"></i></span>
-			<div class="addresses">
-				<h5>EMAIL</h5>
-				<p>{{ address.email }}</p>
-			</div>
-		</div>
-		<div data-cms-editor-link="cloudcannon:collections/_data/contacts.yml" class="phone contactBlock cms-editor-link">
-			<span class="icon"><i data-feather="smartphone"></i></span>
-			<div class="addresses">
-				<h5>PHONE</h5>
-				<p>{{ address.phone }}</p>
-			</div>
-		</div>
-	</div>
+  <div class="container addressRow">
+    <div
+      data-cms-editor-link="cloudcannon:collections/_data/contacts.yml"
+      class="address contactBlock cms-editor-link"
+    >
+      <span class="icon"><i data-feather="map"></i></span>
+      {% assign address = site.data.contacts[1] %}
+      <div class="addresses">
+        <h5>{{ address.name }}</h5>
+        <p>{{ address.postal }}</p>
+      </div>
+    </div>
+    <div
+      data-cms-editor-link="cloudcannon:collections/_data/contacts.yml"
+      class="address contactBlock cms-editor-link"
+    >
+      <span class="icon"><i data-feather="map-pin"></i></span>
+      {% assign address = site.data.contacts[1] %}
+      <div class="addresses">
+        <h5>COLORADO</h5>
+        <p>{{ address.address }}</p>
+      </div>
+    </div>
+    <div
+      data-cms-editor-link="cloudcannon:collections/_data/contacts.yml"
+      class="email contactBlock cms-editor-link"
+    >
+      <span class="icon"><i data-feather="mail"></i></span>
+      <div class="addresses">
+        <h5>EMAIL</h5>
+        <p>{{ address.email }}</p>
+      </div>
+    </div>
+    <div
+      data-cms-editor-link="cloudcannon:collections/_data/contacts.yml"
+      class="phone contactBlock cms-editor-link"
+    >
+      <span class="icon"><i data-feather="smartphone"></i></span>
+      <div class="addresses">
+        <h5>PHONE</h5>
+        <p>{{ address.phone }}</p>
+      </div>
+    </div>
+  </div>
 </section>
 <!-- MAO AND CONTACT FORM -->
 <section class="contactForm map item--full contrastLight2">
-	<div class="leftToCenter googleMapWrap">
-		<div id="map-canvas" class="max-content" style="width:100%; height:100%"></div>
-	</div>
-	<div id="contactFormWrapper" class="containedRight sectionContent">
-		<h3>Send us a message</h3>
-			<form id="contact-form" class="materialForm" action="{{ site.baseurl }}/contact-success" method="post">
-				<div class="form-group">
-					<input name="name" type="text" required="required"/>
-					<label for="name" class="control-label">Name</label><i class="bar"></i>
-				</div>
-				<div class="form-group">
-					<input name="_replyto" type="email" required="required"/>
-					<label for="_replyto" class="control-label">Email</label><i class="bar"></i>
-				</div>
-				<div class="form-group">
-					<textarea name="message" required="required"></textarea>
-					<label for="message" class="control-label">Your Message</label><i class="bar"></i>
-				</div>
-				<input type="hidden" name="_to" value="{{ page.contact_form_email }}">
-				<input type="text" name="_gotcha" style="display: none;">
-				<input class="button" type="submit" value="Send Message">
-			</form>
-	</div>
+  <div class="leftToCenter googleMapWrap">
+    <div
+      id="map-canvas"
+      class="max-content"
+      style="width: 100%; height: 100%"
+    ></div>
+  </div>
+  <div id="contactFormWrapper" class="containedRight sectionContent">
+    <h3>Send us a message</h3>
+    <form
+      id="contact-form"
+      class="materialForm"
+      action="{{ site.baseurl }}/contact-success"
+      method="post"
+    >
+      <div class="form-group">
+        <input name="name" type="text" required="required" />
+        <label for="name" class="control-label">Name</label><i class="bar"></i>
+      </div>
+      <div class="form-group">
+        <input name="_replyto" type="email" required="required" />
+        <label for="_replyto" class="control-label">Email</label
+        ><i class="bar"></i>
+      </div>
+      <div class="form-group">
+        <textarea name="message" required="required"></textarea>
+        <label for="message" class="control-label">Your Message</label
+        ><i class="bar"></i>
+      </div>
+      <input type="hidden" name="_to" value="{{ page.contact_form_email }}" />
+      <input type="text" name="_gotcha" style="display: none" />
+      <input class="button" type="submit" value="Send Message" />
+    </form>
+  </div>
 </section>
 <!-- REGIONAL OFFICES -->
 <section class="item--full white contactRow">
-	<div class="container addressRow">
-		{% for item in site.data.contacts offset: 2 %}
-		<div data-cms-editor-link="cloudcannon:collections/_data/contacts.yml"  class="cms-editor-link address contactBlock">
-			<span class="icon"><i data-feather="flag"></i></span>
-			<div class="addresses">
-				<h5>{{ item.name }}</h5>
-				<p>{{ item.team-member }}</p>
-				<p>{{ item.country }}</p>
-				<p>{{ item.email }}</p>
-			</div>
-		</div>
-		{% endfor %}
-	</div>
+  <div class="container addressRow">
+    {% for item in site.data.contacts offset: 2 %}
+    <div
+      data-cms-editor-link="cloudcannon:collections/_data/contacts.yml"
+      class="cms-editor-link address contactBlock"
+    >
+      <span class="icon"><i data-feather="flag"></i></span>
+      <div class="addresses">
+        <h5>{{ item.name }}</h5>
+        <p>{{ item.team-member }}</p>
+        <p>{{ item.country }}</p>
+        <p>
+          <a
+            href="mailto:admin@emit.global?subject={{ item.country }} Enquiry from EMIT wesbite."
+          >
+            {{ item.email }}
+          </a>
+        </p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
 </section>
 
 <!-- FULL WIDTH CALL TO ACTION BUTTON - OPEN CC SUBSCRIBE FORM-->
 <section class="ctaFeatured item--full dark">
-	<div class="container no-padding">
-		<a id="openSubscribe" href="#subscribe" class="callToAction editable">
-			Subscribe to our newsletter
-		</a>
-	</div>
+  <div class="container no-padding">
+    <a id="openSubscribe" href="#subscribe" class="callToAction editable">
+      Subscribe to our newsletter
+    </a>
+  </div>
 </section>
-
-
 
 <script src="https://maps.googleapis.com/maps/api/js?key={{ site.google_maps_javascript_api_key }}"></script>
 <script>
-	{% assign locations = site.data.contacts %}
-	var emitIcon = {
-		url: "{{ site.baseurl }}/images/interface/mapMarker.svg",
-		size: new google.maps.Size(30, 30),
-		scaledSize: new google.maps.Size(30, 30)
-	}
-	function initializeMap() {
-		var bounds = new google.maps.LatLngBounds(),
-		mapOptions = {
-			scrollwheel: false,
-			draggable: true,
-			panControl: false,
-			disableDefaultUI: true,
-			rotateControl: true,
-			tilt: 45,
-			mapTypeId: "satellite",
-		};
-		var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
-		map.setTilt(45);
-		var infowindow = new google.maps.InfoWindow();
-		// Start loop through stories / create markers
-		{% for location in locations %}
-			var position = new google.maps.LatLng({{location.latitude}}, {{location.longitude}});
-			{% assign teamMember = site.data.team-members | where:"name", location.team-member | first  %}
-			bounds.extend(position);
-			var marker = new google.maps.Marker({
-				icon: emitIcon,
-				position: position,
-				map: map,
-				title: "{{location.title}}",
-				optimized: false
-			});
-			google.maps.event.addListener(marker, 'click', (function(marker) {
-				return function() {
-					infowindow.setContent("<div class='infoWrap'><div class='locationInfo'><h4>{{location.name}}</h4><p>Contact Person: {{location.team-member}} in {{location.country}}<br>{{location.email}}</p></div><div class='locationImage' style='background-image:url({{teamMember.profile_image}});'><a href='mailto:{{location.email}}'><div class='mapsphere2'><div class='mapsphere1'><svg width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-mail'><path d='M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z'></path><polyline points='22,6 12,13 2,6'></polyline></svg></div></div></a></div></div>");
-					infowindow.open(map, marker);
-				}
-			})(marker));
-			map.fitBounds(bounds);
-		{% endfor %}
-		// End loop through stories / create markers
-		var boundsListener = google.maps.event.addListener((map), 'bounds_changed', function(event) {
-			this.setZoom(2);
-			google.maps.event.removeListener(boundsListener);
-		});
-		var myoverlay = new google.maps.OverlayView();
-		myoverlay.draw = function () {
-			this.getPanes().markerLayer.id='markerLayer';
-		};
-		myoverlay.setMap(map);
-	}
-	google.maps.event.addDomListener(window, 'load', initializeMap);
+  {% assign locations = site.data.contacts %}
+  var emitIcon = {
+  	url: "{{ site.baseurl }}/images/interface/mapMarker.svg",
+  	size: new google.maps.Size(30, 30),
+  	scaledSize: new google.maps.Size(30, 30)
+  }
+  function initializeMap() {
+  	var bounds = new google.maps.LatLngBounds(),
+  	mapOptions = {
+  		scrollwheel: false,
+  		draggable: true,
+  		panControl: false,
+  		disableDefaultUI: true,
+  		rotateControl: true,
+  		tilt: 45,
+  		mapTypeId: "satellite",
+  	};
+  	var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+  	map.setTilt(45);
+  	var infowindow = new google.maps.InfoWindow();
+  	// Start loop through stories / create markers
+  	{% for location in locations %}
+  		var position = new google.maps.LatLng({{location.latitude}}, {{location.longitude}});
+  		{% assign teamMember = site.data.team-members | where:"name", location.team-member | first  %}
+  		bounds.extend(position);
+  		var marker = new google.maps.Marker({
+  			icon: emitIcon,
+  			position: position,
+  			map: map,
+  			title: "{{location.title}}",
+  			optimized: false
+  		});
+  		google.maps.event.addListener(marker, 'click', (function(marker) {
+  			return function() {
+  				infowindow.setContent("<div class='infoWrap'><div class='locationInfo'><h4>{{location.name}}</h4><p>Contact Person: {{location.team-member}} in {{location.country}}<br>{{location.email}}</p></div><div class='locationImage' style='background-image:url({{teamMember.profile_image}});'><a href='mailto:{{location.email}}'><div class='mapsphere2'><div class='mapsphere1'><svg width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-mail'><path d='M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z'></path><polyline points='22,6 12,13 2,6'></polyline></svg></div></div></a></div></div>");
+  				infowindow.open(map, marker);
+  			}
+  		})(marker));
+  		map.fitBounds(bounds);
+  	{% endfor %}
+  	// End loop through stories / create markers
+  	var boundsListener = google.maps.event.addListener((map), 'bounds_changed', function(event) {
+  		this.setZoom(2);
+  		google.maps.event.removeListener(boundsListener);
+  	});
+  	var myoverlay = new google.maps.OverlayView();
+  	myoverlay.draw = function () {
+  		this.getPanes().markerLayer.id='markerLayer';
+  	};
+  	myoverlay.setMap(map);
+  }
+  google.maps.event.addDomListener(window, 'load', initializeMap);
 </script>
 
 <script>
-	// Cloudcannon forms
-	function getFormDataString(formEl) {
-	var formData = new FormData(formEl),
-		data = [];
-	for (var keyValue of formData) {
-		data.push(encodeURIComponent(keyValue[0]) + "=" + encodeURIComponent(keyValue[1]));
-	}
-	return data.join("&");
-	}
-	var formEl = document.getElementById("contact-form");
-	var formWrapper = document.getElementById("contactFormWrapper");
-	formEl.addEventListener("submit", function (e) {
-	e.preventDefault();
-	// if (grecaptcha) {
-	// 	var recaptchaResponse = grecaptcha.getResponse();
-	// 	if (!recaptchaResponse) { // reCAPTCHA not clicked yet
-	// 	return false;
-	// 	}
-	// }
-	var request = new XMLHttpRequest();
-	request.addEventListener("load", function () {
-		console.log(request.status);
-		if (request.status === 200) {
-		console.log("success");
-		formWrapper.innerHTML = "<h3>Message Sent!</h3><p>Thanks for making contact - your message has been sent.  We'll be in touch soon.</p>";
-		}
-	});
-	request.open(formEl.method, formEl.action);
-	request.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-	request.send(getFormDataString(formEl));
-	});
+  // Cloudcannon forms
+  function getFormDataString(formEl) {
+    var formData = new FormData(formEl),
+      data = [];
+    for (var keyValue of formData) {
+      data.push(
+        encodeURIComponent(keyValue[0]) + "=" + encodeURIComponent(keyValue[1])
+      );
+    }
+    return data.join("&");
+  }
+  var formEl = document.getElementById("contact-form");
+  var formWrapper = document.getElementById("contactFormWrapper");
+  formEl.addEventListener("submit", function (e) {
+    e.preventDefault();
+    // if (grecaptcha) {
+    // 	var recaptchaResponse = grecaptcha.getResponse();
+    // 	if (!recaptchaResponse) { // reCAPTCHA not clicked yet
+    // 	return false;
+    // 	}
+    // }
+    var request = new XMLHttpRequest();
+    request.addEventListener("load", function () {
+      console.log(request.status);
+      if (request.status === 200) {
+        console.log("success");
+        formWrapper.innerHTML =
+          "<h3>Message Sent!</h3><p>Thanks for making contact - your message has been sent.  We'll be in touch soon.</p>";
+      }
+    });
+    request.open(formEl.method, formEl.action);
+    request.setRequestHeader(
+      "Content-Type",
+      "application/x-www-form-urlencoded"
+    );
+    request.send(getFormDataString(formEl));
+  });
 </script>
