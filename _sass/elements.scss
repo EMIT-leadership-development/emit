@@ -605,6 +605,34 @@ section.curriculum {
     }
   }
 }
+
+// SUGGESTED PROGRAMS SECTION (used only at the end of a program page)
+.suggestedPrograms {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+  .suggestedProgram {
+    padding: 1rem;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: unset;
+    gap: 0.5rem;
+    border: 2px solid transparent;
+    &:hover {
+      text-decoration: none;
+      border: 2px solid $brand-color;
+    }
+    h4 {
+      margin-bottom: 0.5rem;
+    }
+    p {
+      margin: 0;
+    }
+  }
+}
+
 // Team Lists
 .teamList {
   margin-bottom: 0;

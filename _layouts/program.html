@@ -190,4 +190,29 @@ layout: default
     </ol>
   </div>
 </section>
+
+<section class="item--full">
+  <div class="container">
+    <h3 class="sectionTitle priority2">Check out our Other Programs</h3>
+
+    <div class="suggestedPrograms">
+      {% for program in site.programs %} {% if program.status == "current" %}
+      <!-- if this is not the current program -->
+      {% if program.title != page.title %}
+      <a href="{{site.baseurl}}{{program.url}}" class="suggestedProgram">
+        <div class="imageWrap">
+          <img src="{{site.baseurl}}{{program.bookCover_image}}" alt="" />
+        </div>
+        <div class="contentWrap">
+          <h4>{{program.title}}</h4>
+          <p>
+            {{program.description_markdown | markdownify | strip_html |
+            truncatewords: 20 }}
+          </p>
+        </div>
+      </a>
+      {% endif %} {% endif %} {% endfor %}
+    </div>
+  </div>
+</section>
 {% endif %}
