@@ -8,13 +8,13 @@ hero_image: /images/EMIT-leadership-Youth-program.webp
 bookCover_image: /images/programs/YouthTrainingBook.webp
 curriculumSprite_image: /images/sprites/sprite-Set2.webp
 id: 3
-objective_markdown: ''
+objective_markdown: ""
 motivation: >-
   Presently the vast majority of Africa’s population is younger than 25 years
   old. We aim to equip youth leaders while they are in school, enabling them to
   develop their leadership skills as they mature. This will ensure a next
   generation of effective leaders.
-status: developing
+status: current
 entrance: >-
   Applicants should be acknowledged as leaders within their schools and ideally
   hold positions within student leadership.
@@ -65,7 +65,7 @@ description_markdown: >-
   encourages active participation and collaboration among the leaders, enhancing
   their overall learning experience.
 curricula:
-  - title: 'Leading Yourself '
+  - title: "Leading Yourself "
     objective: >-
       In this module, you will learn about yourself and what makes you unique.
       You will explore personality traits and your self-esteem. You will also
