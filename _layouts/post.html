@@ -2,85 +2,114 @@
 layout: default
 ---
 
-{% if page.category == "Transformation Stories" %}
-	{% assign authorName = page.leaderName %}
-	{% assign authorProfileImage = page.leader_image %}
-	{% assign authorbio = page.leaderBio_html %}
-{% else %}
-	{% assign author = site.data.team-members | where:"name", page.team-member  | first %}
-	{% assign authorName = author.name %}
-	{% assign authorProfileImage = author.profile_image %}
-	{% assign authorbio = author.bio_html %}
-{% endif %}
+{% if page.category == "Transformation Stories" %} {% assign authorName =
+page.leaderName %} {% assign authorProfileImage = page.leader_image %} {% assign
+authorbio = page.leaderBio_html %} {% else %} {% assign author =
+site.data.team-members | where:"name", page.team-member | first %} {% assign
+authorName = author.name %} {% assign authorProfileImage = author.profile_image
+%} {% assign authorbio = author.bio_html %} {% endif %}
 
 <!-- Section -->
 <!-- The container below is the white paper -->
 <section class="singlePost item--full">
-	<div class="postWrap">
-		<div class="sidebar">
-			<!-- Header for the page -->
-			<header class="postHeader">
-				<!-- Author Pic at top of sidebar -->
-				<div class="authorImageWrap">
-					<div class="authorImage">
-						<div class="sphere sphere3">
-							<div class="sphere sphere2">
-								<div class="sphere sphere1">
-									<img src="{{ site.baseurl }}{{ authorProfileImage }}" alt="">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- Page title and date etc. -->
-				<div class="pageMeta">
-					<div>
-						<h3>{{ page.title }}</h3>
-						<p>{{page.subtitle}}</p>
-						<div> by {{ authorName }}</div>
-						<div>Category | {{ page.category }}</div>
-						{% if page.category != "About EMIT" %}
-						<div>Date | {{ page.date | date: "%d %b %Y" }}</div>
-						{% endif %}
-					</div>
-					<div class="bio">{{ authorbio }}</div>
-				</div>
-				<!-- EMIT's logo and contacts -->
-				<div class="brand">
-					<div class="logoWrap">{% include logo.html %}</div>
-					<p>Transforming Nations<br>by developing leaders</p>
-					<div class="companyDetails">
-						{% assign address = site.data.contacts[0] %}
-						<h5>SOUTH AFRICA</h5>
-						<ul>
-							<li>
-								<span class="icon"><i data-feather="phone"></i></span>
-								<span>{{ address.phone }}</span>
-							</li>
-							<li>
-								<span class="icon"><i data-feather="mail"></i></span>
-								<span>{{ address.email }}</span>
-							</li>
-						</ul>
-						{% assign address = site.data.contacts[1] %}
-						<h5>USA</h5>
-						<ul>
-							<li>
-								<span class="icon"><i data-feather="phone"></i></span>
-								<span>{{ address.phone }}</span>
-							</li>
-							<li>
-								<span class="icon"><i data-feather="mail"></i></span>
-								<span>{{ address.email }}</span>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</header>
-	
-		</div>
-		<div class="postContent">
-			{{ content }}
-		</div>
-	</div>
+  <div class="postWrap">
+    <div class="sidebar">
+      <!-- Header for the page -->
+      <header class="postHeader">
+        <!-- Author Pic at top of sidebar -->
+        <div class="authorImageWrap">
+          <div class="authorImage">
+            <div class="sphere sphere3">
+              <div class="sphere sphere2">
+                <div class="sphere sphere1">
+                  <img
+                    src="{{ site.baseurl }}{{ authorProfileImage }}"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Page title and date etc. -->
+        <div class="pageMeta">
+          <div>
+            <h3>{{ page.title }}</h3>
+            <p>{{page.subtitle}}</p>
+            <div>by {{ authorName }}</div>
+            <div>Category | {{ page.category }}</div>
+            {% if page.category != "About EMIT" %}
+            <div>Date | {{ page.date | date: "%d %b %Y" }}</div>
+            {% endif %}
+          </div>
+          <div class="bio">{{ authorbio }}</div>
+        </div>
+        <!-- EMIT's logo and contacts -->
+        <div class="brand">
+          <div class="logoWrap">{% include logo.html %}</div>
+          <p>Transforming Nations<br />by developing leaders</p>
+          <div class="companyDetails">
+            {% assign address = site.data.contacts[0] %}
+            <h5>SOUTH AFRICA</h5>
+            <ul>
+              <li>
+                <span class="icon"><i data-feather="phone"></i></span>
+                <span>{{ address.phone }}</span>
+              </li>
+              <li>
+                <span class="icon"><i data-feather="mail"></i></span>
+                <span>{{ address.email }}</span>
+              </li>
+            </ul>
+            {% assign address = site.data.contacts[1] %}
+            <h5>USA</h5>
+            <ul>
+              <li>
+                <span class="icon"><i data-feather="phone"></i></span>
+                <span>{{ address.phone }}</span>
+              </li>
+              <li>
+                <span class="icon"><i data-feather="mail"></i></span>
+                <span>{{ address.email }}</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+    </div>
+    <div class="postContent">
+      {{ content }}
+
+      <div class="suggestedReading">
+        <h3>Suggested Reading</h3>
+        {% assign cat = page.categories[0] %} {% assign cat_list =
+        site.categories[cat] %} {% for post in cat_list %} {% if post.url ==
+        page.url %} {% assign pOffset = forloop.index0 | minus: 1 %} {% assign
+        nOffset = pOffset | plus: 2 %} {% if forloop.first == false %} {% assign
+        next_post = cat_list[pOffset] %} {% endif %} {% if forloop.last == false
+        %} {% assign previous_post = cat_list[nOffset] %} {% endif %} {% break
+        %} {% endif %} {% endfor %} {% if previous_post %}
+        <a class="previewPost" href="{{previous_post.url}}">
+          <h4>{{previous_post.title}}</h4>
+          <p>
+            {{previous_post.content | markdownify | strip_html | truncatewords:
+            50 }}
+          </p>
+          <!-- Read more button -->
+          <div class="readMore button secondary">Read More</div>
+        </a>
+        {% endif %} {% if next_post %}
+        <a class="previewPost" href="{{next_post.url}}">
+          <h4>{{next_post.title}}</h4>
+          <p>
+            {{next_post.content | markdownify | strip_html | truncatewords: 50
+            }}
+          </p>
+          <!-- Read more button -->
+          <div class="readMore button secondary">Read More</div>
+        </a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
 </section>
