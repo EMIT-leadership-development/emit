@@ -109,6 +109,7 @@
 		<div class="subnavContainer">
 			{% for link in link.subPages %}
 				<div class="navItem">
+					<a class="mainLink" href="{{ link.link }}">
 					<div class="pic">
 						<a href="{{ link.link }}">
 							<img src="{{ link.thumb_image }}" alt="">
@@ -124,7 +125,7 @@
 					{% assign links = link.subPages %}
 					<div class="level3 tagify">
 						{% for link in links %}
-							<a href="{{link.link}}">{{link.name}}</a>
+							<a class="secondaryLink" href="{{link.link}}">{{link.name}}</a>
 						{% endfor %}
 					</div>
 					{% endif %}
@@ -147,14 +148,13 @@
 		<div class="subnavContainer">
 			{% for link in link.subPages %}
 				<div class="navItem">
+					<a class="mainLink" href="{{ link.link }}">Go to {{ link.name }}</a>
 					<div class="pic">
 						<img src="{{ link.thumb_image }}" alt="">
 					</div>
 					<div class="description">
-						<a href="{{ link.link }}">
-							<h3>{{ link.name }}</h3>
-							<p>{{ link.description }}</p>
-						</a>
+						<h3>{{ link.name }}</h3>
+						<p>{{ link.description }}</p>
 					</div>
 				</div>
 			{% endfor %}
