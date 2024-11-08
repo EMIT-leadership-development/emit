@@ -1,150 +1,218 @@
 ---
 layout: default
 ---
+
 <!-- Program Intro -->
 <section class="programIntro white item--full">
-    <div class="sectionIntro containedLeft">
-        <h2 class="sectionTitle priority2">{{ page.title }}</h2>
-        <p data-cms-editor-link="cloudcannon:collections/{{ page.relative_path }}" class="cms-editor-link introduction">{{ page.objective_markdown }}</p>
-        <!-- If current then show enquire button -->
-        <!-- If planned then show sponsor this program -->
-        {% if page.status == "current"%}
-            <div class="callToAction">
-                <a href="{{site.baseurl}}/donate" class="button editable">Sponsor a student</a>
-                <a href="{{site.baseurl}}/contact" class="button primary editable">ENQUIRE</a>
-            </div>
-        {% else %}
-            <div class="callToAction">
-                <h4 class="editable">Help us get this program to the people that need it.</h4>
-                <p class="editable">
-                	We are currently in the process of developing a new curriculum. The initial phase of development has been successfully completed, and we are now implementing pilot programs in schools throughout the continent. These pilot programs provide us with invaluable feedback that we use to make necessary adjustments and improvements. This process is quite costly, as it involves a team of researchers, field experts, educators, curriculum developers, graphic designers, and blended-learning specialists.
-                </p>
-                <p>
-                    Partner contributions will have a direct impact on the development of youth leaders in schools, who will go on to become future leaders in Africa. Investing in these young leaders is a strategic decision that will ultimately lead to significant and lasting change within the community.
-                </p>
-                <a href="{{site.baseurl}}/products/curriculumDevelopment" class="button primary editable">
-                	Sponsor this program
-                </a>
-            </div>
-        {% endif %}
+  <div class="sectionIntro containedLeft">
+    <h2 class="sectionTitle priority2">{{ page.title }}</h2>
+    <p
+      data-cms-editor-link="cloudcannon:collections/{{ page.relative_path }}"
+      class="cms-editor-link introduction"
+    >
+      {{ page.objective_markdown }}
+    </p>
+    <!-- If current then show enquire button -->
+    <!-- If planned then show sponsor this program -->
+    {% if page.status == "current"%}
+    <div class="callToAction">
+      <a href="{{site.baseurl}}/donate" class="button editable"
+        >Sponsor a student</a
+      >
+      <a href="{{site.baseurl}}/contact" class="button primary editable"
+        >ENQUIRE</a
+      >
     </div>
-    <div class="sectionContent containedRight">
-        <h3 class="sectionTitle priority3">About this program</h3>
-        <p data-cms-editor-link="cloudcannon:collections/{{ page.relative_path }}" class="cms-editor-link">{{ page.description_markdown }}</p>
+    {% else %}
+    <div class="callToAction">
+      <h4 class="editable">
+        Help us get this program to the people that need it.
+      </h4>
+      <p class="editable">
+        We are currently in the process of developing a new curriculum. The
+        initial phase of development has been successfully completed, and we are
+        now implementing pilot programs in schools throughout the continent.
+        These pilot programs provide us with invaluable feedback that we use to
+        make necessary adjustments and improvements. This process is quite
+        costly, as it involves a team of researchers, field experts, educators,
+        curriculum developers, graphic designers, and blended-learning
+        specialists.
+      </p>
+      <p>
+        Partner contributions will have a direct impact on the development of
+        youth leaders in schools, who will go on to become future leaders in
+        Africa. Investing in these young leaders is a strategic decision that
+        will ultimately lead to significant and lasting change within the
+        community.
+      </p>
+      <a
+        href="{{site.baseurl}}/products/curriculumDevelopment"
+        class="button primary editable"
+      >
+        Sponsor this program
+      </a>
     </div>
+    {% endif %}
+  </div>
+  <div class="sectionContent containedRight">
+    <h3 class="sectionTitle priority3">About this program</h3>
+    <p
+      data-cms-editor-link="cloudcannon:collections/{{ page.relative_path }}"
+      class="cms-editor-link pre-wrap"
+    >
+      {{ page.description_markdown }}
+    </p>
+  </div>
 </section>
 
 <!-- PROGRAM INFO LIST -->
 <section class="programInfoList item--full">
-    <div class="container leftToThree">
-        <img src="{{site.baseurl}}{{page.bookCover_image}}" alt="" />
-    </div>
-    <div class="container contained-LastFour">
-        <ul data-cms-editor-link="cloudcannon:collections/{{ page.relative_path }}" class="cms-editor-link infoPoints">
-            <li class="point">
-                <span class="icon"><i data-feather="log-in"></i></span>
-                <h3 class="pointTitle">Entrance Requirements</h3>
-                <p class="pointContent">{{ page.entrance }}</p>
-            </li>
-            <li class="point">
-                <span class="icon"><i data-feather="award"></i></span>
-                <h3 class="pointTitle">Certification</h3>
-                <p class="pointContent">{{ page.certification }}</p>
-            </li>
-            <li class="point">
-                <span class="icon"><i data-feather="check-circle"></i></span>
-                <h3 class="pointTitle">Assessment</h3>
-                <p class="pointContent">{{ page.assessment }}</p>
-            </li>
-            <li class="point">
-                <span class="icon"><i data-feather="smile"></i></span>
-                <h3 class="pointTitle">Graduation</h3>
-                <p class="pointContent">{{ page.graduation }}</p>
-            </li>
-            <li class="point">
-                <span class="icon"><i data-feather="calendar"></i></span>
-                <h3 class="pointTitle">Duration</h3>
-                <p class="pointContent">{{page.duration}}</p>
-            </li>
-            <li class="point">
-                <span class="icon"><i data-feather="users"></i></span>
-                <h3 class="pointTitle">Delivery</h3>
-                <p class="pointContent">{{ page.delivery }}</p>
-            </li>
-        </ul>
-    </div>
+  <div class="container leftToThree">
+    <img src="{{site.baseurl}}{{page.bookCover_image}}" alt="" />
+  </div>
+  <div class="container contained-LastFour">
+    <ul
+      data-cms-editor-link="cloudcannon:collections/{{ page.relative_path }}"
+      class="cms-editor-link infoPoints"
+    >
+      <li class="point">
+        <span class="icon"><i data-feather="log-in"></i></span>
+        <h3 class="pointTitle">Entrance Requirements</h3>
+        <p class="pointContent">{{ page.entrance }}</p>
+      </li>
+      <li class="point">
+        <span class="icon"><i data-feather="award"></i></span>
+        <h3 class="pointTitle">Certification</h3>
+        <p class="pointContent">{{ page.certification }}</p>
+      </li>
+      <li class="point">
+        <span class="icon"><i data-feather="check-circle"></i></span>
+        <h3 class="pointTitle">Assessment</h3>
+        <p class="pointContent">{{ page.assessment }}</p>
+      </li>
+      <li class="point">
+        <span class="icon"><i data-feather="smile"></i></span>
+        <h3 class="pointTitle">Graduation</h3>
+        <p class="pointContent">{{ page.graduation }}</p>
+      </li>
+      <li class="point">
+        <span class="icon"><i data-feather="calendar"></i></span>
+        <h3 class="pointTitle">Duration</h3>
+        <p class="pointContent">{{page.duration}}</p>
+      </li>
+      <li class="point">
+        <span class="icon"><i data-feather="users"></i></span>
+        <h3 class="pointTitle">Delivery</h3>
+        <p class="pointContent">{{ page.delivery }}</p>
+      </li>
+    </ul>
+  </div>
 </section>
 
 {% if page.status == "current"%}
 <!-- List of program curriculum -->
 <section class="item--full curriculum">
-    <div class="container">
-        <h2 class="sectionTitle priority2">Program <span class="emphasis">MODULES</span></h2>
-        <ol class="curriculaList">
-            {% assign distance = 5 %}
+  <div class="container">
+    <h2 class="sectionTitle priority2">
+      Program <span class="emphasis">MODULES</span>
+    </h2>
+    <ol class="curriculaList">
+      {% assign distance = 5 %} {% assign creditSort = page.curricula | sort:
+      'credits_number' | reverse %} {% for item in creditSort limit:1 %} {%
+      assign maxCredits = item.credits_number %} {% endfor %} {% assign daysSort
+      = page.curricula | sort: 'days_number' | reverse %} {% for item in
+      daysSort limit:1 %} {% assign maxDays = item.days_number %} {% endfor %}
+      {% assign projectsSort = page.curricula | sort: 'projects_number' |
+      reverse %} {% for item in projectsSort limit:1 %} {% assign maxProjects =
+      item.projects_number %} {% endfor %} {% for curricula in page.curricula %}
+      <!-- Muliply sprite-selection by distance to get the background Y position -->
+      {% assign position = distance | times: curricula.sprite_selection_number
+      %}
 
-            {% assign creditSort = page.curricula | sort: 'credits_number' | reverse %}
-            {% for item in creditSort limit:1 %}
-            {% assign maxCredits = item.credits_number %}
-            {% endfor %}
-
-            {% assign daysSort = page.curricula | sort: 'days_number' | reverse %}
-            {% for item in daysSort limit:1 %}
-            {% assign maxDays = item.days_number %}
-            {% endfor %}
-
-            {% assign projectsSort = page.curricula | sort: 'projects_number' | reverse %}
-            {% for item in projectsSort limit:1 %}
-            {% assign maxProjects = item.projects_number %}
-            {% endfor %}
-
-            {% for curricula in page.curricula %}
-            <!-- Muliply sprite-selection by distance to get the background Y position -->
-            {% assign position = distance | times: curricula.sprite_selection_number %}
-
-            <li data-cms-editor-link="cloudcannon:collections/{{ page.relative_path }}" class="curriculaCard cms-editor-link">
-                <!-- https://res.cloudinary.com/demo/image/upload/c_fill,g_face,h_200,w_200/butterfly.jpg -->
-                <div class="curiculaWrap">
-                    <!-- IMAGE -->
-                    <div class="imageWrap">
-                        <div class="curriculaImage" style="background-image:url({{curricula.image_url}})">
-                        </div>
-                    </div>
-                    <div class="curriculDescription">
-                        <!-- INTRO -->
-                        <div class="curriculaIntro">
-                            <div class="programName">{{page.title}}</div>
-                            <h3 class="curriculaTitle">{{curricula.title}}</h3>
-                            <div class="charts">
-                                {% if curricula.credits_number %}
-                                <div class="bar credits">
-                                    <span class="label">{{curricula.credits_number}} CPD Points</span>
-                                    <span style="width: {{curricula.credits_number | times: 100 | divided_by: maxCredits}}%" class="data"></span>
-                                </div>
-                                {% endif %}
-                                {% if curricula.days_number %}
-                                <div class=" bar days">
-                                    <span class="label">{{curricula.days_number}} Hours</span>
-                                    <span style="width: {{curricula.days_number | times: 100 | divided_by: maxDays}}%" class="data"></span>
-                                </div>
-                                {% endif %}
-                                {% if curricula.projects_number %}
-                                <div class=" bar projects">
-                                    <span class="label">{{curricula.projects_number}} Projects</span>
-                                    <span style="width: {{curricula.projects_number | times: 100 | divided_by: maxProjects}}%" class="data"></span>
-                                </div>
-                                {% endif %}
-                            </div>
-                        </div>
-                        <!-- CONTENT -->
-                        <div class="curriculaObjective">
-                            <h4>{{curricula.objective}}
-                        </h4></div>
-                    </div>
+      <li
+        data-cms-editor-link="cloudcannon:collections/{{ page.relative_path }}"
+        class="curriculaCard cms-editor-link"
+      >
+        <!-- https://res.cloudinary.com/demo/image/upload/c_fill,g_face,h_200,w_200/butterfly.jpg -->
+        <div class="curiculaWrap">
+          <!-- IMAGE -->
+          <div class="imageWrap">
+            <div
+              class="curriculaImage"
+              style="background-image:url({{curricula.image_url}})"
+            ></div>
+          </div>
+          <div class="curriculDescription">
+            <!-- INTRO -->
+            <div class="curriculaIntro">
+              <div class="programName">{{page.title}}</div>
+              <h3 class="curriculaTitle">{{curricula.title}}</h3>
+              <div class="charts">
+                {% if curricula.credits_number %}
+                <div class="bar credits">
+                  <span class="label"
+                    >{{curricula.credits_number}} CPD Points</span
+                  >
+                  <span
+                    style="width: {{curricula.credits_number | times: 100 | divided_by: maxCredits}}%"
+                    class="data"
+                  ></span>
                 </div>
-            </li>
-            {% endfor %}
-        </ol>
+                {% endif %} {% if curricula.days_number %}
+                <div class="bar days">
+                  <span class="label">{{curricula.days_number}} Hours</span>
+                  <span
+                    style="width: {{curricula.days_number | times: 100 | divided_by: maxDays}}%"
+                    class="data"
+                  ></span>
+                </div>
+                {% endif %} {% if curricula.projects_number %}
+                <div class="bar projects">
+                  <span class="label"
+                    >{{curricula.projects_number}} Projects</span
+                  >
+                  <span
+                    style="width: {{curricula.projects_number | times: 100 | divided_by: maxProjects}}%"
+                    class="data"
+                  ></span>
+                </div>
+                {% endif %}
+              </div>
+            </div>
+            <!-- CONTENT -->
+            <div class="curriculaObjective">
+              <h4>{{curricula.objective}}</h4>
+            </div>
+          </div>
+        </div>
+      </li>
+      {% endfor %}
+    </ol>
+  </div>
+</section>
+
+<section class="item--full">
+  <div class="container">
+    <h3 class="sectionTitle priority2">Check out our Other Programs</h3>
+
+    <div class="suggestedPrograms">
+      {% for program in site.programs %} {% if program.status == "current" %}
+      <!-- if this is not the current program -->
+      {% if program.title != page.title %}
+      <a href="{{site.baseurl}}{{program.url}}" class="suggestedProgram">
+        <div class="imageWrap">
+          <img src="{{site.baseurl}}{{program.bookCover_image}}" alt="" />
+        </div>
+        <div class="contentWrap">
+          <h4>{{program.title}}</h4>
+          <p>
+            {{program.description_markdown | markdownify | strip_html |
+            truncatewords: 20 }}
+          </p>
+        </div>
+      </a>
+      {% endif %} {% endif %} {% endfor %}
     </div>
+  </div>
 </section>
 {% endif %}

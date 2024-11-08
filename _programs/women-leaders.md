@@ -8,12 +8,6 @@ objective_markdown: >-
   Participants who completed this program will have gained invaluable skills to
   bring hope and transform the communities they serve with renewed
   responsibility.
-
-
-  &nbsp;
-
-
-  &nbsp;
 motivation: >-
   Women leaders are the lifeblood of African society. EMIT strives to empower
   them to fulfill their significant role on every level of society.

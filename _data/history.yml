@@ -13,7 +13,7 @@
     &ldquo;AFMIN.&rdquo;</p><ul><li>Executive leadership is shared by Karel and
     Chris.</li><li>AFMIN hosts training events in Malawi &amp; Zambia.</li></ul>
 - name: We set up office in the USA and grow in Africa
-  year: '1994'
+  year: "1994"
   iconName: calendar
   description_html: >-
     <ul><li>Chris de Wet and his family move to the USA to set up an office for
@@ -22,20 +22,20 @@
     others) in Malawi &amp; Zambia.</li><li>The first leadership training
     seminars are held in Arusha &amp; Dar es Salaam, Tanzania.</li></ul>
 - name: First matching grant
-  year: '1995'
+  year: "1995"
   iconName: calendar
   description_html: >-
     <ul><li>AFMIN receives the first matching grant of $20,000 from First Fruit,
     Inc. Cornerstone Trust matches it.</li></ul>
 - name: Four-Year program launched
-  year: '1998'
+  year: "1998"
   iconName: calendar
   description_html: >-
     <ul><li>Four-year Pastoral Leadership curriculum is developed and
     implemented.</li><li>Students from six countries enrol as
     students.</li></ul>
 - name: AFMIN has now trained over 200,000 pastors
-  year: '2000'
+  year: "2000"
   iconName: calendar
   description_html: >-
     <ul><li>Kobus Grobler joins AFMIN.</li><li>We launch the 3-Track Pastoral
@@ -43,7 +43,7 @@
     Leadership Diploma and for the On/10 students (those who are trained by our
     face to face students), a Pastoral Leadership Certificate.</li></ul>
 - name: We go from strength to strength
-  year: '2001'
+  year: "2001"
   iconName: calendar
   description_html: >-
     <ul><li>The AFMIN School of the Air is launched and broadcasted out of
@@ -51,26 +51,26 @@
     Madagascar, Angola, and Brazzaville (Republic of the Congo).</li><li>First
     Graduations in Zambia and Malawi.</li></ul>
 - name: The meeting of the 57
-  year: '2004'
+  year: "2004"
   iconName: calendar
   description_html: >-
     <ul><li>Fifty-seven of AFMIN&rsquo;s key-leaders from fourteen nations meet
     in Kabwe, Zambia, to discuss the strategy for &ldquo;the Next
     Level.&rdquo;</li></ul>
 - name: A new page
-  year: '2008'
+  year: "2008"
   iconName: calendar
   description_html: >-
     <ul><li>Co-Founder Karel Sanders retires.</li><li>Kobus Grobler assumes
     leadership of Central, Eastern and Southern Africa projects.</li></ul>
 - name: Record breaking 14,633 graduates
-  year: '2010'
+  year: "2010"
   iconName: calendar
   description_html: >-
     <ul><li>AFMIN graduates a record-breaking 14,633 pastors after four years of
     studies.</li><li>Steven Todd starts a new program in Liberia.</li></ul>
 - name: Global board of trustees established
-  year: '2013'
+  year: "2013"
   iconName: calendar
   description_html: >-
     <ul><li>A Global Board of Trustees is established with Larry Yonker being
@@ -78,7 +78,7 @@
     leaders from all countries is held in Rwanda.- AFMIN celebrates
     20-years!</li></ul>
 - name: AFMIN becomes EMIT
-  year: '2016'
+  year: "2016"
   iconName: calendar
   description_html: >-
     <ul><li>AFMIN is rebranded, and on the 13th of February, the Board changes
@@ -88,13 +88,13 @@
     Grobler.</li><li>EMIT launches our first Women Leadership Institute in
     Rwanda &amp; Zambia.</li></ul>
 - name: Kobus appointed CEO
-  year: '2017'
+  year: "2017"
   iconName: calendar
   description_html: >-
     <ul><li>Kobus Grobler is appointed by the Global Board to serve as Global
     CEO from 1/1/2017.</li></ul>
 - name: We rise to meet the challenge
-  year: '2019'
+  year: "2019"
   iconName: calendar
   description_html: >-
     <ul><li>The explosive growth of EMIT since 2017 brings with it new and
@@ -106,11 +106,11 @@
     African leaders rise to the challenge and raise more than 30% of the EMIT
     bottom line. &nbsp;</li></ul>
 - name: The year of COVID-19
-  year: '2020'
+  year: "2020"
   iconName: calendar
   description_html: "<ul><li>A global pandemic that halted the whole world. EMIT was not excluded from the devastating effect of COVID-19 on our operations on the continent.</li><li>All operations had to be stopped in the first half of the year.</li><li>EMIT leadership responds positively to the new challenges and develop a model that would allow EMIT to continue to serve the students in small group training events.</li><li>New materials are developed to allow facilitators to have small group training events.</li><li>The new model proves to be much more affordable than the previous model.</li><li>Reports from the field indicate that there are many benefits to the new model. Students are now served in their geographic locations (big savings for our students).&nbsp; This also leads to EMIT now adding bigger visibility in other areas of countries.&nbsp; There is bigger accountability, engagement, and participation from the students.</li><li>Although EMIT lost more than 70% of our normal income during 2020, we still managed to have 21 programs in the second half of 2020.&nbsp;</li><li>Our financial prospects changed from uncertain to stable because of the new model.</li></ul><p>\_</p>"
 - name: The next Steps
-  year: '2021'
+  year: "2021"
   iconName: calendar
   description_html: >-
     <ul><li>COVID-19 has dramatically changed the world we find ourselves
@@ -131,9 +131,14 @@
     serving our students with passion and excellence.&nbsp;&nbsp;</li></ul><p><a
     href="/the-next-steps.html">Link to Full Article</a></p>
 - name: EMIT CELEBRATES!
-  year: '2023'
+  year: "2023"
   iconName: calendar
   description_html: >-
     <ul><li>EMIT (previously known as AFMIN)&nbsp; celebrates 30 years of
     leadership development.</li><li>EMIT launches LINC. LINC is a software
     developed to administrate students and measure Impact.</li></ul>
+- name: EMIT launches Youth Leadership Programs!
+  year: "2024"
+  iconName: calendar
+  description_html: >-
+    <ul><li>Pilot programs for our new Youth Leadership program are launched in three countries!<li>This program, developed specifically for high school learners who were chosen as leaders, highlights the much-needed soft skills that Gen Z leaders need and strengthens the life skills that will prepare them for their future. </li></ul>
