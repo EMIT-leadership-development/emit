@@ -6,7 +6,7 @@ heroQuote: >-
 hero_Quote_Cite: Shabani, Tanzania
 hero_image: /images/EMIT-leadership-Youth-program.webp
 bookCover_image: /images/programs/YouthTrainingBook.webp
-curriculumSprite_image: /images/sprites/sprite-Set2.webp
+curriculumSprite_image: /images/sprites/sprite-churchLeaders.webp
 id: 3
 objective_markdown: ""
 motivation: >-
@@ -65,53 +65,39 @@ description_markdown: >-
   encourages active participation and collaboration among the leaders, enhancing
   their overall learning experience.
 curricula:
-  - title: "Leading Yourself "
+  - title: "Leading Yourself"
     objective: >-
-      In this module, you will learn about yourself and what makes you unique.
-      You will explore personality traits and your self-esteem. You will also
-      learn about the importance your choices have on your life, being
-      teachable, and why forgiveness is crucial in life. By the end of this
-      course, students will have a deeper understanding of themselves and be
-      equipped to lead from a place of self-mastery. tis mus aliquip atque
-      molestie! Justo class tempora, posuere.
-    credits_number: 5
-    days_number: 10
-    projects_number: 3
-    sprite_selection_number: 1
-  - title: Title of the curricula
-    objective: Lacus! Veritatis mus aliquip atque molestie! Justo class tempora, posuere.
-    credits_number: 5
-    days_number: 10
-    projects_number: 3
-    sprite_selection_number: 2
-  - title: Title of the curricula
-    objective: Lacus! Veritatis mus aliquip atque molestie! Justo class tempora, posuere.
-    credits_number: 5
-    days_number: 10
-    projects_number: 3
-    sprite_selection_number: 3
-  - title: Title of the curricula
-    objective: Lacus! Veritatis mus aliquip atque molestie! Justo class tempora, posuere.
-    credits_number: 5
-    days_number: 10
-    projects_number: 3
-    sprite_selection_number: 4
-  - title: Title of the curricula
-    objective: Lacus! Veritatis mus aliquip atque molestie! Justo class tempora, posuere.
-    credits_number: 5
-    days_number: 10
-    projects_number: 3
-    sprite_selection_number: 5
-  - title: Title of the curricula
-    objective: Lacus! Veritatis mus aliquip atque molestie! Justo class tempora, posuere.
-    credits_number: 5
-    days_number: 10
-    projects_number: 3
-    sprite_selection_number: 6
-  - title: Title of the curricula
-    objective: Lacus! Veritatis mus aliquip atque molestie! Justo class tempora, posuere.
-    credits_number: 5
-    days_number: 10
-    projects_number: 3
-    sprite_selection_number: 7
+      In this module, you will learn about yourself and what makes you unique. You will explore personality traits and your self-esteem. You will also learn about the importance your choices have on your life, being teachable, and why forgiveness is crucial in life. By the end of this course, students will have a deeper understanding of themselves and be equipped to lead from a place of self-mastery.
+    image_url: >-
+      /images/EMIT-leadership-Youth-program.webp
+
+  - title: "Leadership Essentials"
+    objective: >-
+      In this module, you'll delve into the essential aspects of leadership. Get ready to grasp the fundamentals, such as cultivating your character, mastering the art of good time management and planning, making a difference through your generosity, and understanding the true essence of authority. Let's embark on this exciting journey together!
+    image_url: >-
+      /images/EMIT-leadership-Youth-program.webp
+
+  - title: "Leading Others"
+    objective: >-
+      Effective communication and relationship skills are crucial for any successful leader. In this course, students will learn about the power of communication and conflict resolution. They will also learn how to adapt to social situations, build strong relationships with friends and family, and the proper use of social media.
+    image_url: >-
+      /images/EMIT-leadership-Youth-program.webp
+
+  - title: "Leadership Disciplines"
+    objective: >-
+      To achieve their goals and live with purpose, students need to develop discipline in their lives. This course will teach them how to exercise self-discipline in terms of time, priorities, and goals. They will also learn about effective study strategies, basic financial principles, and sound decision-making.
+    image_url: >-
+      /images/EMIT-leadership-Youth-program.webp
+
+  - title: "Servant Leadership"
+    objective: >-
+      In this module, we'll dive into the art of serving others rather than yourself through discovering your purpose and setting goals accordingly. Throughout this course, you'll gain valuable insights on how to influence people, take ownership of your life and decisions, and the action plans that will be most beneficial in achieving your purpose.
+    image_url: >-
+      /images/EMIT-leadership-Youth-program.webp
+
+  - title: "Creative Leadership"
+    objective: >-
+      In this module, you'll discover the art of innovative thinking. Here, we'll equip you with an agile mindset to thrive in this volatile world and implement creative initiatives. Throughout this journey, we'll explore the concept of problem-solving, delve into critical thinking, and uncover the power of endurance.
+    image_url: >-
+      /images/EMIT-leadership-Youth-program.webp
 ---
