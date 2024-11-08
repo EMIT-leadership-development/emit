@@ -8,7 +8,7 @@ hero_image: /images/EMIT-leadership-Youth-program.webp
 bookCover_image: /images/programs/YouthTrainingBook.webp
 curriculumSprite_image: /images/sprites/sprite-churchLeaders.webp
 id: 3
-objective_markdown: ""
+objective_markdown: "Participants who complete this program will be able to... "
 motivation: >-
   Presently the vast majority of Africa’s population is younger than 25 years
   old. We aim to equip youth leaders while they are in school, enabling them to
