@@ -12,6 +12,7 @@ tags:
   - Zimbabwe
   - EMIT-Student
   - leadership
+  - Youth
 category: Transformation Stories
 excerpt_separator: <!--more-->
 leaderName: Dr. Elvis Joseph
@@ -21,7 +22,6 @@ country: Zimbabwe
 latitude: '-17.82772'
 longitude: '31.05337'
 ---
-
 ## EMIT training gave Elvis the confidence to advise politicians and business people
 
 The testimony of Dr. Elvis Joseph is one of our EMIT success stories. Elvis grew up being passed from relative to relative, moving from one family to the next. Not knowing his father, he grew up questioning who he was and his purpose for existence.
