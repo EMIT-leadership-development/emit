@@ -132,7 +132,7 @@ curricula:
     sprite_selection_number:
     image_url: >-
       https://res.cloudinary.com/sonya-ninja/image/upload/h_300,w_300,c_thumb,f_auto,g_custom,q_auto/v1620887837/emit/images/business/africa-leaders-entrepreneurs_ons81d.jpg
-  - title: Life Skills 1
+  - title: 'Designing Your Life Plan '
     objective: >-
       The goal of this course is to help the student articulate a clear vision
       for their life and develop a plan to attain developed goals.
@@ -140,7 +140,7 @@ curricula:
     sprite_selection_number: 10
     image_url: >-
       https://res.cloudinary.com/sonya-ninja/image/upload/h_300,w_300,c_thumb,f_auto,g_custom,q_auto/v1620879371/emit/images/women/happy-woman-leader-emit-training_c8nywa.jpg
-  - title: Life Skills 2
+  - title: 'Life Skills '
     objective: >-
       This course will walk a student through the process of writing a CV, and
       applying for and interviewing for a job. Communication and problem solving
