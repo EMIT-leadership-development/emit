@@ -45,7 +45,7 @@ description_markdown: >-
   for transformation – personal and character development, leadership
   development and professional skills development.
 curricula:
-  - title: Basic Computer Skills
+  - title: Basic Computer Literacy
     objective: This course provides practical computer knowledge and computer skills.
     days_number: 29
     sprite_selection_number: 1
@@ -77,7 +77,7 @@ curricula:
     sprite_selection_number: 4
     image_url: >-
       https://res.cloudinary.com/sonya-ninja/image/upload/h_300,w_300,c_thumb,f_auto,g_custom,q_auto/v1620879372/emit/images/women/woman-farmer_fhxctp.jpg
-  - title: Emotional Wellness
+  - title: Understanding Emotional Trauma
     objective: >-
       This course examines the nature of emotional trauma including special
       considerations for children, how to respond to the trauma victim, when to
@@ -115,7 +115,7 @@ curricula:
     sprite_selection_number:
     image_url: >-
       https://res.cloudinary.com/sonya-ninja/image/upload/h_300,w_300,c_thumb,f_auto,g_custom,q_auto/v1620882211/emit/images/health/EMIT-heroPoster_pmgek5.jpg
-  - title: Leadership
+  - title: Leadership Principles
     objective: >-
       This is an introductory course to the principles of effective leadership
       and leadership ethics.
@@ -177,7 +177,7 @@ curricula:
     days_number: 50
     sprite_selection_number: 13
     image_url: /images/african-leadership-mother-EMIT.webp
-  - title: Time and Project Management
+  - title: ' Project and Time Management'
     objective: >-
       This course addresss the importance of good time management skills and
       examines the steps and skills needed to manage a project, big or small,
