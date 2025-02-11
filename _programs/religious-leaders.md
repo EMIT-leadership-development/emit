@@ -155,7 +155,7 @@ curricula:
     sprite_selection_number: 11
     image_url: >-
       https://res.cloudinary.com/sonya-ninja/image/upload/c_thumb,w_300,h_300,f_auto,g_custom,q_auto/v1620892136/emit/images/spiritual/EMIT-rural-church_fbtenl.jpg
-  - title: Classical Discipleship
+  - title: Discipleship
     objective: >-
       This course provides practical topics designed to bring the new or
       immature believer into a deeper, more fruitful relationship with Christ.
@@ -239,7 +239,7 @@ curricula:
     sprite_selection_number:
     image_url: >-
       https://res.cloudinary.com/sonya-ninja/image/upload/c_thumb,w_300,h_300,f_auto,g_custom,q_auto/v1620890799/emit/images/spiritual/manReading_iwqwce.jpg
-  - title: Interpersonal Relationships/ Conflict Resolution
+  - title: Interpersonal Relationships
     objective: >-
       This course provides a reproducible model for developing and fostering
       healthy interpersonal relationships.  We provide a model for resolving the
@@ -256,7 +256,7 @@ curricula:
     sprite_selection_number:
     image_url: >-
       https://res.cloudinary.com/sonya-ninja/image/upload/c_thumb,w_300,h_300,f_auto,q_auto/v1620895841/emit/images/spiritual/EMIT-spiritual-leadership_wyn66m.jpg
-  - title: Kingdom of God
+  - title: The Kingdom of God
     objective: >-
       This course examines the Biblical understanding of the Kingdom and how it
       provides us with an understanding of all that we do for Christ
@@ -285,7 +285,7 @@ curricula:
     sprite_selection_number:
     image_url: >-
       https://res.cloudinary.com/sonya-ninja/image/upload/c_thumb,f_auto,h_300,q_auto,w_300/v1620914062/emit/images/spiritual/EMIT-leadership-ethics_xrmxtc.jpg
-  - title: Marriage & Family
+  - title: Marriage
     objective: >-
       The course examines the Old and New Testament teachings regarding marriage
       as well as sexuality, children, divorce, and remarriage.
