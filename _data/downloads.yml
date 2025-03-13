@@ -1,3 +1,14 @@
+- name: Annual Report 2024
+  file_link: /downloadFiles/AnnualReports/2024-ANNUAL-REPORT---Final-reduced.pdf
+  preview_image: /uploads/annual-report-coer-2024.jpg
+  description: This is our official annual report for 2024
+  flipBook_url: https://online.fliphtml5.com/fecwl/knbz/
+  date: 2025-01-01 02:00:00 +0200
+  pages: 22
+  format: PDF
+  pageSize: A4
+  fileSize: 20.039MB
+  category: Reports
 - name: Annual Report 2023
   file_link: /uploads/EMIT-2023-ANNUAL-REPORT.pdf
   preview_image: /uploads/emit-2023-annual-report-front.jpg
@@ -26,7 +37,7 @@
   description: This is our official annual report for 2021-2022.
   flipBook_url: https://online.fliphtml5.com/fecwl/twvc/#p=1
   date: 2022-02-01 02:00:00 +0200
-  pages: "12"
+  pages: '12'
   format: PDF
   pageSize: A4 Landscape
   fileSize: 4.7 MB
@@ -37,7 +48,7 @@
   description: This is our official annual report for 2020-2021.
   flipBook_url: https://online.fliphtml5.com/pghxz/zwol/
   date: 2021 Jun
-  pages: "15"
+  pages: '15'
   format: PDF
   pageSize: A4 Landscape
   fileSize: 7.4 MB
@@ -48,7 +59,7 @@
   description: This is our official annual report for 2019-2020.
   flipBook_url: https://online.fliphtml5.com/pghxz/wehw/
   date: 2020 Jan
-  pages: "24"
+  pages: '24'
   format: PDF
   pageSize: A4
   fileSize: 31.5 MB
@@ -59,7 +70,7 @@
   description: Return of Organization Exempt from Income Tax for the tax year 2023
   flipBook_url:
   date: 2024-01-01 00:00:00 +0200
-  pages: "46"
+  pages: '46'
   format: PDF
   pageSize: Letter
   fileSize: 353 KB
@@ -70,7 +81,7 @@
   description: Return of Organization Exempt from Income Tax for the tax year 2021
   flipBook_url:
   date: 2024-01-01 00:00:00 +0200
-  pages: "46"
+  pages: '46'
   format: PDF
   pageSize: Letter
   fileSize: 353 KB
@@ -81,7 +92,7 @@
   description: Return of Organization Exempt from Income Tax for the tax year 2021
   flipBook_url:
   date: 2022-01-01 00:00:00 +0200
-  pages: "46"
+  pages: '46'
   format: PDF
   pageSize: Letter
   fileSize: 353 KB
@@ -91,8 +102,8 @@
   preview_image: /downloadFiles/Form990/form990-2020-preview.jpg
   description: Return of Organization Exempt from Income Tax for the tax year 2020
   flipBook_url:
-  date: "2019-12-31T22:00:00.000Z"
-  pages: "46"
+  date: '2019-12-31T22:00:00.000Z'
+  pages: '46'
   format: PDF
   pageSize: Letter
   fileSize: 353 KB
@@ -102,8 +113,8 @@
   preview_image: /downloadFiles/Form990/form990-2020-preview.jpg
   description: Return of Organization Exempt from Income Tax for the tax year 2019
   flipBook_url:
-  date: "2019"
-  pages: "46"
+  date: '2019'
+  pages: '46'
   format: PDF
   pageSize: Letter
   fileSize: 352 KB
@@ -113,8 +124,8 @@
   preview_image: /downloadFiles/Form990/form990-2020-preview.jpg
   description: Return of Organization Exempt from Income Tax for the tax year 2018
   flipBook_url:
-  date: "2018"
-  pages: "46"
+  date: '2018'
+  pages: '46'
   format: PDF
   pageSize: Letter
   fileSize: 352 KB
@@ -127,7 +138,7 @@
     from federal income tax.
   flipBook_url:
   date: 2016 Nov
-  pages: "1"
+  pages: '1'
   format: PDF
   pageSize: Letter
   fileSize: 507 KB
