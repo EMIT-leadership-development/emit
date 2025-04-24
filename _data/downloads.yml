@@ -137,20 +137,24 @@
     Organizations that meet the requirements of Section 501(c)(3) are exempt
     from federal income tax.
   flipBook_url:
-  date: 2016 Nov
+  date: '2016-11-01T00:00:00.000Z'
   pages: '1'
   format: PDF
   pageSize: Letter
   fileSize: 507 KB
   category: Legal
-- name: EMIT LINC Poppi Act
+- name: EMIT LINC POPI ACT
   file_link: /uploads/LINC-POPI-TsCs.pdf
   preview_image: /uploads/oip-1.jpg
-  description: ''
+  description: >-
+    The POPI Act, or Protection of Personal Information Act, is South Africa's
+    data privacy law enacted in 2013. It aims to promote the right to privacy
+    while protecting personal information processed by public and private
+    bodies. 
   flipBook_url: https://online.fliphtml5.com/fecwl/nwbl/
-  date: 2025-04-24 00:00:00 +0200
-  pages:
-  format: ''
-  pageSize: ''
-  fileSize: ''
-  category: ''
+  date: 2025-04-24 02:00:00 +0200
+  pages: '1'
+  format: PDF
+  pageSize: Letter
+  fileSize: 105 KB
+  category: Legal
