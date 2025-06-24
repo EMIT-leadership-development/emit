@@ -5,11 +5,13 @@ layout: post
 hero:
 heroQuote:
 hero_Quote_Cite:
-hero_image: /images/team/johan-profile-head-pic.jpg
+hero_image:
 sprite_image: /images/sprites/sprite-Set1.webp
 sprite_selection_number: 9
 team-member: Chief Operating Officer, Ex-officio SA Board
 tags:
+  - transformation
+  - Transformation
 category: Thought Leaders
 excerpt_separator: <!--more-->
 leaderName: Johan Fourie
