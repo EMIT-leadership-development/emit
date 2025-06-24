@@ -5,7 +5,7 @@ layout: post
 hero:
 heroQuote:
 hero_Quote_Cite:
-hero_image:
+hero_image: /images/team/johan-profile-head-pic.jpg
 sprite_image: /images/sprites/sprite-Set1.webp
 sprite_selection_number: 9
 team-member: Chief Operating Officer, Ex-officio SA Board
@@ -22,7 +22,7 @@ description:
 ---
 **Resilient Roots: How Small Communities in Rural Africa Are Transforming Their Future**
 
-Across Africa's vast and varied landscapes, small rural communities are showing the world what it means to be resilient. From arid villages in the Sahel to lush valleys in East Africa, families and leaders are rising to meet challenges with determination, innovation, and faith. While poverty, climate shocks, and limited infrastructure persist, these communities are not defined by what they lack, but by how they lead.
+Across Africa’s vast and varied landscapes, small rural communities are showing the world what it means to be resilient. From arid villages in the Sahel to lush valleys in East Africa, families and leaders are rising to meet challenges with determination, innovation, and faith. While poverty, climate shocks, and limited infrastructure persist, these communities are not defined by what they lack, but by how they lead.
 
 At EMIT, our mission is clear: to see communities transformed through leadership. For over thirty years, we’ve walked alongside local men and women in rural Africa, equipping them with tools to lead with integrity, courage, and vision. What we have witnessed is not only resilience but transformation.
 
