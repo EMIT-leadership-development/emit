@@ -8,7 +8,7 @@ hero_Quote_Cite:
 hero_image:
 sprite_image: /images/sprites/sprite-Set1.webp
 sprite_selection_number: 9
-team-member: Chief Operating Officer, Ex-officio SA Board
+team-member: Chief Operating Officer, SA Board Member
 tags:
   - transformation
   - Transformation
