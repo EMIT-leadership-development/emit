@@ -14,9 +14,9 @@ tags:
   - Transformation
 category: Thought Leaders
 excerpt_separator: <!--more-->
-leaderName: Johan Fourie
+leaderName:
 leaderBio_html: ''
-leader_image: /images/team/johan-profile-pic.jpg
+leader_image:
 country: South Africa
 latitude:
 longitude:
