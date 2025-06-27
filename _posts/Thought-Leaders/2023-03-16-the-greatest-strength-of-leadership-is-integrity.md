@@ -10,7 +10,7 @@ hero_Quote_Cite:
 hero_image:
 sprite_image: /images/sprites/sprite-Set2.webp
 sprite_selection_number: 3
-team-member: Global CEO, SA, USA and Global Board Member
+team-member: Johan Fourie
 tags:
   - integrity
 category: Thought Leaders
