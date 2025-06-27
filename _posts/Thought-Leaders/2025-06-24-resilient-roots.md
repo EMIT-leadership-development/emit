@@ -8,7 +8,7 @@ hero_Quote_Cite:
 hero_image:
 sprite_image: /images/sprites/sprite-Set1.webp
 sprite_selection_number: 9
-team-member: Chief Operating Officer, SA Board Member
+team-member: Johan Fourie
 tags:
   - transformation
   - Transformation
